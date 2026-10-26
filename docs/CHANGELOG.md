@@ -2,6 +2,12 @@
 
 Newest at the top. One entry per working session: date, who (agent or person), what changed.
 
+## 2026-10-26 (Claude Code: News Actions optional, bilingual-only migration, smaller disclaimer)
+- News no longer requires an Action (validator, Pages CMS field, CONTENT and EDITING docs). Events still require one. Four new tests: News with an empty or missing Action list loads; an Event with an empty list and News with a non-list value are rejected. Build and all 80 tests pass.
+- Luka decided to migrate only old posts with both languages. decisions.csv now keeps 5 posts (europe-day-in-kutaisi, announcement-clarification-..., neo-dissemination-event-2025, eve-statistics, information-about-capacity-building-project-proposals), all split from one bilingual body. 22 earlier keep suggestions are marked "DECIDED: skip" with the reason. newsletter-post-july-24-event-summary was re-checked: its Latin text is project titles only, so it is Georgian only.
+- REPORT and its generator no longer say an empty Action list blocks publication; "needs choice" now reads "none suggested".
+- Footer disclaimer set at 0.75rem in the muted colour.
+
 ## 2026-10-26 (Claude Code: suggested review decisions)
 - Pre-filled migration/review/decisions.csv with suggestions for Luka to confirm or correct. Every note starts "SUGGESTED:". Nothing is applied or published.
 - Suggests keeping 27 of 76: outcome summaries, results, publications and procedures. Suggests dropping 49: invitations and calendars for past events (where a summary exists, the summary is kept), third-party events and stale notices. Kept items are all type news. Within-post bilingual items have pair_with set to their own slug, meaning split the ka and en sections.

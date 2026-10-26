@@ -1,6 +1,6 @@
 # Handover
 
-Last updated: 2026-10-26 (Codex, session 8: language and image migration review)
+Last updated: 2026-10-26 (Claude Code, after session 8: News Actions optional, bilingual-only migration, smaller disclaimer)
 
 ## Current state
 
@@ -104,7 +104,7 @@ The browser check uses `/usr/bin/chromium`; set CHROMIUM_PATH if Chromium lives 
 
 ## Next task
 
-Luka marks keep/drop, type, Actions, confirmed pair_with and notes in migration/review/decisions.csv using the quick report table. Read both sections of all 27 within-post candidates before approving any later split. Review the five unpaired English-body sources and title/body mismatches, select missing Actions and approve final slugs. Check the 69 review images, rights and both [ALT NEEDED] fields. Only a separately authorised task may apply these choices, create real bilingual/Event records, run the production responsive-image workflow, promote content or activate redirects. Continue the Action editorial review, hosted Pages CMS test and staff training. Any domain must be registered to ERIDA.
+Luka confirms the five keeps in migration/review/decisions.csv (all other rows are n). Then a separately briefed session promotes them: split each post's ka and en sections into one News record with both languages, apply the listed Actions (empty is allowed for News), approve slugs, images and alt text, and add redirects only for the promoted posts. Skipped posts are not translated or migrated. Continue the Action editorial review, hosted Pages CMS test and staff training. Any domain must be registered to ERIDA.
 
 ## Remaining work
 

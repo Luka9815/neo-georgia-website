@@ -197,3 +197,13 @@ Put a one-row-per-draft summary at the top of REPORT.md, including language, typ
 
 ## 2026-10-26: Offline language, cleanup, slug and image regression checks
 Extend the offline converter-fixture decision with mixed-body/title mismatch, within-post/cross-post candidate-only pairing, source-record preservation, theme cleanup and clean legacy slug cases. Use injected image bytes to test variant selection, byte deduplication, provenance/alt placeholders and rejection of actual widths above 1024 px without making network requests. Test the quick report/CSV row contract too. The final live import is a separate manual operation; verify downloaded images and saved-byte totals locally before committing review output.
+
+
+## 2026-10-26: News may have no Action (Luka)
+Relaxes the "select at least one existing action" check, which was an implementation choice, not a SITE-PLAN requirement. General NEO news (Europe Day, TAM, conferences, programme-wide announcements) fits none of the nine Actions, and forcing one would mislead readers and Action pages. News actions are optional (missing or empty list both accepted); any listed slug must still exist. Events still require at least one Action. The Pages CMS News field is no longer required.
+
+## 2026-10-26: Migrate only old posts that exist in both languages (Luka)
+Narrows the initial News import scope in "Last twelve months of News in the initial migration". Only old posts with a real Georgian and a real English version are migrated; Georgian-only and English-only posts are skipped, not translated. This does not change the rule that new News may be Georgian only. In decisions.csv, pair_with equal to the item's own slug means the post holds both languages in one body and its ka and en sections are to be split. Applied to the 2026-10-26 review: 5 of 76 posts qualify.
+
+## 2026-10-26: Smaller footer disclaimer (Luka)
+The EACEA disclaimer stays verbatim on every page but is set as secondary text (0.75rem, muted colour, 6.9:1 contrast), similar to NEO Moldova. The emblem and funding statement are unchanged.
