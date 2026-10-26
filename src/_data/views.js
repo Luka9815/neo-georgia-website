@@ -27,7 +27,7 @@ export default function () {
         alternate: `/${other}/${suffix}`,
       });
     }
-    for (const [kind, suffix] of [['publications', 'resources/publications/'], ['faq', 'resources/faq/']]) {
+    for (const [kind, suffix] of [['publications', 'resources/publications/'], ['faq', 'resources/faq/'], ['contact', 'about/contact/']]) {
       views.push({lang, kind, path: `/${lang}/${suffix}`, alternate: `/${other}/${suffix}`});
     }
     for (const [group, suffix, titleKey] of [['neo', 'about/team/', 'team'], ['here', 'here/', 'here']]) {

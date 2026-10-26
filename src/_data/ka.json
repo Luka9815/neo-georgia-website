@@ -136,5 +136,11 @@
   "personGroups": {
     "neo": "ეროვნული ოფისის გუნდი",
     "here": "უმაღლესი განათლების რეფორმის ექსპერტები"
-  }
+  },
+  "address": "მისამართი",
+  "officeHours": "სამუშაო საათები",
+  "email": "ელფოსტა",
+  "contactAddress": "[SAMPLE] ოფისის მისამართი დასამტკიცებელია.",
+  "contactHours": "[SAMPLE] სამუშაო საათები დასამტკიცებელია.",
+  "contactEmail": "[SAMPLE] office@example.org"
 }

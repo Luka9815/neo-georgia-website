@@ -136,5 +136,11 @@
   "personGroups": {
     "neo": "NEO team",
     "here": "Higher Education Reform Experts"
-  }
+  },
+  "address": "Address",
+  "officeHours": "Office hours",
+  "email": "Email",
+  "contactAddress": "[SAMPLE] Office address awaiting approval.",
+  "contactHours": "[SAMPLE] Office hours awaiting approval.",
+  "contactEmail": "[SAMPLE] office@example.org"
 }
