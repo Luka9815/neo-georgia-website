@@ -83,5 +83,19 @@
     "KA3": "KA3",
     "Jean Monnet": "Jean Monnet"
   },
-  "archive": "Archive"
+  "archive": "Archive",
+  "logoName": "NEO Georgia",
+  "logoPlaceholder": "[SAMPLE] Text logo",
+  "menuToggle": "Menu",
+  "homeHeadline": "[SAMPLE] Erasmus+ opportunities in Georgia",
+  "homeEyebrow": "National Erasmus+ Office Georgia",
+  "homeGuideTitle": "[SAMPLE] Find your next step",
+  "homeGuideBody": "[SAMPLE] Explore an opportunity, check the deadline, then find guidance and information sessions.",
+  "homeGuideLink": "Explore opportunities",
+  "allCalls": "All calls and deadlines",
+  "allEvents": "All events",
+  "allNews": "All news",
+  "allStories": "All stories",
+  "figuresNote": "[SAMPLE] Illustrative figures. Verified project data will be added before launch.",
+  "officeName": "National Erasmus+ Office Georgia"
 }

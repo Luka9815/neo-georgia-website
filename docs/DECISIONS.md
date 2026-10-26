@@ -112,3 +112,19 @@ Supersedes the storage locations in "Explicit call edition and archives" and "Ex
 
 ## 2026-10-26: News publication days and editor validation
 Supersedes the News-instant exception in "Editor-entered local call and event times". Store News date as a calendar day YYYY-MM-DD with no time or offset, and render that day without an invented clock time. Migrate existing samples. Validate News and Events before rendering with filename/field errors; reject missing required text, unknown actions, invalid or offset-bearing dates and invalid event classifications/ranges. Keep Event wall-clock timestamps and named-zone DST handling unchanged. Remove fixed sample-count and year assumptions from tests so staff can add content and change the CMS call year.
+
+
+## 2026-10-26: Optional Event registration and agenda
+Supersedes the required-registration/agenda part of "News publication days and editor validation". Registration and each translated agenda are optional in the CMS and build validation. Hide missing, empty or whitespace-only blocks; validate a supplied registration URL as HTTPS. This supports events before registration or an agenda is available.
+
+## 2026-10-26: Self-hosted Noto for Georgian and Latin
+Resolves the open font choice and replaces system fonts in "Session 1 toolchain and rendering". Choose Noto Sans Georgian plus Noto Sans, normal-width 400/700, subset to Georgian and Latin ranges and self-hosted WOFF2 with font-display: swap. Compared regular text at 16/20/32 px: FiraGO is compact; Noto's open Georgian forms and wider Latin suit readable institutional text with wrapping navigation. Noto's four subsets total 99,184 bytes versus FiraGO's 118,736 for equivalent two-weight coverage, and include Mtavruli missing from the inspected FiraGO release. Both licences are SIL OFL 1.1. Keep original licences, pinned source/checksum manifest and the maintenance subsetting script. See DESIGN.md and the comparison image.
+
+## 2026-10-26: Blue, warm accent and neutral contrast tokens
+Use Erasmus+ inspired #003399 blue, one warm accent and neutrals, without copying EU logos. Define colours as CSS custom properties and test every allowed text/surface combination at 4.5:1 or better, including badges and inverse buttons. Status/source words remain visible so meaning does not depend on colour. DESIGN.md lists the pair rules; decorative borders are not text colours.
+
+## 2026-10-26: Georgian-first shared navigation and components
+Use a native details/summary mobile menu and a desktop menu rendered from the same seven-link macro; CSS exposes only the appropriate one. Keep the language switch visible in both layouts and a labelled text-only NEO Georgia logo placeholder. Cards show type, dates, text status badges and visible resource source labels. Let long Georgian labels wrap. Separate the EU funding block from contact/legal content, retaining the official-emblem placeholder and disclaimer rules. No client JavaScript or remote assets are introduced.
+
+## 2026-10-26: Institutional six-block home layout
+Keep the approved content order and sample data. Move the home h1 into the blue purpose/audience hero, give each list a section-index link, feature one story on a quiet surface and label the figures as illustrative. Use a one-column mobile reading order and a desktop hero split; let Georgian headings and CTAs wrap. Use an explicit withoutStatus filter for the next-deadline list: Nunjucks rejectattr only tests attribute truthiness and the earlier equalto call hid all deadlines. Add a regression check for visible open/upcoming calls. Use only local fonts/CSS and native navigation. Save before/after screenshots of both languages at 360/1280 px, with fonts settled and no page JavaScript required for the final views.
