@@ -26,3 +26,48 @@ test('optional News image validates local files and alt text for published langu
     assert.throws(() => validateNewsImage({ image: { ...image, src: '/assets/uploads/escape.png' } }, file), /inside src\/assets\/uploads/);
   } finally { rmSync(root, { recursive: true, force: true }); }
 });
+
+import { cpSync, readFileSync, existsSync } from 'node:fs';
+import { resolve } from 'node:path';
+import { execFileSync } from 'node:child_process';
+import { load } from 'cheerio';
+test('real Eleventy image builds produce local responsive article/card pictures in both layouts', () => {
+  const root = mkdtempSync(join(tmpdir(), 'neo-news-picture-'));
+  try {
+    for (const path of ['src', 'lib', 'eleventy.config.js', 'package.json']) cpSync(path, join(root, path), { recursive: true });
+    symlinkSync(resolve('node_modules'), join(root, 'node_modules'), 'dir');
+    cpSync('test/fixtures/sample-news-image.png', join(root, 'src/assets/uploads/sample-news-image.png'));
+    const file = join(root, 'src/content/news/update-1.json');
+    const item = JSON.parse(readFileSync(file));
+    item.image = { src: '/assets/uploads/sample-news-image.png', alt: { ka: '[SAMPLE] ლურჯი მართკუთხედი.', en: '[SAMPLE] Blue rectangle, "quoted" <description>.' } };
+    writeFileSync(file, JSON.stringify(item));
+    for (const prefix of ['/', '/neo-georgia-website/']) {
+      const output = join(root, prefix === '/' ? 'root-output' : 'project-output');
+      execFileSync(process.execPath, ['node_modules/@11ty/eleventy/cmd.cjs', `--output=${output}`], { cwd: root, env: { ...process.env, PATH_PREFIX: prefix, SITE_URL: `https://example.org${prefix}` }, stdio: 'pipe' });
+      for (const lang of ['ka', 'en']) for (const [path, article] of [[`${lang}/news/update-1/index.html`, true], [`${lang}/news/index.html`, false]]) {
+        const $ = load(readFileSync(join(output, path), 'utf8'));
+        const picture = $('main picture').first();
+        assert.equal(picture.length, 1, path);
+        assert.equal(picture.find('source[type="image/avif"]').length, 1);
+        assert.equal(picture.find('source[type="image/webp"]').length, 1);
+        const img = picture.find('img');
+        assert.equal(img.attr('alt'), item.image.alt[lang]);
+        assert.equal(img.attr('onerror'), undefined);
+        assert.equal(img.attr('width'), '640'); assert.equal(img.attr('height'), '320');
+        assert.equal(img.attr('loading'), article ? 'eager' : 'lazy');
+        assert.equal(img.attr('decoding'), 'async');
+        assert.ok(img.attr('sizes'));
+        for (const el of picture.find('[srcset], [src]')) {
+          const paths = [$(el).attr('src'), ...($(el).attr('srcset') || '').split(',').map(value => value.trim().split(' ')[0])].filter(Boolean);
+          for (const url of paths) {
+            assert.ok(url.startsWith(`${prefix}assets/generated/news/`), url);
+            assert.ok(existsSync(join(output, url.slice(prefix.length))), url);
+          }
+        }
+        assert.match(picture.find('source').first().attr('srcset'), /320w.*640w/);
+        assert.equal($('[data-news-image]').length, 0);
+        assert.equal($('.eu-emblem').attr('src'), `${prefix}assets/eu/funded-en.png`);
+      }
+    }
+  } finally { rmSync(root, { recursive: true, force: true }); }
+});
