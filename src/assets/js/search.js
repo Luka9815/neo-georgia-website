@@ -19,7 +19,11 @@ if (root) {
     if (!query) { status.textContent = root.dataset.empty; return; }
     status.textContent = root.dataset.loading;
     try {
-      engine ??= await import(root.dataset.index);
+      if (!engine) {
+        engine = await import(root.dataset.index);
+        // Indexed URLs already include PATH_PREFIX. Do not infer it a second time.
+        await engine.options({ baseUrl: '/' });
+      }
       const found = await searchWithFallback(engine, query, root.dataset.language);
       const data = await Promise.all(found.map(result => result.data()));
       const items = [...new Map(data.map(item => [item.url, item])).values()];
