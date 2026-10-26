@@ -305,3 +305,14 @@ test('home renders upcoming/open deadlines instead of rejecting every status', (
     assert.deepEqual(dates, expected);
   }
 });
+
+
+test('English-prevails policy is identical in each footer and its language page', () => {
+  for (const lang of ['ka', 'en']) {
+    const strings = JSON.parse(read(`src/_data/${lang}.json`));
+    const page = load(read(`_site/${lang}/language/index.html`));
+    assert.ok(page('main').text().includes(strings.prevailingStatement));
+    assert.equal(page('footer .language-policy').text(), strings.prevailingStatement);
+    assert.equal(page('h1').text(), strings.language);
+  }
+});

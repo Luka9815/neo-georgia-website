@@ -41,18 +41,8 @@ Codex does the bulk of the coding. Claude reviews changes against AGENTS.md, che
 The repository is public. Acceptable for a public website and free tiers of hosting and CMS; consequence: no secrets, tokens or personal emails are ever committed.
 
 ## Open (not yet decided)
-- Hosting: Netlify or Cloudflare Pages (test both in the first build session).
-- Staff editor: Decap CMS or Pages CMS (test with hosting; check whether editors need GitHub accounts).
-- Bilingual file layout for content (must work with the chosen CMS).
 - Search: Pagefind or alternative, after testing with Georgian.
 - Analytics: cookieless option to choose.
-- Scheduled daily rebuild method (so call and event status stays current).
-- Domain: keep erasmus.org.ge (needs written transfer from current host before January 2027) or new domain. Decision by Nino; most urgent.
-- Prevailing language in case of discrepancy (current site says English prevails). Decision by Nino.
-- Actions that get their own page, confirmed against the current Programme Guide. Decision by Nino.
-- Font: FiraGO or Noto Sans Georgian plus Noto Sans.
-- Georgian disclaimer text (no official EACEA version).
-
 
 ## 2026-10-26: Session 1 content layout
 Use one JSON file per item in `src/content/<type>/`, with shared facts at the top level and nested `ka` and `en` text objects. Bodies are Markdown strings rendered by markdown-it with raw HTML disabled. Both Decap and Pages CMS support JSON collections and nested object fields, so neither requires a translation plugin. See docs/CONTENT.md; authenticated editor testing remains open. This resolves the earlier open bilingual-layout item.
@@ -128,3 +118,19 @@ Use a native details/summary mobile menu and a desktop menu rendered from the sa
 
 ## 2026-10-26: Institutional six-block home layout
 Keep the approved content order and sample data. Move the home h1 into the blue purpose/audience hero, give each list a section-index link, feature one story on a quiet surface and label the figures as illustrative. Use a one-column mobile reading order and a desktop hero split; let Georgian headings and CTAs wrap. Use an explicit withoutStatus filter for the next-deadline list: Nunjucks rejectattr only tests attribute truthiness and the earlier equalto call hid all deadlines. Add a regression check for visible open/upcoming calls. Use only local fonts/CSS and native navigation. Save before/after screenshots of both languages at 360/1280 px, with fonts settled and no page JavaScript required for the final views.
+
+
+## 2026-10-26: English prevails between language versions
+Resolves the earlier open prevailing-language item. In a discrepancy between Georgian and English versions, English prevails. Publish the statement in both languages in the footer and /language/ page. Keep the wording in each language's translation file and reference it from the policy page so the policy cannot drift between locations. Georgian remains the primary interface language under "Languages".
+
+## 2026-10-26: Last twelve months of News in the initial migration
+Narrows the News migration scope in "Rebuild from scratch, not migrate the WordPress site" and the site plan migration outline. Migrate only old-site News published in the twelve months preceding the agreed migration/export date. Record that date and the exact import window when the export arrives. This is an initial import scope, not automatic deletion of future archived news; other content types retain their separate migration requirements.
+
+## 2026-10-26: Domain decision after the site is built
+Supersedes the earlier open domain item's urgent-decision timing. Defer the final domain decision until the site is built; taking over erasmus.org.ge is the likely direction, not a committed domain configuration. Keep the temporary GitHub Pages URL meanwhile. Institutional ownership and any written transfer agreement remain required under "Build-phase GitHub account and institutional domain".
+
+## 2026-10-26: Project Georgian disclaimer proofread by Luka
+Supersedes the Georgian TODO/approval requirement in "Sample preview safeguards and EU placeholder". The project supplies the Georgian translation and Luka proofreads it. Use the exact text supplied in this session; do not describe it as an official EACEA Georgian translation. Original official emblem files and grant-agreement funding wording still need their separate checks.
+
+## 2026-10-26: Nine requested Action topics, source review pending
+Resolves the earlier open choice of which Actions to feature: International Credit Mobility, Erasmus Mundus (Joint Masters and Design Measures together), Capacity Building in Higher Education, Jean Monnet Actions, Capacity Building in VET, Capacity Building in Youth, Youth mobility, Virtual Exchanges and Capacity Building in Sport. Eligibility still requires the official 2026 Programme Guide and per-action source comments before replacing samples. The selection itself does not establish Georgian applicant or partner eligibility.

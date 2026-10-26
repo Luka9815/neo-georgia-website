@@ -57,7 +57,7 @@ Commands (Node 24 LTS, pinned in `.nvmrc`; run from the repository root):
 - Dates are written out in the page language (Georgian month names on `/ka/`).
 - Georgian typography: never apply `text-transform: uppercase` or `capitalize` to Georgian text (browsers render it as Mtavruli). Design menus and buttons around the longer Georgian labels first.
 - Person names follow the Georgian national transliteration system, applied the same way everywhere.
-- Prevailing language in case of discrepancy: not yet decided (see DECISIONS). Leave a footer placeholder.
+- Prevailing language in case of discrepancy: English. The footer and /language/ page use the same statement from each language translation file (see DECISIONS).
 
 ## 5. Content model
 
@@ -103,7 +103,7 @@ Source: EACEA visual identity 2021-2027, "European flag emblem and multilingual 
 - Use "Funded by the European Union" (not "Co-funded") unless the grant agreement says otherwise. Flag this for confirmation once the grant agreement is signed.
 - English disclaimer, verbatim:
   "Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them."
-- Georgian disclaimer: EACEA publishes no official Georgian text. Use a placeholder clearly marked `TODO: Georgian disclaimer, to be approved by NEO` until the NEO provides an approved translation. Never machine-translate it into production.
+- Georgian disclaimer: use the project translation supplied by Luka, proofread by Luka, recorded in the language data file. It is not an official EACEA Georgian translation. Do not replace the supplied wording with an automatic translation.
 - The emblem must be at least as prominent as other logos shown with it, and must not be linked to imply EU endorsement of third-party content.
 - Footer also contains: contact details, social links, privacy and cookie notice, accessibility statement, prevailing-language statement.
 

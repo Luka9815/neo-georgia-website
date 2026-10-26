@@ -66,3 +66,8 @@ Also inspected the [current CMS implementation](https://github.com/pagescms/page
 `src/_data/redirects.json` is an empty list until the WordPress export supplies old URLs. Add objects such as `{"from": "/old-cbhe/", "to": "/ka/opportunities/cbhe/"}`. Store paths relative to this site, without PATH_PREFIX. The build generates a static HTML stub at each old path with a meta refresh, canonical to the new URL and a visible link. Prefix handling is automatic.
 
 Sources must end in a slash or .html and use ASCII path segments. Duplicate paths and collisions with existing pages stop the build; targets must be existing content pages, not other redirects. Do not add query-string routes, external URLs or redirect chains. Non-ASCII WordPress URLs and other filename formats need a separate migration check before import. These stubs do not send HTTP 301 responses. Revisit hosting if true 301 redirects become essential. Netlify files have been removed and remain recoverable from git history.
+
+
+## Language policy and migration scope
+
+The language policy page uses a shared policyKey reference to the same translation string as the footer. English prevails in case of discrepancy; Georgian remains the primary interface. Initial old-site News migration is limited to the last twelve months before the agreed export/migration date, which must be recorded with the import. This does not expire archived news automatically. The final domain decision is deferred until the site is built; erasmus.org.ge is likely, while the GitHub Pages URL remains configured.
