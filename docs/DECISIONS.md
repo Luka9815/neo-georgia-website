@@ -169,3 +169,7 @@ Generate REPORT.md plus run.json, inventory.json and attachments.json below migr
 
 ## 2026-10-26: Draft legacy redirects stay outside live configuration
 Generate migration/review/redirects.draft.json from the reviewed News slugs and published top-level WordPress pages (parent=0, all dates). Suggest page sections using SITE-PLAN "Where current content goes"; leave unmatched pages and sources without a Georgian draft at null instead of inventing targets. Event candidates need target review. Preserve full old post URLs, including Georgian paths, for later redirect-format/hosting review. Do not change src/_data/redirects.json or create routes in this dry run.
+
+
+## 2026-10-26: Offline converter fixtures and conservative language review
+Use saved synthetic HTML and in-memory REST-shaped fixtures to test cleanup, links/lists/tables, attachment metadata, the full modern Georgian romanisation table, Mtavruli/collision/length edge cases, exact window boundaries and verified-English-only conversion. Stub fetch to fail in this test file, so npm test cannot make network requests through the converter. The live dry run found four English-prose sources without translation metadata or linked Georgian versions; keep them in inventory for review rather than fabricate ka text or pair similar posts. Forty-four Georgian drafts have no supported Action suggestion and remain blocked for publication until an editor chooses one.
