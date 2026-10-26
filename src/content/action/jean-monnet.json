@@ -1,0 +1,27 @@
+{
+  "slug": "jean-monnet",
+  "keyAction": "Jean Monnet",
+  "sectors": [
+    "higher-education"
+  ],
+  "audience": [
+    "organisations"
+  ],
+  "officialLinks": [
+    "https://erasmus-plus.ec.europa.eu/programme-guide/erasmusplus-programme-guide"
+  ],
+  "en": {
+    "title": "[SAMPLE] Jean Monnet",
+    "body": "[SAMPLE] Illustrative content only.",
+    "summary": "[SAMPLE] Illustrative content only.",
+    "who": "[SAMPLE] Eligibility awaits verification.",
+    "how": "[SAMPLE] Application guidance awaits verification."
+  },
+  "ka": {
+    "title": "[SAMPLE] ჟან მონე",
+    "body": "[SAMPLE] მხოლოდ საილუსტრაციო მასალა.",
+    "summary": "[SAMPLE] მხოლოდ საილუსტრაციო მასალა.",
+    "who": "[SAMPLE] მონაწილეობის პირობები გადასამოწმებელია.",
+    "how": "[SAMPLE] განაცხადის ინსტრუქცია გადასამოწმებელია."
+  }
+}

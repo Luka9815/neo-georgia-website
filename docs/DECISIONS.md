@@ -52,3 +52,19 @@ The repository is public. Acceptable for a public website and free tiers of host
 - Actions that get their own page, confirmed against the current Programme Guide. Decision by Nino.
 - Font: FiraGO or Noto Sans Georgian plus Noto Sans.
 - Georgian disclaimer text (no official EACEA version).
+
+
+## 2026-10-26: Session 1 content layout
+Use one JSON file per item in `src/content/<type>/`, with shared facts at the top level and nested `ka` and `en` text objects. Bodies are Markdown strings rendered by markdown-it with raw HTML disabled. Both Decap and Pages CMS support JSON collections and nested object fields, so neither requires a translation plugin. See docs/CONTENT.md; authenticated editor testing remains open. This resolves the earlier open bilingual-layout item.
+
+## 2026-10-26: Session 1 toolchain and rendering
+Use Node 24 LTS, Eleventy 3 ESM, Nunjucks, plain CSS and system fonts for the skeleton. Keep package-lock.json and use npm ci. Generate routes from the content catalog; exclude untranslated News and Stories from English listings and use a section-index language fallback. No client JavaScript, images, trackers or remote fonts are needed in this skeleton. Final font and image-pipeline choices remain open.
+
+## 2026-10-26: Sample preview safeguards and EU placeholder
+All sample records and draft text begin with [SAMPLE]. Both previews are noindex with robots disallowing crawling until real content is approved. Use host build URLs for canonical metadata, overridable by SITE_URL. The handover explicitly requests an emblem placeholder for session 1; use labelled text, never a redrawn flag. Original EACEA assets and the approved Georgian disclaimer remain launch requirements.
+
+## 2026-10-26: Computed statuses and daily rebuild plan
+Compute call status from opens/deadline instants and event status from the event end. Calls store Europe/Brussels plus an explicit seasonal offset; format dates using the language files and Intl time-zone conversion. After selecting a host, add a daily GitHub Actions schedule at 04:15 UTC that POSTs to that host's build hook, stored only as a repository Actions secret named SITE_BUILD_HOOK. Enable workflow_dispatch for manual retries. Until that hook exists, a manual host rebuild is required to refresh time-sensitive statuses. This selects the rebuild method; activation remains open until hosting is connected.
+
+## 2026-10-26: Portable hosting and repeatable checks
+Both hosts build with npm run build and publish _site using Node 24. Share only the supported root 302 in _redirects. Netlify has language-specific 404 rules in netlify.toml; Cloudflare Pages uses the root Georgian 404 with an English 404 switch, avoiding unsupported 404 rules in its _redirects format. No host is selected until both live deployments are tested. Use node:test with Cheerio for generated-site checks and Playwright with axe for basic accessibility and 320 px layout checks.

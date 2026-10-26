@@ -1,0 +1,20 @@
+{
+  "slug": "guide",
+  "actions": [
+    "cbhe"
+  ],
+  "event": "past-session",
+  "source": "official",
+  "type": "guide",
+  "language": "en",
+  "year": 2026,
+  "url": "https://erasmus-plus.ec.europa.eu/programme-guide/erasmusplus-programme-guide",
+  "en": {
+    "title": "[SAMPLE] Guide example",
+    "body": "[SAMPLE] Illustrative content only."
+  },
+  "ka": {
+    "title": "[SAMPLE] გზამკვლევის მაგალითი",
+    "body": "[SAMPLE] მხოლოდ საილუსტრაციო მასალა."
+  }
+}

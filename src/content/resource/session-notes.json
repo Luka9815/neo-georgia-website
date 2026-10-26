@@ -1,0 +1,20 @@
+{
+  "slug": "session-notes",
+  "actions": [
+    "cbhe"
+  ],
+  "event": "past-session",
+  "source": "neo",
+  "type": "presentation",
+  "language": "ka",
+  "year": 2026,
+  "url": "https://example.org/",
+  "en": {
+    "title": "[SAMPLE] Session notes",
+    "body": "[SAMPLE] Illustrative content only."
+  },
+  "ka": {
+    "title": "[SAMPLE] შეხვედრის ჩანაწერები",
+    "body": "[SAMPLE] მხოლოდ საილუსტრაციო მასალა."
+  }
+}
