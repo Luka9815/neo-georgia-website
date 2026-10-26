@@ -85,3 +85,47 @@ Nine Action records use programmeYear, sectors and officialLinks (objects with u
 The shared Georgia authority exclusion is in src/_data/georgiaEligibility.json and appears on every Action page. Scope eligibility to the relevant strand, especially Erasmus Mundus and Jean Monnet. Do not infer coordinator eligibility from partner eligibility. Keep icm, cbhe and jean-monnet stable for existing sample relationships. A multi-sector action remains one JSON record; Virtual Exchanges appears in both higher education and youth groups. Both .pages.yml actions select lists contain all nine slugs and must be updated whenever an Action is added or removed.
 
 The official English beneficiary emblem and its original-byte checksum, archive source and download date are documented in src/assets/eu/README.md. Both languages use this file with localised alt text and PATH_PREFIX at render time. Replace it on /ka/ only when an official Georgian Funded by the EU emblem is obtained from the EU Delegation or EACEA. Do not use EU for Georgia country branding or edit/recompress the original.
+
+
+## Manual WordPress migration dry run
+
+This importer is a review tool. It never publishes, changes src/content, changes the live redirect map or downloads image/PDF binaries. Run it manually from the repository root on Node 24 after npm ci:
+
+```sh
+node --use-env-proxy scripts/import-wp.js
+```
+
+The proxy flag lets Node use the environment's standard proxy settings; it also works when no proxy is configured. Public access to https://erasmus.org.ge/wp-json/wp/v2/ is required. No WordPress login, token or external account is needed. Do not run the importer in CI or npm test; it refuses a CI environment. Converter tests are separate, offline fixture checks run by npm test.
+
+The default window ends at one captured UTC run instant and starts twelve calendar months earlier, inclusive at the start and exclusive at the end. run.json records both exact instants, the run date, request outcomes and completeness. For a repeatable window, pass an explicit UTC instant:
+
+```sh
+node --use-env-proxy scripts/import-wp.js --run-at 2026-10-26T16:46:45.58Z
+```
+
+This freezes the window, not the old site's content. The script still reads the live API. WordPress local-date filtering differs between installations, so requests include a two-day cushion and conversion uses date_gmt for the exact window. The News date is the source's local publication day. Missing GMT dates are reported as failures, never assigned an invented time zone. The client reads 100 records per page, serially, with at least 1.5 seconds between requests, bounded retry/backoff for 429/temporary server errors, and a 500-page safety limit per collection. It fetches posts, ?lang=ka and ?lang=en variants, categories, tags, media metadata and published top-level pages (parent=0). Linked translation IDs can be fetched outside the window to complete a real translation of an in-window Georgian source.
+
+### Generated files and reruns
+
+All generated output stays below migration/review, with symlink checks to prevent another destination. A rerun regenerates the report, inventories, redirect proposals and all JSON files in review/news. Archive editorial changes and notes before rerunning. Keep human review notes outside the generated files. Only sanitised review output is committed; .cache/source.json is a local recovery snapshot ignored by git and must remain uncommitted because raw public HTML may contain email addresses.
+
+- REPORT.md: plain-language counts, exact window, language findings, every item with its proposed slug, Actions/type evidence, attachments, warnings, duplicates, failures and top-level page suggestions. Luka starts here.
+- run.json: source, exact window/run times, every API request, collection completeness, language evidence and counts. An incomplete run exits nonzero and does not prove an empty old-site archive.
+- news/<slug>.json: Georgian News-shaped review records, optionally with a verified real English version. Shared fields are slug, date and actions; ka/en contain title and Markdown body. legacy preserves the old ID, slug and URL. migration marks the record unreviewed, classifications suggested and records attachments/warnings.
+- inventory.json: every in-window source, including unpaired English, uncertain language and failed conversions that could not produce a Georgian News file. It also records duplicate title/body groups. No source is silently merged or discarded as a duplicate.
+- attachments.json: image/PDF source URLs, API-provided byte sizes and alt text where available, and the source post IDs using them. Includes image variants, featured/attached media and supported gallery references. Unknown sizes stay null. No remote image embed is retained in the News body and no binary is downloaded.
+- redirects.draft.json: every old post URL with a proposed /ka/news/<slug>/ target or null where a Georgian draft is unavailable, plus all old top-level pages and suggested SITE-PLAN sections. Unknown page targets stay null. It is not connected to src/_data/redirects.json. Georgian old paths and future hosting/redirect-format compatibility need separate review before promotion.
+
+### Conversion and editorial decisions
+
+Slugs use the Georgian national romanisation table. The intermediate romanisation retains ejective apostrophes; the URL drops them to satisfy lowercase ASCII letters/numbers/hyphens. Unicode case normalisation supports Mtavruli. Slugs are capped at 60 characters with deterministic numeric suffixes for collisions, including existing News slugs. Source titles with Latin text retain it; unsupported-only titles fall back to news-<WP-ID>. Approve final slugs before publishing any redirects.
+
+Turndown converts cleaned HTML to Markdown. Cleanup removes styles, scripts, navigation/forms/embeds, known WordPress/Elementor shortcode wrappers and empty paragraphs, retains links/lists, and records warnings for omitted widgets and simplified tables. Tracking parameters are removed while meaningful query parameters and fragments remain. Email addresses are redacted for this public repository. Read the warnings and compare against the old post. markdown-it continues to reject raw HTML; the importer adds no HTML rendering exception.
+
+Action matches come from a fixed keyword map to the nine current slugs, using categories, tags, titles and body text. Each match records its evidence and is a suggestion. No match leaves actions:[] plus a blocking warning. These files intentionally may not satisfy publication validation: an editor must choose a real Action, check language/body and remove or resolve migration metadata before any separately authorised promotion. Never invent an Action just to pass validation.
+
+An event word plus a date in the source produces an Event candidate. It remains a News-shaped review file; a real Event would need separately verified date/end, time zone, venue and other required fields. Four English-prose sources in this run lack verified translation links and remain in inventory for language review. No Georgian translation or bilingual relationship was guessed. English is attached only through an explicit REST translation relation, with non-empty distinct English content; identical ?lang=en results, similar dates/titles or duplicated posts are not evidence of a translation pair.
+
+### Result to review, 26 October 2026
+
+The committed final run covers 2025-10-26T16:46:45.58Z inclusive to 2026-10-26T16:46:45.58Z exclusive: 76 posts, 72 Georgian drafts, zero verified English pairs, 38 Event candidates, 540 unique attachment URLs and two duplicate-title groups. Forty-four drafts need an Action selected. Top-level pages total 202; 114 targets need a manual choice. Every API collection completed and no conversion failed. Review the four unpaired English sources (WP 36035, 36152, 36349, 36509) separately. This is a dry run, not content approval, import completion or publication.

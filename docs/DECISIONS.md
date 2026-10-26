@@ -153,3 +153,23 @@ Supersedes "Nine requested Action topics, source review pending". Replace the th
 
 ## 2026-10-26: English beneficiary emblem on both languages until Georgian supplied
 Supersedes "Original official bilingual EU artwork". The KA archive's “ევროკავშირი საქართველოსთვის” is EU Delegation country branding, not the required beneficiary funding emblem; remove it. Use the unmodified official English Funded by the European Union emblem on both language versions, with Georgian alt text “დაფინანსებულია ევროკავშირის მიერ” on /ka/. Keep the Georgian funding statement and disclaimer unchanged. Obtain the official Georgian Funded by the EU emblem file from the EU Delegation or EACEA, then replace the Georgian-page image and record its provenance.
+
+
+## 2026-10-26: Manual WordPress dry run with an exact twelve-month window
+Implements the import scope in "Last twelve months of News in the initial migration". Use a manually invoked Node script with serial paginated public REST reads and a 1.5-second request interval. Capture one UTC run instant and subtract twelve calendar months; filter publication date_gmt to the inclusive-start/exclusive-end window. Write only below migration/review, refuse CI/symlinked output, and keep raw recovery responses ignored there. No importer runs in builds, CI or npm test. Language pairing requires explicit REST translation relations and distinct content; query differences and duplicate posts are evidence for review, not guessed translations.
+
+
+## 2026-10-26: Review-only Markdown conversion, romanised slugs and suggestions
+Use Turndown as a development dependency with Cheerio cleanup. Retain links/lists, omit image embeds into a separate metadata inventory, strip scripts/widget debris and tracking parameters, and redact email addresses before committing public review text. Romanise modern Georgian with the national table, then remove ejective apostrophes for the site's ASCII slug contract; cap at 60 characters and resolve collisions deterministically, including existing News slugs. Keep old IDs/slugs/URLs under legacy. Action and Event classification is evidence-backed suggestion metadata, never an automatic publishing decision. An unmatched item has actions:[] and a clear blocking warning rather than an invented Action; these review files require approval and may intentionally fail publication validation. No attachment binaries are downloaded.
+
+
+## 2026-10-26: Plain-language review report and explicit incomplete runs
+Generate REPORT.md plus run.json, inventory.json and attachments.json below migration/review. Record every item and warning, exact title/body duplicate groups, request failures and attachment usage without downloading binaries. A failed collection is explicitly incomplete, returns a nonzero exit status, and never becomes a claim that the old archive is empty. The report explains Luka's manual review and preserves uncertain language/type/Action cases for that review.
+
+
+## 2026-10-26: Draft legacy redirects stay outside live configuration
+Generate migration/review/redirects.draft.json from the reviewed News slugs and published top-level WordPress pages (parent=0, all dates). Suggest page sections using SITE-PLAN "Where current content goes"; leave unmatched pages and sources without a Georgian draft at null instead of inventing targets. Event candidates need target review. Preserve full old post URLs, including Georgian paths, for later redirect-format/hosting review. Do not change src/_data/redirects.json or create routes in this dry run.
+
+
+## 2026-10-26: Offline converter fixtures and conservative language review
+Use saved synthetic HTML and in-memory REST-shaped fixtures to test cleanup, links/lists/tables, attachment metadata, the full modern Georgian romanisation table, Mtavruli/collision/length edge cases, exact window boundaries and verified-English-only conversion. Stub fetch to fail in this test file, so npm test cannot make network requests through the converter. The live dry run found four English-prose sources without translation metadata or linked Georgian versions; keep them in inventory for review rather than fabricate ka text or pair similar posts. Forty-four Georgian drafts have no supported Action suggestion and remain blocked for publication until an editor chooses one.

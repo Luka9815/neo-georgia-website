@@ -1,0 +1,121 @@
+{
+  "slug": "erasmus-is-erovnuli-opisi-sakartveloshi-21-aprils-gitsvevt-2",
+  "date": "2026-04-16",
+  "actions": [
+    "youth-mobility"
+  ],
+  "ka": {
+    "title": "📣 Erasmus+-ის ეროვნული ოფისი საქართველოში 21 აპრილს გიწვევთ ვებინარებზე ახალგაზრდული ორგანიზაციებისთვის: ახალგაზრდული მობილობა",
+    "body": "{16.04.2026}\n\nℹ️ ვებინარი‘**’ახალგაზრდული მობილობა**’’ დამსწრეებს მიაწვდის ინფორმაციას Erasmus+ ახალგაზრდული გაცვლების შესახებ, განსაკუთრბეული აქცენტით იმაზე, თუ როგორ უნდა ჩაერთონ ორგანიზაციები მობილობის პროექტებში, რომლებიც არაფორმალურ განათლებას ეხება. ვებინარზე განხილული იქნება:\n\n-   შესაბამისობის კრიტერიუმები;\n-   კონსორციუმის ჩამოყალიბება;\n-   დაფინანსების სტრუქტურა და მონაწილეობის წესები;\n-   განაცხადის შეტანის პროცედურები და დედლაინები;\n-   რელევანტური პლატფორმები;\n-   ახალგაზრდულ გაცვლით პროგრამებში მონაწილეობის ზოგადი კრიტერიუმები.\n\nპროექტების ხანგრძლივობა: 3-დან 24 თვემდე.\n\nდედლაინი: 1-ლი ოქტომბერი, 12:00 (ბრიუსელის დროით)\n\nშენიშვნა: ქართულ ორგანიზაციებს შეუძლიათ მონაწილეობა და არა კოორდინატორობა!\n\n📅 **თარიღი:** 21 აპრილი, 2026\n\n💻 **ფორმატი:** ონლაინ (Google Meet პლატფორმა)\n\n⏰ **დრო:** 12:00-13:00\n\nვის შეუძლია მონაწილეობა: ახალგაზრდულ სექტორში მოქმედ ორგანიზაციებს, ახალგაზრდულ ჯგუფებს, არაკომერციულ ორგანიზაციებს. \n\nვებინარზე დასასწრებად აუცილებელია რეგისტრაციის გავლა!\n\n🔗 **სარეგისტრაციო ბმული:** [https://forms.gle/iDJCU85xJZUEnNeq5](https://forms.gle/iDJCU85xJZUEnNeq5)"
+  },
+  "legacy": {
+    "id": 35962,
+    "slug": "21-april-webinars-for-youth-youth-mobility",
+    "url": "https://erasmus.org.ge/21-april-webinars-for-youth-youth-mobility/"
+  },
+  "migration": {
+    "status": "unreviewed",
+    "actionsStatus": "suggested",
+    "suggestedActions": [
+      {
+        "slug": "youth-mobility",
+        "status": "suggested",
+        "evidence": [
+          {
+            "source": "title",
+            "match": "ახალგაზრდული მობილ"
+          },
+          {
+            "source": "body",
+            "match": "ახალგაზრდული მობილ"
+          }
+        ]
+      }
+    ],
+    "typeCandidate": {
+      "type": "event",
+      "evidence": [
+        "ვებინარ",
+        "16.04.2026"
+      ]
+    },
+    "attachments": [
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/04/Untitled-Facebook-Post-6-768x644.png",
+        "type": "image",
+        "sizeBytes": 580026,
+        "alt": "",
+        "mediaId": 35966,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "inline-image"
+          },
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          35962
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/04/Untitled-Facebook-Post-6-300x252.png",
+        "type": "image",
+        "sizeBytes": 104963,
+        "alt": "",
+        "mediaId": 35966,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          35962
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/04/Untitled-Facebook-Post-6-1024x858.png",
+        "type": "image",
+        "sizeBytes": 983168,
+        "alt": "",
+        "mediaId": 35966,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          35962
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/04/Untitled-Facebook-Post-6.png",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "",
+        "mediaId": 35966,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          },
+          {
+            "language": "shared",
+            "relationship": "attached-to-post"
+          }
+        ],
+        "usedBy": [
+          35962
+        ]
+      }
+    ],
+    "warnings": [
+      "Images listed separately and omitted from Markdown; no files downloaded.",
+      "Possible Event: kept as a News-shaped review file, not converted to an Event."
+    ]
+  }
+}

@@ -7,3 +7,5 @@ _site/
 Thumbs.db
 .netlify/
 .wrangler/
+# Raw public WordPress responses may contain contact details. Commit review files only.
+migration/review/.cache/

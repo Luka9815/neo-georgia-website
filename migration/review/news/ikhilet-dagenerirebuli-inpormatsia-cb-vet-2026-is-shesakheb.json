@@ -1,0 +1,131 @@
+{
+  "slug": "ikhilet-dagenerirebuli-inpormatsia-cb-vet-2026-is-shesakheb",
+  "date": "2026-01-28",
+  "actions": [
+    "cb-vet"
+  ],
+  "ka": {
+    "title": "📣 იხილეთ დაგენერირებული ინფორმაცია CB VET 2026-ის შესახებ: როგორ შევიტანოთ განაცხადი Erasmus+-ის ფარგლებში?",
+    "body": "{28.01.2026}\n\n{For English, Scroll Down👇}\n\n📣 **იხილეთ დაგენერირებული ინფორმაცია CB VET 2026-ის შესახებ: როგორ შევიტანოთ განაცხადი Erasmus+-ის ფარგლებში?**\n\n🔗 სრული ინფორმაციისთვის, გადადით [ბმულზე](https://www.eacea.ec.europa.eu/news-events/news/capacity-building-vocational-education-and-training-cb-vet-2026-how-apply-2026-01-23_en).\n\n**ENGLISH**\n\n📣 **See the generated information about CB VET 2026: How to apply under the Erasmus+ Programme?**\n\n🔗 For details, follow the [link](https://www.eacea.ec.europa.eu/news-events/news/capacity-building-vocational-education-and-training-cb-vet-2026-how-apply-2026-01-23_en)."
+  },
+  "legacy": {
+    "id": 35646,
+    "slug": "sharing-information-about-cv-vet-application",
+    "url": "https://erasmus.org.ge/sharing-information-about-cv-vet-application/"
+  },
+  "migration": {
+    "status": "unreviewed",
+    "actionsStatus": "suggested",
+    "suggestedActions": [
+      {
+        "slug": "cb-vet",
+        "status": "suggested",
+        "evidence": [
+          {
+            "source": "title",
+            "match": "CB VET"
+          },
+          {
+            "source": "body",
+            "match": "CB VET"
+          }
+        ]
+      }
+    ],
+    "typeCandidate": {
+      "type": "news",
+      "evidence": [
+        "28.01.2026"
+      ]
+    },
+    "attachments": [
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/01/Untitled-design-768x768.png",
+        "type": "image",
+        "sizeBytes": 420668,
+        "alt": "",
+        "mediaId": 35649,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "inline-image"
+          },
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          35646
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/01/Untitled-design-300x300.png",
+        "type": "image",
+        "sizeBytes": 91715,
+        "alt": "",
+        "mediaId": 35649,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          35646
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/01/Untitled-design-1024x1024.png",
+        "type": "image",
+        "sizeBytes": 661383,
+        "alt": "",
+        "mediaId": 35649,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          35646
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/01/Untitled-design-150x150.png",
+        "type": "image",
+        "sizeBytes": 28392,
+        "alt": "",
+        "mediaId": 35649,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          35646
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/01/Untitled-design.png",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "",
+        "mediaId": 35649,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          35646
+        ]
+      }
+    ],
+    "warnings": [
+      "Images listed separately and omitted from Markdown; no files downloaded."
+    ]
+  }
+}

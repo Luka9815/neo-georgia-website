@@ -1,0 +1,131 @@
+{
+  "slug": "10-oktombers-kakhetshi-evropis-dghis-ghonisdzieba-imarteba",
+  "date": "2026-10-09",
+  "actions": [],
+  "ka": {
+    "title": "🎉 10 ოქტომბერს კახეთში ‘’ევროპის დღის’’ ღონისძიება იმართება",
+    "body": "{09.10.2026}\n\n**ℹ️** სიხარულით გაცნობებთ, რომ ხვალ, 10 ოქტომბერს, 12:00-17:00 საათებში, კახეთში ევროპის დღის აღსანიშნავი ღონისძიება გაიმართება. მრავალფეროვანი პროგრამა მოიცავს ევროპის ქვეყნების საელჩოების სტენდებს, სამაგიდო თამაშებს, ევროკავშირის დაფინანსებული პროექტებს, ველომსვლელობას და სხვა მრავალ შემეცნებით თუ სახალისო აქტივობას. \n\n✨ ღონისძიებაზე დაგხვდებათ Erasmus+-ის ეროვნული ოფისი საქართველოში. NEO-ს სტენდთან შეძლებთ სახალისო კაჰუტებსა და სამაგიდო თამაშებში ჩართვას, ასევე Erasmus+ პროგრამასთან დაკავშირებულ შეკითხვებზე პასუხების მიღებას. \n\n18:00 საათზე ღონისძიებას დაასრულებს “გამოუვალი მდგომარეობა” დაასრულებს საღამოს კონცერტით. \n\n**ლოკაცია:**  მეღვინეობა მოსმიერი, სოფელი კისისხევი, კახეთი\n\nდასწრება თავისუფალია"
+  },
+  "legacy": {
+    "id": 36525,
+    "slug": "%f0%9f%8e%89-10-%e1%83%9d%e1%83%a5%e1%83%a2%e1%83%9d%e1%83%9b%e1%83%91%e1%83%94%e1%83%a0%e1%83%a1-%e1%83%99%e1%83%90%e1%83%ae%e1%83%94%e1%83%97%e1%83%a8%e1%83%98-%e1%83%94%e1%83%95",
+    "url": "https://erasmus.org.ge/%f0%9f%8e%89-10-%e1%83%9d%e1%83%a5%e1%83%a2%e1%83%9d%e1%83%9b%e1%83%91%e1%83%94%e1%83%a0%e1%83%a1-%e1%83%99%e1%83%90%e1%83%ae%e1%83%94%e1%83%97%e1%83%a8%e1%83%98-%e1%83%94%e1%83%95/"
+  },
+  "migration": {
+    "status": "unreviewed",
+    "actionsStatus": "suggested",
+    "suggestedActions": [],
+    "typeCandidate": {
+      "type": "news",
+      "evidence": [
+        "09.10.2026"
+      ]
+    },
+    "attachments": [
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/10/logo-telavi-png-01-768x606.png",
+        "type": "image",
+        "sizeBytes": 83464,
+        "alt": "",
+        "mediaId": 36527,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "inline-image"
+          },
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          36525
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/10/logo-telavi-png-01-300x237.png",
+        "type": "image",
+        "sizeBytes": 24947,
+        "alt": "",
+        "mediaId": 36527,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          36525
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/10/logo-telavi-png-01-1024x808.png",
+        "type": "image",
+        "sizeBytes": 121991,
+        "alt": "",
+        "mediaId": 36527,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          36525
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/10/logo-telavi-png-01-1536x1211.png",
+        "type": "image",
+        "sizeBytes": 205711,
+        "alt": "",
+        "mediaId": 36527,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          36525
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/10/logo-telavi-png-01-2048x1615.png",
+        "type": "image",
+        "sizeBytes": 299600,
+        "alt": "",
+        "mediaId": 36527,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          36525
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/10/logo-telavi-png-01.png",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "",
+        "mediaId": 36527,
+        "uses": [
+          {
+            "language": "shared",
+            "relationship": "attached-to-post"
+          }
+        ],
+        "usedBy": [
+          36525
+        ]
+      }
+    ],
+    "warnings": [
+      "Images listed separately and omitted from Markdown; no files downloaded.",
+      "No Action matched. actions is empty; an editor must select a real Action before publication."
+    ]
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "slug": "sektembris-tveshi-dagegmili-vebinarebis-kalendari",
+  "date": "2026-08-25",
+  "actions": [
+    "youth-mobility"
+  ],
+  "ka": {
+    "title": "სექტემბრის თვეში დაგეგმილი ვებინარების კალენდარი",
+    "body": "Erasmus+-ის ეროვნული ოფისი საქართველოში სექტემბერის თვეში გეგმავს ვებინარებს სპორტის, სკოლებისა და ზრდასრულთა განათლების სექტორებისთვის. ვებინარებზე დამსწრეები  ინფორმაციას მიიღებენ Erasmus+ პროგრამის, მისი პრიორიტეტების, დაფინანსების შესაძლებლობების, ძირითადი პლატფორმებისა და შესაბამისობის კრიტერიუმების შესახებ. \n\nგაითვალისწინეთ, რომ ვებინარებზე დასასწრებად აუცილებელია რეგისტრაციის გავლა. იხილეთ ვებინარების კალენდარი:\n\n3 სექტემბრის ვებინარები **სკოლებისთვის**\n\n-   **3 სექტემბერი – ახალგაზრდული გაცვლები სკოლის სექტორისთვის** \n\nდრო: 12:00-13:00\n\nსარეგისტრაციო ბმული: [https://forms.gle/jd3CGhDsfcekXWax8](https://forms.gle/jd3CGhDsfcekXWax8)\n\n-    **3 სექტემბერი – შესაძლებლობების გაძლიერება სპორტის მიმართულებით სკოლებისთვის**\n\nდრო: 13:00-14:00\n\nსარეგისტრაციო ბმული: [https://forms.gle/PZdexNdfRpv1XjYx7](https://forms.gle/PZdexNdfRpv1XjYx7)\n\n4 სექტემბრის ვებინარები **სპორტის სექტორისთვის**\n\n-   **4 სექტემბერი – ახალგაზრდული გაცვლები სპორტის სექტორისთვის**\n\nდრო: 12:00-13:00\n\nსარეგისტრაციო ბმული: [https://forms.gle/nd9okQv7yf8SJzEE6](https://forms.gle/nd9okQv7yf8SJzEE6)\n\n-   **4 სექტემბერი – შესაძლებლობების გაძლიერება ახალგაზრდობის მიმართულებით სპორტის სექტორისთვის**\n\nდრო: 13:00-14:00\n\nსარეგისტრაციო ბმული: [https://forms.gle/LUroSGSTGtcxUZvA9](https://forms.gle/LUroSGSTGtcxUZvA9)\n\n14 სექტემბრის ვებინარები **ზრდასრულთა განათლების სექტორისთვის**\n\n-   **14 სექტემბერი – ახალბედა ორგანიზაციების მხარდაჭერა ზრდასრულთა განათლების მიმართულებით (რა არის Erasmus+ პროგრამა და მისი პრიორიტეტები)**\n\nდრო: 11:00-12:00\n\nსარეგისტრაციო ბმული: [https://forms.gle/PYCDhU28X5Ab4CAR9](https://forms.gle/PYCDhU28X5Ab4CAR9)\n\n-   **14 სექტემბერი – კოოპერაციული პარტნიორობა ზრდასრულთა განათლების სექტორისთვის**\n\nდრო: 12:00-13:00 \n\nსარეგისტრაციო ბმული: [https://forms.gle/PdsDAjdqbNseu12ZA](https://forms.gle/PdsDAjdqbNseu12ZA)"
+  },
+  "legacy": {
+    "id": 36334,
+    "slug": "neo-planned-events-before-september-15",
+    "url": "https://erasmus.org.ge/neo-planned-events-before-september-15/"
+  },
+  "migration": {
+    "status": "unreviewed",
+    "actionsStatus": "suggested",
+    "suggestedActions": [
+      {
+        "slug": "youth-mobility",
+        "status": "suggested",
+        "evidence": [
+          {
+            "source": "body",
+            "match": "ახალგაზრდული გაცვლ"
+          }
+        ]
+      }
+    ],
+    "typeCandidate": {
+      "type": "event",
+      "evidence": [
+        "ვებინარ",
+        "3 სექტემბ"
+      ]
+    },
+    "attachments": [
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/08/ChatGPT-Image-Aug-24-2026-at-10_27_59-PM-1024x861.jpg",
+        "type": "image",
+        "sizeBytes": 75677,
+        "alt": "",
+        "mediaId": 36338,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "inline-image"
+          },
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          36334
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/08/ChatGPT-Image-Aug-24-2026-at-10_27_59-PM-300x252.jpg",
+        "type": "image",
+        "sizeBytes": 13249,
+        "alt": "",
+        "mediaId": 36338,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          36334
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/08/ChatGPT-Image-Aug-24-2026-at-10_27_59-PM-768x646.jpg",
+        "type": "image",
+        "sizeBytes": 49880,
+        "alt": "",
+        "mediaId": 36338,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          36334
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/08/ChatGPT-Image-Aug-24-2026-at-10_27_59-PM.jpg",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "",
+        "mediaId": 36338,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          },
+          {
+            "language": "shared",
+            "relationship": "attached-to-post"
+          }
+        ],
+        "usedBy": [
+          36334
+        ]
+      }
+    ],
+    "warnings": [
+      "Images listed separately and omitted from Markdown; no files downloaded.",
+      "Possible Event: kept as a News-shaped review file, not converted to an Event."
+    ]
+  }
+}
