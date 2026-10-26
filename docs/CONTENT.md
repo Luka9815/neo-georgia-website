@@ -10,7 +10,7 @@ Example shape:
 {
   "slug": "example",
   "actions": ["cbhe"],
-  "date": "2026-10-26T12:00:00+04:00",
+  "date": "2026-10-26",
   "ka": {"title": "[SAMPLE] სათაური", "body": "[SAMPLE] ტექსტი"},
   "en": {"title": "[SAMPLE] Title", "body": "[SAMPLE] Markdown text"}
 }
@@ -24,24 +24,42 @@ Example shape:
 - Events have `date`, `end`, `timeZone`, `type`, `format`, `organiser` and `registration`. Upcoming includes ongoing events until their end. Use the same offset-free local format for `date` and `end`; `timeZone` is required. Samples use Asia/Tbilisi. Status is computed at build time.
 - A nonexistent spring-forward time or an ambiguous fall-back time stops the build with an error identifying the time and zone. Choose a valid, unambiguous time instead; the build never silently shifts it or guesses which occurrence is intended. Invalid dates, unknown zones and editor-entered offsets are also rejected.
 - For Call/Event CMS fields use plain text inputs with a `YYYY-MM-DDTHH:mm` format hint, not date widgets that serialise an offset or UTC. Keep `timeZone` as a separate named-zone field.
-- News has a single shared `date`; stories and publications have a single shared `year`.
+- News has a single shared publication `date` in `YYYY-MM-DD` format, without a time or offset. Stories and publications have a single shared `year`. News samples were migrated from instant dates to calendar dates for CMS editing.
 - No sample images or people are included. When image support is implemented, use a shared path with required `alt.ka` and `alt.en`, and Eleventy Image for responsive outputs. Do not add personal contact information to the public repository.
 
 `lib/content.js` handles relationships, localisation and status. `src/_data/catalog.js` orders lists. `src/_data/views.js` declares routes. Each page type has a Nunjucks template in `src/pages/`, inheriting the shared `_includes/page.njk` wrapper; `_data/pageTypes.js` groups the central route list. Bodies remain Markdown strings. The other seven page templates and full field validation remain later work, not a production content schema.
 
 ## Current call edition
 
-`src/_data/site.js` defines `currentCallYear: 2026` explicitly. Update this setting when NEO changes call edition, not automatically at New Year. The calls page shows the selected edition first, even if empty, followed by all other available years as archives in descending order. Action pages use the same selected edition. The home deadline block remains chronological across editions. A future CMS settings screen can expose this value; neither CMS is connected yet. The 2025 CBHE sample demonstrates archival rendering.
+`src/_data/settings.json` defines `currentCallYear: 2026` and `siteLaunched: false`; `site.js` reads and validates them. Update this setting when NEO changes call edition, not automatically at New Year. The calls page shows the selected edition first, even if empty, followed by all other available years as archives in descending order. Action pages use the same selected edition. The home deadline block remains chronological across editions. The Pages CMS Settings entry exposes only currentCallYear. siteLaunched is not a CMS field and stays maintained in code; settings.content.merge preserves it when saving the year. The 2025 CBHE sample demonstrates archival rendering.
 
-## Both CMS candidates
+## Pages CMS configuration and validation
 
-No CMS has been selected, installed or connected. This layout avoids CMS-specific translation plugins and can use native object fields in both candidates:
+`.pages.yml` configures the hosted app at https://app.pagescms.org with GitHub sign-in. News and Events are JSON collections with filenames from `{fields.slug}.json`. Labels put Georgian first. All fields are required except the whole English News object; its title and body are required once it has meaningful content. Empty optional English News objects are removed from the in-memory catalog so they cannot create empty English routes.
 
-- Decap: a folder collection with `folder: src/content/news`, `format: json`, `extension: json`, `identifier_field: slug`, `slug: '{{slug}}'`. Use string fields for shared facts, list fields for `actions`, and object fields named `ka` and `en` containing `title` (string) and `body` (markdown). Make the English object optional for News and Stories.
-- Pages CMS: a collection with `path: src/content/news`, `type: collection`, `format: json`, and a filename based on `fields.slug`. Use string/date fields for shared facts and object fields named `ka` and `en` containing `title` (string) and `body` (rich-text, stored as Markdown). Make `en` optional for News and Stories.
+Both collections require slug, date, at least one existing action and Georgian title/body. Events additionally require end, timeZone, type, format, organiser, an HTTPS registration link, and English title/body; both event languages also require venue and agenda. Slugs must match filenames. Published slugs should not be changed in the editor without a coordinated file rename.
 
-Use the same pattern for the remaining types. Test creating and editing News and Events with each candidate before choosing one. Verify JSON round trips, optional translations, relationship fields and preservation of local wall-clock times and named time zones. These mappings are a compatibility design, not a claim that authenticated editor workflows have been tested.
+The build validates files through loadContent before route generation. Errors identify the source file and field, including missing text, unknown action slugs, offsets, invalid calendar dates, unsupported event choices, DST gaps/overlaps and an end before the start. Required fields and allowed choices are checked in the CMS as well; the build is the final check. The fixed action multi-select must be updated when action files are added or removed; a test compares its choices with the existing action slugs.
 
+News uses a documented date field with `options.format: yyyy-MM-dd`. Event date/end use string fields and a strict pattern, not the date widget: the current widget passes through browser-local date-fns parsing, while text fields preserve the exact wall-clock string independently of the editor's browser zone. The build resolves only the chosen named time zone. This retains the earlier offset-free Event input rule.
+
+Bodies use rich-text with `options.format: markdown` explicitly. Current CMS source sends `getMarkdown()` in that mode, its rich-text field passes that string through, and the JSON serializer writes it as a JSON string. It is not stored as HTML. `markdown-it` keeps `html: false`; tests check Markdown formatting and escaped script text. No HTML-rendering override was added. Rich-text media insertion is disabled until bilingual image alt fields and the responsive image pipeline exist.
+
+The future media library stores files in `src/assets/uploads` and writes `/assets/uploads` paths without a hard-coded project prefix. Eleventy's HTML base plugin adds PATH_PREFIX in generated pages. A copied-site test verifies a Markdown image path under the project prefix. The upload folder is reserved for future image support, not permission to publish unprocessed images now.
+
+The single-file Settings entry points to settings.json and exposes only currentCallYear (an integer from 2000 to 2100). `settings.content.merge: true` is necessary: the documented default rewrites schema-only keys and would remove siteLaunched. This preserves unmanaged keys in News/Events too. Repository writers can still edit files directly; CMS field visibility is not a security boundary.
+
+See the Georgian staff guide in EDITING.md and the hosted sign-in/create/delete test in HANDOVER.md. Source/configuration verification and local JSON/render tests passed; authenticated hosted editing and deployment remain Luka's test after merge.
+
+### Documentation checked on 2026-10-26
+
+The live documentation host returned 403 in this environment. Read the current documentation repository via GitHub instead: [documentation source](https://github.com/pagescms/website/tree/3b7864da39c63f8aa336371b812cdd0db5c69516/docs/configuration). GitHub resolves this repository to hunvreus/pagescms-website. All configuration keys used were checked in the following current documentation pages:
+
+- [Content collections/files and format](https://pagescms.org/docs/configuration/content/), [filename tokens/field visibility](https://pagescms.org/docs/configuration/content/filename/), and [common field keys, required and patterns](https://pagescms.org/docs/configuration/content/fields/).
+- [Object](https://pagescms.org/docs/configuration/fields/object/), [string](https://pagescms.org/docs/configuration/fields/string/), [text](https://pagescms.org/docs/configuration/fields/text/), [date and its formatting/default](https://pagescms.org/docs/configuration/fields/date/), [select values/multiple/min](https://pagescms.org/docs/configuration/fields/select/), [number bounds](https://pagescms.org/docs/configuration/fields/number/) and [rich-text format/media](https://pagescms.org/docs/configuration/fields/rich-text/).
+- [Media input/output](https://pagescms.org/docs/configuration/media/) and [settings.content.merge](https://pagescms.org/docs/configuration/settings/).
+
+Also inspected the [current CMS implementation](https://github.com/pagescms/pagescms/tree/6f4e860a35d934406580287e7042e5e111e207a1): `lib/config-schema.ts` (including defaults), `fields/core/date`, `fields/core/rich-text`, `components/ui/editor/index.tsx`, `lib/serialization.ts` and the files API save route. These confirm local date conversion, Markdown emission, unchanged JSON string serialization and preservation of unmanaged fields with merge enabled. The source repository resolves to hunvreus/pagescms. No claim is made about the exact currently deployed hosted-app revision.
 
 ## Legacy URL redirects on GitHub Pages
 
