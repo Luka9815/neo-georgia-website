@@ -1,29 +1,29 @@
 {
   "source": "https://erasmus.org.ge",
   "mode": "DRY RUN: review files only, not publication",
-  "startedAt": "2026-10-26T16:38:08.076Z",
+  "startedAt": "2026-10-26T16:46:45.580Z",
   "runDate": "2026-10-26",
   "window": {
-    "startInclusive": "2025-10-26T16:38:08.076Z",
-    "endExclusive": "2026-10-26T16:38:08.076Z",
+    "startInclusive": "2025-10-26T16:46:45.58Z",
+    "endExclusive": "2026-10-26T16:46:45.58Z",
     "basis": "Publication date_gmt; twelve calendar months in UTC"
   },
   "runAtOverride": null,
   "requests": [
     {
-      "url": "https://erasmus.org.ge/wp-json/wp/v2/posts?per_page=100&status=publish&orderby=id&order=asc&after=2025-10-24T16%3A38%3A08.076Z&before=2026-10-28T16%3A38%3A08.076Z&page=1",
+      "url": "https://erasmus.org.ge/wp-json/wp/v2/posts?per_page=100&status=publish&orderby=id&order=asc&after=2025-10-24T16%3A46%3A45.58Z&before=2026-10-28T16%3A46%3A45.58Z&page=1",
       "attempt": 1,
       "status": 200,
       "received": 76
     },
     {
-      "url": "https://erasmus.org.ge/wp-json/wp/v2/posts?per_page=100&status=publish&orderby=id&order=asc&after=2025-10-24T16%3A38%3A08.076Z&before=2026-10-28T16%3A38%3A08.076Z&lang=ka&page=1",
+      "url": "https://erasmus.org.ge/wp-json/wp/v2/posts?per_page=100&status=publish&orderby=id&order=asc&after=2025-10-24T16%3A46%3A45.58Z&before=2026-10-28T16%3A46%3A45.58Z&lang=ka&page=1",
       "attempt": 1,
       "status": 200,
       "received": 76
     },
     {
-      "url": "https://erasmus.org.ge/wp-json/wp/v2/posts?per_page=100&status=publish&orderby=id&order=asc&after=2025-10-24T16%3A38%3A08.076Z&before=2026-10-28T16%3A38%3A08.076Z&lang=en&page=1",
+      "url": "https://erasmus.org.ge/wp-json/wp/v2/posts?per_page=100&status=publish&orderby=id&order=asc&after=2025-10-24T16%3A46%3A45.58Z&before=2026-10-28T16%3A46%3A45.58Z&lang=en&page=1",
       "attempt": 1,
       "status": 200,
       "received": 76
@@ -153,6 +153,24 @@
       "attempt": 1,
       "status": 200,
       "received": 27
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-json/wp/v2/pages?per_page=100&status=publish&parent=0&orderby=id&order=asc&page=1",
+      "attempt": 1,
+      "status": 200,
+      "received": 100
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-json/wp/v2/pages?per_page=100&status=publish&parent=0&orderby=id&order=asc&page=2",
+      "attempt": 1,
+      "status": 200,
+      "received": 100
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-json/wp/v2/pages?per_page=100&status=publish&parent=0&orderby=id&order=asc&page=3",
+      "attempt": 1,
+      "status": 200,
+      "received": 2
     }
   ],
   "collections": {
@@ -185,6 +203,11 @@
       "count": 1827,
       "complete": true,
       "expectedTotal": 1827
+    },
+    "pages": {
+      "count": 202,
+      "complete": true,
+      "expectedTotal": 202
     },
     "translationLookup": {
       "count": 0,
@@ -219,5 +242,5 @@
     "eventCandidates": 38,
     "failedConversions": 0
   },
-  "finishedAt": "2026-10-26T16:39:22.593Z"
+  "finishedAt": "2026-10-26T16:47:35.708Z"
 }

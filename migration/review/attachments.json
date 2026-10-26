@@ -7566,6 +7566,10 @@
     "mediaId": 36284,
     "uses": [
       {
+        "language": "ka",
+        "relationship": "inline-image"
+      },
+      {
         "language": "shared",
         "relationship": "attached-to-post"
       }

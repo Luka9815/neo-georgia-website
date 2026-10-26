@@ -1,0 +1,2167 @@
+{
+  "status": "DRAFT: manual review required; not connected to src/_data/redirects.json",
+  "source": "https://erasmus.org.ge",
+  "runDate": "2026-10-26",
+  "window": {
+    "startInclusive": "2025-10-26T16:46:45.58Z",
+    "endExclusive": "2026-10-26T16:46:45.58Z",
+    "basis": "Publication date_gmt; twelve calendar months in UTC"
+  },
+  "news": [
+    {
+      "wpId": 34814,
+      "from": "https://erasmus.org.ge/europe-day-in-kutaisi/",
+      "to": "/ka/news/evropis-dghe-kutaisshi-24-25-oktomberi/",
+      "suggested": true,
+      "reason": "Proposed News slug; approve content and slug before promotion"
+    },
+    {
+      "wpId": 34833,
+      "from": "https://erasmus.org.ge/global-networking-event-in-november/",
+      "to": "/ka/news/erasmus-programis-regionuli-shekhvedra-da-kontaktebis-damqar/",
+      "suggested": true,
+      "reason": "News draft exists, but confirm the Event candidate and target before promotion"
+    },
+    {
+      "wpId": 34870,
+      "from": "https://erasmus.org.ge/announcement-vat/",
+      "to": "/ka/news/dghg-sgan-gatavisuplebis-shesakheb-ganatskhadis-tsardgenis-v/",
+      "suggested": true,
+      "reason": "Proposed News slug; approve content and slug before promotion"
+    },
+    {
+      "wpId": 34880,
+      "from": "https://erasmus.org.ge/erasmus-morocco-9th-december/",
+      "to": "/ka/news/giziarebt-inpormatsias-erasmus-programis-kavshirebis-damqare/",
+      "suggested": true,
+      "reason": "Proposed News slug; approve content and slug before promotion"
+    },
+    {
+      "wpId": 34916,
+      "from": "https://erasmus.org.ge/announcement_clarification-on-erasmus-opportunities-for-education-institutions-in-georgia/",
+      "to": "/ka/news/ganmarteba-erasmus-programis-shesadzleblobebis-shesakheb-sag/",
+      "suggested": true,
+      "reason": "News draft exists, but confirm the Event candidate and target before promotion"
+    },
+    {
+      "wpId": 34925,
+      "from": "https://erasmus.org.ge/november-webinars-part1/",
+      "to": "/ka/news/erasmus-is-erovnuli-opisi-sakartveloshi-gitsvevt-vebinarebze/",
+      "suggested": true,
+      "reason": "News draft exists, but confirm the Event candidate and target before promotion"
+    },
+    {
+      "wpId": 34934,
+      "from": "https://erasmus.org.ge/november-27-jean-monnet-webinar/",
+      "to": "/ka/news/erasmus-is-erovnuli-opisi-sakartveloshi-gitsvevt-vebinarze-2/",
+      "suggested": true,
+      "reason": "News draft exists, but confirm the Event candidate and target before promotion"
+    },
+    {
+      "wpId": 34943,
+      "from": "https://erasmus.org.ge/sharing-information-about-the-international-event-information-session-erasmus-capacity-building-in-higher-education-3-december-2025/",
+      "to": "/ka/news/inpormatsiis-gaziareba-saertashoriso-ghonisdziebis-shesakheb/",
+      "suggested": true,
+      "reason": "Proposed News slug; approve content and slug before promotion"
+    },
+    {
+      "wpId": 34955,
+      "from": "https://erasmus.org.ge/sharing-post-erasmus-mundus-activities-2026/",
+      "to": "/ka/news/erasmus-is-erovnuli-opisi-sakartveloshi-giziarebt-inpormatsi/",
+      "suggested": true,
+      "reason": "Proposed News slug; approve content and slug before promotion"
+    },
+    {
+      "wpId": 34963,
+      "from": "https://erasmus.org.ge/november-28-webinar-cb-vet-how-to-participate-in-erasmus-programme/",
+      "to": "/ka/news/erasmus-is-erovnuli-opisi-sakartveloshi-gitsvevt-vebinarze-3/",
+      "suggested": true,
+      "reason": "News draft exists, but confirm the Event candidate and target before promotion"
+    },
+    {
+      "wpId": 34970,
+      "from": "https://erasmus.org.ge/webinar-cooperation-partnership-and-alliances-for-innovation/",
+      "to": "/ka/news/erasmus-is-erovnuli-opisi-sakartveloshi-gitsvevt-vebinarze-4/",
+      "suggested": true,
+      "reason": "News draft exists, but confirm the Event candidate and target before promotion"
+    },
+    {
+      "wpId": 34991,
+      "from": "https://erasmus.org.ge/upcoming-event-neo-nov-webinars-and-int-events/",
+      "to": "/ka/news/erasmus-is-erovnuli-opisi-sakartveloshi-giziarebt-inpormat-2/",
+      "suggested": true,
+      "reason": "News draft exists, but confirm the Event candidate and target before promotion"
+    },
+    {
+      "wpId": 35005,
+      "from": "https://erasmus.org.ge/new-programme-guide-2026/",
+      "to": "/ka/news/gamokveqnda-2026-tslis-erasmus-is-programis-sakhelmdzghvanel/",
+      "suggested": true,
+      "reason": "Proposed News slug; approve content and slug before promotion"
+    },
+    {
+      "wpId": 35068,
+      "from": "https://erasmus.org.ge/december-1st-webinars-cb-youth-cb-sport/",
+      "to": "/ka/news/erasmus-is-erovnuli-opisi-sakartveloshi-gitsvevt-vebinareb-2/",
+      "suggested": true,
+      "reason": "News draft exists, but confirm the Event candidate and target before promotion"
+    },
+    {
+      "wpId": 35081,
+      "from": "https://erasmus.org.ge/erasmus-opportunities_schools/",
+      "to": "/ka/news/erasmus-is-erovnuli-opisi-sakartveloshi-gitsvevt-vebinarze-5/",
+      "suggested": true,
+      "reason": "News draft exists, but confirm the Event candidate and target before promotion"
+    },
+    {
+      "wpId": 35088,
+      "from": "https://erasmus.org.ge/online_bologna_event/",
+      "to": "/ka/news/boloniis-onlain-ghonisdzieba/",
+      "suggested": true,
+      "reason": "Proposed News slug; approve content and slug before promotion"
+    },
+    {
+      "wpId": 35105,
+      "from": "https://erasmus.org.ge/tam-on-microcredentials/",
+      "to": "/ka/news/2-3-dekemberi-onlain-shekhvedra-tam-teknikuri-dakhmarebis-mi/",
+      "suggested": true,
+      "reason": "News draft exists, but confirm the Event candidate and target before promotion"
+    },
+    {
+      "wpId": 35115,
+      "from": "https://erasmus.org.ge/webinar_how-to-create-a-competitive-proposal/",
+      "to": "/ka/news/erasmus-is-erovnuli-opisi-sakartveloshi-gitsvevt-vebinarze-1/",
+      "suggested": true,
+      "reason": "News draft exists, but confirm the Event candidate and target before promotion"
+    },
+    {
+      "wpId": 35127,
+      "from": "https://erasmus.org.ge/webinar_erasmus-resources-and-tools/",
+      "to": "/ka/news/erasmus-is-erovnuli-opisi-sakartveloshi-gitsvevt-vebinarze-6/",
+      "suggested": true,
+      "reason": "News draft exists, but confirm the Event candidate and target before promotion"
+    },
+    {
+      "wpId": 35135,
+      "from": "https://erasmus.org.ge/tam-2-heis-role-in-defining-quality-assurance-mechanisms/",
+      "to": "/ka/news/tam-teknikuri-dakhmarebis-misia-umaghlesi-ganatlebis-institu/",
+      "suggested": true,
+      "reason": "Proposed News slug; approve content and slug before promotion"
+    },
+    {
+      "wpId": 35152,
+      "from": "https://erasmus.org.ge/december-22_webinars_erasmus-mundus/",
+      "to": "/ka/news/erasmus-is-erovnuli-opisi-sakartveloshi-gitsvevt-vebinareb-3/",
+      "suggested": true,
+      "reason": "News draft exists, but confirm the Event candidate and target before promotion"
+    },
+    {
+      "wpId": 35251,
+      "from": "https://erasmus.org.ge/neo-dissemination-event-2025/",
+      "to": "/ka/news/erasmus-is-erovnuli-opisis-diseminatsiis-ghonisdzieba-2025/",
+      "suggested": true,
+      "reason": "Proposed News slug; approve content and slug before promotion"
+    },
+    {
+      "wpId": 35279,
+      "from": "https://erasmus.org.ge/eve-statistics/",
+      "to": "/ka/news/erasmus-virtualuri-gatsvlebis-eve-2025-tslis-saproekto-tsina/",
+      "suggested": true,
+      "reason": "News draft exists, but confirm the Event candidate and target before promotion"
+    },
+    {
+      "wpId": 35592,
+      "from": "https://erasmus.org.ge/vat-procedures/",
+      "to": "/ka/news/erasmus-programis-parglebshi-institutsiuri-proektebis-dghg-s/",
+      "suggested": true,
+      "reason": "Proposed News slug; approve content and slug before promotion"
+    },
+    {
+      "wpId": 35646,
+      "from": "https://erasmus.org.ge/sharing-information-about-cv-vet-application/",
+      "to": "/ka/news/ikhilet-dagenerirebuli-inpormatsia-cb-vet-2026-is-shesakheb/",
+      "suggested": true,
+      "reason": "Proposed News slug; approve content and slug before promotion"
+    },
+    {
+      "wpId": 35675,
+      "from": "https://erasmus.org.ge/%f0%9f%93%a3-information-about-capacity-building-project-proposals/",
+      "to": "/ka/news/information-about-capacity-building-project-proposals/",
+      "suggested": true,
+      "reason": "News draft exists, but confirm the Event candidate and target before promotion"
+    },
+    {
+      "wpId": 35726,
+      "from": "https://erasmus.org.ge/march-webinars/",
+      "to": "/ka/news/erasmus-is-erovnuli-opisi-sakartveloshi-giziarebt-martis-tvi/",
+      "suggested": true,
+      "reason": "News draft exists, but confirm the Event candidate and target before promotion"
+    },
+    {
+      "wpId": 35734,
+      "from": "https://erasmus.org.ge/blog-erasmus-international-cooperation-projects-in-georgia-sectoral-distribution-and-financial-overview/",
+      "to": "/ka/news/blogi-sakartveloshi-erasmus-saertashoriso-tanamshromlobis-pr/",
+      "suggested": true,
+      "reason": "Proposed News slug; approve content and slug before promotion"
+    },
+    {
+      "wpId": 35768,
+      "from": "https://erasmus.org.ge/16-march-webinars/",
+      "to": "/ka/news/erasmus-is-erovnuli-opisi-sakartveloshi-gitsvevt-vebinarebis/",
+      "suggested": true,
+      "reason": "News draft exists, but confirm the Event candidate and target before promotion"
+    },
+    {
+      "wpId": 35790,
+      "from": "https://erasmus.org.ge/eacea-online-info-session-2026-call-for-proposals-centres-of-vocational-excellence-cove/",
+      "to": "/ka/news/eacea-s-onlain-sainpormatsio-sesia-2026-tslis-sagranto-konku/",
+      "suggested": true,
+      "reason": "Proposed News slug; approve content and slug before promotion"
+    },
+    {
+      "wpId": 35818,
+      "from": "https://erasmus.org.ge/procedure-for-credit-recognition/",
+      "to": "/ka/news/sazghvargaret-mighebuli-ganatlebis-parglebshi-mighebuli-akad/",
+      "suggested": true,
+      "reason": "Proposed News slug; approve content and slug before promotion"
+    },
+    {
+      "wpId": 35827,
+      "from": "https://erasmus.org.ge/%f0%9f%93%a3-erasmus-26-%e1%83%9b%e1%83%90%e1%83%a0%e1%83%a2%e1%83%98%e1%83%a1-%e1%83%a1%e1%83%90%e1%83%98%e1%83%9c%e1%83%a4%e1%83%9d%e1%83%a0%e1%83%9b%e1%83%90%e1%83%aa%e1%83%98%e1%83%9d-%e1%83%95/",
+      "to": "/ka/news/erasmus-26-martis-sainpormatsio-vebinarebi-vet-sektoristvis/",
+      "suggested": true,
+      "reason": "News draft exists, but confirm the Event candidate and target before promotion"
+    },
+    {
+      "wpId": 35834,
+      "from": "https://erasmus.org.ge/event-follow-up-march-webinars/",
+      "to": "/ka/news/erasmus-is-erovnuli-opisis-strategiuli-mkhardachera-programi/",
+      "suggested": true,
+      "reason": "News draft exists, but confirm the Event candidate and target before promotion"
+    },
+    {
+      "wpId": 35851,
+      "from": "https://erasmus.org.ge/the-national-erasmus-office-in-georgia-invites-you-to-the-webinar-erasmus-opportunities-for-schools/",
+      "to": "/ka/news/erasmus-is-erovnuli-opisi-sakartveloshi-gitsvevt-vebinarze-e/",
+      "suggested": true,
+      "reason": "News draft exists, but confirm the Event candidate and target before promotion"
+    },
+    {
+      "wpId": 35871,
+      "from": "https://erasmus.org.ge/april-webinars-newsletter-post/",
+      "to": "/ka/news/erasmus-is-erovnuli-opisi-sakartveloshi-giziarebt-aprilis-tv/",
+      "suggested": true,
+      "reason": "News draft exists, but confirm the Event candidate and target before promotion"
+    },
+    {
+      "wpId": 35878,
+      "from": "https://erasmus.org.ge/6-april-webinars-for-students-and-youth/",
+      "to": "/ka/news/erasmus-is-erovnuli-opisi-sakartveloshi-gitsvevt-vebinareb-4/",
+      "suggested": true,
+      "reason": "News draft exists, but confirm the Event candidate and target before promotion"
+    },
+    {
+      "wpId": 35885,
+      "from": "https://erasmus.org.ge/neo-esn-meeting-at-guram-dochanashvili-school/",
+      "to": "/ka/news/erasmus-is-erovnuli-opisisa-da-esn-is-shekhvedra-guram-docha/",
+      "suggested": true,
+      "reason": "Proposed News slug; approve content and slug before promotion"
+    },
+    {
+      "wpId": 35919,
+      "from": "https://erasmus.org.ge/webinar-on-april-20-centres-of-vocational-excellence-cove-for-vet-organisations/",
+      "to": "/ka/news/erasmus-is-erovnuli-sakartveloshi-20-aprils-gitsvevt-vebinar/",
+      "suggested": true,
+      "reason": "News draft exists, but confirm the Event candidate and target before promotion"
+    },
+    {
+      "wpId": 35942,
+      "from": "https://erasmus.org.ge/neo-esn-webinars/",
+      "to": "/ka/news/erasmus-is-erovnuli-opisisa-da-esn-georgia-s-organizebit-cha/",
+      "suggested": true,
+      "reason": "News draft exists, but confirm the Event candidate and target before promotion"
+    },
+    {
+      "wpId": 35954,
+      "from": "https://erasmus.org.ge/guide-for-newcomers-for-youth-webinar/",
+      "to": "/ka/news/erasmus-is-erovnuli-opisi-sakartveloshi-21-aprils-gitsvevt-v/",
+      "suggested": true,
+      "reason": "News draft exists, but confirm the Event candidate and target before promotion"
+    },
+    {
+      "wpId": 35962,
+      "from": "https://erasmus.org.ge/21-april-webinars-for-youth-youth-mobility/",
+      "to": "/ka/news/erasmus-is-erovnuli-opisi-sakartveloshi-21-aprils-gitsvevt-2/",
+      "suggested": true,
+      "reason": "News draft exists, but confirm the Event candidate and target before promotion"
+    },
+    {
+      "wpId": 35972,
+      "from": "https://erasmus.org.ge/27-april-webinar-mobility-for-youth-workers/",
+      "to": "/ka/news/erasmus-is-erovnuli-opisi-sakartveloshi-27-aprils-gitsvevt-v/",
+      "suggested": true,
+      "reason": "News draft exists, but confirm the Event candidate and target before promotion"
+    },
+    {
+      "wpId": 35979,
+      "from": "https://erasmus.org.ge/erasmus-%e1%83%98%e1%83%a1-%e1%83%94%e1%83%a0%e1%83%9d%e1%83%95%e1%83%9c%e1%83%a3%e1%83%9a%e1%83%98-%e1%83%9d%e1%83%a4%e1%83%98%e1%83%a1%e1%83%98-%e1%83%a1%e1%83%90%e1%83%a5%e1%83%90%e1%83%a0/",
+      "to": "/ka/news/erasmus-is-erovnuli-opisi-sakartveloshi-27-aprils-gitsvevt-2/",
+      "suggested": true,
+      "reason": "News draft exists, but confirm the Event candidate and target before promotion"
+    },
+    {
+      "wpId": 35987,
+      "from": "https://erasmus.org.ge/%f0%9f%93%a3-erasmus-%e1%83%98%e1%83%a1-%e1%83%94%e1%83%a0%e1%83%9d%e1%83%95%e1%83%9c%e1%83%a3%e1%83%9a%e1%83%9b%e1%83%90-%e1%83%9d%e1%83%a4%e1%83%98%e1%83%a1%e1%83%9b%e1%83%90-%e1%83%a1%e1%83%90/",
+      "to": "/ka/news/erasmus-is-erovnulma-opisma-sakartveloshi-chaatara-vebinari/",
+      "suggested": true,
+      "reason": "News draft exists, but confirm the Event candidate and target before promotion"
+    },
+    {
+      "wpId": 35998,
+      "from": "https://erasmus.org.ge/uks-association-to-e/",
+      "to": "/ka/news/evrokavshirisa-da-gaertianebuli-samepos-shetankhmebit-gaerti/",
+      "suggested": true,
+      "reason": "Proposed News slug; approve content and slug before promotion"
+    },
+    {
+      "wpId": 36035,
+      "from": "https://erasmus.org.ge/europe-day-event-may-9-2026/",
+      "to": null,
+      "suggested": true,
+      "reason": "No Georgian News draft; resolve language or conversion failure first"
+    },
+    {
+      "wpId": 36042,
+      "from": "https://erasmus.org.ge/europe-day-follow-up-post/",
+      "to": "/ka/news/9-maisi-2026-evropis-dghis-ghonisdzieba-ekspo-jorjiashi/",
+      "suggested": true,
+      "reason": "Proposed News slug; approve content and slug before promotion"
+    },
+    {
+      "wpId": 36064,
+      "from": "https://erasmus.org.ge/neo-esn-meeting-with-green-school/",
+      "to": "/ka/news/erasmus-is-erovnuli-opisis-organizebit-da-esn-georgia-stan-t/",
+      "suggested": true,
+      "reason": "Proposed News slug; approve content and slug before promotion"
+    },
+    {
+      "wpId": 36077,
+      "from": "https://erasmus.org.ge/erasmus-for-students-at-alte-uni/",
+      "to": "/ka/news/mzad-khart-erasmus-programis-meshveobit-istsavlot-imogzaurot/",
+      "suggested": true,
+      "reason": "Proposed News slug; approve content and slug before promotion"
+    },
+    {
+      "wpId": 36085,
+      "from": "https://erasmus.org.ge/11-june-event-for-sports-and-youth-sectors/",
+      "to": "/ka/news/paneluri-diskusiebi-urtiertstsavleba-sportisa-da-akhalgazrdo/",
+      "suggested": true,
+      "reason": "Proposed News slug; approve content and slug before promotion"
+    },
+    {
+      "wpId": 36092,
+      "from": "https://erasmus.org.ge/27-may-panel-discussion-for-students/",
+      "to": "/ka/news/erasmus-is-erovnuli-opisis-organizebit-27-maiss-studentebist/",
+      "suggested": true,
+      "reason": "Proposed News slug; approve content and slug before promotion"
+    },
+    {
+      "wpId": 36103,
+      "from": "https://erasmus.org.ge/%f0%9f%93%a3-%e1%83%a1%e1%83%90%e1%83%94%e1%83%a0%e1%83%97%e1%83%90%e1%83%a8%e1%83%9d%e1%83%a0%e1%83%98%e1%83%a1%e1%83%9d-%e1%83%9d%e1%83%9c%e1%83%9a%e1%83%90%e1%83%98%e1%83%9c-%e1%83%99%e1%83%9d/",
+      "to": "/ka/news/saertashoriso-onlain-konperentsia-dialogis-sivrtse-inkluziur/",
+      "suggested": true,
+      "reason": "News draft exists, but confirm the Event candidate and target before promotion"
+    },
+    {
+      "wpId": 36117,
+      "from": "https://erasmus.org.ge/june-11-12-events-article/",
+      "to": "/ka/news/11-12-ivniss-sportisa-da-akhalgazrdobis-sektorebistvis-chata/",
+      "suggested": true,
+      "reason": "News draft exists, but confirm the Event candidate and target before promotion"
+    },
+    {
+      "wpId": 36121,
+      "from": "https://erasmus.org.ge/%f0%9f%93%a3-erasmus%e1%83%98%e1%83%a1-%e1%83%94%e1%83%a0%e1%83%9d%e1%83%95%e1%83%9c%e1%83%a3%e1%83%9a%e1%83%98-%e1%83%9d%e1%83%a4%e1%83%98%e1%83%a1%e1%83%98-%e1%83%a1%e1%83%90%e1%83%a5%e1%83%90/",
+      "to": "/ka/news/erasmus-is-erovnuli-opisi-sakartveloshi-giziarebt-akhlo-moma/",
+      "suggested": true,
+      "reason": "News draft exists, but confirm the Event candidate and target before promotion"
+    },
+    {
+      "wpId": 36152,
+      "from": "https://erasmus.org.ge/summary-international-online-conference-inclusive-and-accessible-erasmus-actions/",
+      "to": null,
+      "suggested": true,
+      "reason": "No Georgian News draft; resolve language or conversion failure first"
+    },
+    {
+      "wpId": 36158,
+      "from": "https://erasmus.org.ge/11-july-europe-day-in-batumi/",
+      "to": "/ka/news/11-ivlisi-evropis-dghe-kalak-batumshi/",
+      "suggested": true,
+      "reason": "Proposed News slug; approve content and slug before promotion"
+    },
+    {
+      "wpId": 36204,
+      "from": "https://erasmus.org.ge/september-21-plagiarism-event-announcement/",
+      "to": "/ka/news/21-sektemberi-plagiati-khelovnuri-intelektis-ai-epokashi/",
+      "suggested": true,
+      "reason": "Proposed News slug; approve content and slug before promotion"
+    },
+    {
+      "wpId": 36212,
+      "from": "https://erasmus.org.ge/neo-upcoming-events-for-july-september/",
+      "to": "/ka/news/akhlo-momavalshi-dagegmili-ghonisdziebebis-kalendari/",
+      "suggested": true,
+      "reason": "Proposed News slug; approve content and slug before promotion"
+    },
+    {
+      "wpId": 36228,
+      "from": "https://erasmus.org.ge/newsletter-vol-5-summer-break-announcement/",
+      "to": "/ka/news/erasmus-is-erovnuli-opisis-sazapkhulo-shesveneba-1-31-agvist/",
+      "suggested": true,
+      "reason": "Proposed News slug; approve content and slug before promotion"
+    },
+    {
+      "wpId": 36278,
+      "from": "https://erasmus.org.ge/newsletter-post-july-24-event-summary/",
+      "to": "/ka/news/24-ivliss-erasmus-is-erovnuli-opisis-organizebit-chatarda-gh/",
+      "suggested": true,
+      "reason": "News draft exists, but confirm the Event candidate and target before promotion"
+    },
+    {
+      "wpId": 36334,
+      "from": "https://erasmus.org.ge/neo-planned-events-before-september-15/",
+      "to": "/ka/news/sektembris-tveshi-dagegmili-vebinarebis-kalendari/",
+      "suggested": true,
+      "reason": "News draft exists, but confirm the Event candidate and target before promotion"
+    },
+    {
+      "wpId": 36349,
+      "from": "https://erasmus.org.ge/networking-event/",
+      "to": null,
+      "suggested": true,
+      "reason": "No Georgian News draft; resolve language or conversion failure first"
+    },
+    {
+      "wpId": 36356,
+      "from": "https://erasmus.org.ge/erasmus-%e1%83%93%e1%83%a6%e1%83%94%e1%83%94%e1%83%91%e1%83%98-2026/",
+      "to": "/ka/news/erasmus-dgheebi-2026/",
+      "suggested": true,
+      "reason": "Proposed News slug; approve content and slug before promotion"
+    },
+    {
+      "wpId": 36392,
+      "from": "https://erasmus.org.ge/%f0%9f%93%a3-erasmus-%e1%83%98%e1%83%a1-%e1%83%94%e1%83%a0%e1%83%9d%e1%83%95%e1%83%9c%e1%83%a3%e1%83%9a%e1%83%98-%e1%83%9d%e1%83%a4%e1%83%98%e1%83%a1%e1%83%98-%e1%83%a1%e1%83%90%e1%83%a5%e1%83%90/",
+      "to": "/ka/news/erasmus-is-erovnuli-opisi-sakartveloshi-giziarebt-publikatsi/",
+      "suggested": true,
+      "reason": "Proposed News slug; approve content and slug before promotion"
+    },
+    {
+      "wpId": 36434,
+      "from": "https://erasmus.org.ge/newsletter-post-september-events/",
+      "to": "/ka/news/erasmus-is-erovnuli-opisi-sakartveloshi-giziarebt-sektembris/",
+      "suggested": true,
+      "reason": "Proposed News slug; approve content and slug before promotion"
+    },
+    {
+      "wpId": 36445,
+      "from": "https://erasmus.org.ge/newsletter-post-tam-event-news/",
+      "to": "/ka/news/erasmus-is-erovnuli-opisi-sakartveloshi-giziarebt-inpormat-3/",
+      "suggested": true,
+      "reason": "Proposed News slug; approve content and slug before promotion"
+    },
+    {
+      "wpId": 36453,
+      "from": "https://erasmus.org.ge/%f0%9f%93%a3-erasmus-%e1%83%98%e1%83%a1-%e1%83%94%e1%83%a0%e1%83%9d%e1%83%95%e1%83%9c%e1%83%a3%e1%83%9a%e1%83%98-%e1%83%9d%e1%83%a4%e1%83%98%e1%83%a1%e1%83%98%e1%83%a1-%e1%83%9d%e1%83%a0%e1%83%92/",
+      "to": "/ka/news/erasmus-is-erovnuli-opisis-organizebit-chatarda-saertashoris/",
+      "suggested": true,
+      "reason": "News draft exists, but confirm the Event candidate and target before promotion"
+    },
+    {
+      "wpId": 36463,
+      "from": "https://erasmus.org.ge/tam-after-event-post/",
+      "to": "/ka/news/teknikuri-dakhmarebis-misia-tam-khelovnuri-intelekti-da-tsip/",
+      "suggested": true,
+      "reason": "Proposed News slug; approve content and slug before promotion"
+    },
+    {
+      "wpId": 36477,
+      "from": "https://erasmus.org.ge/newsletter-announcement-tam-2/",
+      "to": "/ka/news/dagegmili-ghonisdzieba-teknikuri-dakhmarebis-misia-tam-mikro/",
+      "suggested": true,
+      "reason": "Proposed News slug; approve content and slug before promotion"
+    },
+    {
+      "wpId": 36485,
+      "from": "https://erasmus.org.ge/newsletter-event-for-students/",
+      "to": "/ka/news/dagegmili-onlain-ghonisdzieba-studentebistvis-erasmus-progra/",
+      "suggested": true,
+      "reason": "Proposed News slug; approve content and slug before promotion"
+    },
+    {
+      "wpId": 36509,
+      "from": "https://erasmus.org.ge/%f0%9f%93%a3-winning-projects-jma-cb-youth-virtual-exchanges/",
+      "to": null,
+      "suggested": true,
+      "reason": "No Georgian News draft; resolve language or conversion failure first"
+    },
+    {
+      "wpId": 36525,
+      "from": "https://erasmus.org.ge/%f0%9f%8e%89-10-%e1%83%9d%e1%83%a5%e1%83%a2%e1%83%9d%e1%83%9b%e1%83%91%e1%83%94%e1%83%a0%e1%83%a1-%e1%83%99%e1%83%90%e1%83%ae%e1%83%94%e1%83%97%e1%83%a8%e1%83%98-%e1%83%94%e1%83%95/",
+      "to": "/ka/news/10-oktombers-kakhetshi-evropis-dghis-ghonisdzieba-imarteba/",
+      "suggested": true,
+      "reason": "Proposed News slug; approve content and slug before promotion"
+    },
+    {
+      "wpId": 36531,
+      "from": "https://erasmus.org.ge/europe-day-in-kakheti/",
+      "to": "/ka/news/10-oktombers-kakhetshi-evropis-dghis-aghsanishnavi-ghonisdzi/",
+      "suggested": true,
+      "reason": "Proposed News slug; approve content and slug before promotion"
+    },
+    {
+      "wpId": 36541,
+      "from": "https://erasmus.org.ge/%f0%9f%93%a3-16-%e1%83%9d%e1%83%a5%e1%83%a2%e1%83%9d%e1%83%9b%e1%83%91%e1%83%94%e1%83%a0%e1%83%98-%e1%83%9d%e1%83%9c%e1%83%9a%e1%83%90%e1%83%98%e1%83%9c-%e1%83%a6%e1%83%9d%e1%83%9c%e1%83%98%e1%83%a1/",
+      "to": "/ka/news/16-oktomberi-onlain-ghonisdzieba-studentebistvis-rogor-gavkh/",
+      "suggested": true,
+      "reason": "Proposed News slug; approve content and slug before promotion"
+    },
+    {
+      "wpId": 36567,
+      "from": "https://erasmus.org.ge/%f0%9f%93%a3-%e1%83%9d%e1%83%9c%e1%83%9a%e1%83%90%e1%83%98%e1%83%9c-%e1%83%a6%e1%83%9d%e1%83%9c%e1%83%98%e1%83%a1%e1%83%ab%e1%83%98%e1%83%94%e1%83%91%e1%83%90-%e1%83%a1%e1%83%a2%e1%83%a3%e1%83%93/",
+      "to": "/ka/news/onlain-ghonisdzieba-studentebistvis-rogor-gavkhadot-erasmus/",
+      "suggested": true,
+      "reason": "Proposed News slug; approve content and slug before promotion"
+    },
+    {
+      "wpId": 36576,
+      "from": "https://erasmus.org.ge/tam-on-microcredentials-12-10-2026/",
+      "to": "/ka/news/teknikuri-dakhmarebis-misia-mikrokreditebis-danergva-sakartv/",
+      "suggested": true,
+      "reason": "Proposed News slug; approve content and slug before promotion"
+    }
+  ],
+  "pages": {
+    "complete": true,
+    "error": null,
+    "scope": "Published top-level WordPress pages only (parent=0), all dates",
+    "items": [
+      {
+        "wpId": 158,
+        "title": "Neo Georgea",
+        "from": "https://erasmus.org.ge/about/",
+        "suggestedTargetSection": "/ka/about/",
+        "reason": "About: office, team, services, HEREs or contact",
+        "suggested": true
+      },
+      {
+        "wpId": 201,
+        "title": "What does Neo do",
+        "from": "https://erasmus.org.ge/all-courses/",
+        "suggestedTargetSection": "/ka/about/",
+        "reason": "About: office, team, services, HEREs or contact",
+        "suggested": true
+      },
+      {
+        "wpId": 25727,
+        "title": "Erasmus Georgia",
+        "from": "https://erasmus.org.ge/",
+        "suggestedTargetSection": "/ka/",
+        "reason": "Old site root maps to the Georgian home in the approved sitemap",
+        "suggested": true
+      },
+      {
+        "wpId": 25728,
+        "title": "Contact us",
+        "from": "https://erasmus.org.ge/contact/",
+        "suggestedTargetSection": "/ka/about/",
+        "reason": "About: office, team, services, HEREs or contact",
+        "suggested": true
+      },
+      {
+        "wpId": 25771,
+        "title": "open calls",
+        "from": "https://erasmus.org.ge/open-calls/",
+        "suggestedTargetSection": "/ka/calls/",
+        "reason": "Calls and deadlines",
+        "suggested": true
+      },
+      {
+        "wpId": 25774,
+        "title": "recourses",
+        "from": "https://erasmus.org.ge/recourses/",
+        "suggestedTargetSection": "/ka/resources/",
+        "reason": "Resources: publications, statistics, FAQ, priorities or education system",
+        "suggested": true
+      },
+      {
+        "wpId": 25777,
+        "title": "HERE",
+        "from": "https://erasmus.org.ge/here/",
+        "suggestedTargetSection": "/ka/about/",
+        "reason": "About: office, team, services, HEREs or contact",
+        "suggested": true
+      },
+      {
+        "wpId": 25780,
+        "title": "PUBLICATIONS",
+        "from": "https://erasmus.org.ge/publications/",
+        "suggestedTargetSection": "/ka/resources/",
+        "reason": "Resources: publications, statistics, FAQ, priorities or education system",
+        "suggested": true
+      },
+      {
+        "wpId": 25783,
+        "title": "News",
+        "from": "https://erasmus.org.ge/news/",
+        "suggestedTargetSection": "/ka/news/",
+        "reason": "News, split into News and Events after type review",
+        "suggested": true
+      },
+      {
+        "wpId": 25786,
+        "title": "statistics",
+        "from": "https://erasmus.org.ge/statistics/",
+        "suggestedTargetSection": "/ka/resources/",
+        "reason": "Resources: publications, statistics, FAQ, priorities or education system",
+        "suggested": true
+      },
+      {
+        "wpId": 25789,
+        "title": "Capacity_Building_in_the_Field_of_Youth_ArtSector",
+        "from": "https://erasmus.org.ge/faqs/",
+        "suggestedTargetSection": "/ka/opportunities/",
+        "reason": "Opportunities: review the relevant structured Action page",
+        "suggested": true
+      },
+      {
+        "wpId": 25891,
+        "title": "რას აკეთებს HERE?",
+        "from": "https://erasmus.org.ge/%e1%83%a0%e1%83%90%e1%83%a1-%e1%83%90%e1%83%99%e1%83%94%e1%83%97%e1%83%94%e1%83%91%e1%83%a1-here/",
+        "suggestedTargetSection": "/ka/about/",
+        "reason": "About: office, team, services, HEREs or contact",
+        "suggested": true
+      },
+      {
+        "wpId": 25894,
+        "title": "HERE 2021-2027",
+        "from": "https://erasmus.org.ge/here-2021-2027/",
+        "suggestedTargetSection": "/ka/about/",
+        "reason": "About: office, team, services, HEREs or contact",
+        "suggested": true
+      },
+      {
+        "wpId": 26076,
+        "title": "Deadlines",
+        "from": "https://erasmus.org.ge/deadlines/",
+        "suggestedTargetSection": "/ka/calls/",
+        "reason": "Calls and deadlines",
+        "suggested": true
+      },
+      {
+        "wpId": 26321,
+        "title": "HEREs Event 2024",
+        "from": "https://erasmus.org.ge/heres-event-2024/",
+        "suggestedTargetSection": "/ka/about/",
+        "reason": "About: office, team, services, HEREs or contact",
+        "suggested": true
+      },
+      {
+        "wpId": 26365,
+        "title": "DISCOVER ERASMUS+ OPPORTUNITIES – INTRODUCTORY WEBINAR INVITATION",
+        "from": "https://erasmus.org.ge/discover-erasmus-opportunities-introductory-webinar-invitation/",
+        "suggestedTargetSection": "/ka/opportunities/",
+        "reason": "Opportunities: review the relevant structured Action page",
+        "suggested": true
+      },
+      {
+        "wpId": 26385,
+        "title": "Elementor #26385",
+        "from": "https://erasmus.org.ge/elementor-26385/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 26401,
+        "title": "Elementor #26401",
+        "from": "https://erasmus.org.ge/elementor-26401/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 26418,
+        "title": "Elementor #26418",
+        "from": "https://erasmus.org.ge/elementor-26418/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 26434,
+        "title": "Elementor #26434",
+        "from": "https://erasmus.org.ge/elementor-26434/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 26446,
+        "title": "Elementor #26446",
+        "from": "https://erasmus.org.ge/elementor-26446/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 26466,
+        "title": "The remarkable path of Georgian youth sector in the Erasmus+",
+        "from": "https://erasmus.org.ge/the-remarkable-path-of-georgian-youth-sector-in-the-erasmus/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 26474,
+        "title": "Can Georgia become an Associated Country to the Erasmus+ programme?",
+        "from": "https://erasmus.org.ge/can-georgia-become-an-associated-country-to-the-erasmus-programme/",
+        "suggestedTargetSection": "/ka/opportunities/",
+        "reason": "Opportunities: review the relevant structured Action page",
+        "suggested": true
+      },
+      {
+        "wpId": 26482,
+        "title": "Navigating the path to international partnerships in Erasmus+",
+        "from": "https://erasmus.org.ge/navigating-the-path-to-international-partnerships-in-erasmus/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 26497,
+        "title": "How to know what are the opportunities available for Georgian organizations and institutions?",
+        "from": "https://erasmus.org.ge/how-to-know-what-are-the-opportunities-available-for-georgian-organizations-and-institutions/",
+        "suggestedTargetSection": "/ka/opportunities/",
+        "reason": "Opportunities: review the relevant structured Action page",
+        "suggested": true
+      },
+      {
+        "wpId": 26510,
+        "title": "Erasmus+ Goes Global: Why It Matters for Georgia",
+        "from": "https://erasmus.org.ge/erasmus-goes-global-why-it-matters-for-georgia/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 26528,
+        "title": "How to know what are the opportunities available for Georgian organizations and institutions?",
+        "from": "https://erasmus.org.ge/how-to-know-what-are-the-opportunities-available-for-georgian-organizations-and-institutions-2/",
+        "suggestedTargetSection": "/ka/opportunities/",
+        "reason": "Opportunities: review the relevant structured Action page",
+        "suggested": true
+      },
+      {
+        "wpId": 26545,
+        "title": "Erasmus+ Mobility: Preparing Georgia’s Students for the Global Workforce",
+        "from": "https://erasmus.org.ge/erasmus-mobility-preparing-georgias-students-for-the-global-workforce/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 26569,
+        "title": "Title: Embracing EU Values: A Pathway to Opportunity for Applicants from Georgia",
+        "from": "https://erasmus.org.ge/title-embracing-eu-values-a-pathway-to-opportunity-for-applicants-from-georgia/",
+        "suggestedTargetSection": "/ka/opportunities/",
+        "reason": "Opportunities: review the relevant structured Action page",
+        "suggested": true
+      },
+      {
+        "wpId": 26584,
+        "title": "Understanding Erasmus+ Support Structures",
+        "from": "https://erasmus.org.ge/understanding-erasmus-support-structures/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 26591,
+        "title": "Understanding Erasmus+ Support Structures",
+        "from": "https://erasmus.org.ge/understanding-erasmus-support-structures-2/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 26606,
+        "title": "Erasmus+ Mobility for Students",
+        "from": "https://erasmus.org.ge/erasmus-mobility-for-students/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 26632,
+        "title": "Breaking Down Barriers with Erasmus+",
+        "from": "https://erasmus.org.ge/breaking-down-barriers-with-erasmus/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 26644,
+        "title": "Rethinking Higher Education Practices in the Era of Artificial Intelligence – Alexander Tevzadze",
+        "from": "https://erasmus.org.ge/rethinking-higher-education-practices-in-the-era-of-artificial-intelligence-alexander-tevzadze/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 26658,
+        "title": "Internationalization as a tool for quality enhancement",
+        "from": "https://erasmus.org.ge/internationalization-as-a-tool-for-quality-enhancement/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 26666,
+        "title": "SQUARE Project – Irma Grdzelidze",
+        "from": "https://erasmus.org.ge/square-project-irma-grdzelidze/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 26678,
+        "title": "Fostering the third mission of universities – Tamar Sanikidze",
+        "from": "https://erasmus.org.ge/fostering-the-third-mission-of-universities-tamar-sanikidze/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 26728,
+        "title": "Elementor #26728",
+        "from": "https://erasmus.org.ge/elementor-26728/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 26741,
+        "title": "Elementor #26741",
+        "from": "https://erasmus.org.ge/elementor-26741/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 26772,
+        "title": "NEO-ს პრეს-რელიზი",
+        "from": "https://erasmus.org.ge/neo-%e1%83%a1-%e1%83%9e%e1%83%a0%e1%83%94%e1%83%a1-%e1%83%a0%e1%83%94%e1%83%9a%e1%83%98%e1%83%96%e1%83%98-2/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 27161,
+        "title": "Reminder – ერასმუს+ მსხვილმასშტაბიანი CBHE პროგრამის კლასტერული შეხვედრა საქართველოში",
+        "from": "https://erasmus.org.ge/reminder-%e1%83%94%e1%83%a0%e1%83%90%e1%83%a1%e1%83%9b%e1%83%a3%e1%83%a1-%e1%83%9b%e1%83%a1%e1%83%ae%e1%83%95%e1%83%98%e1%83%9a%e1%83%9b%e1%83%90%e1%83%a1%e1%83%a8%e1%83%a2%e1%83%90%e1%83%91/",
+        "suggestedTargetSection": "/ka/opportunities/",
+        "reason": "Opportunities: review the relevant structured Action page",
+        "suggested": true
+      },
+      {
+        "wpId": 27524,
+        "title": "HEREs event on reforming research assessment in the European Union",
+        "from": "https://erasmus.org.ge/heres-event-on-reforming-research-assessment-in-the-european-union-2/",
+        "suggestedTargetSection": "/ka/about/",
+        "reason": "About: office, team, services, HEREs or contact",
+        "suggested": true
+      },
+      {
+        "wpId": 27586,
+        "title": "erasmus+ statisticsbefore2014",
+        "from": "https://erasmus.org.ge/erasmusstatisticsbefore2014/",
+        "suggestedTargetSection": "/ka/resources/",
+        "reason": "Resources: publications, statistics, FAQ, priorities or education system",
+        "suggested": true
+      },
+      {
+        "wpId": 27592,
+        "title": "erasmus+statistics2014-2020",
+        "from": "https://erasmus.org.ge/erasmusstatistics2014-2020/",
+        "suggestedTargetSection": "/ka/resources/",
+        "reason": "Resources: publications, statistics, FAQ, priorities or education system",
+        "suggested": true
+      },
+      {
+        "wpId": 27597,
+        "title": "erasmus+statistics2021-2027",
+        "from": "https://erasmus.org.ge/erasmusstatistics2021-2027/",
+        "suggestedTargetSection": "/ka/resources/",
+        "reason": "Resources: publications, statistics, FAQ, priorities or education system",
+        "suggested": true
+      },
+      {
+        "wpId": 28330,
+        "title": "გაცვლითი პროგრამა",
+        "from": "https://erasmus.org.ge/28330-2/",
+        "suggestedTargetSection": "/ka/opportunities/",
+        "reason": "Opportunities: review the relevant structured Action page",
+        "suggested": true
+      },
+      {
+        "wpId": 28343,
+        "title": "განათლება საერთაშორისო გაცვლითი პროგრამებით",
+        "from": "https://erasmus.org.ge/28343-2/",
+        "suggestedTargetSection": "/ka/opportunities/",
+        "reason": "Opportunities: review the relevant structured Action page",
+        "suggested": true
+      },
+      {
+        "wpId": 28347,
+        "title": "Erasmus პროგრამა საქართველოში",
+        "from": "https://erasmus.org.ge/28347-2/",
+        "suggestedTargetSection": "/ka/opportunities/",
+        "reason": "Opportunities: review the relevant structured Action page",
+        "suggested": true
+      },
+      {
+        "wpId": 28360,
+        "title": "erasmus",
+        "from": "https://erasmus.org.ge/28360-2/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 28366,
+        "title": "Erasmus+ საქართველოში",
+        "from": "https://erasmus.org.ge/28366-2/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 28377,
+        "title": "“Erasmus-ის პროგრამა საქართველოში: ყველაფერი, რაც უნდა იცოდეთ!”",
+        "from": "https://erasmus.org.ge/28377-2/",
+        "suggestedTargetSection": "/ka/opportunities/",
+        "reason": "Opportunities: review the relevant structured Action page",
+        "suggested": true
+      },
+      {
+        "wpId": 28382,
+        "title": "Erasmus Program in Georgia",
+        "from": "https://erasmus.org.ge/28382-2/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 28390,
+        "title": "“Erasmus Georgia – Opportunities for International Education and Development”",
+        "from": "https://erasmus.org.ge/28390-2/",
+        "suggestedTargetSection": "/ka/opportunities/",
+        "reason": "Opportunities: review the relevant structured Action page",
+        "suggested": true
+      },
+      {
+        "wpId": 28392,
+        "title": "Erasmus Georgia Program",
+        "from": "https://erasmus.org.ge/28392-2/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 28395,
+        "title": "“Erasmus Georgia – Explore International Education and Exchange Opportunities”",
+        "from": "https://erasmus.org.ge/28395-2/",
+        "suggestedTargetSection": "/ka/opportunities/",
+        "reason": "Opportunities: review the relevant structured Action page",
+        "suggested": true
+      },
+      {
+        "wpId": 28666,
+        "title": "erasmus cbhe 2024 statistics link",
+        "from": "https://erasmus.org.ge/28666-2/",
+        "suggestedTargetSection": "/ka/resources/",
+        "reason": "Resources: publications, statistics, FAQ, priorities or education system",
+        "suggested": true
+      },
+      {
+        "wpId": 29063,
+        "title": "პროგრამები",
+        "from": "https://erasmus.org.ge/%e1%83%9e%e1%83%a0%e1%83%9d%e1%83%92%e1%83%a0%e1%83%90%e1%83%9b%e1%83%94%e1%83%91%e1%83%98/",
+        "suggestedTargetSection": "/ka/opportunities/",
+        "reason": "Opportunities: review the relevant structured Action page",
+        "suggested": true
+      },
+      {
+        "wpId": 29140,
+        "title": "უმაღლესი განათლება",
+        "from": "https://erasmus.org.ge/%e1%83%a3%e1%83%9b%e1%83%90%e1%83%a6%e1%83%9a%e1%83%94%e1%83%a1%e1%83%98-%e1%83%92%e1%83%90%e1%83%9c%e1%83%90%e1%83%97%e1%83%9a%e1%83%94%e1%83%91%e1%83%90/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 29177,
+        "title": "Mobility projects for HE students and staff",
+        "from": "https://erasmus.org.ge/mobility-projects-for-he-students-and-staff/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 29191,
+        "title": "ICM HE students and staff",
+        "from": "https://erasmus.org.ge/icm-he-students-and-staff/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 29197,
+        "title": "Mobility for learners and staff in VET",
+        "from": "https://erasmus.org.ge/mobility-for-learners-and-staff-in-vet/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 29207,
+        "title": "Mobility for young people – Youth exchange",
+        "from": "https://erasmus.org.ge/mobility-for-young-people-youth-exchange/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 29212,
+        "title": "Mobility projects for youth workers",
+        "from": "https://erasmus.org.ge/mobility-projects-for-youth-workers/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 29217,
+        "title": "Youth participation activities – non-formal activities",
+        "from": "https://erasmus.org.ge/youth-participation-activities-non-formal-activities/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 29222,
+        "title": "Virtual exchanges in higher education and youth",
+        "from": "https://erasmus.org.ge/virtual-exchanges-in-higher-education-and-youth/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 29229,
+        "title": "Cooperation Partnerships for Higher Education",
+        "from": "https://erasmus.org.ge/cooperation-partnerships-for-higher-education/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 29235,
+        "title": "Cooperation partnership in the filed of VET",
+        "from": "https://erasmus.org.ge/cooperation-partnership-in-the-filed-of-vet/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 29240,
+        "title": "Cooperation partnership in the filed of School",
+        "from": "https://erasmus.org.ge/cooperation-partnership-in-the-filed-of-school/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 29245,
+        "title": "Cooperation partnership in the filed of adult education",
+        "from": "https://erasmus.org.ge/cooperation-partnership-in-the-filed-of-adult-education/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 29250,
+        "title": "Cooperation partnership in the filed of youth",
+        "from": "https://erasmus.org.ge/cooperation-partnership-in-the-filed-of-youth/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 29255,
+        "title": "Cooperation partnership in the filed of Sport",
+        "from": "https://erasmus.org.ge/cooperation-partnership-in-the-filed-of-sport/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 29260,
+        "title": "Centers of vocation excellence",
+        "from": "https://erasmus.org.ge/centers-of-vocation-excellence/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 29265,
+        "title": "Erasmus Mundus Joint Master Degree",
+        "from": "https://erasmus.org.ge/erasmus-mundus-joint-master-degree/",
+        "suggestedTargetSection": "/ka/opportunities/",
+        "reason": "Opportunities: review the relevant structured Action page",
+        "suggested": true
+      },
+      {
+        "wpId": 29270,
+        "title": "Alliances for innovation",
+        "from": "https://erasmus.org.ge/alliances-for-innovation-hei-vet-training-broader-socio-economic-env/",
+        "suggestedTargetSection": "/ka/about/",
+        "reason": "About: office, team, services, HEREs or contact",
+        "suggested": true
+      },
+      {
+        "wpId": 29275,
+        "title": "Capacity builiding in the filed of higher education",
+        "from": "https://erasmus.org.ge/capacity-builiding-in-the-filed-of-higher-education/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 29280,
+        "title": "Capacity builiding in the filed of VET",
+        "from": "https://erasmus.org.ge/capacity-builiding-in-the-filed-of-vet/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 29285,
+        "title": "Jean Monnet in the filed of Higher Education",
+        "from": "https://erasmus.org.ge/jean-monnet-in-the-filed-of-higher-education/",
+        "suggestedTargetSection": "/ka/opportunities/",
+        "reason": "Opportunities: review the relevant structured Action page",
+        "suggested": true
+      },
+      {
+        "wpId": 29290,
+        "title": "Jean Monnet policy debate",
+        "from": "https://erasmus.org.ge/jean-monnet-policy-debate/",
+        "suggestedTargetSection": "/ka/opportunities/",
+        "reason": "Opportunities: review the relevant structured Action page",
+        "suggested": true
+      },
+      {
+        "wpId": 29548,
+        "title": "NEWS.",
+        "from": "https://erasmus.org.ge/news-2/",
+        "suggestedTargetSection": "/ka/news/",
+        "reason": "News, split into News and Events after type review",
+        "suggested": true
+      },
+      {
+        "wpId": 30276,
+        "title": "ჰორიზონტალური პრიორიტეტები",
+        "from": "https://erasmus.org.ge/horizontal-priorities/",
+        "suggestedTargetSection": "/ka/resources/",
+        "reason": "Resources: publications, statistics, FAQ, priorities or education system",
+        "suggested": true
+      },
+      {
+        "wpId": 30368,
+        "title": "Inclusion and Diversity",
+        "from": "https://erasmus.org.ge/inclusion-and-diversity/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 30370,
+        "title": "Environment and fight against climate change",
+        "from": "https://erasmus.org.ge/environment-and-fight-against-climate-change/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 30372,
+        "title": "Digital Transformation",
+        "from": "https://erasmus.org.ge/digital-transformation/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 30374,
+        "title": "Participation in democratic life, common values and civic engagement",
+        "from": "https://erasmus.org.ge/participation-in-democratic-life-common-values-and-civic-engagement/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 30514,
+        "title": "vet-statistics-2021-2027",
+        "from": "https://erasmus.org.ge/vet-statistics-2021-20027/",
+        "suggestedTargetSection": "/ka/resources/",
+        "reason": "Resources: publications, statistics, FAQ, priorities or education system",
+        "suggested": true
+      },
+      {
+        "wpId": 30543,
+        "title": "statistics – adult education – 2027",
+        "from": "https://erasmus.org.ge/statistics-adult-education-2027/",
+        "suggestedTargetSection": "/ka/resources/",
+        "reason": "Resources: publications, statistics, FAQ, priorities or education system",
+        "suggested": true
+      },
+      {
+        "wpId": 30548,
+        "title": "statistics- youth – 2027",
+        "from": "https://erasmus.org.ge/statistics-youth-2027/",
+        "suggestedTargetSection": "/ka/resources/",
+        "reason": "Resources: publications, statistics, FAQ, priorities or education system",
+        "suggested": true
+      },
+      {
+        "wpId": 30553,
+        "title": "schools",
+        "from": "https://erasmus.org.ge/schools/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 30555,
+        "title": "sport statistics 2027",
+        "from": "https://erasmus.org.ge/sport-statistics-2027/",
+        "suggestedTargetSection": "/ka/resources/",
+        "reason": "Resources: publications, statistics, FAQ, priorities or education system",
+        "suggested": true
+      },
+      {
+        "wpId": 30570,
+        "title": "statistics – schools – 2027",
+        "from": "https://erasmus.org.ge/statistics-schools-2027/",
+        "suggestedTargetSection": "/ka/resources/",
+        "reason": "Resources: publications, statistics, FAQ, priorities or education system",
+        "suggested": true
+      },
+      {
+        "wpId": 30603,
+        "title": "general information about Erasmus+",
+        "from": "https://erasmus.org.ge/general-information-about-erasmus/",
+        "suggestedTargetSection": "/ka/about/",
+        "reason": "About: office, team, services, HEREs or contact",
+        "suggested": true
+      },
+      {
+        "wpId": 30616,
+        "title": "good practice examples",
+        "from": "https://erasmus.org.ge/good-practice-examples/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 30650,
+        "title": "capacity building in youth",
+        "from": "https://erasmus.org.ge/capacity-building-in-youth/",
+        "suggestedTargetSection": "/ka/opportunities/",
+        "reason": "Opportunities: review the relevant structured Action page",
+        "suggested": true
+      },
+      {
+        "wpId": 30652,
+        "title": "capacity building in sport",
+        "from": "https://erasmus.org.ge/capacity-building-in-sport/",
+        "suggestedTargetSection": "/ka/opportunities/",
+        "reason": "Opportunities: review the relevant structured Action page",
+        "suggested": true
+      },
+      {
+        "wpId": 30784,
+        "title": "Heres-LOMINADZE",
+        "from": "https://erasmus.org.ge/heres-lominadze/",
+        "suggestedTargetSection": "/ka/about/",
+        "reason": "About: office, team, services, HEREs or contact",
+        "suggested": true
+      },
+      {
+        "wpId": 30789,
+        "title": "HERES-GERGEDAVA",
+        "from": "https://erasmus.org.ge/heres-gergedava/",
+        "suggestedTargetSection": "/ka/about/",
+        "reason": "About: office, team, services, HEREs or contact",
+        "suggested": true
+      },
+      {
+        "wpId": 30794,
+        "title": "HERES-MARGISHVILI",
+        "from": "https://erasmus.org.ge/heres-margishvili/",
+        "suggestedTargetSection": "/ka/about/",
+        "reason": "About: office, team, services, HEREs or contact",
+        "suggested": true
+      },
+      {
+        "wpId": 30799,
+        "title": "HEREs_TEVZADZE",
+        "from": "https://erasmus.org.ge/heres_tevzadze/",
+        "suggestedTargetSection": "/ka/about/",
+        "reason": "About: office, team, services, HEREs or contact",
+        "suggested": true
+      },
+      {
+        "wpId": 30804,
+        "title": "HEREs_GRDZELIDZE",
+        "from": "https://erasmus.org.ge/heres_grdzelidze/",
+        "suggestedTargetSection": "/ka/about/",
+        "reason": "About: office, team, services, HEREs or contact",
+        "suggested": true
+      },
+      {
+        "wpId": 30809,
+        "title": "HEREs_BUCHASHVILI",
+        "from": "https://erasmus.org.ge/heres_buchashvili/",
+        "suggestedTargetSection": "/ka/about/",
+        "reason": "About: office, team, services, HEREs or contact",
+        "suggested": true
+      },
+      {
+        "wpId": 30814,
+        "title": "HEREs-TEPNADZE",
+        "from": "https://erasmus.org.ge/heres-tepnadze/",
+        "suggestedTargetSection": "/ka/about/",
+        "reason": "About: office, team, services, HEREs or contact",
+        "suggested": true
+      },
+      {
+        "wpId": 30819,
+        "title": "HEREs_SANIKIDZE_",
+        "from": "https://erasmus.org.ge/heres_sanikidze_/",
+        "suggestedTargetSection": "/ka/about/",
+        "reason": "About: office, team, services, HEREs or contact",
+        "suggested": true
+      },
+      {
+        "wpId": 30824,
+        "title": "HERES_TSOTNIASHVILI_",
+        "from": "https://erasmus.org.ge/heres_tsotniashvili_/",
+        "suggestedTargetSection": "/ka/about/",
+        "reason": "About: office, team, services, HEREs or contact",
+        "suggested": true
+      },
+      {
+        "wpId": 30829,
+        "title": "HEREs_ZEDGENIDZE__",
+        "from": "https://erasmus.org.ge/heres_zedgenidze__/",
+        "suggestedTargetSection": "/ka/about/",
+        "reason": "About: office, team, services, HEREs or contact",
+        "suggested": true
+      },
+      {
+        "wpId": 31047,
+        "title": "staff_week",
+        "from": "https://erasmus.org.ge/staff_week/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 32292,
+        "title": "პუბლიკაციები 2014-2020",
+        "from": "https://erasmus.org.ge/%e1%83%9e%e1%83%a3%e1%83%91%e1%83%9a%e1%83%98%e1%83%99%e1%83%90%e1%83%aa%e1%83%98%e1%83%94%e1%83%91%e1%83%98-2014-2020/",
+        "suggestedTargetSection": "/ka/resources/",
+        "reason": "Resources: publications, statistics, FAQ, priorities or education system",
+        "suggested": true
+      },
+      {
+        "wpId": 32520,
+        "title": "პუბლიკაციები",
+        "from": "https://erasmus.org.ge/publications-erasmus/",
+        "suggestedTargetSection": "/ka/resources/",
+        "reason": "Resources: publications, statistics, FAQ, priorities or education system",
+        "suggested": true
+      },
+      {
+        "wpId": 32550,
+        "title": "2025 Deadlines",
+        "from": "https://erasmus.org.ge/2025-deadlines/",
+        "suggestedTargetSection": "/ka/calls/",
+        "reason": "Calls and deadlines",
+        "suggested": true
+      },
+      {
+        "wpId": 32653,
+        "title": "Erasmus Days 2024: საგანმანათლებლო შესაძლებლობების გლობალური დღესასწაული",
+        "from": "https://erasmus.org.ge/erasmusdays2024publication/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 32669,
+        "title": "ევროკავშირის მწვანე შეთანხმება",
+        "from": "https://erasmus.org.ge/theeugreendeal/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 32710,
+        "title": "ტექნიკური დახმარების მისია (TAM) – ევროპული უნივერსიტეტების ალიანსები",
+        "from": "https://erasmus.org.ge/technical_assistance_mission/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 32733,
+        "title": "უნივერსიტეტისა და ინდუსტრიას შორის თანამშრომლობის გაძლიერება მიმდინარე და მომავალი დასაქმების, ინოვაციებისა და მდგრადი ეკოსისტემებისთვის",
+        "from": "https://erasmus.org.ge/enhancing_university-industry_collaboration/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 32750,
+        "title": "Tips for Creating a Competitive Proposal for Erasmus+ Capacity Building in Higher Education (CBHE) Programme",
+        "from": "https://erasmus.org.ge/tips-for-creating-a-competitive-proposal-for-erasmus-capacity-building-in-higher-education-cbhe-programme/",
+        "suggestedTargetSection": "/ka/opportunities/",
+        "reason": "Opportunities: review the relevant structured Action page",
+        "suggested": true
+      },
+      {
+        "wpId": 32760,
+        "title": "Georgia’s Unique Cultural Heritage",
+        "from": "https://erasmus.org.ge/georgias-unique-cultural-heritage/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 32776,
+        "title": "What Is Done Under CB VET in Georgia",
+        "from": "https://erasmus.org.ge/what-is-done-under-cb-vet-in-georgia/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 32785,
+        "title": "Capacity Building in Higher Education (CBHE) in Georgia (2014-2024)",
+        "from": "https://erasmus.org.ge/capacity-building-in-higher-education-cbhe-in-georgia-2014-2024/",
+        "suggestedTargetSection": "/ka/opportunities/",
+        "reason": "Opportunities: review the relevant structured Action page",
+        "suggested": true
+      },
+      {
+        "wpId": 32795,
+        "title": "Jean Monnet Programme Overview in Georgian Context (2014-2024) Fostering European Integration and Knowledge",
+        "from": "https://erasmus.org.ge/jean-monnet-programme-overview-in-georgian-context/",
+        "suggestedTargetSection": "/ka/opportunities/",
+        "reason": "Opportunities: review the relevant structured Action page",
+        "suggested": true
+      },
+      {
+        "wpId": 32804,
+        "title": "Embarking on an Erasmus+ Journey",
+        "from": "https://erasmus.org.ge/embarking-on-an-erasmus-journey/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 32812,
+        "title": "Erasmus+ Breaking Barriers in Cultural Differences",
+        "from": "https://erasmus.org.ge/erasmus-breaking-barriers-in-cultural-differences/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 32821,
+        "title": "Exploring Erasmus Mundus Joint Masters",
+        "from": "https://erasmus.org.ge/exploring-erasmus-mundus-joint-masters/",
+        "suggestedTargetSection": "/ka/opportunities/",
+        "reason": "Opportunities: review the relevant structured Action page",
+        "suggested": true
+      },
+      {
+        "wpId": 33008,
+        "title": "International Credit Mobility",
+        "from": "https://erasmus.org.ge/impact-of-erasmus/",
+        "suggestedTargetSection": "/ka/opportunities/",
+        "reason": "Opportunities: review the relevant structured Action page",
+        "suggested": true
+      },
+      {
+        "wpId": 33037,
+        "title": "how to participate in student mobility",
+        "from": "https://erasmus.org.ge/how-to-participate-in-student-mobility/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 33040,
+        "title": "how to participate in erasmus mundus joint masters",
+        "from": "https://erasmus.org.ge/how-to-participate-in-erasmus-mundus-joint-masters/",
+        "suggestedTargetSection": "/ka/opportunities/",
+        "reason": "Opportunities: review the relevant structured Action page",
+        "suggested": true
+      },
+      {
+        "wpId": 33042,
+        "title": "how to participate in youth mobility",
+        "from": "https://erasmus.org.ge/how-to-participate-in-youth-mobility/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 33044,
+        "title": "erasmus+ programmes",
+        "from": "https://erasmus.org.ge/erasmus-programmes/",
+        "suggestedTargetSection": "/ka/opportunities/",
+        "reason": "Opportunities: review the relevant structured Action page",
+        "suggested": true
+      },
+      {
+        "wpId": 33046,
+        "title": "Erasmus Charter Higher Education",
+        "from": "https://erasmus.org.ge/erasmus-charter-higher-education/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 33048,
+        "title": "Difference between NA and NEO",
+        "from": "https://erasmus.org.ge/difference-between-na-and-neo/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 33050,
+        "title": "How to participate in staff mobility",
+        "from": "https://erasmus.org.ge/how-to-participate-in-staff-mobility/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 33052,
+        "title": "Difference between FTOP and Webgate",
+        "from": "https://erasmus.org.ge/difference-between-ftop-and-webgate/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 33107,
+        "title": "How to get OID number?",
+        "from": "https://erasmus.org.ge/how-to-get-oid-number/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 33174,
+        "title": "Adding_or_Deleting_a_Bank_Account",
+        "from": "https://erasmus.org.ge/adding_or_deleting_a_bank_account/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 33176,
+        "title": "Organisation_data_updates",
+        "from": "https://erasmus.org.ge/organisation_data_updates/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 33178,
+        "title": "LEARs_Account_Administrators",
+        "from": "https://erasmus.org.ge/lears_account_administrators/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 33180,
+        "title": "Electronic_Submission_System",
+        "from": "https://erasmus.org.ge/electronic_submission_system/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 33182,
+        "title": "LEAR_appointment&validation",
+        "from": "https://erasmus.org.ge/lear_appointmentvalidation/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 33184,
+        "title": "CBHE_Project_page_limitation",
+        "from": "https://erasmus.org.ge/cbhe_project_page_limitation/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 33300,
+        "title": "ftop_registration",
+        "from": "https://erasmus.org.ge/ftop_registration/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 33326,
+        "title": "FTOP-ზე და Webgate-ზე რეგისტრაციის მოკლე ინსტრუქცია",
+        "from": "https://erasmus.org.ge/short_instructions_for_registering_on_ftop_and_webgate/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 33338,
+        "title": "Registration_FTOP_WEBGATE",
+        "from": "https://erasmus.org.ge/registration_ftop_webgate/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 33412,
+        "title": "faq-bank-account",
+        "from": "https://erasmus.org.ge/faq-bank-account/",
+        "suggestedTargetSection": "/ka/resources/",
+        "reason": "Resources: publications, statistics, FAQ, priorities or education system",
+        "suggested": true
+      },
+      {
+        "wpId": 33417,
+        "title": "Webgate-registration",
+        "from": "https://erasmus.org.ge/webgate-registration/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 33450,
+        "title": "როგორ შეიძლება Erasmus+ პროგრამის გამოყენება ხელოვნების სფეროში?",
+        "from": "https://erasmus.org.ge/capacity_building_in_the_field_artsector/",
+        "suggestedTargetSection": "/ka/opportunities/",
+        "reason": "Opportunities: review the relevant structured Action page",
+        "suggested": true
+      },
+      {
+        "wpId": 33581,
+        "title": "განათლების სისტემა",
+        "from": "https://erasmus.org.ge/%e1%83%92%e1%83%90%e1%83%9c%e1%83%90%e1%83%97%e1%83%9a%e1%83%94%e1%83%91%e1%83%98%e1%83%a1-%e1%83%a1%e1%83%98%e1%83%a1%e1%83%a2%e1%83%94%e1%83%9b%e1%83%90/",
+        "suggestedTargetSection": "/ka/resources/",
+        "reason": "Resources: publications, statistics, FAQ, priorities or education system",
+        "suggested": true
+      },
+      {
+        "wpId": 33586,
+        "title": "Long term politics of the MoESY",
+        "from": "https://erasmus.org.ge/long-term-politics-of-the-moesy/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 33591,
+        "title": "Georgia in Eurydice Network",
+        "from": "https://erasmus.org.ge/georgia-in-eurydice-network/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 33605,
+        "title": "საქართველოს განათლების სისტემა",
+        "from": "https://erasmus.org.ge/education-system-in-georgia/",
+        "suggestedTargetSection": "/ka/resources/",
+        "reason": "Resources: publications, statistics, FAQ, priorities or education system",
+        "suggested": true
+      },
+      {
+        "wpId": 33650,
+        "title": "Events",
+        "from": "https://erasmus.org.ge/event-directory/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 34013,
+        "title": "",
+        "from": "https://erasmus.org.ge/support-letters/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 34014,
+        "title": "დღგ-სგან გათავისუფლება",
+        "from": "https://erasmus.org.ge/%e1%83%93%e1%83%a6%e1%83%92-%e1%83%a1%e1%83%92%e1%83%90%e1%83%9c-%e1%83%92%e1%83%90%e1%83%97%e1%83%90%e1%83%95%e1%83%98%e1%83%a1%e1%83%a3%e1%83%a4%e1%83%9a%e1%83%94%e1%83%91%e1%83%90/",
+        "suggestedTargetSection": "/ka/about/",
+        "reason": "About: office, team, services, HEREs or contact",
+        "suggested": true
+      },
+      {
+        "wpId": 34102,
+        "title": "statistics",
+        "from": "https://erasmus.org.ge/statistics-2/",
+        "suggestedTargetSection": "/ka/resources/",
+        "reason": "Resources: publications, statistics, FAQ, priorities or education system",
+        "suggested": true
+      },
+      {
+        "wpId": 34103,
+        "title": "Statistics",
+        "from": "https://erasmus.org.ge/statistics-3/",
+        "suggestedTargetSection": "/ka/resources/",
+        "reason": "Resources: publications, statistics, FAQ, priorities or education system",
+        "suggested": true
+      },
+      {
+        "wpId": 34189,
+        "title": "მიკროკრედიტები, უნარები და დასაქმება",
+        "from": "https://erasmus.org.ge/%e1%83%9b%e1%83%98%e1%83%99%e1%83%a0%e1%83%9d%e1%83%99%e1%83%a0%e1%83%94%e1%83%93%e1%83%98%e1%83%a2%e1%83%94%e1%83%91%e1%83%98-%e1%83%a3%e1%83%9c%e1%83%90%e1%83%a0%e1%83%94%e1%83%91%e1%83%98/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 34194,
+        "title": "Microcredentials",
+        "from": "https://erasmus.org.ge/publication_31-07/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 34257,
+        "title": "Publication_Workshops: Erasmus+ practical experience examples and financial management",
+        "from": "https://erasmus.org.ge/publication_workshops-erasmus-practical-experience-examples-and-financial-management/",
+        "suggestedTargetSection": "/ka/resources/",
+        "reason": "Resources: publications, statistics, FAQ, priorities or education system",
+        "suggested": true
+      },
+      {
+        "wpId": 34284,
+        "title": "faq-21-internships",
+        "from": "https://erasmus.org.ge/faq-21-internships/",
+        "suggestedTargetSection": "/ka/resources/",
+        "reason": "Resources: publications, statistics, FAQ, priorities or education system",
+        "suggested": true
+      },
+      {
+        "wpId": 34308,
+        "title": "აქ ჩაწერე გვერდის სახელი, ეს დასახელება ასევე აისახება URL-ში",
+        "from": "https://erasmus.org.ge/%e1%83%90%e1%83%a5-%e1%83%a9%e1%83%90%e1%83%ac%e1%83%94%e1%83%a0%e1%83%94-%e1%83%92%e1%83%95%e1%83%94%e1%83%a0%e1%83%93%e1%83%98%e1%83%a1-%e1%83%a1%e1%83%90%e1%83%ae%e1%83%94%e1%83%9a%e1%83%98/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 34421,
+        "title": "emjm_2025",
+        "from": "https://erasmus.org.ge/emjm_2025/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 34653,
+        "title": "Publication_EAIE",
+        "from": "https://erasmus.org.ge/publication_eaie/",
+        "suggestedTargetSection": "/ka/resources/",
+        "reason": "Resources: publications, statistics, FAQ, priorities or education system",
+        "suggested": true
+      },
+      {
+        "wpId": 34683,
+        "title": "ინსტიტუციური შესაძლებლობების მაქსიმიზაცია EAIE-ს მეშვეობით – ზრდისა და თანამშრომლობის შესაძლებლობები",
+        "from": "https://erasmus.org.ge/%e1%83%98%e1%83%9c%e1%83%a1%e1%83%a2%e1%83%98%e1%83%a2%e1%83%a3%e1%83%aa%e1%83%98%e1%83%a3%e1%83%a0%e1%83%98-%e1%83%a8%e1%83%94%e1%83%a1%e1%83%90%e1%83%ab%e1%83%9a%e1%83%94%e1%83%91%e1%83%9a%e1%83%9d/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 34699,
+        "title": "PUBLICATION EAIE",
+        "from": "https://erasmus.org.ge/publication-eaie/",
+        "suggestedTargetSection": "/ka/resources/",
+        "reason": "Resources: publications, statistics, FAQ, priorities or education system",
+        "suggested": true
+      },
+      {
+        "wpId": 34714,
+        "title": "უმაღლესი განათლების მობილობის პროგრამების მომავლის ფორმირება, Erasmus+ პროგრამის მეშვეობით",
+        "from": "https://erasmus.org.ge/%e1%83%a3%e1%83%9b%e1%83%90%e1%83%a6%e1%83%9a%e1%83%94%e1%83%a1%e1%83%98-%e1%83%92%e1%83%90%e1%83%9c%e1%83%90%e1%83%97%e1%83%9a%e1%83%94%e1%83%91%e1%83%98%e1%83%a1-%e1%83%9b%e1%83%9d%e1%83%91%e1%83%98/",
+        "suggestedTargetSection": "/ka/opportunities/",
+        "reason": "Opportunities: review the relevant structured Action page",
+        "suggested": true
+      },
+      {
+        "wpId": 34730,
+        "title": "Erasmus+-ის ინკლუზიური ხარვეზის აღმოფხვრა – საერთაშორისო მობილურობაზე თანაბარი წვდომის ხელშეწყობა",
+        "from": "https://erasmus.org.ge/erasmus-%e1%83%98%e1%83%a1-%e1%83%98%e1%83%9c%e1%83%99%e1%83%9a%e1%83%a3%e1%83%96%e1%83%98%e1%83%a3%e1%83%a0%e1%83%98-%e1%83%ae%e1%83%90%e1%83%a0%e1%83%95%e1%83%94%e1%83%96%e1%83%98%e1%83%a1/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 34741,
+        "title": "აკადემიისა და ინდუსტრიის დაკავშირება – შვედეთის მაგალითი",
+        "from": "https://erasmus.org.ge/%e1%83%90%e1%83%99%e1%83%90%e1%83%93%e1%83%94%e1%83%9b%e1%83%98%e1%83%98%e1%83%a1%e1%83%90-%e1%83%93%e1%83%90-%e1%83%98%e1%83%9c%e1%83%93%e1%83%a3%e1%83%a1%e1%83%a2%e1%83%a0%e1%83%98%e1%83%98%e1%83%a1/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 34752,
+        "title": "უმაღლესი განათლების ბირთვში ინტერნაციონალიზაციის ინტეგრირება და ალიანსების მეშვეობით საზოგადოებების ჩართვა​",
+        "from": "https://erasmus.org.ge/%e1%83%a3%e1%83%9b%e1%83%90%e1%83%a6%e1%83%9a%e1%83%94%e1%83%a1%e1%83%98-%e1%83%92%e1%83%90%e1%83%9c%e1%83%90%e1%83%97%e1%83%9a%e1%83%94%e1%83%91%e1%83%98%e1%83%a1-%e1%83%91%e1%83%98%e1%83%a0%e1%83%97/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 34761,
+        "title": "ეროვნული და საერთაშორისო საგანმანათლებლო პოლიტიკის განვითარება ევროპის უმაღლესი განათლების სისტემაში​",
+        "from": "https://erasmus.org.ge/%e1%83%94%e1%83%a0%e1%83%9d%e1%83%95%e1%83%9c%e1%83%a3%e1%83%9a%e1%83%98-%e1%83%93%e1%83%90-%e1%83%a1%e1%83%90%e1%83%94%e1%83%a0%e1%83%97%e1%83%90%e1%83%a8%e1%83%9d%e1%83%a0%e1%83%98%e1%83%a1%e1%83%9d/",
+        "suggestedTargetSection": "/ka/resources/",
+        "reason": "Resources: publications, statistics, FAQ, priorities or education system",
+        "suggested": true
+      },
+      {
+        "wpId": 34776,
+        "title": "პროფესიული და უმაღლესი განათლების და მათი დაინტერესებული მხარეების ინტეგრირება ინტერნაციონალიზაციაში",
+        "from": "https://erasmus.org.ge/%e1%83%9e%e1%83%a0%e1%83%9d%e1%83%a4%e1%83%94%e1%83%a1%e1%83%98%e1%83%a3%e1%83%9a%e1%83%98-%e1%83%93%e1%83%90-%e1%83%a3%e1%83%9b%e1%83%90%e1%83%a6%e1%83%9a%e1%83%94%e1%83%a1%e1%83%98-%e1%83%92/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 34781,
+        "title": "ერთი ინსტიტუციის ფარგლებში ინტეგრირებული ინტერნაციონალიზაცია",
+        "from": "https://erasmus.org.ge/%e1%83%94%e1%83%a0%e1%83%97%e1%83%98-%e1%83%98%e1%83%9c%e1%83%a1%e1%83%a2%e1%83%98%e1%83%a2%e1%83%a3%e1%83%aa%e1%83%98%e1%83%98%e1%83%a1-%e1%83%a4%e1%83%90%e1%83%a0%e1%83%92%e1%83%9a%e1%83%94%e1%83%91/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 35012,
+        "title": "",
+        "from": "https://erasmus.org.ge/publication_navigating-generative-ai-in-international-higher-education-opportunities-and-challenges/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 35043,
+        "title": "",
+        "from": "https://erasmus.org.ge/deadlines-2026/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 35227,
+        "title": "‎",
+        "from": "https://erasmus.org.ge/publication-digital-transformation-ai-governance-and-the-future-of-higher-education-insights-from-the-bucharest-sphere-2025-symposium/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 35306,
+        "title": "Erasmus Mundus Joint Masters – Mobility",
+        "from": "https://erasmus.org.ge/erasmus-mundus-joint-masters-mobility/",
+        "suggestedTargetSection": "/ka/opportunities/",
+        "reason": "Opportunities: review the relevant structured Action page",
+        "suggested": true
+      },
+      {
+        "wpId": 35331,
+        "title": "Capacity Building in the Field of Higher Education",
+        "from": "https://erasmus.org.ge/capacity-building-in-the-field-of-higher-education/",
+        "suggestedTargetSection": "/ka/opportunities/",
+        "reason": "Opportunities: review the relevant structured Action page",
+        "suggested": true
+      },
+      {
+        "wpId": 35348,
+        "title": "Jean Monnet Actions",
+        "from": "https://erasmus.org.ge/jean-monnet-actions/",
+        "suggestedTargetSection": "/ka/opportunities/",
+        "reason": "Opportunities: review the relevant structured Action page",
+        "suggested": true
+      },
+      {
+        "wpId": 35364,
+        "title": "Cooperation Partnership in Higher Education",
+        "from": "https://erasmus.org.ge/cooperation-partnership-in-higher-education/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 35381,
+        "title": "Vocational Education and training",
+        "from": "https://erasmus.org.ge/vocational-education-and-training/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 35388,
+        "title": "Cooperation Partnership in Vocational Education and Trainings",
+        "from": "https://erasmus.org.ge/cooperation-partnership-in-vocational-education-and-trainings/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 35409,
+        "title": "Centres of Vocational Excellence",
+        "from": "https://erasmus.org.ge/centres-of-vocational-excellence/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 35421,
+        "title": "Ersmus Mundus Joint Master – Projects",
+        "from": "https://erasmus.org.ge/ersmus-mundus-joint-master-projects/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 35434,
+        "title": "Erasmus Mundus Design Measures",
+        "from": "https://erasmus.org.ge/erasmus-mundus-design-measures/",
+        "suggestedTargetSection": "/ka/opportunities/",
+        "reason": "Opportunities: review the relevant structured Action page",
+        "suggested": true
+      },
+      {
+        "wpId": 35451,
+        "title": "Capacity Building in the Field of Youth",
+        "from": "https://erasmus.org.ge/capacity-building-in-the-field-of-youth/",
+        "suggestedTargetSection": "/ka/opportunities/",
+        "reason": "Opportunities: review the relevant structured Action page",
+        "suggested": true
+      },
+      {
+        "wpId": 35466,
+        "title": "Erasmus+ Virtual Eschanges",
+        "from": "https://erasmus.org.ge/erasmus-virtual-eschanges/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 35482,
+        "title": "Cooperation Partnership in Youth",
+        "from": "https://erasmus.org.ge/cooperation-partnership-in-youth/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 35501,
+        "title": "Capacity Building in the Field of Sport",
+        "from": "https://erasmus.org.ge/capacity-building-in-the-field-of-sport/",
+        "suggestedTargetSection": "/ka/opportunities/",
+        "reason": "Opportunities: review the relevant structured Action page",
+        "suggested": true
+      },
+      {
+        "wpId": 35514,
+        "title": "Cooperation Partnership in Sport",
+        "from": "https://erasmus.org.ge/cooperation-partnership-in-sport/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 35531,
+        "title": "Innovative Didactical Approaches in Engineering Education_Publication",
+        "from": "https://erasmus.org.ge/innovative-didactical-approaches-in-engineering-education/",
+        "suggestedTargetSection": "/ka/about/",
+        "reason": "About: office, team, services, HEREs or contact",
+        "suggested": true
+      },
+      {
+        "wpId": 35544,
+        "title": "Cooperation Patnership in Adult Education",
+        "from": "https://erasmus.org.ge/cooperation-patnership-in-adult-education/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 35547,
+        "title": "",
+        "from": "https://erasmus.org.ge/publication_quality-assurance-and-recognition-of-distance-education-programs-delivered-by-either-fully-online-or-blended-learning-mode/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 35574,
+        "title": "Coopertion Partnership in Schools",
+        "from": "https://erasmus.org.ge/coopertion-partnership-in-schools/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 35598,
+        "title": "‎",
+        "from": "https://erasmus.org.ge/irma-grdzelidze_advancing-higher-education-through-sustainability-publication/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 35608,
+        "title": "‎",
+        "from": "https://erasmus.org.ge/tam-micro-credentials-and-industry-collaboration-ensuring-qualification-relevance-and-employment-opportunities_publication_buchashvili-zedginidze-zubrzycki/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 35624,
+        "title": "‎",
+        "from": "https://erasmus.org.ge/innovative-didactical-approaches-in-engineering-education_tsotniashvili-lominadze-publication/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 35687,
+        "title": "‎",
+        "from": "https://erasmus.org.ge/tamar-sanikidze-irma-grdzelidze_publication/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 35800,
+        "title": "",
+        "from": "https://erasmus.org.ge/procedure-for-the-recognition-of-academic-credits-obtained-through-education-abroad/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 35861,
+        "title": "‎",
+        "from": "https://erasmus.org.ge/publication-tamar-lominadze-tam-2/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 35915,
+        "title": "‎",
+        "from": "https://erasmus.org.ge/35915-2/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 35932,
+        "title": "‎",
+        "from": "https://erasmus.org.ge/organisation-data-can-only-be-modified-if-the-user-is-authorised-as-an-account-administrator-self-registrant-or-legal-entity-appointed-representative-lear/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 36005,
+        "title": "‎",
+        "from": "https://erasmus.org.ge/publication_sanikidze-tevzadze/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 36026,
+        "title": "‎",
+        "from": "https://erasmus.org.ge/publication-intersectoral-cluster-development-within-erasmus/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 36247,
+        "title": "‎",
+        "from": "https://erasmus.org.ge/the-erasmus-2026-call-results-for-capacity-building-in-higher-education-cbhe/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 36296,
+        "title": "‎",
+        "from": "https://erasmus.org.ge/newsletter-publication-vol-6/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 36324,
+        "title": "‎",
+        "from": "https://erasmus.org.ge/publication-tamar-sanikidze-irma-grdzelidze/",
+        "suggestedTargetSection": null,
+        "reason": "No SITE-PLAN section matched; Luka must choose",
+        "suggested": true
+      },
+      {
+        "wpId": 36398,
+        "title": "Publication: Values in Higher Education: Challenges, Practices and Perspectives",
+        "from": "https://erasmus.org.ge/publication-values-in-higher-education-challenges-practices-and-perspectives/",
+        "suggestedTargetSection": "/ka/resources/",
+        "reason": "Resources: publications, statistics, FAQ, priorities or education system",
+        "suggested": true
+      }
+    ]
+  }
+}

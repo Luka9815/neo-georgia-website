@@ -165,3 +165,7 @@ Use Turndown as a development dependency with Cheerio cleanup. Retain links/list
 
 ## 2026-10-26: Plain-language review report and explicit incomplete runs
 Generate REPORT.md plus run.json, inventory.json and attachments.json below migration/review. Record every item and warning, exact title/body duplicate groups, request failures and attachment usage without downloading binaries. A failed collection is explicitly incomplete, returns a nonzero exit status, and never becomes a claim that the old archive is empty. The report explains Luka's manual review and preserves uncertain language/type/Action cases for that review.
+
+
+## 2026-10-26: Draft legacy redirects stay outside live configuration
+Generate migration/review/redirects.draft.json from the reviewed News slugs and published top-level WordPress pages (parent=0, all dates). Suggest page sections using SITE-PLAN "Where current content goes"; leave unmatched pages and sources without a Georgian draft at null instead of inventing targets. Event candidates need target review. Preserve full old post URLs, including Georgian paths, for later redirect-format/hosting review. Do not change src/_data/redirects.json or create routes in this dry run.
