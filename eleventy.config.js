@@ -16,6 +16,9 @@ export default function (config) {
   config.addFilter('dateLabel', dateLabel);
   config.addFilter('markdown', (text) => markdown.render(text || ''));
   config.addFilter('take', (items, count) => items.slice(0, count));
+  config.addFilter('withoutStatus', (items, value) =>
+    items.filter((item) => item.status !== value)
+  );
   config.addFilter('status', (items, value) => items.filter((i) => i.status === value));
   config.addFilter('callYears', callYears);
   config.addFilter('callYear', (items, year) => items.filter((i) => i.year === year));

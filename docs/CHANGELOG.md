@@ -2,6 +2,17 @@
 
 Newest at the top. One entry per working session: date, who (agent or person), what changed.
 
+## 2026-10-26 (Codex, session 5: fixes and visual design)
+- Started from current main. Made Event registration and translated agendas optional in CMS, validation and rendering; retained validation of supplied HTTPS links. Corrected the Event slug example, documented both Action select lists and changed the requested Georgian word for spaces. One commit per fix.
+- Compared FiraGO and Noto for Georgian/Latin reading at 16/20/32 px, size and SIL OFL licensing. Selected local, script-specific Noto WOFF2 subsets at 400/700, font-display: swap, totalling 99,184 bytes. Included licences, source/checksum manifest and an optional maintenance subset script; normal builds need no font tooling or network fonts.
+- Added blue, one warm accent and neutral tokens with WCAG contrast tests, extended to all 19 text/background pairs used by the final design. No Georgian text-transform or copied EU logo.
+- Designed shared text-logo placeholder, always-visible language switch, seven-item desktop navigation and native mobile details menu, cards, status badges, source labels and a separate EU footer block. No client JavaScript added.
+- Polished all six approved home blocks for mobile and desktop, retaining clearly marked sample content. Corrected the old rejectattr usage that hid all calls from the home and added a regression check. Reduced the Georgian mobile hero size after visual review to avoid splitting a final letter onto another line.
+- Captured four before and four after full-page screenshots at 360/1280 px for both languages, plus a font comparison. Images and review notes are in docs/review/session-5 and listed in the PR. Final captures wait for fonts with page JavaScript disabled.
+- Validation: npm run build and npm test passed in root and project-prefix layouts, all 50 tests passed in each. check:a11y passed all 42 non-redirect pages in each layout with zero violations, loaded local fonts, no 320 px overflow, working skip links/language switches and native mobile/desktop menus with JavaScript disabled. git diff --check passed.
+- Local mobile Lighthouse during the design check: performance 99, accessibility 100, best practices 96 for both homes. SEO 66 reflects intentional noindex while unlaunched. Local server/cache/favicon limitations and LCP/CLS are recorded in the review notes; hosted measurements and Georgian editorial review remain necessary.
+- Updated HANDOVER, DECISIONS and DESIGN. No real statistics/images were invented, no hosted CMS or deployment settings changed and no PR merged automatically.
+
 ## 2026-10-26 (Codex, session 4: Pages CMS)
 - Started from current main with sessions 1 to 3 present. Added .pages.yml for JSON News/Event collections, slug filenames, Georgian-first field labels, nested translations, approved classification/action selects and named time zones.
 - Checked every field type and option against current documentation source, plus CMS date, rich-text and JSON-saving implementations. The docs host returned 403; GitHub source was available. Pinned source references are in CONTENT. Rich-text explicitly emits Markdown; raw HTML rendering stays disabled. Event times remain exact local strings instead of going through browser-local date-widget parsing.

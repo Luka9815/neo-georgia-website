@@ -286,3 +286,22 @@ test('unlaunched site blocks indexing on all pages and in robots.txt', () => {
   }
   assert.match(read('_site/robots.txt'), /Disallow: \//);
 });
+
+test('home renders upcoming/open deadlines instead of rejecting every status', () => {
+  for (const lang of ['ka', 'en']) {
+    const expected = loadContent()
+      .call.filter((item) => item[lang] && callStatus(item) !== 'closed')
+      .sort(
+        (a, b) =>
+          Date.parse(zonedDateTime(a.deadline, a.timeZone)) -
+          Date.parse(zonedDateTime(b.deadline, b.timeZone))
+      )
+      .slice(0, 3)
+      .map((item) => zonedDateTime(item.deadline, item.timeZone));
+    const $ = load(read(`_site/${lang}/index.html`));
+    const dates = $('section[aria-labelledby="deadlines-title"] time')
+      .map((_, element) => $(element).attr('datetime'))
+      .get();
+    assert.deepEqual(dates, expected);
+  }
+});

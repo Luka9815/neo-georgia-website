@@ -9,38 +9,57 @@ eleventyExcludeFromCollections: true
 {% extends 'page.njk' %}
 
 {% block pageContent %}
-<section>
-  <h2>{{ t.purpose }}</h2>
-  <div class="entry">
-    <a class="button" href="/{{ view.lang }}/opportunities/#individuals">{{ t.individuals }}</a>
-    <a class="button" href="/{{ view.lang }}/opportunities/#organisations">{{ t.organisations }}</a>
+<section class="home-hero" aria-labelledby="home-title">
+  <div class="hero-main">
+    <p class="eyebrow">{{ t.homeEyebrow }}</p>
+    <h1 id="home-title">{{ t.homeHeadline }}</h1>
+    <p class="hero-intro">{{ t.purpose }}</p>
+    <div class="entry">
+      <a class="button" href="/{{ view.lang }}/opportunities/#individuals">{{ t.individuals }}</a>
+      <a class="button button-secondary" href="/{{ view.lang }}/opportunities/#organisations">{{ t.organisations }}</a>
+    </div>
   </div>
+  <aside class="hero-guide" aria-labelledby="guide-title">
+    <h2 id="guide-title">{{ t.homeGuideTitle }}</h2>
+    <p>{{ t.homeGuideBody }}</p>
+    <a href="/{{ view.lang }}/opportunities/">{{ t.homeGuideLink }}</a>
+  </aside>
 </section>
-<section>
-  <h2>{{ t.deadlines }}</h2>
-  {{ cards(calls | rejectattr('status','equalto','closed') | list | take(3), 'call', t, view.lang) }}
+<section class="home-section" aria-labelledby="deadlines-title">
+  <div class="section-heading">
+    <h2 id="deadlines-title">{{ t.deadlines }}</h2>
+    <a href="/{{ view.lang }}/calls/">{{ t.allCalls }}</a>
+  </div>
+  {{ cards(calls | withoutStatus('closed') | take(3), 'call', t, view.lang) }}
 </section>
-<section>
-  <h2>{{ t.upcomingEvents }}</h2>
+<section class="home-section" aria-labelledby="events-title">
+  <div class="section-heading">
+    <h2 id="events-title">{{ t.upcomingEvents }}</h2>
+    <a href="/{{ view.lang }}/events/">{{ t.allEvents }}</a>
+  </div>
   {{ cards(events | status('upcoming') | take(3), 'event', t, view.lang) }}
 </section>
-<section>
-  <h2>{{ t.latestNews }}</h2>
+<section class="home-section" aria-labelledby="news-title">
+  <div class="section-heading">
+    <h2 id="news-title">{{ t.latestNews }}</h2>
+    <a href="/{{ view.lang }}/news/">{{ t.allNews }}</a>
+  </div>
   {{ cards(news | take(3), 'news', t, view.lang) }}
 </section>
-<section>
-  <h2>{{ t.story }}</h2>
+<section class="home-story" aria-labelledby="story-title">
+  <div class="section-heading">
+    <h2 id="story-title">{{ t.story }}</h2>
+    <a href="/{{ view.lang }}/stories/">{{ t.allStories }}</a>
+  </div>
   {{ cards(stories | take(1), 'story', t, view.lang) }}
 </section>
-<section>
-  <h2>{{ t.figures }}</h2>
+<section class="home-figures" aria-labelledby="figures-title">
+  <h2 id="figures-title">{{ t.figures }}</h2>
   <dl class="figures">
     {% for key in ['projects','mobilities','institutions'] %}
-      <div>
-        <dt>{{ t[key] }}</dt>
-        <dd>{{ t.sampleNumber }}</dd>
-      </div>
+      <div><dt>{{ t[key] }}</dt><dd>{{ t.sampleNumber }}</dd></div>
     {% endfor %}
   </dl>
+  <p class="figures-note">{{ t.figuresNote }}</p>
 </section>
 {% endblock %}

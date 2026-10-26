@@ -402,3 +402,149 @@ dd {
     font-size: 1.75rem;
   }
 }
+
+/* Six home blocks stay in reading order at every width. */
+.home-hero {
+  display: grid;
+  gap: 2rem;
+  margin-top: 0;
+  padding: 1.5rem;
+  background: var(--blue);
+  color: var(--paper);
+  border-radius: 0.4rem;
+}
+.eyebrow {
+  font-size: 0.875rem;
+  margin-bottom: 1.25rem;
+  color: var(--inverse-muted);
+}
+.home-hero h1 {
+  margin: 0 0 1.25rem;
+  font-size: clamp(1.4rem, 3.5vw, 2.75rem);
+  line-height: 1.4;
+}
+.hero-intro {
+  color: var(--inverse-muted);
+  max-width: 48ch;
+  margin-bottom: 1.75rem;
+}
+.home-hero .entry {
+  flex-direction: column;
+}
+.home-hero .button {
+  background: var(--paper);
+  color: var(--blue);
+  border-color: var(--paper);
+}
+.home-hero .button:hover {
+  color: var(--blue-dark);
+  background: var(--surface);
+  border-color: var(--surface);
+}
+.home-hero .button-secondary {
+  background: var(--blue);
+  color: var(--paper);
+}
+.home-hero .button-secondary:hover {
+  background: var(--blue-dark);
+  color: var(--paper);
+  border-color: var(--paper);
+}
+.hero-main .button:focus-visible {
+  outline-color: var(--paper);
+}
+.hero-guide {
+  padding: 1.5rem;
+  background: var(--paper);
+  color: var(--ink);
+  border-top: 4px solid var(--accent);
+  border-radius: 0.25rem;
+  align-self: center;
+}
+.hero-guide h2 {
+  font-size: 1.125rem;
+  color: var(--blue);
+}
+.hero-guide p {
+  color: var(--muted);
+}
+.hero-guide a {
+  font-weight: 700;
+}
+.home-section {
+  margin-block: 3.5rem;
+}
+.section-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  margin-bottom: 1.25rem;
+}
+.section-heading h2 {
+  margin: 0;
+}
+.section-heading > a {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  padding-block: 0.35rem;
+}
+.home-story {
+  background: var(--surface);
+  padding: 1.5rem;
+  border-radius: 0.4rem;
+}
+.home-story .cards {
+  grid-template-columns: 1fr;
+}
+.home-story .card {
+  border: none;
+}
+.home-figures {
+  padding: 1.5rem;
+  background: var(--accent-soft);
+  border-radius: 0.4rem;
+}
+.figures {
+  margin-block: 1.75rem;
+}
+.figures > div {
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 0.5rem;
+}
+.figures dt {
+  color: var(--muted);
+}
+.figures dd {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--blue);
+  margin: 0.5rem 0;
+}
+.figures-note {
+  font-size: 0.875rem;
+  color: var(--muted);
+  margin: 0;
+}
+@media (min-width: 48rem) {
+  .home-hero,
+  .home-story,
+  .home-figures {
+    padding: 2.5rem;
+  }
+  .figures {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+@media (min-width: 64rem) {
+  .home-hero {
+    grid-template-columns: 1.5fr 1fr;
+    gap: 2.5rem;
+    padding: 3rem;
+  }
+  .home-hero .entry {
+    align-items: flex-start;
+  }
+}

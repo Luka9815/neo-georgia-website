@@ -1,6 +1,6 @@
 # Handover
 
-Last updated: 2026-10-26 (Codex, session 4: Pages CMS)
+Last updated: 2026-10-26 (Codex, session 5: visual design)
 
 ## Current state
 
@@ -14,12 +14,23 @@ Last updated: 2026-10-26 (Codex, session 4: Pages CMS)
 - siteLaunched is false in `src/_data/settings.json`, read by site.js and not exposed in the CMS: every page is noindex and robots.txt disallows crawling. After launch approval, set it true; content pages become indexable while redirects and 404 remain noindex. Do not launch until the official EU emblem files, Georgian disclaimer and content are approved.
 - One root bilingual 404.html has Georgian first, English second, both home links and the EU footer. The root index.html has a meta refresh, target canonical and a visible link to the Georgian home. No client JavaScript is needed. `.nojekyll` is copied into the output and included in the Pages artifact.
 - `src/_data/redirects.json` is an empty old-path/new-path map. Once the export arrives, add validated mappings to generate static meta-refresh stubs. These do not provide HTTP 301 responses. See CONTENT.md.
-- Sessions 1 to 3 are present in current main. Session 4 starts from main on `codex/session-4-pages-cms`; no dependency branch is needed.
+- Sessions 1 to 4 are present in main. Session 5 starts from current main on `codex/session-5-design`, with one commit per requested item.
 - `.pages.yml` now configures News, Events and a single-file Settings editor. Staff use GitHub sign-in at app.pagescms.org. Collection filenames derive from slug. Field labels are Georgian first; News English is optional, Event English required. The current documentation and implementation were checked via GitHub because the docs host returned 403. Sources and verification limits are in CONTENT.md.
 - News dates are calendar days (YYYY-MM-DD); existing News samples were migrated. Events keep local minute-precision strings without offsets and a named zone. Required fields, related action slugs, classifications, calendar dates and time ranges are validated before rendering with filename/field errors.
 - Bodies use rich-text with explicit Markdown output. Raw HTML remains disabled in markdown-it. Image insertion is disabled for now; src/assets/uploads is reserved for future images with /assets/uploads public paths handled by PATH_PREFIX.
 - Settings reads settings.json and exposes only currentCallYear. CMS merge mode preserves siteLaunched and other unmanaged keys. An owner with repository write access can still edit code directly.
 - No hosted Pages CMS sign-in, repository authorisation, content write or deployment was performed by Codex. Local builds and JSON/render tests do not establish a successful authenticated hosted editing session.
+
+## Session 5 design state
+
+- Event registration and translated agendas are optional in CMS, validation and templates. Missing/blank blocks are hidden; supplied URLs still require HTTPS. The Event slug example is sample-event, the Action-option maintenance note names both .pages.yml lists, and EDITING uses the requested Georgian word for spaces.
+- Choose self-hosted subset Noto Sans Georgian plus Noto Sans at 400/700, font-display: swap, with full OFL notices and a source/checksum manifest. Four faces total 99,184 bytes. The English home loads three (83,452 bytes) because its language switch is Georgian. Fonts are already prepared; normal builds/CI do not run the Python maintenance subsetting script.
+- Blue, one warm accent and neutral CSS tokens have 19 allowed text/background pairs tested at 4.5:1 or better. Status/source words remain visible. Georgian text has no text-transform. See DESIGN.md for font/licence comparisons and palette rules.
+- The text-only NEO logo placeholder and language switch sit above seven shared navigation destinations. Desktop links and a native details/summary mobile menu share one macro. Mobile keyboard activation and the desktop layout work with page JavaScript disabled.
+- Calls, Events and News use consistent cards; open/upcoming/closed badges and official/NEO/partner source labels use explicit text. Contact/legal links and the EU funding block are separated. The emblem remains an explicit placeholder, not an imitation EU logo.
+- Home keeps all six approved blocks. The purpose/audience hero, section links, story panel and illustrative figures adapt from one column to desktop. A pre-existing Nunjucks rejectattr misuse hid every deadline; an explicit filter and regression test now show open/upcoming calls correctly.
+- Before/after full-page screenshots of /ka/ and /en/ at 360/1280 px are in docs/review/session-5, listed in its README and the PR. The final screenshots wait for fonts and disable page JavaScript. Manual visual inspection caught and corrected a split Georgian hero word at mobile width.
+- Local mobile Lighthouse runs on the built site returned performance 99, accessibility 100 and best practices 96 for both homes. SEO is 66 while siteLaunched=false intentionally blocks indexing. These are local lab measurements, not a deployed-site guarantee. Live CMS/hosting checks and Georgian editorial review remain open.
 
 ## Turn on GitHub Pages (Luka)
 
@@ -52,7 +63,7 @@ The browser check uses `/usr/bin/chromium`; set CHROMIUM_PATH if Chromium lives 
 
 ## Test Pages CMS (Luka)
 
-1. Review and merge the session 4 PR separately. Open https://app.pagescms.org, sign in with GitHub and authorise the app for this repository if requested. Open Luka9815/neo-georgia-website and main. Do not create a second repository or hosting account. If the app cannot see the repository, check GitHub access and installation scope.
+1. Session 4 is already in main. After reviewing the session 5 PR separately, open https://app.pagescms.org, sign in with GitHub and authorise the app for this repository if requested. Open Luka9815/neo-georgia-website and main. Do not create a second repository or hosting account. If the app cannot see the repository, check GitHub access and installation scope.
 2. Confirm the Georgian-first News, Events and Settings forms appear. In Settings confirm only currentCallYear is editable. Save the existing year, then inspect settings.json on GitHub: siteLaunched must still be present and false. It must not appear in the form.
 3. Create one News item with slug sample-cms-test, a publication date, one action, and Georgian title/body prefixed [SAMPLE]. Leave English entirely blank. Use a bold word and a link in the body, then save.
 4. Wait for Deploy GitHub Pages to pass (usually about two minutes). Check the Georgian News list and detail page, Markdown formatting and language-switch fallback to the English News index. Verify the JSON has Markdown strings, a date-only date and no meaningful English object.
@@ -62,14 +73,14 @@ The browser check uses `/usr/bin/chromium`; set CHROMIUM_PATH if Chromium lives 
 
 ## Next task
 
-Complete the authenticated Pages CMS test above and train staff using docs/EDITING.md. Then add the image/alt-text workflow and responsive image pipeline before enabling rich-text image insertion. Never commit credentials or personal email addresses. The domain remains registered to ERIDA.
+Review the design screenshots and the actual hosted mobile layout. Complete the authenticated Pages CMS test above and train staff using docs/EDITING.md. Then add the image/alt-text workflow and responsive image pipeline before enabling rich-text image insertion. Never commit credentials or personal email addresses. The domain remains registered to ERIDA.
 
 ## Remaining work
 
 - Turn on Pages and verify the first hosted deployment. Monitor the scheduled rebuild and re-enable it after inactivity if needed.
 - Authenticated Pages CMS News/Event create, edit, delete and settings-preservation tests. Configuration and local validation are complete.
 - Original EACEA Georgian/English emblems and the approved Georgian disclaimer; confirm funding wording against the signed grant agreement.
-- Final templates, opportunity filters, font choice, responsive image pipeline, production content validation and Georgian editorial review.
+- Remaining templates, opportunity filters, responsive image pipeline, production content validation and Georgian editorial review of the new typography.
 - Search with Georgian, content migration, old-URL mapping, privacy/accessibility/prevailing-language approval, manual accessibility and Lighthouse checks.
 - A daily rebuild refreshes static statuses. Sample dates are in 2026 and may become past/closed; no fixed test clock is used in production.
 

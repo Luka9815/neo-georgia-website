@@ -19,6 +19,14 @@ try {
     const response = await page.goto(`${base}${prefix}${view.path.slice(1)}`);
     assert.equal(response.status(), 200, view.path);
     await page.evaluate(() => document.fonts.ready);
+    assert.ok(
+      await page.evaluate(() =>
+        [...document.fonts].some(
+          (font) => font.family.includes('NEO Noto Sans') && font.status === 'loaded'
+        )
+      ),
+      `Local font: ${view.path}`
+    );
     const results = await new AxeBuilder({ page }).analyze();
     assert.deepEqual(
       results.violations.map((v) => ({

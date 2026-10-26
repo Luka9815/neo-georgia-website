@@ -22,7 +22,7 @@ function luminance(hex) {
 
 // These are the allowed text/surface pairs, including all badge and footer variants.
 for (const background of ['paper', 'surface', 'accent-soft']) {
-  for (const foreground of ['ink', 'muted', 'blue', 'accent']) {
+  for (const foreground of ['ink', 'muted', 'blue', 'blue-dark', 'accent']) {
     test(`AA contrast: ${foreground} text on ${background}`, () => {
       const a = luminance(tokens[foreground]);
       const b = luminance(tokens[background]);

@@ -26,7 +26,7 @@
     <div class="header-top">
       <a class="brand" href="/{{ view.lang }}/">
         <span class="brand-name">{{ t.logoName }}</span>
-        <span class="brand-description">{{ t.site }}</span>
+        <span class="brand-description">{{ t.officeName }}</span>
         <span class="brand-note">{{ t.logoPlaceholder }}</span>
       </a>
       <a class="language-switch" href="{{ view.alternate }}" lang="{{ other }}" hreflang="{{ other }}">{{ t.switch }}</a>
@@ -40,7 +40,7 @@
 </header>
 <main id="main" class="wrapper page-main" tabindex="-1">
   <p class="notice">{{ t.sample }}</p>
-  <h1>{{ title }}</h1>
+  {% if view.kind != 'home' %}<h1>{{ title }}</h1>{% endif %}
   {{ body | safe }}
 </main>
 <footer class="site-footer">
