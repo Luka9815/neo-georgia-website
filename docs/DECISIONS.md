@@ -181,3 +181,7 @@ Supersedes automatic verified-English attachment and the four-source-only assump
 
 ## 2026-10-26: Remove theme-only dates and markers without removing body emoji
 Extend "Review-only Markdown conversion, romanised slugs and suggestions". Strip only a leading standalone brace-wrapped DD.MM.YYYY theme date, standalone empty info markers and repeated blank lines. Clean leading title emoji, including joined emoji sequences; preserve numerical title prefixes, body emoji and info markers that have text. Keep meaningful dates inside the article.
+
+
+## 2026-10-26: Prefer clean legacy slugs, word-boundary romanisation fallback
+Supersedes the slug-generation part of "Review-only Markdown conversion, romanised slugs and suggestions". Reuse clean lowercase ASCII legacy slugs after converting underscores to hyphens. Preserve an already published clean slug even when long; the approximately 60-character limit applies to newly romanised title slugs. Truncate those at a word boundary, with a hard cut only for a single overlong token. Keep deterministic collision suffixes and reserve existing live News slugs. Preserve the original legacy value separately.

@@ -74,19 +74,26 @@ export function romanise(title) {
     .map((letter) => alphabet[letter] ?? letter)
     .join('');
 }
-export function uniqueSlug(title, id, used) {
-  let base = romanise(plainText(title))
-    .normalize('NFKD')
-    .replace(/\p{M}/gu, '')
-    .replace(/['’ʼ]/g, '')
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-|-$/g, '');
+export function truncateAtWord(value, limit) {
+  if (value.length <= limit) return value;
+  const boundary = value.slice(0, limit + 1).lastIndexOf('-');
+  return (boundary > 0 ? value.slice(0, boundary) : value.slice(0, limit)).replace(/-+$/, '');
+}
+
+export function uniqueSlug(title, id, used, legacySlug = '') {
+  const legacy = String(legacySlug).replaceAll('_', '-');
+  const reusable = /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(legacy);
+  let base = reusable ? legacy : romanise(cleanTitle(title))
+    .normalize('NFKD').replace(/\p{M}/gu, '')
+    .replace(/['’ʼ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
   if (!base) base = `news-${id}`;
-  base = base.slice(0, 60).replace(/-+$/g, '');
+  // Preserve an already published clean legacy slug. New romanised slugs use
+  // a 60-character word boundary; a single overlong word needs a hard cut.
+  if (!reusable) base = truncateAtWord(base, 60);
   let slug = base;
   for (let count = 2; used.has(slug); count++) {
     const suffix = `-${count}`;
-    slug = base.slice(0, 60 - suffix.length).replace(/-+$/g, '') + suffix;
+    slug = (reusable ? base : truncateAtWord(base, 60 - suffix.length)) + suffix;
   }
   used.add(slug);
   return slug;
@@ -443,7 +450,7 @@ export function convertPosts(collections, run, reservedSlugs = []) {
       if (!row.title || !ka.markdown)
         throw new Error('Missing title or body after HTML cleanup.');
       Temporal.PlainDate.from(row.date);
-      const slug = uniqueSlug(row.title, post.id, used);
+      const slug = uniqueSlug(row.title, post.id, used, post.slug);
       row.slug = slug;
       row.status = 'converted';
       if (row.language.needsReview) row.warnings.push('Language needs review. The source remains separate; no automatic split, translation or pairing.');
