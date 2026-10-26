@@ -1,0 +1,16 @@
+---
+pagination:
+  data: pageTypes.resources
+  size: 1
+  alias: view
+permalink: "{{ view.path }}"
+eleventyExcludeFromCollections: true
+---
+{% extends 'page.njk' %}
+
+{% block pageContent %}
+<section>
+  <h2>{{ t.resources }}</h2>
+  {{ cards(resources, 'resource', t, view.lang) }}
+</section>
+{% endblock %}

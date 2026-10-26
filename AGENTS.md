@@ -84,7 +84,8 @@ Folder layout (session 1; content contract in `docs/CONTENT.md`):
 ```
 src/
   _data/          site settings, i18n strings (ka.json, en.json)
-  _includes/      layouts and partials
+  _includes/      shared layouts and partials
+  pages/          one Nunjucks template per page type
   content/        one folder per content type, one JSON file per item
   assets/         css, fonts, images, icons, EU emblem files
 lib/              shared content, date and status helpers

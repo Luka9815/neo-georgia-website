@@ -1,0 +1,14 @@
+---
+pagination:
+  data: pageTypes.news-article
+  size: 1
+  alias: view
+permalink: "{{ view.path }}"
+eleventyExcludeFromCollections: true
+---
+{% extends 'page.njk' %}
+
+{% block pageContent %}
+{% set item = news | findSlug(view.slug) %}
+{{ item.body | markdown | safe }}
+{% endblock %}

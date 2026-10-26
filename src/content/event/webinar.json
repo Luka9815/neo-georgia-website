@@ -4,8 +4,8 @@
     "cbhe",
     "icm"
   ],
-  "date": "2026-12-10T10:00:00+04:00",
-  "end": "2026-12-10T12:00:00+04:00",
+  "date": "2026-12-10T10:00",
+  "end": "2026-12-10T12:00",
   "timeZone": "Asia/Tbilisi",
   "registration": "https://example.org/",
   "type": "webinar",

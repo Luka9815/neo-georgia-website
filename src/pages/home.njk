@@ -1,0 +1,46 @@
+---
+pagination:
+  data: pageTypes.home
+  size: 1
+  alias: view
+permalink: "{{ view.path }}"
+eleventyExcludeFromCollections: true
+---
+{% extends 'page.njk' %}
+
+{% block pageContent %}
+<section>
+  <h2>{{ t.purpose }}</h2>
+  <div class="entry">
+    <a class="button" href="/{{ view.lang }}/opportunities/#individuals">{{ t.individuals }}</a>
+    <a class="button" href="/{{ view.lang }}/opportunities/#organisations">{{ t.organisations }}</a>
+  </div>
+</section>
+<section>
+  <h2>{{ t.deadlines }}</h2>
+  {{ cards(calls | rejectattr('status','equalto','closed') | list | take(3), 'call', t, view.lang) }}
+</section>
+<section>
+  <h2>{{ t.upcomingEvents }}</h2>
+  {{ cards(events | status('upcoming') | take(3), 'event', t, view.lang) }}
+</section>
+<section>
+  <h2>{{ t.latestNews }}</h2>
+  {{ cards(news | take(3), 'news', t, view.lang) }}
+</section>
+<section>
+  <h2>{{ t.story }}</h2>
+  {{ cards(stories | take(1), 'story', t, view.lang) }}
+</section>
+<section>
+  <h2>{{ t.figures }}</h2>
+  <dl class="figures">
+    {% for key in ['projects','mobilities','institutions'] %}
+      <div>
+        <dt>{{ t[key] }}</dt>
+        <dd>{{ t.sampleNumber }}</dd>
+      </div>
+    {% endfor %}
+  </dl>
+</section>
+{% endblock %}

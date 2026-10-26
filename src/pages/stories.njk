@@ -1,0 +1,16 @@
+---
+pagination:
+  data: pageTypes.stories
+  size: 1
+  alias: view
+permalink: "{{ view.path }}"
+eleventyExcludeFromCollections: true
+---
+{% extends 'page.njk' %}
+
+{% block pageContent %}
+<section>
+  <h2>{{ t.story }}</h2>
+  {{ cards(stories, 'story', t, view.lang) }}
+</section>
+{% endblock %}

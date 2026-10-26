@@ -1,0 +1,16 @@
+---
+pagination:
+  data: pageTypes.news
+  size: 1
+  alias: view
+permalink: "{{ view.path }}"
+eleventyExcludeFromCollections: true
+---
+{% extends 'page.njk' %}
+
+{% block pageContent %}
+<section>
+  <h2>{{ t.latestNews }}</h2>
+  {{ cards(news, 'news', t, view.lang) }}
+</section>
+{% endblock %}

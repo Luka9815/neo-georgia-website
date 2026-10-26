@@ -1,0 +1,20 @@
+---
+pagination:
+  data: pageTypes.opportunities
+  size: 1
+  alias: view
+permalink: "{{ view.path }}"
+eleventyExcludeFromCollections: true
+---
+{% extends 'page.njk' %}
+
+{% block pageContent %}
+<section id="individuals">
+  <h2>{{ t.individuals }}</h2>
+  <p>{{ t.sample }}</p>
+</section>
+<section id="organisations">
+  <h2>{{ t.organisations }}</h2>
+  {{ cards(actions, 'action', t, view.lang) }}
+</section>
+{% endblock %}

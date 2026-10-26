@@ -1,0 +1,15 @@
+---
+pagination:
+  data: pageTypes.notFound
+  size: 1
+  alias: view
+permalink: "{{ view.path }}"
+eleventyExcludeFromCollections: true
+---
+{% extends 'page.njk' %}
+
+{% block pageContent %}
+<p>
+  <a href="/{{ view.lang }}/">{{ t.returnHome }}</a>
+</p>
+{% endblock %}

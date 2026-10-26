@@ -1,17 +1,17 @@
-{% macro cards(items, type, t, lang) %}
+{% macro cards(items, type, t, lang, heading='h3') %}
 <ul class="cards">
 {% for item in items %}
 <li>
   {% if type == 'call' %}
-  <h3><a href="/{{ lang }}/opportunities/{{ item.action }}/">{{ item.title }}</a></h3>
+  <{{ heading }}><a href="/{{ lang }}/opportunities/{{ item.action }}/">{{ item.title }}</a></{{ heading }}>
   <p><time datetime="{{ item.deadline }}">{{ item.deadline | dateLabel(t) }}</time>, {{ t.brussels }}</p><p>{{ t[item.status] }}</p><a href="{{ item.url }}">{{ t.officialLinks }}</a>
   {% elif type == 'resource' %}
-  <h3><a href="{{ item.url }}">{{ item.title }}</a></h3><p>{{ t.source }}: {{ t[item.source] }}</p>
+  <{{ heading }}><a href="{{ item.url }}">{{ item.title }}</a></{{ heading }}><p>{{ t.source }}: {{ t[item.source] }}</p>
   {% elif type == 'faq' %}
-  <h3>{{ item.title }}</h3>{{ item.body | markdown | safe }}
+  <{{ heading }}>{{ item.title }}</{{ heading }}>{{ item.body | markdown | safe }}
   {% else %}
-  <h3><a href="/{{ lang }}/{% if type == 'action' %}opportunities{% elif type == 'story' %}stories{% else %}{{ type }}{% if type == 'event' %}s{% endif %}{% endif %}/{{ item.slug }}/">{{ item.title }}</a></h3>
-  {% if item.date %}<p><time datetime="{{ item.date }}">{{ item.date | dateLabel(t, 'Asia/Tbilisi') }}</time>{% if item.status %}, {{ t[item.status] }}{% endif %}</p>{% endif %}
+  <{{ heading }}><a href="/{{ lang }}/{% if type == 'action' %}opportunities{% elif type == 'story' %}stories{% else %}{{ type }}{% if type == 'event' %}s{% endif %}{% endif %}/{{ item.slug }}/">{{ item.title }}</a></{{ heading }}>
+  {% if item.date %}<p><time datetime="{{ item.date }}">{{ item.date | dateLabel(t, item.timeZone or 'Asia/Tbilisi') }}</time>{% if item.status %}, {{ t[item.status] }}{% endif %}</p>{% endif %}
   {{ item.body | markdown | safe }}
   {% endif %}
 </li>
