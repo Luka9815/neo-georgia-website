@@ -2,6 +2,12 @@
 
 Newest at the top. One entry per working session: date, who (agent or person), what changed.
 
+## 2026-10-27 (Codex, session 12: production search)
+- Ship Pagefind after Eleventy, with separate ka/en main-content indexes, notices/utility pages excluded and project-prefix-safe result URLs. The deploy workflow already uses npm run build.
+- Add site-designed bilingual search pages linked from the header, labelled keyboard input, title/excerpt result links, polite live announcements and no-JavaScript main-section links. Only search pages load modules, and only the active index loads on submission.
+- Apply Luka's exact 18-ending query fallback, one longest ending per word with four letters retained, typed ranking first and duplicates removed. Record before/after recall, unchanged English results and measured payloads in SEARCH.md and review/search-session-12.json. Supersede the earlier hold in DECISIONS.
+- Root and project-path builds pass, 93 tests each, including both prefix/custom-domain checks. Accessibility passes all 76 pages in each layout with zero axe violations, 320 px overflow, keyboard/language switches, no-JS menus, publication filters and search behaviour. No merge or deployment.
+
 ## 2026-10-27 (Claude Code: review of sessions 9 to 11)
 - Replaced the four shorturl.at links in information-about-capacity-building-project-proposals with the direct EU Funding & Tenders topic pages they resolve to (checked 2026-10-27, HTTP 302), using the topic ID as link text. NEWS-PROMOTION.md and the promoted-News test record the mapping.
 - Removed invented personal names from the two [SAMPLE] people (Luka: no names in placeholders). The transliteration test now applies to real names only.

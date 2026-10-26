@@ -1,6 +1,6 @@
 # Handover
 
-Last updated: 2026-10-26 (Codex, session 11: Georgian search evaluation, withheld)
+Last updated: 2026-10-27 (Codex, session 12: production search with approved fallback)
 
 ## Current state
 
@@ -104,11 +104,19 @@ The browser check uses `/usr/bin/chromium`; set CHROMIUM_PATH if Chromium lives 
 
 ## Next task
 
-Luka reviews the three stacked PRs in order: session 9 targets main, session 10 targets session 9, session 11 targets session 10. Nothing is merged automatically. After merging each predecessor, retarget the next PR to main; rebase/cherry-pick its own commits if a squash merge makes predecessor commits reappear.
+Session 13 starts from codex/session-12-search and adds an optional News image field, validation, responsive rendering and CMS/editor documentation. Do not attach images to the five promoted posts: all five have downloaded review images available, but Luka must approve selection and supply alt text first. Existing resolved title/direct-EU-link/nameless-placeholder changes from Claude remain intact.
 
-Resolved on 2026-10-27: the Europe Day in Kutaisi title was accepted (Claude recommended it, Luka said to proceed); the four shortened links were replaced with direct EU topic pages; placeholder people carry no names. Still open: check the emoji legacy path on hosted Pages, and review the historical clarification against the current position. Session 10 adds only clearly labelled samples/placeholders; NEO must replace these before launch.
+The PR stack is still unmerged: session 12 targets the fetched session-11-search branch (85cf67b), and session 13 must target session 12. Review and merge predecessors in order, retargeting after merges. Do not merge automatically. The hosted emoji legacy path and historical clarification review remain open.
 
-Search remains blocked by Georgian inflection quality. Read SEARCH.md and docs/review/search-session-11.json, then agree native-speaker acceptance queries and choose a reviewed normalisation/expansion approach or test another account-free static engine. Only implement the keyboard-accessible search page/header and no-JavaScript fallback after results are adequate. Continue the Action editorial review, hosted Pages CMS round trip and image/alt workflow. Domain ownership stays with ERIDA.
+## Session 12 production search
+
+Luka explicitly superseded the session 11 hold. npm run build now runs Eleventy then scripts/build-search.js, also used by the existing deploy workflow. Separate ka/en indexes include main content only, omit .notice and exclude redirects, 404 and search pages. Pagefind stored URLs include PATH_PREFIX; browser baseUrl is / to prevent double prefixing.
+
+Both /ka/search/ and /en/search/ are linked from the header outside the seven menu items. Site-designed API markup supports labelled input, Enter submission, title/excerpt links and polite live announcements. Without JavaScript, visitors see a short explanation and seven section links. Only search pages load the two small modules; only the active-language index loads on submission.
+
+The sole ending list is src/assets/js/georgian-search.js: Luka's 18 suffixes, longest first, at most one removed per Georgian word and at least four letters retained. Typed-query results remain first, with duplicates removed. English is unchanged. This does not alter index terms or source text and does not remove nominative ა. Measured recall: მობილობა 6/9 to 6/9, მობილობის 7/9 to 9/9, თანამშრომლობა 5/7 to 5/7, თანამშრომლობის 3/7 to 7/7, ერასმუსის 2/3 to 3/3. SEARCH.md records payloads and the residual limitations; review/search-session-12.json contains both layouts' raw results.
+
+Run npm run build before serving with npm start, so Pagefind indexes exist. Content edits require another production build to refresh search. npm run check:a11y now also checks search keyboard use, ordering, language isolation, no-JavaScript navigation and ordinary-page script exclusion. Set SEARCH_REPORT to save browser measurements. Root/project builds and all 93 tests pass; both layouts pass 76-page accessibility checks with zero violations.
 
 ## Session 11 search evaluation
 
