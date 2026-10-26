@@ -2,5 +2,9 @@
 permalink: /robots.txt
 ---
 User-agent: *
+{% if site.siteLaunched %}
+Allow: /
+{% else %}
 Disallow: /
+{% endif %}
 Sitemap: {{ '/sitemap.xml' | absoluteUrl(site.url) }}

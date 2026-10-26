@@ -48,6 +48,28 @@ test('legacy stub renders with a prefixed refresh, canonical and working visible
     assert.equal($('link[rel=canonical]').attr('href'), `https://luka9815.github.io${target}`);
     assert.equal($('main a').first().attr('href'), target);
     assert.ok(existsSync(join(root, '_site/.nojekyll')));
+
+    // Exercise the launch switch in an isolated copy, never in tracked files.
+    const settingsPath = join(root, 'src/_data/site.js');
+    writeFileSync(settingsPath, readFileSync(settingsPath, 'utf8')
+      .replace('siteLaunched: false', 'siteLaunched: true'));
+    execFileSync(process.execPath, ['node_modules/@11ty/eleventy/cmd.cjs'], {
+      cwd: root,
+      env: {
+        ...process.env,
+        PATH_PREFIX: '/neo-georgia-website/',
+        SITE_URL: 'https://luka9815.github.io/neo-georgia-website/',
+      },
+      stdio: 'pipe',
+    });
+    const home = load(readFileSync(join(root, '_site/ka/index.html'), 'utf8'));
+    assert.equal(home('meta[name=robots]').length, 0);
+    assert.match(readFileSync(join(root, '_site/robots.txt'), 'utf8'), /Allow: \//);
+    assert.doesNotMatch(readFileSync(join(root, '_site/robots.txt'), 'utf8'), /Disallow:/);
+    for (const path of ['index.html', '404.html', 'old-cbhe/index.html']) {
+      const document = load(readFileSync(join(root, '_site', path), 'utf8'));
+      assert.match(document('meta[name=robots]').attr('content'), /noindex/);
+    }
   } finally {
     rmSync(root, { recursive: true, force: true });
   }

@@ -5,5 +5,6 @@ export default function () {
     url: siteUrl(),
     pathPrefix: getPathPrefix(),
     currentCallYear: 2026,
+    siteLaunched: false,
   };
 }

@@ -254,3 +254,11 @@ test('Pages output has a bilingual root 404 and a static home redirect', () => {
   assert.ok(index(`main a[href="${publicPath('/ka/')}"]`).length);
 });
 
+
+test('unlaunched site blocks indexing on all pages and in robots.txt', () => {
+  assert.equal(getSite().siteLaunched, false);
+  for (const file of files('_site').filter(path => path.endsWith('.html'))) {
+    assert.match(load(read(file))('meta[name=robots]').attr('content'), /noindex/);
+  }
+  assert.match(read('_site/robots.txt'), /Disallow: \//);
+});

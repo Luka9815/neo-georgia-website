@@ -96,3 +96,6 @@ Keep route and content paths independent of hosting. Set Eleventy's pathPrefix f
 ## 2026-10-26: GitHub Pages fallbacks and legacy URLs
 Supersedes the host-specific 404 and root-redirect rules in "Portable hosting and repeatable checks". Use one root bilingual 404 (Georgian first, English second) and a static root index with meta refresh, target canonical and a visible Georgian-home link. Add .nojekyll to the uploaded output. Generate optional meta-refresh stubs from the initially empty redirects.json mapping; validate collisions and target pages. These are HTML redirects, not HTTP 301 responses. Remove netlify.toml and src/host/_redirects; restore them from git history only if Netlify is chosen again.
 
+
+## 2026-10-26: Explicit launch-indexing setting
+Supersedes the indexing and host-URL behaviour in "Sample preview safeguards and EU placeholder"; sample marking and the EU asset requirements remain unchanged. siteLaunched in src/_data/site.js defaults to false. While false, every page is noindex and robots.txt disallows crawling. Once NEO approves launch, set it true to allow content indexing; 404 and redirect pages remain noindex. SITE_URL defaults to the full GitHub Pages project address and can be changed to the institutional custom-domain root together with PATH_PREFIX=/.

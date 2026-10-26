@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ title }} | {{ t.site }}</title>
   <meta name="description" content="{{ title }}. {{ t.sample }}">
+  {% if not site.siteLaunched or view.kind == '404' or view.target %}
   <meta name="robots" content="noindex, nofollow">
+  {% endif %}
   <link rel="canonical" href="{{ (view.target or view.path) | absoluteUrl(site.url) }}">
   <link rel="alternate" hreflang="{{ view.lang }}" href="{{ view.path | absoluteUrl(site.url) }}">
   {% if view.translated != false %}<link rel="alternate" hreflang="{{ other }}" href="{{ view.alternate | absoluteUrl(site.url) }}">{% endif %}
