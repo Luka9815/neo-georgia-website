@@ -94,3 +94,10 @@ Newest at the top. One entry per working session: date, who (agent or person), w
 
 ## 2026-10-26 (Claude)
 - Repository seeded with AGENTS.md, CLAUDE.md, docs/HANDOVER.md, docs/DECISIONS.md, docs/CHANGELOG.md and docs/SITE-PLAN.md (site plan v0.1, converted from the approved Word version).
+
+## 2026-10-26: Session 9, five approved bilingual News posts
+
+- Promote only the five keep=y rows, split source language sections without translation, preserve dates/Actions and all four shortened body links. One newly written English title awaits approval: Europe Day in Kutaisi, 24–25 October.
+- Omit unsupported News images. Retain sample News required by CMS and untranslated-language tests. Add five legacy redirects, including decoded emoji static output. Repair skipped source heading levels at render time only.
+- Root and project-path builds pass; all 83 tests pass in each layout. Both prefix/custom-domain build checks in npm test pass. Both root and project-path accessibility checks pass all 64 non-redirect pages with zero axe violations, keyboard/language switches, 320 px overflow and no-JS menus. The encoded legacy emoji request returns 200 locally.
+- External link checks attempted for all four unique body URLs; network policy blocks shorturl.at, so final destinations need Luka's verification. Full audit: NEWS-PROMOTION.md. Nothing merged or deployed.
