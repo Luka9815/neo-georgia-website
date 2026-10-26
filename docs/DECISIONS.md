@@ -207,3 +207,10 @@ Narrows the initial News import scope in "Last twelve months of News in the init
 
 ## 2026-10-26: Smaller footer disclaimer (Luka)
 The EACEA disclaimer stays verbatim on every page but is set as secondary text (0.75rem, muted colour, 6.9:1 contrast), similar to NEO Moldova. The emblem and funding statement are unchanged.
+
+
+## 2026-10-26: Five source-only bilingual News promotions
+Apply only the five keep=y rows authorised for session 9. A self-referencing pair_with means split one bilingual body, including the English-first Capacity Building source; retain source wording and use existing source headings as titles where available. The sole new English title, Europe Day in Kutaisi, 24–25 October, awaits Luka's review. Reviewed JSON supplies dates because the CSV has no date column. Keep images out until News supports a bilingual-alt image contract.
+
+## 2026-10-26: Static output for encoded legacy paths
+Extend draft redirect validation to decoded Unicode letters, numbers, marks and emoji while retaining traversal/collision/target checks. Decode once before output so the one approved emoji legacy URL matches a static host's URL decoding. Keep redirect destinations limited to known pages and verify the emoji URL on hosted Pages. News rendering normalises heading levels to prevent source-format accessibility failures without rewriting text.

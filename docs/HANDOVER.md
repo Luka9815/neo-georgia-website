@@ -1,6 +1,6 @@
 # Handover
 
-Last updated: 2026-10-26 (Claude Code, after session 8: News Actions optional, bilingual-only migration, smaller disclaimer)
+Last updated: 2026-10-26 (Codex, session 9: five approved bilingual News posts)
 
 ## Current state
 
@@ -104,7 +104,17 @@ The browser check uses `/usr/bin/chromium`; set CHROMIUM_PATH if Chromium lives 
 
 ## Next task
 
-Luka confirms the five keeps in migration/review/decisions.csv (all other rows are n). Then a separately briefed session promotes them: split each post's ka and en sections into one News record with both languages, apply the listed Actions (empty is allowed for News), approve slugs, images and alt text, and add redirects only for the promoted posts. Skipped posts are not translated or migrated. Continue the Action editorial review, hosted Pages CMS test and staff training. Any domain must be registered to ERIDA.
+Session 10 starts from codex/session-9-promote and adds Publications, FAQ, People and Contact templates under the approved sitemap. Session 11 starts from that branch and evaluates Georgian static search. Do not merge these stacked PRs automatically.
+
+## Session 9 promotion
+
+Exactly the five keep=y rows are promoted as bilingual News; all other review drafts remain outside src/content. Dates are from reviewed JSON because decisions.csv has no date column. Actions and slugs match the CSV, including two empty Actions lists. Source wording is unchanged. News rendering repairs heading levels without editing source text. The English-first Capacity Building post is split correctly.
+
+Only the English title “Europe Day in Kutaisi, 24–25 October” is newly written and needs Luka's approval. All other English titles exist in source. Images are omitted because News has no image contract/rendering yet. Sample News remains because CMS and untranslated-fallback tests depend on it.
+
+Five static legacy redirects are active in this branch only. Emoji request paths are decoded for static output and require a hosted Pages check. All four body destinations are shorturl.at links: network policy blocked verification, so Luka must check them before merge. Details and exact URLs: NEWS-PROMOTION.md. No body links were dropped.
+
+Validation: root and prefixed builds/tests and accessibility results are recorded in CHANGELOG. No merge or deployment was performed.
 
 ## Remaining work
 

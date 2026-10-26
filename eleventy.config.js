@@ -15,6 +15,20 @@ export default function (config) {
   config.addFilter('related', related);
   config.addFilter('dateLabel', dateLabel);
   config.addFilter('markdown', (text) => markdown.render(text || ''));
+  // Preserve migrated wording while preventing skipped heading levels.
+  config.addFilter('newsMarkdown', (text) => {
+    const tokens = markdown.parse(text || '', {});
+    let previous = 1;
+    let level = 2;
+    for (const token of tokens) {
+      if (token.type === 'heading_open') {
+        level = Math.max(2, Math.min(Number(token.tag.slice(1)), previous + 1));
+        previous = level;
+        token.tag = `h${level}`;
+      } else if (token.type === 'heading_close') token.tag = `h${level}`;
+    }
+    return markdown.renderer.render(tokens, markdown.options, {});
+  });
   config.addFilter('take', (items, count) => items.slice(0, count));
   config.addFilter('withoutStatus', (items, value) =>
     items.filter((item) => item.status !== value)
