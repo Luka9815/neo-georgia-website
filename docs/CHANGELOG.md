@@ -2,6 +2,12 @@
 
 Newest at the top. One entry per working session: date, who (agent or person), what changed.
 
+## 2026-10-27 (Codex, session 13: optional responsive News images)
+- Add an optional local News image with required Georgian alt and English alt when English News exists. Reject unsafe/external/missing paths, empty required alternatives, [ALT NEEDED] and undecodable files.
+- Render marked News images in articles/cards through @11ty/eleventy-img 7.1.1: AVIF/WebP plus JPEG/PNG fallback, responsive widths/sizes, intrinsic dimensions and lazy card loading. Preserve original EU artwork and use actual Eleventy output directories plus PATH_PREFIX.
+- Add Georgian-first Pages CMS image fields and update CONTENT/EDITING. List all five available review images in NEWS-IMAGES.md, but attach none and publish no review files. Preserve Claude's direct links and nameless placeholders. Fix mobile header language-button wrapping and guard it in the browser check.
+- Root and project-path builds pass, all 97 tests each, including both prefix/custom-domain checks and isolated responsive-image builds. Accessibility passes 76 pages in each layout with zero axe violations, keyboard/language switches, 320 px overflow, no-JS navigation, filters and search checks. Four bilingual fixture article/list pages also pass axe, image decoding and 320 px overflow; Georgian fixture visually inspected. Nothing merged or deployed.
+
 ## 2026-10-27 (Codex, session 12: production search)
 - Ship Pagefind after Eleventy, with separate ka/en main-content indexes, notices/utility pages excluded and project-prefix-safe result URLs. The deploy workflow already uses npm run build.
 - Add site-designed bilingual search pages linked from the header, labelled keyboard input, title/excerpt result links, polite live announcements and no-JavaScript main-section links. Only search pages load modules, and only the active index loads on submission.

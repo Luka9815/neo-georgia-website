@@ -1,6 +1,6 @@
 # Handover
 
-Last updated: 2026-10-27 (Codex, session 12: production search with approved fallback)
+Last updated: 2026-10-27 (Codex, session 13: optional responsive News images)
 
 ## Current state
 
@@ -17,7 +17,7 @@ Last updated: 2026-10-27 (Codex, session 12: production search with approved fal
 - Sessions 1 to 8 are present in main at e40633d. Sessions 9, 10 and 11 are separate stacked branches/PRs, awaiting Luka. Selected review images remain under migration/review; five approved texts and their redirects are promoted only in the session 9 stack. Deploy configuration and launch flag are unchanged.
 - `.pages.yml` now configures News, Events and a single-file Settings editor. Staff use GitHub sign-in at app.pagescms.org. Collection filenames derive from slug. Field labels are Georgian first; News English is optional, Event English required. The current documentation and implementation were checked via GitHub because the docs host returned 403. Sources and verification limits are in CONTENT.md.
 - News dates are calendar days (YYYY-MM-DD); existing News samples were migrated. Events keep local minute-precision strings without offsets and a named zone. Required fields, related action slugs, classifications, calendar dates and time ranges are validated before rendering with filename/field errors.
-- Bodies use rich-text with explicit Markdown output. Raw HTML remains disabled in markdown-it. Image insertion is disabled for now; src/assets/uploads is reserved for future images with /assets/uploads public paths handled by PATH_PREFIX.
+- Bodies use rich-text with explicit Markdown output. Raw HTML remains disabled in markdown-it. Inline image insertion remains disabled; optional News images use the separately validated field and responsive pipeline, using src/assets/uploads sources and /assets/uploads public paths handled by PATH_PREFIX.
 - Settings reads settings.json and exposes currentCallYear plus optional logoPath. The empty logoPath preserves the wordmark; an approved existing local /assets/ image uses language-specific alt text. No old-site logo has been downloaded. CMS merge mode preserves the code-only siteLaunched and other unmanaged keys. An owner with repository write access can still edit code directly.
 - No hosted Pages CMS sign-in, repository authorisation, content write or deployment was performed by Codex. Local builds and JSON/render tests do not establish a successful authenticated hosted editing session.
 
@@ -104,9 +104,19 @@ The browser check uses `/usr/bin/chromium`; set CHROMIUM_PATH if Chromium lives 
 
 ## Next task
 
-Session 13 starts from codex/session-12-search and adds an optional News image field, validation, responsive rendering and CMS/editor documentation. Do not attach images to the five promoted posts: all five have downloaded review images available, but Luka must approve selection and supply alt text first. Existing resolved title/direct-EU-link/nameless-placeholder changes from Claude remain intact.
+Luka reviews the unmerged stack: session 12 targets the fetched codex/session-11-search at 85cf67b, and session 13 targets session 12. Nothing is merged automatically. Merge predecessor PRs in order, then retarget/rebase subsequent PRs as needed for the merge method. Claude's direct EU links, accepted Kutaisi title and nameless placeholder people remain intact.
 
-The PR stack is still unmerged: session 12 targets the fetched session-11-search branch (85cf67b), and session 13 must target session 12. Review and merge predecessors in order, retargeting after merges. Do not merge automatically. The hosted emoji legacy path and historical clarification review remain open.
+All five promoted posts have a downloaded image available under migration/review/images; NEWS-IMAGES.md lists the exact files. None is attached or copied into public uploads. Luka must select images and supply Georgian/English alt text before a separate content update. The new image field and responsive pipeline are ready for that step. Authenticated Pages CMS image upload/save/reopen remains a hosted test after merge; local schema/build checks do not claim hosted verification.
+
+Search is approved and implemented with Luka's exact ending fallback. The documented base-form recall gaps remain because nominative ა is not in that list; English is unchanged. Continue normal editorial review, the hosted emoji redirect check and review of the historical clarification. Replace [SAMPLE] content before launch; retain institutional domain ownership and the existing launch/funding checks.
+
+## Session 13 optional News images
+
+News now accepts an optional image object: local /assets/uploads JPG/PNG/WebP/AVIF src, alt.ka required and alt.en required when the record has English. Missing/unsafe/external paths, empty required alternatives, [ALT NEEDED] and corrupt image data stop the build. Empty optional CMS objects are omitted. Inline rich-text media remains disabled.
+
+The component-marked transform uses @11ty/eleventy-img 7.1.1 to generate AVIF/WebP and JPEG-or-PNG fallback at responsive widths without enlargement, with sizes and intrinsic dimensions. Article lead images load eagerly; cards lazily. Only News images are processed, preserving original EU artwork. Generated paths use the actual Eleventy output directory and PATH_PREFIX. CONTENT.md and Georgian EDITING.md describe the contract and Pages CMS field. No promoted content or review binaries were published.
+
+Tests exercise valid/invalid fields, both languages, root/project builds, generated files/srcsets/escaping, corrupted source rejection, CMS shape and untouched unmarked images. A synthetic temporary fixture passes browser decoding, axe and 320 px checks across four bilingual article/list pages. Visual inspection also prompted a one-line language-control fix; the browser search check guards it at 320 px. Root/project builds and all 97 tests pass. Both layouts pass 76-page accessibility checks with zero violations, including the search and 320 px language-control checks. Details are recorded in CHANGELOG.
 
 ## Session 12 production search
 
@@ -149,8 +159,8 @@ Validation: root and prefixed builds/tests and accessibility results are recorde
 - Turn on Pages and verify the first hosted deployment. Monitor the scheduled rebuild and re-enable it after inactivity if needed.
 - Authenticated Pages CMS News/Event create, edit, delete and settings-preservation tests. Configuration and local validation are complete.
 - Obtain the official Georgian Funded by the EU beneficiary emblem from the EU Delegation or EACEA, then replace the English image on /ka/. Until then the English beneficiary emblem is used on both languages. Confirm funding wording against the signed grant agreement. The supplied Georgian project disclaimer is in place.
-- Remaining templates, opportunity filters, responsive image pipeline, production content validation and Georgian editorial review of the new typography.
-- Review the regenerated News drafts, downloaded selected images, CSV decisions and old-URL proposals. Any content promotion, additional attachment download or redirect activation needs a separate approved task. Continue other content migration, Georgian search, privacy/accessibility approval and manual accessibility/Lighthouse checks.
+- Opportunity filters, image support beyond News, production content validation and Georgian editorial review of the new typography.
+- Review the five selected News images and hosted legacy redirects. Other review drafts remain excluded under existing CSV decisions; further content promotion, additional downloads or redirect activation need a new brief. Continue Georgian search refinement, privacy/accessibility approval and manual accessibility/Lighthouse checks.
 - A daily rebuild refreshes static statuses. Sample dates are in 2026 and may become past/closed; no fixed test clock is used in production.
 
 ## Waiting on Nino / NEO
