@@ -68,3 +68,7 @@ Compute call status from opens/deadline instants and event status from the event
 
 ## 2026-10-26: Portable hosting and repeatable checks
 Both hosts build with npm run build and publish _site using Node 24. Share only the supported root 302 in _redirects. Netlify has language-specific 404 rules in netlify.toml; Cloudflare Pages uses the root Georgian 404 with an English 404 switch, avoiding unsupported 404 rules in its _redirects format. No host is selected until both live deployments are tested. Use node:test with Cheerio for generated-site checks and Playwright with axe for basic accessibility and 320 px layout checks.
+
+
+## 2026-10-26: Editor-entered local call and event times
+Supersedes the explicit-offset storage rule in the earlier computed-status decision. Store Call opens/deadline and Event date/end as YYYY-MM-DDTHH:mm plus a named timeZone. Resolve them with @js-temporal/polyfill at build time, including daylight saving; editors never type offsets. Reject nonexistent or ambiguous clock-change times instead of silently changing the entered time or guessing an occurrence. Runtime catalog values and HTML datetime attributes carry derived offsets; content files stay local. News dates retain their existing instant format.
