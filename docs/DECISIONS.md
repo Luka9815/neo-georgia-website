@@ -232,3 +232,11 @@ Supersedes “Pagefind held after Georgian inflection evaluation” and the sess
 
 ## 2026-10-27: Optional validated News images with responsive local output
 News may have one shared image.src under /assets/uploads and alt.ka, plus alt.en when English News exists; reject missing files, unsafe/external paths and any [ALT NEEDED]. Use @11ty/eleventy-img 7.1.1 only for component-marked News images so the original EU artwork is untouched: AVIF/WebP plus JPEG fallback for JPEG sources or PNG otherwise (transparency), width candidates 320/640/960/1280 without enlargement, dimensions/sizes set, eager article lead and lazy cards. Resolve the actual Eleventy output directory and PATH_PREFIX for all generated paths. Expose the optional object in Pages CMS, with English alt conditionally required by build validation. Leave all five promoted posts without images until Luka selects review files and supplies alt text; NEWS-IMAGES.md records availability.
+
+
+## 2026-10-27: Add authorised nominative endings to Georgian search
+Extend “Luka approves Pagefind with a Georgian ending fallback” with Luka's session 14 instruction: append ა and ი last in the single ending list, keeping at least four letters and removing only one longest ending per word. Typed-query results stay first, English remains unchanged, and index/page text is untouched; SEARCH.md records the additional recall column and the measured scope.
+
+
+## 2026-10-27: Keep image alternatives as review-only drafts
+For session 14, place visually grounded Georgian/English alt drafts and image suitability/rights notes only in NEWS-PROMOTION.md. Do not attach images, modify migration review metadata or copy alternatives into News until Luka approves selection and wording; flag text/logo posters and the redundant chart rather than assuming every downloaded image should be used.

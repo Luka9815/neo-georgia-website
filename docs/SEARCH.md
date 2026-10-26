@@ -1,5 +1,11 @@
 # Georgian static search
 
+## Session 14: nominative fallback, 2026-10-27
+
+Luka authorised appending ა and ი to the end of the common ending list in src/assets/js/georgian-search.js. The same four-letter minimum, longest-ending priority, one removal per word, typed-query ranking and de-duplication apply. No index terms or page text change. This extends the session 12 rule, rather than introducing a linguistic stemmer.
+
+The table below adds session 14 to the saved session 12 measurements. All five required queries now retrieve every page in their tested word family. This is a small corpus spot check, not a general Georgian-language benchmark. English controls are compared against session 12's complete ordered URL lists as well as against the as-typed API query. Current root/project-path browser evidence is saved in review/search-session-14.json.
+
 ## Session 12: approved production search, 2026-10-27
 
 Luka has decided to ship Pagefind with the specified Georgian ending fallback. This supersedes the session 11 hold below and the dated decision “Pagefind held after Georgian inflection evaluation”. The earlier measurements remain historical evidence, not a current shipping prohibition.
@@ -10,31 +16,34 @@ Both /ka/search/ and /en/search/ use the Pagefind JavaScript API with site-desig
 
 ### Query-only fallback
 
-The single documented ending list and implementation are in src/assets/js/georgian-search.js. It sorts Luka's 18 endings longest first, removes at most one ending per Georgian word, and only when at least four letters remain. Search runs the query as typed, then one variant with each eligible word shortened. Multiword queries stay multiword queries; this does not OR each word independently. Results retain typed-query ranking first and are de-duplicated. English queries run once unchanged. No index terms or page text are modified.
+The single documented ending list and implementation are in src/assets/js/georgian-search.js. Session 12 supplied 18 endings; session 14 appends nominative ა and ი last. The list is sorted longest first, removes at most one ending per Georgian word, and only when at least four letters remain. Search runs the query as typed, then one variant with each eligible word shortened. Multiword queries stay multiword queries; this does not OR each word independently. Results retain typed-query ranking first and are de-duplicated. English queries run once unchanged. No index terms or page text are modified.
 
-This is a small suffix heuristic, not a Georgian stemmer. In particular, the approved list does not remove the nominative ending ა, so მობილობა and თანამშრომლობა remain unchanged. The residual recall gaps are disclosed, not hidden by adding extra endings.
+This is a small suffix heuristic, not a Georgian stemmer. Session 12 left nominative forms unchanged; session 14 adds only the two newly authorised endings to cover the measured base-form gaps.
 
 ### Before and after on actual content
 
 The required word-family checks use the same nine mobility, seven cooperation and three Georgian Erasmus pages. Both build layouts are checked, with exact typed ranking preserved. English controls are compared by their complete ordered URL lists, not only their counts.
 
-| Query | Before | With fallback |
-|---|---:|---:|
-| მობილობა | 6/9 (67%) | 6/9 (67%) |
-| მობილობის | 7/9 (78%) | 9/9 (100%) |
-| თანამშრომლობა | 5/7 (71%) | 5/7 (71%) |
-| თანამშრომლობის | 3/7 (43%) | 7/7 (100%) |
-| ერასმუსის | 2/3 (67%) | 3/3 (100%) |
+| Query | No fallback | Session 12 | Session 14 (+ა, ი) |
+|---|---:|---:|---:|
+| მობილობა | 6/9 (67%) | 6/9 (67%) | 9/9 (100%) |
+| მობილობის | 7/9 (78%) | 9/9 (100%) | 9/9 (100%) |
+| თანამშრომლობა | 5/7 (71%) | 5/7 (71%) | 7/7 (100%) |
+| თანამშრომლობის | 3/7 (43%) | 7/7 (100%) | 7/7 (100%) |
+| ერასმუსის | 2/3 (67%) | 3/3 (100%) | 3/3 (100%) |
 
-English controls remain unchanged: mobility 9, cooperation 5, Erasmus 10 and მობილობა 0. The browser check also verifies keyboard submission, no-JavaScript links, active-language loading, no search requests from ordinary pages and project-path results. Current raw measurements are in review/search-session-12.json.
+English controls remain unchanged: mobility 9, cooperation 5, Erasmus 10 and მობილობა 0. The browser check also verifies keyboard submission, no-JavaScript links, active-language loading, no search requests from ordinary pages and project-path results. Session 12 raw measurements are in review/search-session-12.json; session 14 adds review/search-session-14.json.
 
 ### Search-page weight
 
-Response body bytes for search modules and Pagefind assets are measured separately from shared HTML/CSS/fonts and HTTP headers. Modules load on search-page entry; the active-language runtime/index and all result fragments load after submission. Ordinary pages load none of these scripts. Counts include all returned result fragments for the first query (მობილობის or mobility).
+Response body bytes for search modules and Pagefind assets are measured separately from shared HTML/CSS/fonts and HTTP headers. Modules load on search-page entry; the active-language runtime/index and all result fragments load after submission. Ordinary pages load none of these scripts. Counts include all returned result fragments for the first query (მობილობის or mobility), measured in session 12.
+
 | Layout | Initial modules | After first Georgian query | After first English query |
 |---|---:|---:|---:|
 | / | 3,615 B | 200,027 B | 197,465 B |
-| /neo-georgia-website/ | 3,615 B | 200,189 B | 197,571 B | These are local, uncompressed application payloads, not a production network benchmark.
+| /neo-georgia-website/ | 3,615 B | 200,189 B | 197,571 B |
+
+These are local, uncompressed application payloads, not a production network benchmark.
 
 ## Session 11 historical evaluation (superseded)
 

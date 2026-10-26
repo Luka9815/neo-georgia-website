@@ -2,6 +2,11 @@
 
 Newest at the top. One entry per working session: date, who (agent or person), what changed.
 
+## 2026-10-27 (Codex, session 14: search base forms and image alt drafts)
+- Append nominative ა and ი last to the Georgian ending list with the same four-letter minimum and one-ending rule. Add the session 14 recall column: all five tested word families reach full recall in root/project layouts; English ordered results match session 12 exactly. Record evidence in review/search-session-14.json and extend existing fallback tests.
+- Visually inspect all five review images and draft one short Georgian and English alt sentence for each in NEWS-PROMOTION.md. Flag the text/logo announcement, text-heavy application-limit poster and potentially redundant labelled chart; note visible branding and reuse checks. No images or alt text attached to News, copied to uploads or published.
+- Root/project builds pass, all 97 tests each, including both prefix/custom-domain checks. Accessibility passes 76 pages in each layout with zero axe violations, keyboard/language switches, 320 px layout, no-JS navigation, filters and search behaviour. Two step commits; nothing merged or deployed.
+
 ## 2026-10-27 (Codex, session 13: optional responsive News images)
 - Add an optional local News image with required Georgian alt and English alt when English News exists. Reject unsafe/external/missing paths, empty required alternatives, [ALT NEEDED] and undecodable files.
 - Render marked News images in articles/cards through @11ty/eleventy-img 7.1.1: AVIF/WebP plus JPEG/PNG fallback, responsive widths/sizes, intrinsic dimensions and lazy card loading. Preserve original EU artwork and use actual Eleventy output directories plus PATH_PREFIX.

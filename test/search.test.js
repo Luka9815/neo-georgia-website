@@ -19,7 +19,13 @@ test('Georgian fallback removes at most one longest ending and keeps four letter
   assert.equal(stripGeorgianEnding('მობილობის'), 'მობილობ');
   assert.equal(stripGeorgianEnding('თანამშრომლობის'), 'თანამშრომლობ');
   assert.equal(stripGeorgianEnding('ერასმუსის'), 'ერასმუს');
-  assert.equal(stripGeorgianEnding('მობილობა'), 'მობილობა');
+  assert.equal(stripGeorgianEnding('მობილობა'), 'მობილობ');
+  assert.equal(stripGeorgianEnding('თანამშრომლობა'), 'თანამშრომლობ');
+  assert.equal(stripGeorgianEnding('სახლი'), 'სახლ');
+  assert.equal(stripGeorgianEnding('წიგნი'), 'წიგნ');
+  assert.equal(stripGeorgianEnding('მამა'), 'მამა');
+  assert.equal(stripGeorgianEnding('კაცი'), 'კაცი');
+  assert.deepEqual(GEORGIAN_ENDINGS.slice(-2), ['ა', 'ი']);
   assert.equal(stripGeorgianEnding('კარის'), 'კარის');
   assert.equal(stripGeorgianEnding('აბგდებისთვის'), 'აბგდ');
   assert.equal(stripGeorgianEnding('აბგდსისთვის'), 'აბგდს'); // Do not remove a second suffix.

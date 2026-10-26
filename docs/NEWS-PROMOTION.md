@@ -10,6 +10,18 @@ Only **Europe Day in Kutaisi, 24–25 October** is newly written, from its Engli
 
 Session 9 omitted images because News had no image support. Session 13 adds the optional validated/responsive field, but all five posts remain without images pending Luka's selection and bilingual alt text. Downloaded review availability is listed in NEWS-IMAGES.md. No [ALT NEEDED] is published.
 
+## Draft image alt text for Luka's approval (session 14)
+
+These are unapproved drafts based on visual inspection of the five actual review files. They describe the images rather than repeat the News titles. No image field, alt text or review binary has been added to published content or public uploads. The two text-heavy graphics are poor candidates for News images; the labelled chart may also be redundant because its figures are already in the article. Visible logos do not establish reuse permission.
+
+| Slug | Image file | Georgian alt draft | English alt draft | Image rights / suitability note |
+|---|---|---|---|---|
+| europe-day-in-kutaisi | migration/review/images/europe-day-in-kutaisi.png | სამი ბავშვი Erasmus+-ის ბროშურებით გაწყობილ მაგიდასთან დგას. | Three children stand behind a table covered with Erasmus+ leaflets. | Photograph with EU and World Vision marks on a tote bag; confirm photo reuse rights. |
+| announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia | migration/review/images/announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia.png | ღია ფონზე ლურჯი განცხადების ტექსტია ევროკავშირის დაფინანსებისა და NEO Georgia-ს ლოგოების ქვეშ. | Blue announcement text sits beneath EU funding and NEO Georgia logos on a pale background. | MOSTLY TEXT/LOGOS: EU funding and NEO branding; repeats the heading, so recommend omitting it. Confirm permitted reuse if retained. |
+| neo-dissemination-event-2025 | migration/review/images/neo-dissemination-event-2025.jpg | საკონფერენციო დარბაზში მსმენელები უყურებენ მომხსენებელსა და ეკრანზე ნაჩვენებ სლაიდს. | An audience watches a speaker beside a projected slide in a conference room. | Photograph with small logos on the projected slide that are not legible enough to identify confidently; confirm photo/slide reuse rights. |
+| eve-statistics | migration/review/images/eve-statistics.jpg | ლურჯი სვეტოვანი დიაგრამა ათ ქვეყანას პროექტების რაოდენობით ადარებს: იტალიას ცხრა პროექტი აქვს, საქართველოს სამი. | Blue bars compare project counts across ten countries, with Italy at nine and Georgia at three. | LABELLED CHART: small text and figures already present in the article; consider omitting this redundant image. No third-party logo is visible. |
+| information-about-capacity-building-project-proposals | migration/review/images/information-about-capacity-building-project-proposals.png | ლურჯ ინფოგრაფიკაზე კოორდინატორის განაცხადების ლიმიტებია მითითებული: CBHE და CB VET-ისთვის ორი, CB Youth-ისთვის ერთი. | A blue infographic lists coordinator limits of two CBHE, two CB VET and one CB Youth application. | MOSTLY TEXT/POSTER: application limits repeat the body; consider omitting it. Confirm the graphic creator's reuse terms if retained. |
+
 ## Every body link
 
 The Capacity Building post linked to four shorturl.at addresses. On 2026-10-27 Claude Code resolved each one (HTTP 302) and replaced it with the direct, parameter-free EU Funding & Tenders topic page, using the topic ID as link text:

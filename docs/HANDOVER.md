@@ -1,6 +1,6 @@
 # Handover
 
-Last updated: 2026-10-27 (Codex, session 13: optional responsive News images)
+Last updated: 2026-10-27 (Codex, session 14: nominative search and draft image alternatives)
 
 ## Current state
 
@@ -104,11 +104,17 @@ The browser check uses `/usr/bin/chromium`; set CHROMIUM_PATH if Chromium lives 
 
 ## Next task
 
-Luka reviews the unmerged stack: session 12 targets the fetched codex/session-11-search at 85cf67b, and session 13 targets session 12. Nothing is merged automatically. Merge predecessor PRs in order, then retarget/rebase subsequent PRs as needed for the merge method. Claude's direct EU links, accepted Kutaisi title and nameless placeholder people remain intact.
+Luka reviews session 14 on codex/session-14-fixes, stacked on the fetched session-13-news-images at ad90a4b. Nothing is merged automatically. Review predecessors in order and retarget/rebase later PRs as needed for the chosen merge method.
 
-All five promoted posts have a downloaded image available under migration/review/images; NEWS-IMAGES.md lists the exact files. None is attached or copied into public uploads. Luka must select images and supply Georgian/English alt text before a separate content update. The new image field and responsive pipeline are ready for that step. Authenticated Pages CMS image upload/save/reopen remains a hosted test after merge; local schema/build checks do not claim hosted verification.
+Approve or revise the draft Georgian/English alt table in NEWS-PROMOTION.md before any image is attached. It is based on visual inspection of all five review files. The clarification graphic is mostly text/logos, the Capacity Building graphic is a text-heavy poster, and the statistics chart repeats figures already in the article; these may be better omitted. The table notes visible branding and reuse checks. No post, image field, public upload or migration review file was changed. Image selection and actual publication require a separate content update after Luka's approval.
 
-Search is approved and implemented with Luka's exact ending fallback. The documented base-form recall gaps remain because nominative ა is not in that list; English is unchanged. Continue normal editorial review, the hosted emoji redirect check and review of the historical clarification. Replace [SAMPLE] content before launch; retain institutional domain ownership and the existing launch/funding checks.
+Search now includes nominative ა and ი last, with the same four-letter minimum and one-ending rule. All five required word-family checks reach full recall in both layouts; English ordered result URLs match session 12 exactly. Continue editorial review, hosted CMS image upload/save/reopen, the hosted emoji redirect check and review of the historical clarification. Replace [SAMPLE] content before launch and retain institutional domain ownership and existing funding checks.
+
+## Session 14 fixes
+
+Append the two newly authorised endings in the single Georgian ending file, retaining longest-ending priority, typed ranking and de-duplication. SEARCH.md adds a session 14 column: მობილობა 9/9, მობილობის 9/9, თანამშრომლობა 7/7, თანამშრომლობის 7/7 and ერასმუსის 3/3. review/search-session-14.json records both layouts and comparison with session 12's English URL lists. These are the measured word families, not a general linguistic benchmark.
+
+NEWS-PROMOTION.md holds five unapproved one-sentence alternatives in each language, image paths and suitability/rights notes. Drafts remain documentation only. Root/project builds and all 97 tests pass, including the two prefix/custom-domain checks. Both layouts pass accessibility across 76 pages with zero axe violations, keyboard/language navigation, search ordering/isolation, no-JavaScript links and 320 px layout checks.
 
 ## Session 13 optional News images
 

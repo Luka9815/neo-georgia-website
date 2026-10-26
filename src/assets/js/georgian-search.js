@@ -1,9 +1,10 @@
-// Luka's session 12 query-only fallback. Longest suffix first, one removal per
+// Luka's session 12 fallback, extended with nominatives in session 14. Longest suffix first, one removal per
 // Georgian word, with at least four letters remaining. This is not a stemmer.
 // Keep this as the single ending list; never alter indexed words or page text.
 export const GEORGIAN_ENDINGS = Object.freeze([
   'ებისთვის', 'ისთვის', 'ებით', 'ების', 'ებს', 'ებში', 'ებზე', 'ისგან',
   'იდან', 'ამდე', 'ით', 'ის', 'ში', 'ზე', 'თან', 'ად', 'მა', 'ს',
+  'ა', 'ი', // Nominatives remain last; the same four-letter minimum applies.
 ].sort((a, b) => [...b].length - [...a].length));
 export function stripGeorgianEnding(word) {
   const lower = word.toLowerCase();
