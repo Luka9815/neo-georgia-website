@@ -2,6 +2,11 @@
 
 Newest at the top. One entry per working session: date, who (agent or person), what changed.
 
+## 2026-10-26 (Claude Code: suggested review decisions)
+- Pre-filled migration/review/decisions.csv with suggestions for Luka to confirm or correct. Every note starts "SUGGESTED:". Nothing is applied or published.
+- Suggests keeping 27 of 76: outcome summaries, results, publications and procedures. Suggests dropping 49: invitations and calendars for past events (where a summary exists, the summary is kept), third-party events and stale notices. Kept items are all type news. Within-post bilingual items have pair_with set to their own slug, meaning split the ka and en sections.
+- Open issue: 12 suggested keeps have no fitting Action (Europe Day, TAM, general programme news), but lib/validate-content.js requires at least one Action for News. Needs a decision before promotion. Three keeps (june-11-12-events-article, summary-international-online-conference-..., winning-projects-...) need a Georgian body.
+
 ## 2026-10-26 (Codex, session 8: language-aware migration review and selected images)
 - Started from current main (5639bcd, session 7 merged), one commit per item. Detect title/body language independently; preserve mixed or mismatched content under sourceText instead of putting Latin bodies in ka. Every source gets a separate draft. Pairing uses explicit CANDIDATE confidence/evidence only, including mixed sections within one post; no automatic splitting, merging or translation.
 - Removed leading title emoji, leading standalone theme date lines, empty info markers and repeated blank lines while preserving body emoji and meaningful dates. Reuse clean ASCII legacy slugs after underscore conversion; otherwise use national romanisation with word-boundary truncation and collision handling.
