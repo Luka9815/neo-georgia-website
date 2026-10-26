@@ -23,3 +23,15 @@ test('five approved News splits preserve source wording and every body link', ()
     }
   }
 });
+
+test('promoted News render both languages with sequential headings', () => {
+  for (const slug of slugs) for (const lang of ['ka', 'en']) {
+    const html = readFileSync(`_site/${lang}/news/${slug}/index.html`, 'utf8');
+    let previous = 0;
+    for (const match of html.matchAll(/<h([1-6])(?:\s[^>]*)?>/g)) {
+      const level = Number(match[1]);
+      assert.ok(level <= previous + 1, `${lang}/${slug}: h${previous} to h${level}`);
+      previous = level;
+    }
+  }
+});

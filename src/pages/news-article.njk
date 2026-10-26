@@ -10,5 +10,5 @@ eleventyExcludeFromCollections: true
 
 {% block pageContent %}
 {% set item = news | findSlug(view.slug) %}
-{{ item.body | markdown | safe }}
+{{ item.body | newsMarkdown | safe }}
 {% endblock %}
