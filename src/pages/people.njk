@@ -1,0 +1,12 @@
+---
+pagination:
+  data: pageTypes.people
+  size: 1
+  alias: view
+permalink: "{{ view.path }}"
+eleventyExcludeFromCollections: true
+---
+{% extends 'page.njk' %}
+{% block pageContent %}
+{{ cards(catalog.person | localise(view.lang) | personGroup(view.group), 'person', t, view.lang, 'h2') }}
+{% endblock %}

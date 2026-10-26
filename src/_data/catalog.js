@@ -24,6 +24,7 @@ export default function () {
       end: zonedDateTime(i.end, i.timeZone),
     }))
     .sort((a, b) => Date.parse(a.date) - Date.parse(b.date));
+  content.publication.sort((a, b) => b.year - a.year || a.slug.localeCompare(b.slug));
   content.news.sort((a, b) => b.date.localeCompare(a.date));
   return content;
 }

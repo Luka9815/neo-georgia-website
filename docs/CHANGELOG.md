@@ -101,3 +101,10 @@ Newest at the top. One entry per working session: date, who (agent or person), w
 - Omit unsupported News images. Retain sample News required by CMS and untranslated-language tests. Add five legacy redirects, including decoded emoji static output. Repair skipped source heading levels at render time only.
 - Root and project-path builds pass; all 83 tests pass in each layout. Both prefix/custom-domain build checks in npm test pass. Both root and project-path accessibility checks pass all 64 non-redirect pages with zero axe violations, keyboard/language switches, 320 px overflow and no-JS menus. The encoded legacy emoji request returns 200 locally.
 - External link checks attempted for all four unique body URLs; network policy blocks shorturl.at, so final destinations need Luka's verification. Full audit: NEWS-PROMOTION.md. Nothing merged or deployed.
+
+## 2026-10-26: Session 10, Publications, FAQ, People and Contact
+
+- Add four missing template types in both languages: Publications and grouped FAQ under Resources, separate Team/HEREs lists and placeholder Contact linked from About, with Contact also in the footer. Keep the seven top-level menu destinations.
+- Add two [SAMPLE] local publication downloads and progressive year/type filters; replace the FAQ example with three related [SAMPLE] questions; add fictional sample people with national romanisation and no photos/personal contacts. Contact has translated address/hours/reserved email placeholders and no form, map or remote assets.
+- Reuse shared cards, i18n, route generation and design tokens. Validate supporting content and document the JSON contract. Tests cover languages, switches, EU footer, related FAQs, sample name romanisation and safe files.
+- Root and project-path builds pass, all 89 tests each, including both project-prefix/custom-domain build checks. Root and project-path accessibility pass 74 pages each with zero axe violations, keyboard/language switches, 320 px overflow, no-JS navigation, filter combinations/reset and no-JS publication access. Georgian Publications manually inspected at 360 px. No merge or deployment.

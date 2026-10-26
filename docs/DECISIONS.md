@@ -214,3 +214,10 @@ Apply only the five keep=y rows authorised for session 9. A self-referencing pai
 
 ## 2026-10-26: Static output for encoded legacy paths
 Extend draft redirect validation to decoded Unicode letters, numbers, marks and emoji while retaining traversal/collision/target checks. Decode once before output so the one approved emoji legacy URL matches a static host's URL decoding. Keep redirect destinations limited to known pages and verify the emoji URL on hosted Pages. News rendering normalises heading levels to prevent source-format accessibility failures without rewriting text.
+
+
+## 2026-10-26: Supporting templates follow the approved sitemap
+Place Publications and FAQ under Resources, Team and Contact under About, and HEREs at /here/, linked from About. Reuse central bilingual routes, translation data and card components; retain seven top-level menu destinations. Publications progressively enhances a complete static list with local year/type filters; controls stay hidden until ready and empty results announce a count. Two [SAMPLE] text files demonstrate downloads without inventing approved publications.
+
+## 2026-10-26: Supporting records and public contact placeholders
+Extend build validation to publication, FAQ and person records, retaining existing shared-fact/translated-text layout. Publication files are local /assets/publications/ PDFs (or sample text), types match SITE-PLAN, FAQ topics have translated labels and Action links, and people have neo/here groups and translated roles. Fictional names follow national romanisation including ejective apostrophes. Contact address/hours/email are translated [SAMPLE] strings; use reserved example.org, no real contacts, photos, forms, maps or remote assets. Supporting records remain JSON-edited pending an approved CMS expansion.

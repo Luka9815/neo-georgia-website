@@ -576,3 +576,9 @@ dd {
     display: none;
   }
 }
+
+/* Filter controls are revealed only after their enhancement is ready. */
+[hidden] { display: none !important; }
+.publication-filters { display: flex; flex-wrap: wrap; gap: 1rem; align-items: end; margin-block: 1.5rem; }
+.publication-filters label { display: grid; gap: 0.5rem; }
+.publication-filters select, .publication-filters button { font: inherit; padding: 0.6rem; max-width: 100%; }

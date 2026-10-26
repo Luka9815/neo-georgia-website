@@ -1,0 +1,14 @@
+{
+  "slug": "sample-here",
+  "group": "here",
+  "ka": {
+    "title": "[SAMPLE] გიორგი წერეთელი",
+    "role": "[SAMPLE] უმაღლესი განათლების ექსპერტი",
+    "body": "[SAMPLE] გამოგონილი პროფილი."
+  },
+  "en": {
+    "title": "[SAMPLE] Giorgi Ts'ereteli",
+    "role": "[SAMPLE] Higher education expert",
+    "body": "[SAMPLE] Fictional profile."
+  }
+}

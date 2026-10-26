@@ -1,7 +1,7 @@
 {% macro cards(items, type, t, lang, heading='h3', showSectionLabel=false) %}
-<ul class="cards cards-{{ type }}">
+<ul class="cards cards-{{ type }}"{% if type == 'publication' %} data-publications{% endif %}>
   {% for item in items %}
-    <li class="card">
+    <li class="card"{% if type == 'publication' %} data-year="{{ item.year }}" data-type="{{ item.type }}"{% endif %}>
       {% if type == 'call' %}
         <div class="card-meta">{% if showSectionLabel %}<span class="card-section-label">{{ t.calls }}</span>{% endif %}<span class="status status-{{ item.status }}">{{ t[item.status] }}</span></div>
         <{{ heading }}><a href="/{{ lang }}/opportunities/{{ item.action }}/">{{ item.title }}</a></{{ heading }}>
@@ -10,6 +10,15 @@
       {% elif type == 'resource' %}
         <p class="source-label source-{{ item.source }}">{{ t.source }}: {{ t[item.source] }}</p>
         <{{ heading }}><a href="{{ item.url }}">{{ item.title }}</a></{{ heading }}>
+      {% elif type == 'publication' %}
+        <{{ heading }}><a href="{{ item.file }}">{{ item.title }}</a></{{ heading }}>
+        <p>{{ t.year }}: {{ item.year }} · {{ t.type }}: {{ t.publicationTypes[item.type] }}</p>
+        <p>{{ t.publicationLanguage }}: {{ item.language }}</p>
+        {{ item.body | markdown | safe }}
+      {% elif type == 'person' %}
+        <{{ heading }}>{{ item.title }}</{{ heading }}>
+        <p>{{ item.role }}</p>
+        {{ item.body | markdown | safe }}
       {% elif type == 'faq' %}
         <{{ heading }}>{{ item.title }}</{{ heading }}>
         {{ item.body | markdown | safe }}

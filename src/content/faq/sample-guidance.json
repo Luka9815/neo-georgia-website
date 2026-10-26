@@ -1,15 +1,15 @@
 {
-  "slug": "example",
+  "slug": "sample-guidance",
+  "topic": "applications",
   "actions": [
     "cbhe"
   ],
-  "topic": "applications",
-  "en": {
-    "title": "[SAMPLE] Where can I find guidance?",
-    "body": "[SAMPLE] Consult the official Programme Guide."
-  },
   "ka": {
     "title": "[SAMPLE] სად ვიპოვო ინფორმაცია?",
     "body": "[SAMPLE] იხილეთ პროგრამის ოფიციალური გზამკვლევი."
+  },
+  "en": {
+    "title": "[SAMPLE] Where can I find guidance?",
+    "body": "[SAMPLE] Consult the official Programme Guide."
   }
 }
