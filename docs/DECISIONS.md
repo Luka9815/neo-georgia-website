@@ -153,3 +153,7 @@ Supersedes "Nine requested Action topics, source review pending". Replace the th
 
 ## 2026-10-26: English beneficiary emblem on both languages until Georgian supplied
 Supersedes "Original official bilingual EU artwork". The KA archive's “ევროკავშირი საქართველოსთვის” is EU Delegation country branding, not the required beneficiary funding emblem; remove it. Use the unmodified official English Funded by the European Union emblem on both language versions, with Georgian alt text “დაფინანსებულია ევროკავშირის მიერ” on /ka/. Keep the Georgian funding statement and disclaimer unchanged. Obtain the official Georgian Funded by the EU emblem file from the EU Delegation or EACEA, then replace the Georgian-page image and record its provenance.
+
+
+## 2026-10-26: Manual WordPress dry run with an exact twelve-month window
+Implements the import scope in "Last twelve months of News in the initial migration". Use a manually invoked Node script with serial paginated public REST reads and a 1.5-second request interval. Capture one UTC run instant and subtract twelve calendar months; filter publication date_gmt to the inclusive-start/exclusive-end window. Write only below migration/review, refuse CI/symlinked output, and keep raw recovery responses ignored there. No importer runs in builds, CI or npm test. Language pairing requires explicit REST translation relations and distinct content; query differences and duplicate posts are evidence for review, not guessed translations.
