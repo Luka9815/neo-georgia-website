@@ -1,0 +1,159 @@
+{
+  "slug": "11-june-event-for-sports-and-youth-sectors",
+  "date": "2026-05-29",
+  "actions": [],
+  "ka": {
+    "title": "პანელური დისკუსიები: ურთიერთსწავლება სპორტისა და ახალგაზრდობის სექტორებისთვის",
+    "body": "Erasmus+-ის ეროვნული ოფისი საქართველოში იწვევს სპორტისა და ახალგაზრდობის სექტორში მოქმედ ორგანიზაციებს, დაესწრონ და მონაწილეობა მიიღონ პანელური დისკუსიების ფორმატში დაგეგმილ ღონისძიებაში, რომელიც გაიმართება **2026 წლის 11 ივნისს**.\n\nღონისძიების ფარგლებში მონაწილეებს შესაძლებლობა ექნებათ:  \n🔹 გაიგონ, როგორ მუშაობს Erasmus+ პროგრამა და როგორ შეიძლება მასში მონაწილეობა;  \n🔹 მოისმინონ პრაქტიკული გამოცდილება **შესაძლებლობების გაძლიერებისა** და **კოოპერაციული პარტნიორობის** პროექტების განხორციელების შესახებ;  \n🔹 გაუზიარონ ერთმანეთს გამოცდილება, გამოწვევები და წარმატებული პრაქტიკა;  \n🔹 დაამყარონ ახალი პროფესიული კავშირები და განავითარონ თანამშრომლობა სექტორში.\n\n📅 თარიღი: 11 ივნისი, 2026  \n🕚 დრო: 11:00–18:00  \n📍 ფორმატი: დასწრებით\n\nდამატებით დეტალებს ლოკაციის, დღის წესრიგისა და დაკავშირებული საკითხების შესახებ, მიიღებთ ელექტრონულ ფოსტაზე, რეგისტრაციის გავლის შემდეგ.\n\n🔗 რეგისტრაცია: [https://docs.google.com/forms/d/1-U7Zgjshz-IephSsJvcsvI3d\\_y7vYnhAqoR4PPiZOp8/edit](https://docs.google.com/forms/d/1-U7Zgjshz-IephSsJvcsvI3d_y7vYnhAqoR4PPiZOp8/edit)"
+  },
+  "legacy": {
+    "id": 36085,
+    "slug": "11-june-event-for-sports-and-youth-sectors",
+    "url": "https://erasmus.org.ge/11-june-event-for-sports-and-youth-sectors/"
+  },
+  "migration": {
+    "status": "unreviewed",
+    "language": {
+      "title": {
+        "script": "georgian",
+        "language": "ka",
+        "georgianLetters": 70,
+        "latinLetters": 0,
+        "georgianShare": 1,
+        "latinShare": 0,
+        "englishWordHits": 0,
+        "note": "Script heuristic excluding URLs; English is a candidate, not editorial approval."
+      },
+      "body": {
+        "script": "georgian",
+        "language": "ka",
+        "georgianLetters": 693,
+        "latinLetters": 14,
+        "georgianShare": 0.98,
+        "latinShare": 0.02,
+        "englishWordHits": 0,
+        "note": "Script heuristic excluding URLs; English is a candidate, not editorial approval."
+      },
+      "englishMarker": false,
+      "slot": "ka",
+      "label": "ka",
+      "needsReview": false
+    },
+    "actionsStatus": "suggested",
+    "suggestedActions": [],
+    "typeCandidate": {
+      "type": "news",
+      "evidence": [
+        "29.05.2026"
+      ]
+    },
+    "attachments": [
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/05/Social-Media-Posts-Template-8-1024x858.png",
+        "type": "image",
+        "sizeBytes": 821421,
+        "alt": "",
+        "mediaId": 36088,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "inline-image"
+          },
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          36085
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/05/Social-Media-Posts-Template-8-300x251.png",
+        "type": "image",
+        "sizeBytes": 102471,
+        "alt": "",
+        "mediaId": 36088,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          36085
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/05/Social-Media-Posts-Template-8-768x644.png",
+        "type": "image",
+        "sizeBytes": 516336,
+        "alt": "",
+        "mediaId": 36088,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          36085
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/05/Social-Media-Posts-Template-8.png",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "",
+        "mediaId": 36088,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          },
+          {
+            "language": "shared",
+            "relationship": "attached-to-post"
+          }
+        ],
+        "usedBy": [
+          36085
+        ]
+      }
+    ],
+    "warnings": [
+      "Images omitted from Markdown; one eligible featured image is selected separately and other attachments stay listed.",
+      "Leading theme date, empty info markers or repeated blank lines removed.",
+      "No Action matched. actions is empty; an editor must select a real Action before publication."
+    ],
+    "pairCandidates": [],
+    "image": {
+      "status": "downloaded",
+      "path": "images/11-june-event-for-sports-and-youth-sectors.png",
+      "sourceUrl": "https://erasmus.org.ge/wp-content/uploads/2026/05/Social-Media-Posts-Template-8-1024x858.png",
+      "sizeBytes": 821421,
+      "width": 1024,
+      "height": 858,
+      "mediaId": 36088,
+      "reason": "Image attached to this post",
+      "alt": {
+        "ka": "[ALT NEEDED]",
+        "en": "[ALT NEEDED]"
+      }
+    }
+  },
+  "image": {
+    "status": "downloaded",
+    "path": "images/11-june-event-for-sports-and-youth-sectors.png",
+    "sourceUrl": "https://erasmus.org.ge/wp-content/uploads/2026/05/Social-Media-Posts-Template-8-1024x858.png",
+    "sizeBytes": 821421,
+    "width": 1024,
+    "height": 858,
+    "mediaId": 36088,
+    "reason": "Image attached to this post",
+    "alt": {
+      "ka": "[ALT NEEDED]",
+      "en": "[ALT NEEDED]"
+    }
+  }
+}

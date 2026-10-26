@@ -1,0 +1,430 @@
+{
+  "slug": "winning-projects-jma-cb-youth-virtual-exchanges",
+  "date": "2026-10-05",
+  "actions": [
+    "jean-monnet",
+    "cb-youth",
+    "virtual-exchanges"
+  ],
+  "en": {
+    "title": "Winning Projects (JMA, CB Youth, Virtual Exchanges)",
+    "body": "**ℹ️ CB Youth** \n\nCapacity Building in the field of Youth (CB Youth) supports transnational cooperation projects aimed at strengthening youth work, youth organisations, and youth policies in partner countries through capacity development, policy dialogue, and non-formal learning. In the 2014–2020 programme period (KA214), CB Youth projects were funded with EU grants of up to EUR 150,000 per project, while in the 2021-2027 programme period (KA237) the action was continued with an increased maximum EU contribution of up to EUR 300,000 per project. \n\nIn the 2026 CB Youth call, 9 of the 59 selected projects involve Georgia. Georgia is represented as coordinator in 1 project, which also includes a Georgian affiliated partner, and as a partner in the other 8 projects.\n\n**ℹ️ Virtual Exchanges**\n\nErasmus+ Virtual Exchanges (EVE) support online, people-to-people activities that promote intercultural dialogue, soft skills development, and cooperation between young people and educators through structured virtual mobility, complementing physical mobility under Erasmus+. EVE projects are implemented through short, moderated online exchanges and are supported with EU grants typically up to around EUR 500,000 per project, depending on scope and duration.\n\nIn 2026, Georgian organisations took part in 5 of the 23 projects selected under the call.\n\n**ℹ️ JMA**\n\nJean Monnet Actions (JMA) under the Erasmus+ Programme support teaching, research, and debate in the field of European Union studies worldwide, promoting excellence in EU-related academic content and fostering dialogue between academia and society. \n\nIn 2026, three projects involving Georgian institutions were selected for funding.\n\n🔗 You can see the winning organisations and projects in the visuals. For Additional information, follow the links, \n\nCB Youth: [https://erasmus.org.ge/capacity-building-in-the-field-of-youth/](https://erasmus.org.ge/capacity-building-in-the-field-of-youth/)\n\nVirtual Exchanges: [https://erasmus.org.ge/erasmus-virtual-eschanges/](https://erasmus.org.ge/erasmus-virtual-eschanges/)\n\nJMA: [https://erasmus.org.ge/jean-monnet-actions/](https://erasmus.org.ge/jean-monnet-actions/)"
+  },
+  "legacy": {
+    "id": 36509,
+    "slug": "%f0%9f%93%a3-winning-projects-jma-cb-youth-virtual-exchanges",
+    "url": "https://erasmus.org.ge/%f0%9f%93%a3-winning-projects-jma-cb-youth-virtual-exchanges/"
+  },
+  "migration": {
+    "status": "unreviewed",
+    "language": {
+      "title": {
+        "script": "latin",
+        "language": "latin",
+        "georgianLetters": 0,
+        "latinLetters": 41,
+        "georgianShare": 0,
+        "latinShare": 1,
+        "englishWordHits": 0,
+        "note": "Script heuristic excluding URLs; English is a candidate, not editorial approval."
+      },
+      "body": {
+        "script": "latin",
+        "language": "en-candidate",
+        "georgianLetters": 0,
+        "latinLetters": 1433,
+        "georgianShare": 0,
+        "latinShare": 1,
+        "englishWordHits": 57,
+        "note": "Script heuristic excluding URLs; English is a candidate, not editorial approval."
+      },
+      "englishMarker": false,
+      "slot": "en",
+      "label": "en CANDIDATE",
+      "needsReview": true
+    },
+    "actionsStatus": "suggested",
+    "suggestedActions": [
+      {
+        "slug": "jean-monnet",
+        "status": "suggested",
+        "evidence": [
+          {
+            "source": "body",
+            "match": "Jean Monnet"
+          }
+        ]
+      },
+      {
+        "slug": "cb-youth",
+        "status": "suggested",
+        "evidence": [
+          {
+            "source": "body",
+            "match": "Capacity Building in the field of Youth"
+          }
+        ]
+      },
+      {
+        "slug": "virtual-exchanges",
+        "status": "suggested",
+        "evidence": [
+          {
+            "source": "title",
+            "match": "Virtual Exchanges"
+          },
+          {
+            "source": "body",
+            "match": "Virtual Exchanges"
+          }
+        ]
+      }
+    ],
+    "typeCandidate": {
+      "type": "news",
+      "evidence": [
+        "05.10.2026"
+      ]
+    },
+    "attachments": [
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/10/Beige-Professional-Minimalist-How-to-Carousel-Instagram-Post-9-819x1024.jpg",
+        "type": "image",
+        "sizeBytes": 79046,
+        "alt": "",
+        "mediaId": 36512,
+        "uses": [
+          {
+            "language": "en-candidate",
+            "relationship": "inline-image"
+          },
+          {
+            "language": "en-candidate",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          36509
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/10/Beige-Professional-Minimalist-How-to-Carousel-Instagram-Post-9-240x300.jpg",
+        "type": "image",
+        "sizeBytes": 11930,
+        "alt": "",
+        "mediaId": 36512,
+        "uses": [
+          {
+            "language": "en-candidate",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          36509
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/10/Beige-Professional-Minimalist-How-to-Carousel-Instagram-Post-9-768x960.jpg",
+        "type": "image",
+        "sizeBytes": 72111,
+        "alt": "",
+        "mediaId": 36512,
+        "uses": [
+          {
+            "language": "en-candidate",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          36509
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/10/Beige-Professional-Minimalist-How-to-Carousel-Instagram-Post-9.jpg",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "",
+        "mediaId": 36512,
+        "uses": [
+          {
+            "language": "en-candidate",
+            "relationship": "image-variant"
+          },
+          {
+            "language": "shared",
+            "relationship": "attached-to-post"
+          }
+        ],
+        "usedBy": [
+          36509
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/10/Beige-Professional-Minimalist-How-to-Carousel-Instagram-Post-10-819x1024.jpg",
+        "type": "image",
+        "sizeBytes": 73387,
+        "alt": "",
+        "mediaId": 36513,
+        "uses": [
+          {
+            "language": "en-candidate",
+            "relationship": "inline-image"
+          },
+          {
+            "language": "en-candidate",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          36509
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/10/Beige-Professional-Minimalist-How-to-Carousel-Instagram-Post-10-240x300.jpg",
+        "type": "image",
+        "sizeBytes": 11341,
+        "alt": "",
+        "mediaId": 36513,
+        "uses": [
+          {
+            "language": "en-candidate",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          36509
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/10/Beige-Professional-Minimalist-How-to-Carousel-Instagram-Post-10-768x960.jpg",
+        "type": "image",
+        "sizeBytes": 67528,
+        "alt": "",
+        "mediaId": 36513,
+        "uses": [
+          {
+            "language": "en-candidate",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          36509
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/10/Beige-Professional-Minimalist-How-to-Carousel-Instagram-Post-10.jpg",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "",
+        "mediaId": 36513,
+        "uses": [
+          {
+            "language": "en-candidate",
+            "relationship": "image-variant"
+          },
+          {
+            "language": "shared",
+            "relationship": "attached-to-post"
+          }
+        ],
+        "usedBy": [
+          36509
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/10/Beige-Professional-Minimalist-How-to-Carousel-Instagram-Post-11-819x1024.jpg",
+        "type": "image",
+        "sizeBytes": 68583,
+        "alt": "",
+        "mediaId": 36514,
+        "uses": [
+          {
+            "language": "en-candidate",
+            "relationship": "inline-image"
+          },
+          {
+            "language": "en-candidate",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          36509
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/10/Beige-Professional-Minimalist-How-to-Carousel-Instagram-Post-11-240x300.jpg",
+        "type": "image",
+        "sizeBytes": 10226,
+        "alt": "",
+        "mediaId": 36514,
+        "uses": [
+          {
+            "language": "en-candidate",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          36509
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/10/Beige-Professional-Minimalist-How-to-Carousel-Instagram-Post-11-768x960.jpg",
+        "type": "image",
+        "sizeBytes": 61579,
+        "alt": "",
+        "mediaId": 36514,
+        "uses": [
+          {
+            "language": "en-candidate",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          36509
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/10/Beige-Professional-Minimalist-How-to-Carousel-Instagram-Post-11.jpg",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "",
+        "mediaId": 36514,
+        "uses": [
+          {
+            "language": "en-candidate",
+            "relationship": "image-variant"
+          },
+          {
+            "language": "shared",
+            "relationship": "attached-to-post"
+          }
+        ],
+        "usedBy": [
+          36509
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/10/Beige-Professional-Minimalist-How-to-Carousel-Instagram-Post-819x1024.jpg",
+        "type": "image",
+        "sizeBytes": 79440,
+        "alt": "",
+        "mediaId": 36515,
+        "uses": [
+          {
+            "language": "en-candidate",
+            "relationship": "inline-image"
+          },
+          {
+            "language": "en-candidate",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          36509
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/10/Beige-Professional-Minimalist-How-to-Carousel-Instagram-Post-240x300.jpg",
+        "type": "image",
+        "sizeBytes": 11489,
+        "alt": "",
+        "mediaId": 36515,
+        "uses": [
+          {
+            "language": "en-candidate",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          36509
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/10/Beige-Professional-Minimalist-How-to-Carousel-Instagram-Post-768x960.jpg",
+        "type": "image",
+        "sizeBytes": 68664,
+        "alt": "",
+        "mediaId": 36515,
+        "uses": [
+          {
+            "language": "en-candidate",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          36509
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/10/Beige-Professional-Minimalist-How-to-Carousel-Instagram-Post.jpg",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "",
+        "mediaId": 36515,
+        "uses": [
+          {
+            "language": "en-candidate",
+            "relationship": "image-variant"
+          },
+          {
+            "language": "shared",
+            "relationship": "attached-to-post"
+          }
+        ],
+        "usedBy": [
+          36509
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/10/Beige-Professional-Minimalist-How-to-Carousel-Instagram-Post-12.jpg",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "",
+        "mediaId": 36511,
+        "uses": [
+          {
+            "language": "shared",
+            "relationship": "attached-to-post"
+          }
+        ],
+        "usedBy": [
+          36509
+        ]
+      }
+    ],
+    "warnings": [
+      "Images omitted from Markdown; one eligible featured image is selected separately and other attachments stay listed.",
+      "Leading theme date, empty info markers or repeated blank lines removed.",
+      "Language needs review. The source remains separate; no automatic split, translation or pairing."
+    ],
+    "pairCandidates": [],
+    "image": {
+      "status": "downloaded",
+      "path": "images/winning-projects-jma-cb-youth-virtual-exchanges.jpg",
+      "sourceUrl": "https://erasmus.org.ge/wp-content/uploads/2026/10/Beige-Professional-Minimalist-How-to-Carousel-Instagram-Post-12-819x1024.jpg",
+      "sizeBytes": 79033,
+      "width": 819,
+      "height": 1024,
+      "mediaId": 36511,
+      "reason": "Image attached to this post",
+      "alt": {
+        "ka": "[ALT NEEDED]",
+        "en": "[ALT NEEDED]"
+      }
+    }
+  },
+  "image": {
+    "status": "downloaded",
+    "path": "images/winning-projects-jma-cb-youth-virtual-exchanges.jpg",
+    "sourceUrl": "https://erasmus.org.ge/wp-content/uploads/2026/10/Beige-Professional-Minimalist-How-to-Carousel-Instagram-Post-12-819x1024.jpg",
+    "sizeBytes": 79033,
+    "width": 819,
+    "height": 1024,
+    "mediaId": 36511,
+    "reason": "Image attached to this post",
+    "alt": {
+      "ka": "[ALT NEEDED]",
+      "en": "[ALT NEEDED]"
+    }
+  }
+}

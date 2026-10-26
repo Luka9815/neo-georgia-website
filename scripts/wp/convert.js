@@ -2,7 +2,7 @@ import { createHash } from 'node:crypto';
 import { load } from 'cheerio';
 import TurndownService from 'turndown';
 import { Temporal } from '@js-temporal/polyfill';
-import { isGeorgian, languageOf } from './languages.js';
+import { postLanguage, pairingCandidates } from './language-review.js';
 import { oldSite } from './client.js';
 
 // Georgian national romanisation: ejectives have apostrophes here. The URL
@@ -56,24 +56,59 @@ export function plainText(html) {
     .replace(/\s+/g, ' ')
     .trim();
 }
+export function cleanTitle(html) {
+  return plainText(html)
+    .replace(
+      /^(?:[\p{Extended_Pictographic}\p{Regional_Indicator}\p{Emoji_Modifier}\uFE0F\u200D]\s*|[0-9#*]\uFE0F?\u20E3\s*)+/u,
+      ''
+    )
+    .trim();
+}
+
+export function cleanThemeMarkdown(markdown) {
+  return markdown
+    .replace(
+      /^(?:\s*(?:\*\*|__)?\{\d{1,2}\.\d{1,2}\.\d{4}\}(?:\*\*|__)?[ \t]*(?:\r?\n|$))+/,
+      ''
+    )
+    .replace(/^[ \t]*(?:\*\*|__)?[ \t]*ℹ\uFE0F?[ \t]*(?:\*\*|__)?[ \t]*$/gm, '')
+    .replace(/\n(?:[ \t]*\n){2,}/g, '\n\n')
+    .trim();
+}
+
 export function romanise(title) {
   return [...title.normalize('NFKC').toLowerCase()]
     .map((letter) => alphabet[letter] ?? letter)
     .join('');
 }
-export function uniqueSlug(title, id, used) {
-  let base = romanise(plainText(title))
-    .normalize('NFKD')
-    .replace(/\p{M}/gu, '')
-    .replace(/['’ʼ]/g, '')
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-|-$/g, '');
+export function truncateAtWord(value, limit) {
+  if (value.length <= limit) return value;
+  const boundary = value.slice(0, limit + 1).lastIndexOf('-');
+  return (
+    boundary > 0 ? value.slice(0, boundary) : value.slice(0, limit)
+  ).replace(/-+$/, '');
+}
+
+export function uniqueSlug(title, id, used, legacySlug = '') {
+  const legacy = String(legacySlug).replaceAll('_', '-');
+  const reusable = /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(legacy);
+  let base = reusable
+    ? legacy
+    : romanise(cleanTitle(title))
+        .normalize('NFKD')
+        .replace(/\p{M}/gu, '')
+        .replace(/['’ʼ]/g, '')
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/^-|-$/g, '');
   if (!base) base = `news-${id}`;
-  base = base.slice(0, 60).replace(/-+$/g, '');
+  // Preserve an already published clean legacy slug. New romanised slugs use
+  // a 60-character word boundary; a single overlong word needs a hard cut.
+  if (!reusable) base = truncateAtWord(base, 60);
   let slug = base;
   for (let count = 2; used.has(slug); count++) {
     const suffix = `-${count}`;
-    slug = base.slice(0, 60 - suffix.length).replace(/-+$/g, '') + suffix;
+    slug =
+      (reusable ? base : truncateAtWord(base, 60 - suffix.length)) + suffix;
   }
   used.add(slug);
   return slug;
@@ -153,7 +188,7 @@ export function htmlToMarkdown(html, base = oldSite) {
   });
   if ($('img').length)
     warnings.push(
-      'Images listed separately and omitted from Markdown; no files downloaded.'
+      'Images omitted from Markdown; one eligible featured image is selected separately and other attachments stay listed.'
     );
   const debris = $(
     'script, style, noscript, iframe, object, embed, svg, form, input, button, nav, [data-elementor-type="header"], [data-elementor-type="footer"]'
@@ -227,11 +262,16 @@ export function htmlToMarkdown(html, base = oldSite) {
     codeBlockStyle: 'fenced',
     emDelimiter: '*',
   });
-  const markdown = turndown
+  const convertedMarkdown = turndown
     .turndown($.html())
     .replace(/\u00a0/g, ' ')
     .replace(/\n{3,}/g, '\n\n')
     .trim();
+  const markdown = cleanThemeMarkdown(convertedMarkdown);
+  if (markdown !== convertedMarkdown)
+    warnings.push(
+      'Leading theme date, empty info markers or repeated blank lines removed.'
+    );
   return { markdown, attachments, warnings: [...new Set(warnings)] };
 }
 
@@ -315,19 +355,19 @@ export function convertPosts(collections, run, reservedSlugs = []) {
   const used = new Set(reservedSlugs);
   const index = mediaIndex(collections.media?.items || []);
   const posts = allPosts(collections);
-  const pairs = new Map(run.languages.pairs.map((pair) => [pair.ka, pair.en]));
-  const translatedIds = new Set(pairs.values());
+  const sourceById = new Map(posts.map((post) => [post.id, post]));
   const results = [];
   for (const post of posts) {
     const row = {
       id: post.id,
-      title: plainText(post.title?.rendered),
+      title: cleanTitle(post.title?.rendered),
       date: post.date?.slice(0, 10) || null,
       oldSlug: redact(post.slug),
       oldUrl: cleanUrl(post.link),
       warnings: [],
       attachments: [],
       status: 'not-converted',
+      language: postLanguage(post),
     };
     try {
       if (!post.date_gmt || /^0000-/.test(post.date_gmt))
@@ -357,7 +397,7 @@ export function convertPosts(collections, run, reservedSlugs = []) {
       row.warnings.push(...ka.warnings);
       const rawAttachments = ka.attachments.map((asset) => ({
         ...asset,
-        language: languageOf(post) || (isGeorgian(post) ? 'ka' : 'unknown'),
+        language: row.language.body.language,
       }));
       for (const gallery of (post.content?.rendered || '').matchAll(
         /\[gallery[^\]]*ids=["']([\d,\s]+)["'][^\]]*\]/gi
@@ -401,32 +441,6 @@ export function convertPosts(collections, run, reservedSlugs = []) {
           });
         }
       }
-      let english;
-      const enPost = posts.find(
-        (candidate) => candidate.id === pairs.get(post.id)
-      );
-      if (enPost) {
-        const converted = htmlToMarkdown(enPost.content?.rendered, enPost.link);
-        english = {
-          title: plainText(enPost.title?.rendered),
-          body: converted.markdown,
-        };
-        rawAttachments.push(
-          ...converted.attachments.map((asset) => ({
-            ...asset,
-            language: 'en',
-          }))
-        );
-        row.warnings.push(
-          ...converted.warnings.map((message) => `English: ${message}`)
-        );
-        if (!english.title || !english.body) {
-          english = undefined;
-          row.warnings.push(
-            'Declared English version became empty after cleanup; omitted pending review.'
-          );
-        }
-      }
       const urls = new Map();
       for (const asset of rawAttachments) {
         if (!asset.url) continue;
@@ -451,24 +465,16 @@ export function convertPosts(collections, run, reservedSlugs = []) {
           });
       }
       row.attachments = [...urls.values()];
-      if (!isGeorgian(post)) {
-        row.status = translatedIds.has(post.id)
-          ? 'linked-english'
-          : languageOf(post) === 'en'
-            ? 'unpaired-english'
-            : 'needs-language-review';
-        row.warnings.push(
-          'No Georgian News file generated from this source; translations are never guessed.'
-        );
-        results.push(row);
-        continue;
-      }
       if (!row.title || !ka.markdown)
         throw new Error('Missing title or body after HTML cleanup.');
       Temporal.PlainDate.from(row.date);
-      const slug = uniqueSlug(row.title, post.id, used);
+      const slug = uniqueSlug(row.title, post.id, used, post.slug);
       row.slug = slug;
       row.status = 'converted';
+      if (row.language.needsReview)
+        row.warnings.push(
+          'Language needs review. The source remains separate; no automatic split, translation or pairing.'
+        );
       if (!suggestions.length)
         row.warnings.push(
           'No Action matched. actions is empty; an editor must select a real Action before publication.'
@@ -481,24 +487,15 @@ export function convertPosts(collections, run, reservedSlugs = []) {
         slug,
         date: row.date,
         actions: suggestions.map((suggestion) => suggestion.slug),
-        ka: { title: row.title, body: ka.markdown },
-        ...(english ? { en: english } : {}),
+        [row.language.slot]: { title: row.title, body: ka.markdown },
         legacy: {
           id: post.id,
           slug: row.oldSlug,
           url: row.oldUrl,
-          ...(english
-            ? {
-                en: {
-                  id: enPost.id,
-                  slug: redact(enPost.slug),
-                  url: cleanUrl(enPost.link),
-                },
-              }
-            : {}),
         },
         migration: {
           status: 'unreviewed',
+          language: row.language,
           actionsStatus: 'suggested',
           suggestedActions: suggestions,
           typeCandidate: type,
@@ -517,7 +514,8 @@ export function convertPosts(collections, run, reservedSlugs = []) {
   for (const field of ['title', 'body']) {
     const groups = new Map();
     for (const row of results.filter((item) => item.news)) {
-      const value = field === 'title' ? row.title : row.news.ka.body;
+      const value =
+        field === 'title' ? row.title : row.news[row.language.slot].body;
       const hash = createHash('sha256')
         .update(value.toLowerCase().replace(/\s+/g, ' ').trim())
         .digest('hex');
@@ -526,5 +524,24 @@ export function convertPosts(collections, run, reservedSlugs = []) {
     for (const ids of groups.values())
       if (ids.length > 1) duplicates.push({ field, postIds: ids });
   }
-  return { results, duplicates };
+  const pairCandidates = pairingCandidates(
+    results,
+    sourceById,
+    run.languages.pairs
+  );
+  for (const row of results) {
+    row.pairCandidates = pairCandidates.filter(
+      (pair) => pair.ka === row.id || pair.en === row.id
+    );
+    if (row.news) row.news.migration.pairCandidates = row.pairCandidates;
+  }
+  const englishWithoutCandidate = results
+    .filter(
+      (row) =>
+        row.news &&
+        row.language.body.script === 'latin' &&
+        !row.pairCandidates.length
+    )
+    .map((row) => row.id);
+  return { results, duplicates, pairCandidates, englishWithoutCandidate };
 }

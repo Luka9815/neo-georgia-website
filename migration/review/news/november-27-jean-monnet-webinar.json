@@ -1,0 +1,146 @@
+{
+  "slug": "november-27-jean-monnet-webinar",
+  "date": "2025-11-18",
+  "actions": [
+    "jean-monnet"
+  ],
+  "sourceText": {
+    "title": "Erasmus+-ის ეროვნული ოფისი საქართველოში გიწვევთ ვებინარზე 27 ნოემბერს!",
+    "body": "\\[For English, Scroll down\\]\n\n**📣Erasmus+-ის ეროვნული ოფისი საქართველოში გიწვევთ ვებინარზე 27 ნოემბერს!**\n\n**ვებინარი:** ჟან მონეს პროგრამის განხილვა\n\n**თარიღი და დრო:** 27 ნოემბერი, 12:00-13:00 PM\n\n**შეხვედრის ენა:** ქართული\n\n**პლატფორმა:** Google Meet\n\n**🔗სარეგისტრაციო ბმული:** [**https://forms.gle/VER8wjFbhygbbRhBA**](https://forms.gle/VER8wjFbhygbbRhBA) \n\n**ENG**\n\n**📣The National Erasmus+Office in Georgia invites you to the Webinar on November 27**\n\n**Webinar:** Jean Monnet Programme Overview\n\n**Date and time:** November 27, 12:00-13:00 PM\n\n**Language:** Georgian\n\n**Platform:** Google Meet\n\n**🔗Registration link:** [**https://forms.gle/VER8wjFbhygbbRhBA**](https://forms.gle/VER8wjFbhygbbRhBA)"
+  },
+  "legacy": {
+    "id": 34934,
+    "slug": "november-27-jean-monnet-webinar",
+    "url": "https://erasmus.org.ge/november-27-jean-monnet-webinar/"
+  },
+  "migration": {
+    "status": "unreviewed",
+    "language": {
+      "title": {
+        "script": "georgian",
+        "language": "ka",
+        "georgianLetters": 51,
+        "latinLetters": 7,
+        "georgianShare": 0.879,
+        "latinShare": 0.121,
+        "englishWordHits": 0,
+        "note": "Script heuristic excluding URLs; English is a candidate, not editorial approval."
+      },
+      "body": {
+        "script": "mixed",
+        "language": "mixed",
+        "georgianLetters": 149,
+        "latinLetters": 212,
+        "georgianShare": 0.413,
+        "latinShare": 0.587,
+        "englishWordHits": 8,
+        "note": "Script heuristic excluding URLs; English is a candidate, not editorial approval."
+      },
+      "englishMarker": true,
+      "slot": "sourceText",
+      "label": "mixed ka/Latin",
+      "needsReview": true
+    },
+    "actionsStatus": "suggested",
+    "suggestedActions": [
+      {
+        "slug": "jean-monnet",
+        "status": "suggested",
+        "evidence": [
+          {
+            "source": "body",
+            "match": "ჟან მონე"
+          }
+        ]
+      }
+    ],
+    "typeCandidate": {
+      "type": "event",
+      "evidence": [
+        "ვებინარ",
+        "18.11.2025"
+      ]
+    },
+    "attachments": [
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/elementor/thumbs/81-rqcq8017alceqjpn66qohgodf1pm5m5f6jibs1ypvs.png",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "81",
+        "mediaId": null,
+        "uses": [
+          {
+            "language": "mixed",
+            "relationship": "inline-image"
+          }
+        ],
+        "usedBy": [
+          34934
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/11/81.png",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "",
+        "mediaId": 34938,
+        "uses": [
+          {
+            "language": "shared",
+            "relationship": "attached-to-post"
+          }
+        ],
+        "usedBy": [
+          34934
+        ]
+      }
+    ],
+    "warnings": [
+      "Images omitted from Markdown; one eligible featured image is selected separately and other attachments stay listed.",
+      "Leading theme date, empty info markers or repeated blank lines removed.",
+      "Language needs review. The source remains separate; no automatic split, translation or pairing.",
+      "Possible Event: kept as a News-shaped review file, not converted to an Event."
+    ],
+    "pairCandidates": [
+      {
+        "status": "CANDIDATE",
+        "kind": "within-post",
+        "ka": 34934,
+        "en": 34934,
+        "confidence": "high",
+        "evidence": [
+          "Both scripts plus an explicit English-section marker"
+        ],
+        "note": "Review the two source sections. No automatic splitting or translation."
+      }
+    ],
+    "image": {
+      "status": "downloaded",
+      "path": "images/november-27-jean-monnet-webinar.png",
+      "sourceUrl": "https://erasmus.org.ge/wp-content/uploads/2025/11/81-1024x1024.png",
+      "sizeBytes": 422535,
+      "width": 1024,
+      "height": 1024,
+      "mediaId": 34938,
+      "reason": "Image attached to this post",
+      "alt": {
+        "ka": "[ALT NEEDED]",
+        "en": "[ALT NEEDED]"
+      }
+    }
+  },
+  "image": {
+    "status": "downloaded",
+    "path": "images/november-27-jean-monnet-webinar.png",
+    "sourceUrl": "https://erasmus.org.ge/wp-content/uploads/2025/11/81-1024x1024.png",
+    "sizeBytes": 422535,
+    "width": 1024,
+    "height": 1024,
+    "mediaId": 34938,
+    "reason": "Image attached to this post",
+    "alt": {
+      "ka": "[ALT NEEDED]",
+      "en": "[ALT NEEDED]"
+    }
+  }
+}

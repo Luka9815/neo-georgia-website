@@ -1,0 +1,159 @@
+{
+  "slug": "global-networking-event-in-november",
+  "date": "2025-10-29",
+  "actions": [],
+  "sourceText": {
+    "title": "Erasmus+ პროგრამის რეგიონული შეხვედრა და კონტაქტების დამყარების სემინარი 2025 – აზიის, ახლო აღმოსავლეთისა და წყნარი ოკეანის რეგიონებისთვის!",
+    "body": "\\[For English Scroll Down\\]\n\n📣 **Erasmus+ პროგრამის რეგიონული შეხვედრა და კონტაქტების დამყარების სემინარი 2025 – აზიის, ახლო აღმოსავლეთისა და წყნარი ოკეანის რეგიონებისთვის!**\n\n🎯 ღონისძიება ორგანიზებულია ევროპის კომისიის განათლების, ახალგაზრდობის, სპორტისა და კულტურის გენერალური დირექტორატის (DG EAC) და ევროპის განათლებისა და კულტურის აღმასრულებელი სააგენტოს (EACEA) მიერ.\n\n📍 შეხვედრა გაიმართება შრი-ლანკაში, ქალაქ კოლომბოში, 2025 წლის 18-19 ნოემბერს და პარალელურად გადაიცემა ონლაინ ფორმატით (Zoom-ის საშუალებით).\n\n 👉 ღონისძიებას დაესწრებიან ევროპისა და აზიის, ახლო აღმოსავლეთისა და წყნარი ოკეანის რეგიონის უმაღლესი და პროფესიული განათლების ინსტიტუტების წარმომადგენლები, რომლებიც უკვე ჩართულნი ან დაინტერესებულნი არიან თანამშრომლობის განვითარებით Erasmus+-ის პროგრამის ფარგლებში. სემინარში ასევე მონაწილეობას მიიღებენ Erasmus+ პროგრამის ეროვნული საკოორდინაციო ცენტრების წარმომადგენლები, ეროვნული სააგენტოები, ევროკავშირის დელეგაციები, ასევე ევროპის კომისიისა და ევროპის განათლებისა და კულტურის აღმასრულებელი სააგენტოს წარმომადგენლები. \n\n📅 ონლაინ მონაწილეობის რეგისტრაციის ბოლო ვადაა – **11 ნოემბერი, 2025**.  \nErasmus+ სწრაფი ნეთვორქინგის სესიაზე რეგისტრაციის ბოლო ვადაა – **18 ნოემბერი, 2025**.\n\n🔗 ღონისძიებაზე დასარეგისტრირებლად, ასევე დამატებითი ინფორმაციისა და დღის წესრიგის სანახავად, მიჰყევით ბმულს: [https://shorturl.at/PZITe](https://shorturl.at/PZITe)\n\n\\-\n\n📣 **Information about the Conference: ”Regional Erasmus+ Cluster Meeting and Contact-Making Seminar 2025 for Asia, the Middle East and the Pacific”**\n\n🎯The event ”Regional Erasmus+ Cluster Meeting and Contact-Making Seminar 2025 for Asia, the Middle East and the Pacific” is organised by the Directorate-General for Education, Youth, Sport and Culture (DG EAC) of the European Commission and the European Education and Culture Executive Agency (EACEA). \n\n📍The event will take place in Colombo (Sri Lanka) on November 18-19, 2025, and will be streamed online via Zoom.\n\n 👉The meeting will gather higher education plus vocational education and training institutions from Europe, Asia, the Middle East and the Pacific, which are active in the Erasmus+ programme or potentially interested in developing cooperation under this scheme. Participants will be joined by stakeholders involved in the implementation and promotion of the Erasmus+ programme, such as the Asian, Middle Eastern and Pacific Erasmus+ National Focal Points, Erasmus+ National Agencies, European Union Delegations in the three regions, the European Commission and the European Education and Culture Executive Agency.\n\n📅The registration deadline for online participation is November 11, 2025. \n\nTo register for the online Erasmus+ Speed-Networking Session, the deadline is November 18, 2025.\n\n🔗 To register or gather additional information, visit the following link – [https://shorturl.at/PZITe](https://shorturl.at/PZITe) – where you can see the draft agenda document as well."
+  },
+  "legacy": {
+    "id": 34833,
+    "slug": "global-networking-event-in-november",
+    "url": "https://erasmus.org.ge/global-networking-event-in-november/"
+  },
+  "migration": {
+    "status": "unreviewed",
+    "language": {
+      "title": {
+        "script": "georgian",
+        "language": "ka",
+        "georgianLetters": 108,
+        "latinLetters": 7,
+        "georgianShare": 0.939,
+        "latinShare": 0.061,
+        "englishWordHits": 0,
+        "note": "Script heuristic excluding URLs; English is a candidate, not editorial approval."
+      },
+      "body": {
+        "script": "mixed",
+        "language": "mixed",
+        "georgianLetters": 1001,
+        "latinLetters": 1234,
+        "georgianShare": 0.448,
+        "latinShare": 0.552,
+        "englishWordHits": 65,
+        "note": "Script heuristic excluding URLs; English is a candidate, not editorial approval."
+      },
+      "englishMarker": true,
+      "slot": "sourceText",
+      "label": "mixed ka/Latin",
+      "needsReview": true
+    },
+    "actionsStatus": "suggested",
+    "suggestedActions": [],
+    "typeCandidate": {
+      "type": "event",
+      "evidence": [
+        "Conference",
+        "29.10.2025"
+      ]
+    },
+    "attachments": [
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/10/Subtitle-768x644.png",
+        "type": "image",
+        "sizeBytes": 69662,
+        "alt": "",
+        "mediaId": 34836,
+        "uses": [
+          {
+            "language": "mixed",
+            "relationship": "inline-image"
+          },
+          {
+            "language": "mixed",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          34833
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/10/Subtitle-300x251.png",
+        "type": "image",
+        "sizeBytes": 15909,
+        "alt": "",
+        "mediaId": 34836,
+        "uses": [
+          {
+            "language": "mixed",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          34833
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/10/Subtitle.png",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "",
+        "mediaId": 34836,
+        "uses": [
+          {
+            "language": "mixed",
+            "relationship": "image-variant"
+          },
+          {
+            "language": "shared",
+            "relationship": "attached-to-post"
+          }
+        ],
+        "usedBy": [
+          34833
+        ]
+      }
+    ],
+    "warnings": [
+      "Em dashes replaced with spaced hyphens for project style.",
+      "Images omitted from Markdown; one eligible featured image is selected separately and other attachments stay listed.",
+      "Leading theme date, empty info markers or repeated blank lines removed.",
+      "Language needs review. The source remains separate; no automatic split, translation or pairing.",
+      "No Action matched. actions is empty; an editor must select a real Action before publication.",
+      "Possible Event: kept as a News-shaped review file, not converted to an Event."
+    ],
+    "pairCandidates": [
+      {
+        "status": "CANDIDATE",
+        "kind": "within-post",
+        "ka": 34833,
+        "en": 34833,
+        "confidence": "high",
+        "evidence": [
+          "Both scripts plus an explicit English-section marker"
+        ],
+        "note": "Review the two source sections. No automatic splitting or translation."
+      }
+    ],
+    "image": {
+      "status": "downloaded",
+      "path": "images/global-networking-event-in-november.png",
+      "sourceUrl": "https://erasmus.org.ge/wp-content/uploads/2025/10/Subtitle.png",
+      "sizeBytes": 291208,
+      "width": 940,
+      "height": 788,
+      "mediaId": 34836,
+      "reason": "Image attached to this post",
+      "alt": {
+        "ka": "[ALT NEEDED]",
+        "en": "[ALT NEEDED]"
+      }
+    }
+  },
+  "image": {
+    "status": "downloaded",
+    "path": "images/global-networking-event-in-november.png",
+    "sourceUrl": "https://erasmus.org.ge/wp-content/uploads/2025/10/Subtitle.png",
+    "sizeBytes": 291208,
+    "width": 940,
+    "height": 788,
+    "mediaId": 34836,
+    "reason": "Image attached to this post",
+    "alt": {
+      "ka": "[ALT NEEDED]",
+      "en": "[ALT NEEDED]"
+    }
+  }
+}

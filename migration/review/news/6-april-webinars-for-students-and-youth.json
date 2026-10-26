@@ -1,0 +1,60 @@
+{
+  "slug": "6-april-webinars-for-students-and-youth",
+  "date": "2026-04-02",
+  "actions": [],
+  "ka": {
+    "title": "Erasmus+-ის ეროვნული ოფისი საქართველოში გიწვევთ ვებინარებზე, რომლებიც განკუთვნილია სტუდენტებისა და ახალგაზრდებისთვის!",
+    "body": "Erasmus+-ის ეროვნული ოფისისა და ESN-ის თანამშრომლობით, 6 აპრილს, ჩატარდება ორი საინფორმაციო ვებინარი, რომელიც განკუთვნილია ახალგაზრდებისა და სტუდენტებისთვის, ვისაც სურს მეტი გაიგოს Erasmus+ პროგრამის შესაძლებლობების შესახებ 🌍\n\n🎓 ვებინარებზე შეიტყობ:\n\n-   რა შესაძლებლობებს გთავაზობს Erasmus+ პროგრამა\n-   როგორ შეგიძლია ჩაერთო სხვადასხვა პროექტში\n-   რა გამოცდილება აქვთ პროგრამის მონაწილეებს\n\n**I ვებინარი – Erasmus+ პროგრამის შესაძლებლობები სტუდენტებისა და ახალგაზრდებისთვის!**\n\n**თარიღი:** 6 აპრილი, 2026\n\n**ფორმატი:** ონლაინ (Google Meet პლატფორმა)\n\n**დრო:** 12:00-13:00\n\nსარეგისტრაციო ბმული: [https://forms.gle/LwuDSMLLWv2mtCWe8](https://forms.gle/LwuDSMLLWv2mtCWe8)\n\n**II ვებინარი – გამოცდილების გაზიარება: როგორ მივიღოთ მონაწილეობა Erasmus+ პროგრამაში: სტუდენტებისა და ახალგაზრდებისთვის**\n\n**თარიღი:** 6 აპრილი, 2026\n\n**ფორმატი:** ონლაინ (Google Meet პლატფორმა)\n\n**დრო:** 13:30-14:00\n\nსარეგისტრაციო ბმული: [https://forms.gle/DeqPRTKhBdoMxM5p9](https://forms.gle/DeqPRTKhBdoMxM5p9)\n\n🤝 სამიზნე აუდიტორია: სტუდენტები და ახალგაზრდები.\n\n❗ღონისძიებაზე დასწრებისთვის აუცილებელია რეგისტრაციის გავლა."
+  },
+  "legacy": {
+    "id": 35878,
+    "slug": "6-april-webinars-for-students-and-youth",
+    "url": "https://erasmus.org.ge/6-april-webinars-for-students-and-youth/"
+  },
+  "migration": {
+    "status": "unreviewed",
+    "language": {
+      "title": {
+        "script": "georgian",
+        "language": "ka",
+        "georgianLetters": 96,
+        "latinLetters": 7,
+        "georgianShare": 0.932,
+        "latinShare": 0.068,
+        "englishWordHits": 0,
+        "note": "Script heuristic excluding URLs; English is a candidate, not editorial approval."
+      },
+      "body": {
+        "script": "georgian",
+        "language": "ka",
+        "georgianLetters": 656,
+        "latinLetters": 61,
+        "georgianShare": 0.915,
+        "latinShare": 0.085,
+        "englishWordHits": 0,
+        "note": "Script heuristic excluding URLs; English is a candidate, not editorial approval."
+      },
+      "englishMarker": false,
+      "slot": "ka",
+      "label": "ka",
+      "needsReview": false
+    },
+    "actionsStatus": "suggested",
+    "suggestedActions": [],
+    "typeCandidate": {
+      "type": "event",
+      "evidence": [
+        "ვებინარ",
+        "02.04.2026"
+      ]
+    },
+    "attachments": [],
+    "warnings": [
+      "Leading theme date, empty info markers or repeated blank lines removed.",
+      "No Action matched. actions is empty; an editor must select a real Action before publication.",
+      "Possible Event: kept as a News-shaped review file, not converted to an Event.",
+      "No supported image variant with a known width up to 1024 px; HEIC is skipped."
+    ],
+    "pairCandidates": []
+  }
+}

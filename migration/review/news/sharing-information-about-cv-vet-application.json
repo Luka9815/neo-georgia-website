@@ -1,0 +1,200 @@
+{
+  "slug": "sharing-information-about-cv-vet-application",
+  "date": "2026-01-28",
+  "actions": [
+    "cb-vet"
+  ],
+  "sourceText": {
+    "title": "იხილეთ დაგენერირებული ინფორმაცია CB VET 2026-ის შესახებ: როგორ შევიტანოთ განაცხადი Erasmus+-ის ფარგლებში?",
+    "body": "{For English, Scroll Down👇}\n\n📣 **იხილეთ დაგენერირებული ინფორმაცია CB VET 2026-ის შესახებ: როგორ შევიტანოთ განაცხადი Erasmus+-ის ფარგლებში?**\n\n🔗 სრული ინფორმაციისთვის, გადადით [ბმულზე](https://www.eacea.ec.europa.eu/news-events/news/capacity-building-vocational-education-and-training-cb-vet-2026-how-apply-2026-01-23_en).\n\n**ENGLISH**\n\n📣 **See the generated information about CB VET 2026: How to apply under the Erasmus+ Programme?**\n\n🔗 For details, follow the [link](https://www.eacea.ec.europa.eu/news-events/news/capacity-building-vocational-education-and-training-cb-vet-2026-how-apply-2026-01-23_en)."
+  },
+  "legacy": {
+    "id": 35646,
+    "slug": "sharing-information-about-cv-vet-application",
+    "url": "https://erasmus.org.ge/sharing-information-about-cv-vet-application/"
+  },
+  "migration": {
+    "status": "unreviewed",
+    "language": {
+      "title": {
+        "script": "georgian",
+        "language": "ka",
+        "georgianLetters": 73,
+        "latinLetters": 12,
+        "georgianShare": 0.859,
+        "latinShare": 0.141,
+        "englishWordHits": 0,
+        "note": "Script heuristic excluding URLs; English is a candidate, not editorial approval."
+      },
+      "body": {
+        "script": "mixed",
+        "language": "mixed",
+        "georgianLetters": 106,
+        "latinLetters": 132,
+        "georgianShare": 0.445,
+        "latinShare": 0.555,
+        "englishWordHits": 6,
+        "note": "Script heuristic excluding URLs; English is a candidate, not editorial approval."
+      },
+      "englishMarker": true,
+      "slot": "sourceText",
+      "label": "mixed ka/Latin",
+      "needsReview": true
+    },
+    "actionsStatus": "suggested",
+    "suggestedActions": [
+      {
+        "slug": "cb-vet",
+        "status": "suggested",
+        "evidence": [
+          {
+            "source": "title",
+            "match": "CB VET"
+          },
+          {
+            "source": "body",
+            "match": "CB VET"
+          }
+        ]
+      }
+    ],
+    "typeCandidate": {
+      "type": "news",
+      "evidence": [
+        "28.01.2026"
+      ]
+    },
+    "attachments": [
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/01/Untitled-design-768x768.png",
+        "type": "image",
+        "sizeBytes": 420668,
+        "alt": "",
+        "mediaId": 35649,
+        "uses": [
+          {
+            "language": "mixed",
+            "relationship": "inline-image"
+          },
+          {
+            "language": "mixed",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          35646
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/01/Untitled-design-300x300.png",
+        "type": "image",
+        "sizeBytes": 91715,
+        "alt": "",
+        "mediaId": 35649,
+        "uses": [
+          {
+            "language": "mixed",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          35646
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/01/Untitled-design-1024x1024.png",
+        "type": "image",
+        "sizeBytes": 661383,
+        "alt": "",
+        "mediaId": 35649,
+        "uses": [
+          {
+            "language": "mixed",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          35646
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/01/Untitled-design-150x150.png",
+        "type": "image",
+        "sizeBytes": 28392,
+        "alt": "",
+        "mediaId": 35649,
+        "uses": [
+          {
+            "language": "mixed",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          35646
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/01/Untitled-design.png",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "",
+        "mediaId": 35649,
+        "uses": [
+          {
+            "language": "mixed",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          35646
+        ]
+      }
+    ],
+    "warnings": [
+      "Images omitted from Markdown; one eligible featured image is selected separately and other attachments stay listed.",
+      "Leading theme date, empty info markers or repeated blank lines removed.",
+      "Language needs review. The source remains separate; no automatic split, translation or pairing."
+    ],
+    "pairCandidates": [
+      {
+        "status": "CANDIDATE",
+        "kind": "within-post",
+        "ka": 35646,
+        "en": 35646,
+        "confidence": "high",
+        "evidence": [
+          "Both scripts plus an explicit English-section marker"
+        ],
+        "note": "Review the two source sections. No automatic splitting or translation."
+      }
+    ],
+    "image": {
+      "status": "downloaded",
+      "path": "images/sharing-information-about-cv-vet-application.png",
+      "sourceUrl": "https://erasmus.org.ge/wp-content/uploads/2026/01/Untitled-design-1024x1024.png",
+      "sizeBytes": 661383,
+      "width": 1024,
+      "height": 1024,
+      "mediaId": 35649,
+      "reason": "First eligible inline image",
+      "alt": {
+        "ka": "[ALT NEEDED]",
+        "en": "[ALT NEEDED]"
+      }
+    }
+  },
+  "image": {
+    "status": "downloaded",
+    "path": "images/sharing-information-about-cv-vet-application.png",
+    "sourceUrl": "https://erasmus.org.ge/wp-content/uploads/2026/01/Untitled-design-1024x1024.png",
+    "sizeBytes": 661383,
+    "width": 1024,
+    "height": 1024,
+    "mediaId": 35649,
+    "reason": "First eligible inline image",
+    "alt": {
+      "ka": "[ALT NEEDED]",
+      "en": "[ALT NEEDED]"
+    }
+  }
+}

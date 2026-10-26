@@ -173,3 +173,37 @@ Generate migration/review/redirects.draft.json from the reviewed News slugs and 
 
 ## 2026-10-26: Offline converter fixtures and conservative language review
 Use saved synthetic HTML and in-memory REST-shaped fixtures to test cleanup, links/lists/tables, attachment metadata, the full modern Georgian romanisation table, Mtavruli/collision/length edge cases, exact window boundaries and verified-English-only conversion. Stub fetch to fail in this test file, so npm test cannot make network requests through the converter. The live dry run found four English-prose sources without translation metadata or linked Georgian versions; keep them in inventory for review rather than fabricate ka text or pair similar posts. Forty-four Georgian drafts have no supported Action suggestion and remain blocked for publication until an editor chooses one.
+
+
+## 2026-10-26: Separate source-language detection and candidate pair review
+Supersedes automatic verified-English attachment and the four-source-only assumption in "Offline converter fixtures and conservative language review". Detect title and body separately using visible prose, excluding URLs. Mixed bodies and mismatched titles/bodies stay under sourceText, so Latin prose is not silently put in ka. Clear English-prose records use an explicitly unapproved en candidate. Keep one draft per source post. Propose within-post and cross-post CANDIDATE pairs with script/section, date, topic, media and legacy-slug evidence and a confidence note; never split or merge automatically, even for an explicit REST relation. List Latin-body sources without a Georgian candidate separately.
+
+
+## 2026-10-26: Remove theme-only dates and markers without removing body emoji
+Extend "Review-only Markdown conversion, romanised slugs and suggestions". Strip only a leading standalone brace-wrapped DD.MM.YYYY theme date, standalone empty info markers and repeated blank lines. Clean leading title emoji, including joined emoji sequences; preserve numerical title prefixes, body emoji and info markers that have text. Keep meaningful dates inside the article.
+
+
+## 2026-10-26: Prefer clean legacy slugs, word-boundary romanisation fallback
+Supersedes the slug-generation part of "Review-only Markdown conversion, romanised slugs and suggestions". Reuse clean lowercase ASCII legacy slugs after converting underscores to hyphens. Preserve an already published clean slug even when long; the approximately 60-character limit applies to newly romanised title slugs. Truncate those at a word boundary, with a hard cut only for a single overlong token. Keep deterministic collision suffixes and reserve existing live News slugs. Preserve the original legacy value separately.
+
+
+## 2026-10-26: Download only selected review images, never publish them
+Supersedes the no-binary-download part of "Review-only Markdown conversion, romanised slugs and suggestions" and "Plain-language review report and explicit incomplete runs" for this authorised review pass. Select one image per source: featured first, then attached, then inline. Choose the largest known variant up to 1024 px, preferring JPG/PNG/WebP (GIF only as fallback), skipping HEIC and unknown/oversized variants. Download original bytes from the old-site image host with the shared polite request limiter, verify received format/dimensions and keep files under migration/review/images/<slug>.<ext>. Record source/byte size and both [ALT NEEDED] placeholders; leave every other attachment listed only. Reused URLs are fetched once per run; report network bytes and total saved-file bytes separately. These review images are not the production responsive-image workflow.
+
+
+## 2026-10-26: Quick review table and decisions CSV
+Put a one-row-per-draft summary at the top of REPORT.md, including language, type/Action suggestions, image and pairing candidates. Generate decisions.csv with slug, keep, type, actions, pair_with and notes. Leave keep/pair_with blank; type/Actions are editable suggestions, not decisions. Preserve an existing decisions.csv on reruns and write a fresh decisions.template.csv instead. Mixed/English-candidate drafts have no proposed Georgian redirect until language review. Neither CSV nor candidate pairs trigger content promotion or merging.
+
+
+## 2026-10-26: Offline language, cleanup, slug and image regression checks
+Extend the offline converter-fixture decision with mixed-body/title mismatch, within-post/cross-post candidate-only pairing, source-record preservation, theme cleanup and clean legacy slug cases. Use injected image bytes to test variant selection, byte deduplication, provenance/alt placeholders and rejection of actual widths above 1024 px without making network requests. Test the quick report/CSV row contract too. The final live import is a separate manual operation; verify downloaded images and saved-byte totals locally before committing review output.
+
+
+## 2026-10-26: News may have no Action (Luka)
+Relaxes the "select at least one existing action" check, which was an implementation choice, not a SITE-PLAN requirement. General NEO news (Europe Day, TAM, conferences, programme-wide announcements) fits none of the nine Actions, and forcing one would mislead readers and Action pages. News actions are optional (missing or empty list both accepted); any listed slug must still exist. Events still require at least one Action. The Pages CMS News field is no longer required.
+
+## 2026-10-26: Migrate only old posts that exist in both languages (Luka)
+Narrows the initial News import scope in "Last twelve months of News in the initial migration". Only old posts with a real Georgian and a real English version are migrated; Georgian-only and English-only posts are skipped, not translated. This does not change the rule that new News may be Georgian only. In decisions.csv, pair_with equal to the item's own slug means the post holds both languages in one body and its ka and en sections are to be split. Applied to the 2026-10-26 review: 5 of 76 posts qualify.
+
+## 2026-10-26: Smaller footer disclaimer (Luka)
+The EACEA disclaimer stays verbatim on every page but is set as secondary text (0.75rem, muted colour, 6.9:1 contrast), similar to NEO Moldova. The emblem and funding statement are unchanged.

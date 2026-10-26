@@ -355,6 +355,13 @@ dd {
 .eu-funding p:last-child {
   margin-bottom: 0;
 }
+/* The disclaimer is required but secondary: small, muted text (6.9:1). */
+.funding-disclaimer,
+.eu-funding p[lang='en'] {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
 .skip {
   position: absolute;
   top: -10rem;

@@ -13,8 +13,13 @@ import { fileURLToPath } from 'node:url';
 import { Temporal } from '@js-temporal/polyfill';
 import { createClient, oldSite } from './wp/client.js';
 import { languageFindings, translationIds } from './wp/languages.js';
-import { convertPosts } from './wp/convert.js';
-import { attachmentInventory, renderReport } from './wp/report.js';
+import { downloadReviewImages } from './wp/images.js';
+import { convertPosts, allPosts } from './wp/convert.js';
+import {
+  attachmentInventory,
+  renderReport,
+  renderDecisions,
+} from './wp/report.js';
 import { draftRedirects } from './wp/redirects.js';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
@@ -37,7 +42,9 @@ export function writeReview(path, data) {
   mkdirSync(dirname(target), { recursive: true });
   writeFileSync(
     target,
-    typeof data === 'string' ? data : JSON.stringify(data, null, 2) + '\n'
+    typeof data === 'string' || Buffer.isBuffer(data)
+      ? data
+      : JSON.stringify(data, null, 2) + '\n'
   );
 }
 
@@ -144,24 +151,55 @@ async function main() {
   )) {
     unlinkSync(join(newsDirectory, file));
   }
+  const imageDirectory = join(reviewDirectory, 'images');
+  mkdirSync(imageDirectory, { recursive: true });
+  if (realpathSync(imageDirectory) !== imageDirectory)
+    throw new Error('Refusing symlinked image output');
+  for (const file of readdirSync(imageDirectory).filter((name) =>
+    /^[a-z0-9-]+\.(jpg|png|webp|gif)$/.test(name)
+  ))
+    unlinkSync(join(imageDirectory, file));
+  console.log('Downloading selected review images...');
+  run.images = await downloadReviewImages(
+    converted.results,
+    allPosts(collections),
+    collections.media.items,
+    client,
+    writeReview
+  );
+  run.failures.push(...run.images.failures);
   for (const row of converted.results) {
     if (row.news) writeReview(`news/${row.slug}.json`, row.news);
   }
   const inventory = {
     items: converted.results.map(({ news, ...row }) => row),
     duplicates: converted.duplicates,
+    pairCandidates: converted.pairCandidates,
+    englishWithoutCandidate: converted.englishWithoutCandidate,
   };
   writeReview('inventory.json', inventory);
   run.counts = {
     inWindow: inventory.items.length,
     convertedNews: converted.results.filter((row) => row.news).length,
     withEnglish: converted.results.filter((row) => row.news?.en).length,
+    needsLanguageReview: converted.results.filter(
+      (row) => row.news && row.language.needsReview
+    ).length,
+    candidatePairs: converted.pairCandidates.length,
     eventCandidates: inventory.items.filter(
       (row) => row.typeCandidate?.type === 'event'
     ).length,
     failedConversions: inventory.items.filter((row) => row.status === 'failed')
       .length,
   };
+  const csv = renderDecisions(inventory);
+  if (!existsSync(join(reviewDirectory, 'decisions.csv')))
+    writeReview('decisions.csv', csv);
+  else {
+    writeReview('decisions.template.csv', csv);
+    run.reviewNotes =
+      'Existing decisions.csv preserved. The refreshed blank/current-suggestion template is decisions.template.csv; reconcile it manually if slugs changed.';
+  }
   run.finishedAt = new Date().toISOString();
   writeReview('run.json', run);
   writeReview('attachments.json', attachmentInventory(inventory.items));

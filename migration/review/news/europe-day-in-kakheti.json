@@ -1,0 +1,239 @@
+{
+  "slug": "europe-day-in-kakheti",
+  "date": "2026-10-12",
+  "actions": [],
+  "ka": {
+    "title": "10 ოქტომბერს კახეთში ევროპის დღის აღსანიშნავი ღონისძიება გაიმართა",
+    "body": "**ℹ️** ღონისძიება სახელწოდებით „ჩემი ევროპა. ჩემი მომავალი.“ მეღვინეობა “მოსმიერში” გაიმართა. ევროპის დღემ კახეთში თავი მოუყარა ევროკავშირის წარმომადგენლობისა და ევროკავშირის წევრი ქვეყნების თანამშრომლებს, ევროკავშირის მიერ დაფინანსებულ პროექტებს, პარტნიორებს და ადგილობრივ მოსახლეობას. კულტურის, კულინარიის, დიალოგისა და ინტერაქციული აქტივობების მეშვეობით, სტუმრები გაეცნენ, თუ რა შესაძლებლობებს ქმნის ევროკავშირსა და საქართველოს შორის თანამშრომლობა და როგორ ხდება მოქალაქეთა მხარდაჭერა მთელი ქვეყნის მასშტაბით.\n\n✨ Erasmus+-ის ეროვნული ოფისის სტენდთან მონაწილეებს საშუალება ჰქონდათ ჩართულიყვნენ ინტერაქციულ აქტივობებში, გასცნობოდნენ ინფორმაციას ევროკავშირისა და Erasmus+ პროგრამის შესახებ და მიეღოთ ბრენდირებული საჩუქრები. \n\nღონისძიებას ჯამში 5000-ზე მეტი ადამიანი დაესწრო. მადლობას ვუხდით ყველა დაინტერესებულ მონაწილეს!"
+  },
+  "legacy": {
+    "id": 36531,
+    "slug": "europe-day-in-kakheti",
+    "url": "https://erasmus.org.ge/europe-day-in-kakheti/"
+  },
+  "migration": {
+    "status": "unreviewed",
+    "language": {
+      "title": {
+        "script": "georgian",
+        "language": "ka",
+        "georgianLetters": 56,
+        "latinLetters": 0,
+        "georgianShare": 1,
+        "latinShare": 0,
+        "englishWordHits": 0,
+        "note": "Script heuristic excluding URLs; English is a candidate, not editorial approval."
+      },
+      "body": {
+        "script": "georgian",
+        "language": "ka",
+        "georgianLetters": 682,
+        "latinLetters": 14,
+        "georgianShare": 0.98,
+        "latinShare": 0.02,
+        "englishWordHits": 0,
+        "note": "Script heuristic excluding URLs; English is a candidate, not editorial approval."
+      },
+      "englishMarker": false,
+      "slot": "ka",
+      "label": "ka",
+      "needsReview": false
+    },
+    "actionsStatus": "suggested",
+    "suggestedActions": [],
+    "typeCandidate": {
+      "type": "news",
+      "evidence": [
+        "12.10.2026"
+      ]
+    },
+    "attachments": [
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/10/Minimalist-Aesthetic-Summer-Photo-Collage-2-1024x819.png",
+        "type": "image",
+        "sizeBytes": 1393554,
+        "alt": "",
+        "mediaId": 36549,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "inline-image"
+          },
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          36531
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/10/Minimalist-Aesthetic-Summer-Photo-Collage-2-300x240.png",
+        "type": "image",
+        "sizeBytes": 153874,
+        "alt": "",
+        "mediaId": 36549,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          36531
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/10/Minimalist-Aesthetic-Summer-Photo-Collage-2-768x614.png",
+        "type": "image",
+        "sizeBytes": 828101,
+        "alt": "",
+        "mediaId": 36549,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          36531
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/10/Minimalist-Aesthetic-Summer-Photo-Collage-2-1536x1229.png",
+        "type": "image",
+        "sizeBytes": 2913278,
+        "alt": "",
+        "mediaId": 36549,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          36531
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/10/Minimalist-Aesthetic-Summer-Photo-Collage-2.png",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "",
+        "mediaId": 36549,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          },
+          {
+            "language": "shared",
+            "relationship": "attached-to-post"
+          }
+        ],
+        "usedBy": [
+          36531
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/10/IMG_0829.heic",
+        "type": "image",
+        "sizeBytes": 1440844,
+        "alt": "",
+        "mediaId": 36534,
+        "uses": [
+          {
+            "language": "shared",
+            "relationship": "attached-to-post"
+          }
+        ],
+        "usedBy": [
+          36531
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/10/IMG_0830.heic",
+        "type": "image",
+        "sizeBytes": 2071388,
+        "alt": "",
+        "mediaId": 36535,
+        "uses": [
+          {
+            "language": "shared",
+            "relationship": "attached-to-post"
+          }
+        ],
+        "usedBy": [
+          36531
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/10/IMG_0829-1.heic",
+        "type": "image",
+        "sizeBytes": 1440844,
+        "alt": "",
+        "mediaId": 36536,
+        "uses": [
+          {
+            "language": "shared",
+            "relationship": "attached-to-post"
+          }
+        ],
+        "usedBy": [
+          36531
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/10/Minimalist-Aesthetic-Summer-Photo-Collage-.png",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "",
+        "mediaId": 36548,
+        "uses": [
+          {
+            "language": "shared",
+            "relationship": "attached-to-post"
+          }
+        ],
+        "usedBy": [
+          36531
+        ]
+      }
+    ],
+    "warnings": [
+      "Images omitted from Markdown; one eligible featured image is selected separately and other attachments stay listed.",
+      "Leading theme date, empty info markers or repeated blank lines removed.",
+      "No Action matched. actions is empty; an editor must select a real Action before publication."
+    ],
+    "pairCandidates": [],
+    "image": {
+      "status": "downloaded",
+      "path": "images/europe-day-in-kakheti.png",
+      "sourceUrl": "https://erasmus.org.ge/wp-content/uploads/2026/10/Minimalist-Aesthetic-Summer-Photo-Collage--1024x819.png",
+      "sizeBytes": 1615962,
+      "width": 1024,
+      "height": 819,
+      "mediaId": 36548,
+      "reason": "Image attached to this post",
+      "alt": {
+        "ka": "[ALT NEEDED]",
+        "en": "[ALT NEEDED]"
+      }
+    }
+  },
+  "image": {
+    "status": "downloaded",
+    "path": "images/europe-day-in-kakheti.png",
+    "sourceUrl": "https://erasmus.org.ge/wp-content/uploads/2026/10/Minimalist-Aesthetic-Summer-Photo-Collage--1024x819.png",
+    "sizeBytes": 1615962,
+    "width": 1024,
+    "height": 819,
+    "mediaId": 36548,
+    "reason": "Image attached to this post",
+    "alt": {
+      "ka": "[ALT NEEDED]",
+      "en": "[ALT NEEDED]"
+    }
+  }
+}

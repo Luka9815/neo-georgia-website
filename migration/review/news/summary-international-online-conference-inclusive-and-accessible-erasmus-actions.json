@@ -1,0 +1,111 @@
+{
+  "slug": "summary-international-online-conference-inclusive-and-accessible-erasmus-actions",
+  "date": "2026-07-07",
+  "actions": [
+    "icm"
+  ],
+  "en": {
+    "title": "Summary: International Online Conference – Inclusive and Accessible Erasmus+ Actions",
+    "body": "On 3 July, from 13:00 to 16:00 (GMT+4), the National Erasmus+ Office in Georgia organised an international online conference on inclusion and accessibility within the Erasmus+ Programme.\n\nInclusion and diversity is one of the four horizontal priorities of the Erasmus+ Programme.\n\nThe conference featured three thematic sessions, providing an overview of the context of inclusion within the Erasmus+ programme in Georgia, sharing inclusion, monitoring, and evaluation mechanisms implemented by National Agencies in EU Member States, and discussing the perspectives of National Erasmus+ Offices operating in the Eastern Partnership region.\n\nDuring the conference, invited speakers delivered presentations on the following topics (You can access the presentations by clicking on the titles):\n\n[Presentation NEO in Georgia](https://docs.google.com/presentation/d/15_G-IaGLZ04HScviNXcmZZ-JL0QS9KTj/edit?usp=share_link&ouid=107652490344099881025&rtpof=true&sd=true) – Mariam Sulashvili, Coordinator of NEO in Georiga/ Mariam Butkhuzi, Project Officer NEO in Georgia\n\n[How do we understand inclusivity within Erasmus+ programme?](https://drive.google.com/file/d/1iyLAHV24q_N7UTjv7cQ0WiRLS-RP7-j0/view?usp=sharing) – Marta Garcia Rodriguez, Inclusion Officer, SEPIE, Spain\n\n[Monitoring and Assessing Inclusivity during Implementation – How inclusivity is tracked and what NAs observe during and after implementation](https://drive.google.com/file/d/1qkbtEHjIP138ebcr-3R5AFtqDkGz_Ofe/view?usp=sharing) –  SMPF, Lithuania\n\n[Implementing Inclusion in Erasmus+, How inclusion standards work across actions, beneficiaries and national contexts](https://drive.google.com/file/d/1-ru3vdiNdsyvewrPicvVIcmwmCkU6zhW/view?usp=sharing) – Michaela Lanaro, Programme Coordinator ICM, DAAD, National Agency, Germany\n\n[Inclusivity across Cooperation Partnership actions](https://drive.google.com/file/d/1-ru3vdiNdsyvewrPicvVIcmwmCkU6zhW/view?usp=sharing) – Katrin Winter, Senior Desk Officer for Analytics and Evaluation, DAAD, National Agency, Germany\n\nInclusivity in the Eastern Partnership (Region 2), National Contexts and Perspectives – Mariana Sargsyan, Coordinator for NEO in Armenia; Claudia Melinte, Coordinator for NEO in Moldova; Svitlana Shytikova, Coordinator for NEO in Ukraine.\n\nThe conference provided an international platform for dialogue, bringing together representatives from the Eastern Partnership region, EU Member States, and stakeholders interested in the Erasmus+ Programme to discuss issues related to inclusion and exchange perspectives and experiences.\n\nYou can access the full recording of the conference via this link:"
+  },
+  "legacy": {
+    "id": 36152,
+    "slug": "summary-international-online-conference-inclusive-and-accessible-erasmus-actions",
+    "url": "https://erasmus.org.ge/summary-international-online-conference-inclusive-and-accessible-erasmus-actions/"
+  },
+  "migration": {
+    "status": "unreviewed",
+    "language": {
+      "title": {
+        "script": "latin",
+        "language": "latin",
+        "georgianLetters": 0,
+        "latinLetters": 72,
+        "georgianShare": 0,
+        "latinShare": 1,
+        "englishWordHits": 1,
+        "note": "Script heuristic excluding URLs; English is a candidate, not editorial approval."
+      },
+      "body": {
+        "script": "latin",
+        "language": "en-candidate",
+        "georgianLetters": 0,
+        "latinLetters": 1761,
+        "georgianShare": 0,
+        "latinShare": 1,
+        "englishWordHits": 71,
+        "note": "Script heuristic excluding URLs; English is a candidate, not editorial approval."
+      },
+      "englishMarker": false,
+      "slot": "en",
+      "label": "en CANDIDATE",
+      "needsReview": true
+    },
+    "actionsStatus": "suggested",
+    "suggestedActions": [
+      {
+        "slug": "icm",
+        "status": "suggested",
+        "evidence": [
+          {
+            "source": "body",
+            "match": "ICM"
+          }
+        ]
+      }
+    ],
+    "typeCandidate": {
+      "type": "event",
+      "evidence": [
+        "conference",
+        "07.07.2026"
+      ]
+    },
+    "attachments": [
+      {
+        "url": "https://static.xx.fbcdn.net/images/emoji.php/v9/t31/3/16/1f539.png",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "🔹",
+        "mediaId": null,
+        "uses": [
+          {
+            "language": "en-candidate",
+            "relationship": "inline-image"
+          },
+          {
+            "language": "en-candidate",
+            "relationship": "inline-image"
+          },
+          {
+            "language": "en-candidate",
+            "relationship": "inline-image"
+          },
+          {
+            "language": "en-candidate",
+            "relationship": "inline-image"
+          },
+          {
+            "language": "en-candidate",
+            "relationship": "inline-image"
+          },
+          {
+            "language": "en-candidate",
+            "relationship": "inline-image"
+          }
+        ],
+        "usedBy": [
+          36152
+        ]
+      }
+    ],
+    "warnings": [
+      "Images omitted from Markdown; one eligible featured image is selected separately and other attachments stay listed.",
+      "Leading theme date, empty info markers or repeated blank lines removed.",
+      "Language needs review. The source remains separate; no automatic split, translation or pairing.",
+      "Possible Event: kept as a News-shaped review file, not converted to an Event.",
+      "No supported image variant with a known width up to 1024 px; HEIC is skipped."
+    ],
+    "pairCandidates": []
+  }
+}

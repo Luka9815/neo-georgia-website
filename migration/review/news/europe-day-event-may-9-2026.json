@@ -1,0 +1,178 @@
+{
+  "slug": "europe-day-event-may-9-2026",
+  "date": "2026-05-08",
+  "actions": [],
+  "en": {
+    "title": "The National Erasmus+ Office in Georgia invites you to celebrate Europe Day on 9 May at Expo Georgia",
+    "body": "📣 The National Erasmus+ Office in Georgia invites you to celebrate Europe Day on 9 May at Expo Georgia.\n\nThroughout the day, the National Erasmus+ Office will be represented in two pavilions:\n\nPavilion 3, Opportunities Pavilion\n\nJoin the special seminar:\n\n“Erasmus+ Opportunities for Intersectoral Cluster Development”\n\nTime: 14:10 – 14:50\n\nThe seminar will explore how Erasmus+ can support:\n\n-   Strategic development\n-   Formation of international partnerships and intersectoral collaboration\n-   Institutional modernisation and innovation\n-   Creation of competitive consortium-based projects\n-   Access to European expertise and cooperation networks\n\nThe session is designed for:\n\n-   Educational institutions\n-   SMEs and labour market actors\n-   Youth and sport organisations\n-   Training centres\n-   Civil society organisations\n-   And other stakeholders interested in future Erasmus+ opportunities\n\nRegistration link: [https://docs.google.com/…/1FAIpQLSdWoVpPhE2ENZ4wtF…/viewform](https://docs.google.com/forms/d/e/1FAIpQLSdWoVpPhE2ENZ4wtFARuM5HbrKAuuYbKonLhV6Y9OS-M3Nw_g/viewform)\n\nPavilion 11, Interactive Space\n\nVisit the National Erasmus+ Office stand throughout the day in Pavilion 11 and discover Erasmus+ opportunities through interactive activities, games, and symbolic prizes.\n\nJoin us in celebrating Europe Day."
+  },
+  "legacy": {
+    "id": 36035,
+    "slug": "europe-day-event-may-9-2026",
+    "url": "https://erasmus.org.ge/europe-day-event-may-9-2026/"
+  },
+  "migration": {
+    "status": "unreviewed",
+    "language": {
+      "title": {
+        "script": "latin",
+        "language": "en-candidate",
+        "georgianLetters": 0,
+        "latinLetters": 81,
+        "georgianShare": 0,
+        "latinShare": 1,
+        "englishWordHits": 6,
+        "note": "Script heuristic excluding URLs; English is a candidate, not editorial approval."
+      },
+      "body": {
+        "script": "latin",
+        "language": "en-candidate",
+        "georgianLetters": 0,
+        "latinLetters": 920,
+        "georgianShare": 0,
+        "latinShare": 1,
+        "englishWordHits": 33,
+        "note": "Script heuristic excluding URLs; English is a candidate, not editorial approval."
+      },
+      "englishMarker": false,
+      "slot": "en",
+      "label": "en CANDIDATE",
+      "needsReview": true
+    },
+    "actionsStatus": "suggested",
+    "suggestedActions": [],
+    "typeCandidate": {
+      "type": "event",
+      "evidence": [
+        "Training",
+        "08.05.2026"
+      ]
+    },
+    "attachments": [
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/05/Digital-poster-for-Europe-Day-768x1086.jpeg",
+        "type": "image",
+        "sizeBytes": 64786,
+        "alt": "",
+        "mediaId": 36038,
+        "uses": [
+          {
+            "language": "en-candidate",
+            "relationship": "inline-image"
+          },
+          {
+            "language": "en-candidate",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          36035
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/05/Digital-poster-for-Europe-Day-212x300.jpeg",
+        "type": "image",
+        "sizeBytes": 10168,
+        "alt": "",
+        "mediaId": 36038,
+        "uses": [
+          {
+            "language": "en-candidate",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          36035
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/05/Digital-poster-for-Europe-Day-724x1024.jpeg",
+        "type": "image",
+        "sizeBytes": 59963,
+        "alt": "",
+        "mediaId": 36038,
+        "uses": [
+          {
+            "language": "en-candidate",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          36035
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/05/Digital-poster-for-Europe-Day-1086x1536.jpeg",
+        "type": "image",
+        "sizeBytes": 104214,
+        "alt": "",
+        "mediaId": 36038,
+        "uses": [
+          {
+            "language": "en-candidate",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          36035
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/05/Digital-poster-for-Europe-Day.jpeg",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "",
+        "mediaId": 36038,
+        "uses": [
+          {
+            "language": "en-candidate",
+            "relationship": "image-variant"
+          },
+          {
+            "language": "shared",
+            "relationship": "attached-to-post"
+          }
+        ],
+        "usedBy": [
+          36035
+        ]
+      }
+    ],
+    "warnings": [
+      "Images omitted from Markdown; one eligible featured image is selected separately and other attachments stay listed.",
+      "Leading theme date, empty info markers or repeated blank lines removed.",
+      "Language needs review. The source remains separate; no automatic split, translation or pairing.",
+      "No Action matched. actions is empty; an editor must select a real Action before publication.",
+      "Possible Event: kept as a News-shaped review file, not converted to an Event."
+    ],
+    "pairCandidates": [],
+    "image": {
+      "status": "downloaded",
+      "path": "images/europe-day-event-may-9-2026.jpg",
+      "sourceUrl": "https://erasmus.org.ge/wp-content/uploads/2026/05/Digital-poster-for-Europe-Day-768x1086.jpeg",
+      "sizeBytes": 64786,
+      "width": 768,
+      "height": 1086,
+      "mediaId": 36038,
+      "reason": "Image attached to this post",
+      "alt": {
+        "ka": "[ALT NEEDED]",
+        "en": "[ALT NEEDED]"
+      }
+    }
+  },
+  "image": {
+    "status": "downloaded",
+    "path": "images/europe-day-event-may-9-2026.jpg",
+    "sourceUrl": "https://erasmus.org.ge/wp-content/uploads/2026/05/Digital-poster-for-Europe-Day-768x1086.jpeg",
+    "sizeBytes": 64786,
+    "width": 768,
+    "height": 1086,
+    "mediaId": 36038,
+    "reason": "Image attached to this post",
+    "alt": {
+      "ka": "[ALT NEEDED]",
+      "en": "[ALT NEEDED]"
+    }
+  }
+}

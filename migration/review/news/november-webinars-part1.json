@@ -1,0 +1,282 @@
+{
+  "slug": "november-webinars-part1",
+  "date": "2025-11-17",
+  "actions": [
+    "cbhe"
+  ],
+  "sourceText": {
+    "title": "Erasmus+-ის ეროვნული ოფისი საქართველოში გიწვევთ ვებინარებზე 26 ნოემბერს",
+    "body": "**\\[For English, Scroll Down\\]**\n\n**📣Erasmus+-ის ეროვნული ოფისი საქართველოში გიწვევთ ვებინარებზე 26 ნოემბერს** \n\n**ვებინარი N1:** Erasmus+ პროგრამის სახელმძღვანელოში შეტანილი ცვლილებები\n\n**თარიღი და დრო:** 26 ნოემბერი, 12:00-13:00 სთ\n\n**პლატფორმა:** Google Meet\n\n**🔗სარეგისტრაციო ბმული:** [**https://forms.gle/2PxoZS3fHFsbaZhEA**](https://forms.gle/2PxoZS3fHFsbaZhEA)\n\n**ვებინარი N2:** შესაძლებლობების გაძლიერება უმაღლესი განათლების სექტორში – პროგრამის მიმოხილვა\n\n**თარიღი და დრო:** 26 ნოემბერი, 13:15-14:15 სთ\n\n**პლატფორმა:** Google Meet\n\n**🔗სარეგისტრაციო ბმული:** [**https://forms.gle/nCVK7mkGVVzAAgiD6**](https://forms.gle/nCVK7mkGVVzAAgiD6)\n\n**ENG**\n\n**📣The National Erasmus+Office in Georgia invites you to the webinars on November 26**\n\n**Webinar N1:** What’s New in Erasmus+ Programme Guide\n\n**Date and time:** November 26, 12:00-13:00\n\n**Platform:** Google Meet\n\n**🔗Registration link:** [https://forms.gle/2PxoZS3fHFsbaZhEA](https://forms.gle/2PxoZS3fHFsbaZhEA)\n\n**Webinar N2:** CBHE Programme Overview\n\n**Date and time:** November 26, 13:15-14:15\n\n**Platform:** Google Meet\n\n**🔗Registration link:** [https://forms.gle/nCVK7mkGVVzAAgiD6](https://forms.gle/nCVK7mkGVVzAAgiD6)"
+  },
+  "legacy": {
+    "id": 34925,
+    "slug": "november-webinars-part1",
+    "url": "https://erasmus.org.ge/november-webinars-part1/"
+  },
+  "migration": {
+    "status": "unreviewed",
+    "language": {
+      "title": {
+        "script": "georgian",
+        "language": "ka",
+        "georgianLetters": 53,
+        "latinLetters": 7,
+        "georgianShare": 0.883,
+        "latinShare": 0.117,
+        "englishWordHits": 0,
+        "note": "Script heuristic excluding URLs; English is a candidate, not editorial approval."
+      },
+      "body": {
+        "script": "mixed",
+        "language": "mixed",
+        "georgianLetters": 277,
+        "latinLetters": 299,
+        "georgianShare": 0.481,
+        "latinShare": 0.519,
+        "englishWordHits": 10,
+        "note": "Script heuristic excluding URLs; English is a candidate, not editorial approval."
+      },
+      "englishMarker": true,
+      "slot": "sourceText",
+      "label": "mixed ka/Latin",
+      "needsReview": true
+    },
+    "actionsStatus": "suggested",
+    "suggestedActions": [
+      {
+        "slug": "cbhe",
+        "status": "suggested",
+        "evidence": [
+          {
+            "source": "body",
+            "match": "CBHE"
+          }
+        ]
+      }
+    ],
+    "typeCandidate": {
+      "type": "event",
+      "evidence": [
+        "ვებინარ",
+        "17.11.2025"
+      ]
+    },
+    "attachments": [
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/11/General-Post-designs-3-1024x1024.png",
+        "type": "image",
+        "sizeBytes": 338710,
+        "alt": "",
+        "mediaId": 34928,
+        "uses": [
+          {
+            "language": "mixed",
+            "relationship": "inline-image"
+          },
+          {
+            "language": "mixed",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          34925
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/11/General-Post-designs-3-300x300.png",
+        "type": "image",
+        "sizeBytes": 45778,
+        "alt": "",
+        "mediaId": 34928,
+        "uses": [
+          {
+            "language": "mixed",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          34925
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/11/General-Post-designs-3-150x150.png",
+        "type": "image",
+        "sizeBytes": 15813,
+        "alt": "",
+        "mediaId": 34928,
+        "uses": [
+          {
+            "language": "mixed",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          34925
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/11/General-Post-designs-3-768x768.png",
+        "type": "image",
+        "sizeBytes": 207960,
+        "alt": "",
+        "mediaId": 34928,
+        "uses": [
+          {
+            "language": "mixed",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          34925
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/11/General-Post-designs-3.png",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "",
+        "mediaId": 34928,
+        "uses": [
+          {
+            "language": "mixed",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          34925
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/11/General-Post-designs-4-1024x1024.png",
+        "type": "image",
+        "sizeBytes": 537421,
+        "alt": "",
+        "mediaId": 34929,
+        "uses": [
+          {
+            "language": "mixed",
+            "relationship": "inline-image"
+          },
+          {
+            "language": "mixed",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          34925
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/11/General-Post-designs-4-300x300.png",
+        "type": "image",
+        "sizeBytes": 50452,
+        "alt": "",
+        "mediaId": 34929,
+        "uses": [
+          {
+            "language": "mixed",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          34925
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/11/General-Post-designs-4-150x150.png",
+        "type": "image",
+        "sizeBytes": 15161,
+        "alt": "",
+        "mediaId": 34929,
+        "uses": [
+          {
+            "language": "mixed",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          34925
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/11/General-Post-designs-4-768x768.png",
+        "type": "image",
+        "sizeBytes": 304613,
+        "alt": "",
+        "mediaId": 34929,
+        "uses": [
+          {
+            "language": "mixed",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          34925
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/11/General-Post-designs-4.png",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "",
+        "mediaId": 34929,
+        "uses": [
+          {
+            "language": "mixed",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          34925
+        ]
+      }
+    ],
+    "warnings": [
+      "Images omitted from Markdown; one eligible featured image is selected separately and other attachments stay listed.",
+      "Leading theme date, empty info markers or repeated blank lines removed.",
+      "Language needs review. The source remains separate; no automatic split, translation or pairing.",
+      "Possible Event: kept as a News-shaped review file, not converted to an Event."
+    ],
+    "pairCandidates": [
+      {
+        "status": "CANDIDATE",
+        "kind": "within-post",
+        "ka": 34925,
+        "en": 34925,
+        "confidence": "high",
+        "evidence": [
+          "Both scripts plus an explicit English-section marker"
+        ],
+        "note": "Review the two source sections. No automatic splitting or translation."
+      }
+    ],
+    "image": {
+      "status": "downloaded",
+      "path": "images/november-webinars-part1.png",
+      "sourceUrl": "https://erasmus.org.ge/wp-content/uploads/2025/11/General-Post-designs-3-1024x1024.png",
+      "sizeBytes": 338710,
+      "width": 1024,
+      "height": 1024,
+      "mediaId": 34928,
+      "reason": "First eligible inline image",
+      "alt": {
+        "ka": "[ALT NEEDED]",
+        "en": "[ALT NEEDED]"
+      }
+    }
+  },
+  "image": {
+    "status": "downloaded",
+    "path": "images/november-webinars-part1.png",
+    "sourceUrl": "https://erasmus.org.ge/wp-content/uploads/2025/11/General-Post-designs-3-1024x1024.png",
+    "sizeBytes": 338710,
+    "width": 1024,
+    "height": 1024,
+    "mediaId": 34928,
+    "reason": "First eligible inline image",
+    "alt": {
+      "ka": "[ALT NEEDED]",
+      "en": "[ALT NEEDED]"
+    }
+  }
+}

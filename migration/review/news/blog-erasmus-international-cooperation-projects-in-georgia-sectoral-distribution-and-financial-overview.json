@@ -1,0 +1,58 @@
+{
+  "slug": "blog-erasmus-international-cooperation-projects-in-georgia-sectoral-distribution-and-financial-overview",
+  "date": "2026-02-24",
+  "actions": [],
+  "ka": {
+    "title": "ბლოგი: საქართველოში Erasmus+ საერთაშორისო თანამშრომლობის პროექტების სექტორული და ფინანსური ანალიზი",
+    "body": "### **საქართველოში Erasmus+ საერთაშორისო თანამშრომლობის პროექტების სექტორული და ფინანსური ანალიზი**\n\nErasmus+ პროგრამის 2014-2020 და 2021-2027 პერიოდების განმავლობაში საქართველოს ჩართულობა საერთაშორისო თანამშრომლობის პროექტებში მნიშვნელოვნად შეიცვალა როგორც სექტორული დაფარვის, ასევე დაფინანსების განაწილების თვალსაზრისით. წარმოდგენილი მონაცემები ასახავს Erasmus+ პროგრამის ფარგლებში საერთაშორისო თანამშრომლობის პროექტების საერთო ბიუჯეტსა და რაოდენობას ქართული ორგანიზაციების მონაწილეობით. მონაცემები ეყრდნობა კონსორციუმის დონეზე დამტკიცებულ ბიუჯეტებს და მოიცავს პროექტებს, სადაც ქართული ინსტიტუციები მონაწილეობდნენ როგორც კოორდინატორის, ასევე პარტნიორის სტატუსით. აღნიშნული ანალიზი არ მოიცავს მობილობასთან დაკავშირებულ დაფინანსებას, მათ შორის საერთაშორისო კრედიტების მობილობას და ინდივიდუალურ სტიპენდიებს.\n\n**შენიშვნა: ქვემოთ შეგიძლიათ იხილოთ ბლოგი ქართულ და ინგლისურ ენებზე**\n\n[GEORGIAN](https://drive.google.com/file/d/1tWe72Rluo6c-lLaH-inkEfMmVFvXx7EM/view?usp=sharing)\n\n[ENGLISH](https://drive.google.com/file/d/1oQ74aI_mTTLrCLt4SXBjNFWa6Cwzdn7r/view?usp=sharing)"
+  },
+  "legacy": {
+    "id": 35734,
+    "slug": "blog-erasmus-international-cooperation-projects-in-georgia-sectoral-distribution-and-financial-overview",
+    "url": "https://erasmus.org.ge/blog-erasmus-international-cooperation-projects-in-georgia-sectoral-distribution-and-financial-overview/"
+  },
+  "migration": {
+    "status": "unreviewed",
+    "language": {
+      "title": {
+        "script": "georgian",
+        "language": "ka",
+        "georgianLetters": 80,
+        "latinLetters": 7,
+        "georgianShare": 0.92,
+        "latinShare": 0.08,
+        "englishWordHits": 0,
+        "note": "Script heuristic excluding URLs; English is a candidate, not editorial approval."
+      },
+      "body": {
+        "script": "georgian",
+        "language": "ka",
+        "georgianLetters": 725,
+        "latinLetters": 36,
+        "georgianShare": 0.953,
+        "latinShare": 0.047,
+        "englishWordHits": 0,
+        "note": "Script heuristic excluding URLs; English is a candidate, not editorial approval."
+      },
+      "englishMarker": false,
+      "slot": "ka",
+      "label": "ka",
+      "needsReview": false
+    },
+    "actionsStatus": "suggested",
+    "suggestedActions": [],
+    "typeCandidate": {
+      "type": "news",
+      "evidence": [
+        "24.02.2026"
+      ]
+    },
+    "attachments": [],
+    "warnings": [
+      "Leading theme date, empty info markers or repeated blank lines removed.",
+      "No Action matched. actions is empty; an editor must select a real Action before publication.",
+      "No supported image variant with a known width up to 1024 px; HEIC is skipped."
+    ],
+    "pairCandidates": []
+  }
+}

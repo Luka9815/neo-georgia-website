@@ -1,0 +1,516 @@
+{
+  "slug": "europe-day-in-kutaisi",
+  "date": "2025-10-27",
+  "actions": [],
+  "sourceText": {
+    "title": "ევროპის დღე ქუთაისში 24-25 ოქტომბერი",
+    "body": "\\[For English Scroll Down\\]\n\n📣24-25 ოქტომბერს ქალაქ ქუთაისში ‘’ევროპის დღის’’ აღსანიშნავი ღონისძიება გაიმართა. მრავალფეროვან აქტივობებში ერასმუს+-ის საქართველოს ეროვნული ოფისიც იყო ჩართული.\n\n🎊25 ოქტომბერს ‘’ევროპის დღის’’ ღონისძიების სტუმრებს საშუალება ჰქონდათ კაჰუტების, ინტერაქციული თამაშებისა და დისკუსიების საშუალებით, ინფორმაცია მიეღოთ ერასმუსის პროგრამასთან დაკავშირებით. \n\n\\_\\_\\_\\_\\_\\_\\_\n\n📣On **24–25 October**, the city of **Kutaisi** hosted a series of events dedicated to the celebration of **Europe Day**. The **National Erasmus+ Office in Georgia** actively participated in the diverse programme of activities. \n\n🎊On **25 October**, participants of the Europe Day events had the opportunity to **enhance their understanding of the Erasmus+ Programme** through **interactive Kahoot sessions, educational games, and thematic discussions**, fostering greater awareness of the opportunities the programme offers."
+  },
+  "legacy": {
+    "id": 34814,
+    "slug": "europe-day-in-kutaisi",
+    "url": "https://erasmus.org.ge/europe-day-in-kutaisi/"
+  },
+  "migration": {
+    "status": "unreviewed",
+    "language": {
+      "title": {
+        "script": "georgian",
+        "language": "ka",
+        "georgianLetters": 27,
+        "latinLetters": 0,
+        "georgianShare": 1,
+        "latinShare": 0,
+        "englishWordHits": 0,
+        "note": "Script heuristic excluding URLs; English is a candidate, not editorial approval."
+      },
+      "body": {
+        "script": "mixed",
+        "language": "mixed",
+        "georgianLetters": 288,
+        "latinLetters": 425,
+        "georgianShare": 0.404,
+        "latinShare": 0.596,
+        "englishWordHits": 24,
+        "note": "Script heuristic excluding URLs; English is a candidate, not editorial approval."
+      },
+      "englishMarker": true,
+      "slot": "sourceText",
+      "label": "mixed ka/Latin",
+      "needsReview": true
+    },
+    "actionsStatus": "suggested",
+    "suggestedActions": [],
+    "typeCandidate": {
+      "type": "news",
+      "evidence": [
+        "27.10.2025"
+      ]
+    },
+    "attachments": [
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/10/6.png",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "",
+        "mediaId": 34823,
+        "uses": [
+          {
+            "language": "mixed",
+            "relationship": "inline-image"
+          },
+          {
+            "language": "mixed",
+            "relationship": "image-variant"
+          },
+          {
+            "language": "shared",
+            "relationship": "attached-to-post"
+          }
+        ],
+        "usedBy": [
+          34814
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/10/6-300x251.png",
+        "type": "image",
+        "sizeBytes": 41381,
+        "alt": "",
+        "mediaId": 34823,
+        "uses": [
+          {
+            "language": "mixed",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          34814
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/10/6-768x644.png",
+        "type": "image",
+        "sizeBytes": 212154,
+        "alt": "",
+        "mediaId": 34823,
+        "uses": [
+          {
+            "language": "mixed",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          34814
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/10/1-1.png",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "",
+        "mediaId": 34825,
+        "uses": [
+          {
+            "language": "mixed",
+            "relationship": "inline-image"
+          },
+          {
+            "language": "mixed",
+            "relationship": "image-variant"
+          },
+          {
+            "language": "shared",
+            "relationship": "attached-to-post"
+          }
+        ],
+        "usedBy": [
+          34814
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/10/1-1-300x251.png",
+        "type": "image",
+        "sizeBytes": 44278,
+        "alt": "",
+        "mediaId": 34825,
+        "uses": [
+          {
+            "language": "mixed",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          34814
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/10/1-1-768x644.png",
+        "type": "image",
+        "sizeBytes": 217601,
+        "alt": "",
+        "mediaId": 34825,
+        "uses": [
+          {
+            "language": "mixed",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          34814
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/10/5-1.png",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "",
+        "mediaId": 34824,
+        "uses": [
+          {
+            "language": "mixed",
+            "relationship": "inline-image"
+          },
+          {
+            "language": "mixed",
+            "relationship": "image-variant"
+          },
+          {
+            "language": "shared",
+            "relationship": "attached-to-post"
+          }
+        ],
+        "usedBy": [
+          34814
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/10/5-1-300x251.png",
+        "type": "image",
+        "sizeBytes": 33483,
+        "alt": "",
+        "mediaId": 34824,
+        "uses": [
+          {
+            "language": "mixed",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          34814
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/10/5-1-768x644.png",
+        "type": "image",
+        "sizeBytes": 167573,
+        "alt": "",
+        "mediaId": 34824,
+        "uses": [
+          {
+            "language": "mixed",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          34814
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/10/2-2.png",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "",
+        "mediaId": 34826,
+        "uses": [
+          {
+            "language": "mixed",
+            "relationship": "inline-image"
+          },
+          {
+            "language": "mixed",
+            "relationship": "image-variant"
+          },
+          {
+            "language": "shared",
+            "relationship": "attached-to-post"
+          }
+        ],
+        "usedBy": [
+          34814
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/10/2-2-300x251.png",
+        "type": "image",
+        "sizeBytes": 42981,
+        "alt": "",
+        "mediaId": 34826,
+        "uses": [
+          {
+            "language": "mixed",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          34814
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/10/2-2-768x644.png",
+        "type": "image",
+        "sizeBytes": 211074,
+        "alt": "",
+        "mediaId": 34826,
+        "uses": [
+          {
+            "language": "mixed",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          34814
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/10/4-1.png",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "",
+        "mediaId": 34827,
+        "uses": [
+          {
+            "language": "mixed",
+            "relationship": "inline-image"
+          },
+          {
+            "language": "mixed",
+            "relationship": "image-variant"
+          },
+          {
+            "language": "shared",
+            "relationship": "attached-to-post"
+          }
+        ],
+        "usedBy": [
+          34814
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/10/4-1-300x251.png",
+        "type": "image",
+        "sizeBytes": 40973,
+        "alt": "",
+        "mediaId": 34827,
+        "uses": [
+          {
+            "language": "mixed",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          34814
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/10/4-1-768x644.png",
+        "type": "image",
+        "sizeBytes": 203085,
+        "alt": "",
+        "mediaId": 34827,
+        "uses": [
+          {
+            "language": "mixed",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          34814
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/10/3-1.png",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "",
+        "mediaId": 34828,
+        "uses": [
+          {
+            "language": "mixed",
+            "relationship": "inline-image"
+          },
+          {
+            "language": "mixed",
+            "relationship": "image-variant"
+          },
+          {
+            "language": "shared",
+            "relationship": "attached-to-post"
+          }
+        ],
+        "usedBy": [
+          34814
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/10/3-1-300x251.png",
+        "type": "image",
+        "sizeBytes": 38644,
+        "alt": "",
+        "mediaId": 34828,
+        "uses": [
+          {
+            "language": "mixed",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          34814
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/10/3-1-768x644.png",
+        "type": "image",
+        "sizeBytes": 188883,
+        "alt": "",
+        "mediaId": 34828,
+        "uses": [
+          {
+            "language": "mixed",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          34814
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/10/1.png",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "",
+        "mediaId": 34818,
+        "uses": [
+          {
+            "language": "shared",
+            "relationship": "attached-to-post"
+          }
+        ],
+        "usedBy": [
+          34814
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/10/2.png",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "",
+        "mediaId": 34819,
+        "uses": [
+          {
+            "language": "shared",
+            "relationship": "attached-to-post"
+          }
+        ],
+        "usedBy": [
+          34814
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/10/3.png",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "",
+        "mediaId": 34820,
+        "uses": [
+          {
+            "language": "shared",
+            "relationship": "attached-to-post"
+          }
+        ],
+        "usedBy": [
+          34814
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/10/4.png",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "",
+        "mediaId": 34821,
+        "uses": [
+          {
+            "language": "shared",
+            "relationship": "attached-to-post"
+          }
+        ],
+        "usedBy": [
+          34814
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/10/5.png",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "",
+        "mediaId": 34822,
+        "uses": [
+          {
+            "language": "shared",
+            "relationship": "attached-to-post"
+          }
+        ],
+        "usedBy": [
+          34814
+        ]
+      }
+    ],
+    "warnings": [
+      "Images omitted from Markdown; one eligible featured image is selected separately and other attachments stay listed.",
+      "Leading theme date, empty info markers or repeated blank lines removed.",
+      "Language needs review. The source remains separate; no automatic split, translation or pairing.",
+      "No Action matched. actions is empty; an editor must select a real Action before publication."
+    ],
+    "pairCandidates": [
+      {
+        "status": "CANDIDATE",
+        "kind": "within-post",
+        "ka": 34814,
+        "en": 34814,
+        "confidence": "high",
+        "evidence": [
+          "Both scripts plus an explicit English-section marker"
+        ],
+        "note": "Review the two source sections. No automatic splitting or translation."
+      }
+    ],
+    "image": {
+      "status": "downloaded",
+      "path": "images/europe-day-in-kutaisi.png",
+      "sourceUrl": "https://erasmus.org.ge/wp-content/uploads/2025/10/1.png",
+      "sizeBytes": 1140660,
+      "width": 940,
+      "height": 788,
+      "mediaId": 34818,
+      "reason": "Image attached to this post",
+      "alt": {
+        "ka": "[ALT NEEDED]",
+        "en": "[ALT NEEDED]"
+      }
+    }
+  },
+  "image": {
+    "status": "downloaded",
+    "path": "images/europe-day-in-kutaisi.png",
+    "sourceUrl": "https://erasmus.org.ge/wp-content/uploads/2025/10/1.png",
+    "sizeBytes": 1140660,
+    "width": 940,
+    "height": 788,
+    "mediaId": 34818,
+    "reason": "Image attached to this post",
+    "alt": {
+      "ka": "[ALT NEEDED]",
+      "en": "[ALT NEEDED]"
+    }
+  }
+}

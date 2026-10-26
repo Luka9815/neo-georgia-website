@@ -50,13 +50,17 @@ export function draftRedirects(run, inventory, pages) {
     news: inventory.items.map((row) => ({
       wpId: row.id,
       from: row.oldUrl,
-      to: row.slug ? `/ka/news/${row.slug}/` : null,
+      to:
+        row.slug && row.language?.slot === 'ka'
+          ? `/ka/news/${row.slug}/`
+          : null,
       suggested: true,
-      reason: row.slug
-        ? row.typeCandidate.type === 'event'
-          ? 'News draft exists, but confirm the Event candidate and target before promotion'
-          : 'Proposed News slug; approve content and slug before promotion'
-        : 'No Georgian News draft; resolve language or conversion failure first',
+      reason:
+        row.slug && row.language?.slot === 'ka'
+          ? row.typeCandidate.type === 'event'
+            ? 'News draft exists, but confirm the Event candidate and target before promotion'
+            : 'Proposed News slug; approve content and slug before promotion'
+          : 'No Georgian News draft; resolve language or conversion failure first',
     })),
     pages: {
       complete: pages.complete,
