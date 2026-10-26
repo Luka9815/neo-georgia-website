@@ -56,7 +56,7 @@ function summaryTable(items) {
               : `WP ${pair.ka === row.id ? pair.en : pair.ka} (${pair.confidence})`
           )
           .join('; ');
-        return `| ${row.date} | ${text(row.title)} | [${row.slug}](news/${row.slug}.json) | ${text(row.language.label)} | ${row.typeCandidate.type === 'event' ? 'yes' : 'no'} | ${row.suggestedActions.map((action) => action.slug).join(', ') || 'needs choice'} | ${row.image?.status === 'downloaded' ? `[yes](${row.image.path})` : 'no'} | ${candidates ? 'CANDIDATE ' + candidates : 'none'} |`;
+        return `| ${row.date} | ${text(row.title)} | [${row.slug}](news/${row.slug}.json) | ${text(row.language.label)} | ${row.typeCandidate.type === 'event' ? 'yes' : 'no'} | ${row.suggestedActions.map((action) => action.slug).join(', ') || 'none suggested'} | ${row.image?.status === 'downloaded' ? `[yes](${row.image.path})` : 'no'} | ${candidates ? 'CANDIDATE ' + candidates : 'none'} |`;
       }),
     '',
   ];
@@ -238,7 +238,7 @@ export function renderReport(run, inventory, redirects) {
     '',
     '1. Resolve failed collections first and rerun the manual importer. Archive any review notes before regenerating generated files.',
     '2. Read each title and body against its old URL. Check omitted embeds/tables, email redactions and links. Confirm proposed slugs, duplicate handling and any real English pair.',
-    '3. Confirm each suggested Action. An empty actions list is intentional when there is no evidence and blocks publication. Decide whether each Event candidate belongs in News or should later become an Event with verified dates, zone and venue.',
+    '3. Confirm each suggested Action. An empty actions list is intentional when there is no evidence; News may be published without an Action, Events may not. Decide whether each Event candidate belongs in News or should later become an Event with verified dates, zone and venue.',
     '4. Review the attachment inventory, rights, sizes and alt text. Only the selected review image was downloaded; all other attachments are listed only. Replace both [ALT NEEDED] fields and review rights before any later image/document promotion.',
     '5. Review redirects.draft.json separately. It is a proposal, not a live redirect configuration. No file is promoted automatically.',
     '',

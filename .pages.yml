@@ -35,7 +35,7 @@ content:
       - name: actions
         label: დაკავშირებული მიმართულებები (Actions)
         type: select
-        required: true
+        required: false
         options:
           values:
             - label: '[DRAFT] სპორტის სფეროს შესაძლებლობების განვითარება (Capacity Building in Sport)'

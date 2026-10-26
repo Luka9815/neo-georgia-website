@@ -57,6 +57,7 @@ test('CMS schema matches JSON collections, local time rules, translations and ac
       data.action.map((item) => item.slug).sort()
     );
     assert.equal(field(entry, 'actions').options.multiple, true);
+    assert.equal(field(entry, 'actions').required, name === 'events');
     assert.equal(field(entry, 'ka').required, true);
     assert.equal(field(entry, 'en').required, name === 'events');
     for (const lang of ['ka', 'en']) {
@@ -127,6 +128,8 @@ for (const [type, mutate, expected] of [
   ['event', (item) => (item.date += '+04:00'), 'date'],
   ['event', (item) => (item.end += 'Z'), 'end'],
   ['event', (item) => (item.actions = ['unknown-action']), 'actions[0]'],
+  ['event', (item) => (item.actions = []), 'actions'],
+  ['news', (item) => (item.actions = 'cbhe'), 'actions'],
   ['event', (item) => (item.end = '2020-01-01T00:00'), 'end'],
 ]) {
   test(`loader rejects ${type} editor mistake in ${expected}`, () => {
@@ -145,6 +148,26 @@ for (const [type, mutate, expected] of [
           return true;
         }
       );
+    } finally {
+      rmSync(root, { recursive: true, force: true });
+    }
+  });
+}
+
+for (const [label, mutate] of [
+  ['an empty Action list', (item) => (item.actions = [])],
+  ['no Action field', (item) => delete item.actions],
+]) {
+  test(`loader accepts News with ${label}`, () => {
+    const root = mkdtempSync(join(tmpdir(), 'neo-news-no-action-'));
+    try {
+      cpSync('src/content', root, { recursive: true });
+      const file = join(root, 'news', 'update-1.json');
+      const item = JSON.parse(read(file));
+      mutate(item);
+      writeFileSync(file, JSON.stringify(item));
+      const loaded = loadContent(root).news.find((n) => n.slug === item.slug);
+      assert.deepEqual(loaded.actions, []);
     } finally {
       rmSync(root, { recursive: true, force: true });
     }
