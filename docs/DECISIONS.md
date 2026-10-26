@@ -88,3 +88,6 @@ Supersedes "Accounts registered to an ERIDA/NEO email". During the build, the re
 
 ## 2026-10-26: Scheduled rebuild in the Pages deployment workflow
 Supersedes the hook-based daily rebuild plan in "Computed statuses and daily rebuild plan". Run the same GitHub Actions deployment workflow on pushes to main, daily at 04:15 UTC and through workflow_dispatch. Rebuild and deploy directly, without a build hook or a custom secret. Monitor scheduled runs because GitHub disables schedules in public repositories after 60 days without repository activity; re-enable the workflow from Actions when needed.
+
+## 2026-10-26: Portable site path prefix
+Keep route and content paths independent of hosting. Set Eleventy's pathPrefix from PATH_PREFIX (default /) and use its HTML base plugin to rewrite rendered internal links, assets and refresh targets, including Markdown links. SITE_URL is a complete base URL including its trailing path prefix, defaulting to https://luka9815.github.io/neo-georgia-website/. Absolute metadata uses that base; the workflow sets both values explicitly. For a custom domain, set PATH_PREFIX=/ and SITE_URL to its HTTPS root. Regression tests build both hosting layouts and check generated targets.

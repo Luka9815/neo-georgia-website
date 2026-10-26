@@ -14,6 +14,9 @@ import {
 } from '../lib/content.js';
 import getViews from '../src/_data/views.js';
 import getSite from '../src/_data/site.js';
+import { getPathPrefix } from '../lib/urls.js';
+const prefix = getPathPrefix();
+const publicPath = path => prefix + path.replace(/^\//, '');
 const read = (path) => readFileSync(path, 'utf8');
 function files(dir) {
   return readdirSync(dir, { withFileTypes: true }).flatMap((e) =>
@@ -43,7 +46,7 @@ test('all rendered pages have language, metadata, seven menu links, one h1 and E
         : /TODO: Georgian disclaimer, to be approved by NEO/
     );
     assert.ok($('.emblem-placeholder').text().includes('[SAMPLE]'));
-    assert.equal($('header a[hreflang]').attr('href'), view.alternate);
+    assert.equal($('header a[hreflang]').attr('href'), publicPath(view.alternate));
     if (view.translated === false) assert.equal($('link[rel=alternate]').length, 1);
     else assert.equal($('link[rel=alternate]').length, 2);
   }
@@ -56,7 +59,8 @@ test('every internal link, fragment, and stylesheet resolves', () => {
       if (/^https?:/.test(href)) continue;
       assert.ok(href.startsWith('/') || href.startsWith('#'), `${file}: ${href}`);
       const [path, hash] = href.split('#');
-      const target = path ? output(path) : file;
+      if (path) assert.ok(path.startsWith(prefix), `${file}: unprefixed ${path}`);
+      const target = path ? output('/' + path.slice(prefix.length)) : file;
       assert.ok(existsSync(target), `${file}: missing ${target}`);
       if (hash)
         assert.ok(
@@ -131,9 +135,9 @@ test('content relationships, sample marking, and core bilingual parity', () => {
   }
   assert.equal(localise(data.news, 'en').length, 2);
   assert.ok(!existsSync('_site/en/news/update-3/index.html'));
-  assert.match(
-    read('_site/ka/news/update-3/index.html'),
-    /href="\/en\/news\/" lang="en"/
+  assert.equal(
+    load(read('_site/ka/news/update-3/index.html'))('header a[hreflang]').attr('href'),
+    publicPath('/en/news/')
   );
 });
 test('home has six blocks and action page includes every relationship block', () => {

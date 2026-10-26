@@ -7,13 +7,13 @@
   <title>{{ title }} | {{ t.site }}</title>
   <meta name="description" content="{{ title }}. {{ t.sample }}">
   <meta name="robots" content="noindex, nofollow">
-  <link rel="canonical" href="{{ site.url }}{{ view.path }}">
-  <link rel="alternate" hreflang="{{ view.lang }}" href="{{ site.url }}{{ view.path }}">
-  {% if view.translated != false %}<link rel="alternate" hreflang="{{ other }}" href="{{ site.url }}{{ view.alternate }}">{% endif %}
+  <link rel="canonical" href="{{ view.path | absoluteUrl(site.url) }}">
+  <link rel="alternate" hreflang="{{ view.lang }}" href="{{ view.path | absoluteUrl(site.url) }}">
+  {% if view.translated != false %}<link rel="alternate" hreflang="{{ other }}" href="{{ view.alternate | absoluteUrl(site.url) }}">{% endif %}
   <meta property="og:title" content="{{ title }} | {{ t.site }}">
   <meta property="og:description" content="{{ t.sample }}">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="{{ site.url }}{{ view.path }}">
+  <meta property="og:url" content="{{ view.path | absoluteUrl(site.url) }}">
   <link rel="stylesheet" href="/assets/css/site.css">
 </head>
 <body>
