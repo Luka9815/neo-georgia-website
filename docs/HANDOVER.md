@@ -1,70 +1,66 @@
 # Handover
 
-Last updated: 2026-10-26 (Codex, session 2 fixes)
+Last updated: 2026-10-26 (Codex, session 3: GitHub Pages)
 
 ## Current state
 
-- Session 1 was merged into `main` in [PR #1](https://github.com/Luka9815/neo-georgia-website/pull/1). Session 2 starts from that merged baseline and is prepared on `codex/session-2-fixes` for a separate PR against `main`; do not treat the session 1 commits as unpushed local work.
+- Eleventy 3 ESM on Node 24 LTS, plain CSS, Nunjucks page types and Markdown body fields in JSON. Run commands from the repository root. Output `_site/` and node_modules are ignored.
+- Georgian and English homes, seven menu destinations, action pages with automatic related blocks, calls, supporting listings and details. All content remains [SAMPLE]. Core translation parity, untranslated News/Story fallback and EU footers are checked.
+- Call opens/deadline and Event date/end use offset-free local wall-clock times plus a named timeZone. Temporal derives offsets and rejects ambiguous/nonexistent clock-change times. currentCallYear (2026) selects the visible call edition independently of the clock, with other years shown as archives.
+- Hosting is now GitHub Pages through `.github/workflows/deploy.yml`. Netlify and Cloudflare Pages are dropped. Their old configuration can be restored from git history if true HTTP 301 redirects make a different host necessary.
+- The workflow runs on pushes to main, daily at 04:15 UTC, and manual dispatch. It installs with npm ci, builds, tests, uploads the Pages artifact and deploys with official actions. No build hook, custom secret or browser accessibility check is used in CI. Deployments share a concurrency group.
+- PATH_PREFIX controls Eleventy's pathPrefix (default `/`). The workflow derives the project prefix and GitHub Pages origin from the repository name and owner (currently `/neo-georgia-website/` and Luka's account), so those workflow values follow a repository transfer. Internal links, assets, language switches and refresh targets are rewritten by Eleventy's HTML base plugin. Canonical, hreflang, OG and sitemap URLs use the complete SITE_URL base.
+- SITE_URL defaults to `https://luka9815.github.io/neo-georgia-website/`. For a custom domain, set SITE_URL to its HTTPS root and PATH_PREFIX to `/`, and replace the project-path workflow values with those custom-domain settings. Confirm both settings and the deployed address after transferring the repository to ERIDA.
+- siteLaunched is false in `src/_data/site.js`: every page is noindex and robots.txt disallows crawling. After launch approval, set it true; content pages become indexable while redirects and 404 remain noindex. Do not launch until the official EU emblem files, Georgian disclaimer and content are approved.
+- One root bilingual 404.html has Georgian first, English second, both home links and the EU footer. The root index.html has a meta refresh, target canonical and a visible link to the Georgian home. No client JavaScript is needed. `.nojekyll` is copied into the output and included in the Pages artifact.
+- `src/_data/redirects.json` is an empty old-path/new-path map. Once the export arrives, add validated mappings to generate static meta-refresh stubs. These do not provide HTTP 301 responses. See CONTENT.md.
+- Session 1 is merged in PR #1. Session 3 is prepared on top of the session 2 branch because GitHub still reported PR #2 open when this session began. The session 3 PR targets main and depends on PR #2; neither PR has been merged by Codex. If PR #2 is still open, merge it separately before reviewing only the six session 3 commits.
+- No GitHub Pages setting was changed and no live deployment was performed in this session. Local validation and saved workflow code do not establish a successful hosted deployment.
 
-- Eleventy 3 ESM skeleton on Node 24 LTS. `npm ci`, `npm start` (port 8080), `npm run build` (output `_site/`). Source and scripts are committed; output and node_modules are ignored.
-- Georgian and English routes, root redirect to Georgian, language switch and hreflang. English listings exclude untranslated News. Story listings also have a section-index fallback. All seven menu destinations resolve.
-- Home has six blocks. Calls are grouped by Key Action for `site.currentCallYear` (currently 2026), with calculated status and Brussels time. The calls page shows that selected edition first, followed by all other editions as descending-year archives. Changing the calendar year does not change the selected call edition. Three action detail pages automatically collect calls, upcoming and past events, resources with source labels, stories and FAQs.
-- Three [SAMPLE] records each for Action, Event and News, plus three current-edition Calls and one 2025 archive Call. One News item is Georgian-only to exercise fallback behaviour. Related sample resources, a story, a FAQ and draft basic pages support the skeleton. No real content, images, personal contacts or accounts were added.
-- Minimal event/news/story details, section listings and footer-note pages prevent dead links. These are not the complete later-phase templates or CMS integration.
-- One Nunjucks template per page type in `src/pages/`, inheriting `_includes/page.njk`, with central routes in `_data/views.js` grouped by `_data/pageTypes.js`. Markdown body fields in JSON, plain responsive CSS, no client JavaScript, remote fonts or trackers. See docs/CONTENT.md for the bilingual contract and both CMS mappings.
-- EU footer uses the explicitly requested text emblem placeholder, funding statement, verbatim English disclaimer and unapproved Georgian TODO. These are not launch-compliant final assets.
-- Canonical/OG metadata, sitemap and preview noindex/robots restrictions are generated. SITE_URL overrides the host URL. Never launch with the default example.org URL or the preview indexing restrictions still present.
-- netlify.toml and portable root `_redirects` are included. No live-host validation is recorded here, and hosting/CMS selection remains open. Session 1 was pushed and merged. No external account or CMS has been created by Codex.
+## Turn on GitHub Pages (Luka)
+
+1. Once the required PRs are reviewed and merged, open this repository on GitHub: **Settings > Pages > Build and deployment > Source: GitHub Actions**.
+2. Open **Actions > Deploy GitHub Pages > Run workflow**, select **main**, then run it once. Wait for the build and deploy jobs to pass.
+3. Open `https://luka9815.github.io/neo-georgia-website/`. Check the root reaches the Georgian home; open both homes, calls and an action page; test the language switch, Georgian-only news fallback, CSS and a missing URL. The missing URL must show the bilingual 404. Local browser tests do not replace this hosted check.
+4. Check that the daily schedule is running. GitHub disables scheduled workflows in public repositories after 60 days without repository activity. If disabled, open **Actions > Deploy GitHub Pages > Enable workflow**, then **Run workflow** to check it. If the whole repository's Actions feature is disabled, enable it under Settings > Actions first.
+5. During the build, hosting, repository and CMS use Luka's GitHub account. The domain must be registered to ERIDA, never an individual. No extra hosting account is needed. When transferring the repository, verify Pages configuration, the workflow URL values and the custom-domain settings.
 
 ## Validation
 
-Call opens/deadline and Event date/end fields now store local wall-clock times without an offset plus a named `timeZone`. The Temporal polyfill resolves seasonal offsets for status calculations, ordering and rendered datetime attributes. Invalid dates, editor-entered offsets and ambiguous or nonexistent clock-change times fail the build rather than being guessed. See docs/CONTENT.md for editor input rules. News dates retain their original instant format.
-
-From the repository root:
+Root build:
 
 1. `npm ci`
 2. `npm run build`
 3. `npm test`
-4. In another terminal run `npm start`.
-5. Run `npm run check:a11y`. It uses `/usr/bin/chromium` by default. On another machine set `CHROMIUM_PATH` to an installed Chromium executable. Set TEST_URL if the dev server uses a different port. Browser binaries are not part of npm ci.
+4. In a separate terminal: `npm start`.
+5. `npm run check:a11y`
 
-Checks cover generated language versions, metadata, seven menu items, EU footer, all internal links and fragments, shared content references, core translations, [SAMPLE] marking, status boundaries, Brussels daylight saving, six home blocks and all action relationship blocks. Browser checks run axe on every non-redirect page, test 320 px horizontal overflow, keyboard skip links and actual language-switch navigation. This is basic automated accessibility testing, not a full WCAG audit. Manual screen-reader review, full keyboard review and Lighthouse scoring remain open.
+Project-path build (the deployment layout):
 
-Session 1 results are preserved in CHANGELOG. Session 2 validation covers local-time conversion in Brussels and Tbilisi, both daylight-saving transitions (including rejected gap/overlap times), derived HTML offsets, explicit call-edition ordering and archive rendering. The readability refactor was compared against its preceding build: all 45 HTML documents retain identical DOM structure, attributes and text apart from whitespace. Final command results are recorded in the session 2 CHANGELOG entry.
+1. `PATH_PREFIX=/neo-georgia-website/ SITE_URL=https://luka9815.github.io/neo-georgia-website/ npm run build`
+2. `PATH_PREFIX=/neo-georgia-website/ SITE_URL=https://luka9815.github.io/neo-georgia-website/ npm test`
+3. Start a separate dev server with the same variables: `PATH_PREFIX=/neo-georgia-website/ SITE_URL=https://luka9815.github.io/neo-georgia-website/ npm start -- --port=8082`.
+4. `PATH_PREFIX=/neo-georgia-website/ TEST_URL=http://127.0.0.1:8082 npm run check:a11y`
 
-The sample dates are in 2026. As time advances, items move to past/closed; lists may become empty. No fixture date is forced in production. Status only changes on rebuild.
+For a custom-domain rehearsal use PATH_PREFIX=/ and SITE_URL=https://example.org/. Tests also create isolated prefixed and custom-domain builds. They check generated targets, absolute metadata, sitemap, refresh URLs, bilingual 404, .nojekyll, indexing and legacy redirects, plus the existing language, footer, content, call-edition and daylight-saving checks. The legacy-redirect fixture also exercises siteLaunched=true without changing tracked files.
 
-## Connect Netlify (Luka)
-
-1. Session 1 is already on `main`. Select `main` for that baseline, or `codex/session-2-fixes` to test this session before its PR is merged. Push any later local changes before deploying them. Use an existing hosting account registered to the ERIDA/NEO address, as required by DECISIONS. Do not use a personal account for institutional ownership.
-2. In Netlify choose **Add new project > Import an existing project**, select GitHub, and authorise only the required repository (`Luka9815/neo-georgia-website`). Select that repository and the pushed branch (normally `main`).
-3. Leave base directory at the repository root. Confirm build command `npm run build`, publish directory `_site` and Node 24 from netlify.toml. Do not set NODE_ENV=production or omit dev dependencies: Eleventy is a build dependency.
-4. Deploy using the generated temporary netlify.app address. The build reads DEPLOY_PRIME_URL for metadata. If setting SITE_URL, use the full HTTPS temporary site origin; changing it requires another deploy. Do not configure a production domain yet.
-5. Enable Deploy Previews for pull requests in the project's build settings if not already enabled. Keep preview noindex enabled. Check `/` redirects to `/ka/`, both homes and calls pages work, and `/ka/missing/` and `/en/missing/` return HTTP 404 in the respective languages. Inspect build logs and test language switches on action and Georgian-only news pages.
-
-## Connect Cloudflare Pages (Luka)
-
-1. Select `main` for the merged session 1 baseline, or `codex/session-2-fixes` for this session before merge, using the same repository and an existing ERIDA/NEO-owned Cloudflare account.
-2. In **Workers & Pages > Create application > Pages > Connect to Git**, connect GitHub, grant access to the required repository and select `Luka9815/neo-georgia-website`. Choose a temporary project name and production branch (normally `main`). Choose Pages, not a Workers deployment.
-3. Set framework preset to **None**, build command `npm run build`, output directory `_site`, and root directory to the repository root. Set build variable `NODE_VERSION=24` for production and preview. Keep dev dependencies enabled. The repository also includes `.nvmrc`.
-4. Save and deploy to the generated pages.dev address. The build reads CF_PAGES_URL for metadata. SITE_URL is an optional full HTTPS origin override, requiring a rebuild when changed. Keep preview branch builds enabled and preview noindex in place.
-5. Test the same home, call and switch routes. Root `_redirects` provides the 302 to `/ka/`. Cloudflare's root `404.html` prevents SPA fallback: unknown paths return a Georgian 404 with an English 404 switch. Locale-specific 404 interception is only configured for Netlify; do not copy its 404 rules into Cloudflare `_redirects`, which does not support that status.
-
-After both deployments, record the temporary origins, build logs, redirect and 404 HTTP results, accessibility/performance observations and editor-integration constraints. Choose hosting based on that evidence. No live host behaviour has yet been verified here.
+The browser check uses `/usr/bin/chromium`; set CHROMIUM_PATH if Chromium lives elsewhere. TEST_URL is the local server origin without a path suffix. The script adds PATH_PREFIX itself. Basic axe, 320 px layout and keyboard skip-link/switch checks do not replace a full accessibility audit. Final command results are recorded in CHANGELOG.
 
 ## Next task
 
-Review the session 2 PR against `main` without merging automatically. Connect and test the two previews using the steps above, then compare Decap CMS and Pages CMS for News and Events against docs/CONTENT.md before selecting a host/editor. No tokens, hooks or personal emails go into this public repository.
+Pages CMS for News and Events.
+
+Test JSON round trips, shared dates and timeZone fields, local date entry without offsets, nested translations, optional English News, relationship fields and editing previews on Luka's GitHub account. See CONTENT.md. Do not commit tokens, personal email addresses or other credentials. The domain stays registered to ERIDA.
 
 ## Remaining work
 
-- Real EACEA Georgian/English emblem files and approved Georgian disclaimer; confirm funding wording against the signed grant agreement.
-- Final event, news, story, publications, FAQ, people, contact and basic-page designs; opportunity filters. Current supporting pages are minimal.
-- Font choice, responsive image pipeline, production content validation, Georgian editorial review, manual accessibility and Lighthouse mobile 90+ checks.
-- Search test with Georgian, content migration and old-URL redirects, privacy/accessibility/prevailing-language text approval.
-- Daily rebuild: after selecting the host, create its build hook, store it as the GitHub Actions secret SITE_BUILD_HOOK, and add a daily 04:15 UTC workflow plus workflow_dispatch that POSTs to it. Until activated, manually rebuild to refresh statuses. Never commit the hook URL.
-- Hosting choice, CMS choice and end-to-end CMS round-trip tests remain open. A draft field mapping is not editor validation.
+- Turn on Pages and verify the first hosted deployment. Monitor the scheduled rebuild and re-enable it after inactivity if needed.
+- Pages CMS configuration and authenticated News/Event editing tests.
+- Original EACEA Georgian/English emblems and the approved Georgian disclaimer; confirm funding wording against the signed grant agreement.
+- Final templates, opportunity filters, font choice, responsive image pipeline, production content validation and Georgian editorial review.
+- Search with Georgian, content migration, old-URL mapping, privacy/accessibility/prevailing-language approval, manual accessibility and Lighthouse checks.
+- A daily rebuild refreshes static statuses. Sample dates are in 2026 and may become past/closed; no fixed test clock is used in production.
 
-## Waiting on Nino / NEO (blocks launch, not the skeleton)
+## Waiting on Nino / NEO
 
-Domain decision and written transfer agreement; WordPress export or admin access; NEO logo; institutional hosting/CMS account ownership; prevailing language; featured actions and editors; approved Georgian disclaimer. Working documents remain in Google Drive Cowork/NEO; website code and documentation live here.
+Domain decision and institutional registration/transfer agreement; WordPress export; NEO logo; prevailing language; featured actions and editors; approved Georgian disclaimer. Working documents remain in Google Drive Cowork/NEO; website source and documentation live here.
