@@ -41,3 +41,10 @@ No CMS has been selected, installed or connected. This layout avoids CMS-specifi
 - Pages CMS: a collection with `path: src/content/news`, `type: collection`, `format: json`, and a filename based on `fields.slug`. Use string/date fields for shared facts and object fields named `ka` and `en` containing `title` (string) and `body` (rich-text, stored as Markdown). Make `en` optional for News and Stories.
 
 Use the same pattern for the remaining types. Test creating and editing News and Events with each candidate before choosing one. Verify JSON round trips, optional translations, relationship fields and preservation of local wall-clock times and named time zones. These mappings are a compatibility design, not a claim that authenticated editor workflows have been tested.
+
+
+## Legacy URL redirects on GitHub Pages
+
+`src/_data/redirects.json` is an empty list until the WordPress export supplies old URLs. Add objects such as `{"from": "/old-cbhe/", "to": "/ka/opportunities/cbhe/"}`. Store paths relative to this site, without PATH_PREFIX. The build generates a static HTML stub at each old path with a meta refresh, canonical to the new URL and a visible link. Prefix handling is automatic.
+
+Sources must end in a slash or .html and use ASCII path segments. Duplicate paths and collisions with existing pages stop the build; targets must be existing content pages, not other redirects. Do not add query-string routes, external URLs or redirect chains. Non-ASCII WordPress URLs and other filename formats need a separate migration check before import. These stubs do not send HTTP 301 responses. Revisit hosting if true 301 redirects become essential. Netlify files have been removed and remain recoverable from git history.

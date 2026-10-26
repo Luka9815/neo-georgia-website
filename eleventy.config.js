@@ -1,11 +1,15 @@
+import { EleventyHtmlBasePlugin } from '@11ty/eleventy';
+import { getPathPrefix, absoluteUrl } from './lib/urls.js';
 import MarkdownIt from 'markdown-it';
 import { localise, related, dateLabel, callYears } from './lib/content.js';
 const markdown = new MarkdownIt({ html: false });
 export default function (config) {
+  config.addPlugin(EleventyHtmlBasePlugin);
+  config.addFilter('absoluteUrl', absoluteUrl);
   config.ignores.add('src/assets/**/*.md');
   config.setNunjucksEnvironmentOptions({ autoescape: true });
   config.addPassthroughCopy('src/assets');
-  config.addPassthroughCopy({ 'src/host/_redirects': '_redirects' });
+  config.addPassthroughCopy({ 'src/nojekyll': '.nojekyll' });
   config.addWatchTarget('src/content');
   config.addFilter('localise', localise);
   config.addFilter('related', related);
@@ -24,6 +28,7 @@ export default function (config) {
     items.filter((i) => i.source === source)
   );
   return {
+    pathPrefix: getPathPrefix(),
     dir: { input: 'src', output: '_site', includes: '_includes', data: '_data' },
     templateFormats: ['njk', 'md'],
     htmlTemplateEngine: 'njk',

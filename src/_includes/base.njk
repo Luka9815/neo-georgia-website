@@ -2,18 +2,20 @@
 <html lang="{{ view.lang }}">
 <head>
   <meta charset="utf-8">
-  {% if view.kind == 'redirect' %}<meta http-equiv="refresh" content="0;url=/ka/">{% endif %}
+  {% if view.target %}<meta http-equiv="refresh" content="0;url={{ view.target }}">{% endif %}
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ title }} | {{ t.site }}</title>
   <meta name="description" content="{{ title }}. {{ t.sample }}">
+  {% if not site.siteLaunched or view.kind == '404' or view.target %}
   <meta name="robots" content="noindex, nofollow">
-  <link rel="canonical" href="{{ site.url }}{{ view.path }}">
-  <link rel="alternate" hreflang="{{ view.lang }}" href="{{ site.url }}{{ view.path }}">
-  {% if view.translated != false %}<link rel="alternate" hreflang="{{ other }}" href="{{ site.url }}{{ view.alternate }}">{% endif %}
+  {% endif %}
+  <link rel="canonical" href="{{ (view.target or view.path) | absoluteUrl(site.url) }}">
+  <link rel="alternate" hreflang="{{ view.lang }}" href="{{ view.path | absoluteUrl(site.url) }}">
+  {% if view.translated != false %}<link rel="alternate" hreflang="{{ other }}" href="{{ view.alternate | absoluteUrl(site.url) }}">{% endif %}
   <meta property="og:title" content="{{ title }} | {{ t.site }}">
   <meta property="og:description" content="{{ t.sample }}">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="{{ site.url }}{{ view.path }}">
+  <meta property="og:url" content="{{ view.path | absoluteUrl(site.url) }}">
   <link rel="stylesheet" href="/assets/css/site.css">
 </head>
 <body>
@@ -35,7 +37,7 @@
     <section><h2>{{ t.contact }}</h2><p>{{ t.contactPlaceholder }}</p><h3>{{ t.social }}</h3><p>{{ t.socialPlaceholder }}</p></section>
     <nav aria-label="{{ t.about }}"><ul>{% for key in ['privacy','accessibility','language'] %}<li><a href="/{{ view.lang }}/{{ key }}/">{{ t[key] }}</a></li>{% endfor %}</ul></nav>
   </div>
-  <div class="eu-footer"><p class="emblem-placeholder">{{ t.emblem }}</p><p><strong>{{ t.funding }}</strong></p><p{% if view.lang == 'ka' %} lang="en"{% endif %}>{{ t.disclaimer }}</p></div>
+  <div class="eu-footer"><p class="emblem-placeholder">{{ t.emblem }}</p><p><strong>{{ t.funding }}</strong></p><p{% if view.lang == 'ka' %} lang="en"{% endif %}>{{ t.disclaimer }}</p>{% if view.kind == '404' %}<p lang="en">{{ en.disclaimer }}</p>{% endif %}</div>
 </footer>
 </body>
 </html>

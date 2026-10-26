@@ -1,9 +1,10 @@
+import { redirectViews } from '../../lib/redirects.js';
 import { loadContent } from '../../lib/content.js';
 export default function () {
   const content = loadContent();
   const views = [
-    { lang: 'ka', kind: 'redirect', path: '/', alternate: '/en/' },
-    { lang: 'ka', kind: '404', path: '/404.html', alternate: '/en/404.html' },
+    { lang: 'ka', kind: 'redirect', path: '/', target: '/ka/', alternate: '/en/' },
+    { lang: 'ka', kind: '404', path: '/404.html', alternate: '/404.html#not-found-en', translated: false },
   ];
   const sections = [
     'home',
@@ -13,7 +14,6 @@ export default function () {
     'news',
     'stories',
     'resources',
-    '404',
   ];
   for (const lang of ['ka', 'en']) {
     const other = lang === 'ka' ? 'en' : 'ka';
@@ -51,5 +51,5 @@ export default function () {
       }
     }
   }
-  return views;
+  return [...views, ...redirectViews(views)];
 }

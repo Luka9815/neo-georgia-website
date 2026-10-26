@@ -80,3 +80,22 @@ Use currentCallYear in src/_data/site.js rather than the build clock. The select
 
 ## 2026-10-26: One template per page type
 Replace the conditional src/pages.njk dispatcher with individual templates in src/pages/. Keep language setup and the base wrapper in _includes/page.njk and group the central route list through _data/pageTypes.js. News listing and article have separate templates. Reformat JavaScript and CSS for readability without changing behaviour; compare the generated DOM before and after the refactor.
+## 2026-10-26: GitHub Pages hosting through GitHub Actions
+Supersedes the hosting choice and host-specific routing in "Portable hosting and repeatable checks", and resolves the earlier open Netlify/Cloudflare hosting choice. Host this repository on GitHub Pages using GitHub Actions. Drop Netlify and Cloudflare Pages for now: no extra accounts are needed, and repository ownership carries hosting to ERIDA on transfer (the Pages address and settings must be checked after transfer). Revisit hosting only if proper HTTP 301 redirects for old erasmus.org.ge URLs become essential. Netlify configuration can be restored from git history if it is ever chosen again. The existing repeatable test strategy remains valid.
+
+## 2026-10-26: Build-phase GitHub account and institutional domain
+Supersedes "Accounts registered to an ERIDA/NEO email". During the build, the repository, GitHub Pages hosting and CMS run on Luka's own GitHub account. The domain must be registered to ERIDA, never to an individual. Transfer the repository and its hosting to ERIDA when ready; confirm Pages settings and any custom domain after transfer. This avoids creating extra service accounts during development while preserving institutional domain ownership.
+
+## 2026-10-26: Scheduled rebuild in the Pages deployment workflow
+Supersedes the hook-based daily rebuild plan in "Computed statuses and daily rebuild plan". Run the same GitHub Actions deployment workflow on pushes to main, daily at 04:15 UTC and through workflow_dispatch. Rebuild and deploy directly, without a build hook or a custom secret. Monitor scheduled runs because GitHub disables schedules in public repositories after 60 days without repository activity; re-enable the workflow from Actions when needed.
+
+## 2026-10-26: Portable site path prefix
+Keep route and content paths independent of hosting. Set Eleventy's pathPrefix from PATH_PREFIX (default /) and use its HTML base plugin to rewrite rendered internal links, assets and refresh targets, including Markdown links. SITE_URL is a complete base URL including its trailing path prefix, defaulting to https://luka9815.github.io/neo-georgia-website/. Absolute metadata uses that base; the workflow sets both values explicitly. For a custom domain, set PATH_PREFIX=/ and SITE_URL to its HTTPS root. Regression tests build both hosting layouts and check generated targets.
+
+
+## 2026-10-26: GitHub Pages fallbacks and legacy URLs
+Supersedes the host-specific 404 and root-redirect rules in "Portable hosting and repeatable checks". Use one root bilingual 404 (Georgian first, English second) and a static root index with meta refresh, target canonical and a visible Georgian-home link. Add .nojekyll to the uploaded output. Generate optional meta-refresh stubs from the initially empty redirects.json mapping; validate collisions and target pages. These are HTML redirects, not HTTP 301 responses. Remove netlify.toml and src/host/_redirects; restore them from git history only if Netlify is chosen again.
+
+
+## 2026-10-26: Explicit launch-indexing setting
+Supersedes the indexing and host-URL behaviour in "Sample preview safeguards and EU placeholder"; sample marking and the EU asset requirements remain unchanged. siteLaunched in src/_data/site.js defaults to false. While false, every page is noindex and robots.txt disallows crawling. Once NEO approves launch, set it true to allow content indexing; 404 and redirect pages remain noindex. SITE_URL defaults to the full GitHub Pages project address and can be changed to the institutional custom-domain root together with PATH_PREFIX=/.

@@ -2,6 +2,16 @@
 
 Newest at the top. One entry per working session: date, who (agent or person), what changed.
 
+## 2026-10-26 (Codex, session 3: GitHub Pages)
+- Logged explicit superseding hosting, account, daily rebuild, routing and indexing decisions. GitHub Pages runs from Luka's repository through GitHub Actions; the domain must belong to ERIDA. Netlify and Cloudflare are dropped for now.
+- Added the Pages deployment workflow: push to main, daily 04:15 UTC and manual dispatch; Node 24 from .nvmrc, npm cache, npm ci, build, tests, official artifact upload and deploy actions, minimal scoped permissions and serialized deployments. No check:a11y in CI, build hook or custom secret. Workflow URL values follow the repository owner/name, and hidden files are included in the artifact.
+- Added PATH_PREFIX (default /), Eleventy HTML base rewriting and complete SITE_URL metadata, with project-path and custom-domain-root regression builds. The default URL is the GitHub Pages project address.
+- Added .nojekyll, a static root home redirect, one bilingual root 404 and empty redirects.json with validated legacy meta-refresh stubs. Removed Netlify configuration and _redirects; both remain in git history. These redirects do not provide HTTP 301 responses.
+- Added siteLaunched=false as the indexing control. Tested false and true in isolated builds; redirects and 404 stay noindex after launch.
+- Replaced both old hosting guides with GitHub Pages activation and schedule re-enabling instructions. Next task: Pages CMS for News and Events.
+- Validation: npm run build and npm test passed in both root and /neo-georgia-website/ layouts, all 14 tests passed in each. npm run check:a11y passed all 42 non-redirect pages in both layouts with zero axe violations, no 320 px overflow and working keyboard skip links/language switches. Internal links, assets, metadata, sitemap, root refresh, bilingual 404 and legacy redirects passed. Workflow YAML and required triggers were checked; current official action interfaces were inspected. git diff --check passed.
+- GitHub still reported PR #2 open, so the six session 3 commits depend on its four session 2 commits. No PR was merged, Pages setting changed or hosted deployment run by Codex. Turn on Pages and verify the first hosted run after review and merge.
+
 ## 2026-10-26 (Codex, session 2 fixes)
 - Migrated Call opens/deadline and Event date/end to offset-free local wall-clock times plus their named time zone. Added the Temporal polyfill to derive seasonal offsets, compare instants and render machine-readable dates. Editors never enter offsets; invalid, nonexistent and ambiguous times fail clearly.
 - Added tests for Brussels spring and autumn clock changes, boundary statuses, Tbilisi, unsafe editor input and derived HTML offsets. Updated the content contract and superseded the old explicit-offset decision.

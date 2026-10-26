@@ -2,4 +2,4 @@
 permalink: /sitemap.xml
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{% for view in views %}{% if view.kind != '404' and view.kind != 'redirect' %}<url><loc>{{ site.url }}{{ view.path }}</loc></url>{% endif %}{% endfor %}</urlset>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{% for view in views %}{% if view.kind != '404' and view.kind != 'redirect' and view.kind != 'legacyRedirect' %}<url><loc>{{ view.path | absoluteUrl(site.url) }}</loc></url>{% endif %}{% endfor %}</urlset>
