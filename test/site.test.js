@@ -44,7 +44,7 @@ test('all rendered pages have language, metadata, seven menu links, one h1 and E
       $('.eu-footer').text(),
       view.lang === 'en'
         ? /Neither the European Union nor EACEA can be held responsible for them\./
-        : /TODO: Georgian disclaimer, to be approved by NEO/
+        : /მათზე პასუხისმგებლობა არ ეკისრება არც ევროკავშირს და არც EACEA-ს\./
     );
     assert.ok($('.emblem-placeholder').text().includes('[SAMPLE]'));
     assert.equal($('header a[hreflang]').attr('href'), publicPath(view.alternate));
@@ -314,5 +314,17 @@ test('English-prevails policy is identical in each footer and its language page'
     assert.ok(page('main').text().includes(strings.prevailingStatement));
     assert.equal(page('footer .language-policy').text(), strings.prevailingStatement);
     assert.equal(page('h1').text(), strings.language);
+  }
+});
+
+
+test('Georgian disclaimer exactly preserves the supplied project wording', () => {
+  const expected = "დაფინანსებულია ევროკავშირის მიერ. გამოთქმული შეხედულებები და მოსაზრებები მხოლოდ ავტორ(ებ)ს ეკუთვნის და შესაძლოა არ ასახავდეს ევროკავშირის ან განათლებისა და კულტურის ევროპული აღმასრულებელი სააგენტოს (EACEA) შეხედულებებს. მათზე პასუხისმგებლობა არ ეკისრება არც ევროკავშირს და არც EACEA-ს.";
+  const strings = JSON.parse(read('src/_data/ka.json'));
+  assert.equal(strings.disclaimer, expected);
+  for (const view of getViews().filter(view => view.lang === 'ka')) {
+    const $ = load(read(output(view.path)));
+    assert.equal($('.funding-disclaimer').text(), expected);
+    assert.notEqual($('.funding-disclaimer').attr('lang'), 'en');
   }
 });

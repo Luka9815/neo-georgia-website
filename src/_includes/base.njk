@@ -65,7 +65,7 @@
       <div class="emblem-placeholder">{{ t.emblem }}</div>
       <div class="eu-funding">
         <p><strong>{{ t.funding }}</strong></p>
-        <p{% if view.lang == 'ka' %} lang="en"{% endif %}>{{ t.disclaimer }}</p>
+        <p class="funding-disclaimer">{{ t.disclaimer }}</p>
         {% if view.kind == '404' %}<p lang="en">{{ en.disclaimer }}</p>{% endif %}
       </div>
     </div>
