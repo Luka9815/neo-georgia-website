@@ -177,3 +177,7 @@ Use saved synthetic HTML and in-memory REST-shaped fixtures to test cleanup, lin
 
 ## 2026-10-26: Separate source-language detection and candidate pair review
 Supersedes automatic verified-English attachment and the four-source-only assumption in "Offline converter fixtures and conservative language review". Detect title and body separately using visible prose, excluding URLs. Mixed bodies and mismatched titles/bodies stay under sourceText, so Latin prose is not silently put in ka. Clear English-prose records use an explicitly unapproved en candidate. Keep one draft per source post. Propose within-post and cross-post CANDIDATE pairs with script/section, date, topic, media and legacy-slug evidence and a confidence note; never split or merge automatically, even for an explicit REST relation. List Latin-body sources without a Georgian candidate separately.
+
+
+## 2026-10-26: Remove theme-only dates and markers without removing body emoji
+Extend "Review-only Markdown conversion, romanised slugs and suggestions". Strip only a leading standalone brace-wrapped DD.MM.YYYY theme date, standalone empty info markers and repeated blank lines. Clean leading title emoji, including joined emoji sequences; preserve numerical title prefixes, body emoji and info markers that have text. Keep meaningful dates inside the article.

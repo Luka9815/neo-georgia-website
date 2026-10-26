@@ -57,6 +57,18 @@ export function plainText(html) {
     .replace(/\s+/g, ' ')
     .trim();
 }
+export function cleanTitle(html) {
+  return plainText(html).replace(/^(?:[\p{Extended_Pictographic}\p{Regional_Indicator}\p{Emoji_Modifier}\uFE0F\u200D]\s*|[0-9#*]\uFE0F?\u20E3\s*)+/u, '').trim();
+}
+
+export function cleanThemeMarkdown(markdown) {
+  return markdown
+    .replace(/^(?:\s*(?:\*\*|__)?\{\d{1,2}\.\d{1,2}\.\d{4}\}(?:\*\*|__)?[ \t]*(?:\r?\n|$))+/, '')
+    .replace(/^[ \t]*(?:\*\*|__)?[ \t]*ℹ\uFE0F?[ \t]*(?:\*\*|__)?[ \t]*$/gm, '')
+    .replace(/\n(?:[ \t]*\n){2,}/g, '\n\n')
+    .trim();
+}
+
 export function romanise(title) {
   return [...title.normalize('NFKC').toLowerCase()]
     .map((letter) => alphabet[letter] ?? letter)
@@ -228,11 +240,13 @@ export function htmlToMarkdown(html, base = oldSite) {
     codeBlockStyle: 'fenced',
     emDelimiter: '*',
   });
-  const markdown = turndown
+  const convertedMarkdown = turndown
     .turndown($.html())
     .replace(/\u00a0/g, ' ')
     .replace(/\n{3,}/g, '\n\n')
     .trim();
+  const markdown = cleanThemeMarkdown(convertedMarkdown);
+  if (markdown !== convertedMarkdown) warnings.push('Leading theme date, empty info markers or repeated blank lines removed.');
   return { markdown, attachments, warnings: [...new Set(warnings)] };
 }
 
@@ -321,7 +335,7 @@ export function convertPosts(collections, run, reservedSlugs = []) {
   for (const post of posts) {
     const row = {
       id: post.id,
-      title: plainText(post.title?.rendered),
+      title: cleanTitle(post.title?.rendered),
       date: post.date?.slice(0, 10) || null,
       oldSlug: redact(post.slug),
       oldUrl: cleanUrl(post.link),
