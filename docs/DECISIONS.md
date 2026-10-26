@@ -116,3 +116,6 @@ Supersedes the News-instant exception in "Editor-entered local call and event ti
 
 ## 2026-10-26: Optional Event registration and agenda
 Supersedes the required-registration/agenda part of "News publication days and editor validation". Registration and each translated agenda are optional in the CMS and build validation. Hide missing, empty or whitespace-only blocks; validate a supplied registration URL as HTTPS. This supports events before registration or an agenda is available.
+
+## 2026-10-26: Self-hosted Noto for Georgian and Latin
+Resolves the open font choice and replaces system fonts in "Session 1 toolchain and rendering". Choose Noto Sans Georgian plus Noto Sans, normal-width 400/700, subset to Georgian and Latin ranges and self-hosted WOFF2 with font-display: swap. Compared regular text at 16/20/32 px: FiraGO is compact; Noto's open Georgian forms and wider Latin suit readable institutional text with wrapping navigation. Noto's four subsets total 99,184 bytes versus FiraGO's 118,736 for equivalent two-weight coverage, and include Mtavruli missing from the inspected FiraGO release. Both licences are SIL OFL 1.1. Keep original licences, pinned source/checksum manifest and the maintenance subsetting script. See DESIGN.md and the comparison image.

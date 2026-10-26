@@ -1,0 +1,27 @@
+{
+  "googleFontsCommit": "e7db6ca603fd4862010383ff17ffd6cc4ffac1c0",
+  "fonttools": "4.67.0",
+  "brotli": "1.2.1",
+  "sourceSha256": {
+    "NotoSans.ttf": "bfb7bb691513f12e734dc346c03a03f784912432d7e3fa8e56efcf906fe86b3d",
+    "NotoSansGeorgian.ttf": "dc591156f36842d38996c4a7a17fee9bb58e45da3e2cac7a31b7d33de700adb9"
+  },
+  "subsets": {
+    "noto-georgian-700.woff2": {
+      "bytes": 16340,
+      "sha256": "011fe6bb2e6ff64cf90b3dc67e1c90307c5aeb1e9670805095fe6114b42fabca"
+    },
+    "noto-latin-700.woff2": {
+      "bytes": 34276,
+      "sha256": "2089f5f0eb5d62fbe91d054d1d5a1ec67240a0f2ac72dea57db48d8186c568bb"
+    },
+    "noto-latin-400.woff2": {
+      "bytes": 32836,
+      "sha256": "4294ad02543528b9db7d0d5c7f36cd3a02fecbd299872a1fc8a0bf627ed2d236"
+    },
+    "noto-georgian-400.woff2": {
+      "bytes": 15732,
+      "sha256": "9de2ee4fd86966017263f2c2f7d750a1d8f3e5b3d136fbc31747c36c334f5190"
+    }
+  }
+}

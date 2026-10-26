@@ -1,3 +1,36 @@
+@font-face {
+  font-family: 'NEO Noto Georgian';
+  src: url('../fonts/noto-georgian-400.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+10A0-10FF, U+1C90-1CBF, U+2D00-2D2F;
+}
+@font-face {
+  font-family: 'NEO Noto Georgian';
+  src: url('../fonts/noto-georgian-700.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+10A0-10FF, U+1C90-1CBF, U+2D00-2D2F;
+}
+@font-face {
+  font-family: 'NEO Noto Sans';
+  src: url('../fonts/noto-latin-400.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0020-024F, U+2000-206F, U+20AC, U+2190-2199;
+}
+@font-face {
+  font-family: 'NEO Noto Sans';
+  src: url('../fonts/noto-latin-700.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0020-024F, U+2000-206F, U+20AC, U+2190-2199;
+}
+
 :root {
   --blue: #003399;
   --ink: #172333;
@@ -10,7 +43,7 @@
 }
 body {
   margin: 0;
-  font-family: system-ui, sans-serif;
+  font-family: 'NEO Noto Georgian', 'NEO Noto Sans', sans-serif;
   color: var(--ink);
   background: white;
   line-height: 1.7;
