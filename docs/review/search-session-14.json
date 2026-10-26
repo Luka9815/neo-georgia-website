@@ -1,0 +1,630 @@
+{
+  "version": "1.5.2",
+  "englishOrderedUrlsMatchSession12": true,
+  "layouts": [
+    {
+      "prefix": "/",
+      "measuredAt": "2026-10-26T21:33:22.416Z",
+      "languages": {
+        "ka": {
+          "initialSearchBytes": 3727,
+          "firstQuerySearchBytes": 200139,
+          "requests": [
+            "/ka/search/",
+            "/assets/css/site.css",
+            "/assets/js/search.js",
+            "/assets/fonts/noto-latin-700.woff2",
+            "/assets/fonts/noto-latin-400.woff2",
+            "/assets/fonts/noto-georgian-400.woff2",
+            "/assets/fonts/noto-georgian-700.woff2",
+            "/assets/eu/funded-en.png",
+            "/assets/js/georgian-search.js",
+            "/pagefind/ka/pagefind.js",
+            "/pagefind/ka/pagefind-worker.js",
+            "/pagefind/ka/pagefind-entry.json",
+            "/pagefind/ka/pagefind.ka_6b76f426d5.pf_meta",
+            "/pagefind/ka/wasm.unknown.pagefind",
+            "/pagefind/ka/index/ka_4eb3a2f.pf_index",
+            "/pagefind/ka/fragment/ka_f2bd391.pf_fragment",
+            "/pagefind/ka/fragment/ka_ebb9546.pf_fragment",
+            "/pagefind/ka/fragment/ka_b3518d9.pf_fragment",
+            "/pagefind/ka/fragment/ka_f5dbbb6.pf_fragment",
+            "/pagefind/ka/fragment/ka_f21a7bb.pf_fragment",
+            "/pagefind/ka/fragment/ka_5e55efa.pf_fragment",
+            "/pagefind/ka/fragment/ka_0d9b0ea.pf_fragment",
+            "/pagefind/ka/fragment/ka_971fc56.pf_fragment",
+            "/pagefind/ka/fragment/ka_1e45754.pf_fragment",
+            "/pagefind/ka/fragment/ka_8db440c.pf_fragment",
+            "/pagefind/ka/fragment/ka_23ba608.pf_fragment",
+            "/pagefind/ka/fragment/ka_d4de875.pf_fragment"
+          ],
+          "queries": [
+            {
+              "query": "მობილობა",
+              "variants": [
+                "მობილობა",
+                "მობილობ"
+              ],
+              "before": [
+                "/ka/opportunities/youth-mobility/",
+                "/ka/resources/faq/",
+                "/ka/opportunities/",
+                "/ka/news/neo-dissemination-event-2025/",
+                "/ka/opportunities/icm/",
+                "/ka/news/"
+              ],
+              "after": [
+                "/ka/opportunities/youth-mobility/",
+                "/ka/resources/faq/",
+                "/ka/opportunities/",
+                "/ka/news/neo-dissemination-event-2025/",
+                "/ka/opportunities/icm/",
+                "/ka/news/",
+                "/ka/news/announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia/",
+                "/ka/news/eve-statistics/",
+                "/ka/"
+              ],
+              "exactFirst": true,
+              "relevant": 9,
+              "beforeRecall": 6,
+              "afterRecall": 9
+            },
+            {
+              "query": "მობილობის",
+              "variants": [
+                "მობილობის",
+                "მობილობ"
+              ],
+              "before": [
+                "/ka/resources/faq/",
+                "/ka/opportunities/icm/",
+                "/ka/news/neo-dissemination-event-2025/",
+                "/ka/news/",
+                "/ka/news/announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia/",
+                "/ka/news/eve-statistics/",
+                "/ka/opportunities/youth-mobility/"
+              ],
+              "after": [
+                "/ka/resources/faq/",
+                "/ka/opportunities/icm/",
+                "/ka/news/neo-dissemination-event-2025/",
+                "/ka/news/",
+                "/ka/news/announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia/",
+                "/ka/news/eve-statistics/",
+                "/ka/opportunities/youth-mobility/",
+                "/ka/opportunities/",
+                "/ka/"
+              ],
+              "exactFirst": true,
+              "relevant": 9,
+              "beforeRecall": 7,
+              "afterRecall": 9
+            },
+            {
+              "query": "თანამშრომლობა",
+              "variants": [
+                "თანამშრომლობა",
+                "თანამშრომლობ"
+              ],
+              "before": [
+                "/ka/opportunities/cb-youth/",
+                "/ka/opportunities/erasmus-mundus/",
+                "/ka/opportunities/",
+                "/ka/news/neo-dissemination-event-2025/",
+                "/ka/news/"
+              ],
+              "after": [
+                "/ka/opportunities/cb-youth/",
+                "/ka/opportunities/erasmus-mundus/",
+                "/ka/opportunities/",
+                "/ka/news/neo-dissemination-event-2025/",
+                "/ka/news/",
+                "/ka/news/announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia/",
+                "/ka/news/eve-statistics/"
+              ],
+              "exactFirst": true,
+              "relevant": 7,
+              "beforeRecall": 5,
+              "afterRecall": 7
+            },
+            {
+              "query": "თანამშრომლობის",
+              "variants": [
+                "თანამშრომლობის",
+                "თანამშრომლობ"
+              ],
+              "before": [
+                "/ka/news/neo-dissemination-event-2025/",
+                "/ka/news/eve-statistics/",
+                "/ka/news/"
+              ],
+              "after": [
+                "/ka/news/neo-dissemination-event-2025/",
+                "/ka/news/eve-statistics/",
+                "/ka/news/",
+                "/ka/news/announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia/",
+                "/ka/opportunities/cb-youth/",
+                "/ka/opportunities/erasmus-mundus/",
+                "/ka/opportunities/"
+              ],
+              "exactFirst": true,
+              "relevant": 7,
+              "beforeRecall": 3,
+              "afterRecall": 7
+            },
+            {
+              "query": "ერასმუსის",
+              "variants": [
+                "ერასმუსის",
+                "ერასმუს"
+              ],
+              "before": [
+                "/ka/news/europe-day-in-kutaisi/",
+                "/ka/news/"
+              ],
+              "after": [
+                "/ka/news/europe-day-in-kutaisi/",
+                "/ka/news/",
+                "/ka/news/neo-dissemination-event-2025/"
+              ],
+              "exactFirst": true,
+              "relevant": 3,
+              "beforeRecall": 2,
+              "afterRecall": 3
+            }
+          ]
+        },
+        "en": {
+          "initialSearchBytes": 3727,
+          "firstQuerySearchBytes": 197577,
+          "requests": [
+            "/en/search/",
+            "/assets/css/site.css",
+            "/assets/js/search.js",
+            "/assets/fonts/noto-latin-700.woff2",
+            "/assets/fonts/noto-latin-400.woff2",
+            "/assets/fonts/noto-georgian-700.woff2",
+            "/assets/eu/funded-en.png",
+            "/assets/js/georgian-search.js",
+            "/pagefind/en/pagefind.js",
+            "/pagefind/en/pagefind-worker.js",
+            "/pagefind/en/pagefind-entry.json",
+            "/pagefind/en/pagefind.en_62fb551d22.pf_meta",
+            "/pagefind/en/wasm.en.pagefind",
+            "/pagefind/en/index/en_6dbb3f2.pf_index",
+            "/pagefind/en/fragment/en_1b08ece.pf_fragment",
+            "/pagefind/en/fragment/en_44fa89d.pf_fragment",
+            "/pagefind/en/fragment/en_a2d51c6.pf_fragment",
+            "/pagefind/en/fragment/en_5c42638.pf_fragment",
+            "/pagefind/en/fragment/en_484f2e1.pf_fragment",
+            "/pagefind/en/fragment/en_ece0384.pf_fragment",
+            "/pagefind/en/fragment/en_82e546e.pf_fragment",
+            "/pagefind/en/fragment/en_f43b35c.pf_fragment",
+            "/pagefind/en/fragment/en_5f9df01.pf_fragment",
+            "/pagefind/en/fragment/en_c8369f9.pf_fragment",
+            "/pagefind/en/fragment/en_e642b3a.pf_fragment",
+            "/pagefind/en/fragment/en_cc2a9ee.pf_fragment",
+            "/pagefind/en/fragment/en_93885aa.pf_fragment",
+            "/pagefind/en/fragment/en_1d72b48.pf_fragment"
+          ],
+          "queries": [
+            {
+              "query": "mobility",
+              "variants": [
+                "mobility"
+              ],
+              "before": [
+                "/en/opportunities/icm/",
+                "/en/opportunities/youth-mobility/",
+                "/en/resources/faq/",
+                "/en/opportunities/",
+                "/en/news/neo-dissemination-event-2025/",
+                "/en/news/announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia/",
+                "/en/news/",
+                "/en/news/eve-statistics/",
+                "/en/"
+              ],
+              "after": [
+                "/en/opportunities/icm/",
+                "/en/opportunities/youth-mobility/",
+                "/en/resources/faq/",
+                "/en/opportunities/",
+                "/en/news/neo-dissemination-event-2025/",
+                "/en/news/announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia/",
+                "/en/news/",
+                "/en/news/eve-statistics/",
+                "/en/"
+              ],
+              "exactFirst": true,
+              "relevant": 0,
+              "beforeRecall": 0,
+              "afterRecall": 0
+            },
+            {
+              "query": "cooperation",
+              "variants": [
+                "cooperation"
+              ],
+              "before": [
+                "/en/news/neo-dissemination-event-2025/",
+                "/en/news/announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia/",
+                "/en/news/",
+                "/en/opportunities/cb-youth/",
+                "/en/opportunities/"
+              ],
+              "after": [
+                "/en/news/neo-dissemination-event-2025/",
+                "/en/news/announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia/",
+                "/en/news/",
+                "/en/opportunities/cb-youth/",
+                "/en/opportunities/"
+              ],
+              "exactFirst": true,
+              "relevant": 0,
+              "beforeRecall": 0,
+              "afterRecall": 0
+            },
+            {
+              "query": "Erasmus",
+              "variants": [
+                "Erasmus"
+              ],
+              "before": [
+                "/en/news/announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia/",
+                "/en/news/neo-dissemination-event-2025/",
+                "/en/news/eve-statistics/",
+                "/en/opportunities/erasmus-mundus/",
+                "/en/",
+                "/en/news/",
+                "/en/news/europe-day-in-kutaisi/",
+                "/en/opportunities/",
+                "/en/calls/",
+                "/en/news/information-about-capacity-building-project-proposals/"
+              ],
+              "after": [
+                "/en/news/announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia/",
+                "/en/news/neo-dissemination-event-2025/",
+                "/en/news/eve-statistics/",
+                "/en/opportunities/erasmus-mundus/",
+                "/en/",
+                "/en/news/",
+                "/en/news/europe-day-in-kutaisi/",
+                "/en/opportunities/",
+                "/en/calls/",
+                "/en/news/information-about-capacity-building-project-proposals/"
+              ],
+              "exactFirst": true,
+              "relevant": 0,
+              "beforeRecall": 0,
+              "afterRecall": 0
+            },
+            {
+              "query": "მობილობა",
+              "variants": [
+                "მობილობა"
+              ],
+              "before": [],
+              "after": [],
+              "exactFirst": true,
+              "relevant": 0,
+              "beforeRecall": 0,
+              "afterRecall": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "prefix": "/neo-georgia-website/",
+      "measuredAt": "2026-10-26T21:35:47.700Z",
+      "languages": {
+        "ka": {
+          "initialSearchBytes": 3727,
+          "firstQuerySearchBytes": 200301,
+          "requests": [
+            "/neo-georgia-website/ka/search/",
+            "/neo-georgia-website/assets/css/site.css",
+            "/neo-georgia-website/assets/js/search.js",
+            "/neo-georgia-website/assets/js/georgian-search.js",
+            "/neo-georgia-website/assets/fonts/noto-latin-700.woff2",
+            "/neo-georgia-website/assets/fonts/noto-georgian-700.woff2",
+            "/neo-georgia-website/assets/fonts/noto-georgian-400.woff2",
+            "/neo-georgia-website/assets/fonts/noto-latin-400.woff2",
+            "/neo-georgia-website/assets/eu/funded-en.png",
+            "/neo-georgia-website/pagefind/ka/pagefind.js",
+            "/neo-georgia-website/pagefind/ka/pagefind-worker.js",
+            "/neo-georgia-website/pagefind/ka/pagefind-entry.json",
+            "/neo-georgia-website/pagefind/ka/pagefind.ka_c34a2a68b7.pf_meta",
+            "/neo-georgia-website/pagefind/ka/wasm.unknown.pagefind",
+            "/neo-georgia-website/pagefind/ka/index/ka_4eb3a2f.pf_index",
+            "/neo-georgia-website/pagefind/ka/fragment/ka_4ecef47.pf_fragment",
+            "/neo-georgia-website/pagefind/ka/fragment/ka_40365c4.pf_fragment",
+            "/neo-georgia-website/pagefind/ka/fragment/ka_1c2da96.pf_fragment",
+            "/neo-georgia-website/pagefind/ka/fragment/ka_a6b8a52.pf_fragment",
+            "/neo-georgia-website/pagefind/ka/fragment/ka_87a060f.pf_fragment",
+            "/neo-georgia-website/pagefind/ka/fragment/ka_39e562f.pf_fragment",
+            "/neo-georgia-website/pagefind/ka/fragment/ka_b15ecb6.pf_fragment",
+            "/neo-georgia-website/pagefind/ka/fragment/ka_c87a912.pf_fragment",
+            "/neo-georgia-website/pagefind/ka/fragment/ka_37c3d55.pf_fragment",
+            "/neo-georgia-website/pagefind/ka/fragment/ka_156736b.pf_fragment",
+            "/neo-georgia-website/pagefind/ka/fragment/ka_c7dd4ca.pf_fragment",
+            "/neo-georgia-website/pagefind/ka/fragment/ka_6f29635.pf_fragment"
+          ],
+          "queries": [
+            {
+              "query": "მობილობა",
+              "variants": [
+                "მობილობა",
+                "მობილობ"
+              ],
+              "before": [
+                "/neo-georgia-website/ka/opportunities/youth-mobility/",
+                "/neo-georgia-website/ka/resources/faq/",
+                "/neo-georgia-website/ka/opportunities/",
+                "/neo-georgia-website/ka/news/neo-dissemination-event-2025/",
+                "/neo-georgia-website/ka/opportunities/icm/",
+                "/neo-georgia-website/ka/news/"
+              ],
+              "after": [
+                "/neo-georgia-website/ka/opportunities/youth-mobility/",
+                "/neo-georgia-website/ka/resources/faq/",
+                "/neo-georgia-website/ka/opportunities/",
+                "/neo-georgia-website/ka/news/neo-dissemination-event-2025/",
+                "/neo-georgia-website/ka/opportunities/icm/",
+                "/neo-georgia-website/ka/news/",
+                "/neo-georgia-website/ka/news/announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia/",
+                "/neo-georgia-website/ka/news/eve-statistics/",
+                "/neo-georgia-website/ka/"
+              ],
+              "exactFirst": true,
+              "relevant": 9,
+              "beforeRecall": 6,
+              "afterRecall": 9
+            },
+            {
+              "query": "მობილობის",
+              "variants": [
+                "მობილობის",
+                "მობილობ"
+              ],
+              "before": [
+                "/neo-georgia-website/ka/resources/faq/",
+                "/neo-georgia-website/ka/opportunities/icm/",
+                "/neo-georgia-website/ka/news/neo-dissemination-event-2025/",
+                "/neo-georgia-website/ka/news/",
+                "/neo-georgia-website/ka/news/announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia/",
+                "/neo-georgia-website/ka/news/eve-statistics/",
+                "/neo-georgia-website/ka/opportunities/youth-mobility/"
+              ],
+              "after": [
+                "/neo-georgia-website/ka/resources/faq/",
+                "/neo-georgia-website/ka/opportunities/icm/",
+                "/neo-georgia-website/ka/news/neo-dissemination-event-2025/",
+                "/neo-georgia-website/ka/news/",
+                "/neo-georgia-website/ka/news/announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia/",
+                "/neo-georgia-website/ka/news/eve-statistics/",
+                "/neo-georgia-website/ka/opportunities/youth-mobility/",
+                "/neo-georgia-website/ka/opportunities/",
+                "/neo-georgia-website/ka/"
+              ],
+              "exactFirst": true,
+              "relevant": 9,
+              "beforeRecall": 7,
+              "afterRecall": 9
+            },
+            {
+              "query": "თანამშრომლობა",
+              "variants": [
+                "თანამშრომლობა",
+                "თანამშრომლობ"
+              ],
+              "before": [
+                "/neo-georgia-website/ka/opportunities/cb-youth/",
+                "/neo-georgia-website/ka/opportunities/erasmus-mundus/",
+                "/neo-georgia-website/ka/opportunities/",
+                "/neo-georgia-website/ka/news/neo-dissemination-event-2025/",
+                "/neo-georgia-website/ka/news/"
+              ],
+              "after": [
+                "/neo-georgia-website/ka/opportunities/cb-youth/",
+                "/neo-georgia-website/ka/opportunities/erasmus-mundus/",
+                "/neo-georgia-website/ka/opportunities/",
+                "/neo-georgia-website/ka/news/neo-dissemination-event-2025/",
+                "/neo-georgia-website/ka/news/",
+                "/neo-georgia-website/ka/news/announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia/",
+                "/neo-georgia-website/ka/news/eve-statistics/"
+              ],
+              "exactFirst": true,
+              "relevant": 7,
+              "beforeRecall": 5,
+              "afterRecall": 7
+            },
+            {
+              "query": "თანამშრომლობის",
+              "variants": [
+                "თანამშრომლობის",
+                "თანამშრომლობ"
+              ],
+              "before": [
+                "/neo-georgia-website/ka/news/neo-dissemination-event-2025/",
+                "/neo-georgia-website/ka/news/eve-statistics/",
+                "/neo-georgia-website/ka/news/"
+              ],
+              "after": [
+                "/neo-georgia-website/ka/news/neo-dissemination-event-2025/",
+                "/neo-georgia-website/ka/news/eve-statistics/",
+                "/neo-georgia-website/ka/news/",
+                "/neo-georgia-website/ka/news/announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia/",
+                "/neo-georgia-website/ka/opportunities/cb-youth/",
+                "/neo-georgia-website/ka/opportunities/erasmus-mundus/",
+                "/neo-georgia-website/ka/opportunities/"
+              ],
+              "exactFirst": true,
+              "relevant": 7,
+              "beforeRecall": 3,
+              "afterRecall": 7
+            },
+            {
+              "query": "ერასმუსის",
+              "variants": [
+                "ერასმუსის",
+                "ერასმუს"
+              ],
+              "before": [
+                "/neo-georgia-website/ka/news/europe-day-in-kutaisi/",
+                "/neo-georgia-website/ka/news/"
+              ],
+              "after": [
+                "/neo-georgia-website/ka/news/europe-day-in-kutaisi/",
+                "/neo-georgia-website/ka/news/",
+                "/neo-georgia-website/ka/news/neo-dissemination-event-2025/"
+              ],
+              "exactFirst": true,
+              "relevant": 3,
+              "beforeRecall": 2,
+              "afterRecall": 3
+            }
+          ]
+        },
+        "en": {
+          "initialSearchBytes": 3727,
+          "firstQuerySearchBytes": 197683,
+          "requests": [
+            "/neo-georgia-website/en/search/",
+            "/neo-georgia-website/assets/css/site.css",
+            "/neo-georgia-website/assets/js/search.js",
+            "/neo-georgia-website/assets/js/georgian-search.js",
+            "/neo-georgia-website/assets/fonts/noto-latin-700.woff2",
+            "/neo-georgia-website/assets/fonts/noto-latin-400.woff2",
+            "/neo-georgia-website/assets/fonts/noto-georgian-700.woff2",
+            "/neo-georgia-website/assets/eu/funded-en.png",
+            "/neo-georgia-website/pagefind/en/pagefind.js",
+            "/neo-georgia-website/pagefind/en/pagefind-worker.js",
+            "/neo-georgia-website/pagefind/en/pagefind-entry.json",
+            "/neo-georgia-website/pagefind/en/pagefind.en_7377314b16.pf_meta",
+            "/neo-georgia-website/pagefind/en/wasm.en.pagefind",
+            "/neo-georgia-website/pagefind/en/index/en_6dbb3f2.pf_index",
+            "/neo-georgia-website/pagefind/en/fragment/en_456b80d.pf_fragment",
+            "/neo-georgia-website/pagefind/en/fragment/en_e124234.pf_fragment",
+            "/neo-georgia-website/pagefind/en/fragment/en_797c341.pf_fragment",
+            "/neo-georgia-website/pagefind/en/fragment/en_252ea21.pf_fragment",
+            "/neo-georgia-website/pagefind/en/fragment/en_a2b4c11.pf_fragment",
+            "/neo-georgia-website/pagefind/en/fragment/en_c6c3dce.pf_fragment",
+            "/neo-georgia-website/pagefind/en/fragment/en_55eb374.pf_fragment",
+            "/neo-georgia-website/pagefind/en/fragment/en_b9cdebf.pf_fragment",
+            "/neo-georgia-website/pagefind/en/fragment/en_8db487d.pf_fragment",
+            "/neo-georgia-website/pagefind/en/fragment/en_d9d4a22.pf_fragment",
+            "/neo-georgia-website/pagefind/en/fragment/en_781f55e.pf_fragment",
+            "/neo-georgia-website/pagefind/en/fragment/en_72ff8a8.pf_fragment",
+            "/neo-georgia-website/pagefind/en/fragment/en_49e6ce1.pf_fragment",
+            "/neo-georgia-website/pagefind/en/fragment/en_5a8ada5.pf_fragment"
+          ],
+          "queries": [
+            {
+              "query": "mobility",
+              "variants": [
+                "mobility"
+              ],
+              "before": [
+                "/neo-georgia-website/en/opportunities/icm/",
+                "/neo-georgia-website/en/opportunities/youth-mobility/",
+                "/neo-georgia-website/en/resources/faq/",
+                "/neo-georgia-website/en/opportunities/",
+                "/neo-georgia-website/en/news/neo-dissemination-event-2025/",
+                "/neo-georgia-website/en/news/announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia/",
+                "/neo-georgia-website/en/news/",
+                "/neo-georgia-website/en/news/eve-statistics/",
+                "/neo-georgia-website/en/"
+              ],
+              "after": [
+                "/neo-georgia-website/en/opportunities/icm/",
+                "/neo-georgia-website/en/opportunities/youth-mobility/",
+                "/neo-georgia-website/en/resources/faq/",
+                "/neo-georgia-website/en/opportunities/",
+                "/neo-georgia-website/en/news/neo-dissemination-event-2025/",
+                "/neo-georgia-website/en/news/announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia/",
+                "/neo-georgia-website/en/news/",
+                "/neo-georgia-website/en/news/eve-statistics/",
+                "/neo-georgia-website/en/"
+              ],
+              "exactFirst": true,
+              "relevant": 0,
+              "beforeRecall": 0,
+              "afterRecall": 0
+            },
+            {
+              "query": "cooperation",
+              "variants": [
+                "cooperation"
+              ],
+              "before": [
+                "/neo-georgia-website/en/news/neo-dissemination-event-2025/",
+                "/neo-georgia-website/en/news/announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia/",
+                "/neo-georgia-website/en/news/",
+                "/neo-georgia-website/en/opportunities/cb-youth/",
+                "/neo-georgia-website/en/opportunities/"
+              ],
+              "after": [
+                "/neo-georgia-website/en/news/neo-dissemination-event-2025/",
+                "/neo-georgia-website/en/news/announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia/",
+                "/neo-georgia-website/en/news/",
+                "/neo-georgia-website/en/opportunities/cb-youth/",
+                "/neo-georgia-website/en/opportunities/"
+              ],
+              "exactFirst": true,
+              "relevant": 0,
+              "beforeRecall": 0,
+              "afterRecall": 0
+            },
+            {
+              "query": "Erasmus",
+              "variants": [
+                "Erasmus"
+              ],
+              "before": [
+                "/neo-georgia-website/en/news/announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia/",
+                "/neo-georgia-website/en/news/neo-dissemination-event-2025/",
+                "/neo-georgia-website/en/news/eve-statistics/",
+                "/neo-georgia-website/en/opportunities/erasmus-mundus/",
+                "/neo-georgia-website/en/",
+                "/neo-georgia-website/en/news/",
+                "/neo-georgia-website/en/news/europe-day-in-kutaisi/",
+                "/neo-georgia-website/en/opportunities/",
+                "/neo-georgia-website/en/calls/",
+                "/neo-georgia-website/en/news/information-about-capacity-building-project-proposals/"
+              ],
+              "after": [
+                "/neo-georgia-website/en/news/announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia/",
+                "/neo-georgia-website/en/news/neo-dissemination-event-2025/",
+                "/neo-georgia-website/en/news/eve-statistics/",
+                "/neo-georgia-website/en/opportunities/erasmus-mundus/",
+                "/neo-georgia-website/en/",
+                "/neo-georgia-website/en/news/",
+                "/neo-georgia-website/en/news/europe-day-in-kutaisi/",
+                "/neo-georgia-website/en/opportunities/",
+                "/neo-georgia-website/en/calls/",
+                "/neo-georgia-website/en/news/information-about-capacity-building-project-proposals/"
+              ],
+              "exactFirst": true,
+              "relevant": 0,
+              "beforeRecall": 0,
+              "afterRecall": 0
+            },
+            {
+              "query": "მობილობა",
+              "variants": [
+                "მობილობა"
+              ],
+              "before": [],
+              "after": [],
+              "exactFirst": true,
+              "relevant": 0,
+              "beforeRecall": 0,
+              "afterRecall": 0
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
