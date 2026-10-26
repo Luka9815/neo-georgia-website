@@ -221,3 +221,7 @@ Place Publications and FAQ under Resources, Team and Contact under About, and HE
 
 ## 2026-10-26: Supporting records and public contact placeholders
 Extend build validation to publication, FAQ and person records, retaining existing shared-fact/translated-text layout. Publication files are local /assets/publications/ PDFs (or sample text), types match SITE-PLAN, FAQ topics have translated labels and Action links, and people have neo/here groups and translated roles. Fictional names follow national romanisation including ejective apostrophes. Contact address/hours/email are translated [SAMPLE] strings; use reserved example.org, no real contacts, photos, forms, maps or remote assets. Supporting records remain JSON-edited pending an approved CMS expansion.
+
+
+## 2026-10-26: Pagefind held after Georgian inflection evaluation
+Do not ship Pagefind or a search UI yet. The 1.5.2 experiment isolates languages and works with the project prefix, but მობილობა misses clarification/EVE News and თანამშრომლობის misses relevant Action pages. See SEARCH.md and the measured query table. Keep the exact development dependency and manual temporary build-time evaluator for reproducibility; normal builds publish no search assets. Recommend reviewed Georgian normalisation/word-family expansion or another local engine, with native-speaker acceptance queries before implementing template 14 and its keyboard/no-JavaScript flow. This resolves the first-candidate test, not the eventual search-engine choice.
