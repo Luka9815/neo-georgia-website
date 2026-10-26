@@ -7,21 +7,28 @@
   "audience": [
     "organisations"
   ],
+  "programmeYear": 2026,
+  "comment": "Programme Guide 2026, Version 1 (12/11/2025), checked 2026-10-26. https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/programme-guide-2026_en.pdf . Part A p.34, Region 2 and footnote 46 (Georgia and the exclusion of Georgian authorities); Part B pp.376-379, objectives and eligibility/Who can apply criteria. Pp.377-379 permit single HEI applicants from associated and non-associated countries, except the listed excluded countries. Other strands have separate eligibility tables (e.g. pp.393, 399, 403-404, 408); no eligibility for those strands is asserted here. Official action page read: https://erasmus-plus.ec.europa.eu/programme-guide/part-b/jean-monnet-actions/higher-education-projects.",
   "officialLinks": [
-    "https://erasmus-plus.ec.europa.eu/programme-guide/erasmusplus-programme-guide"
+    {
+      "labelKey": "programmeGuide2026",
+      "url": "https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/programme-guide-2026_en.pdf"
+    },
+    {
+      "labelKey": "officialActionPage",
+      "url": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/jean-monnet-actions/higher-education-projects"
+    }
   ],
   "en": {
-    "title": "[SAMPLE] Jean Monnet",
-    "body": "[SAMPLE] Illustrative content only.",
-    "summary": "[SAMPLE] Illustrative content only.",
-    "who": "[SAMPLE] Eligibility awaits verification.",
-    "how": "[SAMPLE] Application guidance awaits verification."
+    "title": "[DRAFT] Jean Monnet Actions",
+    "summary": "[DRAFT] Teaching and research about the European Union, including Modules, Chairs and Centres of Excellence in higher education.",
+    "who": "[DRAFT] Eligible Georgian HEIs may apply directly as single applicants for Modules, Chairs and Centres of Excellence; these are not consortium-partner applications. This overview concerns those higher education teaching/research actions. Do not assume the same country eligibility for Teacher Training, Learning EU or policy-debate/network calls; consult their separate 2026 criteria.",
+    "how": "[DRAFT] Choose the precise Jean Monnet action. For Modules, Chairs or Centres of Excellence, the eligible HEI prepares its own application to the corresponding EACEA call."
   },
   "ka": {
-    "title": "[SAMPLE] ჟან მონე",
-    "body": "[SAMPLE] მხოლოდ საილუსტრაციო მასალა.",
-    "summary": "[SAMPLE] მხოლოდ საილუსტრაციო მასალა.",
-    "who": "[SAMPLE] მონაწილეობის პირობები გადასამოწმებელია.",
-    "how": "[SAMPLE] განაცხადის ინსტრუქცია გადასამოწმებელია."
+    "title": "[DRAFT] ჟან მონეს ქმედებები",
+    "summary": "[DRAFT] ევროკავშირის შესახებ სწავლება და კვლევა, მათ შორის უმაღლეს განათლებაში მოდულები, კათედრები და საუკეთესო გამოცდილების ცენტრები.",
+    "who": "[DRAFT] საქართველოს უფლებამოსილ უმაღლეს სასწავლებლებს შეუძლიათ პირდაპირ, ერთპიროვნულ განმცხადებლად განაცხადის შეტანა მოდულებზე, კათედრებსა და საუკეთესო გამოცდილების ცენტრებზე; ეს არ არის კონსორციუმში პარტნიორული განაცხადი. ეს მიმოხილვა ეხება უმაღლესი განათლების სწავლებისა და კვლევის ამ ქმედებებს. მასწავლებელთა მომზადების, ევროკავშირის შესახებ სწავლებისა და პოლიტიკის დებატების/ქსელების კონკურსებისთვის იგივე ქვეყნის უფლებამოსილება არ ივარაუდოთ; შეამოწმეთ მათი ცალკე 2026 წლის პირობები.",
+    "how": "[DRAFT] აირჩიეთ ჟან მონეს ზუსტი ქმედება. მოდულის, კათედრის ან საუკეთესო გამოცდილების ცენტრისთვის უფლებამოსილი უმაღლესი სასწავლებელი ამზადებს საკუთარ განაცხადს EACEA-ს შესაბამის კონკურსზე."
   }
 }

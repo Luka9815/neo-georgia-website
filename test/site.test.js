@@ -31,6 +31,8 @@ test('all rendered pages have language, metadata, seven menu links, one h1 and E
     files('_site').filter((f) => f.endsWith('.html')).length,
     getViews().length
   );
+  assert.equal(existsSync('src/assets/eu/funded-ka.png'), false);
+  assert.equal(existsSync('_site/assets/eu/funded-ka.png'), false);
   for (const view of getViews()) {
     const $ = load(read(output(view.path)));
     assert.equal($('html').attr('lang'), view.lang, view.path);
@@ -44,9 +46,21 @@ test('all rendered pages have language, metadata, seven menu links, one h1 and E
       $('.eu-footer').text(),
       view.lang === 'en'
         ? /Neither the European Union nor EACEA can be held responsible for them\./
-        : /TODO: Georgian disclaimer, to be approved by NEO/
+        : /მათზე პასუხისმგებლობა არ ეკისრება არც ევროკავშირს და არც EACEA-ს\./
     );
-    assert.ok($('.emblem-placeholder').text().includes('[SAMPLE]'));
+    const strings = JSON.parse(read(`src/_data/${view.lang}.json`));
+    assert.equal(strings.emblemPath, '/assets/eu/funded-en.png');
+    assert.equal($('.eu-emblem').attr('src'), publicPath('/assets/eu/funded-en.png'));
+    const emblemAlt =
+      view.lang === 'ka'
+        ? 'დაფინანსებულია ევროკავშირის მიერ'
+        : 'Funded by the European Union';
+    assert.equal(strings.emblemAlt, emblemAlt);
+    assert.equal($('.eu-emblem').attr('alt'), emblemAlt);
+    assert.equal($('.eu-emblem').attr('width'), '4125');
+    assert.equal($('.eu-emblem').attr('height'), '919');
+    assert.ok(existsSync(`_site${strings.emblemPath}`));
+    assert.equal($('.emblem-placeholder').length, 0);
     assert.equal($('header a[hreflang]').attr('href'), publicPath(view.alternate));
     if (view.translated === false) assert.equal($('link[rel=alternate]').length, 1);
     else assert.equal($('link[rel=alternate]').length, 2);
@@ -117,7 +131,7 @@ test('content relationships, non-empty text, and core bilingual parity', () => {
           assert.ok(item[lang]);
         if (item[lang]) {
           assert.ok(item[lang].title.trim());
-          assert.ok(item[lang].body.trim());
+          assert.ok((type === 'action' ? item[lang].summary : item[lang].body).trim());
         }
       }
       for (const slug of item.actions || (item.action ? [item.action] : []))
@@ -303,5 +317,51 @@ test('home renders upcoming/open deadlines instead of rejecting every status', (
       .map((_, element) => $(element).attr('datetime'))
       .get();
     assert.deepEqual(dates, expected);
+  }
+});
+
+test('English-prevails policy is identical in each footer and its language page', () => {
+  for (const lang of ['ka', 'en']) {
+    const strings = JSON.parse(read(`src/_data/${lang}.json`));
+    const page = load(read(`_site/${lang}/language/index.html`));
+    assert.ok(page('main').text().includes(strings.prevailingStatement));
+    assert.equal(page('footer .language-policy').text(), strings.prevailingStatement);
+    assert.equal(page('h1').text(), strings.language);
+  }
+});
+
+test('Georgian disclaimer exactly preserves the supplied project wording', () => {
+  const expected =
+    'დაფინანსებულია ევროკავშირის მიერ. გამოთქმული შეხედულებები და მოსაზრებები მხოლოდ ავტორ(ებ)ს ეკუთვნის და შესაძლოა არ ასახავდეს ევროკავშირის ან განათლებისა და კულტურის ევროპული აღმასრულებელი სააგენტოს (EACEA) შეხედულებებს. მათზე პასუხისმგებლობა არ ეკისრება არც ევროკავშირს და არც EACEA-ს.';
+  const strings = JSON.parse(read('src/_data/ka.json'));
+  assert.equal(strings.disclaimer, expected);
+  for (const view of getViews().filter((view) => view.lang === 'ka')) {
+    const $ = load(read(output(view.path)));
+    assert.equal($('.funding-disclaimer').text(), expected);
+    assert.notEqual($('.funding-disclaimer').attr('lang'), 'en');
+  }
+});
+
+test('empty logoPath preserves the text wordmark and bilingual logo alternatives', () => {
+  assert.equal(getSite().logoPath, '');
+  for (const lang of ['ka', 'en']) {
+    const $ = load(read(`_site/${lang}/index.html`));
+    assert.equal($('header .brand-image').length, 0);
+    assert.ok($('header .brand-name').text().trim());
+    assert.ok(JSON.parse(read(`src/_data/${lang}.json`)).logoAlt.trim());
+  }
+});
+
+test('card section labels appear on the mixed home, not individual section lists', () => {
+  for (const lang of ['ka', 'en']) {
+    const home = load(read(`_site/${lang}/index.html`));
+    for (const type of ['call', 'event', 'news']) {
+      const count = home(`.cards-${type} > .card:not(.empty-state)`).length;
+      assert.equal(home(`.cards-${type} .card-section-label`).length, count);
+    }
+    for (const section of ['calls', 'events', 'news']) {
+      const page = load(read(`_site/${lang}/${section}/index.html`));
+      assert.equal(page('main .card-section-label').length, 0);
+    }
   }
 });

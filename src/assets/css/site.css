@@ -34,6 +34,7 @@
 :root {
   --blue: #003399;
   --blue-dark: #00256f;
+  --success: #14532d;
   --accent: #854600;
   --accent-soft: #fff1d2;
   --ink: #172333;
@@ -278,7 +279,6 @@ section {
   color: var(--muted);
   background: var(--surface);
 }
-.status-open,
 .source-official {
   color: var(--blue);
   background: var(--surface);
@@ -346,10 +346,10 @@ dd {
   background: var(--paper);
   font-size: 0.875rem;
 }
-.emblem-placeholder {
-  border: 2px dashed var(--line);
-  padding: 1rem;
-  color: var(--muted);
+.eu-emblem {
+  display: block;
+  width: min(100%, 30rem);
+  height: auto;
   align-self: start;
 }
 .eu-funding p:last-child {
@@ -546,5 +546,26 @@ dd {
   }
   .home-hero .entry {
     align-items: flex-start;
+  }
+}
+
+/* The approved future logo keeps its own aspect ratio inside a reserved box. */
+.brand-image {
+  display: block;
+  width: min(15rem, 100%);
+  height: 5rem;
+  object-fit: contain;
+  object-position: left center;
+}
+
+/* The open state is the primary action signal; its text stays explicit. */
+.status-open {
+  color: var(--paper);
+  background: var(--success);
+  border: 1px solid var(--success);
+}
+@media (max-width: 599px) {
+  .hero-guide {
+    display: none;
   }
 }

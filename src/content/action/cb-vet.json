@@ -1,0 +1,34 @@
+{
+  "slug": "cb-vet",
+  "keyAction": "KA2",
+  "sectors": [
+    "vet"
+  ],
+  "audience": [
+    "organisations"
+  ],
+  "programmeYear": 2026,
+  "comment": "Programme Guide 2026, Version 1 (12/11/2025), checked 2026-10-26. https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/programme-guide-2026_en.pdf . Part A p.34, Region 2 and footnote 46 (Georgia and the exclusion of Georgian authorities); Part B pp.332, 337-338, objectives and eligibility/Who can apply criteria. P.337 includes Region 2 (except Belarus) but expressly says non-associated-country organisations cannot coordinate; VET/labour-market activity required. Official action page read: https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-vet.",
+  "officialLinks": [
+    {
+      "labelKey": "programmeGuide2026",
+      "url": "https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/programme-guide-2026_en.pdf"
+    },
+    {
+      "labelKey": "officialActionPage",
+      "url": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-vet"
+    }
+  ],
+  "en": {
+    "title": "[DRAFT] Capacity Building in VET",
+    "summary": "[DRAFT] Partnerships that strengthen vocational education providers, their quality and their connections to the labour market.",
+    "who": "[DRAFT] Eligible Georgian legal entities active in VET or the labour market can join as partners. They cannot apply as consortium coordinator: organisations in non-associated countries are explicitly excluded from coordination. The coordinator must be an eligible VET organisation in an EU or Programme-associated country.",
+    "how": "[DRAFT] Agree the VET partnership and regional consortium requirements with an eligible EU or associated-country coordinator, which submits the application through the official call."
+  },
+  "ka": {
+    "title": "[DRAFT] პროფესიული განათლების შესაძლებლობების განვითარება",
+    "summary": "[DRAFT] პარტნიორობა პროფესიული განათლების მიმწოდებლების, ხარისხისა და შრომის ბაზართან კავშირის გასაძლიერებლად.",
+    "who": "[DRAFT] პროფესიული განათლების ან შრომის ბაზრის სფეროში მოქმედ საქართველოს უფლებამოსილ იურიდიულ პირებს შეუძლიათ პარტნიორად მონაწილეობა. მათ არ შეუძლიათ კონსორციუმის კოორდინატორად განაცხადის შეტანა: არაასოცირებული ქვეყნების ორგანიზაციებს კოორდინატორობა პირდაპირ ეკრძალებათ. კოორდინატორი უნდა იყოს ევროკავშირის ან პროგრამასთან ასოცირებული ქვეყნის უფლებამოსილი პროფესიული განათლების ორგანიზაცია.",
+    "how": "[DRAFT] პარტნიორობა და რეგიონის მოთხოვნები შეათანხმეთ ევროკავშირის ან ასოცირებული ქვეყნის უფლებამოსილ კოორდინატორთან, რომელიც განაცხადს ოფიციალურ კონკურსზე წარადგენს."
+  }
+}

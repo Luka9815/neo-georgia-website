@@ -1,0 +1,34 @@
+{
+  "slug": "cb-youth",
+  "keyAction": "KA2",
+  "sectors": [
+    "youth"
+  ],
+  "audience": [
+    "organisations"
+  ],
+  "programmeYear": 2026,
+  "comment": "Programme Guide 2026, Version 1 (12/11/2025), checked 2026-10-26. https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/programme-guide-2026_en.pdf . Part A p.34, Region 2 and footnote 46 (Georgia and the exclusion of Georgian authorities); Part B pp.343, 347, objectives and eligibility/Who can apply criteria. P.347 permits youth NGOs as coordinators and Region 2 entities; fn.432 excludes Belarus and bars Armenia/Azerbaijan coordination, not Georgia. P.34 fn.46 separately excludes Georgian authorities. Official action page read: https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-youth.",
+  "officialLinks": [
+    {
+      "labelKey": "programmeGuide2026",
+      "url": "https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/programme-guide-2026_en.pdf"
+    },
+    {
+      "labelKey": "officialActionPage",
+      "url": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-youth"
+    }
+  ],
+  "en": {
+    "title": "[DRAFT] Capacity Building in Youth",
+    "summary": "[DRAFT] International cooperation to strengthen youth organisations, youth work and non-formal learning.",
+    "who": "[DRAFT] Eligible Georgian NGOs working in youth can apply directly as consortium coordinator or join as partners. Other eligible bodies may participate but not coordinate. Georgia is in eligible Region 2; the specific coordinator exclusions for Armenia, Azerbaijan and Sub-Saharan Africa must not be incorrectly applied to Georgia. The separate exclusion of Georgian authorities still applies.",
+    "how": "[DRAFT] Check the applicant type and required regional consortium, then use the official EACEA call. A direct application does not remove the consortium requirements."
+  },
+  "ka": {
+    "title": "[DRAFT] ახალგაზრდობის სფეროს შესაძლებლობების განვითარება",
+    "summary": "[DRAFT] საერთაშორისო თანამშრომლობა ახალგაზრდული ორგანიზაციების, ახალგაზრდული მუშაობისა და არაფორმალური სწავლების გასაძლიერებლად.",
+    "who": "[DRAFT] ახალგაზრდობის სფეროში მომუშავე საქართველოს უფლებამოსილ არასამთავრობო ორგანიზაციებს შეუძლიათ პირდაპირ განაცხადის შეტანა კოორდინატორად ან პარტნიორად მონაწილეობა. სხვა უფლებამოსილი ორგანიზაციები შეიძლება მონაწილეობდნენ, მაგრამ არა კოორდინატორებად. საქართველო მეორე უფლებამოსილ რეგიონშია; სომხეთის, აზერბაიჯანისა და სუბსაჰარული აფრიკისთვის განსაზღვრული კოორდინატორობის შეზღუდვა საქართველოზე შეცდომით არ უნდა გავრცელდეს. საქართველოს ხელისუფლების ორგანოების ცალკე გამორიცხვის წესი კვლავ მოქმედებს.",
+    "how": "[DRAFT] შეამოწმეთ განმცხადებლის ტიპი და მოთხოვნილი რეგიონული კონსორციუმი, შემდეგ გამოიყენეთ EACEA-ს ოფიციალური კონკურსი. პირდაპირი განაცხადი არ აუქმებს კონსორციუმის მოთხოვნებს."
+  }
+}

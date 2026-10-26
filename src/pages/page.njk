@@ -11,4 +11,5 @@ eleventyExcludeFromCollections: true
 {% block pageContent %}
 {% set item = catalog[view.kind] | localise(view.lang) | findSlug(view.slug) %}
 {{ item.body | markdown | safe }}
+{% if item.policyKey %}<p>{{ t[item.policyKey] }}</p>{% endif %}
 {% endblock %}

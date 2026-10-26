@@ -1,0 +1,38 @@
+{
+  "slug": "youth-mobility",
+  "keyAction": "KA1",
+  "sectors": [
+    "youth"
+  ],
+  "audience": [
+    "organisations"
+  ],
+  "programmeYear": 2026,
+  "comment": "Programme Guide 2026, Version 1 (12/11/2025), checked 2026-10-26. https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/programme-guide-2026_en.pdf . Part A p.34, Region 2 and footnote 46 (Georgia and the exclusion of Georgian authorities); Part B pp.152, 156-158, 165, 170-171, objectives and eligibility/Who can apply criteria. P.156 restricts Youth Exchange applicants to EU/associated countries; p.157 allows neighbouring Regions 1-4 partners and informal groups. P.170 has the same applicant-country restriction for youth-worker mobility and eligible Regions 1-4 partners. Official action page read: https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/youth-exchanges. Youth-worker page also read: https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/youth-workers.",
+  "officialLinks": [
+    {
+      "labelKey": "programmeGuide2026",
+      "url": "https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/programme-guide-2026_en.pdf"
+    },
+    {
+      "labelKey": "officialActionPage",
+      "url": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/youth-exchanges"
+    },
+    {
+      "labelKey": "youthWorkerActionPage",
+      "url": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/youth-workers"
+    }
+  ],
+  "en": {
+    "title": "[DRAFT] Youth mobility",
+    "summary": "[DRAFT] Youth Exchanges and youth-worker learning mobility support international non-formal learning and professional development.",
+    "who": "[DRAFT] Eligible Georgian youth organisations can participate as sending/receiving partners in these actions, not as direct project applicants. Applicants must be established in an EU or Programme-associated country. Youth Exchanges also allow eligible informal groups as partners; the specific activity and participant rules differ from youth-worker mobility.",
+    "how": "[DRAFT] Work with an eligible EU or associated-country applicant, which applies to its National Agency. Check the rules for the chosen Youth Exchange or youth-worker activity."
+  },
+  "ka": {
+    "title": "[DRAFT] ახალგაზრდული მობილობა",
+    "summary": "[DRAFT] ახალგაზრდული გაცვლები და ახალგაზრდულ მუშაკთა მობილობა ხელს უწყობს საერთაშორისო არაფორმალურ სწავლასა და პროფესიულ განვითარებას.",
+    "who": "[DRAFT] საქართველოს უფლებამოსილ ახალგაზრდულ ორგანიზაციებს შეუძლიათ მონაწილეობა გამგზავნ ან მიმღებ პარტნიორებად და არა პროექტის პირდაპირ განმცხადებლებად. განმცხადებელი უნდა იყოს ევროკავშირის ან პროგრამასთან ასოცირებულ ქვეყანაში. ახალგაზრდულ გაცვლებში პარტნიორებად უფლებამოსილი არაფორმალური ჯგუფებიც დაიშვებიან; აქტივობისა და მონაწილეთა წესები განსხვავდება ახალგაზრდულ მუშაკთა მობილობისგან.",
+    "how": "[DRAFT] იმუშავეთ ევროკავშირის ან ასოცირებული ქვეყნის უფლებამოსილ განმცხადებელთან, რომელიც თავის ეროვნულ სააგენტოს მიმართავს. გადაამოწმეთ შერჩეული ახალგაზრდული გაცვლის ან ახალგაზრდულ მუშაკთა აქტივობის პირობები."
+  }
+}

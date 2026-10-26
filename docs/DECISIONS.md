@@ -41,18 +41,8 @@ Codex does the bulk of the coding. Claude reviews changes against AGENTS.md, che
 The repository is public. Acceptable for a public website and free tiers of hosting and CMS; consequence: no secrets, tokens or personal emails are ever committed.
 
 ## Open (not yet decided)
-- Hosting: Netlify or Cloudflare Pages (test both in the first build session).
-- Staff editor: Decap CMS or Pages CMS (test with hosting; check whether editors need GitHub accounts).
-- Bilingual file layout for content (must work with the chosen CMS).
 - Search: Pagefind or alternative, after testing with Georgian.
 - Analytics: cookieless option to choose.
-- Scheduled daily rebuild method (so call and event status stays current).
-- Domain: keep erasmus.org.ge (needs written transfer from current host before January 2027) or new domain. Decision by Nino; most urgent.
-- Prevailing language in case of discrepancy (current site says English prevails). Decision by Nino.
-- Actions that get their own page, confirmed against the current Programme Guide. Decision by Nino.
-- Font: FiraGO or Noto Sans Georgian plus Noto Sans.
-- Georgian disclaimer text (no official EACEA version).
-
 
 ## 2026-10-26: Session 1 content layout
 Use one JSON file per item in `src/content/<type>/`, with shared facts at the top level and nested `ka` and `en` text objects. Bodies are Markdown strings rendered by markdown-it with raw HTML disabled. Both Decap and Pages CMS support JSON collections and nested object fields, so neither requires a translation plugin. See docs/CONTENT.md; authenticated editor testing remains open. This resolves the earlier open bilingual-layout item.
@@ -128,3 +118,38 @@ Use a native details/summary mobile menu and a desktop menu rendered from the sa
 
 ## 2026-10-26: Institutional six-block home layout
 Keep the approved content order and sample data. Move the home h1 into the blue purpose/audience hero, give each list a section-index link, feature one story on a quiet surface and label the figures as illustrative. Use a one-column mobile reading order and a desktop hero split; let Georgian headings and CTAs wrap. Use an explicit withoutStatus filter for the next-deadline list: Nunjucks rejectattr only tests attribute truthiness and the earlier equalto call hid all deadlines. Add a regression check for visible open/upcoming calls. Use only local fonts/CSS and native navigation. Save before/after screenshots of both languages at 360/1280 px, with fonts settled and no page JavaScript required for the final views.
+
+
+## 2026-10-26: English prevails between language versions
+Resolves the earlier open prevailing-language item. In a discrepancy between Georgian and English versions, English prevails. Publish the statement in both languages in the footer and /language/ page. Keep the wording in each language's translation file and reference it from the policy page so the policy cannot drift between locations. Georgian remains the primary interface language under "Languages".
+
+## 2026-10-26: Last twelve months of News in the initial migration
+Narrows the News migration scope in "Rebuild from scratch, not migrate the WordPress site" and the site plan migration outline. Migrate only old-site News published in the twelve months preceding the agreed migration/export date. Record that date and the exact import window when the export arrives. This is an initial import scope, not automatic deletion of future archived news; other content types retain their separate migration requirements.
+
+## 2026-10-26: Domain decision after the site is built
+Supersedes the earlier open domain item's urgent-decision timing. Defer the final domain decision until the site is built; taking over erasmus.org.ge is the likely direction, not a committed domain configuration. Keep the temporary GitHub Pages URL meanwhile. Institutional ownership and any written transfer agreement remain required under "Build-phase GitHub account and institutional domain".
+
+## 2026-10-26: Project Georgian disclaimer proofread by Luka
+Supersedes the Georgian TODO/approval requirement in "Sample preview safeguards and EU placeholder". The project supplies the Georgian translation and Luka proofreads it. Use the exact text supplied in this session; do not describe it as an official EACEA Georgian translation. Original official emblem files and grant-agreement funding wording still need their separate checks.
+
+## 2026-10-26: Nine requested Action topics, source review pending
+Resolves the earlier open choice of which Actions to feature: International Credit Mobility, Erasmus Mundus (Joint Masters and Design Measures together), Capacity Building in Higher Education, Jean Monnet Actions, Capacity Building in VET, Capacity Building in Youth, Youth mobility, Virtual Exchanges and Capacity Building in Sport. Eligibility still requires the official 2026 Programme Guide and per-action source comments before replacing samples. The selection itself does not establish Georgian applicant or partner eligibility.
+
+
+## 2026-10-26: Optional approved header logo path
+Extend "Georgian-first shared navigation and components" and the editable-field limit in "CMS settings preserve the launch flag". Keep the current wordmark while logoPath is empty. Expose an optional local /assets/ path in Settings for a future approved image, with language-specific alternative text and aspect-ratio-preserving layout. Validate that a supplied asset exists and let PATH_PREFIX apply at render time. siteLaunched stays code-only. Do not download or reuse the old site's NEO logo.
+
+
+## 2026-10-26: Compact mobile hero and clearer card hierarchy
+Refines "Institutional six-block home layout" by hiding the supplementary next-step panel below 600 px; primary audience links and menu remain available. Refines "Blue, warm accent and neutral contrast tokens" with a semantic green open-state badge, white text at 9.11:1 contrast, keeping the explicit status word. Other status colours remain quieter. Show card section names only when the caller requests mixed-list context (the home); keep status and source labels visible on all pages.
+
+
+## 2026-10-26: Original official bilingual EU artwork
+Supersedes the emblem-placeholder part of "Sample preview safeguards and EU placeholder" and "Georgian-first shared navigation and components". Use unmodified original PNGs from the official EACEA-linked Commission download centre. English uses its Funded by archive; the EACEA non-EU KA archive supplies artwork visibly labelled “ევროკავშირი საქართველოსთვის”. Retain those original bytes and accurate alt text, with the funding statement/disclaimer alongside. Record archive/member URLs, download date and checksums in assets/eu/README.md. Confirm funding wording and supplied KA artwork against the signed grant agreement before launch.
+
+## 2026-10-26: Source-checked 2026 Action drafts and sector groups
+Supersedes "Nine requested Action topics, source review pending". Replace the three samples with nine bilingual [DRAFT] records sourced to the official Programme Guide 2026 v1, with exact page/eligibility citations in comment fields and verified official links. Retain existing slugs for relationships. Group by four sectors; Virtual Exchanges appears in higher education and youth without duplicating its record. Store the shared Georgia authority exclusion once and render it on every Action. Distinguish direct applicants, partners and the two Erasmus Mundus strands; flag the CBHE Strand 3 authority requirement for EACEA review. Cards reuse summary, avoiding a duplicate body fact. See ACTION-REVIEW.md for the evidence and review scope.
+
+
+## 2026-10-26: English beneficiary emblem on both languages until Georgian supplied
+Supersedes "Original official bilingual EU artwork". The KA archive's “ევროკავშირი საქართველოსთვის” is EU Delegation country branding, not the required beneficiary funding emblem; remove it. Use the unmodified official English Funded by the European Union emblem on both language versions, with Georgian alt text “დაფინანსებულია ევროკავშირის მიერ” on /ka/. Keep the Georgian funding statement and disclaimer unchanged. Obtain the official Georgian Funded by the EU emblem file from the EU Delegation or EACEA, then replace the Georgian-page image and record its provenance.

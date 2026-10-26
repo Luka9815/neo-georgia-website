@@ -66,7 +66,7 @@ HTML კოდი არ ჩასვათ. ამ ეტაპზე სურ
 
 ## კონკურსის წლის შეცვლა
 
-„პარამეტრები (Settings)“ შეიცავს მხოლოდ მიმდინარე კონკურსის წელს. შეცვალეთ იგი მხოლოდ NEO-სთან შეთანხმებით და მიუთითეთ მთელი წელი, მაგალითად `2027`. ეს ცვლის კონკურსების მთავარ სიას; სხვა წლები არქივში რჩება. საიტის საძიებო სისტემებისთვის გახსნის პარამეტრი აქ არ ჩანს და ტექნიკური გუნდის პასუხისმგებლობაა.
+„პარამეტრები (Settings)“ შეიცავს მიმდინარე კონკურსის წელს და ლოგოს ფაილის მისამართს. ლოგოს ველი ცარიელი დატოვეთ, სანამ პროექტისთვის დამტკიცებულ ფაილს ტექნიკური კონტაქტი არ მოგაწვდით. ცარიელი ველი ტექსტურ ლოგოს ტოვებს. ძველი საიტის ლოგო არ გამოიყენოთ. შეცვალეთ იგი მხოლოდ NEO-სთან შეთანხმებით და მიუთითეთ მთელი წელი, მაგალითად `2027`. ეს ცვლის კონკურსების მთავარ სიას; სხვა წლები არქივში რჩება. საიტის საძიებო სისტემებისთვის გახსნის პარამეტრი აქ არ ჩანს და ტექნიკური გუნდის პასუხისმგებლობაა.
 
 ## როდის გამოჩნდება ცვლილება
 
@@ -80,4 +80,4 @@ HTML კოდი არ ჩასვათ. ამ ეტაპზე სურ
 
 ## English summary
 
-Sign in at app.pagescms.org with GitHub, select Luka9815/neo-georgia-website and main. News needs Georgian title/body, a publication date, a stable ASCII slug and at least one related action; English is optional but must be complete if supplied. Events require both languages, local start/end values in YYYY-MM-DDTHH:mm, a named time zone, the classification fields and venue. Registration and agenda are optional. Never type UTC offsets. Bodies stay Markdown; do not add HTML or images yet. Settings exposes only the current call year. Save starts a deployment on main; publication usually takes about two minutes. For failures contact [NEO technical contact] with the error and entry link. Remove test entries after checking them.
+Sign in at app.pagescms.org with GitHub, select Luka9815/neo-georgia-website and main. News needs Georgian title/body, a publication date, a stable ASCII slug and at least one related action; English is optional but must be complete if supplied. Events require both languages, local start/end values in YYYY-MM-DDTHH:mm, a named time zone, the classification fields and venue. Registration and agenda are optional. Never type UTC offsets. Bodies stay Markdown; do not add HTML or images yet. Settings exposes the call year and optional approved logo path; keep the logo path empty for the text wordmark. Save starts a deployment on main; publication usually takes about two minutes. For failures contact [NEO technical contact] with the error and entry link. Remove test entries after checking them.

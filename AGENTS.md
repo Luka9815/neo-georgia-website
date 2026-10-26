@@ -57,7 +57,7 @@ Commands (Node 24 LTS, pinned in `.nvmrc`; run from the repository root):
 - Dates are written out in the page language (Georgian month names on `/ka/`).
 - Georgian typography: never apply `text-transform: uppercase` or `capitalize` to Georgian text (browsers render it as Mtavruli). Design menus and buttons around the longer Georgian labels first.
 - Person names follow the Georgian national transliteration system, applied the same way everywhere.
-- Prevailing language in case of discrepancy: not yet decided (see DECISIONS). Leave a footer placeholder.
+- Prevailing language in case of discrepancy: English. The footer and /language/ page use the same statement from each language translation file (see DECISIONS).
 
 ## 5. Content model
 
@@ -99,11 +99,11 @@ docs/             HANDOVER, DECISIONS, CHANGELOG, SITE-PLAN, CONTENT
 Source: EACEA visual identity 2021-2027, "European flag emblem and multilingual disclaimer" (https://www.eacea.ec.europa.eu/about-eacea/visual-identity/visual-identity-programming-period-2021-2027/european-flag-emblem-and-multilingual-disclaimer_en) and Article 17 of the grant agreement. Re-check both before launch.
 
 - The footer of every page shows the EU emblem with the funding statement and the disclaimer.
-- Use the official emblem files only (download from the EACEA page above; the Georgian version is under non-EU languages). Do not redraw, recolour, crop or distort. Use the Georgian file on `/ka/` and the English file on `/en/`. Store the originals in `src/assets/eu/` with a note of where they came from.
+- Use the official emblem files only (download from the EACEA page above and its linked Commission download centre). Do not redraw, recolour, crop or distort. Use the official English "Funded by the European Union" beneficiary emblem on both `/ka/` and `/en/`, with Georgian alt text on `/ka/`, until an official Georgian beneficiary emblem is obtained from the EU Delegation or EACEA. Do not use the KA archive's "EU for Georgia" country branding. Replace the Georgian-page image when the correct official file is obtained. Store the originals in `src/assets/eu/` with a note of where they came from.
 - Use "Funded by the European Union" (not "Co-funded") unless the grant agreement says otherwise. Flag this for confirmation once the grant agreement is signed.
 - English disclaimer, verbatim:
   "Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them."
-- Georgian disclaimer: EACEA publishes no official Georgian text. Use a placeholder clearly marked `TODO: Georgian disclaimer, to be approved by NEO` until the NEO provides an approved translation. Never machine-translate it into production.
+- Georgian disclaimer: use the project translation supplied by Luka, proofread by Luka, recorded in the language data file. It is not an official EACEA Georgian translation. Do not replace the supplied wording with an automatic translation.
 - The emblem must be at least as prominent as other logos shown with it, and must not be linked to imply EU endorsement of third-party content.
 - Footer also contains: contact details, social links, privacy and cookie notice, accessibility statement, prevailing-language statement.
 

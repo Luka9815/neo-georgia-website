@@ -31,7 +31,7 @@ Example shape:
 
 ## Current call edition
 
-`src/_data/settings.json` defines `currentCallYear: 2026` and `siteLaunched: false`; `site.js` reads and validates them. Update this setting when NEO changes call edition, not automatically at New Year. The calls page shows the selected edition first, even if empty, followed by all other available years as archives in descending order. Action pages use the same selected edition. The home deadline block remains chronological across editions. The Pages CMS Settings entry exposes only currentCallYear. siteLaunched is not a CMS field and stays maintained in code; settings.content.merge preserves it when saving the year. The 2025 CBHE sample demonstrates archival rendering.
+`src/_data/settings.json` defines `currentCallYear: 2026` and `siteLaunched: false`; `site.js` reads and validates them. Update this setting when NEO changes call edition, not automatically at New Year. The calls page shows the selected edition first, even if empty, followed by all other available years as archives in descending order. Action pages use the same selected edition. The home deadline block remains chronological across editions. The Pages CMS Settings entry exposes currentCallYear and optional logoPath. siteLaunched is not a CMS field and stays maintained in code; settings.content.merge preserves it when saving the year. The 2025 CBHE sample demonstrates archival rendering.
 
 ## Pages CMS configuration and validation
 
@@ -47,7 +47,7 @@ Bodies use rich-text with `options.format: markdown` explicitly. Current CMS sou
 
 The future media library stores files in `src/assets/uploads` and writes `/assets/uploads` paths without a hard-coded project prefix. Eleventy's HTML base plugin adds PATH_PREFIX in generated pages. A copied-site test verifies a Markdown image path under the project prefix. The upload folder is reserved for future image support, not permission to publish unprocessed images now.
 
-The single-file Settings entry points to settings.json and exposes only currentCallYear (an integer from 2000 to 2100). `settings.content.merge: true` is necessary: the documented default rewrites schema-only keys and would remove siteLaunched. This preserves unmanaged keys in News/Events too. Repository writers can still edit files directly; CMS field visibility is not a security boundary.
+The single-file Settings entry points to settings.json and exposes currentCallYear (an integer from 2000 to 2100) and optional logoPath. `settings.content.merge: true` is necessary: the documented default rewrites schema-only keys and would remove siteLaunched. This preserves unmanaged keys in News/Events too. Repository writers can still edit files directly; CMS field visibility is not a security boundary.
 
 See the Georgian staff guide in EDITING.md and the hosted sign-in/create/delete test in HANDOVER.md. Source/configuration verification and local JSON/render tests passed; authenticated hosted editing and deployment remain Luka's test after merge.
 
@@ -66,3 +66,22 @@ Also inspected the [current CMS implementation](https://github.com/pagescms/page
 `src/_data/redirects.json` is an empty list until the WordPress export supplies old URLs. Add objects such as `{"from": "/old-cbhe/", "to": "/ka/opportunities/cbhe/"}`. Store paths relative to this site, without PATH_PREFIX. The build generates a static HTML stub at each old path with a meta refresh, canonical to the new URL and a visible link. Prefix handling is automatic.
 
 Sources must end in a slash or .html and use ASCII path segments. Duplicate paths and collisions with existing pages stop the build; targets must be existing content pages, not other redirects. Do not add query-string routes, external URLs or redirect chains. Non-ASCII WordPress URLs and other filename formats need a separate migration check before import. These stubs do not send HTTP 301 responses. Revisit hosting if true 301 redirects become essential. Netlify files have been removed and remain recoverable from git history.
+
+
+## Language policy and migration scope
+
+The language policy page uses a shared policyKey reference to the same translation string as the footer. English prevails in case of discrepancy; Georgian remains the primary interface. Initial old-site News migration is limited to the last twelve months before the agreed export/migration date, which must be recorded with the import. This does not expire archived news automatically. The final domain decision is deferred until the site is built; erasmus.org.ge is likely, while the GitHub Pages URL remains configured.
+
+
+## Header logo setting
+
+logoPath in settings.json defaults to an empty string, which keeps the text wordmark. A non-empty value must point to an existing local image under /assets/, without PATH_PREFIX. Rendering adds the prefix and uses each language's logoAlt text. The image is displayed with object-fit:contain inside a reserved 240x80 box, so its source aspect ratio is preserved. Only use a newly approved logo supplied for this project; no old-site logo has been downloaded or used. siteLaunched remains code-only and CMS merge mode preserves it.
+
+
+## Action drafts and source evidence
+
+Nine Action records use programmeYear, sectors and officialLinks (objects with url and translated labelKey). Each ka/en object contains title, summary, who and how; all four remain [DRAFT] until editorial review. Cards render summary directly, with no duplicated body. The comment field records the official 2026 Guide edition, PDF URL, supporting pages/clauses and verified action URLs. See ACTION-REVIEW.md before changing eligibility.
+
+The shared Georgia authority exclusion is in src/_data/georgiaEligibility.json and appears on every Action page. Scope eligibility to the relevant strand, especially Erasmus Mundus and Jean Monnet. Do not infer coordinator eligibility from partner eligibility. Keep icm, cbhe and jean-monnet stable for existing sample relationships. A multi-sector action remains one JSON record; Virtual Exchanges appears in both higher education and youth groups. Both .pages.yml actions select lists contain all nine slugs and must be updated whenever an Action is added or removed.
+
+The official English beneficiary emblem and its original-byte checksum, archive source and download date are documented in src/assets/eu/README.md. Both languages use this file with localised alt text and PATH_PREFIX at render time. Replace it on /ka/ only when an official Georgian Funded by the EU emblem is obtained from the EU Delegation or EACEA. Do not use EU for Georgia country branding or edit/recompress the original.

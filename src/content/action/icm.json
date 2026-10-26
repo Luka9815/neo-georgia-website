@@ -7,21 +7,28 @@
   "audience": [
     "organisations"
   ],
+  "programmeYear": 2026,
+  "comment": "Programme Guide 2026, Version 1 (12/11/2025), checked 2026-10-26. https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/programme-guide-2026_en.pdf . Part A p.34, Region 2 and footnote 46 (Georgia and the exclusion of Georgian authorities); Part B pp.42, 50-53, objectives and eligibility/Who can apply criteria. P.51 limits applicants to EU/associated-country ECHE institutions or accredited consortium coordinators; pp.52-53 require recognition and inter-institutional agreements for non-associated-country HEIs. Official action page read: https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/higher-education-mobility-projects.",
   "officialLinks": [
-    "https://erasmus-plus.ec.europa.eu/programme-guide/erasmusplus-programme-guide"
+    {
+      "labelKey": "programmeGuide2026",
+      "url": "https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/programme-guide-2026_en.pdf"
+    },
+    {
+      "labelKey": "officialActionPage",
+      "url": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/higher-education-mobility-projects"
+    }
   ],
   "en": {
-    "title": "[SAMPLE] International Credit Mobility",
-    "body": "[SAMPLE] Illustrative content only.",
-    "summary": "[SAMPLE] Illustrative content only.",
-    "who": "[SAMPLE] Eligibility awaits verification.",
-    "how": "[SAMPLE] Application guidance awaits verification."
+    "title": "[DRAFT] International Credit Mobility",
+    "summary": "[DRAFT] Study, traineeship, teaching and training mobility linking Georgian higher education institutions with EU or Programme-associated-country partners.",
+    "who": "[DRAFT] Eligible, officially recognised Georgian higher education institutions can participate as sending or receiving partners, not as direct applicants for the mobility-project grant. The applicant must be an eligible institution or consortium coordinator established in an EU Member State or Programme-associated country. Students and staff do not apply directly for this project grant.",
+    "how": "[DRAFT] Work through an institutional partner and the required inter-institutional agreement. The eligible EU or associated-country applicant submits to its National Agency."
   },
   "ka": {
-    "title": "[SAMPLE] საერთაშორისო კრედიტმობილობა",
-    "body": "[SAMPLE] მხოლოდ საილუსტრაციო მასალა.",
-    "summary": "[SAMPLE] მხოლოდ საილუსტრაციო მასალა.",
-    "who": "[SAMPLE] მონაწილეობის პირობები გადასამოწმებელია.",
-    "how": "[SAMPLE] განაცხადის ინსტრუქცია გადასამოწმებელია."
+    "title": "[DRAFT] საერთაშორისო კრედიტმობილობა",
+    "summary": "[DRAFT] სწავლის, პრაქტიკის, სწავლებისა და ტრენინგის მობილობა საქართველოს უმაღლეს სასწავლებლებსა და ევროკავშირის ან პროგრამასთან ასოცირებული ქვეყნების პარტნიორებს შორის.",
+    "who": "[DRAFT] საქართველოს უფლებამოსილ, ოფიციალურად აღიარებულ უმაღლეს სასწავლებლებს შეუძლიათ მონაწილეობა გამგზავნ ან მიმღებ პარტნიორებად, მაგრამ მობილობის პროექტის გრანტზე პირდაპირი განაცხადის შეტანა არ შეუძლიათ. განმცხადებელი უნდა იყოს ევროკავშირის ან პროგრამასთან ასოცირებული ქვეყნის უფლებამოსილი დაწესებულება ან კონსორციუმის კოორდინატორი. სტუდენტები და თანამშრომლები პროექტის გრანტზე პირდაპირ განაცხადს არ წარადგენენ.",
+    "how": "[DRAFT] იმუშავეთ ინსტიტუციურ პარტნიორთან და გააფორმეთ საჭირო შეთანხმება. უფლებამოსილი განმცხადებელი ევროკავშირის ან ასოცირებული ქვეყნიდან განაცხადს თავის ეროვნულ სააგენტოს წარუდგენს."
   }
 }

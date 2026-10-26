@@ -24,7 +24,7 @@ CSS registers four local faces with font-display: swap and script-specific unico
 
 ## Colour system
 
-Primary #003399 and its darker hover shade provide an Erasmus+ inspired institutional blue. One warm accent (#854600, with a pale #fff1d2 surface) and neutral ink, muted text, paper, surface and line tokens complete the palette. No EU emblem or logo has been copied into the design.
+Primary #003399 and its darker hover shade provide an Erasmus+ inspired institutional blue. One warm accent (#854600, with a pale #fff1d2 surface) and neutral ink, muted text, paper, surface and line tokens complete the palette. The palette does not imitate an EU emblem. Official unmodified funding artwork is kept in the separate EU footer block.
 
 All allowed foreground/surface combinations are checked by test/contrast.test.js using WCAG relative luminance and a minimum 4.5:1 even for large text. Ink, muted, blue, blue-dark and accent may appear on paper, surface or accent-soft. Paper and inverse-muted may appear on blue or blue-dark. The lowest tested pair is muted on accent-soft, above 6:1. Line is a decorative divider, not a text colour. Status and source labels use the same palette plus explicit words, so colour does not carry their meaning alone.
 
@@ -32,10 +32,15 @@ All allowed foreground/surface combinations are checked by test/contrast.test.js
 
 Use a text-only NEO Georgia placeholder, a readable office name and an always-visible language switch. Desktop and mobile navigation share one macro and the same seven destinations. CSS shows one navigation at a time; the mobile version is native details/summary, closed initially, with full-width links. No script or CSS checkbox trick is needed. Keyboard activation, expanded state and focus work through native browser behaviour.
 
-Cards distinguish type, title, date and action in that order. Call/Event status badges and resource source labels retain explicit text and reuse the tested palette. Cards grow with Georgian text rather than clipping it. The footer separates contact/legal links from the funding block. The emblem remains an explicit text placeholder; no imitation flag or logo is used.
+Cards distinguish type, title, date and action in that order. Call/Event status badges and resource source labels retain explicit text and reuse the tested palette. Cards grow with Georgian text rather than clipping it. The footer separates contact/legal links from the funding block. Session 6 uses the unmodified official English beneficiary emblem on both languages, with localised alt text and its original aspect ratio. Replace it on /ka/ when the official Georgian beneficiary emblem is supplied. EU for Georgia country branding is not used. Source details are in src/assets/eu/README.md.
 
 ## Home page
 
 Keep the six approved blocks in order. A blue introduction gives the two audience paths clear priority, with a small guidance panel alongside on desktop and below on mobile. Listing headings link to their complete sections. Calls and Events use consistent date/status cards, News retains language filtering, the single story gets a quiet feature panel, and key figures carry an explicit illustrative-data note. All sample content remains labelled; no statistics, images or organisational claims have been invented.
 
 No text is clipped to force identical card heights. Full-width mobile buttons, wrapped headings and the desktop hero split are sized around Georgian first. Surfaces and links follow the tested token combinations. Page scripts are unnecessary. scripts/capture-design.mjs captures both languages at 360 and 1280 px after fonts load, with page JavaScript disabled.
+
+
+## Session 6 refinements
+
+Below 600 px, hide the supplementary next-step panel so the primary purpose and audience paths take less vertical space. The same opportunities destination remains available in the hero buttons and menu. At 600 px and above the panel remains visible. Filled green #14532d with white text makes open calls the strongest status signal (9.11:1 contrast); other statuses keep their muted/pale treatments and all retain words. This adds a semantic status colour, not a second decorative brand accent. Card section labels are explicit only in the mixed home context; section listings and Action subsections keep status/source labels without redundant section names.

@@ -1,36 +1,46 @@
 # Handover
 
-Last updated: 2026-10-26 (Codex, session 5: visual design)
+Last updated: 2026-10-26 (Codex, session 6 follow-up: beneficiary emblem correction)
 
 ## Current state
 
 - Eleventy 3 ESM on Node 24 LTS, plain CSS, Nunjucks page types and Markdown body fields in JSON. Run commands from the repository root. Output `_site/` and node_modules are ignored.
-- Georgian and English homes, seven menu destinations, action pages with automatic related blocks, calls, supporting listings and details. All content remains [SAMPLE]. Core translation parity, untranslated News/Story fallback and EU footers are checked.
+- Georgian and English homes, seven menu destinations, nine bilingual [DRAFT] Action pages with automatic related blocks, calls, supporting listings and details. Actions await editorial review; News/Event demonstration content remains [SAMPLE]; the language policy and supplied funding disclaimer now use the approved text. Core translation parity, untranslated News/Story fallback and EU footers are checked.
 - Call opens/deadline and Event date/end use offset-free local wall-clock times plus a named timeZone. Temporal derives offsets and rejects ambiguous/nonexistent clock-change times. currentCallYear (2026) selects the visible call edition independently of the clock, with other years shown as archives.
 - Hosting is now GitHub Pages through `.github/workflows/deploy.yml`. Netlify and Cloudflare Pages are dropped. Their old configuration can be restored from git history if true HTTP 301 redirects make a different host necessary.
 - The workflow runs on pushes to main, daily at 04:15 UTC, and manual dispatch. It installs with npm ci, builds, tests, uploads the Pages artifact and deploys with official actions. No build hook, custom secret or browser accessibility check is used in CI. Deployments share a concurrency group.
 - PATH_PREFIX controls Eleventy's pathPrefix (default `/`). The workflow derives the project prefix and GitHub Pages origin from the repository name and owner (currently `/neo-georgia-website/` and Luka's account), so those workflow values follow a repository transfer. Internal links, assets, language switches and refresh targets are rewritten by Eleventy's HTML base plugin. Canonical, hreflang, OG and sitemap URLs use the complete SITE_URL base.
 - SITE_URL defaults to `https://luka9815.github.io/neo-georgia-website/`. For a custom domain, set SITE_URL to its HTTPS root and PATH_PREFIX to `/`, and replace the project-path workflow values with those custom-domain settings. Confirm both settings and the deployed address after transferring the repository to ERIDA.
-- siteLaunched is false in `src/_data/settings.json`, read by site.js and not exposed in the CMS: every page is noindex and robots.txt disallows crawling. After launch approval, set it true; content pages become indexable while redirects and 404 remain noindex. Do not launch until the official EU emblem files, Georgian disclaimer and content are approved.
+- siteLaunched is false in `src/_data/settings.json`, read by site.js and not exposed in the CMS: every page is noindex and robots.txt disallows crawling. After launch approval, set it true; content pages become indexable while redirects and 404 remain noindex. Do not launch until the funding wording/artwork and final content are approved. The Georgian disclaimer now uses the exact project text supplied in session 6, proofread by Luka.
 - One root bilingual 404.html has Georgian first, English second, both home links and the EU footer. The root index.html has a meta refresh, target canonical and a visible link to the Georgian home. No client JavaScript is needed. `.nojekyll` is copied into the output and included in the Pages artifact.
 - `src/_data/redirects.json` is an empty old-path/new-path map. Once the export arrives, add validated mappings to generate static meta-refresh stubs. These do not provide HTTP 301 responses. See CONTENT.md.
-- Sessions 1 to 4 are present in main. Session 5 starts from current main on `codex/session-5-design`, with one commit per requested item.
+- Sessions 1 to 5 are present in main. Session 6 starts from current main on `codex/session-6-content`, one commit per requested item; all six requested items are implemented.
 - `.pages.yml` now configures News, Events and a single-file Settings editor. Staff use GitHub sign-in at app.pagescms.org. Collection filenames derive from slug. Field labels are Georgian first; News English is optional, Event English required. The current documentation and implementation were checked via GitHub because the docs host returned 403. Sources and verification limits are in CONTENT.md.
 - News dates are calendar days (YYYY-MM-DD); existing News samples were migrated. Events keep local minute-precision strings without offsets and a named zone. Required fields, related action slugs, classifications, calendar dates and time ranges are validated before rendering with filename/field errors.
 - Bodies use rich-text with explicit Markdown output. Raw HTML remains disabled in markdown-it. Image insertion is disabled for now; src/assets/uploads is reserved for future images with /assets/uploads public paths handled by PATH_PREFIX.
-- Settings reads settings.json and exposes only currentCallYear. CMS merge mode preserves siteLaunched and other unmanaged keys. An owner with repository write access can still edit code directly.
+- Settings reads settings.json and exposes currentCallYear plus optional logoPath. The empty logoPath preserves the wordmark; an approved existing local /assets/ image uses language-specific alt text. No old-site logo has been downloaded. CMS merge mode preserves the code-only siteLaunched and other unmanaged keys. An owner with repository write access can still edit code directly.
 - No hosted Pages CMS sign-in, repository authorisation, content write or deployment was performed by Codex. Local builds and JSON/render tests do not establish a successful authenticated hosted editing session.
 
 ## Session 5 design state
 
 - Event registration and translated agendas are optional in CMS, validation and templates. Missing/blank blocks are hidden; supplied URLs still require HTTPS. The Event slug example is sample-event, the Action-option maintenance note names both .pages.yml lists, and EDITING uses the requested Georgian word for spaces.
 - Choose self-hosted subset Noto Sans Georgian plus Noto Sans at 400/700, font-display: swap, with full OFL notices and a source/checksum manifest. Four faces total 99,184 bytes. The English home loads three (83,452 bytes) because its language switch is Georgian. Fonts are already prepared; normal builds/CI do not run the Python maintenance subsetting script.
-- Blue, one warm accent and neutral CSS tokens have 19 allowed text/background pairs tested at 4.5:1 or better. Status/source words remain visible. Georgian text has no text-transform. See DESIGN.md for font/licence comparisons and palette rules.
-- The text-only NEO logo placeholder and language switch sit above seven shared navigation destinations. Desktop links and a native details/summary mobile menu share one macro. Mobile keyboard activation and the desktop layout work with page JavaScript disabled.
-- Calls, Events and News use consistent cards; open/upcoming/closed badges and official/NEO/partner source labels use explicit text. Contact/legal links and the EU funding block are separated. The emblem remains an explicit placeholder, not an imitation EU logo.
+- Blue, one warm accent and neutral CSS tokens have 20 allowed text/background pairs tested at 4.5:1 or better. Status/source words remain visible. Georgian text has no text-transform. See DESIGN.md for font/licence comparisons and palette rules.
+- The NEO text wordmark (or future optional approved logoPath image) and language switch sit above seven shared navigation destinations. Desktop links and a native details/summary mobile menu share one macro. Mobile keyboard activation and the desktop layout work with page JavaScript disabled.
+- Calls, Events and News use consistent cards; open/upcoming/closed badges and official/NEO/partner source labels use explicit text. Contact/legal links and the EU funding block are separated. Session 6 uses the original official English beneficiary emblem on both language versions, with Georgian alt text on /ka/.
 - Home keeps all six approved blocks. The purpose/audience hero, section links, story panel and illustrative figures adapt from one column to desktop. A pre-existing Nunjucks rejectattr misuse hid every deadline; an explicit filter and regression test now show open/upcoming calls correctly.
 - Before/after full-page screenshots of /ka/ and /en/ at 360/1280 px are in docs/review/session-5, listed in its README and the PR. The final screenshots wait for fonts and disable page JavaScript. Manual visual inspection caught and corrected a split Georgian hero word at mobile width.
 - Local mobile Lighthouse runs on the built site returned performance 99, accessibility 100 and best practices 96 for both homes. SEO is 66 while siteLaunched=false intentionally blocks indexing. These are local lab measurements, not a deployed-site guarantee. Live CMS/hosting checks and Georgian editorial review remain open.
+
+## Session 6 state
+
+- English prevails if language versions differ. Footer and /language/ read one translated policy string. Initial old-site News import is limited to the twelve months before the agreed migration/export date; record that window when importing.
+- Domain choice is deferred until the site is built, likely taking over erasmus.org.ge. No DNS or custom-domain setting changed. ERIDA must own the domain.
+- The Georgian disclaimer exactly preserves the project text supplied and proofread by Luka. It is not an official EACEA Georgian translation.
+- Use the unmodified official English Funded by the European Union emblem on both languages, with Georgian alt text “დაფინანსებულია ევროკავშირის მიერ” on /ka/. The KA archive country-branding file has been removed because it is not the beneficiary emblem. Obtain the official Georgian Funded by the EU emblem from the EU Delegation or EACEA and replace the Georgian-page image then. Provenance is in src/assets/eu/README.md. Georgian funding/disclaimer text is unchanged.
+- Empty logoPath keeps the wordmark. A validated local approved image path uses bilingual alternatives and automatic PATH_PREFIX. No old NEO logo was downloaded.
+- The next-step hero panel is hidden below 600 px. Open calls have the strongest badge, green with white text at 9.11:1. Section labels appear only in mixed home cards; status/source labels remain visible elsewhere.
+- Nine bilingual [DRAFT] Actions replace the three samples and are grouped by higher education, VET, youth and sport. The 2026 Guide was downloaded and checked; each record cites its eligibility clauses and official URLs. A shared Georgia authority exclusion appears on every page. See ACTION-REVIEW.md for applicant/partner distinctions and review caveats. Both CMS action lists contain all nine slugs; old sample relationships retain their stable identifiers.
 
 ## Turn on GitHub Pages (Luka)
 
@@ -63,8 +73,8 @@ The browser check uses `/usr/bin/chromium`; set CHROMIUM_PATH if Chromium lives 
 
 ## Test Pages CMS (Luka)
 
-1. Session 4 is already in main. After reviewing the session 5 PR separately, open https://app.pagescms.org, sign in with GitHub and authorise the app for this repository if requested. Open Luka9815/neo-georgia-website and main. Do not create a second repository or hosting account. If the app cannot see the repository, check GitHub access and installation scope.
-2. Confirm the Georgian-first News, Events and Settings forms appear. In Settings confirm only currentCallYear is editable. Save the existing year, then inspect settings.json on GitHub: siteLaunched must still be present and false. It must not appear in the form.
+1. Sessions 1 to 5 are already in main. After this PR is reviewed and merged, open https://app.pagescms.org, sign in with GitHub and authorise the app for this repository if requested. Open Luka9815/neo-georgia-website and main. Do not create a second repository or hosting account. If the app cannot see the repository, check GitHub access and installation scope.
+2. Confirm the Georgian-first forms appear. Settings exposes currentCallYear and logoPath; keep logoPath empty until the new project logo is approved. Save the year and confirm siteLaunched remains present/false in settings.json but absent from the form.
 3. Create one News item with slug sample-cms-test, a publication date, one action, and Georgian title/body prefixed [SAMPLE]. Leave English entirely blank. Use a bold word and a link in the body, then save.
 4. Wait for Deploy GitHub Pages to pass (usually about two minutes). Check the Georgian News list and detail page, Markdown formatting and language-switch fallback to the English News index. Verify the JSON has Markdown strings, a date-only date and no meaningful English object.
 5. Delete that test item through the CMS, wait for another successful deploy and confirm it disappears from the list. The deleted detail URL should reach the root bilingual 404. Do not leave temporary published content behind.
@@ -73,17 +83,17 @@ The browser check uses `/usr/bin/chromium`; set CHROMIUM_PATH if Chromium lives 
 
 ## Next task
 
-Review the design screenshots and the actual hosted mobile layout. Complete the authenticated Pages CMS test above and train staff using docs/EDITING.md. Then add the image/alt-text workflow and responsive image pipeline before enabling rich-text image insertion. Never commit credentials or personal email addresses. The domain remains registered to ERIDA.
+Review all nine bilingual Action drafts against ACTION-REVIEW.md, especially the Georgia authority exclusion and CBHE Strand 3 caveat. Confirm official funding artwork/wording against the signed agreement. Review the actual hosted mobile layout. Complete the authenticated Pages CMS test above and train staff using docs/EDITING.md. Then add the image/alt-text workflow and responsive image pipeline before enabling rich-text image insertion. Never commit credentials or personal email addresses. Any domain must be registered to ERIDA.
 
 ## Remaining work
 
 - Turn on Pages and verify the first hosted deployment. Monitor the scheduled rebuild and re-enable it after inactivity if needed.
 - Authenticated Pages CMS News/Event create, edit, delete and settings-preservation tests. Configuration and local validation are complete.
-- Original EACEA Georgian/English emblems and the approved Georgian disclaimer; confirm funding wording against the signed grant agreement.
+- Obtain the official Georgian Funded by the EU beneficiary emblem from the EU Delegation or EACEA, then replace the English image on /ka/. Until then the English beneficiary emblem is used on both languages. Confirm funding wording against the signed grant agreement. The supplied Georgian project disclaimer is in place.
 - Remaining templates, opportunity filters, responsive image pipeline, production content validation and Georgian editorial review of the new typography.
-- Search with Georgian, content migration, old-URL mapping, privacy/accessibility/prevailing-language approval, manual accessibility and Lighthouse checks.
+- Search with Georgian, content migration, old-URL mapping, privacy/accessibility approval, manual accessibility and Lighthouse checks.
 - A daily rebuild refreshes static statuses. Sample dates are in 2026 and may become past/closed; no fixed test clock is used in production.
 
 ## Waiting on Nino / NEO
 
-Domain decision and institutional registration/transfer agreement; WordPress export; NEO logo; prevailing language; featured actions and editors; approved Georgian disclaimer. Working documents remain in Google Drive Cowork/NEO; website source and documentation live here.
+Domain choice after the build and institutional registration/transfer agreement; WordPress export; approved new NEO logo; official Georgian "Funded by the EU" emblem file from the EU Delegation or EACEA; editors. Action topics and language precedence are decided; the source-checked [DRAFT] eligibility and Georgian terminology await NEO review. Working documents remain in Google Drive Cowork/NEO; website source and documentation live here.

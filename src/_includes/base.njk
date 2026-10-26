@@ -25,9 +25,14 @@
   <div class="wrapper header-inner">
     <div class="header-top">
       <a class="brand" href="/{{ view.lang }}/">
-        <span class="brand-name">{{ t.logoName }}</span>
-        <span class="brand-description">{{ t.officeName }}</span>
-        <span class="brand-note">{{ t.logoPlaceholder }}</span>
+        {% if site.logoPath %}
+          <img class="brand-image" src="{{ site.logoPath }}" alt="{{ t.logoAlt }}" width="240" height="80">
+          <span class="brand-description">{{ t.officeName }}</span>
+        {% else %}
+          <span class="brand-name">{{ t.logoName }}</span>
+          <span class="brand-description">{{ t.officeName }}</span>
+          <span class="brand-note">{{ t.logoPlaceholder }}</span>
+        {% endif %}
       </a>
       <a class="language-switch" href="{{ view.alternate }}" lang="{{ other }}" hreflang="{{ other }}">{{ t.switch }}</a>
     </div>
@@ -60,11 +65,12 @@
         </ul>
       </nav>
     </div>
+    <p class="language-policy">{{ t.prevailingStatement }}</p>
     <div class="eu-footer">
-      <div class="emblem-placeholder">{{ t.emblem }}</div>
+      <img class="eu-emblem" src="{{ t.emblemPath }}" alt="{{ t.emblemAlt }}" width="{{ t.emblemWidth }}" height="{{ t.emblemHeight }}" loading="lazy">
       <div class="eu-funding">
         <p><strong>{{ t.funding }}</strong></p>
-        <p{% if view.lang == 'ka' %} lang="en"{% endif %}>{{ t.disclaimer }}</p>
+        <p class="funding-disclaimer">{{ t.disclaimer }}</p>
         {% if view.kind == '404' %}<p lang="en">{{ en.disclaimer }}</p>{% endif %}
       </div>
     </div>

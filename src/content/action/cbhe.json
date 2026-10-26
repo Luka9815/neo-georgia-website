@@ -7,21 +7,28 @@
   "audience": [
     "organisations"
   ],
+  "programmeYear": 2026,
+  "comment": "Programme Guide 2026, Version 1 (12/11/2025), checked 2026-10-26. https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/programme-guide-2026_en.pdf . Part A p.34, Region 2 and footnote 46 (Georgia and the exclusion of Georgian authorities); Part B pp.314, 319-320, 323-324, objectives and eligibility/Who can apply criteria. P.319 (Strands 1/2) and p.323 (Strand 3) limit coordinators to HEIs/HEI organisations. P.324 requires the competent national authority in Strand 3; this draft flags its interaction with p.34 rather than inventing an exemption. Official action page read: https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-higher-education.",
   "officialLinks": [
-    "https://erasmus-plus.ec.europa.eu/programme-guide/erasmusplus-programme-guide"
+    {
+      "labelKey": "programmeGuide2026",
+      "url": "https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/programme-guide-2026_en.pdf"
+    },
+    {
+      "labelKey": "officialActionPage",
+      "url": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-higher-education"
+    }
   ],
   "en": {
-    "title": "[SAMPLE] Capacity Building in Higher Education",
-    "body": "[SAMPLE] Illustrative content only.",
-    "summary": "[SAMPLE] Illustrative content only.",
-    "who": "[SAMPLE] Eligibility awaits verification.",
-    "how": "[SAMPLE] Application guidance awaits verification."
+    "title": "[DRAFT] Capacity Building in Higher Education",
+    "summary": "[DRAFT] International partnerships to improve higher education quality, institutional capacity and responsiveness in eligible non-associated countries.",
+    "who": "[DRAFT] For Strands 1 and 2, eligible Georgian HEIs and organisations of HEIs can apply directly as consortium coordinator or participate as partners. Other eligible education, training, youth or labour-market bodies can join as partners, not coordinators. Strand 3 has additional national-authority requirements; compatibility with the Georgia authority exclusion must be confirmed before preparing that strand.",
+    "how": "[DRAFT] Check the strand, consortium composition and regional criteria, then prepare the application for EACEA through the official call. Obtain clarification from EACEA for Strand 3 rather than assuming an authority can participate."
   },
   "ka": {
-    "title": "[SAMPLE] უმაღლესი განათლების შესაძლებლობების განვითარება",
-    "body": "[SAMPLE] მხოლოდ საილუსტრაციო მასალა.",
-    "summary": "[SAMPLE] მხოლოდ საილუსტრაციო მასალა.",
-    "who": "[SAMPLE] მონაწილეობის პირობები გადასამოწმებელია.",
-    "how": "[SAMPLE] განაცხადის ინსტრუქცია გადასამოწმებელია."
+    "title": "[DRAFT] უმაღლესი განათლების შესაძლებლობების განვითარება",
+    "summary": "[DRAFT] საერთაშორისო პარტნიორობა უმაღლესი განათლების ხარისხის, ინსტიტუციური შესაძლებლობებისა და საჭიროებებზე რეაგირების გასაუმჯობესებლად პროგრამასთან არაასოცირებულ უფლებამოსილ ქვეყნებში.",
+    "who": "[DRAFT] პირველ და მეორე მიმართულებებში საქართველოს უფლებამოსილ უმაღლეს სასწავლებლებსა და მათ გაერთიანებებს შეუძლიათ პირდაპირ განაცხადის შეტანა კოორდინატორად ან პარტნიორად მონაწილეობა. განათლების, მომზადების, ახალგაზრდობის ან შრომის ბაზრის სხვა უფლებამოსილი ორგანიზაციები მონაწილეობენ პარტნიორებად და არა კოორდინატორებად. მესამე მიმართულება დამატებით მოითხოვს ეროვნულ პასუხისმგებელ ორგანოს; მის მომზადებამდე EACEA-სთან უნდა დაზუსტდეს საქართველოს ხელისუფლების ორგანოების გამორიცხვის წესთან შესაბამისობა.",
+    "how": "[DRAFT] გადაამოწმეთ მიმართულება, კონსორციუმის შემადგენლობა და რეგიონის პირობები, შემდეგ მოამზადეთ განაცხადი EACEA-ს ოფიციალური კონკურსისთვის. მესამე მიმართულებისთვის მიიღეთ განმარტება EACEA-სგან და არ ივარაუდოთ, რომ ხელისუფლების ორგანოს მონაწილეობა შეუძლია."
   }
 }
