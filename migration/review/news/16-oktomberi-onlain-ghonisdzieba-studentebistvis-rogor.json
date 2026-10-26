@@ -1,0 +1,225 @@
+{
+  "slug": "16-oktomberi-onlain-ghonisdzieba-studentebistvis-rogor",
+  "date": "2026-10-13",
+  "actions": [
+    "icm",
+    "erasmus-mundus",
+    "cb-youth"
+  ],
+  "ka": {
+    "title": "16 ოქტომბერი, ონლაინ ღონისძიება სტუდენტებისთვის: ”როგორ გავხადოთ Erasmus+ პროგრამა უფრო ინკლუზიური: მონაწილეობის ბარიერები და მათი გადალახვა”",
+    "body": "ℹ️ Erasmus+ პროგრამა ახალგაზრდებისთვის უამრავ შესაძლებლობას აჩენს. კულტურული გაცვლა, ცოდნის გაღრმავება და უნარების შეძენა უამრავი ახალგაზრდის ცხოვრებას ფუნდამენტურად ცვლის. \n\nსაინტერესო შეკითხვები, რომლებიც არცთუ ხშირადაა განხილული, შემდეგია: რა ბარიერებს აწყდებიან სტუდენტები, როდესაც პროგრამაში მონაწილეობას გეგმავენ? როგორ ახერხებენ ამ ბარიერების გადალახვას? რა როლს თამაშობს სოციალური შფოთვა და კულტურული განსხვავებები? \n\nონლაინ ღონისძიებაზე სტუდენტებს საშუალება მიეცემათ, მოისმინონ პროფესიონალის (ფსიქოლოგის) ექსპერტული მოსაზრებები და გაიზიარონ პროგრამის მონაწილეების გამოცდილება.\n\n✨ ღონისძიებაზე მოწვეული არიან როგორც ICM-ის, ისე Erasmus Mundus-ის გამარჯვებულები, რათა გააზიარონ თავიანთი გამოცდილება. \n\n**🗓️ თარიღი:** 16 ოქტომბერი\n\n**💻 ფორმატი:** ონლაინ (Google Meet)\n\n**⏱️დრო:** 17:00-18:00\n\n**ღონისძიების ენა:** ქართული\n\n**სამიზნე აუდიტორია:** სტუდენტები და პროგრამით დაინტერესებული პირები, უნივერსიტეტების საერთაშორისო ურთიერთობების დეპარტამენტები\n\n**სარეგისტრაციო ბმული:** [https://forms.gle/DW9AFhgEqwoj1RMw8](https://forms.gle/DW9AFhgEqwoj1RMw8)"
+  },
+  "legacy": {
+    "id": 36541,
+    "slug": "%f0%9f%93%a3-16-%e1%83%9d%e1%83%a5%e1%83%a2%e1%83%9d%e1%83%9b%e1%83%91%e1%83%94%e1%83%a0%e1%83%98-%e1%83%9d%e1%83%9c%e1%83%9a%e1%83%90%e1%83%98%e1%83%9c-%e1%83%a6%e1%83%9d%e1%83%9c%e1%83%98%e1%83%a1",
+    "url": "https://erasmus.org.ge/%f0%9f%93%a3-16-%e1%83%9d%e1%83%a5%e1%83%a2%e1%83%9d%e1%83%9b%e1%83%91%e1%83%94%e1%83%a0%e1%83%98-%e1%83%9d%e1%83%9c%e1%83%9a%e1%83%90%e1%83%98%e1%83%9c-%e1%83%a6%e1%83%9d%e1%83%9c%e1%83%98%e1%83%a1/"
+  },
+  "migration": {
+    "status": "unreviewed",
+    "language": {
+      "title": {
+        "script": "georgian",
+        "language": "ka",
+        "georgianLetters": 111,
+        "latinLetters": 7,
+        "georgianShare": 0.941,
+        "latinShare": 0.059,
+        "englishWordHits": 0,
+        "note": "Script heuristic excluding URLs; English is a candidate, not editorial approval."
+      },
+      "body": {
+        "script": "georgian",
+        "language": "ka",
+        "georgianLetters": 761,
+        "latinLetters": 33,
+        "georgianShare": 0.958,
+        "latinShare": 0.042,
+        "englishWordHits": 0,
+        "note": "Script heuristic excluding URLs; English is a candidate, not editorial approval."
+      },
+      "englishMarker": false,
+      "slot": "ka",
+      "label": "ka",
+      "needsReview": false
+    },
+    "actionsStatus": "suggested",
+    "suggestedActions": [
+      {
+        "slug": "icm",
+        "status": "suggested",
+        "evidence": [
+          {
+            "source": "body",
+            "match": "ICM"
+          }
+        ]
+      },
+      {
+        "slug": "erasmus-mundus",
+        "status": "suggested",
+        "evidence": [
+          {
+            "source": "body",
+            "match": "Erasmus Mundus"
+          }
+        ]
+      },
+      {
+        "slug": "cb-youth",
+        "status": "suggested",
+        "evidence": [
+          {
+            "source": "body",
+            "match": "ახალგაზრდებისთვის უამრავ შესაძლებლობ"
+          }
+        ]
+      }
+    ],
+    "typeCandidate": {
+      "type": "news",
+      "evidence": [
+        "13.10.2026"
+      ]
+    },
+    "attachments": [
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/10/Make-Erasmus-Truly-Inclusive_-Participation-Barriers-You-Could-Not-Even-Think-of-Existed-How-to-Detect-and-Overcome-Barriers-2-768x768.png",
+        "type": "image",
+        "sizeBytes": 541335,
+        "alt": "",
+        "mediaId": 36543,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "inline-image"
+          },
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          36541
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/10/Make-Erasmus-Truly-Inclusive_-Participation-Barriers-You-Could-Not-Even-Think-of-Existed-How-to-Detect-and-Overcome-Barriers-2-300x300.png",
+        "type": "image",
+        "sizeBytes": 116089,
+        "alt": "",
+        "mediaId": 36543,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          36541
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/10/Make-Erasmus-Truly-Inclusive_-Participation-Barriers-You-Could-Not-Even-Think-of-Existed-How-to-Detect-and-Overcome-Barriers-2-1024x1024.png",
+        "type": "image",
+        "sizeBytes": 855627,
+        "alt": "",
+        "mediaId": 36543,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          36541
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/10/Make-Erasmus-Truly-Inclusive_-Participation-Barriers-You-Could-Not-Even-Think-of-Existed-How-to-Detect-and-Overcome-Barriers-2-150x150.png",
+        "type": "image",
+        "sizeBytes": 35918,
+        "alt": "",
+        "mediaId": 36543,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          36541
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/10/Make-Erasmus-Truly-Inclusive_-Participation-Barriers-You-Could-Not-Even-Think-of-Existed-How-to-Detect-and-Overcome-Barriers-2-1536x1536.png",
+        "type": "image",
+        "sizeBytes": 1598606,
+        "alt": "",
+        "mediaId": 36543,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          36541
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/10/Make-Erasmus-Truly-Inclusive_-Participation-Barriers-You-Could-Not-Even-Think-of-Existed-How-to-Detect-and-Overcome-Barriers-2.png",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "",
+        "mediaId": 36543,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          },
+          {
+            "language": "shared",
+            "relationship": "attached-to-post"
+          }
+        ],
+        "usedBy": [
+          36541
+        ]
+      }
+    ],
+    "warnings": [
+      "Images omitted from Markdown; one eligible featured image is selected separately and other attachments stay listed.",
+      "Leading theme date, empty info markers or repeated blank lines removed."
+    ],
+    "pairCandidates": [],
+    "image": {
+      "status": "downloaded",
+      "path": "images/16-oktomberi-onlain-ghonisdzieba-studentebistvis-rogor.png",
+      "sourceUrl": "https://erasmus.org.ge/wp-content/uploads/2026/10/Make-Erasmus-Truly-Inclusive_-Participation-Barriers-You-Could-Not-Even-Think-of-Existed-How-to-Detect-and-Overcome-Barriers-2-1024x1024.png",
+      "sizeBytes": 855627,
+      "width": 1024,
+      "height": 1024,
+      "mediaId": 36543,
+      "reason": "Image attached to this post",
+      "alt": {
+        "ka": "[ALT NEEDED]",
+        "en": "[ALT NEEDED]"
+      }
+    }
+  },
+  "image": {
+    "status": "downloaded",
+    "path": "images/16-oktomberi-onlain-ghonisdzieba-studentebistvis-rogor.png",
+    "sourceUrl": "https://erasmus.org.ge/wp-content/uploads/2026/10/Make-Erasmus-Truly-Inclusive_-Participation-Barriers-You-Could-Not-Even-Think-of-Existed-How-to-Detect-and-Overcome-Barriers-2-1024x1024.png",
+    "sizeBytes": 855627,
+    "width": 1024,
+    "height": 1024,
+    "mediaId": 36543,
+    "reason": "Image attached to this post",
+    "alt": {
+      "ka": "[ALT NEEDED]",
+      "en": "[ALT NEEDED]"
+    }
+  }
+}

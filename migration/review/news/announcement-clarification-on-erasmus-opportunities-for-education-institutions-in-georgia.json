@@ -1,0 +1,190 @@
+{
+  "slug": "announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia",
+  "date": "2025-11-17",
+  "actions": [],
+  "sourceText": {
+    "title": "განმარტება, Erasmus+ პროგრამის შესაძლებლობების შესახებ, საგანმანათლებლო ინსტიტუციებისთვის საქართველოში",
+    "body": "**\\[For English, Scroll Down.\\]**\n\n**განმარტება, Erasmus+ პროგრამის შესაძლებლობების შესახებ, საგანმანათლებლო ინსტიტუციებისთვის საქართველოში**\n\nქართული საგანმანათლებლო დაწესებულებები კვლავ აგრძელებენ მონაწილეობას Erasmus+-ის მობილობისა და თანამშრომლობით აქტივობებში, Erasmus+-ის პროგრამის სახელმძღვანელოს დადგენილი წესების შესაბამისად.\n\nშესაძლებლობები ხელმისაწვდომი რჩება სტუდენტებისთვის, აკადემიური და ადმინისტრაციული პერსონალისთვის, სკოლებისთვის, პროფესიული განათლებისა და ტრენინგ ცენტრებისა და სხვა საგანმანათლებლო ორგანიზაციებისთვის, რომლებიც შესაბამისობაში არიან პროგრამის შერჩევის კრიტერიუმებთან.\n\nნებისმიერი ევროკავშირის პროგრამის შემთხვევაში, წესები და შერჩევის კრიტერიუმები შესაძლოა დროთა განმავლობაში შეიცვალოს. მონაწილეებისთვის რეკომენდებულია, რომ გადახედონ Erasmus+-ის პროგრამის უახლეს სახელმძღვანელო დოკუმენტს, კონსულტაცია გაიარონ Erasmus+-ის ეროვნულ ოფისთან საქართველოში და დაეყრდნონ ოფიციალურ საინფორმაციო წყაროებს, ზუსტი და უახლესი ინსტრუქციებისთვის.\n\n\\_\\_\\_\n\n**Clarification on Erasmus+ Opportunities for Educational Institutions in Georgia**\n\nEducational institutions in Georgia continue to participate in Erasmus+ mobility and cooperation activities, in line with the rules set out in the Erasmus+ Programme Guide.\n\nOpportunities remain available for students, academic and administrative staff, schools, vocational education and training providers, and other educational organisations, within the Programme’s eligibility criteria.\n\nAs with any EU programme, rules and eligibility criteria may evolve over time. Institutions are encouraged to consult the latest Erasmus+ Programme Guide and the National Erasmus+ Office, and to rely on formal information channels for accurate and up-to-date guidance."
+  },
+  "legacy": {
+    "id": 34916,
+    "slug": "announcement_clarification-on-erasmus-opportunities-for-education-institutions-in-georgia",
+    "url": "https://erasmus.org.ge/announcement_clarification-on-erasmus-opportunities-for-education-institutions-in-georgia/"
+  },
+  "migration": {
+    "status": "unreviewed",
+    "language": {
+      "title": {
+        "script": "georgian",
+        "language": "ka",
+        "georgianLetters": 85,
+        "latinLetters": 7,
+        "georgianShare": 0.924,
+        "latinShare": 0.076,
+        "englishWordHits": 0,
+        "note": "Script heuristic excluding URLs; English is a candidate, not editorial approval."
+      },
+      "body": {
+        "script": "mixed",
+        "language": "mixed",
+        "georgianLetters": 780,
+        "latinLetters": 675,
+        "georgianShare": 0.536,
+        "latinShare": 0.464,
+        "englishWordHits": 30,
+        "note": "Script heuristic excluding URLs; English is a candidate, not editorial approval."
+      },
+      "englishMarker": true,
+      "slot": "sourceText",
+      "label": "mixed ka/Latin",
+      "needsReview": true
+    },
+    "actionsStatus": "suggested",
+    "suggestedActions": [],
+    "typeCandidate": {
+      "type": "event",
+      "evidence": [
+        "ტრენინგ",
+        "17.11.2025"
+      ]
+    },
+    "attachments": [
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/11/Clarification-on-Erasmus-Opportunities-for-Educational-Institutions-in-Georgia-2-1.png",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "",
+        "mediaId": 34920,
+        "uses": [
+          {
+            "language": "mixed",
+            "relationship": "inline-image"
+          },
+          {
+            "language": "mixed",
+            "relationship": "image-variant"
+          },
+          {
+            "language": "shared",
+            "relationship": "attached-to-post"
+          }
+        ],
+        "usedBy": [
+          34916
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/11/Clarification-on-Erasmus-Opportunities-for-Educational-Institutions-in-Georgia-2-1-300x252.png",
+        "type": "image",
+        "sizeBytes": 8647,
+        "alt": "",
+        "mediaId": 34920,
+        "uses": [
+          {
+            "language": "mixed",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          34916
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/11/Clarification-on-Erasmus-Opportunities-for-Educational-Institutions-in-Georgia-2-1-1024x858.png",
+        "type": "image",
+        "sizeBytes": 39455,
+        "alt": "",
+        "mediaId": 34920,
+        "uses": [
+          {
+            "language": "mixed",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          34916
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/11/Clarification-on-Erasmus-Opportunities-for-Educational-Institutions-in-Georgia-2-1-768x644.png",
+        "type": "image",
+        "sizeBytes": 27414,
+        "alt": "",
+        "mediaId": 34920,
+        "uses": [
+          {
+            "language": "mixed",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          34916
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/11/Clarification-on-Erasmus-Opportunities-for-Educational-Institutions-in-Georgia-2-1-1536x1288.png",
+        "type": "image",
+        "sizeBytes": 64521,
+        "alt": "",
+        "mediaId": 34920,
+        "uses": [
+          {
+            "language": "mixed",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          34916
+        ]
+      }
+    ],
+    "warnings": [
+      "Images omitted from Markdown; one eligible featured image is selected separately and other attachments stay listed.",
+      "Leading theme date, empty info markers or repeated blank lines removed.",
+      "Language needs review. The source remains separate; no automatic split, translation or pairing.",
+      "No Action matched. actions is empty; an editor must select a real Action before publication.",
+      "Possible Event: kept as a News-shaped review file, not converted to an Event."
+    ],
+    "pairCandidates": [
+      {
+        "status": "CANDIDATE",
+        "kind": "within-post",
+        "ka": 34916,
+        "en": 34916,
+        "confidence": "high",
+        "evidence": [
+          "Both scripts plus an explicit English-section marker"
+        ],
+        "note": "Review the two source sections. No automatic splitting or translation."
+      }
+    ],
+    "image": {
+      "status": "downloaded",
+      "path": "images/announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia.png",
+      "sourceUrl": "https://erasmus.org.ge/wp-content/uploads/2025/11/Clarification-on-Erasmus-Opportunities-for-Educational-Institutions-in-Georgia-2-1-1024x858.png",
+      "sizeBytes": 39455,
+      "width": 1024,
+      "height": 858,
+      "mediaId": 34920,
+      "reason": "Image attached to this post",
+      "alt": {
+        "ka": "[ALT NEEDED]",
+        "en": "[ALT NEEDED]"
+      }
+    }
+  },
+  "image": {
+    "status": "downloaded",
+    "path": "images/announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia.png",
+    "sourceUrl": "https://erasmus.org.ge/wp-content/uploads/2025/11/Clarification-on-Erasmus-Opportunities-for-Educational-Institutions-in-Georgia-2-1-1024x858.png",
+    "sizeBytes": 39455,
+    "width": 1024,
+    "height": 858,
+    "mediaId": 34920,
+    "reason": "Image attached to this post",
+    "alt": {
+      "ka": "[ALT NEEDED]",
+      "en": "[ALT NEEDED]"
+    }
+  }
+}

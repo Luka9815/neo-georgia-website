@@ -1,0 +1,144 @@
+{
+  "slug": "sharing-post-erasmus-mundus-activities-2026",
+  "date": "2025-11-18",
+  "actions": [
+    "erasmus-mundus"
+  ],
+  "sourceText": {
+    "title": "Erasmus+-ის ეროვნული ოფისი საქართველოში გიზიარებთ ინფორმაციას ონლაინ კითხვა-პასუხის სესიის შესახებ: Erasmus მუნდუსის აქტივობები 2026",
+    "body": "\\[For English, Scroll Down\\]\n\n**Erasmus+-ის ეროვნული ოფისი საქართველოში გიზიარებთ ინფორმაციას ონლაინ კითხვა-პასუხის სესიის შესახებ: Erasmus მუნდუსის აქტივობები 2026**\n\nევროპის განათლებისა და კულტურის აღმასრულებელი სააგენტო (EACEA) მართავს ონლაინ კითხვა-პასუხის (Q&A) სესიას, რომელიც ეხება Erasmus მუნდუსის 2026 წლის აქტივობებს (მათ შორის, EMJM და EMDM).\n\nღონისძიება გაიმართება 2025 წლის 11 დეკემბერს, 10:00 საათიდან 11:30 საათამდე (ცენტრალური ევროპის დროით).\n\n**დამატებითი ინფორმაციის მისაღებად, ეწვიეთ ბმულს –** [**https://shorturl.at/0dIKe**](https://shorturl.at/0dIKe)\n\n**ENG**\n\nThe European Education and Culture Executive Agency (EACEA) is organising an online Q&A session related to the 2026 Calls for Proposals for Erasmus Mundus Joint Masters (EMJM) and Erasmus Mundus Design Measures (EMDM).\n\nThe event will take place on 11 December 2025, from 10:00 to 11:30 (CET).\n\nFor further information, follow the link – [https://shorturl.at/0dIKe](https://shorturl.at/0dIKe)"
+  },
+  "legacy": {
+    "id": 34955,
+    "slug": "sharing-post-erasmus-mundus-activities-2026",
+    "url": "https://erasmus.org.ge/sharing-post-erasmus-mundus-activities-2026/"
+  },
+  "migration": {
+    "status": "unreviewed",
+    "language": {
+      "title": {
+        "script": "georgian",
+        "language": "ka",
+        "georgianLetters": 97,
+        "latinLetters": 14,
+        "georgianShare": 0.874,
+        "latinShare": 0.126,
+        "englishWordHits": 0,
+        "note": "Script heuristic excluding URLs; English is a candidate, not editorial approval."
+      },
+      "body": {
+        "script": "mixed",
+        "language": "mixed",
+        "georgianLetters": 334,
+        "latinLetters": 307,
+        "georgianShare": 0.521,
+        "latinShare": 0.479,
+        "englishWordHits": 16,
+        "note": "Script heuristic excluding URLs; English is a candidate, not editorial approval."
+      },
+      "englishMarker": true,
+      "slot": "sourceText",
+      "label": "mixed ka/Latin",
+      "needsReview": true
+    },
+    "actionsStatus": "suggested",
+    "suggestedActions": [
+      {
+        "slug": "erasmus-mundus",
+        "status": "suggested",
+        "evidence": [
+          {
+            "source": "body",
+            "match": "EMJM"
+          }
+        ]
+      }
+    ],
+    "typeCandidate": {
+      "type": "news",
+      "evidence": [
+        "18.11.2025"
+      ]
+    },
+    "attachments": [
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/elementor/thumbs/Sharing-information-about-International-Event-2-rqcq4ebh3geu8cy27mo5xderfvgyndugophbjvb1qg.png",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "Sharing information about International Event (2)",
+        "mediaId": null,
+        "uses": [
+          {
+            "language": "mixed",
+            "relationship": "inline-image"
+          }
+        ],
+        "usedBy": [
+          34955
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/11/Sharing-information-about-International-Event-2.png",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "",
+        "mediaId": 34958,
+        "uses": [
+          {
+            "language": "shared",
+            "relationship": "attached-to-post"
+          }
+        ],
+        "usedBy": [
+          34955
+        ]
+      }
+    ],
+    "warnings": [
+      "Images omitted from Markdown; one eligible featured image is selected separately and other attachments stay listed.",
+      "Leading theme date, empty info markers or repeated blank lines removed.",
+      "Language needs review. The source remains separate; no automatic split, translation or pairing."
+    ],
+    "pairCandidates": [
+      {
+        "status": "CANDIDATE",
+        "kind": "within-post",
+        "ka": 34955,
+        "en": 34955,
+        "confidence": "high",
+        "evidence": [
+          "Both scripts plus an explicit English-section marker"
+        ],
+        "note": "Review the two source sections. No automatic splitting or translation."
+      }
+    ],
+    "image": {
+      "status": "downloaded",
+      "path": "images/sharing-post-erasmus-mundus-activities-2026.png",
+      "sourceUrl": "https://erasmus.org.ge/wp-content/uploads/2025/11/Sharing-information-about-International-Event-2-1024x726.png",
+      "sizeBytes": 186409,
+      "width": 1024,
+      "height": 726,
+      "mediaId": 34958,
+      "reason": "Image attached to this post",
+      "alt": {
+        "ka": "[ALT NEEDED]",
+        "en": "[ALT NEEDED]"
+      }
+    }
+  },
+  "image": {
+    "status": "downloaded",
+    "path": "images/sharing-post-erasmus-mundus-activities-2026.png",
+    "sourceUrl": "https://erasmus.org.ge/wp-content/uploads/2025/11/Sharing-information-about-International-Event-2-1024x726.png",
+    "sizeBytes": 186409,
+    "width": 1024,
+    "height": 726,
+    "mediaId": 34958,
+    "reason": "Image attached to this post",
+    "alt": {
+      "ka": "[ALT NEEDED]",
+      "en": "[ALT NEEDED]"
+    }
+  }
+}

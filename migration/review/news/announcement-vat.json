@@ -1,0 +1,133 @@
+{
+  "slug": "announcement-vat",
+  "date": "2025-11-03",
+  "actions": [],
+  "sourceText": {
+    "title": "დღგ-სგან გათავისუფლების შესახებ განაცხადის წარდგენის ვადა ახლოვდება!",
+    "body": "\\[For English Scroll Down\\]\n\n**დღგ-სგან გათავისუფლების შესახებ განაცხადის წარდგენის ვადა ახლოვდება**\n\nიმისათვის, რომ თქვენი პროექტი გათავისუფლდეს დღგ-სგან, ელექტრონული ფოსტის მისამართზე (\\[email removed\\]) საჭიროა გამოგვიგზავნოთ შემდეგი დოკუმენტაცია **არაუგვიანეს მიმდინარე თვის 10 რიცხვისა**:\n\n1.  შეავსოთ დღგ-სგან გათავისუფლების განაცხადის ფორმა ([იხილეთ მიმაგრებული ფაილი](https://docs.google.com/document/d/1cl2vUp0ksfcVbGYq6r8aUz5_svsTHc5N/edit?usp=drive_link&ouid=107652490344099881025&rtpof=true&sd=true))  \n    \n2.  ხელმოწერილი საგრანტო შეთანხმება \n\nგთხოვთ გაითვალისწინოთ, რომ დღგ-ს განაცხადები შემოსავლების სამსახურს ეგზავნება განცხადებების შემოსვლის თარიღის შესაბამისად, მიმდინარე თვის 15-22 რიცხვში. შემოსავლების სამსახურისგან უკუკავშირის მიღებას სჭირდება დაახლოებით 10 სამუშაო დღე.\n\nგთხოვთ, მეილზე თქვენი წერილის გამოგზავნისას, სათაურის ველში მიუთითოთ **“დღგ-სგან გათავისუფლების მოთხოვნა”.** \n\n**Please be informed that the deadline for submitting the VAT exemption application is approaching.**\n\nIn order for your project to be exempted from VAT, please send us the following documents (to our Email: \\[email removed\\]) no later than the 10th of the current month:\n\n-   The completed VAT exemption application form ([see attached file](https://docs.google.com/document/d/1cl2vUp0ksfcVbGYq6r8aUz5_svsTHc5N/edit))  \n    \n-   The signed grant agreement.  \n\nPlease note that VAT exemption applications are submitted to the Revenue Service according to the date of receipt, between the 15th and 22nd of each month. It usually takes around 10 working days to receive feedback from the Revenue Service.\n\nWhen sending your email, please indicate **“VAT Exemption Request”** in the subject line."
+  },
+  "legacy": {
+    "id": 34870,
+    "slug": "announcement-vat",
+    "url": "https://erasmus.org.ge/announcement-vat/"
+  },
+  "migration": {
+    "status": "unreviewed",
+    "language": {
+      "title": {
+        "script": "georgian",
+        "language": "ka",
+        "georgianLetters": 60,
+        "latinLetters": 0,
+        "georgianShare": 1,
+        "latinShare": 0,
+        "englishWordHits": 0,
+        "note": "Script heuristic excluding URLs; English is a candidate, not editorial approval."
+      },
+      "body": {
+        "script": "mixed",
+        "language": "mixed",
+        "georgianLetters": 585,
+        "latinLetters": 590,
+        "georgianShare": 0.498,
+        "latinShare": 0.502,
+        "englishWordHits": 32,
+        "note": "Script heuristic excluding URLs; English is a candidate, not editorial approval."
+      },
+      "englishMarker": true,
+      "slot": "sourceText",
+      "label": "mixed ka/Latin",
+      "needsReview": true
+    },
+    "actionsStatus": "suggested",
+    "suggestedActions": [],
+    "typeCandidate": {
+      "type": "news",
+      "evidence": [
+        "3.11.2025"
+      ]
+    },
+    "attachments": [
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/elementor/thumbs/s-rqcq9urq5whjtuxu515lugex2qgv08wi5tj7rzz5lg.png",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "s",
+        "mediaId": null,
+        "uses": [
+          {
+            "language": "mixed",
+            "relationship": "inline-image"
+          }
+        ],
+        "usedBy": [
+          34870
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/11/s.png",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "",
+        "mediaId": 34875,
+        "uses": [
+          {
+            "language": "shared",
+            "relationship": "attached-to-post"
+          }
+        ],
+        "usedBy": [
+          34870
+        ]
+      }
+    ],
+    "warnings": [
+      "Email addresses redacted for the public review repository.",
+      "Images omitted from Markdown; one eligible featured image is selected separately and other attachments stay listed.",
+      "Leading theme date, empty info markers or repeated blank lines removed.",
+      "Language needs review. The source remains separate; no automatic split, translation or pairing.",
+      "No Action matched. actions is empty; an editor must select a real Action before publication."
+    ],
+    "pairCandidates": [
+      {
+        "status": "CANDIDATE",
+        "kind": "within-post",
+        "ka": 34870,
+        "en": 34870,
+        "confidence": "high",
+        "evidence": [
+          "Both scripts plus an explicit English-section marker"
+        ],
+        "note": "Review the two source sections. No automatic splitting or translation."
+      }
+    ],
+    "image": {
+      "status": "downloaded",
+      "path": "images/announcement-vat.png",
+      "sourceUrl": "https://erasmus.org.ge/wp-content/uploads/2025/11/s-1024x858.png",
+      "sizeBytes": 34144,
+      "width": 1024,
+      "height": 858,
+      "mediaId": 34875,
+      "reason": "Image attached to this post",
+      "alt": {
+        "ka": "[ALT NEEDED]",
+        "en": "[ALT NEEDED]"
+      }
+    }
+  },
+  "image": {
+    "status": "downloaded",
+    "path": "images/announcement-vat.png",
+    "sourceUrl": "https://erasmus.org.ge/wp-content/uploads/2025/11/s-1024x858.png",
+    "sizeBytes": 34144,
+    "width": 1024,
+    "height": 858,
+    "mediaId": 34875,
+    "reason": "Image attached to this post",
+    "alt": {
+      "ka": "[ALT NEEDED]",
+      "en": "[ALT NEEDED]"
+    }
+  }
+}

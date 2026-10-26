@@ -6,8 +6,8 @@
     "erasmus-mundus"
   ],
   "ka": {
-    "title": "📣 ონლაინ ღონისძიება სტუდენტებისთვის: “როგორ გავხადოთ Erasmus+ პროგრამა უფრო ინკლუზიური: პროგრამაში მონაწილეობის ბარიერები და მათი გადალახვა“",
-    "body": "{23.10.2026}\n\n**ℹ️** 2026 წელს Erasmus+ პროგრამის დღეების – 12-17 ოქტომბრის პერიოდში, ევროპის მასშტაბით პროგრამისთვის მიძღვნილი 10 000-ზე მეტი ღონისძიება ჩატარდა. Erasmus+-ის ეროვნული ოფისის ორგანიზებით, 16 ოქტომბერს სტუდენტებისთვის გაიმართა ონლაინ შეხვედრა ‘’როგორ გავხადოთ Erasmus+ პროგრამა უფრო ინკლუზიური: პროგრამაში მონაწილეობის ბარიერები და მათი გადალახვა’’.\n\n📍ღონისძიებაზე მოწვეულ სპიკერებს შორის იყვნენ:\n\n-   ნატალი ღვედაშვილი – ფსიქოთერაპევტი, ფსიქოკონსულტანტი, Eunoia Institutional \n-   თამთა კაპანაძე – ICM-ის გამარჯვებული (2 უნივერსიტეტი: ნორვეგია/თურქეთი)\n-   რატი კობახიძე – Erasmus Mundus-ის გამარჯვებული (ავსტრია/დიდი ბრიტანეთი)\n\nსპიკერებმა განიხილეს Erasmus+ პროგრამაში მონაწილეობის ფსიქოლოგიური, სოციალური და ეკონომიკური ბარიერები. ფსიქოკონსულტანტისგან დამსწრეებმა მიიღეს პრაქტიკული რჩევები, ხოლო პროგრამის გამარჯვებულებმა გააზიარეს თავიანთი პერსონალური გამოცდილებები და უპასუხეს დაინტერესებული სტუდენტების შეკითხვებს."
+    "title": "ონლაინ ღონისძიება სტუდენტებისთვის: “როგორ გავხადოთ Erasmus+ პროგრამა უფრო ინკლუზიური: პროგრამაში მონაწილეობის ბარიერები და მათი გადალახვა“",
+    "body": "**ℹ️** 2026 წელს Erasmus+ პროგრამის დღეების – 12-17 ოქტომბრის პერიოდში, ევროპის მასშტაბით პროგრამისთვის მიძღვნილი 10 000-ზე მეტი ღონისძიება ჩატარდა. Erasmus+-ის ეროვნული ოფისის ორგანიზებით, 16 ოქტომბერს სტუდენტებისთვის გაიმართა ონლაინ შეხვედრა ‘’როგორ გავხადოთ Erasmus+ პროგრამა უფრო ინკლუზიური: პროგრამაში მონაწილეობის ბარიერები და მათი გადალახვა’’.\n\n📍ღონისძიებაზე მოწვეულ სპიკერებს შორის იყვნენ:\n\n-   ნატალი ღვედაშვილი – ფსიქოთერაპევტი, ფსიქოკონსულტანტი, Eunoia Institutional \n-   თამთა კაპანაძე – ICM-ის გამარჯვებული (2 უნივერსიტეტი: ნორვეგია/თურქეთი)\n-   რატი კობახიძე – Erasmus Mundus-ის გამარჯვებული (ავსტრია/დიდი ბრიტანეთი)\n\nსპიკერებმა განიხილეს Erasmus+ პროგრამაში მონაწილეობის ფსიქოლოგიური, სოციალური და ეკონომიკური ბარიერები. ფსიქოკონსულტანტისგან დამსწრეებმა მიიღეს პრაქტიკული რჩევები, ხოლო პროგრამის გამარჯვებულებმა გააზიარეს თავიანთი პერსონალური გამოცდილებები და უპასუხეს დაინტერესებული სტუდენტების შეკითხვებს."
   },
   "legacy": {
     "id": 36567,
@@ -16,6 +16,32 @@
   },
   "migration": {
     "status": "unreviewed",
+    "language": {
+      "title": {
+        "script": "georgian",
+        "language": "ka",
+        "georgianLetters": 112,
+        "latinLetters": 7,
+        "georgianShare": 0.941,
+        "latinShare": 0.059,
+        "englishWordHits": 0,
+        "note": "Script heuristic excluding URLs; English is a candidate, not editorial approval."
+      },
+      "body": {
+        "script": "georgian",
+        "language": "ka",
+        "georgianLetters": 689,
+        "latinLetters": 63,
+        "georgianShare": 0.916,
+        "latinShare": 0.084,
+        "englishWordHits": 0,
+        "note": "Script heuristic excluding URLs; English is a candidate, not editorial approval."
+      },
+      "englishMarker": false,
+      "slot": "ka",
+      "label": "ka",
+      "needsReview": false
+    },
     "actionsStatus": "suggested",
     "suggestedActions": [
       {
@@ -312,7 +338,37 @@
       }
     ],
     "warnings": [
-      "Images listed separately and omitted from Markdown; no files downloaded."
-    ]
+      "Images omitted from Markdown; one eligible featured image is selected separately and other attachments stay listed.",
+      "Leading theme date, empty info markers or repeated blank lines removed."
+    ],
+    "pairCandidates": [],
+    "image": {
+      "status": "downloaded",
+      "path": "images/onlain-ghonisdzieba-studentebistvis-rogor-gavkhadot-erasmus.png",
+      "sourceUrl": "https://erasmus.org.ge/wp-content/uploads/2026/10/Untitled-design-1024x576.png",
+      "sizeBytes": 208476,
+      "width": 1024,
+      "height": 576,
+      "mediaId": 36569,
+      "reason": "Image attached to this post",
+      "alt": {
+        "ka": "[ALT NEEDED]",
+        "en": "[ALT NEEDED]"
+      }
+    }
+  },
+  "image": {
+    "status": "downloaded",
+    "path": "images/onlain-ghonisdzieba-studentebistvis-rogor-gavkhadot-erasmus.png",
+    "sourceUrl": "https://erasmus.org.ge/wp-content/uploads/2026/10/Untitled-design-1024x576.png",
+    "sizeBytes": 208476,
+    "width": 1024,
+    "height": 576,
+    "mediaId": 36569,
+    "reason": "Image attached to this post",
+    "alt": {
+      "ka": "[ALT NEEDED]",
+      "en": "[ALT NEEDED]"
+    }
   }
 }

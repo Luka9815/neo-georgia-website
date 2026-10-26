@@ -3,8 +3,8 @@
   "date": "2026-03-25",
   "actions": [],
   "ka": {
-    "title": "📣 Erasmus+ 26 მარტის საინფორმაციო ვებინარები VET სექტორისთვის",
-    "body": "{25.03.2026}\n\n📣 **Erasmus+ საინფორმაციო ვებინარები VET სექტორისთვის**\n\nგაცნობებთ, რომ Erasmus+-ის ეროვნული ოფისი საქართველოში 2026 წლის **26 მარტს** ორგანიზებას უწევს ონლაინ შეხვედრებს პროფესიული განათლებისა და ტრეინინგების (VET) სექტორში მოქმედი ორგანიზაციებისთვის. ვებინარი ასევე განკუთვნილია უნივერსიტეტებისთვის, რომელთა ქვეშაც ფუნქციონირებენ VET ორგანიზაციები. \n\nდასწრებისთვის აუცილებელია რეგისტრაცია 👇\n\n🔹 **I ვებინარი** – ახალბედა VET ორგანიზაციების მხარდაჭერა: რა არის Erasmus+ პროგრამა და მისი პრიორიტეტები?  \n📅 თარიღი: 26 მარტი, 2026  \n⏰ დრო: 11:00 – 11:30  \n💻 ფორმატი: ონლაინ (Google Meet)  \n🔗 რეგისტრაცია: [https://forms.gle/gYtLWUbdBemTrkAn8](https://forms.gle/gYtLWUbdBemTrkAn8)\n\n🔹 **II ვებინარი** – პარტნიორების მოძიება და Erasmus+ რესურსების გამოყენება VET-ებისთვის  \n📅 თარიღი: 26 მარტი, 2026  \n⏰ დრო: 11:30 – 12:15  \n💻 ფორმატი: ონლაინ (Google Meet)  \n🔗 რეგისტრაცია: [https://forms.gle/ERbNBhXsM3sPp9Z18](https://forms.gle/ERbNBhXsM3sPp9Z18)"
+    "title": "Erasmus+ 26 მარტის საინფორმაციო ვებინარები VET სექტორისთვის",
+    "body": "📣 **Erasmus+ საინფორმაციო ვებინარები VET სექტორისთვის**\n\nგაცნობებთ, რომ Erasmus+-ის ეროვნული ოფისი საქართველოში 2026 წლის **26 მარტს** ორგანიზებას უწევს ონლაინ შეხვედრებს პროფესიული განათლებისა და ტრეინინგების (VET) სექტორში მოქმედი ორგანიზაციებისთვის. ვებინარი ასევე განკუთვნილია უნივერსიტეტებისთვის, რომელთა ქვეშაც ფუნქციონირებენ VET ორგანიზაციები. \n\nდასწრებისთვის აუცილებელია რეგისტრაცია 👇\n\n🔹 **I ვებინარი** – ახალბედა VET ორგანიზაციების მხარდაჭერა: რა არის Erasmus+ პროგრამა და მისი პრიორიტეტები?  \n📅 თარიღი: 26 მარტი, 2026  \n⏰ დრო: 11:00 – 11:30  \n💻 ფორმატი: ონლაინ (Google Meet)  \n🔗 რეგისტრაცია: [https://forms.gle/gYtLWUbdBemTrkAn8](https://forms.gle/gYtLWUbdBemTrkAn8)\n\n🔹 **II ვებინარი** – პარტნიორების მოძიება და Erasmus+ რესურსების გამოყენება VET-ებისთვის  \n📅 თარიღი: 26 მარტი, 2026  \n⏰ დრო: 11:30 – 12:15  \n💻 ფორმატი: ონლაინ (Google Meet)  \n🔗 რეგისტრაცია: [https://forms.gle/ERbNBhXsM3sPp9Z18](https://forms.gle/ERbNBhXsM3sPp9Z18)"
   },
   "legacy": {
     "id": 35827,
@@ -13,6 +13,32 @@
   },
   "migration": {
     "status": "unreviewed",
+    "language": {
+      "title": {
+        "script": "georgian",
+        "language": "ka",
+        "georgianLetters": 40,
+        "latinLetters": 10,
+        "georgianShare": 0.8,
+        "latinShare": 0.2,
+        "englishWordHits": 0,
+        "note": "Script heuristic excluding URLs; English is a candidate, not editorial approval."
+      },
+      "body": {
+        "script": "georgian",
+        "language": "ka",
+        "georgianLetters": 506,
+        "latinLetters": 66,
+        "georgianShare": 0.885,
+        "latinShare": 0.115,
+        "englishWordHits": 0,
+        "note": "Script heuristic excluding URLs; English is a candidate, not editorial approval."
+      },
+      "englishMarker": false,
+      "slot": "ka",
+      "label": "ka",
+      "needsReview": false
+    },
     "actionsStatus": "suggested",
     "suggestedActions": [],
     "typeCandidate": {
@@ -113,9 +139,39 @@
       }
     ],
     "warnings": [
-      "Images listed separately and omitted from Markdown; no files downloaded.",
+      "Images omitted from Markdown; one eligible featured image is selected separately and other attachments stay listed.",
+      "Leading theme date, empty info markers or repeated blank lines removed.",
       "No Action matched. actions is empty; an editor must select a real Action before publication.",
       "Possible Event: kept as a News-shaped review file, not converted to an Event."
-    ]
+    ],
+    "pairCandidates": [],
+    "image": {
+      "status": "downloaded",
+      "path": "images/erasmus-26-martis-sainpormatsio-vebinarebi-vet-sektoristvis.jpg",
+      "sourceUrl": "https://erasmus.org.ge/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-25-at-16.35.23-1024x858.jpeg",
+      "sizeBytes": 126655,
+      "width": 1024,
+      "height": 858,
+      "mediaId": 35829,
+      "reason": "Image attached to this post",
+      "alt": {
+        "ka": "[ALT NEEDED]",
+        "en": "[ALT NEEDED]"
+      }
+    }
+  },
+  "image": {
+    "status": "downloaded",
+    "path": "images/erasmus-26-martis-sainpormatsio-vebinarebi-vet-sektoristvis.jpg",
+    "sourceUrl": "https://erasmus.org.ge/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-25-at-16.35.23-1024x858.jpeg",
+    "sizeBytes": 126655,
+    "width": 1024,
+    "height": 858,
+    "mediaId": 35829,
+    "reason": "Image attached to this post",
+    "alt": {
+      "ka": "[ALT NEEDED]",
+      "en": "[ALT NEEDED]"
+    }
   }
 }

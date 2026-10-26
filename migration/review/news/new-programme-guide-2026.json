@@ -1,0 +1,156 @@
+{
+  "slug": "new-programme-guide-2026",
+  "date": "2025-11-21",
+  "actions": [],
+  "sourceText": {
+    "title": "გამოქვეყნდა 2026 წლის Erasmus+-ის პროგრამის სახელმძღვანელო",
+    "body": "\\[For English Scroll Down\\]  \n📣 გამოქვეყნდა 2026 წლის Erasmus+-ის პროგრამის სახელმძღვანელო  \nგაცნობებთ, რომ გამოქვეყნდა 2026 წლის Erasmus+-ის პროგრამის სახელმძღვანელო. დოკუმენტის სანახავად მიჰყევით მოცემულ ბმულს: [https://shorturl.at/qHBQD](https://shorturl.at/qHBQD)\n\n📣 The Erasmus+ Programme Guide 2026 is published  \nWe are pleased to inform you that the Erasmus+ Programme Guide 2026 has been published. To view the document, follow the link: [https://shorturl.at/qHBQD](https://shorturl.at/qHBQD)"
+  },
+  "legacy": {
+    "id": 35005,
+    "slug": "new-programme-guide-2026",
+    "url": "https://erasmus.org.ge/new-programme-guide-2026/"
+  },
+  "migration": {
+    "status": "unreviewed",
+    "language": {
+      "title": {
+        "script": "georgian",
+        "language": "ka",
+        "georgianLetters": 40,
+        "latinLetters": 7,
+        "georgianShare": 0.851,
+        "latinShare": 0.149,
+        "englishWordHits": 0,
+        "note": "Script heuristic excluding URLs; English is a candidate, not editorial approval."
+      },
+      "body": {
+        "script": "mixed",
+        "language": "mixed",
+        "georgianLetters": 131,
+        "latinLetters": 166,
+        "georgianShare": 0.441,
+        "latinShare": 0.559,
+        "englishWordHits": 9,
+        "note": "Script heuristic excluding URLs; English is a candidate, not editorial approval."
+      },
+      "englishMarker": true,
+      "slot": "sourceText",
+      "label": "mixed ka/Latin",
+      "needsReview": true
+    },
+    "actionsStatus": "suggested",
+    "suggestedActions": [],
+    "typeCandidate": {
+      "type": "news",
+      "evidence": [
+        "12.11.2025"
+      ]
+    },
+    "attachments": [
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/11/UPCOMING-EVENTS-1-1-768x644.png",
+        "type": "image",
+        "sizeBytes": 29781,
+        "alt": "",
+        "mediaId": 35008,
+        "uses": [
+          {
+            "language": "mixed",
+            "relationship": "inline-image"
+          },
+          {
+            "language": "mixed",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          35005
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/11/UPCOMING-EVENTS-1-1-300x251.png",
+        "type": "image",
+        "sizeBytes": 7305,
+        "alt": "",
+        "mediaId": 35008,
+        "uses": [
+          {
+            "language": "mixed",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          35005
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/11/UPCOMING-EVENTS-1-1.png",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "",
+        "mediaId": 35008,
+        "uses": [
+          {
+            "language": "mixed",
+            "relationship": "image-variant"
+          },
+          {
+            "language": "shared",
+            "relationship": "attached-to-post"
+          }
+        ],
+        "usedBy": [
+          35005
+        ]
+      }
+    ],
+    "warnings": [
+      "Images omitted from Markdown; one eligible featured image is selected separately and other attachments stay listed.",
+      "Leading theme date, empty info markers or repeated blank lines removed.",
+      "Language needs review. The source remains separate; no automatic split, translation or pairing.",
+      "No Action matched. actions is empty; an editor must select a real Action before publication."
+    ],
+    "pairCandidates": [
+      {
+        "status": "CANDIDATE",
+        "kind": "within-post",
+        "ka": 35005,
+        "en": 35005,
+        "confidence": "high",
+        "evidence": [
+          "Both scripts plus an explicit English-section marker"
+        ],
+        "note": "Review the two source sections. No automatic splitting or translation."
+      }
+    ],
+    "image": {
+      "status": "downloaded",
+      "path": "images/new-programme-guide-2026.png",
+      "sourceUrl": "https://erasmus.org.ge/wp-content/uploads/2025/11/UPCOMING-EVENTS-1-1.png",
+      "sizeBytes": 110343,
+      "width": 940,
+      "height": 788,
+      "mediaId": 35008,
+      "reason": "Image attached to this post",
+      "alt": {
+        "ka": "[ALT NEEDED]",
+        "en": "[ALT NEEDED]"
+      }
+    }
+  },
+  "image": {
+    "status": "downloaded",
+    "path": "images/new-programme-guide-2026.png",
+    "sourceUrl": "https://erasmus.org.ge/wp-content/uploads/2025/11/UPCOMING-EVENTS-1-1.png",
+    "sizeBytes": 110343,
+    "width": 940,
+    "height": 788,
+    "mediaId": 35008,
+    "reason": "Image attached to this post",
+    "alt": {
+      "ka": "[ALT NEEDED]",
+      "en": "[ALT NEEDED]"
+    }
+  }
+}

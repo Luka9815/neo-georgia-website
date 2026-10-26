@@ -7,11 +7,11 @@
     "mediaId": 34823,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       },
       {
@@ -31,7 +31,7 @@
     "mediaId": 34823,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -47,7 +47,7 @@
     "mediaId": 34823,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -63,11 +63,11 @@
     "mediaId": 34825,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       },
       {
@@ -87,7 +87,7 @@
     "mediaId": 34825,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -103,7 +103,7 @@
     "mediaId": 34825,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -119,11 +119,11 @@
     "mediaId": 34824,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       },
       {
@@ -143,7 +143,7 @@
     "mediaId": 34824,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -159,7 +159,7 @@
     "mediaId": 34824,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -175,11 +175,11 @@
     "mediaId": 34826,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       },
       {
@@ -199,7 +199,7 @@
     "mediaId": 34826,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -215,7 +215,7 @@
     "mediaId": 34826,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -231,11 +231,11 @@
     "mediaId": 34827,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       },
       {
@@ -255,7 +255,7 @@
     "mediaId": 34827,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -271,7 +271,7 @@
     "mediaId": 34827,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -287,11 +287,11 @@
     "mediaId": 34828,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       },
       {
@@ -311,7 +311,7 @@
     "mediaId": 34828,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -327,7 +327,7 @@
     "mediaId": 34828,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -423,11 +423,11 @@
     "mediaId": 34836,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -443,7 +443,7 @@
     "mediaId": 34836,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -459,7 +459,7 @@
     "mediaId": 34836,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       },
       {
@@ -479,7 +479,7 @@
     "mediaId": null,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       }
     ],
@@ -511,11 +511,11 @@
     "mediaId": 34883,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -531,7 +531,7 @@
     "mediaId": 34883,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -547,7 +547,7 @@
     "mediaId": 34883,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -563,7 +563,7 @@
     "mediaId": 34883,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       },
       {
@@ -583,11 +583,11 @@
     "mediaId": 34987,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -603,7 +603,7 @@
     "mediaId": 34987,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -619,7 +619,7 @@
     "mediaId": 34987,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -635,7 +635,7 @@
     "mediaId": 34987,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -651,7 +651,7 @@
     "mediaId": 34987,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -667,11 +667,11 @@
     "mediaId": 34920,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       },
       {
@@ -691,7 +691,7 @@
     "mediaId": 34920,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -707,7 +707,7 @@
     "mediaId": 34920,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -723,7 +723,7 @@
     "mediaId": 34920,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -739,7 +739,7 @@
     "mediaId": 34920,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -755,11 +755,11 @@
     "mediaId": 34928,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -775,7 +775,7 @@
     "mediaId": 34928,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -791,7 +791,7 @@
     "mediaId": 34928,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -807,7 +807,7 @@
     "mediaId": 34928,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -823,7 +823,7 @@
     "mediaId": 34928,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -839,11 +839,11 @@
     "mediaId": 34929,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -859,7 +859,7 @@
     "mediaId": 34929,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -875,7 +875,7 @@
     "mediaId": 34929,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -891,7 +891,7 @@
     "mediaId": 34929,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -907,7 +907,7 @@
     "mediaId": 34929,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -923,7 +923,7 @@
     "mediaId": null,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       }
     ],
@@ -955,11 +955,11 @@
     "mediaId": 34950,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -975,7 +975,7 @@
     "mediaId": 34950,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -1007,7 +1007,7 @@
     "mediaId": null,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       }
     ],
@@ -1039,11 +1039,11 @@
     "mediaId": 34966,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -1059,7 +1059,7 @@
     "mediaId": 34966,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -1075,7 +1075,7 @@
     "mediaId": 34966,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -1091,7 +1091,7 @@
     "mediaId": 34966,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -1107,7 +1107,7 @@
     "mediaId": 34966,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -1123,7 +1123,7 @@
     "mediaId": 34966,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -1139,11 +1139,11 @@
     "mediaId": 34975,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -1159,7 +1159,7 @@
     "mediaId": 34975,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -1175,7 +1175,7 @@
     "mediaId": 34975,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -1191,7 +1191,7 @@
     "mediaId": 34975,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -1207,7 +1207,7 @@
     "mediaId": 34975,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -1223,11 +1223,11 @@
     "mediaId": 34998,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -1243,7 +1243,7 @@
     "mediaId": 34998,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -1259,7 +1259,7 @@
     "mediaId": 34998,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -1275,7 +1275,7 @@
     "mediaId": 34998,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       },
       {
@@ -1295,11 +1295,11 @@
     "mediaId": 35008,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -1315,7 +1315,7 @@
     "mediaId": 35008,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -1331,7 +1331,7 @@
     "mediaId": 35008,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       },
       {
@@ -1351,11 +1351,11 @@
     "mediaId": 35073,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -1371,7 +1371,7 @@
     "mediaId": 35073,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -1387,7 +1387,7 @@
     "mediaId": 35073,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -1403,7 +1403,7 @@
     "mediaId": 35073,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -1419,7 +1419,7 @@
     "mediaId": 35073,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -1435,11 +1435,11 @@
     "mediaId": 35074,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -1455,7 +1455,7 @@
     "mediaId": 35074,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -1471,7 +1471,7 @@
     "mediaId": 35074,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -1487,7 +1487,7 @@
     "mediaId": 35074,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -1503,7 +1503,7 @@
     "mediaId": 35074,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -1519,11 +1519,11 @@
     "mediaId": null,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       }
     ],
@@ -1540,11 +1540,11 @@
     "mediaId": null,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       }
     ],
@@ -1562,11 +1562,11 @@
     "mediaId": 35084,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -1582,7 +1582,7 @@
     "mediaId": 35084,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -1598,7 +1598,7 @@
     "mediaId": 35084,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -1614,7 +1614,7 @@
     "mediaId": 35084,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -1630,7 +1630,7 @@
     "mediaId": 35084,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -1646,7 +1646,7 @@
     "mediaId": 35084,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -1662,11 +1662,11 @@
     "mediaId": null,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       }
     ],
@@ -1682,11 +1682,11 @@
     "mediaId": null,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       }
     ],
@@ -1702,11 +1702,11 @@
     "mediaId": null,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       }
     ],
@@ -1722,11 +1722,11 @@
     "mediaId": null,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       }
     ],
@@ -1742,7 +1742,7 @@
     "mediaId": null,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       }
     ],
@@ -1758,19 +1758,19 @@
     "mediaId": null,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       }
     ],
@@ -1786,11 +1786,11 @@
     "mediaId": null,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       }
     ],
@@ -1806,11 +1806,11 @@
     "mediaId": 35096,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -1826,7 +1826,7 @@
     "mediaId": 35096,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -1842,7 +1842,7 @@
     "mediaId": 35096,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -1858,7 +1858,7 @@
     "mediaId": 35096,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -1874,7 +1874,7 @@
     "mediaId": 35096,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -1906,11 +1906,11 @@
     "mediaId": 35108,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -1926,7 +1926,7 @@
     "mediaId": 35108,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -1942,7 +1942,7 @@
     "mediaId": 35108,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -1958,7 +1958,7 @@
     "mediaId": 35108,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -1974,7 +1974,7 @@
     "mediaId": 35108,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -1990,11 +1990,11 @@
     "mediaId": 35121,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -2010,7 +2010,7 @@
     "mediaId": 35121,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -2026,7 +2026,7 @@
     "mediaId": 35121,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -2042,7 +2042,7 @@
     "mediaId": 35121,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -2058,7 +2058,7 @@
     "mediaId": 35121,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -2106,11 +2106,11 @@
     "mediaId": 35131,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -2126,7 +2126,7 @@
     "mediaId": 35131,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -2142,7 +2142,7 @@
     "mediaId": 35131,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -2158,7 +2158,7 @@
     "mediaId": 35131,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -2174,7 +2174,7 @@
     "mediaId": 35131,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -2190,11 +2190,11 @@
     "mediaId": 35138,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -2210,7 +2210,7 @@
     "mediaId": 35138,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -2226,7 +2226,7 @@
     "mediaId": 35138,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -2242,7 +2242,7 @@
     "mediaId": 35138,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -2258,7 +2258,7 @@
     "mediaId": 35138,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -2274,11 +2274,11 @@
     "mediaId": 35159,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -2294,7 +2294,7 @@
     "mediaId": 35159,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -2310,7 +2310,7 @@
     "mediaId": 35159,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -2326,7 +2326,7 @@
     "mediaId": 35159,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -2342,7 +2342,7 @@
     "mediaId": 35159,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       },
       {
@@ -2362,11 +2362,11 @@
     "mediaId": 35161,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -2382,7 +2382,7 @@
     "mediaId": 35161,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -2398,7 +2398,7 @@
     "mediaId": 35161,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -2414,7 +2414,7 @@
     "mediaId": 35161,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -2430,7 +2430,7 @@
     "mediaId": 35161,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -2494,11 +2494,11 @@
     "mediaId": 35270,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       },
       {
@@ -2518,7 +2518,7 @@
     "mediaId": 35270,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -2534,7 +2534,7 @@
     "mediaId": 35270,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -2550,11 +2550,11 @@
     "mediaId": 35271,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       },
       {
@@ -2574,7 +2574,7 @@
     "mediaId": 35271,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -2590,7 +2590,7 @@
     "mediaId": 35271,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -2606,11 +2606,11 @@
     "mediaId": 35272,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       },
       {
@@ -2630,7 +2630,7 @@
     "mediaId": 35272,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -2646,11 +2646,11 @@
     "mediaId": 35267,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       },
       {
@@ -2670,7 +2670,7 @@
     "mediaId": 35267,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -2686,11 +2686,11 @@
     "mediaId": 35268,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       },
       {
@@ -2710,7 +2710,7 @@
     "mediaId": 35268,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -2726,11 +2726,11 @@
     "mediaId": 35269,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       },
       {
@@ -2750,7 +2750,7 @@
     "mediaId": 35269,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -2766,7 +2766,7 @@
     "mediaId": 35269,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -2894,11 +2894,11 @@
     "mediaId": 35283,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       },
       {
@@ -2918,7 +2918,7 @@
     "mediaId": 35283,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -2934,7 +2934,7 @@
     "mediaId": 35283,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -2950,11 +2950,11 @@
     "mediaId": 35284,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       },
       {
@@ -2974,7 +2974,7 @@
     "mediaId": 35284,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -2990,7 +2990,7 @@
     "mediaId": 35284,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -3006,11 +3006,11 @@
     "mediaId": 35649,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -3026,7 +3026,7 @@
     "mediaId": 35649,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -3042,7 +3042,7 @@
     "mediaId": 35649,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -3058,7 +3058,7 @@
     "mediaId": 35649,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -3074,7 +3074,7 @@
     "mediaId": 35649,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -3090,11 +3090,11 @@
     "mediaId": 35677,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -3110,7 +3110,7 @@
     "mediaId": 35677,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -3126,7 +3126,7 @@
     "mediaId": 35677,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -3142,7 +3142,7 @@
     "mediaId": 35677,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -3158,7 +3158,7 @@
     "mediaId": 35677,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -3190,11 +3190,11 @@
     "mediaId": 35730,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -3210,7 +3210,7 @@
     "mediaId": 35730,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -3226,7 +3226,7 @@
     "mediaId": 35730,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -3242,7 +3242,7 @@
     "mediaId": 35730,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -3258,7 +3258,7 @@
     "mediaId": 35730,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       },
       {
@@ -5814,11 +5814,11 @@
     "mediaId": 36038,
     "uses": [
       {
-        "language": "unknown",
+        "language": "en-candidate",
         "relationship": "inline-image"
       },
       {
-        "language": "unknown",
+        "language": "en-candidate",
         "relationship": "image-variant"
       }
     ],
@@ -5834,7 +5834,7 @@
     "mediaId": 36038,
     "uses": [
       {
-        "language": "unknown",
+        "language": "en-candidate",
         "relationship": "image-variant"
       }
     ],
@@ -5850,7 +5850,7 @@
     "mediaId": 36038,
     "uses": [
       {
-        "language": "unknown",
+        "language": "en-candidate",
         "relationship": "image-variant"
       }
     ],
@@ -5866,7 +5866,7 @@
     "mediaId": 36038,
     "uses": [
       {
-        "language": "unknown",
+        "language": "en-candidate",
         "relationship": "image-variant"
       }
     ],
@@ -5882,7 +5882,7 @@
     "mediaId": 36038,
     "uses": [
       {
-        "language": "unknown",
+        "language": "en-candidate",
         "relationship": "image-variant"
       },
       {
@@ -6682,11 +6682,11 @@
     "mediaId": 36138,
     "uses": [
       {
-        "language": "ka",
+        "language": "en-candidate",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "en-candidate",
         "relationship": "image-variant"
       }
     ],
@@ -6702,7 +6702,7 @@
     "mediaId": 36138,
     "uses": [
       {
-        "language": "ka",
+        "language": "en-candidate",
         "relationship": "image-variant"
       }
     ],
@@ -6718,7 +6718,7 @@
     "mediaId": 36138,
     "uses": [
       {
-        "language": "ka",
+        "language": "en-candidate",
         "relationship": "image-variant"
       }
     ],
@@ -6734,7 +6734,7 @@
     "mediaId": 36138,
     "uses": [
       {
-        "language": "ka",
+        "language": "en-candidate",
         "relationship": "image-variant"
       },
       {
@@ -6874,27 +6874,27 @@
     "mediaId": null,
     "uses": [
       {
-        "language": "unknown",
+        "language": "en-candidate",
         "relationship": "inline-image"
       },
       {
-        "language": "unknown",
+        "language": "en-candidate",
         "relationship": "inline-image"
       },
       {
-        "language": "unknown",
+        "language": "en-candidate",
         "relationship": "inline-image"
       },
       {
-        "language": "unknown",
+        "language": "en-candidate",
         "relationship": "inline-image"
       },
       {
-        "language": "unknown",
+        "language": "en-candidate",
         "relationship": "inline-image"
       },
       {
-        "language": "unknown",
+        "language": "en-candidate",
         "relationship": "inline-image"
       }
     ],
@@ -7302,11 +7302,11 @@
     "mediaId": 36281,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -7322,7 +7322,7 @@
     "mediaId": 36281,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -7338,7 +7338,7 @@
     "mediaId": 36281,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -7354,7 +7354,7 @@
     "mediaId": 36281,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -7370,7 +7370,7 @@
     "mediaId": 36281,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       },
       {
@@ -7390,11 +7390,11 @@
     "mediaId": 36282,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -7410,7 +7410,7 @@
     "mediaId": 36282,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -7426,7 +7426,7 @@
     "mediaId": 36282,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -7442,7 +7442,7 @@
     "mediaId": 36282,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -7458,7 +7458,7 @@
     "mediaId": 36282,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       },
       {
@@ -7478,11 +7478,11 @@
     "mediaId": 36283,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -7498,7 +7498,7 @@
     "mediaId": 36283,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -7514,7 +7514,7 @@
     "mediaId": 36283,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -7530,7 +7530,7 @@
     "mediaId": 36283,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       }
     ],
@@ -7546,7 +7546,7 @@
     "mediaId": 36283,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "image-variant"
       },
       {
@@ -7566,7 +7566,7 @@
     "mediaId": 36284,
     "uses": [
       {
-        "language": "ka",
+        "language": "mixed",
         "relationship": "inline-image"
       },
       {
@@ -7674,11 +7674,11 @@
     "mediaId": 36377,
     "uses": [
       {
-        "language": "unknown",
+        "language": "en-candidate",
         "relationship": "inline-image"
       },
       {
-        "language": "unknown",
+        "language": "en-candidate",
         "relationship": "image-variant"
       },
       {
@@ -7698,7 +7698,7 @@
     "mediaId": 36377,
     "uses": [
       {
-        "language": "unknown",
+        "language": "en-candidate",
         "relationship": "image-variant"
       }
     ],
@@ -7714,7 +7714,7 @@
     "mediaId": 36377,
     "uses": [
       {
-        "language": "unknown",
+        "language": "en-candidate",
         "relationship": "image-variant"
       }
     ],
@@ -7730,11 +7730,11 @@
     "mediaId": 36381,
     "uses": [
       {
-        "language": "unknown",
+        "language": "en-candidate",
         "relationship": "inline-image"
       },
       {
-        "language": "unknown",
+        "language": "en-candidate",
         "relationship": "image-variant"
       },
       {
@@ -7754,7 +7754,7 @@
     "mediaId": 36381,
     "uses": [
       {
-        "language": "unknown",
+        "language": "en-candidate",
         "relationship": "image-variant"
       }
     ],
@@ -7770,7 +7770,7 @@
     "mediaId": 36381,
     "uses": [
       {
-        "language": "unknown",
+        "language": "en-candidate",
         "relationship": "image-variant"
       }
     ],
@@ -8486,11 +8486,11 @@
     "mediaId": 36512,
     "uses": [
       {
-        "language": "unknown",
+        "language": "en-candidate",
         "relationship": "inline-image"
       },
       {
-        "language": "unknown",
+        "language": "en-candidate",
         "relationship": "image-variant"
       }
     ],
@@ -8506,7 +8506,7 @@
     "mediaId": 36512,
     "uses": [
       {
-        "language": "unknown",
+        "language": "en-candidate",
         "relationship": "image-variant"
       }
     ],
@@ -8522,7 +8522,7 @@
     "mediaId": 36512,
     "uses": [
       {
-        "language": "unknown",
+        "language": "en-candidate",
         "relationship": "image-variant"
       }
     ],
@@ -8538,7 +8538,7 @@
     "mediaId": 36512,
     "uses": [
       {
-        "language": "unknown",
+        "language": "en-candidate",
         "relationship": "image-variant"
       },
       {
@@ -8558,11 +8558,11 @@
     "mediaId": 36513,
     "uses": [
       {
-        "language": "unknown",
+        "language": "en-candidate",
         "relationship": "inline-image"
       },
       {
-        "language": "unknown",
+        "language": "en-candidate",
         "relationship": "image-variant"
       }
     ],
@@ -8578,7 +8578,7 @@
     "mediaId": 36513,
     "uses": [
       {
-        "language": "unknown",
+        "language": "en-candidate",
         "relationship": "image-variant"
       }
     ],
@@ -8594,7 +8594,7 @@
     "mediaId": 36513,
     "uses": [
       {
-        "language": "unknown",
+        "language": "en-candidate",
         "relationship": "image-variant"
       }
     ],
@@ -8610,7 +8610,7 @@
     "mediaId": 36513,
     "uses": [
       {
-        "language": "unknown",
+        "language": "en-candidate",
         "relationship": "image-variant"
       },
       {
@@ -8630,11 +8630,11 @@
     "mediaId": 36514,
     "uses": [
       {
-        "language": "unknown",
+        "language": "en-candidate",
         "relationship": "inline-image"
       },
       {
-        "language": "unknown",
+        "language": "en-candidate",
         "relationship": "image-variant"
       }
     ],
@@ -8650,7 +8650,7 @@
     "mediaId": 36514,
     "uses": [
       {
-        "language": "unknown",
+        "language": "en-candidate",
         "relationship": "image-variant"
       }
     ],
@@ -8666,7 +8666,7 @@
     "mediaId": 36514,
     "uses": [
       {
-        "language": "unknown",
+        "language": "en-candidate",
         "relationship": "image-variant"
       }
     ],
@@ -8682,7 +8682,7 @@
     "mediaId": 36514,
     "uses": [
       {
-        "language": "unknown",
+        "language": "en-candidate",
         "relationship": "image-variant"
       },
       {
@@ -8702,11 +8702,11 @@
     "mediaId": 36515,
     "uses": [
       {
-        "language": "unknown",
+        "language": "en-candidate",
         "relationship": "inline-image"
       },
       {
-        "language": "unknown",
+        "language": "en-candidate",
         "relationship": "image-variant"
       }
     ],
@@ -8722,7 +8722,7 @@
     "mediaId": 36515,
     "uses": [
       {
-        "language": "unknown",
+        "language": "en-candidate",
         "relationship": "image-variant"
       }
     ],
@@ -8738,7 +8738,7 @@
     "mediaId": 36515,
     "uses": [
       {
-        "language": "unknown",
+        "language": "en-candidate",
         "relationship": "image-variant"
       }
     ],
@@ -8754,7 +8754,7 @@
     "mediaId": 36515,
     "uses": [
       {
-        "language": "unknown",
+        "language": "en-candidate",
         "relationship": "image-variant"
       },
       {

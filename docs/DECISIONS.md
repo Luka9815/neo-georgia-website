@@ -193,3 +193,7 @@ Supersedes the no-binary-download part of "Review-only Markdown conversion, roma
 
 ## 2026-10-26: Quick review table and decisions CSV
 Put a one-row-per-draft summary at the top of REPORT.md, including language, type/Action suggestions, image and pairing candidates. Generate decisions.csv with slug, keep, type, actions, pair_with and notes. Leave keep/pair_with blank; type/Actions are editable suggestions, not decisions. Preserve an existing decisions.csv on reruns and write a fresh decisions.template.csv instead. Mixed/English-candidate drafts have no proposed Georgian redirect until language review. Neither CSV nor candidate pairs trigger content promotion or merging.
+
+
+## 2026-10-26: Offline language, cleanup, slug and image regression checks
+Extend the offline converter-fixture decision with mixed-body/title mismatch, within-post/cross-post candidate-only pairing, source-record preservation, theme cleanup and clean legacy slug cases. Use injected image bytes to test variant selection, byte deduplication, provenance/alt placeholders and rejection of actual widths above 1024 px without making network requests. Test the quick report/CSV row contract too. The final live import is a separate manual operation; verify downloaded images and saved-byte totals locally before committing review output.

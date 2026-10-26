@@ -1,0 +1,58 @@
+{
+  "slug": "newsletter-vol-5-summer-break-announcement",
+  "date": "2026-07-21",
+  "actions": [],
+  "ka": {
+    "title": "Erasmus+-ის ეროვნული ოფისის საზაფხულო შესვენება: 1-31 აგვისტო",
+    "body": "გატყობინებთ, რომ Erasmus+-ის ეროვნული ოფისის საზაფხულო არდადეგების პერიოდი მოიცავს აგვისტოს თვეს. ოფისი მუშაობას განაახლებს 1-ლი სექტემბრიდან. Erasmus+ პროგრამის შესახებ დამატებითი ინფორმაციის მისაღებად, ეწვიეთ ჩვენს ვებ-გვერდს და ხშირად დასმულ შეკითხვებს – [https://erasmus.org.ge/](https://erasmus.org.ge/).\n\n**უმაღლესი საგანმანათლებლო დაწესებულებებისთვის:** გთხოვთ, გაითვალისწინოთ ოფისის დასვენების ვადები და მხარდაჭერის წერილების დამზადების მიზნით, კომუნიკაცია იქონიოთ ევროპულ უნივერსიტეტებთან.  გთხოვთ, დაიჭიროთ თადარიგი და გაითვალისწინოთ შესაბამისი ვადები.  (იხ. [მხარდაჭერის წერილების მიღების პროცედურა](https://erasmus.org.ge/support-letters/))"
+  },
+  "legacy": {
+    "id": 36228,
+    "slug": "newsletter-vol-5-summer-break-announcement",
+    "url": "https://erasmus.org.ge/newsletter-vol-5-summer-break-announcement/"
+  },
+  "migration": {
+    "status": "unreviewed",
+    "language": {
+      "title": {
+        "script": "georgian",
+        "language": "ka",
+        "georgianLetters": 41,
+        "latinLetters": 7,
+        "georgianShare": 0.854,
+        "latinShare": 0.146,
+        "englishWordHits": 0,
+        "note": "Script heuristic excluding URLs; English is a candidate, not editorial approval."
+      },
+      "body": {
+        "script": "georgian",
+        "language": "ka",
+        "georgianLetters": 458,
+        "latinLetters": 14,
+        "georgianShare": 0.97,
+        "latinShare": 0.03,
+        "englishWordHits": 0,
+        "note": "Script heuristic excluding URLs; English is a candidate, not editorial approval."
+      },
+      "englishMarker": false,
+      "slot": "ka",
+      "label": "ka",
+      "needsReview": false
+    },
+    "actionsStatus": "suggested",
+    "suggestedActions": [],
+    "typeCandidate": {
+      "type": "news",
+      "evidence": [
+        "21.07.2026"
+      ]
+    },
+    "attachments": [],
+    "warnings": [
+      "Leading theme date, empty info markers or repeated blank lines removed.",
+      "No Action matched. actions is empty; an editor must select a real Action before publication.",
+      "No supported image variant with a known width up to 1024 px; HEIC is skipped."
+    ],
+    "pairCandidates": []
+  }
+}

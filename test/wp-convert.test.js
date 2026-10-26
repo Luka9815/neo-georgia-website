@@ -11,7 +11,19 @@ import {
   convertPosts,
   suggestActions,
   eventCandidate,
+  cleanTitle,
+  cleanThemeMarkdown,
 } from '../scripts/wp/convert.js';
+import {
+  detectTextLanguage,
+  postLanguage,
+} from '../scripts/wp/language-review.js';
+import {
+  selectReviewImage,
+  imageDimensions,
+  downloadReviewImages,
+} from '../scripts/wp/images.js';
+import { renderReport, renderDecisions } from '../scripts/wp/report.js';
 import { languageFindings } from '../scripts/wp/languages.js';
 
 // Converter checks must stay offline even if a future helper changes.
@@ -183,20 +195,28 @@ test('exact window includes the start, excludes the end and rejects missing GMT'
   assert.equal(results[0].news.date, '2026-06-15');
 });
 
-test('only verified English relations create en and repeated lang queries do not', () => {
+test('even explicit English relations remain candidates and source records are not merged', () => {
   const ka = post(1, { lang: 'ka', translations: { ka: 1, en: 2 } });
   const en = post(2, {
     lang: 'en',
     title: { rendered: 'Information day' },
-    content: { rendered: '<p>English information day for CBHE.</p>' },
+    content: { rendered: fixture('english-source.html') },
     translations: { ka: 1, en: 2 },
   });
   const c = collections([ka], { english: { items: [en], complete: true } });
   const findings = languageFindings(c);
   const converted = convertPosts(c, { ...run, languages: findings });
-  assert.equal(findings.pairs.length, 1);
-  assert.equal(converted.results[0].news.en.title, 'Information day');
-  assert.equal(converted.results[0].news.legacy.en.id, 2);
+  assert.equal(converted.results.length, 2);
+  assert.equal(converted.results[0].news.en, undefined);
+  assert.equal(converted.results[0].news.legacy.id, 1);
+  assert.equal(converted.results[1].news.en.title, 'Information day');
+  assert.equal(converted.results[1].news.ka, undefined);
+  assert.equal(converted.results[1].news.legacy.id, 2);
+  const pair = converted.pairCandidates.find(
+    (pair) => pair.kind === 'cross-post'
+  );
+  assert.equal(pair.status, 'CANDIDATE');
+  assert.equal(pair.confidence, 'high');
   const noMetadata = collections([post(3)]);
   const ignoredQuery = languageFindings(noMetadata);
   assert.equal(ignoredQuery.englishQuery.sameIdsAsDefault, true);
@@ -206,8 +226,6 @@ test('only verified English relations create en and repeated lang queries do not
       .news.en,
     undefined
   );
-  const repeated = collections([ka, { ...ka, id: 2, lang: 'en' }]);
-  assert.equal(languageFindings(repeated).pairs.length, 0);
 });
 
 test('Action evidence is suggested, empty matches stay empty, Events stay News-shaped', () => {
@@ -272,4 +290,316 @@ test('media metadata keeps known sizes, gallery/featured usage and duplicates fo
   assert.ok(asset.uses.some((use) => use.relationship === 'featured-image'));
   assert.ok(result.duplicates.some((group) => group.field === 'body'));
   assert.notEqual(result.results[0].slug, result.results[1].slug);
+});
+
+test('title/body detection keeps mixed bodies outside ka and ignores URL letters', () => {
+  const bilingual = post(1, {
+    content: { rendered: fixture('bilingual-source.html') },
+  });
+  const profile = postLanguage(bilingual);
+  assert.equal(profile.title.script, 'georgian');
+  assert.equal(profile.body.script, 'mixed');
+  assert.equal(profile.englishMarker, true);
+  const converted = convertPosts(collections([bilingual]), run);
+  const draft = converted.results[0].news;
+  assert.equal(draft.ka, undefined);
+  assert.equal(draft.en, undefined);
+  assert.ok(draft.sourceText.body.includes('The information day'));
+  assert.equal(converted.pairCandidates[0].kind, 'within-post');
+  assert.equal(converted.pairCandidates[0].status, 'CANDIDATE');
+  assert.equal(
+    detectTextLanguage(
+      '<p>ქართული საინფორმაციო ტექსტი.</p><a>https://example.invalid/long-latin-url-for-the-article</a>'
+    ).script,
+    'georgian'
+  );
+});
+
+test('pure English bodies with Georgian titles are flagged separately, not called Georgian', () => {
+  const record = post(1, {
+    content: { rendered: fixture('english-source.html') },
+  });
+  const { results, englishWithoutCandidate } = convertPosts(
+    collections([record]),
+    run
+  );
+  assert.equal(results[0].language.title.script, 'georgian');
+  assert.equal(results[0].language.body.language, 'en-candidate');
+  assert.equal(results[0].news.ka, undefined);
+  assert.ok(results[0].news.sourceText.body.startsWith('The information day'));
+  assert.deepEqual(englishWithoutCandidate, [1]);
+});
+
+test('date proximity needs topic/media/slug evidence and never merges candidates', () => {
+  const ka = post(1, { featured_media: 99 });
+  const en = post(2, {
+    date: '2026-06-16T14:00:00',
+    featured_media: 99,
+    title: { rendered: 'Information day' },
+    content: { rendered: fixture('english-source.html') },
+  });
+  const media = {
+    items: [
+      {
+        id: 99,
+        source_url: 'https://erasmus.org.ge/photo.jpg',
+        mime_type: 'image/jpeg',
+      },
+    ],
+  };
+  const converted = convertPosts(collections([ka, en], { media }), run);
+  assert.equal(converted.results.length, 2);
+  const pair = converted.pairCandidates.find(
+    (pair) => pair.kind === 'cross-post'
+  );
+  assert.equal(pair.status, 'CANDIDATE');
+  assert.ok(pair.evidence.some((value) => value.includes('1 day')));
+  assert.ok(
+    pair.evidence.some((value) => value.includes('shared image/media'))
+  );
+  const unrelated = post(3, {
+    slug: 'office-opening-hours',
+    title: { rendered: 'Office opening hours' },
+    content: {
+      rendered:
+        '<p>The office is open for visitors and the public on Mondays in the afternoon.</p>',
+    },
+  });
+  assert.equal(
+    convertPosts(collections([ka, unrelated]), run).pairCandidates.length,
+    0
+  );
+});
+
+test('theme cleanup removes leading dates and empty info markers, preserving meaningful body emoji', () => {
+  const { markdown } = htmlToMarkdown(fixture('theme-debris.html'));
+  assert.doesNotMatch(markdown, /03\.11\.2025/);
+  assert.ok(markdown.startsWith('📣 მთავარი ინფორმაცია'));
+  assert.match(markdown, /\*\*ℹ️\*\* მნიშვნელოვანი/);
+  assert.match(markdown, /\{15\.12\.2025\}/);
+  assert.doesNotMatch(markdown, /\n\s*\n\s*\n/);
+  assert.equal(
+    cleanThemeMarkdown('{01.02.2026}\n\n**ℹ️**\n\nText\n\n\n'),
+    'Text'
+  );
+  assert.equal(cleanTitle('👩🏽‍🎓 📣 10 ოქტომბერი'), '10 ოქტომბერი');
+  assert.equal(cleanTitle('🇬🇪 NEO Georgia'), 'NEO Georgia');
+  assert.equal(cleanTitle('2026 წლის სიახლეები 📣'), '2026 წლის სიახლეები 📣');
+});
+
+test('clean legacy slugs take precedence and romanised fallback truncates whole words', () => {
+  const used = new Set();
+  assert.equal(
+    uniqueSlug('ქართული სათაური', 1, used, 'legacy_news-2026'),
+    'legacy-news-2026'
+  );
+  assert.equal(
+    uniqueSlug('სხვა სათაური', 2, used, 'legacy_news-2026'),
+    'legacy-news-2026-2'
+  );
+  assert.equal(uniqueSlug('საქართველო', 3, used, '%E1%83%A5'), 'sakartvelo');
+  assert.equal(uniqueSlug('საქართველო', 4, used, 'Not-Clean'), 'sakartvelo-2');
+  const title = 'საერთაშორისო '.repeat(10);
+  const fallback = uniqueSlug(title, 5, used, 'ძველი-სათაური');
+  assert.ok(fallback.length <= 60);
+  assert.ok(fallback.endsWith('saertashoriso'));
+  assert.equal(
+    uniqueSlug(
+      'სათაური',
+      6,
+      used,
+      'a-long-clean-legacy-slug-'.repeat(4) + 'end'
+    ),
+    'a-long-clean-legacy-slug-'.repeat(4) + 'end'
+  );
+});
+
+test('image selection chooses the largest eligible variant and skips HEIC/oversized sources', () => {
+  const media = [
+    {
+      id: 9,
+      post: 1,
+      mime_type: 'image/png',
+      source_url: 'https://erasmus.org.ge/full.png',
+      media_details: {
+        width: 2048,
+        height: 1500,
+        sizes: {
+          medium: {
+            source_url: 'https://erasmus.org.ge/medium.jpg',
+            width: 300,
+            height: 200,
+          },
+          large: {
+            source_url: 'https://erasmus.org.ge/large.png',
+            width: 1024,
+            height: 750,
+          },
+          bigger: {
+            source_url: 'https://erasmus.org.ge/bigger.webp',
+            width: 1280,
+            height: 900,
+          },
+        },
+      },
+    },
+  ];
+  const selected = selectReviewImage({ id: 1, featured_media: 9 }, [], media);
+  assert.equal(selected.url, 'https://erasmus.org.ge/large.png');
+  assert.equal(selected.width, 1024);
+  const heic = {
+    id: 10,
+    post: 1,
+    mime_type: 'image/heic',
+    source_url: 'https://erasmus.org.ge/photo.heic',
+    media_details: { width: 800, height: 600 },
+  };
+  assert.equal(
+    selectReviewImage({ id: 1, featured_media: 10 }, [], [heic]),
+    null
+  );
+  assert.equal(
+    selectReviewImage({ id: 1, featured_media: 10 }, [], [heic, ...media]).url,
+    selected.url
+  );
+});
+
+function pngHeader(width, height) {
+  const bytes = Buffer.alloc(24);
+  Buffer.from('89504e470d0a1a0a', 'hex').copy(bytes);
+  bytes.writeUInt32BE(width, 16);
+  bytes.writeUInt32BE(height, 20);
+  return bytes;
+}
+
+test('review image downloads retain provenance/alt placeholders and deduplicate network bytes', async () => {
+  const records = [
+    post(1, { featured_media: 9 }),
+    post(2, { featured_media: 9 }),
+  ];
+  const media = [
+    {
+      id: 9,
+      source_url: 'https://erasmus.org.ge/photo.png',
+      mime_type: 'image/png',
+      media_details: { width: 800, height: 600 },
+    },
+  ];
+  const { results } = convertPosts(
+    collections(records, { media: { items: media } }),
+    run
+  );
+  const bytes = pngHeader(800, 600);
+  let downloads = 0;
+  const writes = [];
+  const summary = await downloadReviewImages(
+    results,
+    records,
+    media,
+    {
+      download: async () => {
+        downloads++;
+        return bytes;
+      },
+    },
+    (path, body) => {
+      writes.push(path);
+      assert.deepEqual(body, bytes);
+    }
+  );
+  assert.equal(downloads, 1);
+  assert.equal(writes.length, 2);
+  assert.ok(writes.every((path) => path.startsWith('images/')));
+  assert.equal(summary.totalDownloadBytes, bytes.length);
+  assert.equal(summary.totalFileBytes, bytes.length * 2);
+  for (const row of results) {
+    assert.deepEqual(row.news.image.alt, {
+      ka: '[ALT NEEDED]',
+      en: '[ALT NEEDED]',
+    });
+    assert.equal(row.news.image.sourceUrl, media[0].source_url);
+    assert.equal(row.news.image.sizeBytes, bytes.length);
+  }
+  assert.deepEqual(imageDimensions(bytes), {
+    format: 'png',
+    width: 800,
+    height: 600,
+  });
+  assert.throws(
+    () => imageDimensions(Buffer.from('<html>Error</html>')),
+    /not a supported/
+  );
+});
+
+test('an image wider than advertised is rejected before any file is written', async () => {
+  const records = [post(1, { featured_media: 9 })];
+  const media = [
+    {
+      id: 9,
+      source_url: 'https://erasmus.org.ge/photo.png',
+      mime_type: 'image/png',
+      media_details: { width: 1024, height: 600 },
+    },
+  ];
+  const { results } = convertPosts(
+    collections(records, { media: { items: media } }),
+    run
+  );
+  let writes = 0;
+  const summary = await downloadReviewImages(
+    results,
+    records,
+    media,
+    { download: async () => pngHeader(1600, 900) },
+    () => {
+      writes++;
+    }
+  );
+  assert.equal(writes, 0);
+  assert.equal(summary.files, 0);
+  assert.equal(summary.failures.length, 1);
+  assert.match(results[0].image.reason, /1024 px/);
+});
+
+test('review table and CSV provide one row per source without pre-approving a pair', () => {
+  const c = collections([
+    post(1, { content: { rendered: fixture('bilingual-source.html') } }),
+  ]);
+  const converted = convertPosts(c, run);
+  const inventory = {
+    items: converted.results.map(({ news, ...row }) => row),
+    duplicates: converted.duplicates,
+    pairCandidates: converted.pairCandidates,
+    englishWithoutCandidate: converted.englishWithoutCandidate,
+  };
+  const csv = renderDecisions(inventory);
+  assert.equal(csv.split('\n')[0], 'slug,keep,type,actions,pair_with,notes');
+  assert.equal(csv.trim().split('\n').length, 2);
+  assert.match(csv.split('\n')[1], /,"",/);
+  const report = renderReport(
+    {
+      ...run,
+      runDate: '2026-10-26',
+      startedAt: '2026-10-26T12:00:00Z',
+      finishedAt: '2026-10-26T12:00:01Z',
+      counts: {
+        convertedNews: 1,
+        withEnglish: 0,
+        eventCandidates: 1,
+        failedConversions: 0,
+      },
+      collections: {},
+      failures: [],
+      languages: languageFindings(c),
+    },
+    inventory,
+    { pages: { complete: true, items: [] } }
+  );
+  assert.ok(
+    report.indexOf('## Quick keep/drop review') < report.indexOf('Run date')
+  );
+  assert.match(report, /\| Date \| Clean title \| Proposed slug \| Language/);
+  assert.ok(report.includes(converted.results[0].slug));
+  assert.match(report, /CANDIDATE within-post/);
+  assert.match(report, /decisions\.csv/);
 });

@@ -1,29 +1,29 @@
 {
   "source": "https://erasmus.org.ge",
   "mode": "DRY RUN: review files only, not publication",
-  "startedAt": "2026-10-26T16:46:45.580Z",
+  "startedAt": "2026-10-26T17:24:33.248Z",
   "runDate": "2026-10-26",
   "window": {
-    "startInclusive": "2025-10-26T16:46:45.58Z",
-    "endExclusive": "2026-10-26T16:46:45.58Z",
+    "startInclusive": "2025-10-26T17:24:33.248Z",
+    "endExclusive": "2026-10-26T17:24:33.248Z",
     "basis": "Publication date_gmt; twelve calendar months in UTC"
   },
   "runAtOverride": null,
   "requests": [
     {
-      "url": "https://erasmus.org.ge/wp-json/wp/v2/posts?per_page=100&status=publish&orderby=id&order=asc&after=2025-10-24T16%3A46%3A45.58Z&before=2026-10-28T16%3A46%3A45.58Z&page=1",
+      "url": "https://erasmus.org.ge/wp-json/wp/v2/posts?per_page=100&status=publish&orderby=id&order=asc&after=2025-10-24T17%3A24%3A33.248Z&before=2026-10-28T17%3A24%3A33.248Z&page=1",
       "attempt": 1,
       "status": 200,
       "received": 76
     },
     {
-      "url": "https://erasmus.org.ge/wp-json/wp/v2/posts?per_page=100&status=publish&orderby=id&order=asc&after=2025-10-24T16%3A46%3A45.58Z&before=2026-10-28T16%3A46%3A45.58Z&lang=ka&page=1",
+      "url": "https://erasmus.org.ge/wp-json/wp/v2/posts?per_page=100&status=publish&orderby=id&order=asc&after=2025-10-24T17%3A24%3A33.248Z&before=2026-10-28T17%3A24%3A33.248Z&lang=ka&page=1",
       "attempt": 1,
       "status": 200,
       "received": 76
     },
     {
-      "url": "https://erasmus.org.ge/wp-json/wp/v2/posts?per_page=100&status=publish&orderby=id&order=asc&after=2025-10-24T16%3A46%3A45.58Z&before=2026-10-28T16%3A46%3A45.58Z&lang=en&page=1",
+      "url": "https://erasmus.org.ge/wp-json/wp/v2/posts?per_page=100&status=publish&orderby=id&order=asc&after=2025-10-24T17%3A24%3A33.248Z&before=2026-10-28T17%3A24%3A33.248Z&lang=en&page=1",
       "attempt": 1,
       "status": 200,
       "received": 76
@@ -171,6 +171,420 @@
       "attempt": 1,
       "status": 200,
       "received": 2
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2025/10/1.png",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 1140660
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2025/10/Subtitle.png",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 291208
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2025/11/s-1024x858.png",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 34144
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2025/11/Untitled-design-2-1024x858.png",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 185321
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2025/11/Clarification-on-Erasmus-Opportunities-for-Educational-Institutions-in-Georgia-2-1-1024x858.png",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 39455
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2025/11/General-Post-designs-3-1024x1024.png",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 338710
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2025/11/81-1024x1024.png",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 422535
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2025/11/Sharing-information-about-International-Event-1-4-300x213.png",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 19344
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2025/11/Sharing-information-about-International-Event-2-1024x726.png",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 186409
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2025/11/84-1024x1024.png",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 375292
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2025/11/Copy-of-Copy-of-Copy-of-General-Post-designs-1024x1024.png",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 356560
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2025/11/UPCOMING-EVENTS-1-1024x858.png",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 39482
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2025/11/UPCOMING-EVENTS-1-1.png",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 110343
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2025/11/87-1024x1024.png",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 452101
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2025/11/Copy-of-Copy-of-Copy-of-General-Post-designs-1-1024x1024.png",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 357929
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2025/11/Bologna-Event-1-1024x1024.png",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 134223
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2025/11/Bologna-Event-6-1024x1024.png",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 322899
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2025/12/image.png",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 571
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2025/12/Copy-of-Copy-of-Copy-of-General-Post-designs-3-1024x1024.png",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 938847
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2025/12/Bologna-Event-10-1024x1024.png",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 1022148
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2025/12/image-2.png",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 571
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2025/12/WhatsApp-Image-2025-12-24-at-13.12.49-1024x636.jpeg",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 93890
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2025/12/WhatsApp-Image-2025-12-26-at-17.58.05.jpeg",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 38337
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2026/01/Untitled-design-1024x1024.png",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 661383
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2026/02/Untitled-design-3-1024x858.png",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 969042
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2026/02/Brown-and-Beige-Simple-March-2026-Facebook-Post-1024x858.png",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 120270
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2026/03/Copy-of-Copy-of-Copy-of-General-Post-designs-1024x1024.png",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 931258
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2026/03/Copy-of-Copy-of-Copy-of-General-Post-designs-5-1024x1024.png",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 822042
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-25-at-16.35.23-1024x858.jpeg",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 126655
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2026/03/Gemini_Generated_Image_3q77633q77633q77-1024x858.png",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 1064044
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2026/03/Untitled-Facebook-Post-4-1024x858.png",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 1176956
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2026/04/Brown-and-Beige-Simple-March-2026-Facebook-Post-1024x858.png",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 136518
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2026/04/Untitled-design-1-1024x683.png",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 331381
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2026/04/CoVE-for-VETs-20-April-Webinar-1024x858.png",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 1112258
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2026/04/Untitled-Facebook-Post-11-1024x858.png",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 828141
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2026/04/Untitled-Facebook-Post-5-1024x858.png",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 959922
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2026/04/Untitled-Facebook-Post-6-1024x858.png",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 983168
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2026/04/Social-Media-Posts-Template-6.png",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 830197
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2026/04/Social-Media-Posts-Template-5-1024x858.png",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 764986
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2026/04/Social-Media-Posts-Template-3-1024x858.png",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 771196
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2026/05/Digital-poster-for-Europe-Day-768x1086.jpeg",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 64786
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2026/05/WhatsApp-Image-2026-05-11-at-12.35.31-1-2.jpeg",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 201321
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2026/05/657471489_1482510907002351_7095623101628703486_n-768x1024.jpg",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 70109
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2026/05/ChatGPT-Image-May-21-2026-at-02_33_27-PM-1024x1024.png",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 929241
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2026/05/Social-Media-Posts-Template-8-1024x858.png",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 821421
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2026/06/WhatsApp-Image-2026-06-02-at-15.08.40.jpeg",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 127098
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2026/06/ChatGPT-Image-Jun-18-2026-at-01_08_29-PM-1024x1024.png",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 713976
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2026/06/ChatGPT-Image-Jun-26-2026-at-03_47_42-PM-1024x859.png",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 1204713
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2026/06/ea588345-4a5a-4fe8-b6c5-9d6a57dcd0ed-1024x682.jpg",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 50078
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2026/07/Gemini_Generated_Image_39kw9s39kw9s39kw.jpg",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 249050
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2026/07/ChatGPT-Image-Jul-20-2026-at-11_09_46-AM-1024x857.jpg",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 122974
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2026/07/ChatGPT-Image-Jul-20-2026-02_30_59-PM-1024x858.jpg",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 78812
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2026/07/IMG_8264-768x1024.jpg",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 141047
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2026/08/ChatGPT-Image-Aug-24-2026-at-10_27_59-PM-1024x861.jpg",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 75677
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2026/09/Screenshot-2026-09-08-at-19.15.48.png",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 29480
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2026/09/790003298_4847482328812087_8208680126222680924_n-1024x1024.jpeg",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 86623
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2026/09/Untitled-design-10-1024x1024.jpg",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 84976
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2026/09/ChatGPT-Image-Sep-10-2026-at-12_06_19-PM-975x1024.jpg",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 86703
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2026/09/ChatGPT-Image-Sep-10-2026-at-03_08_45-PM-1024x576.jpg",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 64369
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2026/09/Plagiarism-in-the-Age-of-AI-3-819x1024.jpg",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 84257
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2026/09/TAM_on_AI_and_Digitalisation_Web-1024x768.jpg",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 187776
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2026/09/ChatGPT-Image-Sep-30-2026-at-02_37_12-PM-1024x1024.jpg",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 98510
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2026/09/ChatGPT-Image-Sep-30-2026-at-03_14_07-PM-1024x1024.jpg",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 133731
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2026/10/Beige-Professional-Minimalist-How-to-Carousel-Instagram-Post-12-819x1024.jpg",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 79033
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2026/10/logo-telavi-png-01-1024x808.png",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 121991
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2026/10/Minimalist-Aesthetic-Summer-Photo-Collage--1024x819.png",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 1615962
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2026/10/Make-Erasmus-Truly-Inclusive_-Participation-Barriers-You-Could-Not-Even-Think-of-Existed-How-to-Detect-and-Overcome-Barriers-2-1024x1024.png",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 855627
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2026/10/Untitled-design-1024x576.png",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 208476
+    },
+    {
+      "url": "https://erasmus.org.ge/wp-content/uploads/2026/10/Make-it-main-1024x474.jpeg",
+      "attempt": 1,
+      "status": 200,
+      "receivedBytes": 62285
     }
   ],
   "collections": {
@@ -235,12 +649,20 @@
       36509
     ]
   },
+  "images": {
+    "files": 69,
+    "totalFileBytes": 28140498,
+    "totalDownloadBytes": 28140498,
+    "failures": []
+  },
   "counts": {
     "inWindow": 76,
-    "convertedNews": 72,
-    "withEnglish": 0,
+    "convertedNews": 76,
+    "withEnglish": 4,
+    "needsLanguageReview": 33,
+    "candidatePairs": 27,
     "eventCandidates": 38,
     "failedConversions": 0
   },
-  "finishedAt": "2026-10-26T16:47:35.708Z"
+  "finishedAt": "2026-10-26T17:27:15.980Z"
 }

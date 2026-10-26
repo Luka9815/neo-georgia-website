@@ -1,0 +1,159 @@
+{
+  "slug": "september-21-plagiarism-event-announcement",
+  "date": "2026-07-20",
+  "actions": [],
+  "ka": {
+    "title": "21 სექტემბერი: პლაგიატი ხელოვნური ინტელექტის (AI) ეპოქაში",
+    "body": "**ღონისძიების შესახებ:** 21 სექტემბერს, Erasmus+-ის ეროვნული ოფისი საქართველოში აორგანიზებს ღონისძიებას ‘’პლაგიატი ხელოვნური ინტელექტის (AI) ეპოქაში\n\nℹ️ თანამედროვე სამყაროში ხელოვნური ინტელექტი (AI) ყოველდღიური ცხოვრების განუყოფელი ნაწილი ხდება. მის მზარდ გამოყენებასთან ერთად კი, წარმოიშვა პლაგიატის ახალი და უფრო კომპლექსური ფორმები.\n\n📄 Erasmus+-ის ეროვნული ოფისი საქართველოში, უმაღლესი განათლების რეფორმის ექსპერტების (HEREs) ინიციატივასთან თანამშრომლობით, უმასპინძლებს ღონისძიებას, სადაც განხილული იქნება, თუ როგორ უნდა მოხდეს ხელოვნური ინტელექტის გამოყენება კვლევაში, რომ არ დაირღვეს კვლევის ეთიკურობის სტანდარტები. \n\nღონისძიებაზე Erasmus+ პროგრამის გამარჯვებული პროექტების მოწვეული სპიკერები ისაუბრებენ ხელოვნური ინტელექტის (AI) კეთილსინდისიერ და ეთიკურ გამოყენებაზე კვლევის პროცესში. განხილული იქნება როგორც ხელოვნური ინტელექტის შესაძლებლობები, ისე მის გამოყენებასთან დაკავშირებული გამოწვევები კვლევის კეთილსინდისიერების, აკადემიური ეთიკისა და კარგი აკადემიური პრაქტიკის საკითხების გარშემო. \n\nღონისძიების მეორე ნაწილი დაეთმობა პრაქტიკულ ვორკშოპს, რომელიც შეეხება ხელოვნური ინტელექტის გამოყენებას კვლევასა და განათლებაში, კვლევის ეთიკის, აკადემიური კეთილსინდისიერებისა და პასუხისმგებლობის მქონე ავტორობის პრინციპების დაცვით. \n\n**📅 თარიღი:** 21 სექტემბერი, 2026  \n**🕐 დრო:** 13:00–16:15 (საქართველოს დროით)  \n**🌐 სამუშაო ენა:** ინგლისური\n\n**სამიზნე აუდიტორია:** PhD სტუდენტები, მკვლევრები, პროფესორები\n\n**❕მნიშვნელოვანი ინფორმაცია:** ღონისძიების ფორმატი (ონლაინ ან ფიზიკური დასწრებით) განისაზღვრება მონაწილეთა უმრავლესობის არჩევანის საფუძველზე. გთხოვთ, სარეგისტრაციო ფორმაში მიუთითოთ თქვენთვის სასურველი ფორმატი.\n\n**🔗 სარეგისტრაციო ბმული:** [https://forms.gle/8HHAwLW7951KLGsY6](https://forms.gle/8HHAwLW7951KLGsY6)"
+  },
+  "legacy": {
+    "id": 36204,
+    "slug": "september-21-plagiarism-event-announcement",
+    "url": "https://erasmus.org.ge/september-21-plagiarism-event-announcement/"
+  },
+  "migration": {
+    "status": "unreviewed",
+    "language": {
+      "title": {
+        "script": "georgian",
+        "language": "ka",
+        "georgianLetters": 44,
+        "latinLetters": 2,
+        "georgianShare": 0.957,
+        "latinShare": 0.043,
+        "englishWordHits": 0,
+        "note": "Script heuristic excluding URLs; English is a candidate, not editorial approval."
+      },
+      "body": {
+        "script": "georgian",
+        "language": "ka",
+        "georgianLetters": 1318,
+        "latinLetters": 35,
+        "georgianShare": 0.974,
+        "latinShare": 0.026,
+        "englishWordHits": 0,
+        "note": "Script heuristic excluding URLs; English is a candidate, not editorial approval."
+      },
+      "englishMarker": false,
+      "slot": "ka",
+      "label": "ka",
+      "needsReview": false
+    },
+    "actionsStatus": "suggested",
+    "suggestedActions": [],
+    "typeCandidate": {
+      "type": "news",
+      "evidence": [
+        "20.07.2026"
+      ]
+    },
+    "attachments": [
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/07/ChatGPT-Image-Jul-20-2026-at-11_09_46-AM-1024x857.jpg",
+        "type": "image",
+        "sizeBytes": 122974,
+        "alt": "",
+        "mediaId": 36207,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "inline-image"
+          },
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          36204
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/07/ChatGPT-Image-Jul-20-2026-at-11_09_46-AM-300x251.jpg",
+        "type": "image",
+        "sizeBytes": 16717,
+        "alt": "",
+        "mediaId": 36207,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          36204
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/07/ChatGPT-Image-Jul-20-2026-at-11_09_46-AM-768x643.jpg",
+        "type": "image",
+        "sizeBytes": 77987,
+        "alt": "",
+        "mediaId": 36207,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          36204
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/07/ChatGPT-Image-Jul-20-2026-at-11_09_46-AM.jpg",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "",
+        "mediaId": 36207,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          },
+          {
+            "language": "shared",
+            "relationship": "attached-to-post"
+          }
+        ],
+        "usedBy": [
+          36204
+        ]
+      }
+    ],
+    "warnings": [
+      "Images omitted from Markdown; one eligible featured image is selected separately and other attachments stay listed.",
+      "Leading theme date, empty info markers or repeated blank lines removed.",
+      "No Action matched. actions is empty; an editor must select a real Action before publication."
+    ],
+    "pairCandidates": [],
+    "image": {
+      "status": "downloaded",
+      "path": "images/september-21-plagiarism-event-announcement.jpg",
+      "sourceUrl": "https://erasmus.org.ge/wp-content/uploads/2026/07/ChatGPT-Image-Jul-20-2026-at-11_09_46-AM-1024x857.jpg",
+      "sizeBytes": 122974,
+      "width": 1024,
+      "height": 857,
+      "mediaId": 36207,
+      "reason": "Image attached to this post",
+      "alt": {
+        "ka": "[ALT NEEDED]",
+        "en": "[ALT NEEDED]"
+      }
+    }
+  },
+  "image": {
+    "status": "downloaded",
+    "path": "images/september-21-plagiarism-event-announcement.jpg",
+    "sourceUrl": "https://erasmus.org.ge/wp-content/uploads/2026/07/ChatGPT-Image-Jul-20-2026-at-11_09_46-AM-1024x857.jpg",
+    "sizeBytes": 122974,
+    "width": 1024,
+    "height": 857,
+    "mediaId": 36207,
+    "reason": "Image attached to this post",
+    "alt": {
+      "ka": "[ALT NEEDED]",
+      "en": "[ALT NEEDED]"
+    }
+  }
+}

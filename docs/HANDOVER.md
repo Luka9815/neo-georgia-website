@@ -1,6 +1,6 @@
 # Handover
 
-Last updated: 2026-10-26 (Codex, session 7: WordPress migration dry run)
+Last updated: 2026-10-26 (Codex, session 8: language and image migration review)
 
 ## Current state
 
@@ -14,7 +14,7 @@ Last updated: 2026-10-26 (Codex, session 7: WordPress migration dry run)
 - siteLaunched is false in `src/_data/settings.json`, read by site.js and not exposed in the CMS: every page is noindex and robots.txt disallows crawling. After launch approval, set it true; content pages become indexable while redirects and 404 remain noindex. Do not launch until the funding wording/artwork and final content are approved. The Georgian disclaimer now uses the exact project text supplied in session 6, proofread by Luka.
 - One root bilingual 404.html has Georgian first, English second, both home links and the EU footer. The root index.html has a meta refresh, target canonical and a visible link to the Georgian home. No client JavaScript is needed. `.nojekyll` is copied into the output and included in the Pages artifact.
 - `src/_data/redirects.json` is an empty old-path/new-path map. Once the export arrives, add validated mappings to generate static meta-refresh stubs. These do not provide HTTP 301 responses. See CONTENT.md.
-- Sessions 1 to 6, including the English-beneficiary-emblem correction, are present in main. Session 7 starts from main commit 7052555 on codex/session-7-migration, with one commit per requested step. All migration output is review-only and no live content or redirects changed.
+- Sessions 1 to 7 are present in main. Session 8 starts from main commit 5639bcd on codex/session-8-migration, one commit per item. Generated text and selected image files remain under migration/review; live content, assets, templates, redirects and deploy configuration are unchanged.
 - `.pages.yml` now configures News, Events and a single-file Settings editor. Staff use GitHub sign-in at app.pagescms.org. Collection filenames derive from slug. Field labels are Georgian first; News English is optional, Event English required. The current documentation and implementation were checked via GitHub because the docs host returned 403. Sources and verification limits are in CONTENT.md.
 - News dates are calendar days (YYYY-MM-DD); existing News samples were migrated. Events keep local minute-precision strings without offsets and a named zone. Required fields, related action slugs, classifications, calendar dates and time ranges are validated before rendering with filename/field errors.
 - Bodies use rich-text with explicit Markdown output. Raw HTML remains disabled in markdown-it. Image insertion is disabled for now; src/assets/uploads is reserved for future images with /assets/uploads public paths handled by PATH_PREFIX.
@@ -51,6 +51,17 @@ Last updated: 2026-10-26 (Codex, session 7: WordPress migration dry run)
 - The redirect draft lists all 76 post URLs and 202 top-level pages. Four post targets and 114 page targets remain null for language/conversion or section review. It is not wired into src/_data/redirects.json. Top-level pages include old Elementor and legacy material; being listed is not approval to migrate it.
 - The initial proxy block cleared before the successful run. No external account or credential was needed. Local raw recovery data in migration/review/.cache is ignored and must not be committed; only sanitised review output is tracked. Archive review notes before rerunning, because generated files are replaced.
 - Build and all 67 tests pass in root and project-prefix layouts. Ten new converter checks use saved fixtures and forbid network access. The published source folders, templates, assets, workflow and live redirect map are unchanged; generated review files are absent from _site.
+
+## Session 8 migration review
+
+- Start with the quick table at the top of migration/review/REPORT.md and mark decisions.csv. Each of the 76 source posts now has a separate draft. Keep and pair_with are blank; type and Actions are suggestions. A rerun preserves decisions.csv and writes decisions.template.csv for comparison. The CSV is not applied automatically.
+- Exact final window: 2025-10-26T17:24:33.248Z inclusive to 2026-10-26T17:24:33.248Z exclusive. All REST reads and selected-image downloads completed without failure.
+- Title/body detection is separate and ignores URL letters. Output has 43 clear ka records, 4 explicitly unapproved en candidates and 29 records under sourceText for mixed bodies or mismatched title/body scripts. No source is split, translated or merged. The prior assumption that a Georgian title makes the whole body Georgian is removed.
+- There are 27 CANDIDATE pairs within mixed source posts, with section-marker/script evidence and confidence notes. No cross-post candidate passed the date/media/topic/slug criteria in this run. Five English-body sources without a Georgian candidate (36035, 36117, 36152, 36349, 36509) are listed separately. One has a Georgian title with an English body. Script detection and common English words are review clues, not approved language labels.
+- Leading title emoji, standalone leading theme dates, empty info markers and repeated blank lines are removed. Body emoji, numerical title prefixes and meaningful dates remain. Clean ASCII WordPress slugs are reused after underscore conversion; otherwise romanised title slugs stop at a word boundary within 60 characters, except an unavoidable single-token hard cut. Existing clean published slugs are preserved even when long.
+- Selected images: 69 original files no wider than 1024 px, 28,140,498 bytes saved and 28,140,498 bytes downloaded (about 26.84 MiB). Every file was decoded/verified locally and its byte size checked against provenance. Both alt fields remain [ALT NEEDED]. Six posts have no image; one has only an external emoji icon, so no substitute was downloaded. All other image/PDF attachments remain listed only.
+- Review still needs 45 Action choices, 38 Event classifications and the language decisions above. Draft redirects have 33 unresolved post targets due to language review, plus 114 page targets needing a section choice. The live redirect map remains empty.
+- Build and all 76 tests pass in root and project-prefix layouts. Nineteen converter/review checks are offline with fetch forbidden; image tests use injected fake bytes. No migration output appears in _site. CONTENT.md documents the revised procedure and limitations.
 
 ## Turn on GitHub Pages (Luka)
 
@@ -93,7 +104,7 @@ The browser check uses `/usr/bin/chromium`; set CHROMIUM_PATH if Chromium lives 
 
 ## Next task
 
-Luka reviews migration/review/REPORT.md and the individual News drafts first. Resolve four unpaired English sources, duplicate titles, 44 unmatched Actions, 38 Event candidates, attachments and null redirect targets. Approve final text, dates, slugs, classification and redirects before any separate task promotes content into src/content. Do not copy review output into live content or wire the draft redirect map automatically. Then continue the existing Action editorial review, hosted Pages CMS test, staff training and responsive image/alt workflow. Any domain must be registered to ERIDA.
+Luka marks keep/drop, type, Actions, confirmed pair_with and notes in migration/review/decisions.csv using the quick report table. Read both sections of all 27 within-post candidates before approving any later split. Review the five unpaired English-body sources and title/body mismatches, select missing Actions and approve final slugs. Check the 69 review images, rights and both [ALT NEEDED] fields. Only a separately authorised task may apply these choices, create real bilingual/Event records, run the production responsive-image workflow, promote content or activate redirects. Continue the Action editorial review, hosted Pages CMS test and staff training. Any domain must be registered to ERIDA.
 
 ## Remaining work
 
@@ -101,7 +112,7 @@ Luka reviews migration/review/REPORT.md and the individual News drafts first. Re
 - Authenticated Pages CMS News/Event create, edit, delete and settings-preservation tests. Configuration and local validation are complete.
 - Obtain the official Georgian Funded by the EU beneficiary emblem from the EU Delegation or EACEA, then replace the English image on /ka/. Until then the English beneficiary emblem is used on both languages. Confirm funding wording against the signed grant agreement. The supplied Georgian project disclaimer is in place.
 - Remaining templates, opportunity filters, responsive image pipeline, production content validation and Georgian editorial review of the new typography.
-- Review the News migration dry run and old-URL proposals. Any content promotion, attachment download and redirect activation needs a separate approved task. Continue other content migration, Georgian search, privacy/accessibility approval and manual accessibility/Lighthouse checks.
+- Review the regenerated News drafts, downloaded selected images, CSV decisions and old-URL proposals. Any content promotion, additional attachment download or redirect activation needs a separate approved task. Continue other content migration, Georgian search, privacy/accessibility approval and manual accessibility/Lighthouse checks.
 - A daily rebuild refreshes static statuses. Sample dates are in 2026 and may become past/closed; no fixed test clock is used in production.
 
 ## Waiting on Nino / NEO
