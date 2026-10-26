@@ -1,11 +1,11 @@
 # Handover
 
-Last updated: 2026-10-26 (Codex, session 10: remaining sitemap templates)
+Last updated: 2026-10-26 (Codex, session 11: Georgian search evaluation, withheld)
 
 ## Current state
 
 - Eleventy 3 ESM on Node 24 LTS, plain CSS, Nunjucks page types and Markdown body fields in JSON. Run commands from the repository root. Output `_site/` and node_modules are ignored.
-- Georgian and English homes, seven menu destinations, nine bilingual [DRAFT] Action pages with automatic related blocks, calls, supporting listings and details, plus Publications, FAQ, Team/HEREs and Contact. Actions await editorial review; News/Event demonstration content remains [SAMPLE]; the language policy and supplied funding disclaimer now use the approved text. Core translation parity, untranslated News/Story fallback and EU footers are checked.
+- Georgian and English homes, seven menu destinations, nine bilingual [DRAFT] Action pages with automatic related blocks, calls, supporting listings and details, plus Publications, FAQ, Team/HEREs and Contact. Actions await editorial review; five source-only bilingual News records are promoted in session 9, with three test-dependent [SAMPLE] News and sample Events retained; the language policy and supplied funding disclaimer now use the approved text. Core translation parity, untranslated News/Story fallback and EU footers are checked.
 - Call opens/deadline and Event date/end use offset-free local wall-clock times plus a named timeZone. Temporal derives offsets and rejects ambiguous/nonexistent clock-change times. currentCallYear (2026) selects the visible call edition independently of the clock, with other years shown as archives.
 - Hosting is now GitHub Pages through `.github/workflows/deploy.yml`. Netlify and Cloudflare Pages are dropped. Their old configuration can be restored from git history if true HTTP 301 redirects make a different host necessary.
 - The workflow runs on pushes to main, daily at 04:15 UTC, and manual dispatch. It installs with npm ci, builds, tests, uploads the Pages artifact and deploys with official actions. No build hook, custom secret or browser accessibility check is used in CI. Deployments share a concurrency group.
@@ -13,8 +13,8 @@ Last updated: 2026-10-26 (Codex, session 10: remaining sitemap templates)
 - SITE_URL defaults to `https://luka9815.github.io/neo-georgia-website/`. For a custom domain, set SITE_URL to its HTTPS root and PATH_PREFIX to `/`, and replace the project-path workflow values with those custom-domain settings. Confirm both settings and the deployed address after transferring the repository to ERIDA.
 - siteLaunched is false in `src/_data/settings.json`, read by site.js and not exposed in the CMS: every page is noindex and robots.txt disallows crawling. After launch approval, set it true; content pages become indexable while redirects and 404 remain noindex. Do not launch until the funding wording/artwork and final content are approved. The Georgian disclaimer now uses the exact project text supplied in session 6, proofread by Luka.
 - One root bilingual 404.html has Georgian first, English second, both home links and the EU footer. The root index.html has a meta refresh, target canonical and a visible link to the Georgian home. No client JavaScript is needed. `.nojekyll` is copied into the output and included in the Pages artifact.
-- `src/_data/redirects.json` is an empty old-path/new-path map. Once the export arrives, add validated mappings to generate static meta-refresh stubs. These do not provide HTTP 301 responses. See CONTENT.md.
-- Sessions 1 to 7 are present in main. Session 8 starts from main commit 5639bcd on codex/session-8-migration, one commit per item. Generated text and selected image files remain under migration/review; live content, assets, templates, redirects and deploy configuration are unchanged.
+- `src/_data/redirects.json` contains the five approved News old-path/new-path mappings from session 9, generating static meta-refresh stubs. These do not provide HTTP 301 responses. See CONTENT.md.
+- Sessions 1 to 8 are present in main at e40633d. Sessions 9, 10 and 11 are separate stacked branches/PRs, awaiting Luka. Selected review images remain under migration/review; five approved texts and their redirects are promoted only in the session 9 stack. Deploy configuration and launch flag are unchanged.
 - `.pages.yml` now configures News, Events and a single-file Settings editor. Staff use GitHub sign-in at app.pagescms.org. Collection filenames derive from slug. Field labels are Georgian first; News English is optional, Event English required. The current documentation and implementation were checked via GitHub because the docs host returned 403. Sources and verification limits are in CONTENT.md.
 - News dates are calendar days (YYYY-MM-DD); existing News samples were migrated. Events keep local minute-precision strings without offsets and a named zone. Required fields, related action slugs, classifications, calendar dates and time ranges are validated before rendering with filename/field errors.
 - Bodies use rich-text with explicit Markdown output. Raw HTML remains disabled in markdown-it. Image insertion is disabled for now; src/assets/uploads is reserved for future images with /assets/uploads public paths handled by PATH_PREFIX.
@@ -104,7 +104,19 @@ The browser check uses `/usr/bin/chromium`; set CHROMIUM_PATH if Chromium lives 
 
 ## Next task
 
-Session 11 starts from codex/session-10-templates to evaluate Pagefind with Georgian full words, partial words and inflections. Record evidence, page weight and build cost; ship only if Georgian results are adequate. Do not merge automatically. Session 9 targets main; session 10 targets session 9; session 11 must target session 10. Review/merge in that order.
+Luka reviews the three stacked PRs in order: session 9 targets main, session 10 targets session 9, session 11 targets session 10. Nothing is merged automatically. After merging each predecessor, retarget the next PR to main; rebase/cherry-pick its own commits if a squash merge makes predecessor commits reappear.
+
+Before session 9 merges, approve the one new title (Europe Day in Kutaisi, 24–25 October), verify four retained shorturl.at body links and the hosted emoji legacy path, and review the historical clarification against the current position. Session 10 adds only clearly labelled samples/placeholders; NEO must replace these before launch.
+
+Search remains blocked by Georgian inflection quality. Read SEARCH.md and docs/review/search-session-11.json, then agree native-speaker acceptance queries and choose a reviewed normalisation/expansion approach or test another account-free static engine. Only implement the keyboard-accessible search page/header and no-JavaScript fallback after results are adequate. Continue the Action editorial review, hosted Pages CMS round trip and image/alt workflow. Domain ownership stays with ERIDA.
+
+## Session 11 search evaluation
+
+Pagefind 1.5.2 is an exact development dependency used only by npm run evaluate:search. The manual script builds two temporary layouts and separate ka/en indexes, queries them in Chromium, measures time/bytes and removes them. Normal npm run build remains Eleventy and publishes no Pagefind files or search UI. No external runtime requests or accounts are used. Both root and project-prefix query results resolve to existing pages and remain in their own language.
+
+Georgian exact/prefix matches work, but ordinary inflections miss real content: მობილობა finds 6/9 word-family pages and თანამშრომლობის 3/7. The shared stem მობილობ finds all nine, but visitors should not need to guess a stem. Therefore the requested quality gate blocks shipping Pagefind and the dependent search interface/fallback work. This is an evaluated/rejected candidate, not implemented public search.
+
+Measured additional indexing: 411 ms root / 301 ms prefix; candidate first Georgian query about 188 KiB including all returned fragments. Detailed methodology and table are in SEARCH.md. These are one-run local observations. Production build time and page weight are unaffected because no runtime assets are published. A boundary test guards that decision. Final build/test/a11y results are in CHANGELOG.
 
 ## Session 10 templates
 
