@@ -111,5 +111,20 @@
   },
   "programmeGuide2026": "Programme Guide 2026 (PDF)",
   "officialActionPage": "Official action page",
-  "youthWorkerActionPage": "Youth worker mobility: official action page"
+  "youthWorkerActionPage": "Youth worker mobility: official action page",
+  "publications": "Publications",
+  "year": "Year",
+  "allYears": "All years",
+  "allTypes": "All types",
+  "filterPublications": "Filter publications",
+  "resetFilters": "Reset filters",
+  "publicationTypes": {
+    "neo-report": "NEO report",
+    "here-publication": "HERE publication",
+    "brochure": "Brochure",
+    "statistics": "Statistics"
+  },
+  "publicationLanguage": "Publication language",
+  "openPublication": "Open publication",
+  "publicationResults": "Matching publications"
 }

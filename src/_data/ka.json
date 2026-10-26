@@ -111,5 +111,20 @@
   },
   "programmeGuide2026": "პროგრამის გზამკვლევი 2026 (PDF)",
   "officialActionPage": "ქმედების ოფიციალური გვერდი",
-  "youthWorkerActionPage": "ახალგაზრდულ მუშაკთა მობილობა: ოფიციალური გვერდი"
+  "youthWorkerActionPage": "ახალგაზრდულ მუშაკთა მობილობა: ოფიციალური გვერდი",
+  "publications": "პუბლიკაციები",
+  "year": "წელი",
+  "allYears": "ყველა წელი",
+  "allTypes": "ყველა ტიპი",
+  "filterPublications": "პუბლიკაციების გაფილტვრა",
+  "resetFilters": "ფილტრების გასუფთავება",
+  "publicationTypes": {
+    "neo-report": "ეროვნული ოფისის ანგარიში",
+    "here-publication": "ექსპერტების პუბლიკაცია",
+    "brochure": "ბროშურა",
+    "statistics": "სტატისტიკა"
+  },
+  "publicationLanguage": "პუბლიკაციის ენა",
+  "openPublication": "პუბლიკაციის გახსნა",
+  "publicationResults": "ნაპოვნი პუბლიკაციები"
 }

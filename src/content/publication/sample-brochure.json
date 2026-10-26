@@ -1,0 +1,15 @@
+{
+  "slug": "sample-brochure",
+  "year": 2025,
+  "type": "brochure",
+  "file": "/assets/publications/sample-brochure.txt",
+  "language": "ka/en",
+  "ka": {
+    "title": "[SAMPLE] საინფორმაციო ბროშურა",
+    "body": "[SAMPLE] მხოლოდ საილუსტრაციო მასალა."
+  },
+  "en": {
+    "title": "[SAMPLE] Information brochure",
+    "body": "[SAMPLE] Illustrative publication only."
+  }
+}

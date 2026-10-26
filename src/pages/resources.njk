@@ -9,6 +9,7 @@ eleventyExcludeFromCollections: true
 {% extends 'page.njk' %}
 
 {% block pageContent %}
+<p><a href="/{{ view.lang }}/resources/publications/">{{ t.publications }}</a></p>
 <section>
   <h2>{{ t.resources }}</h2>
   {{ cards(resources, 'resource', t, view.lang) }}
