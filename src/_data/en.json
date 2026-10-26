@@ -44,7 +44,6 @@
   "social": "Social links",
   "contactPlaceholder": "[SAMPLE] Contact details awaiting NEO approval.",
   "socialPlaceholder": "[SAMPLE] Social links awaiting NEO approval.",
-  "emblem": "[SAMPLE] Official EU emblem placeholder. Original files required before launch.",
   "funding": "Funded by the European Union",
   "disclaimer": "Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them.",
   "notFound": "Page not found",
@@ -98,5 +97,9 @@
   "allStories": "All stories",
   "figuresNote": "[SAMPLE] Illustrative figures. Verified project data will be added before launch.",
   "officeName": "National Erasmus+ Office Georgia",
-  "prevailingStatement": "In the event of any discrepancy between the Georgian and English versions, the English version prevails."
+  "prevailingStatement": "In the event of any discrepancy between the Georgian and English versions, the English version prevails.",
+  "emblemAlt": "Funded by the European Union",
+  "emblemPath": "/assets/eu/funded-en.png",
+  "emblemWidth": 4125,
+  "emblemHeight": 919
 }

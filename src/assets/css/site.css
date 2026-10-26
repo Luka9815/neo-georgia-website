@@ -346,10 +346,10 @@ dd {
   background: var(--paper);
   font-size: 0.875rem;
 }
-.emblem-placeholder {
-  border: 2px dashed var(--line);
-  padding: 1rem;
-  color: var(--muted);
+.eu-emblem {
+  display: block;
+  width: min(100%, 30rem);
+  height: auto;
   align-self: start;
 }
 .eu-funding p:last-child {

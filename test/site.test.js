@@ -46,7 +46,11 @@ test('all rendered pages have language, metadata, seven menu links, one h1 and E
         ? /Neither the European Union nor EACEA can be held responsible for them\./
         : /მათზე პასუხისმგებლობა არ ეკისრება არც ევროკავშირს და არც EACEA-ს\./
     );
-    assert.ok($('.emblem-placeholder').text().includes('[SAMPLE]'));
+    const strings = JSON.parse(read(`src/_data/${view.lang}.json`));
+    assert.equal($('.eu-emblem').attr('src'), publicPath(strings.emblemPath));
+    assert.equal($('.eu-emblem').attr('alt'), strings.emblemAlt);
+    assert.ok(existsSync(`_site${strings.emblemPath}`));
+    assert.equal($('.emblem-placeholder').length, 0);
     assert.equal($('header a[hreflang]').attr('href'), publicPath(view.alternate));
     if (view.translated === false) assert.equal($('link[rel=alternate]').length, 1);
     else assert.equal($('link[rel=alternate]').length, 2);
