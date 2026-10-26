@@ -30,6 +30,9 @@ export default function () {
     for (const [kind, suffix] of [['publications', 'resources/publications/'], ['faq', 'resources/faq/']]) {
       views.push({lang, kind, path: `/${lang}/${suffix}`, alternate: `/${other}/${suffix}`});
     }
+    for (const [group, suffix, titleKey] of [['neo', 'about/team/', 'team'], ['here', 'here/', 'here']]) {
+      views.push({lang, kind: 'people', group, titleKey, path: `/${lang}/${suffix}`, alternate: `/${other}/${suffix}`});
+    }
     for (const [type, folder] of [
       ['action', 'opportunities'],
       ['event', 'events'],

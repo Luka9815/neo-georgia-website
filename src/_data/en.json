@@ -130,5 +130,11 @@
   "faqTopics": {
     "applications": "Applications",
     "mobility": "Mobility"
+  },
+  "team": "NEO team",
+  "here": "Higher Education Reform Experts",
+  "personGroups": {
+    "neo": "NEO team",
+    "here": "Higher Education Reform Experts"
   }
 }

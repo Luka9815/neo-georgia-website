@@ -1,0 +1,20 @@
+---
+pagination:
+  data: pageTypes.people
+  size: 1
+  alias: view
+permalink: "{{ view.path }}"
+eleventyExcludeFromCollections: true
+---
+{% extends 'page.njk' %}
+{% block pageContent %}
+<ul class="cards">
+{% for item in catalog.person | localise(view.lang) | personGroup(view.group) %}
+  <li class="card">
+    <h2>{{ item.title }}</h2>
+    <p>{{ item.role }}</p>
+    {{ item.body | markdown | safe }}
+  </li>
+{% endfor %}
+</ul>
+{% endblock %}

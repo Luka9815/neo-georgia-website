@@ -11,5 +11,11 @@ eleventyExcludeFromCollections: true
 {% block pageContent %}
 {% set item = catalog[view.kind] | localise(view.lang) | findSlug(view.slug) %}
 {{ item.body | markdown | safe }}
+{% if view.slug == 'about' %}
+<ul>
+  <li><a href="/{{ view.lang }}/about/team/">{{ t.team }}</a></li>
+  <li><a href="/{{ view.lang }}/here/">{{ t.here }}</a></li>
+</ul>
+{% endif %}
 {% if item.policyKey %}<p>{{ t[item.policyKey] }}</p>{% endif %}
 {% endblock %}

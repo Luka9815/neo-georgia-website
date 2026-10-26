@@ -1,0 +1,14 @@
+{
+  "slug": "sample-team",
+  "group": "neo",
+  "ka": {
+    "title": "[SAMPLE] თამარ ჩხეიძე",
+    "role": "[SAMPLE] გუნდის წევრი",
+    "body": "[SAMPLE] გამოგონილი პროფილი."
+  },
+  "en": {
+    "title": "[SAMPLE] Tamar Chkheidze",
+    "role": "[SAMPLE] Team member",
+    "body": "[SAMPLE] Fictional profile."
+  }
+}
