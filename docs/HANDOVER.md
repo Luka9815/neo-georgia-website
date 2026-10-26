@@ -106,7 +106,7 @@ The browser check uses `/usr/bin/chromium`; set CHROMIUM_PATH if Chromium lives 
 
 Luka reviews the three stacked PRs in order: session 9 targets main, session 10 targets session 9, session 11 targets session 10. Nothing is merged automatically. After merging each predecessor, retarget the next PR to main; rebase/cherry-pick its own commits if a squash merge makes predecessor commits reappear.
 
-Before session 9 merges, approve the one new title (Europe Day in Kutaisi, 24–25 October), verify four retained shorturl.at body links and the hosted emoji legacy path, and review the historical clarification against the current position. Session 10 adds only clearly labelled samples/placeholders; NEO must replace these before launch.
+Resolved on 2026-10-27: the Europe Day in Kutaisi title was accepted (Claude recommended it, Luka said to proceed); the four shortened links were replaced with direct EU topic pages; placeholder people carry no names. Still open: check the emoji legacy path on hosted Pages, and review the historical clarification against the current position. Session 10 adds only clearly labelled samples/placeholders; NEO must replace these before launch.
 
 Search remains blocked by Georgian inflection quality. Read SEARCH.md and docs/review/search-session-11.json, then agree native-speaker acceptance queries and choose a reviewed normalisation/expansion approach or test another account-free static engine. Only implement the keyboard-accessible search page/header and no-JavaScript fallback after results are adequate. Continue the Action editorial review, hosted Pages CMS round trip and image/alt workflow. Domain ownership stays with ERIDA.
 
