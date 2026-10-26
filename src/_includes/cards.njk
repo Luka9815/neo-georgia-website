@@ -11,7 +11,7 @@
   <{{ heading }}>{{ item.title }}</{{ heading }}>{{ item.body | markdown | safe }}
   {% else %}
   <{{ heading }}><a href="/{{ lang }}/{% if type == 'action' %}opportunities{% elif type == 'story' %}stories{% else %}{{ type }}{% if type == 'event' %}s{% endif %}{% endif %}/{{ item.slug }}/">{{ item.title }}</a></{{ heading }}>
-  {% if item.date %}<p><time datetime="{{ item.date }}">{{ item.date | dateLabel(t, item.timeZone or 'Asia/Tbilisi') }}</time>{% if item.status %}, {{ t[item.status] }}{% endif %}</p>{% endif %}
+  {% if item.date %}<p><time datetime="{{ item.date }}">{% if type == 'news' %}{{ item.date | dateLabel(t, 'UTC', false) }}{% else %}{{ item.date | dateLabel(t, item.timeZone) }}{% endif %}</time>{% if item.status %}, {{ t[item.status] }}{% endif %}</p>{% endif %}
   {{ item.body | markdown | safe }}
   {% endif %}
 </li>
