@@ -83,5 +83,8 @@
     "KA3": "KA3",
     "Jean Monnet": "Jean Monnet"
   },
-  "archive": "Archive"
+  "archive": "Archive",
+  "logoName": "NEO Georgia",
+  "logoPlaceholder": "[SAMPLE] Text logo",
+  "menuToggle": "Menu"
 }

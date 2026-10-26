@@ -122,3 +122,6 @@ Resolves the open font choice and replaces system fonts in "Session 1 toolchain 
 
 ## 2026-10-26: Blue, warm accent and neutral contrast tokens
 Use Erasmus+ inspired #003399 blue, one warm accent and neutrals, without copying EU logos. Define colours as CSS custom properties and test every allowed text/surface combination at 4.5:1 or better, including badges and inverse buttons. Status/source words remain visible so meaning does not depend on colour. DESIGN.md lists the pair rules; decorative borders are not text colours.
+
+## 2026-10-26: Georgian-first shared navigation and components
+Use a native details/summary mobile menu and a desktop menu rendered from the same seven-link macro; CSS exposes only the appropriate one. Keep the language switch visible in both layouts and a labelled text-only NEO Georgia logo placeholder. Cards show type, dates, text status badges and visible resource source labels. Let long Georgian labels wrap. Separate the EU funding block from contact/legal content, retaining the official-emblem placeholder and disclaimer rules. No client JavaScript or remote assets are introduced.

@@ -20,24 +20,55 @@
 </head>
 <body>
 <a class="skip" href="#main">{{ t.skip }}</a>
-<header class="wrapper">
-  <a class="brand" href="/{{ view.lang }}/">{{ t.site }}</a>
-  <nav aria-label="{{ t.menu }}"><ul>
-  {% for key, slug in navigation %}<li><a href="/{{ view.lang }}/{{ slug }}"{% if view.kind == key %} aria-current="page"{% endif %}>{{ t[key] }}</a></li>{% endfor %}
-  </ul></nav>
-  <a href="{{ view.alternate }}" lang="{{ other }}" hreflang="{{ other }}">{{ t.switch }}</a>
+{% from 'navigation.njk' import navigationMenu %}
+<header class="site-header">
+  <div class="wrapper header-inner">
+    <div class="header-top">
+      <a class="brand" href="/{{ view.lang }}/">
+        <span class="brand-name">{{ t.logoName }}</span>
+        <span class="brand-description">{{ t.site }}</span>
+        <span class="brand-note">{{ t.logoPlaceholder }}</span>
+      </a>
+      <a class="language-switch" href="{{ view.alternate }}" lang="{{ other }}" hreflang="{{ other }}">{{ t.switch }}</a>
+    </div>
+    {{ navigationMenu(navigation, t, view, 'desktop-navigation') }}
+    <details class="mobile-menu">
+      <summary>{{ t.menuToggle }}<span class="menu-chevron" aria-hidden="true"></span></summary>
+      {{ navigationMenu(navigation, t, view, 'mobile-navigation') }}
+    </details>
+  </div>
 </header>
-<main id="main" class="wrapper" tabindex="-1">
+<main id="main" class="wrapper page-main" tabindex="-1">
   <p class="notice">{{ t.sample }}</p>
   <h1>{{ title }}</h1>
   {{ body | safe }}
 </main>
-<footer class="wrapper">
-  <div class="footer-grid">
-    <section><h2>{{ t.contact }}</h2><p>{{ t.contactPlaceholder }}</p><h3>{{ t.social }}</h3><p>{{ t.socialPlaceholder }}</p></section>
-    <nav aria-label="{{ t.about }}"><ul>{% for key in ['privacy','accessibility','language'] %}<li><a href="/{{ view.lang }}/{{ key }}/">{{ t[key] }}</a></li>{% endfor %}</ul></nav>
+<footer class="site-footer">
+  <div class="wrapper">
+    <div class="footer-grid">
+      <section>
+        <h2>{{ t.contact }}</h2>
+        <p>{{ t.contactPlaceholder }}</p>
+        <h3>{{ t.social }}</h3>
+        <p>{{ t.socialPlaceholder }}</p>
+      </section>
+      <nav aria-label="{{ t.about }}">
+        <ul>
+          {% for key in ['privacy','accessibility','language'] %}
+            <li><a href="/{{ view.lang }}/{{ key }}/">{{ t[key] }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+    <div class="eu-footer">
+      <div class="emblem-placeholder">{{ t.emblem }}</div>
+      <div class="eu-funding">
+        <p><strong>{{ t.funding }}</strong></p>
+        <p{% if view.lang == 'ka' %} lang="en"{% endif %}>{{ t.disclaimer }}</p>
+        {% if view.kind == '404' %}<p lang="en">{{ en.disclaimer }}</p>{% endif %}
+      </div>
+    </div>
   </div>
-  <div class="eu-footer"><p class="emblem-placeholder">{{ t.emblem }}</p><p><strong>{{ t.funding }}</strong></p><p{% if view.lang == 'ka' %} lang="en"{% endif %}>{{ t.disclaimer }}</p>{% if view.kind == '404' %}<p lang="en">{{ en.disclaimer }}</p>{% endif %}</div>
 </footer>
 </body>
 </html>

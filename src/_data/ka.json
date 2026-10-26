@@ -83,5 +83,8 @@
     "KA3": "KA3",
     "Jean Monnet": "ჟან მონე"
   },
-  "archive": "არქივი"
+  "archive": "არქივი",
+  "logoName": "NEO Georgia",
+  "logoPlaceholder": "[SAMPLE] ტექსტური ლოგო",
+  "menuToggle": "მენიუ"
 }

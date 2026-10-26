@@ -36,7 +36,8 @@ test('all rendered pages have language, metadata, seven menu links, one h1 and E
     assert.equal($('html').attr('lang'), view.lang, view.path);
     assert.equal($('h1').length, 1, view.path);
     assert.ok($('h1').text().trim(), view.path);
-    assert.equal($('header nav li').length, 7);
+    for (const menu of $('header nav')) assert.equal($(menu).find('li').length, 7);
+    assert.equal($('header nav').length, 2);
     assert.ok($('link[rel=canonical]').attr('href'));
     assert.ok($('meta[name=description]').attr('content'));
     assert.match(

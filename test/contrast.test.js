@@ -3,11 +3,20 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 
 const css = readFileSync('src/assets/css/site.css', 'utf8');
-const tokens = Object.fromEntries([...css.matchAll(/--([\w-]+):\s*(#[0-9a-f]{6})\s*;/gi)]
-  .map(([, key, value]) => [key, value]));
+const tokens = Object.fromEntries(
+  [...css.matchAll(/--([\w-]+):\s*(#[0-9a-f]{6})\s*;/gi)].map(([, key, value]) => [
+    key,
+    value,
+  ])
+);
 function luminance(hex) {
-  const rgb = hex.slice(1).match(/../g).map(channel => parseInt(channel, 16) / 255)
-    .map(channel => channel <= 0.04045 ? channel / 12.92 : ((channel + 0.055) / 1.055) ** 2.4);
+  const rgb = hex
+    .slice(1)
+    .match(/../g)
+    .map((channel) => parseInt(channel, 16) / 255)
+    .map((channel) =>
+      channel <= 0.04045 ? channel / 12.92 : ((channel + 0.055) / 1.055) ** 2.4
+    );
   return rgb[0] * 0.2126 + rgb[1] * 0.7152 + rgb[2] * 0.0722;
 }
 

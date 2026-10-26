@@ -1,20 +1,33 @@
 {% macro cards(items, type, t, lang, heading='h3') %}
-<ul class="cards">
-{% for item in items %}
-<li>
-  {% if type == 'call' %}
-  <{{ heading }}><a href="/{{ lang }}/opportunities/{{ item.action }}/">{{ item.title }}</a></{{ heading }}>
-  <p><time datetime="{{ item.deadline }}">{{ item.deadline | dateLabel(t) }}</time>, {{ t.brussels }}</p><p>{{ t[item.status] }}</p><a href="{{ item.url }}">{{ t.officialLinks }}</a>
-  {% elif type == 'resource' %}
-  <{{ heading }}><a href="{{ item.url }}">{{ item.title }}</a></{{ heading }}><p>{{ t.source }}: {{ t[item.source] }}</p>
-  {% elif type == 'faq' %}
-  <{{ heading }}>{{ item.title }}</{{ heading }}>{{ item.body | markdown | safe }}
+<ul class="cards cards-{{ type }}">
+  {% for item in items %}
+    <li class="card">
+      {% if type == 'call' %}
+        <div class="card-meta"><span>{{ t.calls }}</span><span class="status status-{{ item.status }}">{{ t[item.status] }}</span></div>
+        <{{ heading }}><a href="/{{ lang }}/opportunities/{{ item.action }}/">{{ item.title }}</a></{{ heading }}>
+        <p class="card-date"><time datetime="{{ item.deadline }}">{{ item.deadline | dateLabel(t) }}</time><br><span class="card-timezone">{{ t.brussels }}</span></p>
+        <a class="card-link" href="{{ item.url }}">{{ t.officialLinks }}</a>
+      {% elif type == 'resource' %}
+        <p class="source-label source-{{ item.source }}">{{ t.source }}: {{ t[item.source] }}</p>
+        <{{ heading }}><a href="{{ item.url }}">{{ item.title }}</a></{{ heading }}>
+      {% elif type == 'faq' %}
+        <{{ heading }}>{{ item.title }}</{{ heading }}>
+        {{ item.body | markdown | safe }}
+      {% else %}
+        {% if type == 'event' %}
+          <div class="card-meta"><span>{{ t.events }}</span><span class="status status-{{ item.status }}">{{ t[item.status] }}</span></div>
+        {% elif type == 'news' %}
+          <div class="card-meta"><span>{{ t.news }}</span></div>
+        {% endif %}
+        <{{ heading }}><a href="/{{ lang }}/{% if type == 'action' %}opportunities{% elif type == 'story' %}stories{% else %}{{ type }}{% if type == 'event' %}s{% endif %}{% endif %}/{{ item.slug }}/">{{ item.title }}</a></{{ heading }}>
+        {% if item.date %}
+          <p class="card-date"><time datetime="{{ item.date }}">{% if type == 'news' %}{{ item.date | dateLabel(t, 'UTC', false) }}{% else %}{{ item.date | dateLabel(t, item.timeZone) }}{% endif %}</time></p>
+        {% endif %}
+        <div class="card-body">{{ item.body | markdown | safe }}</div>
+      {% endif %}
+    </li>
   {% else %}
-  <{{ heading }}><a href="/{{ lang }}/{% if type == 'action' %}opportunities{% elif type == 'story' %}stories{% else %}{{ type }}{% if type == 'event' %}s{% endif %}{% endif %}/{{ item.slug }}/">{{ item.title }}</a></{{ heading }}>
-  {% if item.date %}<p><time datetime="{{ item.date }}">{% if type == 'news' %}{{ item.date | dateLabel(t, 'UTC', false) }}{% else %}{{ item.date | dateLabel(t, item.timeZone) }}{% endif %}</time>{% if item.status %}, {{ t[item.status] }}{% endif %}</p>{% endif %}
-  {{ item.body | markdown | safe }}
-  {% endif %}
-</li>
-{% else %}<li>{{ t.empty }}</li>{% endfor %}
+    <li class="card empty-state">{{ t.empty }}</li>
+  {% endfor %}
 </ul>
 {% endmacro %}

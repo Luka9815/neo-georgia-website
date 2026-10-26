@@ -1,0 +1,11 @@
+{% macro navigationMenu(navigation, t, view, className) %}
+<nav class="{{ className }}" aria-label="{{ t.menu }}">
+  <ul>
+    {% for key, slug in navigation %}
+      <li>
+        <a href="/{{ view.lang }}/{{ slug }}"{% if view.kind == key or (key == 'opportunities' and view.kind == 'action') or (key == 'events' and view.kind == 'event') %} aria-current="page"{% endif %}>{{ t[key] }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
+{% endmacro %}
