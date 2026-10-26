@@ -29,9 +29,16 @@ eleventyExcludeFromCollections: true
 <section><h2>{{ t.story }}</h2>{{ cards(stories | take(1), 'story', t, view.lang) }}</section>
 <section><h2>{{ t.figures }}</h2><dl class="figures">{% for key in ['projects','mobilities','institutions'] %}<div><dt>{{ t[key] }}</dt><dd>{{ t.sampleNumber }}</dd></div>{% endfor %}</dl></section>
 {% elif view.kind == 'calls' %}
-<p>{{ t.currentYear }}: {{ site.year }}. {{ t.brussels }}</p>
+<p>{{ t.brussels }}</p>
 <p><a href="https://erasmus-plus.ec.europa.eu/programme-guide/erasmusplus-programme-guide">{{ t.programmeGuide }}</a></p>
-{% for group in ['KA1','KA2','KA3','Jean Monnet'] %}<section><h2>{{ t.keyAction }}: {{ t.keyActions[group] }}</h2>{{ cards(calls | callYear(site.year) | actionGroup(actions, group), 'call', t, view.lang) }}</section>{% endfor %}
+{% for year in calls | callYears(site.currentCallYear) %}
+<section data-call-year="{{ year }}">
+<h2>{% if year == site.currentCallYear %}{{ t.currentYear }}{% else %}{{ t.archive }}{% endif %}: {{ year }}</h2>
+{% for group in ['KA1','KA2','KA3','Jean Monnet'] %}
+<section><h3>{{ t.keyAction }}: {{ t.keyActions[group] }}</h3>{{ cards(calls | callYear(year) | actionGroup(actions, group), 'call', t, view.lang, 'h4') }}</section>
+{% endfor %}
+</section>
+{% endfor %}
 {% elif view.kind == 'opportunities' %}
 <section id="individuals"><h2>{{ t.individuals }}</h2><p>{{ t.sample }}</p></section>
 <section id="organisations"><h2>{{ t.organisations }}</h2>{{ cards(actions, 'action', t, view.lang) }}</section>
@@ -40,7 +47,7 @@ eleventyExcludeFromCollections: true
 {{ item.summary | markdown | safe }}
 <section><h2>{{ t.who }}</h2>{{ item.who | markdown | safe }}</section>
 <section><h2>{{ t.how }}</h2>{{ item.how | markdown | safe }}<h3>{{ t.officialLinks }}</h3><ul>{% for link in item.officialLinks %}<li><a href="{{ link }}">{{ t.programmeGuide }}</a></li>{% endfor %}</ul></section>
-<section><h2>{{ t.calls }}</h2>{{ cards(calls | related(item.slug) | callYear(site.year), 'call', t, view.lang) }}</section>
+<section><h2>{{ t.calls }}</h2>{{ cards(calls | related(item.slug) | callYear(site.currentCallYear), 'call', t, view.lang) }}</section>
 <section><h2>{{ t.upcomingEvents }}</h2>{{ cards(events | related(item.slug) | status('upcoming'), 'event', t, view.lang) }}</section>
 <section><h2>{{ t.pastEvents }}</h2>{{ cards(events | related(item.slug) | status('past'), 'event', t, view.lang) }}</section>
 <section><h2>{{ t.resources }}</h2>{{ cards(resources | related(item.slug), 'resource', t, view.lang) }}</section>

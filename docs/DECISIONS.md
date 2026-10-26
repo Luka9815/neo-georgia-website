@@ -72,3 +72,7 @@ Both hosts build with npm run build and publish _site using Node 24. Share only 
 
 ## 2026-10-26: Editor-entered local call and event times
 Supersedes the explicit-offset storage rule in the earlier computed-status decision. Store Call opens/deadline and Event date/end as YYYY-MM-DDTHH:mm plus a named timeZone. Resolve them with @js-temporal/polyfill at build time, including daylight saving; editors never type offsets. Reject nonexistent or ambiguous clock-change times instead of silently changing the entered time or guessing an occurrence. Runtime catalog values and HTML datetime attributes carry derived offsets; content files stay local. News dates retain their existing instant format.
+
+
+## 2026-10-26: Explicit call edition and archives
+Use currentCallYear in src/_data/site.js rather than the build clock. The selected edition stays first on the calls page and drives action-page current calls; all other available editions follow as archives in descending year order. This keeps an edition visible across New Year and provides a single setting for a later CMS settings screen. Keep home deadlines chronological across editions. Add one clearly labelled 2025 archive sample to exercise rendering.

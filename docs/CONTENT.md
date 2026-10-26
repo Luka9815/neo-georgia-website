@@ -29,6 +29,10 @@ Example shape:
 
 `lib/content.js` handles relationships, localisation and status. `src/_data/catalog.js` orders lists. `src/_data/views.js` declares routes. Templates are Nunjucks; bodies remain Markdown strings. The other seven page templates and full field validation remain later work, not a production content schema.
 
+## Current call edition
+
+`src/_data/site.js` defines `currentCallYear: 2026` explicitly. Update this setting when NEO changes call edition, not automatically at New Year. The calls page shows the selected edition first, even if empty, followed by all other available years as archives in descending order. Action pages use the same selected edition. The home deadline block remains chronological across editions. A future CMS settings screen can expose this value; neither CMS is connected yet. The 2025 CBHE sample demonstrates archival rendering.
+
 ## Both CMS candidates
 
 No CMS has been selected, installed or connected. This layout avoids CMS-specific translation plugins and can use native object fields in both candidates:

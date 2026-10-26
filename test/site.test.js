@@ -3,8 +3,9 @@ import assert from 'node:assert/strict';
 import { readdirSync, readFileSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { load } from 'cheerio';
-import { loadContent, callStatus, eventStatus, localise, dateLabel, zonedDateTime } from '../lib/content.js';
+import { loadContent, callStatus, eventStatus, localise, dateLabel, zonedDateTime, callYears } from '../lib/content.js';
 import getViews from '../src/_data/views.js';
+import getSite from '../src/_data/site.js';
 const read = path => readFileSync(path, 'utf8');
 function files(dir) { return readdirSync(dir, { withFileTypes: true }).flatMap(e => e.isDirectory() ? files(join(dir, e.name)) : [join(dir, e.name)]); }
 function output(path) { return `_site${path}${path.endsWith('/') ? 'index.html' : ''}`; }
@@ -125,5 +126,23 @@ test('stored call/event times are offset-free and output time elements have deri
     for (const element of $('time')) {
       assert.match($(element).attr('datetime'), /(?:Z|[+-]\d{2}:\d{2})$/);
     }
+  }
+});
+
+test('selected call year is independent of the clock and precedes every archive year', () => {
+  const selected = getSite().currentCallYear;
+  assert.equal(selected, 2026);
+  assert.deepEqual(callYears([{ year: 2027 }, { year: 2025 }, { year: 2027 }], selected), [2026, 2027, 2025]);
+  assert.deepEqual(callYears([], selected), [2026]);
+  for (const lang of ['ka', 'en']) {
+    const $ = load(read(`_site/${lang}/calls/index.html`));
+    const years = $('[data-call-year]').map((_, e) => Number($(e).attr('data-call-year'))).get();
+    assert.deepEqual(years, [2026, 2025]);
+    assert.equal($('[data-call-year="2026"] time').length, 3);
+    assert.equal($('[data-call-year="2025"] time').length, 1);
+    assert.match($('[data-call-year="2025"]').text(), /2025/);
+    const action = load(read(`_site/${lang}/opportunities/cbhe/index.html`));
+    assert.equal(action('time[datetime="2025-12-15T17:00:00+01:00"]').length, 0);
+    assert.equal(action('time[datetime="2026-12-15T17:00:00+01:00"]').length, 1);
   }
 });

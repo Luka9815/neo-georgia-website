@@ -1,5 +1,5 @@
 import MarkdownIt from 'markdown-it';
-import { localise, related, dateLabel } from './lib/content.js';
+import { localise, related, dateLabel, callYears } from './lib/content.js';
 const markdown = new MarkdownIt({ html: false });
 export default function (config) {
   config.ignores.add('src/assets/**/*.md');
@@ -13,6 +13,7 @@ export default function (config) {
   config.addFilter('markdown', text => markdown.render(text || ''));
   config.addFilter('take', (items, count) => items.slice(0, count));
   config.addFilter('status', (items, value) => items.filter(i => i.status === value));
+  config.addFilter('callYears', callYears);
   config.addFilter('callYear', (items, year) => items.filter(i => i.year === year));
   config.addFilter('actionGroup', (items, actions, group) => items.filter(i => actions.find(a => a.slug === i.action)?.keyAction === group));
   config.addFilter('findSlug', (items, slug) => items.find(i => i.slug === slug));
