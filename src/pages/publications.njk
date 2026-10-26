@@ -23,15 +23,6 @@ eleventyExcludeFromCollections: true
   <button type="reset">{{ t.resetFilters }}</button>
   <p role="status" data-publication-count data-label="{{ t.publicationResults }}"></p>
 </form>
-<ul class="cards" data-publications>
-{% for item in publications %}
-  <li class="card" data-year="{{ item.year }}" data-type="{{ item.type }}">
-    <h2><a href="{{ item.file }}">{{ item.title }}</a></h2>
-    <p>{{ t.year }}: {{ item.year }} · {{ t.type }}: {{ t.publicationTypes[item.type] }}</p>
-    <p>{{ t.publicationLanguage }}: {{ item.language }}</p>
-    {{ item.body | markdown | safe }}
-  </li>
-{% endfor %}
-</ul>
+{{ cards(publications, 'publication', t, view.lang, 'h2') }}
 <script type="module" src="/assets/js/publications.js"></script>
 {% endblock %}

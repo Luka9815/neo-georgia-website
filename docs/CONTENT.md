@@ -25,9 +25,9 @@ Example shape:
 - A nonexistent spring-forward time or an ambiguous fall-back time stops the build with an error identifying the time and zone. Choose a valid, unambiguous time instead; the build never silently shifts it or guesses which occurrence is intended. Invalid dates, unknown zones and editor-entered offsets are also rejected.
 - For Call/Event CMS fields use plain text inputs with a `YYYY-MM-DDTHH:mm` format hint, not date widgets that serialise an offset or UTC. Keep `timeZone` as a separate named-zone field.
 - News has a single shared publication `date` in `YYYY-MM-DD` format, without a time or offset. Stories and publications have a single shared `year`. News samples were migrated from instant dates to calendar dates for CMS editing.
-- No sample images or people are included. When image support is implemented, use a shared path with required `alt.ka` and `alt.en`, and Eleventy Image for responsive outputs. Do not add personal contact information to the public repository.
+- No sample images are included; session 10 adds fictional sample people without photos or contact details. When image support is implemented, use a shared path with required `alt.ka` and `alt.en`, and Eleventy Image for responsive outputs. Do not add personal contact information to the public repository.
 
-`lib/content.js` handles relationships, localisation and status. `src/_data/catalog.js` orders lists. `src/_data/views.js` declares routes. Each page type has a Nunjucks template in `src/pages/`, inheriting the shared `_includes/page.njk` wrapper; `_data/pageTypes.js` groups the central route list. Bodies remain Markdown strings. The other seven page templates and full field validation remain later work, not a production content schema.
+`lib/content.js` handles relationships, localisation and status. `src/_data/catalog.js` orders lists. `src/_data/views.js` declares routes. Each page type has a Nunjucks template in `src/pages/`, inheriting the shared `_includes/page.njk` wrapper; `_data/pageTypes.js` groups the central route list. Bodies remain Markdown strings. Session 10 adds Publications, FAQ, People and Contact; remaining templates and full field validation remain later work, not a production content schema.
 
 ## Current call edition
 
@@ -145,3 +145,15 @@ Both image alt fields remain [ALT NEEDED]. Review rights and write proper Georgi
 ### Earlier baseline
 
 Session 7 reviewed 76 posts and wrote 72 drafts under ka, while four English-prose sources remained only in inventory. The session 8 pass corrects that classification, preserves every source in a separate draft and identifies mixed in-post English sections and pairing candidates. Current results and the exact regenerated window are in REPORT.md and HANDOVER.
+
+## Session 10 supporting templates
+
+Publications live at /ka/resources/publications/ and /en/resources/publications/. Shared fields: year (2014 to 2100), type (neo-report, here-publication, brochure, statistics), language (ka, en, ka/en), and file (existing /assets/publications/<slug>.pdf or a clearly labelled sample .txt). Both text objects contain title/body. Two sample text downloads demonstrate the archive without pretending to be approved publications. Lists are newest first. All files remain visible without JavaScript; year/type controls appear only after the local enhancement is ready. Empty results have a translated live count and a reset control.
+
+FAQ uses the existing title/body, topic and actions contract. Topics are applications and mobility, with labels in each language file. When adding a topic, update validate-supporting.js and both faqTopics dictionaries. The grouped FAQ is under Resources; Action pages automatically select the same records by actions. Three [SAMPLE] FAQs replace example.json.
+
+People use group (neo or here), translated title (name), role and body. Team lives at /about/team/ and HEREs at /here/ in both languages. Sample names are fictional and use the national Georgian romanisation, retaining ejective apostrophes in names. No photos, personal emails or telephone numbers are stored. Approved contact/photo support remains future work.
+
+Contact lives under /about/contact/ and is linked from About and the footer. Address, office hours and email placeholders come from ka.json/en.json. example.org is reserved for examples. There is no form, map embed or third-party asset. Publications and FAQ are linked from Resources; Team, HEREs and Contact are linked from About. The seven top-level destinations are unchanged.
+
+loadContent validates publication, FAQ and person text parity, their classifications, FAQ Action references and publication file existence before rendering. These three types remain JSON-edited; no new hosted CMS collections were added.

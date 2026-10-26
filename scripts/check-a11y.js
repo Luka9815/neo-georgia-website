@@ -99,6 +99,27 @@ try {
     }
     await noJs.close();
   }
+  // Progressive filters: all files remain reachable without page JavaScript.
+  for (const lang of ['ka', 'en']) {
+    const url = `${base}${prefix}${lang}/resources/publications/`;
+    await page.goto(url);
+    const visible = page.locator('[data-publications] > li:visible');
+    assert.equal(await visible.count(), 2);
+    await page.locator('#publication-year').selectOption('2026');
+    assert.equal(await visible.count(), 1);
+    await page.locator('#publication-type').selectOption('brochure');
+    assert.equal(await visible.count(), 0);
+    assert.match(await page.locator('[role=status]').textContent(), /0$/);
+    await page.locator('button[type=reset]').click();
+    await page.waitForFunction(() => [...document.querySelectorAll('[data-publications] > li')].every(item => !item.hidden));
+    assert.equal(await visible.count(), 2);
+    const noJs = await browser.newContext({ javaScriptEnabled: false });
+    const document = await noJs.newPage();
+    await document.goto(url);
+    assert.equal(await document.locator('[data-publications] > li:visible').count(), 2);
+    assert.equal(await document.locator('[data-publication-filters]').isVisible(), false);
+    await noJs.close();
+  }
   console.log(
     `axe: ${count} pages passed with zero violations; ` +
       '320px overflow, keyboard skip links, language switches and no-JS mobile/desktop menus passed.'
