@@ -1,11 +1,11 @@
 # Handover
 
-Last updated: 2026-10-26 (Codex, session 9: five approved bilingual News posts)
+Last updated: 2026-10-26 (Codex, session 10: remaining sitemap templates)
 
 ## Current state
 
 - Eleventy 3 ESM on Node 24 LTS, plain CSS, Nunjucks page types and Markdown body fields in JSON. Run commands from the repository root. Output `_site/` and node_modules are ignored.
-- Georgian and English homes, seven menu destinations, nine bilingual [DRAFT] Action pages with automatic related blocks, calls, supporting listings and details. Actions await editorial review; News/Event demonstration content remains [SAMPLE]; the language policy and supplied funding disclaimer now use the approved text. Core translation parity, untranslated News/Story fallback and EU footers are checked.
+- Georgian and English homes, seven menu destinations, nine bilingual [DRAFT] Action pages with automatic related blocks, calls, supporting listings and details, plus Publications, FAQ, Team/HEREs and Contact. Actions await editorial review; News/Event demonstration content remains [SAMPLE]; the language policy and supplied funding disclaimer now use the approved text. Core translation parity, untranslated News/Story fallback and EU footers are checked.
 - Call opens/deadline and Event date/end use offset-free local wall-clock times plus a named timeZone. Temporal derives offsets and rejects ambiguous/nonexistent clock-change times. currentCallYear (2026) selects the visible call edition independently of the clock, with other years shown as archives.
 - Hosting is now GitHub Pages through `.github/workflows/deploy.yml`. Netlify and Cloudflare Pages are dropped. Their old configuration can be restored from git history if true HTTP 301 redirects make a different host necessary.
 - The workflow runs on pushes to main, daily at 04:15 UTC, and manual dispatch. It installs with npm ci, builds, tests, uploads the Pages artifact and deploys with official actions. No build hook, custom secret or browser accessibility check is used in CI. Deployments share a concurrency group.
@@ -104,7 +104,15 @@ The browser check uses `/usr/bin/chromium`; set CHROMIUM_PATH if Chromium lives 
 
 ## Next task
 
-Session 10 starts from codex/session-9-promote and adds Publications, FAQ, People and Contact templates under the approved sitemap. Session 11 starts from that branch and evaluates Georgian static search. Do not merge these stacked PRs automatically.
+Session 11 starts from codex/session-10-templates to evaluate Pagefind with Georgian full words, partial words and inflections. Record evidence, page weight and build cost; ship only if Georgian results are adequate. Do not merge automatically. Session 9 targets main; session 10 targets session 9; session 11 must target session 10. Review/merge in that order.
+
+## Session 10 templates
+
+Publications (/resources/publications/) and FAQ (/resources/faq/) are linked from Resources. Team (/about/team/), HEREs (/here/) and Contact (/about/contact/) are linked from About; Contact is also in the footer. Both languages have matching routes/switches. Seven top-level items remain unchanged.
+
+Publications has two [SAMPLE] local text downloads, shared year/type/file/language and translated title/body. Local JavaScript reveals filters; without JavaScript all publications remain reachable. FAQ has three [SAMPLE] records grouped by topic and selected automatically on related Action pages. Team/HEREs use separate groups and fictional sample profiles with national Georgian romanisation, no photos or personal contact details. Contact uses translated address/hours/email placeholders, no form or map.
+
+Supporting types now validate bilingual text, groups/topics/types, publication years/local files and FAQ Action references. Update both translation dictionaries and validation enums when extending classifications. JSON editing only; no extra CMS collections. CONTENT.md documents the contract. Browser checks cover filter combinations/reset/no-JS and all new pages, and tests cover both languages, exact switches, EU footer, related FAQs and name romanisation. Validation results are recorded in CHANGELOG.
 
 ## Session 9 promotion
 
