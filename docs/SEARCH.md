@@ -1,4 +1,42 @@
-# Georgian static search evaluation
+# Georgian static search
+
+## Session 12: approved production search, 2026-10-27
+
+Luka has decided to ship Pagefind with the specified Georgian ending fallback. This supersedes the session 11 hold below and the dated decision “Pagefind held after Georgian inflection evaluation”. The earlier measurements remain historical evidence, not a current shipping prohibition.
+
+`npm run build` runs Eleventy and then scripts/build-search.js. The existing Pages deployment runs that command, so no separate account, service or workflow stage is needed. The builder replaces stale search output and creates separate ka/en indexes, with forceLanguage, rootSelector main and .notice excluded. Redirects, 404 and search pages are omitted. Stored result URLs include PATH_PREFIX; the browser sets Pagefind baseUrl to / so Pagefind cannot prepend the project prefix a second time.
+
+Both /ka/search/ and /en/search/ use the Pagefind JavaScript API with site-designed markup. The header links to search outside the seven-item menu. The input is labelled, Enter submits, results are links with titles and plain-text excerpts, and a polite atomic live region announces results/errors. No results markup is inserted as executable HTML. Without JavaScript, the hidden form is replaced by a short explanation and seven main-section links. Failed loading also exposes those links. Pagefind is imported only on submission, using the active language's index. Ordinary pages load no search modules or indexes.
+
+### Query-only fallback
+
+The single documented ending list and implementation are in src/assets/js/georgian-search.js. It sorts Luka's 18 endings longest first, removes at most one ending per Georgian word, and only when at least four letters remain. Search runs the query as typed, then one variant with each eligible word shortened. Multiword queries stay multiword queries; this does not OR each word independently. Results retain typed-query ranking first and are de-duplicated. English queries run once unchanged. No index terms or page text are modified.
+
+This is a small suffix heuristic, not a Georgian stemmer. In particular, the approved list does not remove the nominative ending ა, so მობილობა and თანამშრომლობა remain unchanged. The residual recall gaps are disclosed, not hidden by adding extra endings.
+
+### Before and after on actual content
+
+The required word-family checks use the same nine mobility, seven cooperation and three Georgian Erasmus pages. Both build layouts are checked, with exact typed ranking preserved. English controls are compared by their complete ordered URL lists, not only their counts.
+
+| Query | Before | With fallback |
+|---|---:|---:|
+| მობილობა | 6/9 (67%) | 6/9 (67%) |
+| მობილობის | 7/9 (78%) | 9/9 (100%) |
+| თანამშრომლობა | 5/7 (71%) | 5/7 (71%) |
+| თანამშრომლობის | 3/7 (43%) | 7/7 (100%) |
+| ერასმუსის | 2/3 (67%) | 3/3 (100%) |
+
+English controls remain unchanged: mobility 9, cooperation 5, Erasmus 10 and მობილობა 0. The browser check also verifies keyboard submission, no-JavaScript links, active-language loading, no search requests from ordinary pages and project-path results. Current raw measurements are in review/search-session-12.json.
+
+### Search-page weight
+
+Response body bytes for search modules and Pagefind assets are measured separately from shared HTML/CSS/fonts and HTTP headers. Modules load on search-page entry; the active-language runtime/index and all result fragments load after submission. Ordinary pages load none of these scripts. Counts include all returned result fragments for the first query (მობილობის or mobility).
+| Layout | Initial modules | After first Georgian query | After first English query |
+|---|---:|---:|---:|
+| / | 3,615 B | 200,027 B | 197,465 B |
+| /neo-georgia-website/ | 3,615 B | 200,189 B | 197,571 B | These are local, uncompressed application payloads, not a production network benchmark.
+
+## Session 11 historical evaluation (superseded)
 
 Date: 2026-10-26. Candidate: Pagefind 1.5.2, pinned as a development dependency for a reproducible experiment.
 

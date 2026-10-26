@@ -1,0 +1,33 @@
+---
+pagination:
+  data: pageTypes.search
+  size: 1
+  alias: view
+permalink: "{{ view.path }}"
+eleventyExcludeFromCollections: true
+---
+{% extends 'page.njk' %}
+{% block pageContent %}
+<div data-search data-language="{{ view.lang }}" data-index="{{ ('/pagefind/' ~ view.lang ~ '/pagefind.js') | url }}"
+     data-count="{{ t.searchCount }}" data-loading="{{ t.searchLoading }}" data-error="{{ t.searchError }}" data-empty="{{ t.searchEmpty }}" data-none="{{ t.searchNone }}">
+  <form data-search-form hidden role="search">
+    <label for="search-query">{{ t.searchLabel }}</label>
+    <div class="search-controls">
+      <input id="search-query" name="q" type="search" maxlength="200" autocomplete="off">
+      <button type="submit">{{ t.searchSubmit }}</button>
+    </div>
+  </form>
+  <section aria-labelledby="search-results-heading" data-search-results hidden>
+    <h2 id="search-results-heading">{{ t.searchResults }}</h2>
+    <p role="status" aria-live="polite" aria-atomic="true" data-search-status></p>
+    <ul class="search-results" data-search-list></ul>
+  </section>
+  <section data-search-fallback aria-label="{{ t.search }}">
+    <p>{{ t.searchNoJs }}</p>
+    <ul>
+      {% for key, suffix in navigation %}<li><a href="/{{ view.lang }}/{{ suffix }}">{{ t[key] }}</a></li>{% endfor %}
+    </ul>
+  </section>
+</div>
+<script type="module" src="/assets/js/search.js"></script>
+{% endblock %}

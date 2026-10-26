@@ -1,3 +1,4 @@
+import { checkSearch } from './check-search.js';
 import { chromium } from 'playwright';
 import AxeBuilder from '@axe-core/playwright';
 import assert from 'node:assert/strict';
@@ -120,6 +121,7 @@ try {
     assert.equal(await document.locator('[data-publication-filters]').isVisible(), false);
     await noJs.close();
   }
+  await checkSearch(browser, base, prefix);
   console.log(
     `axe: ${count} pages passed with zero violations; ` +
       '320px overflow, keyboard skip links, language switches and no-JS mobile/desktop menus passed.'

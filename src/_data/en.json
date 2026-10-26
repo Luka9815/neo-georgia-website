@@ -142,5 +142,15 @@
   "email": "Email",
   "contactAddress": "[SAMPLE] Office address awaiting approval.",
   "contactHours": "[SAMPLE] Office hours awaiting approval.",
-  "contactEmail": "[SAMPLE] office@example.org"
+  "contactEmail": "[SAMPLE] office@example.org",
+  "search": "Search",
+  "searchLabel": "Search this website",
+  "searchSubmit": "Search",
+  "searchResults": "Search results",
+  "searchCount": "Results",
+  "searchLoading": "Searching…",
+  "searchError": "Search could not load. Please try again or use the section links below.",
+  "searchNoJs": "Search needs JavaScript. You can browse the main sections below.",
+  "searchEmpty": "Enter a word or phrase to search.",
+  "searchNone": "No results found. Try another word or browse the main sections."
 }
