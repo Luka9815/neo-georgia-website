@@ -7,7 +7,7 @@
   },
   "scripts": {
     "start": "eleventy --serve",
-    "build": "eleventy",
+    "build": "eleventy && node scripts/build-search.js",
     "test": "node --test",
     "check:a11y": "node scripts/check-a11y.js",
     "evaluate:search": "node scripts/evaluate-search.js"
