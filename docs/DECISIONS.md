@@ -91,3 +91,8 @@ Supersedes the hook-based daily rebuild plan in "Computed statuses and daily reb
 
 ## 2026-10-26: Portable site path prefix
 Keep route and content paths independent of hosting. Set Eleventy's pathPrefix from PATH_PREFIX (default /) and use its HTML base plugin to rewrite rendered internal links, assets and refresh targets, including Markdown links. SITE_URL is a complete base URL including its trailing path prefix, defaulting to https://luka9815.github.io/neo-georgia-website/. Absolute metadata uses that base; the workflow sets both values explicitly. For a custom domain, set PATH_PREFIX=/ and SITE_URL to its HTTPS root. Regression tests build both hosting layouts and check generated targets.
+
+
+## 2026-10-26: GitHub Pages fallbacks and legacy URLs
+Supersedes the host-specific 404 and root-redirect rules in "Portable hosting and repeatable checks". Use one root bilingual 404 (Georgian first, English second) and a static root index with meta refresh, target canonical and a visible Georgian-home link. Add .nojekyll to the uploaded output. Generate optional meta-refresh stubs from the initially empty redirects.json mapping; validate collisions and target pages. These are HTML redirects, not HTTP 301 responses. Remove netlify.toml and src/host/_redirects; restore them from git history only if Netlify is chosen again.
+

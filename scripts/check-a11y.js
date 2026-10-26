@@ -13,7 +13,7 @@ try {
   const page = await context.newPage();
   const base = process.env.TEST_URL || 'http://127.0.0.1:8080';
   let count = 0;
-  for (const view of getViews().filter((v) => v.kind !== 'redirect')) {
+  for (const view of getViews().filter((v) => !['redirect', 'legacyRedirect'].includes(v.kind))) {
     const response = await page.goto(`${base}${prefix}${view.path.slice(1)}`);
     assert.equal(response.status(), 200, view.path);
     const results = await new AxeBuilder({ page }).analyze();
@@ -39,8 +39,9 @@ try {
     assert.equal(await page.locator(':focus').getAttribute('id'), 'main');
     const alternate = page.locator('header a[hreflang]');
     const target = await alternate.getAttribute('href');
+    const destination = new URL(target, page.url()).href;
     await alternate.click();
-    assert.equal(new URL(page.url()).pathname, target);
+    assert.equal(page.url(), destination);
     count++;
   }
   console.log(

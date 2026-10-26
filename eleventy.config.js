@@ -9,7 +9,7 @@ export default function (config) {
   config.ignores.add('src/assets/**/*.md');
   config.setNunjucksEnvironmentOptions({ autoescape: true });
   config.addPassthroughCopy('src/assets');
-  config.addPassthroughCopy({ 'src/host/_redirects': '_redirects' });
+  config.addPassthroughCopy({ 'src/nojekyll': '.nojekyll' });
   config.addWatchTarget('src/content');
   config.addFilter('localise', localise);
   config.addFilter('related', related);

@@ -234,3 +234,23 @@ test('selected call year is independent of the clock and precedes every archive 
     assert.equal(action('time[datetime="2026-12-15T17:00:00+01:00"]').length, 1);
   }
 });
+
+test('Pages output has a bilingual root 404 and a static home redirect', () => {
+  assert.ok(existsSync('_site/.nojekyll'));
+  assert.ok(!existsSync('_site/ka/404.html'));
+  assert.ok(!existsSync('_site/en/404.html'));
+  const $ = load(read('_site/404.html'));
+  const ka = JSON.parse(read('src/_data/ka.json'));
+  const en = JSON.parse(read('src/_data/en.json'));
+  assert.equal($('h1').text(), ka.notFound);
+  assert.equal($('section[lang=en] h2').text(), en.notFound);
+  assert.ok($(`main a[href="${publicPath('/ka/')}"]`).length);
+  assert.ok($(`main a[href="${publicPath('/en/')}"]`).length);
+  assert.ok($('.eu-footer').text().includes(en.disclaimer));
+  assert.match($('meta[name=robots]').attr('content'), /noindex/);
+  const index = load(read('_site/index.html'));
+  assert.equal(index('meta[http-equiv=refresh]').attr('content').replace(/\s/g, ''), `0;url=${publicPath('/ka/')}`);
+  assert.equal(index('link[rel=canonical]').attr('href'), new URL('ka/', getSite().url).href);
+  assert.ok(index(`main a[href="${publicPath('/ka/')}"]`).length);
+});
+
