@@ -16,6 +16,7 @@ test('optional News image validates local files and alt text for published langu
     }
     validateNewsImage({ image: structuredClone(image), en: {} }, file);
     validateNewsImage({ image: { src: image.src, alt: { ka: image.alt.ka } } }, file);
+    assert.throws(() => validateNewsImage({ image: { src: image.src, alt: { ka: image.alt.ka, en: '[ALT NEEDED]' } } }, file), /image.alt.en/);
     for (const [path, value] of [['src', 'https://example.org/photo.png'], ['src', '/assets/eu/funded-en.png'], ['src', '/assets/uploads/../secret.png'], ['src', '/assets/uploads/missing.png'], ['alt.ka', ''], ['alt.ka', '[ALT NEEDED]'], ['alt.en', '[alt needed]'], ['alt.en', '']]) {
       const item = { image: structuredClone(image), en: {} };
       if (path.startsWith('alt.')) item.image.alt[path.slice(4)] = value; else item.image[path] = value;
@@ -39,7 +40,7 @@ test('real Eleventy image builds produce local responsive article/card pictures 
     cpSync('test/fixtures/sample-news-image.png', join(root, 'src/assets/uploads/sample-news-image.png'));
     const file = join(root, 'src/content/news/update-1.json');
     const item = JSON.parse(readFileSync(file));
-    item.image = { src: '/assets/uploads/sample-news-image.png', alt: { ka: '[SAMPLE] ლურჯი მართკუთხედი.', en: '[SAMPLE] Blue rectangle, "quoted" <description>.' } };
+    item.image = { src: '/assets/uploads/sample-news-image.png', alt: { ka: '[SAMPLE] ლურჯი მართკუთხედი.', en: '[SAMPLE] Blue rectangle, $& "quoted" <description>.' } };
     writeFileSync(file, JSON.stringify(item));
     for (const prefix of ['/', '/neo-georgia-website/']) {
       const output = join(root, prefix === '/' ? 'root-output' : 'project-output');
@@ -69,6 +70,8 @@ test('real Eleventy image builds produce local responsive article/card pictures 
         assert.equal($('.eu-emblem').attr('src'), `${prefix}assets/eu/funded-en.png`);
       }
     }
+    writeFileSync(join(root, 'src/assets/uploads/sample-news-image.png'), 'not an image');
+    assert.throws(() => execFileSync(process.execPath, ['node_modules/@11ty/eleventy/cmd.cjs', `--output=${join(root, 'invalid-output')}`], { cwd: root, env: { ...process.env, PATH_PREFIX: '/', SITE_URL: 'https://example.org/' }, stdio: 'pipe' }), error => /News image.*sample-news-image\.png/.test(String(error.stdout) + String(error.stderr)));
   } finally { rmSync(root, { recursive: true, force: true }); }
 });
 
@@ -84,4 +87,10 @@ test('CMS offers an optional News-only local image with Georgian-first alt label
   assert.equal(alt.fields.find(field => field.name === 'ka').required, true);
   assert.equal(alt.fields.find(field => field.name === 'en').required, false);
   assert.equal(schema.content.find(item => item.name === 'events').fields.some(field => field.name === 'image'), false);
+});
+
+import { renderNewsImages } from '../lib/news-images.js';
+test('News processing leaves unmarked images and marker words in alt text alone', async () => {
+  const html = '<img src="/assets/eu/funded-en.png" alt="data-news-image">';
+  assert.equal(await renderNewsImages(html, '/unused-output'), html);
 });
