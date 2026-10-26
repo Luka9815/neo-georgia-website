@@ -2,7 +2,8 @@ import { createHash } from 'node:crypto';
 import { load } from 'cheerio';
 import TurndownService from 'turndown';
 import { Temporal } from '@js-temporal/polyfill';
-import { isGeorgian, languageOf } from './languages.js';
+import { languageOf } from './languages.js';
+import { postLanguage, pairingCandidates } from './language-review.js';
 import { oldSite } from './client.js';
 
 // Georgian national romanisation: ejectives have apostrophes here. The URL
@@ -315,8 +316,7 @@ export function convertPosts(collections, run, reservedSlugs = []) {
   const used = new Set(reservedSlugs);
   const index = mediaIndex(collections.media?.items || []);
   const posts = allPosts(collections);
-  const pairs = new Map(run.languages.pairs.map((pair) => [pair.ka, pair.en]));
-  const translatedIds = new Set(pairs.values());
+  const sourceById = new Map(posts.map((post) => [post.id, post]));
   const results = [];
   for (const post of posts) {
     const row = {
@@ -328,6 +328,7 @@ export function convertPosts(collections, run, reservedSlugs = []) {
       warnings: [],
       attachments: [],
       status: 'not-converted',
+      language: postLanguage(post),
     };
     try {
       if (!post.date_gmt || /^0000-/.test(post.date_gmt))
@@ -357,7 +358,7 @@ export function convertPosts(collections, run, reservedSlugs = []) {
       row.warnings.push(...ka.warnings);
       const rawAttachments = ka.attachments.map((asset) => ({
         ...asset,
-        language: languageOf(post) || (isGeorgian(post) ? 'ka' : 'unknown'),
+        language: row.language.body.language,
       }));
       for (const gallery of (post.content?.rendered || '').matchAll(
         /\[gallery[^\]]*ids=["']([\d,\s]+)["'][^\]]*\]/gi
@@ -401,32 +402,6 @@ export function convertPosts(collections, run, reservedSlugs = []) {
           });
         }
       }
-      let english;
-      const enPost = posts.find(
-        (candidate) => candidate.id === pairs.get(post.id)
-      );
-      if (enPost) {
-        const converted = htmlToMarkdown(enPost.content?.rendered, enPost.link);
-        english = {
-          title: plainText(enPost.title?.rendered),
-          body: converted.markdown,
-        };
-        rawAttachments.push(
-          ...converted.attachments.map((asset) => ({
-            ...asset,
-            language: 'en',
-          }))
-        );
-        row.warnings.push(
-          ...converted.warnings.map((message) => `English: ${message}`)
-        );
-        if (!english.title || !english.body) {
-          english = undefined;
-          row.warnings.push(
-            'Declared English version became empty after cleanup; omitted pending review.'
-          );
-        }
-      }
       const urls = new Map();
       for (const asset of rawAttachments) {
         if (!asset.url) continue;
@@ -451,24 +426,13 @@ export function convertPosts(collections, run, reservedSlugs = []) {
           });
       }
       row.attachments = [...urls.values()];
-      if (!isGeorgian(post)) {
-        row.status = translatedIds.has(post.id)
-          ? 'linked-english'
-          : languageOf(post) === 'en'
-            ? 'unpaired-english'
-            : 'needs-language-review';
-        row.warnings.push(
-          'No Georgian News file generated from this source; translations are never guessed.'
-        );
-        results.push(row);
-        continue;
-      }
       if (!row.title || !ka.markdown)
         throw new Error('Missing title or body after HTML cleanup.');
       Temporal.PlainDate.from(row.date);
       const slug = uniqueSlug(row.title, post.id, used);
       row.slug = slug;
       row.status = 'converted';
+      if (row.language.needsReview) row.warnings.push('Language needs review. The source remains separate; no automatic split, translation or pairing.');
       if (!suggestions.length)
         row.warnings.push(
           'No Action matched. actions is empty; an editor must select a real Action before publication.'
@@ -481,24 +445,16 @@ export function convertPosts(collections, run, reservedSlugs = []) {
         slug,
         date: row.date,
         actions: suggestions.map((suggestion) => suggestion.slug),
-        ka: { title: row.title, body: ka.markdown },
-        ...(english ? { en: english } : {}),
+        [row.language.slot]: { title: row.title, body: ka.markdown },
         legacy: {
           id: post.id,
           slug: row.oldSlug,
           url: row.oldUrl,
-          ...(english
-            ? {
-                en: {
-                  id: enPost.id,
-                  slug: redact(enPost.slug),
-                  url: cleanUrl(enPost.link),
-                },
-              }
-            : {}),
+
         },
         migration: {
           status: 'unreviewed',
+          language: row.language,
           actionsStatus: 'suggested',
           suggestedActions: suggestions,
           typeCandidate: type,
@@ -517,7 +473,7 @@ export function convertPosts(collections, run, reservedSlugs = []) {
   for (const field of ['title', 'body']) {
     const groups = new Map();
     for (const row of results.filter((item) => item.news)) {
-      const value = field === 'title' ? row.title : row.news.ka.body;
+      const value = field === 'title' ? row.title : row.news[row.language.slot].body;
       const hash = createHash('sha256')
         .update(value.toLowerCase().replace(/\s+/g, ' ').trim())
         .digest('hex');
@@ -526,5 +482,11 @@ export function convertPosts(collections, run, reservedSlugs = []) {
     for (const ids of groups.values())
       if (ids.length > 1) duplicates.push({ field, postIds: ids });
   }
-  return { results, duplicates };
+  const pairCandidates = pairingCandidates(results, sourceById, run.languages.pairs);
+  for (const row of results) {
+    row.pairCandidates = pairCandidates.filter((pair) => pair.ka === row.id || pair.en === row.id);
+    if (row.news) row.news.migration.pairCandidates = row.pairCandidates;
+  }
+  const englishWithoutCandidate = results.filter((row) => row.news && row.language.body.script === 'latin' && !row.pairCandidates.length).map((row) => row.id);
+  return { results, duplicates, pairCandidates, englishWithoutCandidate };
 }

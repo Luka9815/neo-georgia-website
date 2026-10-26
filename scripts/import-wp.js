@@ -150,12 +150,16 @@ async function main() {
   const inventory = {
     items: converted.results.map(({ news, ...row }) => row),
     duplicates: converted.duplicates,
+    pairCandidates: converted.pairCandidates,
+    englishWithoutCandidate: converted.englishWithoutCandidate,
   };
   writeReview('inventory.json', inventory);
   run.counts = {
     inWindow: inventory.items.length,
     convertedNews: converted.results.filter((row) => row.news).length,
     withEnglish: converted.results.filter((row) => row.news?.en).length,
+    needsLanguageReview: converted.results.filter((row) => row.news && row.language.needsReview).length,
+    candidatePairs: converted.pairCandidates.length,
     eventCandidates: inventory.items.filter(
       (row) => row.typeCandidate?.type === 'event'
     ).length,
