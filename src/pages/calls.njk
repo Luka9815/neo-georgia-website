@@ -1,0 +1,28 @@
+---
+pagination:
+  data: pageTypes.calls
+  size: 1
+  alias: view
+permalink: "{{ view.path }}"
+eleventyExcludeFromCollections: true
+---
+{% extends 'page.njk' %}
+
+{% block pageContent %}
+<p>{{ t.brussels }}</p>
+<p>
+  <a href="https://erasmus-plus.ec.europa.eu/programme-guide/erasmusplus-programme-guide">{{ t.programmeGuide }}</a>
+</p>
+{% for year in calls | callYears(site.currentCallYear) %}
+  <section data-call-year="{{ year }}">
+    {% set yearLabel = t.currentYear if year == site.currentCallYear else t.archive %}
+    <h2>{{ yearLabel }}: {{ year }}</h2>
+    {% for group in ['KA1','KA2','KA3','Jean Monnet'] %}
+      <section>
+        <h3>{{ t.keyAction }}: {{ t.keyActions[group] }}</h3>
+        {{ cards(calls | callYear(year) | actionGroup(actions, group), 'call', t, view.lang, 'h4') }}
+      </section>
+    {% endfor %}
+  </section>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,31 @@
+---
+pagination:
+  data: pageTypes.event
+  size: 1
+  alias: view
+permalink: "{{ view.path }}"
+eleventyExcludeFromCollections: true
+---
+{% extends 'page.njk' %}
+
+{% block pageContent %}
+{% set item = events | findSlug(view.slug) %}
+<p>
+  <time datetime="{{ item.date }}">{{ item.date | dateLabel(t, item.timeZone) }}</time> ({{ item.timeZone }}), {{ t[item.status] }}</p>
+  {{ item.body | markdown | safe }}
+  <dl>
+    <dt>{{ t.venue }}</dt>
+    <dd>{{ item.venue }}</dd>
+    <dt>{{ t.agenda }}</dt>
+    <dd>{{ item.agenda }}</dd>
+  </dl>
+  <p>
+    <a href="{{ item.registration }}">{{ t.registration }}</a>
+  </p>
+  {% for source in ['official','neo','partner'] %}
+    <section>
+      <h2>{{ t[source] }}</h2>
+      {{ cards(resources | forEvent(item.slug) | source(source), 'resource', t, view.lang) }}
+    </section>
+  {% endfor %}
+{% endblock %}

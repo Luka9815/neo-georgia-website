@@ -76,3 +76,7 @@ Supersedes the explicit-offset storage rule in the earlier computed-status decis
 
 ## 2026-10-26: Explicit call edition and archives
 Use currentCallYear in src/_data/site.js rather than the build clock. The selected edition stays first on the calls page and drives action-page current calls; all other available editions follow as archives in descending year order. This keeps an edition visible across New Year and provides a single setting for a later CMS settings screen. Keep home deadlines chronological across editions. Add one clearly labelled 2025 archive sample to exercise rendering.
+
+
+## 2026-10-26: One template per page type
+Replace the conditional src/pages.njk dispatcher with individual templates in src/pages/. Keep language setup and the base wrapper in _includes/page.njk and group the central route list through _data/pageTypes.js. News listing and article have separate templates. Reformat JavaScript and CSS for readability without changing behaviour; compare the generated DOM before and after the refactor.

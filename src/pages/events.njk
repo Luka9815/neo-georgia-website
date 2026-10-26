@@ -1,0 +1,20 @@
+---
+pagination:
+  data: pageTypes.events
+  size: 1
+  alias: view
+permalink: "{{ view.path }}"
+eleventyExcludeFromCollections: true
+---
+{% extends 'page.njk' %}
+
+{% block pageContent %}
+<section>
+  <h2>{{ t.upcomingEvents }}</h2>
+  {{ cards(events | status('upcoming'), 'event', t, view.lang) }}
+</section>
+<section>
+  <h2>{{ t.pastEvents }}</h2>
+  {{ cards(events | status('past'), 'event', t, view.lang) }}
+</section>
+{% endblock %}

@@ -1,9 +1,29 @@
-import { loadContent, callStatus, eventStatus, zonedDateTime } from '../../lib/content.js';
+import {
+  loadContent,
+  callStatus,
+  eventStatus,
+  zonedDateTime,
+} from '../../lib/content.js';
 export default function () {
   const content = loadContent();
   const now = new Date();
-  content.call = content.call.map(i => ({ ...i, status: callStatus(i, now), opens: zonedDateTime(i.opens, i.timeZone), deadline: zonedDateTime(i.deadline, i.timeZone) })).sort((a,b) => Date.parse(a.deadline) - Date.parse(b.deadline));
-  content.event = content.event.map(i => ({ ...i, status: eventStatus(i, now), date: zonedDateTime(i.date, i.timeZone), end: zonedDateTime(i.end, i.timeZone) })).sort((a,b) => Date.parse(a.date) - Date.parse(b.date));
-  content.news.sort((a,b) => b.date.localeCompare(a.date));
+  // Resolve local fields only in the runtime catalog; never rewrite editor files.
+  content.call = content.call
+    .map((i) => ({
+      ...i,
+      status: callStatus(i, now),
+      opens: zonedDateTime(i.opens, i.timeZone),
+      deadline: zonedDateTime(i.deadline, i.timeZone),
+    }))
+    .sort((a, b) => Date.parse(a.deadline) - Date.parse(b.deadline));
+  content.event = content.event
+    .map((i) => ({
+      ...i,
+      status: eventStatus(i, now),
+      date: zonedDateTime(i.date, i.timeZone),
+      end: zonedDateTime(i.end, i.timeZone),
+    }))
+    .sort((a, b) => Date.parse(a.date) - Date.parse(b.date));
+  content.news.sort((a, b) => b.date.localeCompare(a.date));
   return content;
 }

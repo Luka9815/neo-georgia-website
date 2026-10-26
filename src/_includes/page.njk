@@ -1,0 +1,30 @@
+{% set t = ka if view.lang == 'ka' else en %}
+{% set other = 'en' if view.lang == 'ka' else 'ka' %}
+{% set title = view.title or t[view.kind] %}
+{% if view.kind == 'redirect' %}
+  {% set title = t.home %}
+{% endif %}
+{% if view.kind == '404' %}
+  {% set title = t.notFound %}
+{% endif %}
+{% set navigation = {
+  home: '',
+  opportunities: 'opportunities/',
+  calls: 'calls/',
+  events: 'events/',
+  news: 'news/',
+  resources: 'resources/',
+  about: 'about/'
+} %}
+{% from 'cards.njk' import cards %}
+{% set actions = catalog.action | localise(view.lang) %}
+{% set calls = catalog.call | localise(view.lang) %}
+{% set events = catalog.event | localise(view.lang) %}
+{% set news = catalog.news | localise(view.lang) %}
+{% set resources = catalog.resource | localise(view.lang) %}
+{% set stories = catalog.story | localise(view.lang) %}
+{% set faqs = catalog.faq | localise(view.lang) %}
+{% set body %}
+{% block pageContent %}{% endblock %}
+{% endset %}
+{% include 'base.njk' %}

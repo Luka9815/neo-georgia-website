@@ -27,7 +27,7 @@ Example shape:
 - News has a single shared `date`; stories and publications have a single shared `year`.
 - No sample images or people are included. When image support is implemented, use a shared path with required `alt.ka` and `alt.en`, and Eleventy Image for responsive outputs. Do not add personal contact information to the public repository.
 
-`lib/content.js` handles relationships, localisation and status. `src/_data/catalog.js` orders lists. `src/_data/views.js` declares routes. Templates are Nunjucks; bodies remain Markdown strings. The other seven page templates and full field validation remain later work, not a production content schema.
+`lib/content.js` handles relationships, localisation and status. `src/_data/catalog.js` orders lists. `src/_data/views.js` declares routes. Each page type has a Nunjucks template in `src/pages/`, inheriting the shared `_includes/page.njk` wrapper; `_data/pageTypes.js` groups the central route list. Bodies remain Markdown strings. The other seven page templates and full field validation remain later work, not a production content schema.
 
 ## Current call edition
 
