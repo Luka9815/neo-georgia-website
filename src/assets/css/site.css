@@ -582,3 +582,12 @@ dd {
 .publication-filters { display: flex; flex-wrap: wrap; gap: 1rem; align-items: end; margin-block: 1.5rem; }
 .publication-filters label { display: grid; gap: 0.5rem; }
 .publication-filters select, .publication-filters button { font: inherit; padding: 0.6rem; max-width: 100%; }
+
+.header-tools { display: flex; flex-direction: column; gap: 0.5rem; align-items: flex-end; }
+.search-controls { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-block: 0.5rem 1.5rem; }
+.search-controls input { flex: 1; min-width: 0; width: 100%; }
+.search-controls input, .search-controls button { font: inherit; padding: 0.65rem; border: 1px solid var(--muted); border-radius: 0.25rem; }
+.search-controls button { color: var(--paper); background: var(--blue); }
+.search-results { padding-left: 1.5rem; }
+.search-results li { margin-block: 1.5rem; }
+.search-results a { font-weight: 700; }

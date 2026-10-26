@@ -34,7 +34,10 @@
           <span class="brand-note">{{ t.logoPlaceholder }}</span>
         {% endif %}
       </a>
+      <div class="header-tools">
+      <a href="/{{ view.lang }}/search/">{{ t.search }}</a>
       <a class="language-switch" href="{{ view.alternate }}" lang="{{ other }}" hreflang="{{ other }}">{{ t.switch }}</a>
+      </div>
     </div>
     {{ navigationMenu(navigation, t, view, 'desktop-navigation') }}
     <details class="mobile-menu">

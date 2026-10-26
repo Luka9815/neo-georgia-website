@@ -142,5 +142,15 @@
   "email": "ელფოსტა",
   "contactAddress": "[SAMPLE] ოფისის მისამართი დასამტკიცებელია.",
   "contactHours": "[SAMPLE] სამუშაო საათები დასამტკიცებელია.",
-  "contactEmail": "[SAMPLE] office@example.org"
+  "contactEmail": "[SAMPLE] office@example.org",
+  "search": "ძიება",
+  "searchLabel": "ძიება ამ ვებგვერდზე",
+  "searchSubmit": "ძიება",
+  "searchResults": "ძიების შედეგები",
+  "searchCount": "შედეგები",
+  "searchLoading": "მიმდინარეობს ძიება…",
+  "searchError": "ძიება ვერ ჩაიტვირთა. სცადეთ ხელახლა ან გამოიყენეთ ქვემოთ მოცემული ბმულები.",
+  "searchNoJs": "ძიებას სჭირდება JavaScript. შეგიძლიათ გამოიყენოთ ძირითადი განყოფილებების ბმულები.",
+  "searchEmpty": "ძიებისთვის ჩაწერეთ სიტყვა ან ფრაზა.",
+  "searchNone": "შედეგები ვერ მოიძებნა. სცადეთ სხვა სიტყვა ან გამოიყენეთ ძირითადი განყოფილებები."
 }
