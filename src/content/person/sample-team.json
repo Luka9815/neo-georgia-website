@@ -2,12 +2,12 @@
   "slug": "sample-team",
   "group": "neo",
   "ka": {
-    "title": "[SAMPLE] თამარ ჩხეიძე",
+    "title": "[SAMPLE] სახელი და გვარი (გუნდი)",
     "role": "[SAMPLE] გუნდის წევრი",
     "body": "[SAMPLE] გამოგონილი პროფილი."
   },
   "en": {
-    "title": "[SAMPLE] Tamar Chkheidze",
+    "title": "[SAMPLE] Name and surname (team)",
     "role": "[SAMPLE] Team member",
     "body": "[SAMPLE] Fictional profile."
   }
