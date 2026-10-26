@@ -1,0 +1,250 @@
+# Field options verified against current Pages CMS docs; see docs/CONTENT.md.
+media:
+  input: src/assets/uploads
+  output: /assets/uploads
+settings:
+  content:
+    merge: true
+content:
+  - name: news
+    label: სიახლეები (News)
+    type: collection
+    path: src/content/news
+    format: json
+    filename:
+      template: '{fields.slug}.json'
+      field: false
+    exclude:
+      - .gitkeep
+    fields:
+      - name: slug
+        label: ბმულის სახელი (Slug)
+        type: string
+        required: true
+        pattern:
+          regex: ^[a-z0-9]+(?:-[a-z0-9]+)*$
+          message: გამოიყენეთ პატარა ლათინური ასოები, ციფრები და დეფისი.
+        description: 'მაგალითი: sample-news. გამოქვეყნების შემდეგ აღარ შეცვალოთ.'
+      - name: date
+        label: გამოქვეყნების თარიღი (Publication date)
+        type: date
+        required: true
+        default: ''
+        options:
+          format: yyyy-MM-dd
+      - name: actions
+        label: დაკავშირებული მიმართულებები (Actions)
+        type: select
+        required: true
+        options:
+          values:
+            - name: cbhe
+              label: უმაღლესი განათლების შესაძლებლობების განვითარება (CBHE)
+            - name: icm
+              label: საერთაშორისო კრედიტმობილობა (ICM)
+            - name: jean-monnet
+              label: ჟან მონე (Jean Monnet)
+          multiple: true
+          min: 1
+      - name: ka
+        label: ქართული (Georgian)
+        type: object
+        required: true
+        fields:
+          - name: title
+            label: სათაური (Title)
+            type: string
+            required: true
+          - name: body
+            label: ტექსტი (Body)
+            type: rich-text
+            required: true
+            options:
+              format: markdown
+              media: false
+            description: შეინახება Markdown ტექსტად. სურათების ჩასმა ამ ეტაპზე გამორთულია.
+      - name: en
+        label: ინგლისური (English)
+        type: object
+        required: false
+        fields:
+          - name: title
+            label: სათაური (Title)
+            type: string
+            required: true
+          - name: body
+            label: ტექსტი (Body)
+            type: rich-text
+            required: true
+            options:
+              format: markdown
+              media: false
+            description: შეინახება Markdown ტექსტად. სურათების ჩასმა ამ ეტაპზე გამორთულია.
+  - name: events
+    label: ღონისძიებები (Events)
+    type: collection
+    path: src/content/event
+    format: json
+    filename:
+      template: '{fields.slug}.json'
+      field: false
+    exclude:
+      - .gitkeep
+    fields:
+      - name: slug
+        label: ბმულის სახელი (Slug)
+        type: string
+        required: true
+        pattern:
+          regex: ^[a-z0-9]+(?:-[a-z0-9]+)*$
+          message: გამოიყენეთ პატარა ლათინური ასოები, ციფრები და დეფისი.
+        description: 'მაგალითი: sample-news. გამოქვეყნების შემდეგ აღარ შეცვალოთ.'
+      - name: date
+        label: დაწყების თარიღი და დრო (Start)
+        type: string
+        required: true
+        pattern:
+          regex: ^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}$
+          message: გამოიყენეთ ფორმატი 2026-12-15T17:00, დროის წანაცვლების გარეშე.
+        description: 'მაგალითი: 2026-12-15T17:00. დროის სარტყელი აირჩიეთ ქვემოთ.'
+      - name: end
+        label: დასრულების თარიღი და დრო (End)
+        type: string
+        required: true
+        pattern:
+          regex: ^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}$
+          message: გამოიყენეთ ფორმატი 2026-12-15T17:00, დროის წანაცვლების გარეშე.
+        description: 'მაგალითი: 2026-12-15T17:00. დროის სარტყელი აირჩიეთ ქვემოთ.'
+      - name: timeZone
+        label: დროის სარტყელი (Time zone)
+        type: select
+        required: true
+        options:
+          values:
+            - name: Asia/Tbilisi
+              label: თბილისი (Asia/Tbilisi)
+            - name: Europe/Brussels
+              label: ბრიუსელი (Europe/Brussels)
+        default: Asia/Tbilisi
+      - name: type
+        label: ღონისძიების ტიპი (Type)
+        type: select
+        required: true
+        options:
+          values:
+            - name: information-day
+              label: საინფორმაციო დღე (Information day)
+            - name: webinar
+              label: ვებინარი (Webinar)
+            - name: training
+              label: ტრენინგი (Training)
+            - name: conference
+              label: კონფერენცია (Conference)
+            - name: erasmus-days
+              label: ერაზმუსის დღეები (Erasmus Days)
+      - name: format
+        label: ფორმატი (Format)
+        type: select
+        required: true
+        options:
+          values:
+            - name: online
+              label: ონლაინ (Online)
+            - name: in-person
+              label: ადგილზე (In person)
+            - name: hybrid
+              label: შერეული (Hybrid)
+      - name: organiser
+        label: ორგანიზატორი (Organiser)
+        type: select
+        required: true
+        options:
+          values:
+            - name: neo
+              label: ეროვნული ოფისი (NEO)
+            - name: eacea
+              label: ევროპული სააგენტო (EACEA)
+            - name: partner
+              label: პარტნიორი (Partner)
+      - name: registration
+        label: რეგისტრაციის ბმული (Registration URL)
+        type: string
+        required: true
+        description: სრული ბმული, რომელიც იწყება https://-ით.
+      - name: actions
+        label: დაკავშირებული მიმართულებები (Actions)
+        type: select
+        required: true
+        options:
+          values:
+            - name: cbhe
+              label: უმაღლესი განათლების შესაძლებლობების განვითარება (CBHE)
+            - name: icm
+              label: საერთაშორისო კრედიტმობილობა (ICM)
+            - name: jean-monnet
+              label: ჟან მონე (Jean Monnet)
+          multiple: true
+          min: 1
+      - name: ka
+        label: ქართული (Georgian)
+        type: object
+        required: true
+        fields:
+          - name: title
+            label: სათაური (Title)
+            type: string
+            required: true
+          - name: body
+            label: ტექსტი (Body)
+            type: rich-text
+            required: true
+            options:
+              format: markdown
+              media: false
+            description: შეინახება Markdown ტექსტად. სურათების ჩასმა ამ ეტაპზე გამორთულია.
+          - name: venue
+            label: ჩატარების ადგილი (Venue)
+            type: string
+            required: true
+          - name: agenda
+            label: დღის წესრიგი (Agenda)
+            type: text
+            required: true
+      - name: en
+        label: ინგლისური (English)
+        type: object
+        required: true
+        fields:
+          - name: title
+            label: სათაური (Title)
+            type: string
+            required: true
+          - name: body
+            label: ტექსტი (Body)
+            type: rich-text
+            required: true
+            options:
+              format: markdown
+              media: false
+            description: შეინახება Markdown ტექსტად. სურათების ჩასმა ამ ეტაპზე გამორთულია.
+          - name: venue
+            label: ჩატარების ადგილი (Venue)
+            type: string
+            required: true
+          - name: agenda
+            label: დღის წესრიგი (Agenda)
+            type: text
+            required: true
+  - name: settings
+    label: პარამეტრები (Settings)
+    type: file
+    path: src/_data/settings.json
+    format: json
+    fields:
+      - name: currentCallYear
+        label: მიმდინარე კონკურსის წელი (Current call year)
+        type: number
+        required: true
+        options:
+          min: 2000
+          max: 2100

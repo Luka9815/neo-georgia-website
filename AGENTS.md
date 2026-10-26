@@ -33,7 +33,7 @@ Read before working: `docs/HANDOVER.md` (current state and next task), `docs/DEC
 | CSS | Plain modern CSS with custom properties. No CSS framework, no Tailwind | Default |
 | JavaScript | None by default. Small progressive-enhancement scripts only where needed (filters, menu). Site must work without JS | Default |
 | Hosting | GitHub Pages from this repository, deployed by GitHub Actions | Decided (session 3) |
-| Staff editor (Git CMS) | Decap CMS or Pages CMS | To test |
+| Staff editor (Git CMS) | Pages CMS with GitHub sign-in, News and Events | Configured; hosted editing to test |
 | Search | Static index built at build time (Pagefind is the first candidate). Must be tested with Georgian text | To test |
 | Analytics | Privacy-friendly and cookieless (candidates: Cloudflare Web Analytics, GoatCounter) | To choose |
 | Images | Eleventy Image: responsive sizes, AVIF/WebP, width and height set, lazy loading below the fold | Default |

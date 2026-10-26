@@ -99,3 +99,16 @@ Supersedes the host-specific 404 and root-redirect rules in "Portable hosting an
 
 ## 2026-10-26: Explicit launch-indexing setting
 Supersedes the indexing and host-URL behaviour in "Sample preview safeguards and EU placeholder"; sample marking and the EU asset requirements remain unchanged. siteLaunched in src/_data/site.js defaults to false. While false, every page is noindex and robots.txt disallows crawling. Once NEO approves launch, set it true to allow content indexing; 404 and redirect pages remain noindex. SITE_URL defaults to the full GitHub Pages project address and can be changed to the institutional custom-domain root together with PATH_PREFIX=/.
+
+
+## 2026-10-26: Pages CMS for News and Events
+Resolve the earlier open staff-editor choice in favour of hosted Pages CMS with GitHub sign-in. Configure JSON collections and slug-based filenames, nested translations and Georgian-first field labels. The current documentation and save implementation were checked via their GitHub source because the documentation host returned 403; exact sources are recorded in CONTENT.md. Live authenticated editing remains Luka's test after merge.
+
+## 2026-10-26: Markdown body storage and safe editing fields
+Use rich-text with explicit options.format=markdown: current source emits getMarkdown() and JSON serialization preserves that string. Keep markdown-it html:false. Disable rich-text media insertion until bilingual alt fields and responsive images exist; reserve src/assets/uploads with public /assets/uploads paths so PATH_PREFIX is added at build time. Event dates stay pattern-validated strings to avoid the date widget's browser-local normalization. Select choices match the approved content model and existing action slugs.
+
+## 2026-10-26: CMS settings preserve the launch flag
+Supersedes the storage locations in "Explicit call edition and archives" and "Explicit launch-indexing setting". Move currentCallYear and siteLaunched to settings.json, read by site.js. Expose only currentCallYear in Pages CMS. Enable documented settings.content.merge=true so a CMS year edit preserves the code-maintained siteLaunched key; the default schema-only rewrite would delete it. Validate the year as an integer and the launch flag as a boolean.
+
+## 2026-10-26: News publication days and editor validation
+Supersedes the News-instant exception in "Editor-entered local call and event times". Store News date as a calendar day YYYY-MM-DD with no time or offset, and render that day without an invented clock time. Migrate existing samples. Validate News and Events before rendering with filename/field errors; reject missing required text, unknown actions, invalid or offset-bearing dates and invalid event classifications/ranges. Keep Event wall-clock timestamps and named-zone DST handling unchanged. Remove fixed sample-count and year assumptions from tests so staff can add content and change the CMS call year.

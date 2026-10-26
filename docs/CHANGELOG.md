@@ -2,6 +2,16 @@
 
 Newest at the top. One entry per working session: date, who (agent or person), what changed.
 
+## 2026-10-26 (Codex, session 4: Pages CMS)
+- Started from current main with sessions 1 to 3 present. Added .pages.yml for JSON News/Event collections, slug filenames, Georgian-first field labels, nested translations, approved classification/action selects and named time zones.
+- Checked every field type and option against current documentation source, plus CMS date, rich-text and JSON-saving implementations. The docs host returned 403; GitHub source was available. Pinned source references are in CONTENT. Rich-text explicitly emits Markdown; raw HTML rendering stays disabled. Event times remain exact local strings instead of going through browser-local date-widget parsing.
+- Moved currentCallYear and siteLaunched into settings.json. The CMS Settings entry exposes only the call year. Enabled documented merge mode to preserve the unmanaged launch flag. Reserved assets/uploads for future images, using prefix-independent public paths; rich-text image insertion stays disabled until the image workflow is implemented.
+- Added filename/field validation for required News/Event fields, action references, publication dates, local event dates and offsets, classifications, time ranges, registration URLs and complete translations. Empty optional English News objects do not generate routes.
+- Migrated News dates to calendar days and removed artificial clock times. Removed fixed sample-count/year assertions so valid staff additions and call-year edits can deploy. Added a deliberately invalid Event fixture that fails a real build, more loader failures and a CMS-shaped JSON/render/settings test.
+- Added the Georgian EDITING guide with an English summary, updated CONTENT and superseding decisions, refreshed HANDOVER with authenticated sign-in/create/deploy/delete steps and updated AGENTS to the selected CMS.
+- Validation: npm run build passed in root and /neo-georgia-website/ layouts; npm test passed all 30 tests in each. npm run check:a11y passed all 42 non-redirect pages in each layout with zero axe violations, no 320 px overflow and working skip links/language switches. Markdown safety, missing-title build failure, optional English fallback, settings changes and prefixed upload paths passed. git diff --check passed.
+- No hosted CMS sign-in, repository authorisation, remote content edit or live deployment by Codex. Luka must complete the documented hosted round trip after review and merge. No PR merged automatically.
+
 ## 2026-10-26 (Codex, session 3: GitHub Pages)
 - Logged explicit superseding hosting, account, daily rebuild, routing and indexing decisions. GitHub Pages runs from Luka's repository through GitHub Actions; the domain must belong to ERIDA. Netlify and Cloudflare are dropped for now.
 - Added the Pages deployment workflow: push to main, daily 04:15 UTC and manual dispatch; Node 24 from .nvmrc, npm cache, npm ci, build, tests, official artifact upload and deploy actions, minimal scoped permissions and serialized deployments. No check:a11y in CI, build hook or custom secret. Workflow URL values follow the repository owner/name, and hidden files are included in the artifact.

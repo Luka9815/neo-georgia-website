@@ -1,6 +1,6 @@
 # Handover
 
-Last updated: 2026-10-26 (Codex, session 3: GitHub Pages)
+Last updated: 2026-10-26 (Codex, session 4: Pages CMS)
 
 ## Current state
 
@@ -11,11 +11,15 @@ Last updated: 2026-10-26 (Codex, session 3: GitHub Pages)
 - The workflow runs on pushes to main, daily at 04:15 UTC, and manual dispatch. It installs with npm ci, builds, tests, uploads the Pages artifact and deploys with official actions. No build hook, custom secret or browser accessibility check is used in CI. Deployments share a concurrency group.
 - PATH_PREFIX controls Eleventy's pathPrefix (default `/`). The workflow derives the project prefix and GitHub Pages origin from the repository name and owner (currently `/neo-georgia-website/` and Luka's account), so those workflow values follow a repository transfer. Internal links, assets, language switches and refresh targets are rewritten by Eleventy's HTML base plugin. Canonical, hreflang, OG and sitemap URLs use the complete SITE_URL base.
 - SITE_URL defaults to `https://luka9815.github.io/neo-georgia-website/`. For a custom domain, set SITE_URL to its HTTPS root and PATH_PREFIX to `/`, and replace the project-path workflow values with those custom-domain settings. Confirm both settings and the deployed address after transferring the repository to ERIDA.
-- siteLaunched is false in `src/_data/site.js`: every page is noindex and robots.txt disallows crawling. After launch approval, set it true; content pages become indexable while redirects and 404 remain noindex. Do not launch until the official EU emblem files, Georgian disclaimer and content are approved.
+- siteLaunched is false in `src/_data/settings.json`, read by site.js and not exposed in the CMS: every page is noindex and robots.txt disallows crawling. After launch approval, set it true; content pages become indexable while redirects and 404 remain noindex. Do not launch until the official EU emblem files, Georgian disclaimer and content are approved.
 - One root bilingual 404.html has Georgian first, English second, both home links and the EU footer. The root index.html has a meta refresh, target canonical and a visible link to the Georgian home. No client JavaScript is needed. `.nojekyll` is copied into the output and included in the Pages artifact.
 - `src/_data/redirects.json` is an empty old-path/new-path map. Once the export arrives, add validated mappings to generate static meta-refresh stubs. These do not provide HTTP 301 responses. See CONTENT.md.
-- Session 1 is merged in PR #1. Session 3 is prepared on top of the session 2 branch because GitHub still reported PR #2 open when this session began. The session 3 PR targets main and depends on PR #2; neither PR has been merged by Codex. If PR #2 is still open, merge it separately before reviewing only the six session 3 commits.
-- No GitHub Pages setting was changed and no live deployment was performed in this session. Local validation and saved workflow code do not establish a successful hosted deployment.
+- Sessions 1 to 3 are present in current main. Session 4 starts from main on `codex/session-4-pages-cms`; no dependency branch is needed.
+- `.pages.yml` now configures News, Events and a single-file Settings editor. Staff use GitHub sign-in at app.pagescms.org. Collection filenames derive from slug. Field labels are Georgian first; News English is optional, Event English required. The current documentation and implementation were checked via GitHub because the docs host returned 403. Sources and verification limits are in CONTENT.md.
+- News dates are calendar days (YYYY-MM-DD); existing News samples were migrated. Events keep local minute-precision strings without offsets and a named zone. Required fields, related action slugs, classifications, calendar dates and time ranges are validated before rendering with filename/field errors.
+- Bodies use rich-text with explicit Markdown output. Raw HTML remains disabled in markdown-it. Image insertion is disabled for now; src/assets/uploads is reserved for future images with /assets/uploads public paths handled by PATH_PREFIX.
+- Settings reads settings.json and exposes only currentCallYear. CMS merge mode preserves siteLaunched and other unmanaged keys. An owner with repository write access can still edit code directly.
+- No hosted Pages CMS sign-in, repository authorisation, content write or deployment was performed by Codex. Local builds and JSON/render tests do not establish a successful authenticated hosted editing session.
 
 ## Turn on GitHub Pages (Luka)
 
@@ -44,18 +48,26 @@ Project-path build (the deployment layout):
 
 For a custom-domain rehearsal use PATH_PREFIX=/ and SITE_URL=https://example.org/. Tests also create isolated prefixed and custom-domain builds. They check generated targets, absolute metadata, sitemap, refresh URLs, bilingual 404, .nojekyll, indexing and legacy redirects, plus the existing language, footer, content, call-edition and daylight-saving checks. The legacy-redirect fixture also exercises siteLaunched=true without changing tracked files.
 
-The browser check uses `/usr/bin/chromium`; set CHROMIUM_PATH if Chromium lives elsewhere. TEST_URL is the local server origin without a path suffix. The script adds PATH_PREFIX itself. Basic axe, 320 px layout and keyboard skip-link/switch checks do not replace a full accessibility audit. Final command results are recorded in CHANGELOG.
+The browser check uses `/usr/bin/chromium`; set CHROMIUM_PATH if Chromium lives elsewhere. TEST_URL is the local server origin without a path suffix. The script adds PATH_PREFIX itself. Basic axe, 320 px layout and keyboard skip-link/switch checks do not replace a full accessibility audit. Tests include deliberately bad editor fixtures, safe Markdown rendering, a changed CMS call year and prefixed upload paths. Final command results are recorded in CHANGELOG.
+
+## Test Pages CMS (Luka)
+
+1. Review and merge the session 4 PR separately. Open https://app.pagescms.org, sign in with GitHub and authorise the app for this repository if requested. Open Luka9815/neo-georgia-website and main. Do not create a second repository or hosting account. If the app cannot see the repository, check GitHub access and installation scope.
+2. Confirm the Georgian-first News, Events and Settings forms appear. In Settings confirm only currentCallYear is editable. Save the existing year, then inspect settings.json on GitHub: siteLaunched must still be present and false. It must not appear in the form.
+3. Create one News item with slug sample-cms-test, a publication date, one action, and Georgian title/body prefixed [SAMPLE]. Leave English entirely blank. Use a bold word and a link in the body, then save.
+4. Wait for Deploy GitHub Pages to pass (usually about two minutes). Check the Georgian News list and detail page, Markdown formatting and language-switch fallback to the English News index. Verify the JSON has Markdown strings, a date-only date and no meaningful English object.
+5. Delete that test item through the CMS, wait for another successful deploy and confirm it disappears from the list. The deleted detail URL should reach the root bilingual 404. Do not leave temporary published content behind.
+6. For the Event round trip, edit an existing [SAMPLE] Event on a temporary branch first. Verify the timeZone default on a new form, all select values, both language objects and exact date/end values without seconds or offsets. Save, reopen, inspect JSON and check the preview/build before merging any real content. Optional blank-English News and preservation of unmanaged fields also need this hosted round-trip check.
+7. Use EDITING.md for staff training. If the deploy fails, inspect the filename/field message in Actions and contact [NEO technical contact]. A failed build does not replace the previous successful deployment. Check GitHub Pages is enabled using the activation instructions above before diagnosing CMS saves as deployment failures.
 
 ## Next task
 
-Pages CMS for News and Events.
-
-Test JSON round trips, shared dates and timeZone fields, local date entry without offsets, nested translations, optional English News, relationship fields and editing previews on Luka's GitHub account. See CONTENT.md. Do not commit tokens, personal email addresses or other credentials. The domain stays registered to ERIDA.
+Complete the authenticated Pages CMS test above and train staff using docs/EDITING.md. Then add the image/alt-text workflow and responsive image pipeline before enabling rich-text image insertion. Never commit credentials or personal email addresses. The domain remains registered to ERIDA.
 
 ## Remaining work
 
 - Turn on Pages and verify the first hosted deployment. Monitor the scheduled rebuild and re-enable it after inactivity if needed.
-- Pages CMS configuration and authenticated News/Event editing tests.
+- Authenticated Pages CMS News/Event create, edit, delete and settings-preservation tests. Configuration and local validation are complete.
 - Original EACEA Georgian/English emblems and the approved Georgian disclaimer; confirm funding wording against the signed grant agreement.
 - Final templates, opportunity filters, font choice, responsive image pipeline, production content validation and Georgian editorial review.
 - Search with Georgian, content migration, old-URL mapping, privacy/accessibility/prevailing-language approval, manual accessibility and Lighthouse checks.

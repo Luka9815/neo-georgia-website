@@ -16,7 +16,7 @@ import getViews from '../src/_data/views.js';
 import getSite from '../src/_data/site.js';
 import { getPathPrefix } from '../lib/urls.js';
 const prefix = getPathPrefix();
-const publicPath = path => prefix + path.replace(/^\//, '');
+const publicPath = (path) => prefix + path.replace(/^\//, '');
 const read = (path) => readFileSync(path, 'utf8');
 function files(dir) {
   return readdirSync(dir, { withFileTypes: true }).flatMap((e) =>
@@ -106,7 +106,7 @@ test('call boundaries, event end, and Brussels summer and winter dates', () => {
   assert.equal(dateLabel('2026-12-01T16:00Z', en), '1 December 2026, 17:00');
   assert.equal(dateLabel('2026-12-01T16:00Z', ka), '1 დეკემბერი 2026, 17:00');
 });
-test('content relationships, sample marking, and core bilingual parity', () => {
+test('content relationships, non-empty text, and core bilingual parity', () => {
   const data = loadContent();
   for (const [type, items] of Object.entries(data)) {
     for (const item of items) {
@@ -115,8 +115,8 @@ test('content relationships, sample marking, and core bilingual parity', () => {
         if (['action', 'call', 'event', 'faq', 'page', 'person'].includes(type))
           assert.ok(item[lang]);
         if (item[lang]) {
-          assert.match(item[lang].title, /^\[SAMPLE\]/);
-          assert.match(item[lang].body, /^\[SAMPLE\]/);
+          assert.ok(item[lang].title.trim());
+          assert.ok(item[lang].body.trim());
         }
       }
       for (const slug of item.actions || (item.action ? [item.action] : []))
@@ -133,7 +133,13 @@ test('content relationships, sample marking, and core bilingual parity', () => {
       assert.equal(item.status, undefined);
     }
   }
-  assert.equal(localise(data.news, 'en').length, 2);
+  const english = load(read('_site/en/news/index.html'));
+  for (const item of data.news) {
+    assert.equal(
+      english(`main a[href="${publicPath(`/en/news/${item.slug}/`)}"]`).length,
+      item.en ? 1 : 0
+    );
+  }
   assert.ok(!existsSync('_site/en/news/update-3/index.html'));
   assert.equal(
     load(read('_site/ka/news/update-3/index.html'))('header a[hreflang]').attr('href'),
@@ -207,31 +213,43 @@ test('stored call/event times are offset-free and output time elements have deri
   for (const file of files('_site').filter((f) => f.endsWith('.html'))) {
     const $ = load(read(file));
     for (const element of $('time')) {
-      assert.match($(element).attr('datetime'), /(?:Z|[+-]\d{2}:\d{2})$/);
+      assert.match(
+        $(element).attr('datetime'),
+        /(?:^\d{4}-\d{2}-\d{2}$|Z$|[+-]\d{2}:\d{2}$)/
+      );
     }
   }
 });
 
 test('selected call year is independent of the clock and precedes every archive year', () => {
   const selected = getSite().currentCallYear;
-  assert.equal(selected, 2026);
+  assert.ok(Number.isInteger(selected));
   assert.deepEqual(
-    callYears([{ year: 2027 }, { year: 2025 }, { year: 2027 }], selected),
+    callYears([{ year: 2027 }, { year: 2025 }, { year: 2027 }], 2026),
     [2026, 2027, 2025]
   );
-  assert.deepEqual(callYears([], selected), [2026]);
+  assert.deepEqual(callYears([], selected), [selected]);
+  const data = loadContent();
   for (const lang of ['ka', 'en']) {
     const $ = load(read(`_site/${lang}/calls/index.html`));
     const years = $('[data-call-year]')
       .map((_, e) => Number($(e).attr('data-call-year')))
       .get();
-    assert.deepEqual(years, [2026, 2025]);
-    assert.equal($('[data-call-year="2026"] time').length, 3);
-    assert.equal($('[data-call-year="2025"] time').length, 1);
-    assert.match($('[data-call-year="2025"]').text(), /2025/);
+    assert.deepEqual(years, callYears(data.call, selected));
+    for (const year of years) {
+      assert.equal(
+        $(`[data-call-year="${year}"] time`).length,
+        localise(data.call, lang).filter((item) => item.year === year).length
+      );
+    }
     const action = load(read(`_site/${lang}/opportunities/cbhe/index.html`));
-    assert.equal(action('time[datetime="2025-12-15T17:00:00+01:00"]').length, 0);
-    assert.equal(action('time[datetime="2026-12-15T17:00:00+01:00"]').length, 1);
+    for (const item of data.call.filter((item) => item.action === 'cbhe')) {
+      const time = zonedDateTime(item.deadline, item.timeZone);
+      assert.equal(
+        action(`time[datetime="${time}"]`).length,
+        item.year === selected ? 1 : 0
+      );
+    }
   }
 });
 
@@ -249,15 +267,20 @@ test('Pages output has a bilingual root 404 and a static home redirect', () => {
   assert.ok($('.eu-footer').text().includes(en.disclaimer));
   assert.match($('meta[name=robots]').attr('content'), /noindex/);
   const index = load(read('_site/index.html'));
-  assert.equal(index('meta[http-equiv=refresh]').attr('content').replace(/\s/g, ''), `0;url=${publicPath('/ka/')}`);
-  assert.equal(index('link[rel=canonical]').attr('href'), new URL('ka/', getSite().url).href);
+  assert.equal(
+    index('meta[http-equiv=refresh]').attr('content').replace(/\s/g, ''),
+    `0;url=${publicPath('/ka/')}`
+  );
+  assert.equal(
+    index('link[rel=canonical]').attr('href'),
+    new URL('ka/', getSite().url).href
+  );
   assert.ok(index(`main a[href="${publicPath('/ka/')}"]`).length);
 });
 
-
 test('unlaunched site blocks indexing on all pages and in robots.txt', () => {
   assert.equal(getSite().siteLaunched, false);
-  for (const file of files('_site').filter(path => path.endsWith('.html'))) {
+  for (const file of files('_site').filter((path) => path.endsWith('.html'))) {
     assert.match(load(read(file))('meta[name=robots]').attr('content'), /noindex/);
   }
   assert.match(read('_site/robots.txt'), /Disallow: \//);
