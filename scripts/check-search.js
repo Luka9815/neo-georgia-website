@@ -5,7 +5,7 @@ import getViews from '../src/_data/views.js';
 export async function checkSearch(browser, base, prefix) {
   const report = { prefix, measuredAt: new Date().toISOString(), languages: {} };
   for (const lang of ['ka', 'en']) {
-    const context = await browser.newContext();
+    const context = await browser.newContext({ viewport: { width: 320, height: 900 } });
     const page = await context.newPage();
     const requests = [];
     const responses = [];
@@ -16,6 +16,7 @@ export async function checkSearch(browser, base, prefix) {
     try {
       await page.goto(`${base}${prefix}${lang}/search/`);
       await page.locator('[data-search-form]').waitFor({ state: 'visible' });
+      assert.equal(await page.locator('.language-switch').evaluate(link => { const range = document.createRange(); range.selectNodeContents(link); return range.getClientRects().length; }), 1, 'Language control must stay on one line at 320px');
       await Promise.all(responses);
       const initialSearchBytes = bytes.filter(item => item.path.includes('/assets/js/')).reduce((sum, item) => sum + item.bytes, 0);
       assert.ok(!requests.some(path => path.includes('/pagefind/')), 'Index must load on search, not page entry');

@@ -23,6 +23,7 @@
         <{{ heading }}>{{ item.title }}</{{ heading }}>
         {{ item.body | markdown | safe }}
       {% else %}
+        {% if type == 'news' and item.image %}<img data-news-image data-image-layout="card" src="{{ item.image.src }}" alt="{{ item.image.alt[lang] }}">{% endif %}
         {% if type == 'event' %}
           <div class="card-meta">{% if showSectionLabel %}<span class="card-section-label">{{ t.events }}</span>{% endif %}<span class="status status-{{ item.status }}">{{ t[item.status] }}</span></div>
         {% elif type == 'news' and showSectionLabel %}

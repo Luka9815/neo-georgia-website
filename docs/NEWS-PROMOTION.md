@@ -8,7 +8,7 @@ Only **Europe Day in Kutaisi, 24–25 October** is newly written, from its Engli
 
 ## Images
 
-The News type, editor and template do not yet support images. All five omit images; reviewed binaries remain outside the published tree. No [ALT NEEDED] text is published.
+Session 9 omitted images because News had no image support. Session 13 adds the optional validated/responsive field, but all five posts remain without images pending Luka's selection and bilingual alt text. Downloaded review availability is listed in NEWS-IMAGES.md. No [ALT NEEDED] is published.
 
 ## Every body link
 

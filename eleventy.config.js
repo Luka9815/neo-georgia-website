@@ -1,3 +1,4 @@
+import { renderNewsImages } from './lib/news-images.js';
 import { EleventyHtmlBasePlugin } from '@11ty/eleventy';
 import { getPathPrefix, absoluteUrl } from './lib/urls.js';
 import MarkdownIt from 'markdown-it';
@@ -5,6 +6,12 @@ import { localise, related, dateLabel, callYears } from './lib/content.js';
 const markdown = new MarkdownIt({ html: false });
 export default function (config) {
   config.addPlugin(EleventyHtmlBasePlugin);
+  let outputRoot = '_site';
+  config.on('eleventy.before', ({ directories }) => { outputRoot = directories.output; });
+  config.addTransform('news-images', async function (content) {
+    return (this.page?.outputPath || this.outputPath || '').endsWith('.html')
+      ? renderNewsImages(content, outputRoot, getPathPrefix()) : content;
+  });
   config.addFilter('absoluteUrl', absoluteUrl);
   config.ignores.add('src/assets/**/*.md');
   config.setNunjucksEnvironmentOptions({ autoescape: true });

@@ -10,5 +10,6 @@ eleventyExcludeFromCollections: true
 
 {% block pageContent %}
 {% set item = news | findSlug(view.slug) %}
+{% if item.image %}<img data-news-image data-image-layout="article" src="{{ item.image.src }}" alt="{{ item.image.alt[view.lang] }}">{% endif %}
 {{ item.body | newsMarkdown | safe }}
 {% endblock %}
