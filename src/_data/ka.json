@@ -126,5 +126,9 @@
   },
   "publicationLanguage": "პუბლიკაციის ენა",
   "openPublication": "პუბლიკაციის გახსნა",
-  "publicationResults": "ნაპოვნი პუბლიკაციები"
+  "publicationResults": "ნაპოვნი პუბლიკაციები",
+  "faqTopics": {
+    "applications": "განაცხადები",
+    "mobility": "მობილობა"
+  }
 }

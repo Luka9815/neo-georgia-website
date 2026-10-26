@@ -29,6 +29,7 @@ export default function (config) {
     }
     return markdown.renderer.render(tokens, markdown.options, {});
   });
+  config.addFilter('topic', (items, topic) => items.filter(item => item.topic === topic));
   config.addFilter('publicationYears', items => [...new Set(items.map(item => item.year))].sort((a, b) => b - a));
   config.addFilter('take', (items, count) => items.slice(0, count));
   config.addFilter('withoutStatus', (items, value) =>

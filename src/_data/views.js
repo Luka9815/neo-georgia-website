@@ -27,7 +27,7 @@ export default function () {
         alternate: `/${other}/${suffix}`,
       });
     }
-    for (const [kind, suffix] of [['publications', 'resources/publications/']]) {
+    for (const [kind, suffix] of [['publications', 'resources/publications/'], ['faq', 'resources/faq/']]) {
       views.push({lang, kind, path: `/${lang}/${suffix}`, alternate: `/${other}/${suffix}`});
     }
     for (const [type, folder] of [

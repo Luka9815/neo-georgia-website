@@ -126,5 +126,9 @@
   },
   "publicationLanguage": "Publication language",
   "openPublication": "Open publication",
-  "publicationResults": "Matching publications"
+  "publicationResults": "Matching publications",
+  "faqTopics": {
+    "applications": "Applications",
+    "mobility": "Mobility"
+  }
 }
