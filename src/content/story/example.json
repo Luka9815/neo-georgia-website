@@ -1,0 +1,13 @@
+{
+  "slug": "example",
+  "action": "cbhe",
+  "year": 2026,
+  "en": {
+    "title": "[SAMPLE] An illustrative project story",
+    "body": "[SAMPLE] Illustrative content only."
+  },
+  "ka": {
+    "title": "[SAMPLE] პროექტის საილუსტრაციო ისტორია",
+    "body": "[SAMPLE] მხოლოდ საილუსტრაციო მასალა."
+  }
+}

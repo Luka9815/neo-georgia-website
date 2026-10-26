@@ -1,0 +1,26 @@
+{
+  "slug": "webinar",
+  "actions": [
+    "cbhe",
+    "icm"
+  ],
+  "date": "2026-12-10T10:00:00+04:00",
+  "end": "2026-12-10T12:00:00+04:00",
+  "timeZone": "Asia/Tbilisi",
+  "registration": "https://example.org/",
+  "type": "webinar",
+  "format": "online",
+  "organiser": "neo",
+  "en": {
+    "title": "[SAMPLE] webinar",
+    "body": "[SAMPLE] Illustrative content only.",
+    "venue": "[SAMPLE] Online venue to be confirmed.",
+    "agenda": "[SAMPLE] Introduction and questions."
+  },
+  "ka": {
+    "title": "[SAMPLE] საინფორმაციო შეხვედრა 2",
+    "body": "[SAMPLE] მხოლოდ საილუსტრაციო მასალა.",
+    "venue": "[SAMPLE] ონლაინ მისამართი დასაზუსტებელია.",
+    "agenda": "[SAMPLE] შესავალი და შეკითხვები."
+  }
+}

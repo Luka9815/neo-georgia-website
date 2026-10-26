@@ -1,0 +1,17 @@
+{
+  "slug": "icm-2026",
+  "action": "icm",
+  "year": 2026,
+  "opens": "2026-11-01T00:00:00+01:00",
+  "deadline": "2026-12-20T12:00:00+01:00",
+  "timeZone": "Europe/Brussels",
+  "url": "https://erasmus-plus.ec.europa.eu/programme-guide/erasmusplus-programme-guide",
+  "en": {
+    "title": "[SAMPLE] icm illustrative call",
+    "body": "[SAMPLE] Illustrative content only."
+  },
+  "ka": {
+    "title": "[SAMPLE] icm საილუსტრაციო კონკურსი",
+    "body": "[SAMPLE] მხოლოდ საილუსტრაციო მასალა."
+  }
+}

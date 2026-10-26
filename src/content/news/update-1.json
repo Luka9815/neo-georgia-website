@@ -1,0 +1,15 @@
+{
+  "slug": "update-1",
+  "date": "2026-10-21T12:00:00+04:00",
+  "actions": [
+    "cbhe"
+  ],
+  "en": {
+    "title": "[SAMPLE] Preview update 1",
+    "body": "[SAMPLE] Illustrative content only."
+  },
+  "ka": {
+    "title": "[SAMPLE] სატესტო სიახლე 1",
+    "body": "[SAMPLE] მხოლოდ საილუსტრაციო მასალა."
+  }
+}

@@ -38,11 +38,13 @@ Read before working: `docs/HANDOVER.md` (current state and next task), `docs/DEC
 | Analytics | Privacy-friendly and cookieless (candidates: Cloudflare Web Analytics, GoatCounter) | To choose |
 | Images | Eleventy Image: responsive sizes, AVIF/WebP, width and height set, lazy loading below the fold | Default |
 
-Commands (to be created in the first build session and kept current here):
+Commands (Node 24 LTS, pinned in `.nvmrc`; run from the repository root):
 
-- `npm install`
+- `npm ci`: install the locked development dependencies (including Eleventy)
 - `npm start`: local dev server
 - `npm run build`: production build to `_site/`
+- `npm test`: check generated pages, internal links, content relationships and date calculations after building
+- `npm run check:a11y`: with `npm start` running, check pages using axe and Chromium (see docs/HANDOVER.md)
 
 ## 4. Languages and URLs
 
@@ -77,15 +79,18 @@ Hard requirements:
 
 Sitemap, menu labels in both languages, and the 14 page templates are defined in `docs/SITE-PLAN.md`. Do not add top-level menu items without a DECISIONS entry. No image sliders, no pop-ups, no carousels.
 
-Suggested folder layout (finalise in session 1 and record it here):
+Folder layout (session 1; content contract in `docs/CONTENT.md`):
 
 ```
 src/
   _data/          site settings, i18n strings (ka.json, en.json)
   _includes/      layouts and partials
-  content/        one folder per content type
+  content/        one folder per content type, one JSON file per item
   assets/         css, fonts, images, icons, EU emblem files
-docs/             HANDOVER, DECISIONS, CHANGELOG, SITE-PLAN
+lib/              shared content, date and status helpers
+scripts/          browser accessibility check
+test/             generated-site and content checks
+docs/             HANDOVER, DECISIONS, CHANGELOG, SITE-PLAN, CONTENT
 ```
 
 ## 7. EU visibility and compliance (every page)

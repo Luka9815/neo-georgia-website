@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="{{ view.lang }}">
+<head>
+  <meta charset="utf-8">
+  {% if view.kind == 'redirect' %}<meta http-equiv="refresh" content="0;url=/ka/">{% endif %}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title }} | {{ t.site }}</title>
+  <meta name="description" content="{{ title }}. {{ t.sample }}">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="{{ site.url }}{{ view.path }}">
+  <link rel="alternate" hreflang="{{ view.lang }}" href="{{ site.url }}{{ view.path }}">
+  {% if view.translated != false %}<link rel="alternate" hreflang="{{ other }}" href="{{ site.url }}{{ view.alternate }}">{% endif %}
+  <meta property="og:title" content="{{ title }} | {{ t.site }}">
+  <meta property="og:description" content="{{ t.sample }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}{{ view.path }}">
+  <link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">{{ t.skip }}</a>
+<header class="wrapper">
+  <a class="brand" href="/{{ view.lang }}/">{{ t.site }}</a>
+  <nav aria-label="{{ t.menu }}"><ul>
+  {% for key, slug in navigation %}<li><a href="/{{ view.lang }}/{{ slug }}"{% if view.kind == key %} aria-current="page"{% endif %}>{{ t[key] }}</a></li>{% endfor %}
+  </ul></nav>
+  <a href="{{ view.alternate }}" lang="{{ other }}" hreflang="{{ other }}">{{ t.switch }}</a>
+</header>
+<main id="main" class="wrapper" tabindex="-1">
+  <p class="notice">{{ t.sample }}</p>
+  <h1>{{ title }}</h1>
+  {{ body | safe }}
+</main>
+<footer class="wrapper">
+  <div class="footer-grid">
+    <section><h2>{{ t.contact }}</h2><p>{{ t.contactPlaceholder }}</p><h3>{{ t.social }}</h3><p>{{ t.socialPlaceholder }}</p></section>
+    <nav aria-label="{{ t.about }}"><ul>{% for key in ['privacy','accessibility','language'] %}<li><a href="/{{ view.lang }}/{{ key }}/">{{ t[key] }}</a></li>{% endfor %}</ul></nav>
+  </div>
+  <div class="eu-footer"><p class="emblem-placeholder">{{ t.emblem }}</p><p><strong>{{ t.funding }}</strong></p><p{% if view.lang == 'ka' %} lang="en"{% endif %}>{{ t.disclaimer }}</p></div>
+</footer>
+</body>
+</html>

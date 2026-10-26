@@ -1,0 +1,65 @@
+---
+pagination:
+  data: views
+  size: 1
+  alias: view
+permalink: "{{ view.path }}"
+eleventyExcludeFromCollections: true
+---
+{% set t = ka if view.lang == 'ka' else en %}
+{% set other = 'en' if view.lang == 'ka' else 'ka' %}
+{% set title = view.title or t[view.kind] %}
+{% if view.kind == 'redirect' %}{% set title = t.home %}{% endif %}
+{% if view.kind == '404' %}{% set title = t.notFound %}{% endif %}
+{% set navigation = {home: '', opportunities: 'opportunities/', calls: 'calls/', events: 'events/', news: 'news/', resources: 'resources/', about: 'about/'} %}
+{% from 'cards.njk' import cards %}
+{% set actions = catalog.action | localise(view.lang) %}
+{% set calls = catalog.call | localise(view.lang) %}
+{% set events = catalog.event | localise(view.lang) %}
+{% set news = catalog.news | localise(view.lang) %}
+{% set resources = catalog.resource | localise(view.lang) %}
+{% set stories = catalog.story | localise(view.lang) %}
+{% set faqs = catalog.faq | localise(view.lang) %}
+{% set body %}
+{% if view.kind == 'home' %}
+<section><h2>{{ t.purpose }}</h2><div class="entry"><a class="button" href="/{{ view.lang }}/opportunities/#individuals">{{ t.individuals }}</a><a class="button" href="/{{ view.lang }}/opportunities/#organisations">{{ t.organisations }}</a></div></section>
+<section><h2>{{ t.deadlines }}</h2>{{ cards(calls | rejectattr('status','equalto','closed') | list | take(3), 'call', t, view.lang) }}</section>
+<section><h2>{{ t.upcomingEvents }}</h2>{{ cards(events | status('upcoming') | take(3), 'event', t, view.lang) }}</section>
+<section><h2>{{ t.latestNews }}</h2>{{ cards(news | take(3), 'news', t, view.lang) }}</section>
+<section><h2>{{ t.story }}</h2>{{ cards(stories | take(1), 'story', t, view.lang) }}</section>
+<section><h2>{{ t.figures }}</h2><dl class="figures">{% for key in ['projects','mobilities','institutions'] %}<div><dt>{{ t[key] }}</dt><dd>{{ t.sampleNumber }}</dd></div>{% endfor %}</dl></section>
+{% elif view.kind == 'calls' %}
+<p>{{ t.currentYear }}: {{ site.year }}. {{ t.brussels }}</p>
+<p><a href="https://erasmus-plus.ec.europa.eu/programme-guide/erasmusplus-programme-guide">{{ t.programmeGuide }}</a></p>
+{% for group in ['KA1','KA2','KA3','Jean Monnet'] %}<section><h2>{{ t.keyAction }}: {{ t.keyActions[group] }}</h2>{{ cards(calls | callYear(site.year) | actionGroup(actions, group), 'call', t, view.lang) }}</section>{% endfor %}
+{% elif view.kind == 'opportunities' %}
+<section id="individuals"><h2>{{ t.individuals }}</h2><p>{{ t.sample }}</p></section>
+<section id="organisations"><h2>{{ t.organisations }}</h2>{{ cards(actions, 'action', t, view.lang) }}</section>
+{% elif view.kind == 'action' %}
+{% set item = actions | findSlug(view.slug) %}
+{{ item.summary | markdown | safe }}
+<section><h2>{{ t.who }}</h2>{{ item.who | markdown | safe }}</section>
+<section><h2>{{ t.how }}</h2>{{ item.how | markdown | safe }}<h3>{{ t.officialLinks }}</h3><ul>{% for link in item.officialLinks %}<li><a href="{{ link }}">{{ t.programmeGuide }}</a></li>{% endfor %}</ul></section>
+<section><h2>{{ t.calls }}</h2>{{ cards(calls | related(item.slug) | callYear(site.year), 'call', t, view.lang) }}</section>
+<section><h2>{{ t.upcomingEvents }}</h2>{{ cards(events | related(item.slug) | status('upcoming'), 'event', t, view.lang) }}</section>
+<section><h2>{{ t.pastEvents }}</h2>{{ cards(events | related(item.slug) | status('past'), 'event', t, view.lang) }}</section>
+<section><h2>{{ t.resources }}</h2>{{ cards(resources | related(item.slug), 'resource', t, view.lang) }}</section>
+<section><h2>{{ t.story }}</h2>{{ cards(stories | related(item.slug), 'story', t, view.lang) }}</section>
+<section><h2>{{ t.faq }}</h2>{{ cards(faqs | related(item.slug), 'faq', t, view.lang) }}</section>
+{% elif view.kind == 'events' %}
+<section><h2>{{ t.upcomingEvents }}</h2>{{ cards(events | status('upcoming'), 'event', t, view.lang) }}</section><section><h2>{{ t.pastEvents }}</h2>{{ cards(events | status('past'), 'event', t, view.lang) }}</section>
+{% elif view.kind == 'news' %}{% if view.slug %}{% set item = news | findSlug(view.slug) %}{{ item.body | markdown | safe }}{% else %}<section><h2>{{ t.latestNews }}</h2>{{ cards(news, 'news', t, view.lang) }}</section>{% endif %}
+{% elif view.kind == 'stories' %}<section><h2>{{ t.story }}</h2>{{ cards(stories, 'story', t, view.lang) }}</section>
+{% elif view.kind == 'resources' %}<section><h2>{{ t.resources }}</h2>{{ cards(resources, 'resource', t, view.lang) }}</section>
+{% elif view.kind == 'event' %}
+{% set item = events | findSlug(view.slug) %}
+<p><time datetime="{{ item.date }}">{{ item.date | dateLabel(t, 'Asia/Tbilisi') }}</time> (Asia/Tbilisi), {{ t[item.status] }}</p>
+{{ item.body | markdown | safe }}
+<dl><dt>{{ t.venue }}</dt><dd>{{ item.venue }}</dd><dt>{{ t.agenda }}</dt><dd>{{ item.agenda }}</dd></dl><p><a href="{{ item.registration }}">{{ t.registration }}</a></p>
+{% for source in ['official','neo','partner'] %}<section><h2>{{ t[source] }}</h2>{{ cards(resources | forEvent(item.slug) | source(source), 'resource', t, view.lang) }}</section>{% endfor %}
+{% elif view.kind == 'story' or view.kind == 'page' %}
+{% set item = catalog[view.kind] | localise(view.lang) | findSlug(view.slug) %}{{ item.body | markdown | safe }}
+{% elif view.kind == '404' or view.kind == 'redirect' %}<p><a href="/{{ view.lang }}/">{{ t.returnHome }}</a></p>
+{% endif %}
+{% endset %}
+{% include 'base.njk' %}
