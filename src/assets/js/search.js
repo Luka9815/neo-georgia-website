@@ -1,3 +1,4 @@
+import { searchWithFallback } from './georgian-search.js';
 const root = document.querySelector('[data-search]');
 if (root) {
   const form = root.querySelector('[data-search-form]');
@@ -19,8 +20,9 @@ if (root) {
     status.textContent = root.dataset.loading;
     try {
       engine ??= await import(root.dataset.index);
-      const found = await engine.search(query);
-      const items = await Promise.all(found.results.map(result => result.data()));
+      const found = await searchWithFallback(engine, query, root.dataset.language);
+      const data = await Promise.all(found.map(result => result.data()));
+      const items = [...new Map(data.map(item => [item.url, item])).values()];
       if (current !== sequence) return;
       for (const item of items) {
         const li = document.createElement('li');
