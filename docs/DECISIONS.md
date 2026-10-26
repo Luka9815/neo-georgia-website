@@ -161,3 +161,7 @@ Implements the import scope in "Last twelve months of News in the initial migrat
 
 ## 2026-10-26: Review-only Markdown conversion, romanised slugs and suggestions
 Use Turndown as a development dependency with Cheerio cleanup. Retain links/lists, omit image embeds into a separate metadata inventory, strip scripts/widget debris and tracking parameters, and redact email addresses before committing public review text. Romanise modern Georgian with the national table, then remove ejective apostrophes for the site's ASCII slug contract; cap at 60 characters and resolve collisions deterministically, including existing News slugs. Keep old IDs/slugs/URLs under legacy. Action and Event classification is evidence-backed suggestion metadata, never an automatic publishing decision. An unmatched item has actions:[] and a clear blocking warning rather than an invented Action; these review files require approval and may intentionally fail publication validation. No attachment binaries are downloaded.
+
+
+## 2026-10-26: Plain-language review report and explicit incomplete runs
+Generate REPORT.md plus run.json, inventory.json and attachments.json below migration/review. Record every item and warning, exact title/body duplicate groups, request failures and attachment usage without downloading binaries. A failed collection is explicitly incomplete, returns a nonzero exit status, and never becomes a claim that the old archive is empty. The report explains Luka's manual review and preserves uncertain language/type/Action cases for that review.

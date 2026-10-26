@@ -7,6 +7,7 @@ import { Temporal } from '@js-temporal/polyfill';
 import { createClient, oldSite } from './wp/client.js';
 import { languageFindings, translationIds } from './wp/languages.js';
 import { convertPosts } from './wp/convert.js';
+import { attachmentInventory, renderReport } from './wp/report.js';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 export const reviewDirectory = join(root, 'migration/review');
@@ -112,6 +113,8 @@ async function main() {
   };
   run.finishedAt = new Date().toISOString();
   writeReview('run.json', run);
+  writeReview('attachments.json', attachmentInventory(inventory.items));
+  writeReview('REPORT.md', renderReport(run, inventory));
   // Local recovery snapshot, deliberately ignored by git. Only sanitised review
   // files should be committed; public source HTML may contain personal emails.
   writeReview('.cache/source.json', collections);
