@@ -2,6 +2,12 @@
 
 Newest at the top. One entry per working session: date, who (agent or person), what changed.
 
+## 2026-10-26 (Codex, session 6 follow-up: beneficiary emblem correction)
+- Removed funded-ka.png because the KA archive artwork is EU Delegation country branding, not the grant beneficiary emblem. Both languages now use the unchanged official funded-en.png; /ka/ has the exact alt text “დაფინანსებულია ევროკავშირის მიერ”. Georgian funding/disclaimer text is unchanged.
+- Added a superseding decision to use the English emblem until the EU Delegation or EACEA supplies the official Georgian Funded by the EU beneficiary emblem, then replace it on /ka/. Updated asset provenance, AGENTS and related docs. HANDOVER lists the required Georgian emblem under Waiting on Nino / NEO.
+- Updated the generated-page regression checks to require the English beneficiary image and correct localised alt text/dimensions on every page, and to reject the removed country-branding asset. Root and prefixed builds and all 57 tests pass. check:a11y passes all 54 non-redirect pages in both layouts with zero axe violations, no 320 px overflow and working keyboard/language navigation. The prefixed Georgian mobile footer was visually checked; the English image loads at its original ratio with Georgian alt text.
+- Follow-up stays on codex/session-6-content and PR #6. No merge or external account creation.
+
 ## 2026-10-26 (Codex, session 6: policy, official artwork and Action drafts)
 - Started from current main (session 5 merged), with one commit per requested item. Resolved English precedence, twelve-month old-News import scope, deferred domain choice and the project Georgian disclaimer. Added both-language footer and /language/ policy statements from one translation source, removed resolved Open items and used Luka's exact Georgian funding text.
 - Obtained original official English and non-EU Georgian KA PNGs after initial proxy failures. Preserved the extracted bytes and aspect ratios, added accurate alt text and locale selection, and recorded source/archive URLs, date and SHA-256 checksums. The supplied KA artwork says ევროკავშირი საქართველოსთვის; the separate funding text remains alongside it. Confirm artwork and funding wording against the signed agreement before launch.

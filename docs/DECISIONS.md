@@ -149,3 +149,7 @@ Supersedes the emblem-placeholder part of "Sample preview safeguards and EU plac
 
 ## 2026-10-26: Source-checked 2026 Action drafts and sector groups
 Supersedes "Nine requested Action topics, source review pending". Replace the three samples with nine bilingual [DRAFT] records sourced to the official Programme Guide 2026 v1, with exact page/eligibility citations in comment fields and verified official links. Retain existing slugs for relationships. Group by four sectors; Virtual Exchanges appears in higher education and youth without duplicating its record. Store the shared Georgia authority exclusion once and render it on every Action. Distinguish direct applicants, partners and the two Erasmus Mundus strands; flag the CBHE Strand 3 authority requirement for EACEA review. Cards reuse summary, avoiding a duplicate body fact. See ACTION-REVIEW.md for the evidence and review scope.
+
+
+## 2026-10-26: English beneficiary emblem on both languages until Georgian supplied
+Supersedes "Original official bilingual EU artwork". The KA archive's “ევროკავშირი საქართველოსთვის” is EU Delegation country branding, not the required beneficiary funding emblem; remove it. Use the unmodified official English Funded by the European Union emblem on both language versions, with Georgian alt text “დაფინანსებულია ევროკავშირის მიერ” on /ka/. Keep the Georgian funding statement and disclaimer unchanged. Obtain the official Georgian Funded by the EU emblem file from the EU Delegation or EACEA, then replace the Georgian-page image and record its provenance.

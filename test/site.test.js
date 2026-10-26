@@ -31,6 +31,8 @@ test('all rendered pages have language, metadata, seven menu links, one h1 and E
     files('_site').filter((f) => f.endsWith('.html')).length,
     getViews().length
   );
+  assert.equal(existsSync('src/assets/eu/funded-ka.png'), false);
+  assert.equal(existsSync('_site/assets/eu/funded-ka.png'), false);
   for (const view of getViews()) {
     const $ = load(read(output(view.path)));
     assert.equal($('html').attr('lang'), view.lang, view.path);
@@ -47,8 +49,16 @@ test('all rendered pages have language, metadata, seven menu links, one h1 and E
         : /მათზე პასუხისმგებლობა არ ეკისრება არც ევროკავშირს და არც EACEA-ს\./
     );
     const strings = JSON.parse(read(`src/_data/${view.lang}.json`));
-    assert.equal($('.eu-emblem').attr('src'), publicPath(strings.emblemPath));
-    assert.equal($('.eu-emblem').attr('alt'), strings.emblemAlt);
+    assert.equal(strings.emblemPath, '/assets/eu/funded-en.png');
+    assert.equal($('.eu-emblem').attr('src'), publicPath('/assets/eu/funded-en.png'));
+    const emblemAlt =
+      view.lang === 'ka'
+        ? 'დაფინანსებულია ევროკავშირის მიერ'
+        : 'Funded by the European Union';
+    assert.equal(strings.emblemAlt, emblemAlt);
+    assert.equal($('.eu-emblem').attr('alt'), emblemAlt);
+    assert.equal($('.eu-emblem').attr('width'), '4125');
+    assert.equal($('.eu-emblem').attr('height'), '919');
     assert.ok(existsSync(`_site${strings.emblemPath}`));
     assert.equal($('.emblem-placeholder').length, 0);
     assert.equal($('header a[hreflang]').attr('href'), publicPath(view.alternate));

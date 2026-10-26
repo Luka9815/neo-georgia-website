@@ -1,6 +1,6 @@
 # Handover
 
-Last updated: 2026-10-26 (Codex, session 6: policy, official artwork and Action drafts)
+Last updated: 2026-10-26 (Codex, session 6 follow-up: beneficiary emblem correction)
 
 ## Current state
 
@@ -27,7 +27,7 @@ Last updated: 2026-10-26 (Codex, session 6: policy, official artwork and Action 
 - Choose self-hosted subset Noto Sans Georgian plus Noto Sans at 400/700, font-display: swap, with full OFL notices and a source/checksum manifest. Four faces total 99,184 bytes. The English home loads three (83,452 bytes) because its language switch is Georgian. Fonts are already prepared; normal builds/CI do not run the Python maintenance subsetting script.
 - Blue, one warm accent and neutral CSS tokens have 20 allowed text/background pairs tested at 4.5:1 or better. Status/source words remain visible. Georgian text has no text-transform. See DESIGN.md for font/licence comparisons and palette rules.
 - The NEO text wordmark (or future optional approved logoPath image) and language switch sit above seven shared navigation destinations. Desktop links and a native details/summary mobile menu share one macro. Mobile keyboard activation and the desktop layout work with page JavaScript disabled.
-- Calls, Events and News use consistent cards; open/upcoming/closed badges and official/NEO/partner source labels use explicit text. Contact/legal links and the EU funding block are separated. Session 6 replaces the emblem placeholder with original official bilingual PNGs.
+- Calls, Events and News use consistent cards; open/upcoming/closed badges and official/NEO/partner source labels use explicit text. Contact/legal links and the EU funding block are separated. Session 6 uses the original official English beneficiary emblem on both language versions, with Georgian alt text on /ka/.
 - Home keeps all six approved blocks. The purpose/audience hero, section links, story panel and illustrative figures adapt from one column to desktop. A pre-existing Nunjucks rejectattr misuse hid every deadline; an explicit filter and regression test now show open/upcoming calls correctly.
 - Before/after full-page screenshots of /ka/ and /en/ at 360/1280 px are in docs/review/session-5, listed in its README and the PR. The final screenshots wait for fonts and disable page JavaScript. Manual visual inspection caught and corrected a split Georgian hero word at mobile width.
 - Local mobile Lighthouse runs on the built site returned performance 99, accessibility 100 and best practices 96 for both homes. SEO is 66 while siteLaunched=false intentionally blocks indexing. These are local lab measurements, not a deployed-site guarantee. Live CMS/hosting checks and Georgian editorial review remain open.
@@ -37,7 +37,7 @@ Last updated: 2026-10-26 (Codex, session 6: policy, official artwork and Action 
 - English prevails if language versions differ. Footer and /language/ read one translated policy string. Initial old-site News import is limited to the twelve months before the agreed migration/export date; record that window when importing.
 - Domain choice is deferred until the site is built, likely taking over erasmus.org.ge. No DNS or custom-domain setting changed. ERIDA must own the domain.
 - The Georgian disclaimer exactly preserves the project text supplied and proofread by Luka. It is not an official EACEA Georgian translation.
-- Both official emblem PNGs downloaded successfully on 2026-10-26 after initial proxy failures. English says Funded by the European Union; the supplied non-EU KA original says ევროკავშირი საქართველოსთვის. It is unmodified. Sources, archive members and checksums are in src/assets/eu/README.md. Confirm the artwork and funding wording against the signed agreement before launch.
+- Use the unmodified official English Funded by the European Union emblem on both languages, with Georgian alt text “დაფინანსებულია ევროკავშირის მიერ” on /ka/. The KA archive country-branding file has been removed because it is not the beneficiary emblem. Obtain the official Georgian Funded by the EU emblem from the EU Delegation or EACEA and replace the Georgian-page image then. Provenance is in src/assets/eu/README.md. Georgian funding/disclaimer text is unchanged.
 - Empty logoPath keeps the wordmark. A validated local approved image path uses bilingual alternatives and automatic PATH_PREFIX. No old NEO logo was downloaded.
 - The next-step hero panel is hidden below 600 px. Open calls have the strongest badge, green with white text at 9.11:1. Section labels appear only in mixed home cards; status/source labels remain visible elsewhere.
 - Nine bilingual [DRAFT] Actions replace the three samples and are grouped by higher education, VET, youth and sport. The 2026 Guide was downloaded and checked; each record cites its eligibility clauses and official URLs. A shared Georgia authority exclusion appears on every page. See ACTION-REVIEW.md for applicant/partner distinctions and review caveats. Both CMS action lists contain all nine slugs; old sample relationships retain their stable identifiers.
@@ -89,11 +89,11 @@ Review all nine bilingual Action drafts against ACTION-REVIEW.md, especially the
 
 - Turn on Pages and verify the first hosted deployment. Monitor the scheduled rebuild and re-enable it after inactivity if needed.
 - Authenticated Pages CMS News/Event create, edit, delete and settings-preservation tests. Configuration and local validation are complete.
-- Confirm the downloaded original Georgian/English artwork and funding wording against the signed grant agreement. The supplied Georgian project disclaimer is now in place.
+- Obtain the official Georgian Funded by the EU beneficiary emblem from the EU Delegation or EACEA, then replace the English image on /ka/. Until then the English beneficiary emblem is used on both languages. Confirm funding wording against the signed grant agreement. The supplied Georgian project disclaimer is in place.
 - Remaining templates, opportunity filters, responsive image pipeline, production content validation and Georgian editorial review of the new typography.
 - Search with Georgian, content migration, old-URL mapping, privacy/accessibility approval, manual accessibility and Lighthouse checks.
 - A daily rebuild refreshes static statuses. Sample dates are in 2026 and may become past/closed; no fixed test clock is used in production.
 
 ## Waiting on Nino / NEO
 
-Domain choice after the build and institutional registration/transfer agreement; WordPress export; approved new NEO logo; editors. Action topics and language precedence are decided; the source-checked [DRAFT] eligibility and Georgian terminology await NEO review. Working documents remain in Google Drive Cowork/NEO; website source and documentation live here.
+Domain choice after the build and institutional registration/transfer agreement; WordPress export; approved new NEO logo; official Georgian "Funded by the EU" emblem file from the EU Delegation or EACEA; editors. Action topics and language precedence are decided; the source-checked [DRAFT] eligibility and Georgian terminology await NEO review. Working documents remain in Google Drive Cowork/NEO; website source and documentation live here.

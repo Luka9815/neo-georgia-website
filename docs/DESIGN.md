@@ -32,7 +32,7 @@ All allowed foreground/surface combinations are checked by test/contrast.test.js
 
 Use a text-only NEO Georgia placeholder, a readable office name and an always-visible language switch. Desktop and mobile navigation share one macro and the same seven destinations. CSS shows one navigation at a time; the mobile version is native details/summary, closed initially, with full-width links. No script or CSS checkbox trick is needed. Keyboard activation, expanded state and focus work through native browser behaviour.
 
-Cards distinguish type, title, date and action in that order. Call/Event status badges and resource source labels retain explicit text and reuse the tested palette. Cards grow with Georgian text rather than clipping it. The footer separates contact/legal links from the funding block. Session 6 uses the unmodified official locale-specific PNGs with accurate alt text and original aspect ratios; source details are in src/assets/eu/README.md.
+Cards distinguish type, title, date and action in that order. Call/Event status badges and resource source labels retain explicit text and reuse the tested palette. Cards grow with Georgian text rather than clipping it. The footer separates contact/legal links from the funding block. Session 6 uses the unmodified official English beneficiary emblem on both languages, with localised alt text and its original aspect ratio. Replace it on /ka/ when the official Georgian beneficiary emblem is supplied. EU for Georgia country branding is not used. Source details are in src/assets/eu/README.md.
 
 ## Home page
 
