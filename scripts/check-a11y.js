@@ -56,7 +56,7 @@ try {
     count++;
   }
   // Native disclosure navigation must remain usable with page JavaScript disabled.
-  for (const width of [360, 1280]) {
+  for (const width of [360, 600, 1280]) {
     const noJs = await browser.newContext({
       javaScriptEnabled: false,
       viewport: { width, height: 900 },
@@ -69,6 +69,11 @@ try {
         await menuPage.evaluate(
           () => document.documentElement.scrollWidth <= innerWidth
         )
+      );
+      assert.equal(
+        await menuPage.locator('.hero-guide').isVisible(),
+        width >= 600,
+        `Hero guide at ${width}px`
       );
       if (width < 1024) {
         const summary = menuPage.locator('.mobile-menu summary');

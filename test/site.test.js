@@ -341,3 +341,17 @@ test('empty logoPath preserves the text wordmark and bilingual logo alternatives
     assert.ok(JSON.parse(read(`src/_data/${lang}.json`)).logoAlt.trim());
   }
 });
+
+test('card section labels appear on the mixed home, not individual section lists', () => {
+  for (const lang of ['ka', 'en']) {
+    const home = load(read(`_site/${lang}/index.html`));
+    for (const type of ['call', 'event', 'news']) {
+      const count = home(`.cards-${type} > .card:not(.empty-state)`).length;
+      assert.equal(home(`.cards-${type} .card-section-label`).length, count);
+    }
+    for (const section of ['calls', 'events', 'news']) {
+      const page = load(read(`_site/${lang}/${section}/index.html`));
+      assert.equal(page('main .card-section-label').length, 0);
+    }
+  }
+});

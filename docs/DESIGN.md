@@ -39,3 +39,8 @@ Cards distinguish type, title, date and action in that order. Call/Event status 
 Keep the six approved blocks in order. A blue introduction gives the two audience paths clear priority, with a small guidance panel alongside on desktop and below on mobile. Listing headings link to their complete sections. Calls and Events use consistent date/status cards, News retains language filtering, the single story gets a quiet feature panel, and key figures carry an explicit illustrative-data note. All sample content remains labelled; no statistics, images or organisational claims have been invented.
 
 No text is clipped to force identical card heights. Full-width mobile buttons, wrapped headings and the desktop hero split are sized around Georgian first. Surfaces and links follow the tested token combinations. Page scripts are unnecessary. scripts/capture-design.mjs captures both languages at 360 and 1280 px after fonts load, with page JavaScript disabled.
+
+
+## Session 6 refinements
+
+Below 600 px, hide the supplementary next-step panel so the primary purpose and audience paths take less vertical space. The same opportunities destination remains available in the hero buttons and menu. At 600 px and above the panel remains visible. Filled green #14532d with white text makes open calls the strongest status signal (9.11:1 contrast); other statuses keep their muted/pale treatments and all retain words. This adds a semantic status colour, not a second decorative brand accent. Card section labels are explicit only in the mixed home context; section listings and Action subsections keep status/source labels without redundant section names.

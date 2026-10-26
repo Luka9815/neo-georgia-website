@@ -138,3 +138,7 @@ Resolves the earlier open choice of which Actions to feature: International Cred
 
 ## 2026-10-26: Optional approved header logo path
 Extend "Georgian-first shared navigation and components" and the editable-field limit in "CMS settings preserve the launch flag". Keep the current wordmark while logoPath is empty. Expose an optional local /assets/ path in Settings for a future approved image, with language-specific alternative text and aspect-ratio-preserving layout. Validate that a supplied asset exists and let PATH_PREFIX apply at render time. siteLaunched stays code-only. Do not download or reuse the old site's NEO logo.
+
+
+## 2026-10-26: Compact mobile hero and clearer card hierarchy
+Refines "Institutional six-block home layout" by hiding the supplementary next-step panel below 600 px; primary audience links and menu remain available. Refines "Blue, warm accent and neutral contrast tokens" with a semantic green open-state badge, white text at 9.11:1 contrast, keeping the explicit status word. Other status colours remain quieter. Show card section names only when the caller requests mixed-list context (the home); keep status and source labels visible on all pages.

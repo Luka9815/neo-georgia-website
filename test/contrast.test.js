@@ -40,3 +40,10 @@ for (const background of ['blue', 'blue-dark']) {
     });
   }
 }
+
+test('AA open status: paper text on the prominent green surface', () => {
+  const a = luminance(tokens.paper);
+  const b = luminance(tokens.success);
+  const ratio = (Math.max(a, b) + 0.05) / (Math.min(a, b) + 0.05);
+  assert.ok(ratio >= 4.5, `open status contrast ${ratio.toFixed(2)} < 4.5`);
+});

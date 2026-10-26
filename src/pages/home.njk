@@ -30,28 +30,28 @@ eleventyExcludeFromCollections: true
     <h2 id="deadlines-title">{{ t.deadlines }}</h2>
     <a href="/{{ view.lang }}/calls/">{{ t.allCalls }}</a>
   </div>
-  {{ cards(calls | withoutStatus('closed') | take(3), 'call', t, view.lang) }}
+  {{ cards(calls | withoutStatus('closed') | take(3), 'call', t, view.lang, showSectionLabel=true) }}
 </section>
 <section class="home-section" aria-labelledby="events-title">
   <div class="section-heading">
     <h2 id="events-title">{{ t.upcomingEvents }}</h2>
     <a href="/{{ view.lang }}/events/">{{ t.allEvents }}</a>
   </div>
-  {{ cards(events | status('upcoming') | take(3), 'event', t, view.lang) }}
+  {{ cards(events | status('upcoming') | take(3), 'event', t, view.lang, showSectionLabel=true) }}
 </section>
 <section class="home-section" aria-labelledby="news-title">
   <div class="section-heading">
     <h2 id="news-title">{{ t.latestNews }}</h2>
     <a href="/{{ view.lang }}/news/">{{ t.allNews }}</a>
   </div>
-  {{ cards(news | take(3), 'news', t, view.lang) }}
+  {{ cards(news | take(3), 'news', t, view.lang, showSectionLabel=true) }}
 </section>
 <section class="home-story" aria-labelledby="story-title">
   <div class="section-heading">
     <h2 id="story-title">{{ t.story }}</h2>
     <a href="/{{ view.lang }}/stories/">{{ t.allStories }}</a>
   </div>
-  {{ cards(stories | take(1), 'story', t, view.lang) }}
+  {{ cards(stories | take(1), 'story', t, view.lang, showSectionLabel=true) }}
 </section>
 <section class="home-figures" aria-labelledby="figures-title">
   <h2 id="figures-title">{{ t.figures }}</h2>
