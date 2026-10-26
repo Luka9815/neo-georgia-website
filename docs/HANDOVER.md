@@ -1,20 +1,24 @@
 # Handover
 
-Last updated: 2026-10-26 (Codex, build session 1)
+Last updated: 2026-10-26 (Codex, session 2 fixes)
 
 ## Current state
 
+- Session 1 was merged into `main` in [PR #1](https://github.com/Luka9815/neo-georgia-website/pull/1). Session 2 starts from that merged baseline and is prepared on `codex/session-2-fixes` for a separate PR against `main`; do not treat the session 1 commits as unpushed local work.
+
 - Eleventy 3 ESM skeleton on Node 24 LTS. `npm ci`, `npm start` (port 8080), `npm run build` (output `_site/`). Source and scripts are committed; output and node_modules are ignored.
 - Georgian and English routes, root redirect to Georgian, language switch and hreflang. English listings exclude untranslated News. Story listings also have a section-index fallback. All seven menu destinations resolve.
-- Home has six blocks. Calls are grouped by Key Action for the current build year, with calculated status and Brussels time. Three action detail pages automatically collect calls, upcoming and past events, resources with source labels, stories and FAQs.
-- Three [SAMPLE] records each for Action, Call, Event and News. One News item is Georgian-only to exercise fallback behaviour. Related sample resources, a story, a FAQ and draft basic pages support the skeleton. No real content, images, personal contacts or accounts were added.
+- Home has six blocks. Calls are grouped by Key Action for `site.currentCallYear` (currently 2026), with calculated status and Brussels time. The calls page shows that selected edition first, followed by all other editions as descending-year archives. Changing the calendar year does not change the selected call edition. Three action detail pages automatically collect calls, upcoming and past events, resources with source labels, stories and FAQs.
+- Three [SAMPLE] records each for Action, Event and News, plus three current-edition Calls and one 2025 archive Call. One News item is Georgian-only to exercise fallback behaviour. Related sample resources, a story, a FAQ and draft basic pages support the skeleton. No real content, images, personal contacts or accounts were added.
 - Minimal event/news/story details, section listings and footer-note pages prevent dead links. These are not the complete later-phase templates or CMS integration.
-- Nunjucks layouts, Markdown body fields in JSON, plain responsive CSS, no client JavaScript, remote fonts or trackers. See docs/CONTENT.md for the bilingual contract and both CMS mappings.
+- One Nunjucks template per page type in `src/pages/`, inheriting `_includes/page.njk`, with central routes in `_data/views.js` grouped by `_data/pageTypes.js`. Markdown body fields in JSON, plain responsive CSS, no client JavaScript, remote fonts or trackers. See docs/CONTENT.md for the bilingual contract and both CMS mappings.
 - EU footer uses the explicitly requested text emblem placeholder, funding statement, verbatim English disclaimer and unapproved Georgian TODO. These are not launch-compliant final assets.
 - Canonical/OG metadata, sitemap and preview noindex/robots restrictions are generated. SITE_URL overrides the host URL. Never launch with the default example.org URL or the preview indexing restrictions still present.
-- netlify.toml and portable root `_redirects` are included. Neither external preview has been connected or deployed. No hosting account or CMS was created and no remote push was performed.
+- netlify.toml and portable root `_redirects` are included. No live-host validation is recorded here, and hosting/CMS selection remains open. Session 1 was pushed and merged. No external account or CMS has been created by Codex.
 
 ## Validation
+
+Call opens/deadline and Event date/end fields now store local wall-clock times without an offset plus a named `timeZone`. The Temporal polyfill resolves seasonal offsets for status calculations, ordering and rendered datetime attributes. Invalid dates, editor-entered offsets and ambiguous or nonexistent clock-change times fail the build rather than being guessed. See docs/CONTENT.md for editor input rules. News dates retain their original instant format.
 
 From the repository root:
 
@@ -26,13 +30,13 @@ From the repository root:
 
 Checks cover generated language versions, metadata, seven menu items, EU footer, all internal links and fragments, shared content references, core translations, [SAMPLE] marking, status boundaries, Brussels daylight saving, six home blocks and all action relationship blocks. Browser checks run axe on every non-redirect page, test 320 px horizontal overflow, keyboard skip links and actual language-switch navigation. This is basic automated accessibility testing, not a full WCAG audit. Manual screen-reader review, full keyboard review and Lighthouse scoring remain open.
 
-Session result: clean npm ci and npm run build passed without Eleventy warnings. All 5 test groups passed. All 44 non-redirect pages passed axe with zero violations, plus the 320 px overflow, keyboard skip-link and language-switch checks. git diff --check passed. Browser checks used the preinstalled Chromium; the Playwright binary download was blocked by network policy and was not required.
+Session 1 results are preserved in CHANGELOG. Session 2 validation covers local-time conversion in Brussels and Tbilisi, both daylight-saving transitions (including rejected gap/overlap times), derived HTML offsets, explicit call-edition ordering and archive rendering. The readability refactor was compared against its preceding build: all 45 HTML documents retain identical DOM structure, attributes and text apart from whitespace. Final command results are recorded in the session 2 CHANGELOG entry.
 
 The sample dates are in 2026. As time advances, items move to past/closed; lists may become empty. No fixture date is forced in production. Status only changes on rebuild.
 
 ## Connect Netlify (Luka)
 
-1. Push these local commits to the GitHub branch you want to deploy. Use an existing hosting account registered to the ERIDA/NEO address, as required by DECISIONS. Do not use a personal account for institutional ownership.
+1. Session 1 is already on `main`. Select `main` for that baseline, or `codex/session-2-fixes` to test this session before its PR is merged. Push any later local changes before deploying them. Use an existing hosting account registered to the ERIDA/NEO address, as required by DECISIONS. Do not use a personal account for institutional ownership.
 2. In Netlify choose **Add new project > Import an existing project**, select GitHub, and authorise only the required repository (`Luka9815/neo-georgia-website`). Select that repository and the pushed branch (normally `main`).
 3. Leave base directory at the repository root. Confirm build command `npm run build`, publish directory `_site` and Node 24 from netlify.toml. Do not set NODE_ENV=production or omit dev dependencies: Eleventy is a build dependency.
 4. Deploy using the generated temporary netlify.app address. The build reads DEPLOY_PRIME_URL for metadata. If setting SITE_URL, use the full HTTPS temporary site origin; changing it requires another deploy. Do not configure a production domain yet.
@@ -40,7 +44,7 @@ The sample dates are in 2026. As time advances, items move to past/closed; lists
 
 ## Connect Cloudflare Pages (Luka)
 
-1. Use the pushed branch from the same repository and an existing ERIDA/NEO-owned Cloudflare account.
+1. Select `main` for the merged session 1 baseline, or `codex/session-2-fixes` for this session before merge, using the same repository and an existing ERIDA/NEO-owned Cloudflare account.
 2. In **Workers & Pages > Create application > Pages > Connect to Git**, connect GitHub, grant access to the required repository and select `Luka9815/neo-georgia-website`. Choose a temporary project name and production branch (normally `main`). Choose Pages, not a Workers deployment.
 3. Set framework preset to **None**, build command `npm run build`, output directory `_site`, and root directory to the repository root. Set build variable `NODE_VERSION=24` for production and preview. Keep dev dependencies enabled. The repository also includes `.nvmrc`.
 4. Save and deploy to the generated pages.dev address. The build reads CF_PAGES_URL for metadata. SITE_URL is an optional full HTTPS origin override, requiring a rebuild when changed. Keep preview branch builds enabled and preview noindex in place.
@@ -50,7 +54,7 @@ After both deployments, record the temporary origins, build logs, redirect and 4
 
 ## Next task
 
-Connect and test the two previews using the steps above, then compare Decap CMS and Pages CMS for News and Events against docs/CONTENT.md before selecting a host/editor. No tokens, hooks or personal emails go into this public repository.
+Review the session 2 PR against `main` without merging automatically. Connect and test the two previews using the steps above, then compare Decap CMS and Pages CMS for News and Events against docs/CONTENT.md before selecting a host/editor. No tokens, hooks or personal emails go into this public repository.
 
 ## Remaining work
 
