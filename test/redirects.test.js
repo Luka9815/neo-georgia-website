@@ -28,6 +28,10 @@ test('legacy mappings reject collisions, unsafe paths and unknown targets', () =
     '/bad/../path/',
     '//evil/',
     '/old/?id=1',
+    '/%2e%2e/private/',
+    '/%252e%252e/private/',
+    '/bad%2f..%2fpath/',
+    '/%zz/',
   ]) {
     assert.throws(() => redirectViews(views, [{ ...mapping, from }]), /colliding/);
   }
@@ -100,4 +104,9 @@ test('legacy stub renders with a prefixed refresh, canonical and working visible
   } finally {
     rmSync(root, { recursive: true, force: true });
   }
+});
+
+test('encoded legacy emoji produces the decoded static-host path', () => {
+  const [view] = redirectViews(getViews(), [{ from: '/%f0%9f%93%a3-old/', to: '/ka/news/' }]);
+  assert.equal(view.path, '/📣-old/');
 });
