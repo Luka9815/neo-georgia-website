@@ -1,0 +1,34 @@
+{
+  "slug": "erasmus-mundus",
+  "keyAction": "KA2",
+  "sectors": [
+    "higher-education"
+  ],
+  "audience": [
+    "organisations"
+  ],
+  "programmeYear": 2026,
+  "comment": "Programme Guide 2026, Version 1 (12/11/2025), checked 2026-10-26. https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/programme-guide-2026_en.pdf . Part A p.34, Region 2 and footnote 46 (Georgia and the exclusion of Georgian authorities); Part B pp.274-275, 285-286, objectives and eligibility/Who can apply criteria. EMJM p.275 allows eligible non-associated-country HEIs and restricts other bodies from coordination. EMDM p.285 restricts applicants to EU/associated ECHE HEIs; p.286 states mono-beneficiary and says collaborating organisations do not sign the grant. Official action page read: https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/erasmus-mundus-action.",
+  "officialLinks": [
+    {
+      "labelKey": "programmeGuide2026",
+      "url": "https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/programme-guide-2026_en.pdf"
+    },
+    {
+      "labelKey": "officialActionPage",
+      "url": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/erasmus-mundus-action"
+    }
+  ],
+  "en": {
+    "title": "[DRAFT] Erasmus Mundus: Joint Masters and Design Measures",
+    "summary": "[DRAFT] Two distinct strands support the delivery of integrated international master programmes and the design of new joint master programmes.",
+    "who": "[DRAFT] Joint Masters: eligible Georgian higher education institutions may apply directly as consortium coordinator or join as partners; other eligible contributing organisations may participate but cannot coordinate. Design Measures: Georgian institutions cannot be the direct grant applicant, which must be an ECHE-holding HEI in an EU or associated country. Georgian HEIs may collaborate in designing the planned joint programme; this is not co-beneficiary status in the mono-beneficiary Design Measures grant.",
+    "how": "[DRAFT] Choose the strand first. Build the required international consortium for Joint Masters. For Design Measures, agree the Georgian contribution with the eligible single applicant, then use the relevant EACEA call."
+  },
+  "ka": {
+    "title": "[DRAFT] ერაზმუს მუნდუსი: ერთობლივი სამაგისტრო პროგრამები და პროგრამების შემუშავება",
+    "summary": "[DRAFT] ორი ცალკე მიმართულება მხარს უჭერს საერთაშორისო ერთობლივი სამაგისტრო პროგრამების განხორციელებას და ახალი პროგრამების შემუშავებას.",
+    "who": "[DRAFT] ერთობლივი სამაგისტრო პროგრამები: საქართველოს უფლებამოსილ უმაღლეს სასწავლებლებს შეუძლიათ პირდაპირ განაცხადის შეტანა კონსორციუმის კოორდინატორად ან პარტნიორად მონაწილეობა; სხვა უფლებამოსილ ორგანიზაციებს შეუძლიათ მონაწილეობა, მაგრამ არა კოორდინატორობა. პროგრამების შემუშავება: ქართული დაწესებულება ვერ იქნება გრანტის პირდაპირი განმცხადებელი; საჭიროა ECHE-ს მქონე უმაღლესი სასწავლებელი ევროკავშირის ან ასოცირებული ქვეყნიდან. ქართულ უმაღლეს სასწავლებლებს შეუძლიათ დაგეგმილი ერთობლივი პროგრამის შემუშავებაში თანამშრომლობა, მაგრამ ეს არ ნიშნავს ერთბენეფიციარიან გრანტში თანაბენეფიციარობას.",
+    "how": "[DRAFT] ჯერ აირჩიეთ მიმართულება. ერთობლივი სამაგისტრო პროგრამისთვის შექმენით მოთხოვნილი საერთაშორისო კონსორციუმი. შემუშავების მიმართულებისთვის ქართული წვლილი შეათანხმეთ უფლებამოსილ ერთპიროვნულ განმცხადებელთან და გამოიყენეთ EACEA-ს შესაბამისი კონკურსი."
+  }
+}

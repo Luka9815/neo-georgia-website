@@ -142,3 +142,10 @@ Extend "Georgian-first shared navigation and components" and the editable-field 
 
 ## 2026-10-26: Compact mobile hero and clearer card hierarchy
 Refines "Institutional six-block home layout" by hiding the supplementary next-step panel below 600 px; primary audience links and menu remain available. Refines "Blue, warm accent and neutral contrast tokens" with a semantic green open-state badge, white text at 9.11:1 contrast, keeping the explicit status word. Other status colours remain quieter. Show card section names only when the caller requests mixed-list context (the home); keep status and source labels visible on all pages.
+
+
+## 2026-10-26: Original official bilingual EU artwork
+Supersedes the emblem-placeholder part of "Sample preview safeguards and EU placeholder" and "Georgian-first shared navigation and components". Use unmodified original PNGs from the official EACEA-linked Commission download centre. English uses its Funded by archive; the EACEA non-EU KA archive supplies artwork visibly labelled “ევროკავშირი საქართველოსთვის”. Retain those original bytes and accurate alt text, with the funding statement/disclaimer alongside. Record archive/member URLs, download date and checksums in assets/eu/README.md. Confirm funding wording and supplied KA artwork against the signed grant agreement before launch.
+
+## 2026-10-26: Source-checked 2026 Action drafts and sector groups
+Supersedes "Nine requested Action topics, source review pending". Replace the three samples with nine bilingual [DRAFT] records sourced to the official Programme Guide 2026 v1, with exact page/eligibility citations in comment fields and verified official links. Retain existing slugs for relationships. Group by four sectors; Virtual Exchanges appears in higher education and youth without duplicating its record. Store the shared Georgia authority exclusion once and render it on every Action. Distinguish direct applicants, partners and the two Erasmus Mundus strands; flag the CBHE Strand 3 authority requirement for EACEA review. Cards reuse summary, avoiding a duplicate body fact. See ACTION-REVIEW.md for the evidence and review scope.

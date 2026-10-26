@@ -25,6 +25,9 @@ export default function (config) {
   config.addFilter('actionGroup', (items, actions, group) =>
     items.filter((i) => actions.find((a) => a.slug === i.action)?.keyAction === group)
   );
+  config.addFilter('sector', (items, sector) =>
+    items.filter((item) => item.sectors.includes(sector))
+  );
   config.addFilter('findSlug', (items, slug) => items.find((i) => i.slug === slug));
   config.addFilter('forEvent', (items, slug) => items.filter((i) => i.event === slug));
   config.addFilter('source', (items, source) =>

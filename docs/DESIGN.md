@@ -24,7 +24,7 @@ CSS registers four local faces with font-display: swap and script-specific unico
 
 ## Colour system
 
-Primary #003399 and its darker hover shade provide an Erasmus+ inspired institutional blue. One warm accent (#854600, with a pale #fff1d2 surface) and neutral ink, muted text, paper, surface and line tokens complete the palette. No EU emblem or logo has been copied into the design.
+Primary #003399 and its darker hover shade provide an Erasmus+ inspired institutional blue. One warm accent (#854600, with a pale #fff1d2 surface) and neutral ink, muted text, paper, surface and line tokens complete the palette. The palette does not imitate an EU emblem. Official unmodified funding artwork is kept in the separate EU footer block.
 
 All allowed foreground/surface combinations are checked by test/contrast.test.js using WCAG relative luminance and a minimum 4.5:1 even for large text. Ink, muted, blue, blue-dark and accent may appear on paper, surface or accent-soft. Paper and inverse-muted may appear on blue or blue-dark. The lowest tested pair is muted on accent-soft, above 6:1. Line is a decorative divider, not a text colour. Status and source labels use the same palette plus explicit words, so colour does not carry their meaning alone.
 
@@ -32,7 +32,7 @@ All allowed foreground/surface combinations are checked by test/contrast.test.js
 
 Use a text-only NEO Georgia placeholder, a readable office name and an always-visible language switch. Desktop and mobile navigation share one macro and the same seven destinations. CSS shows one navigation at a time; the mobile version is native details/summary, closed initially, with full-width links. No script or CSS checkbox trick is needed. Keyboard activation, expanded state and focus work through native browser behaviour.
 
-Cards distinguish type, title, date and action in that order. Call/Event status badges and resource source labels retain explicit text and reuse the tested palette. Cards grow with Georgian text rather than clipping it. The footer separates contact/legal links from the funding block. The emblem remains an explicit text placeholder; no imitation flag or logo is used.
+Cards distinguish type, title, date and action in that order. Call/Event status badges and resource source labels retain explicit text and reuse the tested palette. Cards grow with Georgian text rather than clipping it. The footer separates contact/legal links from the funding block. Session 6 uses the unmodified official locale-specific PNGs with accurate alt text and original aspect ratios; source details are in src/assets/eu/README.md.
 
 ## Home page
 

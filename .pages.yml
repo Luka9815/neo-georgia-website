@@ -38,12 +38,30 @@ content:
         required: true
         options:
           values:
-            - name: cbhe
-              label: უმაღლესი განათლების შესაძლებლობების განვითარება (CBHE)
-            - name: icm
-              label: საერთაშორისო კრედიტმობილობა (ICM)
-            - name: jean-monnet
-              label: ჟან მონე (Jean Monnet)
+            - label: '[DRAFT] სპორტის სფეროს შესაძლებლობების განვითარება (Capacity Building in Sport)'
+              name: cb-sport
+            - label: '[DRAFT] პროფესიული განათლების შესაძლებლობების განვითარება (Capacity Building in VET)'
+              name: cb-vet
+            - label: >-
+                [DRAFT] ახალგაზრდობის სფეროს შესაძლებლობების განვითარება (Capacity Building in
+                Youth)
+              name: cb-youth
+            - label: >-
+                [DRAFT] უმაღლესი განათლების შესაძლებლობების განვითარება (Capacity Building in Higher
+                Education)
+              name: cbhe
+            - label: >-
+                [DRAFT] ერაზმუს მუნდუსი: ერთობლივი სამაგისტრო პროგრამები და პროგრამების შემუშავება
+                (Erasmus Mundus: Joint Masters and Design Measures)
+              name: erasmus-mundus
+            - label: '[DRAFT] საერთაშორისო კრედიტმობილობა (International Credit Mobility)'
+              name: icm
+            - label: '[DRAFT] ჟან მონეს ქმედებები (Jean Monnet Actions)'
+              name: jean-monnet
+            - label: '[DRAFT] ვირტუალური გაცვლები (Virtual Exchanges)'
+              name: virtual-exchanges
+            - label: '[DRAFT] ახალგაზრდული მობილობა (Youth mobility)'
+              name: youth-mobility
           multiple: true
           min: 1
       - name: ka
@@ -177,12 +195,30 @@ content:
         required: true
         options:
           values:
-            - name: cbhe
-              label: უმაღლესი განათლების შესაძლებლობების განვითარება (CBHE)
-            - name: icm
-              label: საერთაშორისო კრედიტმობილობა (ICM)
-            - name: jean-monnet
-              label: ჟან მონე (Jean Monnet)
+            - label: '[DRAFT] სპორტის სფეროს შესაძლებლობების განვითარება (Capacity Building in Sport)'
+              name: cb-sport
+            - label: '[DRAFT] პროფესიული განათლების შესაძლებლობების განვითარება (Capacity Building in VET)'
+              name: cb-vet
+            - label: >-
+                [DRAFT] ახალგაზრდობის სფეროს შესაძლებლობების განვითარება (Capacity Building in
+                Youth)
+              name: cb-youth
+            - label: >-
+                [DRAFT] უმაღლესი განათლების შესაძლებლობების განვითარება (Capacity Building in Higher
+                Education)
+              name: cbhe
+            - label: >-
+                [DRAFT] ერაზმუს მუნდუსი: ერთობლივი სამაგისტრო პროგრამები და პროგრამების შემუშავება
+                (Erasmus Mundus: Joint Masters and Design Measures)
+              name: erasmus-mundus
+            - label: '[DRAFT] საერთაშორისო კრედიტმობილობა (International Credit Mobility)'
+              name: icm
+            - label: '[DRAFT] ჟან მონეს ქმედებები (Jean Monnet Actions)'
+              name: jean-monnet
+            - label: '[DRAFT] ვირტუალური გაცვლები (Virtual Exchanges)'
+              name: virtual-exchanges
+            - label: '[DRAFT] ახალგაზრდული მობილობა (Youth mobility)'
+              name: youth-mobility
           multiple: true
           min: 1
       - name: ka
@@ -253,4 +289,6 @@ content:
         type: string
         required: false
         default: ''
-        description: ცარიელი ველი ტოვებს ტექსტურ ლოგოს. მხოლოდ დამტკიცებული /assets/ ფაილი, პროექტის პრეფიქსის გარეშე.
+        description: >-
+          ცარიელი ველი ტოვებს ტექსტურ ლოგოს. მხოლოდ დამტკიცებული /assets/ ფაილი, პროექტის პრეფიქსის
+          გარეშე.

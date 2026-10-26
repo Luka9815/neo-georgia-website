@@ -98,9 +98,18 @@
   "figuresNote": "[SAMPLE] Illustrative figures. Verified project data will be added before launch.",
   "officeName": "National Erasmus+ Office Georgia",
   "prevailingStatement": "In the event of any discrepancy between the Georgian and English versions, the English version prevails.",
+  "logoAlt": "NEO Georgia",
   "emblemAlt": "Funded by the European Union",
   "emblemPath": "/assets/eu/funded-en.png",
   "emblemWidth": 4125,
   "emblemHeight": 919,
-  "logoAlt": "NEO Georgia"
+  "sectorLabels": {
+    "higher-education": "Higher education",
+    "vet": "Vocational education and training",
+    "youth": "Youth",
+    "sport": "Sport"
+  },
+  "programmeGuide2026": "Programme Guide 2026 (PDF)",
+  "officialActionPage": "Official action page",
+  "youthWorkerActionPage": "Youth worker mobility: official action page"
 }

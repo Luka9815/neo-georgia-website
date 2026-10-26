@@ -121,7 +121,7 @@ test('content relationships, non-empty text, and core bilingual parity', () => {
           assert.ok(item[lang]);
         if (item[lang]) {
           assert.ok(item[lang].title.trim());
-          assert.ok(item[lang].body.trim());
+          assert.ok((type === 'action' ? item[lang].summary : item[lang].body).trim());
         }
       }
       for (const slug of item.actions || (item.action ? [item.action] : []))

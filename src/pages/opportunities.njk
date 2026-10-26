@@ -15,6 +15,11 @@ eleventyExcludeFromCollections: true
 </section>
 <section id="organisations">
   <h2>{{ t.organisations }}</h2>
-  {{ cards(actions, 'action', t, view.lang) }}
+  {% for sector in ['higher-education', 'vet', 'youth', 'sport'] %}
+    <section id="{{ sector }}" class="action-sector">
+      <h3>{{ t.sectorLabels[sector] }}</h3>
+      {{ cards(actions | sector(sector), 'action', t, view.lang, 'h4') }}
+    </section>
+  {% endfor %}
 </section>
 {% endblock %}

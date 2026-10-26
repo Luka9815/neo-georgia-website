@@ -1,0 +1,35 @@
+{
+  "slug": "virtual-exchanges",
+  "keyAction": "KA1",
+  "sectors": [
+    "higher-education",
+    "youth"
+  ],
+  "audience": [
+    "organisations"
+  ],
+  "programmeYear": 2026,
+  "comment": "Programme Guide 2026, Version 1 (12/11/2025), checked 2026-10-26. https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/programme-guide-2026_en.pdf . Part A p.34, Region 2 and footnote 46 (Georgia and the exclusion of Georgian authorities); Part B pp.216, 218-219, objectives and eligibility/Who can apply criteria. P.218 includes Regions 1, 2, 3, 9 but bars all non-associated-country coordinators and requires the same region for non-associated partners. P.219 lists the Neighbourhood East call. Official action page read: https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/virtual-exchanges.",
+  "officialLinks": [
+    {
+      "labelKey": "programmeGuide2026",
+      "url": "https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/programme-guide-2026_en.pdf"
+    },
+    {
+      "labelKey": "officialActionPage",
+      "url": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/virtual-exchanges"
+    }
+  ],
+  "en": {
+    "title": "[DRAFT] Virtual Exchanges",
+    "summary": "[DRAFT] Facilitated online exchanges connect higher education and youth participants for intercultural dialogue and skills development.",
+    "who": "[DRAFT] Eligible Georgian higher education or youth-sector entities can participate as partners, not consortium coordinators or direct coordinating applicants. Coordinators must be an eligible HEI or youth organisation established in an EU or Programme-associated country. Georgia participates through the Neighbourhood East regional strand.",
+    "how": "[DRAFT] Join a consortium with an eligible EU or associated-country coordinator and partners from the same eligible non-associated region, then follow the official regional call criteria."
+  },
+  "ka": {
+    "title": "[DRAFT] ვირტუალური გაცვლები",
+    "summary": "[DRAFT] ფასილიტატორების დახმარებით ონლაინ გაცვლები აკავშირებს უმაღლესი განათლებისა და ახალგაზრდობის მონაწილეებს კულტურათაშორისი დიალოგისა და უნარების გასავითარებლად.",
+    "who": "[DRAFT] საქართველოს უმაღლესი განათლების ან ახალგაზრდობის სფეროს უფლებამოსილ ორგანიზაციებს შეუძლიათ პარტნიორად მონაწილეობა და არა კონსორციუმის კოორდინატორად ან პირდაპირ კოორდინირებად განმცხადებლად გამოსვლა. კოორდინატორი უნდა იყოს ევროკავშირის ან ასოცირებული ქვეყნის უფლებამოსილი უმაღლესი სასწავლებელი ან ახალგაზრდული ორგანიზაცია. საქართველო მონაწილეობს აღმოსავლეთ სამეზობლოს რეგიონული მიმართულებით.",
+    "how": "[DRAFT] შეუერთდით კონსორციუმს ევროკავშირის ან ასოცირებული ქვეყნის უფლებამოსილ კოორდინატორთან და იმავე უფლებამოსილი არაასოცირებული რეგიონის პარტნიორებთან; შემდეგ მიჰყევით ოფიციალური რეგიონული კონკურსის პირობებს."
+  }
+}
