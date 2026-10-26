@@ -2,7 +2,6 @@ import { createHash } from 'node:crypto';
 import { load } from 'cheerio';
 import TurndownService from 'turndown';
 import { Temporal } from '@js-temporal/polyfill';
-import { languageOf } from './languages.js';
 import { postLanguage, pairingCandidates } from './language-review.js';
 import { oldSite } from './client.js';
 
@@ -58,12 +57,20 @@ export function plainText(html) {
     .trim();
 }
 export function cleanTitle(html) {
-  return plainText(html).replace(/^(?:[\p{Extended_Pictographic}\p{Regional_Indicator}\p{Emoji_Modifier}\uFE0F\u200D]\s*|[0-9#*]\uFE0F?\u20E3\s*)+/u, '').trim();
+  return plainText(html)
+    .replace(
+      /^(?:[\p{Extended_Pictographic}\p{Regional_Indicator}\p{Emoji_Modifier}\uFE0F\u200D]\s*|[0-9#*]\uFE0F?\u20E3\s*)+/u,
+      ''
+    )
+    .trim();
 }
 
 export function cleanThemeMarkdown(markdown) {
   return markdown
-    .replace(/^(?:\s*(?:\*\*|__)?\{\d{1,2}\.\d{1,2}\.\d{4}\}(?:\*\*|__)?[ \t]*(?:\r?\n|$))+/, '')
+    .replace(
+      /^(?:\s*(?:\*\*|__)?\{\d{1,2}\.\d{1,2}\.\d{4}\}(?:\*\*|__)?[ \t]*(?:\r?\n|$))+/,
+      ''
+    )
     .replace(/^[ \t]*(?:\*\*|__)?[ \t]*ℹ\uFE0F?[ \t]*(?:\*\*|__)?[ \t]*$/gm, '')
     .replace(/\n(?:[ \t]*\n){2,}/g, '\n\n')
     .trim();
@@ -77,15 +84,22 @@ export function romanise(title) {
 export function truncateAtWord(value, limit) {
   if (value.length <= limit) return value;
   const boundary = value.slice(0, limit + 1).lastIndexOf('-');
-  return (boundary > 0 ? value.slice(0, boundary) : value.slice(0, limit)).replace(/-+$/, '');
+  return (
+    boundary > 0 ? value.slice(0, boundary) : value.slice(0, limit)
+  ).replace(/-+$/, '');
 }
 
 export function uniqueSlug(title, id, used, legacySlug = '') {
   const legacy = String(legacySlug).replaceAll('_', '-');
   const reusable = /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(legacy);
-  let base = reusable ? legacy : romanise(cleanTitle(title))
-    .normalize('NFKD').replace(/\p{M}/gu, '')
-    .replace(/['’ʼ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  let base = reusable
+    ? legacy
+    : romanise(cleanTitle(title))
+        .normalize('NFKD')
+        .replace(/\p{M}/gu, '')
+        .replace(/['’ʼ]/g, '')
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/^-|-$/g, '');
   if (!base) base = `news-${id}`;
   // Preserve an already published clean legacy slug. New romanised slugs use
   // a 60-character word boundary; a single overlong word needs a hard cut.
@@ -93,7 +107,8 @@ export function uniqueSlug(title, id, used, legacySlug = '') {
   let slug = base;
   for (let count = 2; used.has(slug); count++) {
     const suffix = `-${count}`;
-    slug = (reusable ? base : truncateAtWord(base, 60 - suffix.length)) + suffix;
+    slug =
+      (reusable ? base : truncateAtWord(base, 60 - suffix.length)) + suffix;
   }
   used.add(slug);
   return slug;
@@ -173,7 +188,7 @@ export function htmlToMarkdown(html, base = oldSite) {
   });
   if ($('img').length)
     warnings.push(
-      'Images listed separately and omitted from Markdown; no files downloaded.'
+      'Images omitted from Markdown; one eligible featured image is selected separately and other attachments stay listed.'
     );
   const debris = $(
     'script, style, noscript, iframe, object, embed, svg, form, input, button, nav, [data-elementor-type="header"], [data-elementor-type="footer"]'
@@ -253,7 +268,10 @@ export function htmlToMarkdown(html, base = oldSite) {
     .replace(/\n{3,}/g, '\n\n')
     .trim();
   const markdown = cleanThemeMarkdown(convertedMarkdown);
-  if (markdown !== convertedMarkdown) warnings.push('Leading theme date, empty info markers or repeated blank lines removed.');
+  if (markdown !== convertedMarkdown)
+    warnings.push(
+      'Leading theme date, empty info markers or repeated blank lines removed.'
+    );
   return { markdown, attachments, warnings: [...new Set(warnings)] };
 }
 
@@ -453,7 +471,10 @@ export function convertPosts(collections, run, reservedSlugs = []) {
       const slug = uniqueSlug(row.title, post.id, used, post.slug);
       row.slug = slug;
       row.status = 'converted';
-      if (row.language.needsReview) row.warnings.push('Language needs review. The source remains separate; no automatic split, translation or pairing.');
+      if (row.language.needsReview)
+        row.warnings.push(
+          'Language needs review. The source remains separate; no automatic split, translation or pairing.'
+        );
       if (!suggestions.length)
         row.warnings.push(
           'No Action matched. actions is empty; an editor must select a real Action before publication.'
@@ -471,7 +492,6 @@ export function convertPosts(collections, run, reservedSlugs = []) {
           id: post.id,
           slug: row.oldSlug,
           url: row.oldUrl,
-
         },
         migration: {
           status: 'unreviewed',
@@ -494,7 +514,8 @@ export function convertPosts(collections, run, reservedSlugs = []) {
   for (const field of ['title', 'body']) {
     const groups = new Map();
     for (const row of results.filter((item) => item.news)) {
-      const value = field === 'title' ? row.title : row.news[row.language.slot].body;
+      const value =
+        field === 'title' ? row.title : row.news[row.language.slot].body;
       const hash = createHash('sha256')
         .update(value.toLowerCase().replace(/\s+/g, ' ').trim())
         .digest('hex');
@@ -503,11 +524,24 @@ export function convertPosts(collections, run, reservedSlugs = []) {
     for (const ids of groups.values())
       if (ids.length > 1) duplicates.push({ field, postIds: ids });
   }
-  const pairCandidates = pairingCandidates(results, sourceById, run.languages.pairs);
+  const pairCandidates = pairingCandidates(
+    results,
+    sourceById,
+    run.languages.pairs
+  );
   for (const row of results) {
-    row.pairCandidates = pairCandidates.filter((pair) => pair.ka === row.id || pair.en === row.id);
+    row.pairCandidates = pairCandidates.filter(
+      (pair) => pair.ka === row.id || pair.en === row.id
+    );
     if (row.news) row.news.migration.pairCandidates = row.pairCandidates;
   }
-  const englishWithoutCandidate = results.filter((row) => row.news && row.language.body.script === 'latin' && !row.pairCandidates.length).map((row) => row.id);
+  const englishWithoutCandidate = results
+    .filter(
+      (row) =>
+        row.news &&
+        row.language.body.script === 'latin' &&
+        !row.pairCandidates.length
+    )
+    .map((row) => row.id);
   return { results, duplicates, pairCandidates, englishWithoutCandidate };
 }

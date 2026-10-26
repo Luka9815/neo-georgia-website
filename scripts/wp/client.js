@@ -2,10 +2,10 @@ import { setTimeout as delay } from 'node:timers/promises';
 
 export const oldSite = 'https://erasmus.org.ge';
 
-// One request at a time, including retries. Never fetch attachment binaries.
+// One request at a time, including selected review-image downloads and retries.
 export function createClient(requests, intervalMs = 1500) {
   let nextRequest = 0;
-  async function request(url) {
+  async function responseFor(url, accept) {
     for (let attempt = 1; attempt <= 3; attempt++) {
       await delay(Math.max(0, nextRequest - Date.now()));
       nextRequest = Date.now() + intervalMs;
@@ -14,9 +14,9 @@ export function createClient(requests, intervalMs = 1500) {
       try {
         const response = await fetch(url, {
           headers: {
-            Accept: 'application/json',
+            Accept: accept,
             'User-Agent':
-              'NEO-Georgia-migration-review/1.0 (public API; no media download)',
+              'NEO-Georgia-migration-review/1.0 (public API and selected review images)',
           },
           signal: AbortSignal.timeout(20000),
         });
@@ -43,15 +43,44 @@ export function createClient(requests, intervalMs = 1500) {
           continue;
         }
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
-        const data = await response.json();
-        entry.received = Array.isArray(data) ? data.length : 'object';
-        return { data, headers: response.headers };
+        return { response, entry };
       } catch (error) {
         entry.error = error.cause?.code
           ? `${error.message} (${error.cause.code})`
           : error.message;
         throw new Error(`${url}: ${entry.error}`, { cause: error });
       }
+    }
+  }
+  async function request(url) {
+    const { response, entry } = await responseFor(url, 'application/json');
+    const data = await response.json();
+    entry.received = Array.isArray(data) ? data.length : 'object';
+    return { data, headers: response.headers };
+  }
+  async function download(url) {
+    const { response, entry } = await responseFor(url, 'image/*');
+    const limit = 10 * 1024 * 1024;
+    const reader = response.body.getReader();
+    let size = 0;
+    const chunks = [];
+    try {
+      if (Number(response.headers.get('content-length')) > limit)
+        throw new Error('Image exceeds the 10 MiB review-file limit');
+      while (true) {
+        const next = await reader.read();
+        if (next.done) break;
+        size += next.value.length;
+        if (size > limit)
+          throw new Error('Image exceeds the 10 MiB review-file limit');
+        chunks.push(next.value);
+      }
+      entry.receivedBytes = size;
+      return Buffer.concat(chunks);
+    } catch (error) {
+      await reader.cancel();
+      entry.error = error.message;
+      throw error;
     }
   }
   async function collection(resource, params = {}) {
@@ -106,5 +135,5 @@ export function createClient(requests, intervalMs = 1500) {
     }
     return result;
   }
-  return { request, collection };
+  return { request, collection, download };
 }
