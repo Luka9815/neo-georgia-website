@@ -169,7 +169,7 @@ content:
       - name: registration
         label: რეგისტრაციის ბმული (Registration URL)
         type: string
-        required: true
+        required: false
         description: სრული ბმული, რომელიც იწყება https://-ით.
       - name: actions
         label: დაკავშირებული მიმართულებები (Actions)
@@ -209,7 +209,7 @@ content:
           - name: agenda
             label: დღის წესრიგი (Agenda)
             type: text
-            required: true
+            required: false
       - name: en
         label: ინგლისური (English)
         type: object
@@ -234,7 +234,7 @@ content:
           - name: agenda
             label: დღის წესრიგი (Agenda)
             type: text
-            required: true
+            required: false
   - name: settings
     label: პარამეტრები (Settings)
     type: file

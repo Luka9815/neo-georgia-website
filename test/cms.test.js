@@ -175,6 +175,12 @@ test('CMS-shaped JSON renders Markdown safely, keeps optional News English absen
       join(root, 'src/_data/settings.json'),
       JSON.stringify({ currentCallYear: 2027, siteLaunched: false })
     );
+    const eventPath = join(root, 'src/content/event/webinar.json');
+    const event = JSON.parse(read(eventPath));
+    delete event.registration;
+    delete event.ka.agenda;
+    event.en.agenda = '   ';
+    writeFileSync(eventPath, JSON.stringify(event));
     build(root);
     const $ = load(read(join(root, '_site/ka/news/cms-roundtrip/index.html')));
     assert.equal($('main strong').text(), 'Bold text');
@@ -185,6 +191,12 @@ test('CMS-shaped JSON renders Markdown safely, keeps optional News English absen
       '/neo-georgia-website/assets/uploads/probe.svg'
     );
     assert.equal($('header a[hreflang]').attr('href'), '/neo-georgia-website/en/news/');
+    for (const lang of ['ka', 'en']) {
+      const eventPage = load(read(join(root, `_site/${lang}/events/webinar/index.html`)));
+      const strings = JSON.parse(read(`src/_data/${lang}.json`));
+      assert.ok(!eventPage('main dt').toArray().some(el => eventPage(el).text() === strings.agenda));
+      assert.ok(!eventPage('main a').toArray().some(el => eventPage(el).text() === strings.registration));
+    }
     const calls = load(read(join(root, '_site/ka/calls/index.html')));
     assert.equal(calls('[data-call-year]').first().attr('data-call-year'), '2027');
     assert.match($('meta[name=robots]').attr('content'), /noindex/);

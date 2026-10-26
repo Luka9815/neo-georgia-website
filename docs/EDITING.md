@@ -48,7 +48,7 @@ HTML კოდი არ ჩასვათ. ამ ეტაპზე სურ
 - **ღონისძიების ტიპი (Type):** საინფორმაციო დღე, ვებინარი, ტრენინგი, კონფერენცია ან ერაზმუსის დღეები.
 - **ფორმატი (Format):** ონლაინ, ადგილზე ან შერეული.
 - **ორგანიზატორი (Organiser):** ეროვნული ოფისი, EACEA ან პარტნიორი.
-- **რეგისტრაციის ბმული (Registration URL):** სრული, შემოწმებული ბმული, რომელიც იწყება `https://`-ით.
+- **რეგისტრაციის ბმული (Registration URL), არასავალდებულო:** სრული, შემოწმებული ბმული, რომელიც იწყება `https://`-ით.
 - **დაკავშირებული მიმართულებები (Actions):** აირჩიეთ ერთი ან რამდენიმე მიმართულება.
 
 ქართული და ინგლისური ნაწილების ველები:
@@ -56,7 +56,7 @@ HTML კოდი არ ჩასვათ. ამ ეტაპზე სურ
 - **სათაური (Title):** ღონისძიების მოკლე სახელი.
 - **ტექსტი (Body):** აღწერა, ვისთვის ტარდება და რას მოიცავს.
 - **ჩატარების ადგილი (Venue):** მისამართი ან ონლაინ ჩატარების ინფორმაცია.
-- **დღის წესრიგი (Agenda):** შეხვედრის ძირითადი საკითხები და განრიგი.
+- **დღის წესრიგი (Agenda), არასავალდებულო:** შეხვედრის ძირითადი საკითხები და განრიგი.
 
 დროის ცვლილების დღეს ზოგი ადგილობრივი საათი არ არსებობს ან ორჯერ მეორდება. ასეთ შემთხვევაში გამოქვეყნების შემოწმება შეცდომას აჩვენებს. ნუ გამოიცნობთ სწორ დროს; გადაამოწმეთ ორგანიზატორთან და მიმართეთ `[NEO technical contact]`-ს.
 
@@ -80,4 +80,4 @@ HTML კოდი არ ჩასვათ. ამ ეტაპზე სურ
 
 ## English summary
 
-Sign in at app.pagescms.org with GitHub, select Luka9815/neo-georgia-website and main. News needs Georgian title/body, a publication date, a stable ASCII slug and at least one related action; English is optional but must be complete if supplied. Events require both languages, local start/end values in YYYY-MM-DDTHH:mm, a named time zone, the classification fields and a registration link. Never type UTC offsets. Bodies stay Markdown; do not add HTML or images yet. Settings exposes only the current call year. Save starts a deployment on main; publication usually takes about two minutes. For failures contact [NEO technical contact] with the error and entry link. Remove test entries after checking them.
+Sign in at app.pagescms.org with GitHub, select Luka9815/neo-georgia-website and main. News needs Georgian title/body, a publication date, a stable ASCII slug and at least one related action; English is optional but must be complete if supplied. Events require both languages, local start/end values in YYYY-MM-DDTHH:mm, a named time zone, the classification fields and venue. Registration and agenda are optional. Never type UTC offsets. Bodies stay Markdown; do not add HTML or images yet. Settings exposes only the current call year. Save starts a deployment on main; publication usually takes about two minutes. For failures contact [NEO technical contact] with the error and entry link. Remove test entries after checking them.
