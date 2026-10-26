@@ -119,3 +119,6 @@ Supersedes the required-registration/agenda part of "News publication days and e
 
 ## 2026-10-26: Self-hosted Noto for Georgian and Latin
 Resolves the open font choice and replaces system fonts in "Session 1 toolchain and rendering". Choose Noto Sans Georgian plus Noto Sans, normal-width 400/700, subset to Georgian and Latin ranges and self-hosted WOFF2 with font-display: swap. Compared regular text at 16/20/32 px: FiraGO is compact; Noto's open Georgian forms and wider Latin suit readable institutional text with wrapping navigation. Noto's four subsets total 99,184 bytes versus FiraGO's 118,736 for equivalent two-weight coverage, and include Mtavruli missing from the inspected FiraGO release. Both licences are SIL OFL 1.1. Keep original licences, pinned source/checksum manifest and the maintenance subsetting script. See DESIGN.md and the comparison image.
+
+## 2026-10-26: Blue, warm accent and neutral contrast tokens
+Use Erasmus+ inspired #003399 blue, one warm accent and neutrals, without copying EU logos. Define colours as CSS custom properties and test every allowed text/surface combination at 4.5:1 or better, including badges and inverse buttons. Status/source words remain visible so meaning does not depend on colour. DESIGN.md lists the pair rules; decorative borders are not text colours.

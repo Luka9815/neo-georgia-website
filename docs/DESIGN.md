@@ -21,3 +21,9 @@ Sources:
 Exact Noto source revision, source SHA-256 hashes, subset hashes and build-tool versions are in src/assets/fonts/manifest.json. Download those two TTFs from the recorded revision into a scratch folder as NotoSansGeorgian.ttf and NotoSans.ttf. Install the recorded fonttools[woff] and brotli versions outside the checkout, then run `python scripts/subset-fonts.py /path/to/ttfs`. This is a maintenance command, not a dependency of normal builds or CI. Verify source hashes before regenerating and update the manifest after any intentional font upgrade.
 
 CSS registers four local faces with font-display: swap and script-specific unicode-range values. Relative font URLs resolve under both / and the Pages project prefix. No font CSS, CDN or third-party font request is used. Georgia's text never receives text-transform. Native uppercase content is supported without forcing Mtavruli on normal labels. Georgian editorial review of the final type treatment remains a human check.
+
+## Colour system
+
+Primary #003399 and its darker hover shade provide an Erasmus+ inspired institutional blue. One warm accent (#854600, with a pale #fff1d2 surface) and neutral ink, muted text, paper, surface and line tokens complete the palette. No EU emblem or logo has been copied into the design.
+
+All allowed foreground/surface combinations are checked by test/contrast.test.js using WCAG relative luminance and a minimum 4.5:1 even for large text. Ink, muted, blue and accent may appear on paper, surface or accent-soft. Paper and inverse-muted may appear on blue or blue-dark. The lowest tested pair is muted on accent-soft, above 6:1. Line is a decorative divider, not a text colour. Status and source labels use the same palette plus explicit words, so colour does not carry their meaning alone.
