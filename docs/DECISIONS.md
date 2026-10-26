@@ -80,3 +80,11 @@ Use currentCallYear in src/_data/site.js rather than the build clock. The select
 
 ## 2026-10-26: One template per page type
 Replace the conditional src/pages.njk dispatcher with individual templates in src/pages/. Keep language setup and the base wrapper in _includes/page.njk and group the central route list through _data/pageTypes.js. News listing and article have separate templates. Reformat JavaScript and CSS for readability without changing behaviour; compare the generated DOM before and after the refactor.
+## 2026-10-26: GitHub Pages hosting through GitHub Actions
+Supersedes the hosting choice and host-specific routing in "Portable hosting and repeatable checks", and resolves the earlier open Netlify/Cloudflare hosting choice. Host this repository on GitHub Pages using GitHub Actions. Drop Netlify and Cloudflare Pages for now: no extra accounts are needed, and repository ownership carries hosting to ERIDA on transfer (the Pages address and settings must be checked after transfer). Revisit hosting only if proper HTTP 301 redirects for old erasmus.org.ge URLs become essential. Netlify configuration can be restored from git history if it is ever chosen again. The existing repeatable test strategy remains valid.
+
+## 2026-10-26: Build-phase GitHub account and institutional domain
+Supersedes "Accounts registered to an ERIDA/NEO email". During the build, the repository, GitHub Pages hosting and CMS run on Luka's own GitHub account. The domain must be registered to ERIDA, never to an individual. Transfer the repository and its hosting to ERIDA when ready; confirm Pages settings and any custom domain after transfer. This avoids creating extra service accounts during development while preserving institutional domain ownership.
+
+## 2026-10-26: Scheduled rebuild in the Pages deployment workflow
+Supersedes the hook-based daily rebuild plan in "Computed statuses and daily rebuild plan". Run the same GitHub Actions deployment workflow on pushes to main, daily at 04:15 UTC and through workflow_dispatch. Rebuild and deploy directly, without a build hook or a custom secret. Monitor scheduled runs because GitHub disables schedules in public repositories after 60 days without repository activity; re-enable the workflow from Actions when needed.

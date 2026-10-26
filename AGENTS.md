@@ -32,7 +32,7 @@ Read before working: `docs/HANDOVER.md` (current state and next task), `docs/DEC
 | Templates | Nunjucks for layouts and partials; Markdown for body content | Default, change only with a DECISIONS entry |
 | CSS | Plain modern CSS with custom properties. No CSS framework, no Tailwind | Default |
 | JavaScript | None by default. Small progressive-enhancement scripts only where needed (filters, menu). Site must work without JS | Default |
-| Hosting | Netlify or Cloudflare Pages, free tier | To test (session 1) |
+| Hosting | GitHub Pages from this repository, deployed by GitHub Actions | Decided (session 3) |
 | Staff editor (Git CMS) | Decap CMS or Pages CMS | To test |
 | Search | Static index built at build time (Pagefind is the first candidate). Must be tested with Georgian text | To test |
 | Analytics | Privacy-friendly and cookieless (candidates: Cloudflare Web Analytics, GoatCounter) | To choose |
@@ -71,7 +71,7 @@ Hard requirements:
 - Language-independent facts (dates, deadline, links, files, related actions) are stored once per item, not once per language. Only text fields are duplicated per language.
 - The file layout must be editable by the chosen Git CMS (both candidates must be considered until one is chosen) and readable by a non-developer opening the file on GitHub.
 - Call deadlines are stored with an explicit time zone (Europe/Brussels) and shown as Brussels time, labelled as such.
-- Status values (call: upcoming, open, closed; event: upcoming, past) are calculated, never typed in. Because the site is static, status must stay correct between deploys: plan a scheduled daily rebuild (for example a GitHub Actions cron calling the host's build hook) and log the method in DECISIONS.
+- Status values (call: upcoming, open, closed; event: upcoming, past) are calculated, never typed in. Because the site is static, status must stay correct between deploys: use the daily GitHub Actions Pages deployment schedule and log the method in DECISIONS.
 - Every Resource carries a `source` field: `official` (EACEA/EU), `neo` (NEO Georgia guidance) or `partner`, shown visibly on the page, with a link to the original for official items.
 - Every image field requires alt text in both core languages.
 
