@@ -236,3 +236,7 @@ News may have one shared image.src under /assets/uploads and alt.ka, plus alt.en
 
 ## 2026-10-27: Add authorised nominative endings to Georgian search
 Extend “Luka approves Pagefind with a Georgian ending fallback” with Luka's session 14 instruction: append ა and ი last in the single ending list, keeping at least four letters and removing only one longest ending per word. Typed-query results stay first, English remains unchanged, and index/page text is untouched; SEARCH.md records the additional recall column and the measured scope.
+
+
+## 2026-10-27: Keep image alternatives as review-only drafts
+For session 14, place visually grounded Georgian/English alt drafts and image suitability/rights notes only in NEWS-PROMOTION.md. Do not attach images, modify migration review metadata or copy alternatives into News until Luka approves selection and wording; flag text/logo posters and the redundant chart rather than assuming every downloaded image should be used.
