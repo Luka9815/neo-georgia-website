@@ -18,6 +18,50 @@ export function attachmentInventory(items) {
   return [...byUrl.values()];
 }
 
+export function renderDecisions(inventory) {
+  const cell = (value) => '"' + String(value ?? '').replaceAll('"', '""') + '"';
+  const rows = inventory.items
+    .filter((row) => row.slug)
+    .map((row) => [
+      row.slug,
+      '',
+      row.typeCandidate.type,
+      row.suggestedActions.map((action) => action.slug).join(';'),
+      '',
+      '',
+    ]);
+  return (
+    'slug,keep,type,actions,pair_with,notes\n' +
+    rows.map((row) => row.map(cell).join(',')).join('\n') +
+    '\n'
+  );
+}
+
+function summaryTable(items) {
+  return [
+    '## Quick keep/drop review',
+    '',
+    'Edit [decisions.csv](decisions.csv): keep uses y/n, type uses news/event, actions uses semicolon-separated slugs. Pair candidates are proposals; pair_with is blank until Luka confirms. Image alt text still needs review.',
+    '',
+    '| Date | Clean title | Proposed slug | Language | Event candidate | Suggested Actions | Image | Pair candidate |',
+    '|---|---|---|---|---|---|---|---|',
+    ...items
+      .filter((row) => row.slug)
+      .sort((a, b) => b.date.localeCompare(a.date) || a.id - b.id)
+      .map((row) => {
+        const candidates = row.pairCandidates
+          .map((pair) =>
+            pair.kind === 'within-post'
+              ? `within-post (${pair.confidence})`
+              : `WP ${pair.ka === row.id ? pair.en : pair.ka} (${pair.confidence})`
+          )
+          .join('; ');
+        return `| ${row.date} | ${text(row.title)} | [${row.slug}](news/${row.slug}.json) | ${text(row.language.label)} | ${row.typeCandidate.type === 'event' ? 'yes' : 'no'} | ${row.suggestedActions.map((action) => action.slug).join(', ') || 'needs choice'} | ${row.image?.status === 'downloaded' ? `[yes](${row.image.path})` : 'no'} | ${candidates ? 'CANDIDATE ' + candidates : 'none'} |`;
+      }),
+    '',
+  ];
+}
+
 export function renderReport(run, inventory, redirects) {
   const items = inventory.items;
   const assets = attachmentInventory(items);
@@ -26,6 +70,8 @@ export function renderReport(run, inventory, redirects) {
     '',
     'Luka: these are proposals for review. Nothing has been published or copied into src/content/. Do not copy the files into the live content folder before checking language, classification, links, privacy and Actions.',
     '',
+    ...summaryTable(items),
+    ...(run.reviewNotes ? [run.reviewNotes, ''] : []),
     `Run date (UTC): ${run.runDate}. Started: ${run.startedAt}. Finished: ${run.finishedAt}.`,
     '',
     `Exact publication window: **${run.window.startInclusive} inclusive** to **${run.window.endExclusive} exclusive**. Twelve calendar months, not 365 days. The API query has a two-day cushion on each end for WordPress time-zone differences; only date_gmt inside the exact window is converted. The News date keeps the original WordPress local publication day.`,
@@ -51,11 +97,12 @@ export function renderReport(run, inventory, redirects) {
     '',
     `- Sources inside the window, plus sources whose date could not be verified: ${items.length}.`,
     `- News-shaped JSON files: ${run.counts.convertedNews}.`,
-    `- Files with verified English: ${run.counts.withEnglish}.`,
+    `- Drafts stored under en (CANDIDATE): ${run.counts.withEnglish}.`,
     `- Likely Event sources: ${run.counts.eventCandidates}. These remain News-shaped candidates.`,
     `- Failed conversions: ${run.counts.failedConversions}.`,
-    `- Unpaired English or uncertain language sources: ${items.filter((row) => ['unpaired-english', 'needs-language-review'].includes(row.status)).length}.`,
-    `- Unique image/PDF URLs: ${assets.length}. No attachment files were downloaded.`,
+    `- Unpaired English or uncertain language sources: ${items.filter((row) => row.language.needsReview).length}.`,
+    `- Unique image/PDF URLs: ${assets.length}. Other attachments remain metadata only.`,
+    `- Selected image files: ${run.images?.files || 0}; total saved size: ${run.images?.totalFileBytes || 0} bytes; total downloaded over the network: ${run.images?.totalDownloadBytes || 0} bytes (reused URLs fetched once).`,
     `- Duplicate title/body groups: ${inventory.duplicates.length}.`,
     '',
     '## Language finding',
@@ -72,7 +119,7 @@ export function renderReport(run, inventory, redirects) {
     '',
     `Sources without Georgian text or explicit language metadata (possible standalone English): ${run.languages.unclassifiedIds.join(', ') || 'none observed'}. They are listed individually below, not paired by guesswork.`,
     '',
-    'Only explicit REST translation relations with distinct non-Georgian content are paired. Different titles, neighbouring dates, shared categories and duplicated posts do not establish a translation. No translation was generated. Script-based English fields are unapproved candidates; mixed or mismatched title/body text stays under sourceText. All pairing clues, including explicit relations, require manual confirmation.',
+    'Explicit REST relations and heuristic clues are reported as CANDIDATE pairs only. Similar dates or a generic event word alone are insufficient; even strong media/topic/slug clues require manual confirmation. No translation was generated. Script-based English fields are unapproved candidates; mixed or mismatched title/body text stays under sourceText. All pairing clues, including explicit relations, require manual confirmation.',
     '',
     ...run.languages.pairs.map(
       (pair) =>
@@ -82,12 +129,19 @@ export function renderReport(run, inventory, redirects) {
       (warning) => `- Language warning: ${text(warning)}`
     ),
     '',
-    '## CANDIDATE language pairs, not merged', '',
+    '## CANDIDATE language pairs, not merged',
+    '',
     ...(inventory.pairCandidates || []).flatMap((pair) => [
       `- **CANDIDATE** ${pair.kind}: WP ${pair.ka} ↔ WP ${pair.en}. Confidence: ${pair.confidence}. ${text(pair.evidence.join('; '))}. ${text(pair.note)}`,
-    ]), '',
-    '## English-only body sources without a Georgian candidate', '',
-    ...(inventory.englishWithoutCandidate || []).map((id) => `- WP ${id}: ${text(items.find((row) => row.id === id)?.title)}. Review the source language/title; no Georgian translation created.`), '',
+    ]),
+    '',
+    '## English-only body sources without a Georgian candidate',
+    '',
+    ...(inventory.englishWithoutCandidate || []).map(
+      (id) =>
+        `- WP ${id}: ${text(items.find((row) => row.id === id)?.title)}. Review the source language/title; no Georgian translation created.`
+    ),
+    '',
     '## Every item',
     '',
   ];
@@ -116,7 +170,10 @@ export function renderReport(run, inventory, redirects) {
           `  - ${suggestion.slug}: ${evidence.source}, ${text(evidence.match)}.`
         );
     }
-    lines.push('- Attachments:');
+    lines.push(
+      `- Selected image: ${row.image?.status === 'downloaded' ? `[${row.image.path}](${row.image.path}), ${row.image.sizeBytes} bytes, ${row.image.width} × ${row.image.height} px. Source: ${row.image.sourceUrl}. Both alt fields: [ALT NEEDED].` : text(row.image?.reason || 'none selected')}`
+    );
+    lines.push('- Other attachments (listed only):');
     if (!row.attachments.length)
       lines.push(
         '  - None observed in HTML, featured media or media-parent metadata.'
@@ -182,7 +239,7 @@ export function renderReport(run, inventory, redirects) {
     '1. Resolve failed collections first and rerun the manual importer. Archive any review notes before regenerating generated files.',
     '2. Read each title and body against its old URL. Check omitted embeds/tables, email redactions and links. Confirm proposed slugs, duplicate handling and any real English pair.',
     '3. Confirm each suggested Action. An empty actions list is intentional when there is no evidence and blocks publication. Decide whether each Event candidate belongs in News or should later become an Event with verified dates, zone and venue.',
-    '4. Review the attachment inventory, rights, sizes and alt text. Download nothing through this script; a later approved image/document migration needs its own checks.',
+    '4. Review the attachment inventory, rights, sizes and alt text. Only the selected review image was downloaded; all other attachments are listed only. Replace both [ALT NEEDED] fields and review rights before any later image/document promotion.',
     '5. Review redirects.draft.json separately. It is a proposal, not a live redirect configuration. No file is promoted automatically.',
     '',
     'Machine-readable details: run.json (window, requests and failures), inventory.json (every item), attachments.json (shared asset usage). Raw recovery responses are ignored in .cache/ and must not be committed.',
