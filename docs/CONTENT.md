@@ -45,7 +45,7 @@ News uses a documented date field with `options.format: yyyy-MM-dd`. Event date/
 
 Bodies use rich-text with `options.format: markdown` explicitly. Current CMS source sends `getMarkdown()` in that mode, its rich-text field passes that string through, and the JSON serializer writes it as a JSON string. It is not stored as HTML. `markdown-it` keeps `html: false`; tests check Markdown formatting and escaped script text. No HTML-rendering override was added. Rich-text media insertion is disabled until bilingual image alt fields and the responsive image pipeline exist.
 
-The future media library stores files in `src/assets/uploads` and writes `/assets/uploads` paths without a hard-coded project prefix. Eleventy's HTML base plugin adds PATH_PREFIX in generated pages. A copied-site test verifies a Markdown image path under the project prefix. The upload folder is reserved for future image support, not permission to publish unprocessed images now.
+The future media library stores files in `src/assets/uploads` and writes `/assets/uploads` paths without a hard-coded project prefix. Eleventy's HTML base plugin adds PATH_PREFIX in generated pages. A copied-site test verifies a Markdown image path under the project prefix. The upload folder is reserved for future image support, not permission to insert unprocessed body images. Optional News images now use the validated image field described below.
 
 The single-file Settings entry points to settings.json and exposes currentCallYear (an integer from 2000 to 2100) and optional logoPath. `settings.content.merge: true` is necessary: the documented default rewrites schema-only keys and would remove siteLaunched. This preserves unmanaged keys in News/Events too. Repository writers can still edit files directly; CMS field visibility is not a security boundary.
 
@@ -157,3 +157,26 @@ People use group (neo or here), translated title (name), role and body. Team liv
 Contact lives under /about/contact/ and is linked from About and the footer. Address, office hours and email placeholders come from ka.json/en.json. example.org is reserved for examples. There is no form, map embed or third-party asset. Publications and FAQ are linked from Resources; Team, HEREs and Contact are linked from About. The seven top-level destinations are unchanged.
 
 loadContent validates publication, FAQ and person text parity, their classifications, FAQ Action references and publication file existence before rendering. These three types remain JSON-edited; no new hosted CMS collections were added.
+
+
+## Optional News image (session 13)
+
+News may omit image entirely. A supplied image uses a single shared local source path and language-specific alt text:
+
+```json
+"image": {
+  "src": "/assets/uploads/approved-news-photo.jpg",
+  "alt": {
+    "ka": "[SAMPLE] ქართული აღწერა.",
+    "en": "[SAMPLE] English description."
+  }
+}
+```
+
+The path above illustrates the contract; that file is not supplied. Upload an approved local JPG/JPEG, PNG, WebP or AVIF below src/assets/uploads. ASCII filenames may contain letters, digits, underscores and hyphens, including subfolders. Do not include PATH_PREFIX. External URLs, traversal, missing files, unsupported extensions and symlinks outside uploads are rejected. Corrupt or undecodable images stop rendering. Alt text must be non-empty in Georgian, and also in English when the News has an English version. Any supplied [ALT NEEDED] is rejected. Empty optional CMS objects mean no image; partial image objects are validated.
+
+Pages CMS has an optional სურათი (Image) object with a media picker and alt fields. English alt is conditionally required by the build when English News text is present; the CMS marks it optional because Georgian-only News is valid. Rich-text media insertion stays disabled. Keep image path/alt separate from body Markdown.
+
+Only marked News components pass through @11ty/eleventy-img 7.1.1. It generates AVIF and WebP plus JPEG fallback for JPEG sources, otherwise PNG to retain transparency. Width candidates are 320, 640, 960 and 1280 px without enlarging smaller inputs. Generated files are written under the active output directory's assets/generated/news with hash filenames. Both cards and articles have sizes/srcset, intrinsic dimensions and async decoding. Article lead images load eagerly with high fetch priority; card images use lazy loading. CSS keeps aspect ratio. The EU emblem and other images are not processed by this pipeline. Original uploads remain in the static asset tree.
+
+No images have been attached to the five promoted News posts. Each has a downloaded review image in migration/review/images; these files are not approval to publish and still need Luka's selection and bilingual alt text. No review binary or [ALT NEEDED] is copied into the public asset tree. The image integration test uses a synthetic rectangle only in isolated temporary sites.

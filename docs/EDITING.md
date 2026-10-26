@@ -32,6 +32,16 @@
 
 HTML კოდი არ ჩასვათ. ამ ეტაპზე სურათები არ დაამატოთ. სურათების დამატების წესი მოგვიანებით მომზადდება. სურათების საქაღალდე უკვე არსებობს, მაგრამ ეს არ ნიშნავს, რომ სურათები მზად არის გამოსაქვეყნებლად.
 
+## სიახლის სურათი (სურვილისამებრ)
+
+1. სურათის დამატება აუცილებელი არ არის. თუ დამტკიცებული ფაილი არ გაქვთ, „სურათი (Image)“ ცარიელი დატოვეთ.
+2. „სურათის ფაილი (Image file)“ ველში აირჩიეთ ან ატვირთეთ JPG, PNG, WebP ან AVIF ფაილი. გამოიყენეთ მოკლე ლათინური სახელი ჰარების გარეშე. გარე ბმული არ ჩასვათ.
+3. „ქართული აღწერა (Georgian alt text)“ ველში მოკლედ აღწერეთ, რას აჩვენებს სურათი. თუ სიახლეს ინგლისური ვერსიაც აქვს, შეავსეთ „ინგლისური აღწერა (English alt text)“.
+4. `[ALT NEEDED]` არ დატოვოთ. ფაილის სახელი ალტერნატიულ ტექსტს არ ცვლის. ტექსტის ველში სურათი არ ჩასვათ.
+5. შეინახეთ და გამოქვეყნების შემდეგ შეამოწმეთ სიახლის გვერდი და ბარათი ორივე ენაზე. ზომებსა და ფორმატებს საიტი ავტომატურად ამზადებს.
+
+ხუთი გადმოტანილი სიახლის სურათები ჯერ არ დაამატოთ. ლუკამ ჯერ უნდა შეარჩიოს ფაილები და მოგვაწოდოს ალტერნატიული ტექსტი ორივე ენაზე.
+
 ## ახალი ღონისძიება
 
 1. გახსენით „ღონისძიებები (Events)“ და აირჩიეთ ახალი ჩანაწერი.
@@ -80,4 +90,4 @@ HTML კოდი არ ჩასვათ. ამ ეტაპზე სურ
 
 ## English summary
 
-Sign in at app.pagescms.org with GitHub, select Luka9815/neo-georgia-website and main. News needs Georgian title/body, a publication date, a stable ASCII slug and optional related actions (Events need at least one); English is optional but must be complete if supplied. Events require both languages, local start/end values in YYYY-MM-DDTHH:mm, a named time zone, the classification fields and venue. Registration and agenda are optional. Never type UTC offsets. Bodies stay Markdown; do not add HTML or images yet. Settings exposes the call year and optional approved logo path; keep the logo path empty for the text wordmark. Save starts a deployment on main; publication usually takes about two minutes. For failures contact [NEO technical contact] with the error and entry link. Remove test entries after checking them.
+Sign in at app.pagescms.org with GitHub, select Luka9815/neo-georgia-website and main. News needs Georgian title/body, a publication date, a stable ASCII slug and optional related actions (Events need at least one); English is optional but must be complete if supplied. Events require both languages, local start/end values in YYYY-MM-DDTHH:mm, a named time zone, the classification fields and venue. Registration and agenda are optional. Never type UTC offsets. Bodies stay Markdown; do not add HTML or inline images. An optional News image uses the separate Image field and approved alt text. Settings exposes the call year and optional approved logo path; keep the logo path empty for the text wordmark. Save starts a deployment on main; publication usually takes about two minutes. For failures contact [NEO technical contact] with the error and entry link. Remove test entries after checking them.

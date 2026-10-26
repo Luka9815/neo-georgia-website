@@ -71,3 +71,17 @@ test('real Eleventy image builds produce local responsive article/card pictures 
     }
   } finally { rmSync(root, { recursive: true, force: true }); }
 });
+
+import { load as yaml } from 'js-yaml';
+test('CMS offers an optional News-only local image with Georgian-first alt labels', () => {
+  const schema = yaml(readFileSync('.pages.yml', 'utf8'));
+  const news = schema.content.find(item => item.name === 'news');
+  const image = news.fields.find(field => field.name === 'image');
+  assert.equal(image.required, false);
+  assert.match(image.label, /^სურათი/);
+  assert.equal(image.fields.find(field => field.name === 'src').type, 'image');
+  const alt = image.fields.find(field => field.name === 'alt');
+  assert.equal(alt.fields.find(field => field.name === 'ka').required, true);
+  assert.equal(alt.fields.find(field => field.name === 'en').required, false);
+  assert.equal(schema.content.find(item => item.name === 'events').fields.some(field => field.name === 'image'), false);
+});

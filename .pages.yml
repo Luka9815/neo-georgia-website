@@ -64,6 +64,31 @@ content:
               name: youth-mobility
           multiple: true
           min: 1
+      - name: image
+        label: სურათი (Image)
+        type: object
+        required: false
+        description: სურვილისამებრ. გამოიყენეთ მხოლოდ დამტკიცებული სურათი და ალტერნატიული ტექსტი.
+        fields:
+          - name: src
+            label: სურათის ფაილი (Image file)
+            type: image
+            required: true
+            description: ადგილობრივი JPG, PNG, WebP ან AVIF ფაილი uploads საქაღალდეში. ფაილის სახელში გამოიყენეთ ლათინური ასოები, ციფრები და დეფისი.
+          - name: alt
+            label: ალტერნატიული ტექსტი (Alt text)
+            type: object
+            required: true
+            fields:
+              - name: ka
+                label: ქართული აღწერა (Georgian alt text)
+                type: string
+                required: true
+              - name: en
+                label: ინგლისური აღწერა (English alt text)
+                type: string
+                required: false
+                description: აუცილებელია, თუ სიახლეს ინგლისური ვერსია აქვს. არ გამოიყენოთ [ALT NEEDED].
       - name: ka
         label: ქართული (Georgian)
         type: object
