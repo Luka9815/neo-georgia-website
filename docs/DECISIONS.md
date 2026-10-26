@@ -134,3 +134,7 @@ Supersedes the Georgian TODO/approval requirement in "Sample preview safeguards 
 
 ## 2026-10-26: Nine requested Action topics, source review pending
 Resolves the earlier open choice of which Actions to feature: International Credit Mobility, Erasmus Mundus (Joint Masters and Design Measures together), Capacity Building in Higher Education, Jean Monnet Actions, Capacity Building in VET, Capacity Building in Youth, Youth mobility, Virtual Exchanges and Capacity Building in Sport. Eligibility still requires the official 2026 Programme Guide and per-action source comments before replacing samples. The selection itself does not establish Georgian applicant or partner eligibility.
+
+
+## 2026-10-26: Optional approved header logo path
+Extend "Georgian-first shared navigation and components" and the editable-field limit in "CMS settings preserve the launch flag". Keep the current wordmark while logoPath is empty. Expose an optional local /assets/ path in Settings for a future approved image, with language-specific alternative text and aspect-ratio-preserving layout. Validate that a supplied asset exists and let PATH_PREFIX apply at render time. siteLaunched stays code-only. Do not download or reuse the old site's NEO logo.

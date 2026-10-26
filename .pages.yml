@@ -248,3 +248,9 @@ content:
         options:
           min: 2000
           max: 2100
+      - name: logoPath
+        label: ლოგოს ფაილის მისამართი (Logo path)
+        type: string
+        required: false
+        default: ''
+        description: ცარიელი ველი ტოვებს ტექსტურ ლოგოს. მხოლოდ დამტკიცებული /assets/ ფაილი, პროექტის პრეფიქსის გარეშე.

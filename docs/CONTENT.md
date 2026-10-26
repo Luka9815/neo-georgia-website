@@ -31,7 +31,7 @@ Example shape:
 
 ## Current call edition
 
-`src/_data/settings.json` defines `currentCallYear: 2026` and `siteLaunched: false`; `site.js` reads and validates them. Update this setting when NEO changes call edition, not automatically at New Year. The calls page shows the selected edition first, even if empty, followed by all other available years as archives in descending order. Action pages use the same selected edition. The home deadline block remains chronological across editions. The Pages CMS Settings entry exposes only currentCallYear. siteLaunched is not a CMS field and stays maintained in code; settings.content.merge preserves it when saving the year. The 2025 CBHE sample demonstrates archival rendering.
+`src/_data/settings.json` defines `currentCallYear: 2026` and `siteLaunched: false`; `site.js` reads and validates them. Update this setting when NEO changes call edition, not automatically at New Year. The calls page shows the selected edition first, even if empty, followed by all other available years as archives in descending order. Action pages use the same selected edition. The home deadline block remains chronological across editions. The Pages CMS Settings entry exposes currentCallYear and optional logoPath. siteLaunched is not a CMS field and stays maintained in code; settings.content.merge preserves it when saving the year. The 2025 CBHE sample demonstrates archival rendering.
 
 ## Pages CMS configuration and validation
 
@@ -47,7 +47,7 @@ Bodies use rich-text with `options.format: markdown` explicitly. Current CMS sou
 
 The future media library stores files in `src/assets/uploads` and writes `/assets/uploads` paths without a hard-coded project prefix. Eleventy's HTML base plugin adds PATH_PREFIX in generated pages. A copied-site test verifies a Markdown image path under the project prefix. The upload folder is reserved for future image support, not permission to publish unprocessed images now.
 
-The single-file Settings entry points to settings.json and exposes only currentCallYear (an integer from 2000 to 2100). `settings.content.merge: true` is necessary: the documented default rewrites schema-only keys and would remove siteLaunched. This preserves unmanaged keys in News/Events too. Repository writers can still edit files directly; CMS field visibility is not a security boundary.
+The single-file Settings entry points to settings.json and exposes currentCallYear and optional logoPath (an integer from 2000 to 2100). `settings.content.merge: true` is necessary: the documented default rewrites schema-only keys and would remove siteLaunched. This preserves unmanaged keys in News/Events too. Repository writers can still edit files directly; CMS field visibility is not a security boundary.
 
 See the Georgian staff guide in EDITING.md and the hosted sign-in/create/delete test in HANDOVER.md. Source/configuration verification and local JSON/render tests passed; authenticated hosted editing and deployment remain Luka's test after merge.
 
@@ -71,3 +71,8 @@ Sources must end in a slash or .html and use ASCII path segments. Duplicate path
 ## Language policy and migration scope
 
 The language policy page uses a shared policyKey reference to the same translation string as the footer. English prevails in case of discrepancy; Georgian remains the primary interface. Initial old-site News migration is limited to the last twelve months before the agreed export/migration date, which must be recorded with the import. This does not expire archived news automatically. The final domain decision is deferred until the site is built; erasmus.org.ge is likely, while the GitHub Pages URL remains configured.
+
+
+## Header logo setting
+
+logoPath in settings.json defaults to an empty string, which keeps the text wordmark. A non-empty value must point to an existing local image under /assets/, without PATH_PREFIX. Rendering adds the prefix and uses each language's logoAlt text. The image is displayed with object-fit:contain inside a reserved 240x80 box, so its source aspect ratio is preserved. Only use a newly approved logo supplied for this project; no old-site logo has been downloaded or used. siteLaunched remains code-only and CMS merge mode preserves it.

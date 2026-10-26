@@ -84,7 +84,7 @@ test('CMS schema matches JSON collections, local time rules, translations and ac
   assert.equal(settings.path, 'src/_data/settings.json');
   assert.deepEqual(
     settings.fields.map((item) => item.name),
-    ['currentCallYear']
+    ['currentCallYear', 'logoPath']
   );
   assert.equal(config.settings.content.merge, true);
   assert.equal(config.media.input, 'src/assets/uploads');
@@ -173,7 +173,11 @@ test('CMS-shaped JSON renders Markdown safely, keeps optional News English absen
     );
     writeFileSync(
       join(root, 'src/_data/settings.json'),
-      JSON.stringify({ currentCallYear: 2027, siteLaunched: false })
+      JSON.stringify({
+        currentCallYear: 2027,
+        siteLaunched: false,
+        logoPath: '/assets/uploads/probe.svg',
+      })
     );
     const eventPath = join(root, 'src/content/event/webinar.json');
     const event = JSON.parse(read(eventPath));
@@ -192,14 +196,33 @@ test('CMS-shaped JSON renders Markdown safely, keeps optional News English absen
     );
     assert.equal($('header a[hreflang]').attr('href'), '/neo-georgia-website/en/news/');
     for (const lang of ['ka', 'en']) {
-      const eventPage = load(read(join(root, `_site/${lang}/events/webinar/index.html`)));
+      const eventPage = load(
+        read(join(root, `_site/${lang}/events/webinar/index.html`))
+      );
       const strings = JSON.parse(read(`src/_data/${lang}.json`));
-      assert.ok(!eventPage('main dt').toArray().some(el => eventPage(el).text() === strings.agenda));
-      assert.ok(!eventPage('main a').toArray().some(el => eventPage(el).text() === strings.registration));
+      assert.ok(
+        !eventPage('main dt')
+          .toArray()
+          .some((el) => eventPage(el).text() === strings.agenda)
+      );
+      assert.ok(
+        !eventPage('main a')
+          .toArray()
+          .some((el) => eventPage(el).text() === strings.registration)
+      );
     }
     const calls = load(read(join(root, '_site/ka/calls/index.html')));
     assert.equal(calls('[data-call-year]').first().attr('data-call-year'), '2027');
     assert.match($('meta[name=robots]').attr('content'), /noindex/);
+    assert.equal(
+      $('header .brand-image').attr('src'),
+      '/neo-georgia-website/assets/uploads/probe.svg'
+    );
+    assert.equal(
+      $('header .brand-image').attr('alt'),
+      JSON.parse(read('src/_data/ka.json')).logoAlt
+    );
+    assert.equal($('header .brand-name').length, 0);
   } finally {
     rmSync(root, { recursive: true, force: true });
   }
