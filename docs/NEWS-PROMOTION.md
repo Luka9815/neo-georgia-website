@@ -12,14 +12,14 @@ The News type, editor and template do not yet support images. All five omit imag
 
 ## Every body link
 
-The five bodies contain four distinct destinations, repeated in the two Capacity Building language sections. All other promoted bodies have no Markdown links. All four were checked on 2026-10-26 with redirect-following HEAD requests. The environment proxy refused the destination with CONNECT 403, so availability and final destinations are unverified. These are not observed origin HTTP failures. Luka must verify them before merge; none has been dropped or replaced.
+The Capacity Building post linked to four shorturl.at addresses. On 2026-10-27 Claude Code resolved each one (HTTP 302) and replaced it with the direct, parameter-free EU Funding & Tenders topic page, using the topic ID as link text:
 
-| Source label | Retained URL | Result |
+| Source label | Former short URL | Direct topic page |
 |---|---|---|
-| CBHE | https://shorturl.at/KUPQy | Network policy blocked verification |
-| CB VET | https://shorturl.at/euXGT | Network policy blocked verification |
-| CB Youth | https://shorturl.at/c3UWa | Network policy blocked verification |
-| CB Sport | https://shorturl.at/zx4x2 | Network policy blocked verification |
+| CBHE | https://shorturl.at/KUPQy | ERASMUS-EDU-2026-CBHE-REGION-2 |
+| CB VET | https://shorturl.at/euXGT | ERASMUS-EDU-2026-CB-VET-NE |
+| CB Youth | https://shorturl.at/c3UWa | ERASMUS-YOUTH-2026-CB-NE |
+| CB Sport | https://shorturl.at/zx4x2 | ERASMUS-SPORT-2026-CB |
 
 No promoted body links to erasmus.org.ge, Google Drive or Facebook tracking. Legacy source URLs are used only in the five redirect mappings. The old emoji path is decoded for its static output directory; the encoded legacy URL therefore resolves on hosts that decode URL paths. GitHub Pages redirects are meta refresh pages, not HTTP 301 responses. Verify that emoji path on hosted Pages before domain migration.
 

@@ -5,10 +5,15 @@ import MarkdownIt from 'markdown-it';
 const read = path => JSON.parse(readFileSync(path, 'utf8'));
 const slugs = ['europe-day-in-kutaisi', 'announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia', 'neo-dissemination-event-2025', 'eve-statistics', 'information-about-capacity-building-project-proposals'];
 const md = new MarkdownIt();
+// Shortened links resolved to direct EU topic pages on 2026-10-27 (docs/NEWS-PROMOTION.md).
+const topic = 'https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/';
+const direct = { KUPQy: 'ERASMUS-EDU-2026-CBHE-REGION-2', euXGT: 'ERASMUS-EDU-2026-CB-VET-NE', c3UWa: 'ERASMUS-YOUTH-2026-CB-NE', zx4x2: 'ERASMUS-SPORT-2026-CB' };
+const resolve = body => body.replace(/\[https:\/\/shorturl\.at\/(\w+)\]\(https:\/\/shorturl\.at\/\1\)/g, (all, id) => direct[id] ? `[${direct[id]}](${topic}${direct[id]})` : all);
 const links = body => [...body.matchAll(/\]\((https?:\/\/[^)]+)\)/g)].map(m => m[1]).sort();
 test('five approved News splits preserve source wording and every body link', () => {
   for (const slug of slugs) {
     const source = read(`migration/review/news/${slug}.json`);
+    source.sourceText.body = resolve(source.sourceText.body);
     const item = read(`src/content/news/${slug}.json`);
     assert.equal(item.date, source.date);
     assert.ok(!item.image);

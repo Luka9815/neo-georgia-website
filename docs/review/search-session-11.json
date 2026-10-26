@@ -1,0 +1,345 @@
+{
+  "version": "1.5.2",
+  "measuredAt": "2026-10-26T19:58:26.814Z",
+  "method": "One cold local build per layout; application response bytes exclude HTTP headers. Temporary indexes only.",
+  "layouts": [
+    {
+      "prefix": "/",
+      "baselineBuildMs": 726,
+      "indexingMs": 411,
+      "baselineBytes": 919301,
+      "indexBytes": {
+        "ka": 631576,
+        "en": 692120
+      },
+      "firstSearchBytes": {
+        "ka": 192624,
+        "en": 193861
+      },
+      "pageCounts": {
+        "ka": 37,
+        "en": 36
+      },
+      "externalRequests": [],
+      "queries": [
+        {
+          "lang": "ka",
+          "query": "მობილობა",
+          "count": 6,
+          "urls": [
+            "/ka/opportunities/youth-mobility/",
+            "/ka/resources/faq/",
+            "/ka/opportunities/",
+            "/ka/news/neo-dissemination-event-2025/",
+            "/ka/opportunities/icm/",
+            "/ka/news/"
+          ],
+          "family": "მობილობ",
+          "relevant": 9,
+          "missed": [
+            "/ka/",
+            "/ka/news/announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia/",
+            "/ka/news/eve-statistics/"
+          ]
+        },
+        {
+          "lang": "ka",
+          "query": "მობილობ",
+          "count": 9,
+          "urls": [
+            "/ka/opportunities/youth-mobility/",
+            "/ka/resources/faq/",
+            "/ka/opportunities/icm/",
+            "/ka/opportunities/",
+            "/ka/news/neo-dissemination-event-2025/",
+            "/ka/news/",
+            "/ka/news/announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia/",
+            "/ka/news/eve-statistics/",
+            "/ka/"
+          ],
+          "family": "მობილობ",
+          "relevant": 9,
+          "missed": []
+        },
+        {
+          "lang": "ka",
+          "query": "მობილობის",
+          "count": 7,
+          "urls": [
+            "/ka/resources/faq/",
+            "/ka/opportunities/icm/",
+            "/ka/news/neo-dissemination-event-2025/",
+            "/ka/news/",
+            "/ka/news/announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia/",
+            "/ka/news/eve-statistics/",
+            "/ka/opportunities/youth-mobility/"
+          ],
+          "family": "მობილობ",
+          "relevant": 9,
+          "missed": [
+            "/ka/",
+            "/ka/opportunities/"
+          ]
+        },
+        {
+          "lang": "ka",
+          "query": "ერასმუს",
+          "count": 3,
+          "urls": [
+            "/ka/news/europe-day-in-kutaisi/",
+            "/ka/news/neo-dissemination-event-2025/",
+            "/ka/news/"
+          ]
+        },
+        {
+          "lang": "ka",
+          "query": "ერასმუსის",
+          "count": 2,
+          "urls": [
+            "/ka/news/europe-day-in-kutaisi/",
+            "/ka/news/"
+          ]
+        },
+        {
+          "lang": "ka",
+          "query": "თანამშრომლობა",
+          "count": 5,
+          "urls": [
+            "/ka/opportunities/cb-youth/",
+            "/ka/opportunities/erasmus-mundus/",
+            "/ka/opportunities/",
+            "/ka/news/neo-dissemination-event-2025/",
+            "/ka/news/"
+          ],
+          "family": "თანამშრომლობ",
+          "relevant": 7,
+          "missed": [
+            "/ka/news/announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia/",
+            "/ka/news/eve-statistics/"
+          ]
+        },
+        {
+          "lang": "ka",
+          "query": "თანამშრომლობის",
+          "count": 3,
+          "urls": [
+            "/ka/news/neo-dissemination-event-2025/",
+            "/ka/news/eve-statistics/",
+            "/ka/news/"
+          ],
+          "family": "თანამშრომლობ",
+          "relevant": 7,
+          "missed": [
+            "/ka/opportunities/",
+            "/ka/opportunities/cb-youth/",
+            "/ka/opportunities/erasmus-mundus/",
+            "/ka/news/announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia/"
+          ]
+        },
+        {
+          "lang": "ka",
+          "query": "საგანმანათლებლო",
+          "count": 5,
+          "urls": [
+            "/ka/news/announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia/",
+            "/ka/news/",
+            "/ka/news/information-about-capacity-building-project-proposals/",
+            "/ka/news/neo-dissemination-event-2025/",
+            "/ka/news/eve-statistics/"
+          ]
+        },
+        {
+          "lang": "en",
+          "query": "mobility",
+          "count": 9,
+          "urls": [
+            "/en/opportunities/icm/",
+            "/en/opportunities/youth-mobility/",
+            "/en/resources/faq/",
+            "/en/opportunities/",
+            "/en/news/neo-dissemination-event-2025/",
+            "/en/news/announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia/",
+            "/en/news/",
+            "/en/news/eve-statistics/",
+            "/en/"
+          ]
+        },
+        {
+          "lang": "en",
+          "query": "მობილობა",
+          "count": 0,
+          "urls": []
+        }
+      ]
+    },
+    {
+      "prefix": "/neo-georgia-website/",
+      "baselineBuildMs": 865,
+      "indexingMs": 301,
+      "baselineBytes": 964891,
+      "indexBytes": {
+        "ka": 632189,
+        "en": 692572
+      },
+      "firstSearchBytes": {
+        "ka": 192739,
+        "en": 193965
+      },
+      "pageCounts": {
+        "ka": 37,
+        "en": 36
+      },
+      "externalRequests": [],
+      "queries": [
+        {
+          "lang": "ka",
+          "query": "მობილობა",
+          "count": 6,
+          "urls": [
+            "/neo-georgia-website/ka/opportunities/youth-mobility/",
+            "/neo-georgia-website/ka/resources/faq/",
+            "/neo-georgia-website/ka/opportunities/",
+            "/neo-georgia-website/ka/news/neo-dissemination-event-2025/",
+            "/neo-georgia-website/ka/opportunities/icm/",
+            "/neo-georgia-website/ka/news/"
+          ],
+          "family": "მობილობ",
+          "relevant": 9,
+          "missed": [
+            "/neo-georgia-website/ka/",
+            "/neo-georgia-website/ka/news/announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia/",
+            "/neo-georgia-website/ka/news/eve-statistics/"
+          ]
+        },
+        {
+          "lang": "ka",
+          "query": "მობილობ",
+          "count": 9,
+          "urls": [
+            "/neo-georgia-website/ka/opportunities/youth-mobility/",
+            "/neo-georgia-website/ka/resources/faq/",
+            "/neo-georgia-website/ka/opportunities/icm/",
+            "/neo-georgia-website/ka/opportunities/",
+            "/neo-georgia-website/ka/news/neo-dissemination-event-2025/",
+            "/neo-georgia-website/ka/news/",
+            "/neo-georgia-website/ka/news/announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia/",
+            "/neo-georgia-website/ka/news/eve-statistics/",
+            "/neo-georgia-website/ka/"
+          ],
+          "family": "მობილობ",
+          "relevant": 9,
+          "missed": []
+        },
+        {
+          "lang": "ka",
+          "query": "მობილობის",
+          "count": 7,
+          "urls": [
+            "/neo-georgia-website/ka/resources/faq/",
+            "/neo-georgia-website/ka/opportunities/icm/",
+            "/neo-georgia-website/ka/news/neo-dissemination-event-2025/",
+            "/neo-georgia-website/ka/news/",
+            "/neo-georgia-website/ka/news/announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia/",
+            "/neo-georgia-website/ka/news/eve-statistics/",
+            "/neo-georgia-website/ka/opportunities/youth-mobility/"
+          ],
+          "family": "მობილობ",
+          "relevant": 9,
+          "missed": [
+            "/neo-georgia-website/ka/",
+            "/neo-georgia-website/ka/opportunities/"
+          ]
+        },
+        {
+          "lang": "ka",
+          "query": "ერასმუს",
+          "count": 3,
+          "urls": [
+            "/neo-georgia-website/ka/news/europe-day-in-kutaisi/",
+            "/neo-georgia-website/ka/news/neo-dissemination-event-2025/",
+            "/neo-georgia-website/ka/news/"
+          ]
+        },
+        {
+          "lang": "ka",
+          "query": "ერასმუსის",
+          "count": 2,
+          "urls": [
+            "/neo-georgia-website/ka/news/europe-day-in-kutaisi/",
+            "/neo-georgia-website/ka/news/"
+          ]
+        },
+        {
+          "lang": "ka",
+          "query": "თანამშრომლობა",
+          "count": 5,
+          "urls": [
+            "/neo-georgia-website/ka/opportunities/cb-youth/",
+            "/neo-georgia-website/ka/opportunities/erasmus-mundus/",
+            "/neo-georgia-website/ka/opportunities/",
+            "/neo-georgia-website/ka/news/neo-dissemination-event-2025/",
+            "/neo-georgia-website/ka/news/"
+          ],
+          "family": "თანამშრომლობ",
+          "relevant": 7,
+          "missed": [
+            "/neo-georgia-website/ka/news/announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia/",
+            "/neo-georgia-website/ka/news/eve-statistics/"
+          ]
+        },
+        {
+          "lang": "ka",
+          "query": "თანამშრომლობის",
+          "count": 3,
+          "urls": [
+            "/neo-georgia-website/ka/news/neo-dissemination-event-2025/",
+            "/neo-georgia-website/ka/news/eve-statistics/",
+            "/neo-georgia-website/ka/news/"
+          ],
+          "family": "თანამშრომლობ",
+          "relevant": 7,
+          "missed": [
+            "/neo-georgia-website/ka/opportunities/",
+            "/neo-georgia-website/ka/opportunities/cb-youth/",
+            "/neo-georgia-website/ka/opportunities/erasmus-mundus/",
+            "/neo-georgia-website/ka/news/announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia/"
+          ]
+        },
+        {
+          "lang": "ka",
+          "query": "საგანმანათლებლო",
+          "count": 5,
+          "urls": [
+            "/neo-georgia-website/ka/news/announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia/",
+            "/neo-georgia-website/ka/news/",
+            "/neo-georgia-website/ka/news/information-about-capacity-building-project-proposals/",
+            "/neo-georgia-website/ka/news/neo-dissemination-event-2025/",
+            "/neo-georgia-website/ka/news/eve-statistics/"
+          ]
+        },
+        {
+          "lang": "en",
+          "query": "mobility",
+          "count": 9,
+          "urls": [
+            "/neo-georgia-website/en/opportunities/icm/",
+            "/neo-georgia-website/en/opportunities/youth-mobility/",
+            "/neo-georgia-website/en/resources/faq/",
+            "/neo-georgia-website/en/opportunities/",
+            "/neo-georgia-website/en/news/neo-dissemination-event-2025/",
+            "/neo-georgia-website/en/news/announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia/",
+            "/neo-georgia-website/en/news/",
+            "/neo-georgia-website/en/news/eve-statistics/",
+            "/neo-georgia-website/en/"
+          ]
+        },
+        {
+          "lang": "en",
+          "query": "მობილობა",
+          "count": 0,
+          "urls": []
+        }
+      ]
+    }
+  ]
+}
