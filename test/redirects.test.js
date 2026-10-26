@@ -1,8 +1,13 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
-  cpSync, mkdtempSync, readFileSync, writeFileSync, symlinkSync,
-  rmSync, existsSync,
+  cpSync,
+  mkdtempSync,
+  readFileSync,
+  writeFileSync,
+  symlinkSync,
+  rmSync,
+  existsSync,
 } from 'node:fs';
 import { join, resolve } from 'node:path';
 import { tmpdir } from 'node:os';
@@ -15,7 +20,15 @@ test('legacy mappings reject collisions, unsafe paths and unknown targets', () =
   const views = getViews();
   const mapping = { from: '/old-cbhe/', to: '/ka/opportunities/cbhe/' };
   assert.equal(redirectViews(views, [mapping])[0].target, mapping.to);
-  for (const from of ['/', '/ka/', '/ka/index.html', '/404.html', '/bad/../path/', '//evil/', '/old/?id=1']) {
+  for (const from of [
+    '/',
+    '/ka/',
+    '/ka/index.html',
+    '/404.html',
+    '/bad/../path/',
+    '//evil/',
+    '/old/?id=1',
+  ]) {
     assert.throws(() => redirectViews(views, [{ ...mapping, from }]), /colliding/);
   }
   assert.throws(() => redirectViews(views, [mapping, mapping]), /colliding/);
@@ -44,15 +57,26 @@ test('legacy stub renders with a prefixed refresh, canonical and working visible
     });
     const $ = load(readFileSync(join(root, '_site/old-cbhe/index.html'), 'utf8'));
     const target = '/neo-georgia-website/ka/opportunities/cbhe/';
-    assert.equal($('meta[http-equiv=refresh]').attr('content').replace(/\s/g, ''), `0;url=${target}`);
-    assert.equal($('link[rel=canonical]').attr('href'), `https://luka9815.github.io${target}`);
+    assert.equal(
+      $('meta[http-equiv=refresh]').attr('content').replace(/\s/g, ''),
+      `0;url=${target}`
+    );
+    assert.equal(
+      $('link[rel=canonical]').attr('href'),
+      `https://luka9815.github.io${target}`
+    );
     assert.equal($('main a').first().attr('href'), target);
     assert.ok(existsSync(join(root, '_site/.nojekyll')));
 
     // Exercise the launch switch in an isolated copy, never in tracked files.
-    const settingsPath = join(root, 'src/_data/site.js');
-    writeFileSync(settingsPath, readFileSync(settingsPath, 'utf8')
-      .replace('siteLaunched: false', 'siteLaunched: true'));
+    const settingsPath = join(root, 'src/_data/settings.json');
+    writeFileSync(
+      settingsPath,
+      readFileSync(settingsPath, 'utf8').replace(
+        '"siteLaunched": false',
+        '"siteLaunched": true'
+      )
+    );
     execFileSync(process.execPath, ['node_modules/@11ty/eleventy/cmd.cjs'], {
       cwd: root,
       env: {
@@ -65,7 +89,10 @@ test('legacy stub renders with a prefixed refresh, canonical and working visible
     const home = load(readFileSync(join(root, '_site/ka/index.html'), 'utf8'));
     assert.equal(home('meta[name=robots]').length, 0);
     assert.match(readFileSync(join(root, '_site/robots.txt'), 'utf8'), /Allow: \//);
-    assert.doesNotMatch(readFileSync(join(root, '_site/robots.txt'), 'utf8'), /Disallow:/);
+    assert.doesNotMatch(
+      readFileSync(join(root, '_site/robots.txt'), 'utf8'),
+      /Disallow:/
+    );
     for (const path of ['index.html', '404.html', 'old-cbhe/index.html']) {
       const document = load(readFileSync(join(root, '_site', path), 'utf8'));
       assert.match(document('meta[name=robots]').attr('content'), /noindex/);
