@@ -1,11 +1,12 @@
 #!/usr/bin/env node
 // Manual dry run only. Nothing here is imported by the site build or tests.
-import { mkdirSync, writeFileSync, existsSync, realpathSync } from 'node:fs';
+import { mkdirSync, writeFileSync, existsSync, realpathSync, readdirSync, unlinkSync } from 'node:fs';
 import { resolve, dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { Temporal } from '@js-temporal/polyfill';
 import { createClient, oldSite } from './wp/client.js';
 import { languageFindings, translationIds } from './wp/languages.js';
+import { convertPosts } from './wp/convert.js';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 export const reviewDirectory = join(root, 'migration/review');
@@ -84,13 +85,38 @@ async function main() {
     if (result.error) run.failures.push({ collection: name, message: result.error });
   }
   run.languages = languageFindings(collections);
+  const reserved = readdirSync(join(root, 'src/content/news'))
+    .filter((file) => file.endsWith('.json')).map((file) => file.slice(0, -5));
+  const converted = convertPosts(collections, run, reserved);
+  // Remove only our previous generated News files after collecting the new run.
+  const newsDirectory = join(reviewDirectory, 'news');
+  mkdirSync(newsDirectory, { recursive: true });
+  if (realpathSync(newsDirectory) !== newsDirectory) throw new Error('Refusing symlinked News output');
+  for (const file of readdirSync(newsDirectory).filter((name) => name.endsWith('.json'))) {
+    unlinkSync(join(newsDirectory, file));
+  }
+  for (const row of converted.results) {
+    if (row.news) writeReview(`news/${row.slug}.json`, row.news);
+  }
+  const inventory = {
+    items: converted.results.map(({ news, ...row }) => row),
+    duplicates: converted.duplicates,
+  };
+  writeReview('inventory.json', inventory);
+  run.counts = {
+    inWindow: inventory.items.length,
+    convertedNews: converted.results.filter((row) => row.news).length,
+    withEnglish: converted.results.filter((row) => row.news?.en).length,
+    eventCandidates: inventory.items.filter((row) => row.typeCandidate?.type === 'event').length,
+    failedConversions: inventory.items.filter((row) => row.status === 'failed').length,
+  };
   run.finishedAt = new Date().toISOString();
   writeReview('run.json', run);
   // Local recovery snapshot, deliberately ignored by git. Only sanitised review
   // files should be committed; public source HTML may contain personal emails.
   writeReview('.cache/source.json', collections);
   console.log(`Recorded ${run.failures.length} failed collection(s). Output: migration/review/`);
-  if (run.failures.length) process.exitCode = 1;
+  if (run.failures.length || run.counts.failedConversions) process.exitCode = 1;
 }
 
 if (resolve(process.argv[1] || '') === fileURLToPath(import.meta.url)) {

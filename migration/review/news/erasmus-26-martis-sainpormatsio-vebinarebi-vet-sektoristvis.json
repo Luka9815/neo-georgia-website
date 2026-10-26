@@ -1,0 +1,121 @@
+{
+  "slug": "erasmus-26-martis-sainpormatsio-vebinarebi-vet-sektoristvis",
+  "date": "2026-03-25",
+  "actions": [],
+  "ka": {
+    "title": "📣 Erasmus+ 26 მარტის საინფორმაციო ვებინარები VET სექტორისთვის",
+    "body": "{25.03.2026}\n\n📣 **Erasmus+ საინფორმაციო ვებინარები VET სექტორისთვის**\n\nგაცნობებთ, რომ Erasmus+-ის ეროვნული ოფისი საქართველოში 2026 წლის **26 მარტს** ორგანიზებას უწევს ონლაინ შეხვედრებს პროფესიული განათლებისა და ტრეინინგების (VET) სექტორში მოქმედი ორგანიზაციებისთვის. ვებინარი ასევე განკუთვნილია უნივერსიტეტებისთვის, რომელთა ქვეშაც ფუნქციონირებენ VET ორგანიზაციები. \n\nდასწრებისთვის აუცილებელია რეგისტრაცია 👇\n\n🔹 **I ვებინარი** – ახალბედა VET ორგანიზაციების მხარდაჭერა: რა არის Erasmus+ პროგრამა და მისი პრიორიტეტები?  \n📅 თარიღი: 26 მარტი, 2026  \n⏰ დრო: 11:00 – 11:30  \n💻 ფორმატი: ონლაინ (Google Meet)  \n🔗 რეგისტრაცია: [https://forms.gle/gYtLWUbdBemTrkAn8](https://forms.gle/gYtLWUbdBemTrkAn8)\n\n🔹 **II ვებინარი** – პარტნიორების მოძიება და Erasmus+ რესურსების გამოყენება VET-ებისთვის  \n📅 თარიღი: 26 მარტი, 2026  \n⏰ დრო: 11:30 – 12:15  \n💻 ფორმატი: ონლაინ (Google Meet)  \n🔗 რეგისტრაცია: [https://forms.gle/ERbNBhXsM3sPp9Z18](https://forms.gle/ERbNBhXsM3sPp9Z18)"
+  },
+  "legacy": {
+    "id": 35827,
+    "slug": "%f0%9f%93%a3-erasmus-26-%e1%83%9b%e1%83%90%e1%83%a0%e1%83%a2%e1%83%98%e1%83%a1-%e1%83%a1%e1%83%90%e1%83%98%e1%83%9c%e1%83%a4%e1%83%9d%e1%83%a0%e1%83%9b%e1%83%90%e1%83%aa%e1%83%98%e1%83%9d-%e1%83%95",
+    "url": "https://erasmus.org.ge/%f0%9f%93%a3-erasmus-26-%e1%83%9b%e1%83%90%e1%83%a0%e1%83%a2%e1%83%98%e1%83%a1-%e1%83%a1%e1%83%90%e1%83%98%e1%83%9c%e1%83%a4%e1%83%9d%e1%83%a0%e1%83%9b%e1%83%90%e1%83%aa%e1%83%98%e1%83%9d-%e1%83%95/"
+  },
+  "migration": {
+    "status": "unreviewed",
+    "actionsStatus": "suggested",
+    "suggestedActions": [],
+    "typeCandidate": {
+      "type": "event",
+      "evidence": [
+        "ვებინარ",
+        "25.03.2026"
+      ]
+    },
+    "attachments": [
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-25-at-16.35.23-768x644.jpeg",
+        "type": "image",
+        "sizeBytes": 80723,
+        "alt": "",
+        "mediaId": 35829,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "inline-image"
+          },
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          35827
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-25-at-16.35.23-300x251.jpeg",
+        "type": "image",
+        "sizeBytes": 17477,
+        "alt": "",
+        "mediaId": 35829,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          35827
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-25-at-16.35.23-1024x858.jpeg",
+        "type": "image",
+        "sizeBytes": 126655,
+        "alt": "",
+        "mediaId": 35829,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          35827
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-25-at-16.35.23-1536x1287.jpeg",
+        "type": "image",
+        "sizeBytes": 240525,
+        "alt": "",
+        "mediaId": 35829,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          35827
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-25-at-16.35.23.jpeg",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "",
+        "mediaId": 35829,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          },
+          {
+            "language": "shared",
+            "relationship": "attached-to-post"
+          }
+        ],
+        "usedBy": [
+          35827
+        ]
+      }
+    ],
+    "warnings": [
+      "Images listed separately and omitted from Markdown; no files downloaded.",
+      "No Action matched. actions is empty; an editor must select a real Action before publication.",
+      "Possible Event: kept as a News-shaped review file, not converted to an Event."
+    ]
+  }
+}

@@ -1,0 +1,201 @@
+{
+  "slug": "erasmus-is-erovnuli-opisi-sakartveloshi-gitsvevt-vebinareb-2",
+  "date": "2025-11-24",
+  "actions": [],
+  "ka": {
+    "title": "Erasmus+-ის ეროვნული ოფისი საქართველოში გიწვევთ ვებინარებზე 1-ლ დეკემბერს",
+    "body": "{24.11.2025}\n\n\\[For English, Scroll Down\\]\n\n📣Erasmus+-ის ეროვნული ოფისი საქართველოში გიწვევთ ვებინარებზე 1-ლ დეკემბერს\n\n**ვებინარი N1: შესაძლებლობების გაძლიერება სპორტის სექტორში**  \nთარიღი და დრო: 1-ლი დეკემბერი, 13:15-14:15  \nპლატფორმა: Google Meet  \n🔗სარეგისტრაციო ბმული: [https://forms.gle/2UNT11H5Kz46QWEq8](https://forms.gle/2UNT11H5Kz46QWEq8)\n\n**ვებინარი N2: შესაძლებლობების გაძლიერება ახალგაზრდულ სექტორში**  \nთარიღი და დრო: 1-ლი დეკემბერი, 14:30-15:30  \nპლატფორმა: Google Meet  \n🔗სარეგისტრაციო ბმული: [https://forms.gle/dHswBkxRzpiynh9F9](https://forms.gle/dHswBkxRzpiynh9F9)\n\n**ENG**\n\n📣The National Erasmus+ Office in Georgia invites you to the webinars on December 1st  \n**Webinar N1: CB Sport**  \nDate and time: December 1, 13:15-14:15  \nPlatform: Google Meet  \n🔗Registration link: [https://forms.gle/2UNT11H5Kz46QWEq8](https://forms.gle/2UNT11H5Kz46QWEq8)\n\n**Webinar N2: CB Youth**  \nDate and time: December 1, 14:30-15:30  \nPlatform: Google Meet  \n🔗Registration link: [https://forms.gle/dHswBkxRzpiynh9F9](https://forms.gle/dHswBkxRzpiynh9F9)"
+  },
+  "legacy": {
+    "id": 35068,
+    "slug": "december-1st-webinars-cb-youth-cb-sport",
+    "url": "https://erasmus.org.ge/december-1st-webinars-cb-youth-cb-sport/"
+  },
+  "migration": {
+    "status": "unreviewed",
+    "actionsStatus": "suggested",
+    "suggestedActions": [],
+    "typeCandidate": {
+      "type": "event",
+      "evidence": [
+        "ვებინარ",
+        "24.11.2025"
+      ]
+    },
+    "attachments": [
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/11/87-1024x1024.png",
+        "type": "image",
+        "sizeBytes": 452101,
+        "alt": "",
+        "mediaId": 35073,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "inline-image"
+          },
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          35068
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/11/87-300x300.png",
+        "type": "image",
+        "sizeBytes": 50191,
+        "alt": "",
+        "mediaId": 35073,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          35068
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/11/87-150x150.png",
+        "type": "image",
+        "sizeBytes": 16086,
+        "alt": "",
+        "mediaId": 35073,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          35068
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/11/87-768x768.png",
+        "type": "image",
+        "sizeBytes": 265855,
+        "alt": "",
+        "mediaId": 35073,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          35068
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/11/87.png",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "",
+        "mediaId": 35073,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          35068
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/11/88-1024x1024.png",
+        "type": "image",
+        "sizeBytes": 418185,
+        "alt": "",
+        "mediaId": 35074,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "inline-image"
+          },
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          35068
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/11/88-300x300.png",
+        "type": "image",
+        "sizeBytes": 49771,
+        "alt": "",
+        "mediaId": 35074,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          35068
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/11/88-150x150.png",
+        "type": "image",
+        "sizeBytes": 16568,
+        "alt": "",
+        "mediaId": 35074,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          35068
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/11/88-768x768.png",
+        "type": "image",
+        "sizeBytes": 248756,
+        "alt": "",
+        "mediaId": 35074,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          35068
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/11/88.png",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "",
+        "mediaId": 35074,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          35068
+        ]
+      }
+    ],
+    "warnings": [
+      "Images listed separately and omitted from Markdown; no files downloaded.",
+      "No Action matched. actions is empty; an editor must select a real Action before publication.",
+      "Possible Event: kept as a News-shaped review file, not converted to an Event."
+    ]
+  }
+}

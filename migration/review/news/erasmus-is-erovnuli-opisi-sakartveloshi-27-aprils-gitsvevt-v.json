@@ -1,0 +1,89 @@
+{
+  "slug": "erasmus-is-erovnuli-opisi-sakartveloshi-27-aprils-gitsvevt-v",
+  "date": "2026-04-22",
+  "actions": [],
+  "ka": {
+    "title": "📣 Erasmus+-ის ეროვნული ოფისი საქართველოში 27 აპრილს გიწვევთ ვებინარებზე: მობილობა ახალგაზრდული მუშაკებისთვის",
+    "body": "{22.04.2026}\n\nℹ️ ვებინარი ‘**’მობილობა ახალგაზრდული მუშაკებისთვის’’** დამსწრეებს ინფორმაციას მიაწვდის Erasmus+ პროგრამის ფარგლებში არსებული მობილობის შესაძლებლობების შესახებ ახალგაზრდული მუშაკებისთვის. მათ შორის, აქტივობების მთავარი ტიპებისა და მიზნების შესახებ. ვებინარზე განხილულ საკითხებს შორის იქნება: \n\n-   შესაბამისობის კრიტერიუმები;\n-   დაფინანსების მიღების კრიტერიუმები;\n-   ხსენებული პროექტების ზოგადი დაფინანსების სტრუქტურა;\n\nგანსაკუთრებული ყურადღება დაეთმობა ქართული ორგანიზაციების მონაწილეობის წესებს.\n\n**შენიშვნა:**  ქართულ ორგანიზაციებს არ შეუძლიათ მონაწილეობის მიღება კოორდინატორის სტატუსით, თუმცა შესაძლებელია იყვნენ პარტნიორები ამგვარ პროექტებში. \n\n**დედლაინი:** 1-ლი ოქტომბერი, 12 საათი (ბრიუსელის დროით)\n\n📅 თარიღი: 27 აპრილი, 2026\n\n💻 ფორმატი: ონლაინ (Google Meet პლატფორმა)\n\n⏰ დრო: 11:00-12:00\n\n**სარეგისტრაციო ბმული:** [https://forms.gle/Pc53tyX84TjKLaD47](https://forms.gle/Pc53tyX84TjKLaD47)"
+  },
+  "legacy": {
+    "id": 35972,
+    "slug": "27-april-webinar-mobility-for-youth-workers",
+    "url": "https://erasmus.org.ge/27-april-webinar-mobility-for-youth-workers/"
+  },
+  "migration": {
+    "status": "unreviewed",
+    "actionsStatus": "suggested",
+    "suggestedActions": [],
+    "typeCandidate": {
+      "type": "event",
+      "evidence": [
+        "ვებინარ",
+        "22.04.2026"
+      ]
+    },
+    "attachments": [
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/04/Social-Media-Posts-Template-6-768x644.png",
+        "type": "image",
+        "sizeBytes": 530109,
+        "alt": "",
+        "mediaId": 35975,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "inline-image"
+          },
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          35972
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/04/Social-Media-Posts-Template-6-300x251.png",
+        "type": "image",
+        "sizeBytes": 98822,
+        "alt": "",
+        "mediaId": 35975,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          35972
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/04/Social-Media-Posts-Template-6.png",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "",
+        "mediaId": 35975,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          },
+          {
+            "language": "shared",
+            "relationship": "attached-to-post"
+          }
+        ],
+        "usedBy": [
+          35972
+        ]
+      }
+    ],
+    "warnings": [
+      "Images listed separately and omitted from Markdown; no files downloaded.",
+      "No Action matched. actions is empty; an editor must select a real Action before publication.",
+      "Possible Event: kept as a News-shaped review file, not converted to an Event."
+    ]
+  }
+}

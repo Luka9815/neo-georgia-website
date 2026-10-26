@@ -1,0 +1,77 @@
+{
+  "slug": "erasmus-is-erovnuli-opisi-sakartveloshi-gitsvevt-vebinarze-2",
+  "date": "2025-11-18",
+  "actions": [
+    "jean-monnet"
+  ],
+  "ka": {
+    "title": "📣Erasmus+-ის ეროვნული ოფისი საქართველოში გიწვევთ ვებინარზე 27 ნოემბერს!",
+    "body": "{18.11.2025}\n\n\\[For English, Scroll down\\]\n\n**📣Erasmus+-ის ეროვნული ოფისი საქართველოში გიწვევთ ვებინარზე 27 ნოემბერს!**\n\n**ვებინარი:** ჟან მონეს პროგრამის განხილვა\n\n**თარიღი და დრო:** 27 ნოემბერი, 12:00-13:00 PM\n\n**შეხვედრის ენა:** ქართული\n\n**პლატფორმა:** Google Meet\n\n**🔗სარეგისტრაციო ბმული:** [**https://forms.gle/VER8wjFbhygbbRhBA**](https://forms.gle/VER8wjFbhygbbRhBA) \n\n**ENG**\n\n**📣The National Erasmus+Office in Georgia invites you to the Webinar on November 27**\n\n**Webinar:** Jean Monnet Programme Overview\n\n**Date and time:** November 27, 12:00-13:00 PM\n\n**Language:** Georgian\n\n**Platform:** Google Meet\n\n**🔗Registration link:** [**https://forms.gle/VER8wjFbhygbbRhBA**](https://forms.gle/VER8wjFbhygbbRhBA)"
+  },
+  "legacy": {
+    "id": 34934,
+    "slug": "november-27-jean-monnet-webinar",
+    "url": "https://erasmus.org.ge/november-27-jean-monnet-webinar/"
+  },
+  "migration": {
+    "status": "unreviewed",
+    "actionsStatus": "suggested",
+    "suggestedActions": [
+      {
+        "slug": "jean-monnet",
+        "status": "suggested",
+        "evidence": [
+          {
+            "source": "body",
+            "match": "ჟან მონე"
+          }
+        ]
+      }
+    ],
+    "typeCandidate": {
+      "type": "event",
+      "evidence": [
+        "ვებინარ",
+        "18.11.2025"
+      ]
+    },
+    "attachments": [
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/elementor/thumbs/81-rqcq8017alceqjpn66qohgodf1pm5m5f6jibs1ypvs.png",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "81",
+        "mediaId": null,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "inline-image"
+          }
+        ],
+        "usedBy": [
+          34934
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2025/11/81.png",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "",
+        "mediaId": 34938,
+        "uses": [
+          {
+            "language": "shared",
+            "relationship": "attached-to-post"
+          }
+        ],
+        "usedBy": [
+          34934
+        ]
+      }
+    ],
+    "warnings": [
+      "Images listed separately and omitted from Markdown; no files downloaded.",
+      "Possible Event: kept as a News-shaped review file, not converted to an Event."
+    ]
+  }
+}

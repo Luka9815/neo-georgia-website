@@ -1,0 +1,121 @@
+{
+  "slug": "saertashoriso-onlain-konperentsia-dialogis-sivrtse-inkluziur",
+  "date": "2026-06-18",
+  "actions": [],
+  "ka": {
+    "title": "📣 საერთაშორისო ონლაინ კონფერენცია: „დიალოგის სივრცე – ინკლუზიურობა და ხელმისაწვდომობა Erasmus+ ფარგლებში“",
+    "body": "{18.06.2026}\n\nℹ️ 3 ივლისს, Erasmus+-ის ეროვნული ოფისი საქართველოში, ონლაინ ფორმატში უმასპინძლებს საერთაშორისო კონფერენციას ‘’დიალოგის სივრცე – ინკლუზიურობა და ხელმისაწვდომობა, Erasmus+ პროგრამის ფარგლებში’’.\n\n**დეტალები:**\n\n📅 **თარიღი:** 3 ივლისი\n\n🕐 **დრო:** 13:00 – 15:25 (საქართველოს დროით)\n\n💻 **ფორმატი:** ონლაინ\n\n🗣️ **სამუშაო ენა:** ინგლისური\n\nინკლუზია და მრავალფეროვნება Erasmus+ პროგრამის ერთ-ერთი მთავარი პრიორიტეტია. კონფერენციის მიზანია განიხილოს, თუ როგორ არის შესაძლებელი Erasmus+ პროგრამის შესაძლებლობების ხელმისაწვდომობის გაზრდა და ინკლუზიური ჩართულობის უზრუნველყოფა პროგრამის ბენეფიციარებისთვის.\n\nკონფერენციაზე ექსპერტებად მოწვეული არიან ევროკავშირის ქვეყნების Erasmus+-ის ეროვნული სააგენტოების წარმომადგენლები, რაც დამსწრეებს საშუალება მისცემს, გაეცნონ ევროკავშირში არსებულ სტანდარტებს, ეროვნული სააგენტოების მოლოდინებსა და მიდგომებს ინკლუზიისა და მრავალფეროვნების უზრუნველსაყოფად. კონფერენციაზე განხილულ საკითხთა შორის იქნება: \n\n🔹ევროკავშირის ეროვნული სააგენტოების მოლოდინები შერჩევის პროცესში  სამართლიანობის უზრუნველსაყოფად;\n\n🔹პროექტების განხორციელების პროცესში  ინკლუზიურობის მონიტორინგისა და შეფასების მექანიზმები; \n\n⚠️ ღონისძიებაზე **დასასწრებად აუცილებელია რეგისტრაციის გავლა** \n\n👉 გაიარეთ რეგისტრაცია 29 ივნისის ჩათვლით მოცემულ ბმულზე: [https://forms.gle/yv2WkST8nrhMFMEA6](https://forms.gle/yv2WkST8nrhMFMEA6)\n\nდამატებით ინფორმაციას მიიღებთ რეგისტრაციის შემდეგ!"
+  },
+  "legacy": {
+    "id": 36103,
+    "slug": "%f0%9f%93%a3-%e1%83%a1%e1%83%90%e1%83%94%e1%83%a0%e1%83%97%e1%83%90%e1%83%a8%e1%83%9d%e1%83%a0%e1%83%98%e1%83%a1%e1%83%9d-%e1%83%9d%e1%83%9c%e1%83%9a%e1%83%90%e1%83%98%e1%83%9c-%e1%83%99%e1%83%9d",
+    "url": "https://erasmus.org.ge/%f0%9f%93%a3-%e1%83%a1%e1%83%90%e1%83%94%e1%83%a0%e1%83%97%e1%83%90%e1%83%a8%e1%83%9d%e1%83%a0%e1%83%98%e1%83%a1%e1%83%9d-%e1%83%9d%e1%83%9c%e1%83%9a%e1%83%90%e1%83%98%e1%83%9c-%e1%83%99%e1%83%9d/"
+  },
+  "migration": {
+    "status": "unreviewed",
+    "actionsStatus": "suggested",
+    "suggestedActions": [],
+    "typeCandidate": {
+      "type": "event",
+      "evidence": [
+        "კონფერენც",
+        "18.06.2026"
+      ]
+    },
+    "attachments": [
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/06/ChatGPT-Image-Jun-18-2026-at-01_08_29-PM-1024x1024.png",
+        "type": "image",
+        "sizeBytes": 713976,
+        "alt": "",
+        "mediaId": 36106,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "inline-image"
+          },
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          36103
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/06/ChatGPT-Image-Jun-18-2026-at-01_08_29-PM-300x300.png",
+        "type": "image",
+        "sizeBytes": 77947,
+        "alt": "",
+        "mediaId": 36106,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          36103
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/06/ChatGPT-Image-Jun-18-2026-at-01_08_29-PM-150x150.png",
+        "type": "image",
+        "sizeBytes": 20415,
+        "alt": "",
+        "mediaId": 36106,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          36103
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/06/ChatGPT-Image-Jun-18-2026-at-01_08_29-PM-768x768.png",
+        "type": "image",
+        "sizeBytes": 435194,
+        "alt": "",
+        "mediaId": 36106,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          36103
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/06/ChatGPT-Image-Jun-18-2026-at-01_08_29-PM.png",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "",
+        "mediaId": 36106,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          },
+          {
+            "language": "shared",
+            "relationship": "attached-to-post"
+          }
+        ],
+        "usedBy": [
+          36103
+        ]
+      }
+    ],
+    "warnings": [
+      "Images listed separately and omitted from Markdown; no files downloaded.",
+      "No Action matched. actions is empty; an editor must select a real Action before publication.",
+      "Possible Event: kept as a News-shaped review file, not converted to an Event."
+    ]
+  }
+}

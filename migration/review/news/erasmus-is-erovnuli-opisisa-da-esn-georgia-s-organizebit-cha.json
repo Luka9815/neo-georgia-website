@@ -1,0 +1,424 @@
+{
+  "slug": "erasmus-is-erovnuli-opisisa-da-esn-georgia-s-organizebit-cha",
+  "date": "2026-04-15",
+  "actions": [
+    "icm",
+    "erasmus-mundus"
+  ],
+  "ka": {
+    "title": "📣 Erasmus+-ის ეროვნული ოფისისა და ESN Georgia-ს ორგანიზებით, ჩატარდა ვებინარები სტუდენტებისა და ახალგაზრდებისთვის!",
+    "body": "{15.04.2026}\n\n Erasmus+-ის ეროვნული ოფისისა და ESN Georgia-ს ორგანიზებით, ჩატარდა ვებინარები სტუდენტებისა და ახალგაზრდებისთვის!\n\n✔️ ვებინარებს დაესწრო 80-მდე ახალგაზრდა, საქართველოს სხვადასხვა რეგიონიდან. \n\nℹ️ 6 აპრილს, Erasmus+-ის ეროვნული ოფისისა და ESN-ის კოლაბორაციით, გაიმართა ვებინარები სტუდენტებისა და ახალგაზრდებისთვის. ვებინარები მიზნად ისახავდა Erasmus+ პროგრამის არსებული შესაძლებლობების განხილვას ახალგაზრდული სექტორისთვის. დამსწრეებს მიეწოდათ პრაქტიკული რჩევები მონაწილეობასთან დაკავშირებულ პროცედურებზე და მოისმინეს მობილობის გამოცდილებების შესახებ. სესიებზე განხილულ იქნა შემდეგი თემები:\n\n-   საერთაშორისო კრედიტების მობილობა (ICM);\n-   Erasmus მუნდუსის საერთო სამაგისტრო პროგრამა (EMJM);\n-   მოკლევადიანი მობილობის შესაძლებლობები;\n-   თანამშრომელთა მობილობა;\n-   ESN Georgia-ს მოხალისეების პირადი გამოცდილების გაზიარება, რაც მოიცავდა აპლიკაციის შევსების პროცედურის თავისებურებებისა და გაცვლითი პროგრამის ძირითადი პროცესების განხილვას.\n\nმადლობას ვუხდით ESN Georgia-ს გუნდს კოლაბორაციისთვის!"
+  },
+  "legacy": {
+    "id": 35942,
+    "slug": "neo-esn-webinars",
+    "url": "https://erasmus.org.ge/neo-esn-webinars/"
+  },
+  "migration": {
+    "status": "unreviewed",
+    "actionsStatus": "suggested",
+    "suggestedActions": [
+      {
+        "slug": "icm",
+        "status": "suggested",
+        "evidence": [
+          {
+            "source": "body",
+            "match": "ICM"
+          }
+        ]
+      },
+      {
+        "slug": "erasmus-mundus",
+        "status": "suggested",
+        "evidence": [
+          {
+            "source": "body",
+            "match": "EMJM"
+          }
+        ]
+      }
+    ],
+    "typeCandidate": {
+      "type": "event",
+      "evidence": [
+        "ვებინარ",
+        "15.04.2026"
+      ]
+    },
+    "attachments": [
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/04/Untitled-Facebook-Post-11-1024x858.png",
+        "type": "image",
+        "sizeBytes": 828141,
+        "alt": "",
+        "mediaId": 35945,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "inline-image"
+          },
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          35942
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/04/Untitled-Facebook-Post-11-300x252.png",
+        "type": "image",
+        "sizeBytes": 109042,
+        "alt": "",
+        "mediaId": 35945,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          35942
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/04/Untitled-Facebook-Post-11-768x644.png",
+        "type": "image",
+        "sizeBytes": 519713,
+        "alt": "",
+        "mediaId": 35945,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          35942
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/04/Untitled-Facebook-Post-11.png",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "",
+        "mediaId": 35945,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          },
+          {
+            "language": "shared",
+            "relationship": "attached-to-post"
+          }
+        ],
+        "usedBy": [
+          35942
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-06-at-15.29.30-1024x486.jpeg",
+        "type": "image",
+        "sizeBytes": 91399,
+        "alt": "",
+        "mediaId": 35947,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "inline-image"
+          },
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          35942
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-06-at-15.29.30-300x143.jpeg",
+        "type": "image",
+        "sizeBytes": 13452,
+        "alt": "",
+        "mediaId": 35947,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          35942
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-06-at-15.29.30-768x365.jpeg",
+        "type": "image",
+        "sizeBytes": 59326,
+        "alt": "",
+        "mediaId": 35947,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          35942
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-06-at-15.29.30-1536x730.jpeg",
+        "type": "image",
+        "sizeBytes": 169943,
+        "alt": "",
+        "mediaId": 35947,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          35942
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-06-at-15.29.30.jpeg",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "",
+        "mediaId": 35947,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          },
+          {
+            "language": "shared",
+            "relationship": "attached-to-post"
+          }
+        ],
+        "usedBy": [
+          35942
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-06-at-15.29.31-1024x506.jpeg",
+        "type": "image",
+        "sizeBytes": 68859,
+        "alt": "",
+        "mediaId": 35948,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "inline-image"
+          },
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          35942
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-06-at-15.29.31-300x148.jpeg",
+        "type": "image",
+        "sizeBytes": 11483,
+        "alt": "",
+        "mediaId": 35948,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          35942
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-06-at-15.29.31-768x379.jpeg",
+        "type": "image",
+        "sizeBytes": 44662,
+        "alt": "",
+        "mediaId": 35948,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          35942
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-06-at-15.29.31-1536x758.jpeg",
+        "type": "image",
+        "sizeBytes": 119498,
+        "alt": "",
+        "mediaId": 35948,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          35942
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-06-at-15.29.31.jpeg",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "",
+        "mediaId": 35948,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          },
+          {
+            "language": "shared",
+            "relationship": "attached-to-post"
+          }
+        ],
+        "usedBy": [
+          35942
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-06-at-12.33.11-2-1024x549.jpeg",
+        "type": "image",
+        "sizeBytes": 85364,
+        "alt": "",
+        "mediaId": 35949,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "inline-image"
+          },
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          35942
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-06-at-12.33.11-2-300x161.jpeg",
+        "type": "image",
+        "sizeBytes": 12727,
+        "alt": "",
+        "mediaId": 35949,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          35942
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-06-at-12.33.11-2-768x412.jpeg",
+        "type": "image",
+        "sizeBytes": 54627,
+        "alt": "",
+        "mediaId": 35949,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          35942
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-06-at-12.33.11-2-1536x824.jpeg",
+        "type": "image",
+        "sizeBytes": 152505,
+        "alt": "",
+        "mediaId": 35949,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          }
+        ],
+        "usedBy": [
+          35942
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-06-at-12.33.11-2.jpeg",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "",
+        "mediaId": 35949,
+        "uses": [
+          {
+            "language": "ka",
+            "relationship": "image-variant"
+          },
+          {
+            "language": "shared",
+            "relationship": "attached-to-post"
+          }
+        ],
+        "usedBy": [
+          35942
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/04/Untitled-Facebook-Post-11-1.png",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "",
+        "mediaId": 35946,
+        "uses": [
+          {
+            "language": "shared",
+            "relationship": "attached-to-post"
+          }
+        ],
+        "usedBy": [
+          35942
+        ]
+      },
+      {
+        "url": "https://erasmus.org.ge/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-06-at-12.33.11-1.jpeg",
+        "type": "image",
+        "sizeBytes": null,
+        "alt": "",
+        "mediaId": 35950,
+        "uses": [
+          {
+            "language": "shared",
+            "relationship": "attached-to-post"
+          }
+        ],
+        "usedBy": [
+          35942
+        ]
+      }
+    ],
+    "warnings": [
+      "Images listed separately and omitted from Markdown; no files downloaded.",
+      "Possible Event: kept as a News-shaped review file, not converted to an Event."
+    ]
+  }
+}
