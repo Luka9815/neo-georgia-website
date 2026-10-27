@@ -67,7 +67,7 @@ The Launch checklist is the single list of launch blockers. Optional later work,
 
 ## Waiting on Nino / NEO
 
-Only three inputs remain here: signed grant agreement funding wording and website obligations, review of the nine [DRAFT] Actions, and the names of staff editors.
+The signed grant agreement is expected at the end of November 2026 (Nino via Luka, 2026-10-27). Keep the current EACEA model grant agreement Article 17 wording until then. Funding wording and website obligations must be rechecked against the signed agreement before launch. Review of the nine [DRAFT] Actions also remains open.
 
 ## Launch checklist
 
@@ -79,7 +79,7 @@ Keep siteLaunched=false until this single ordered list is complete. Completed Pa
 4. **(a) Luka hosted checks:** confirm a daily rebuild completes and refreshes time-sensitive statuses. Monitor failures and re-enable after inactivity if needed. The configured time is 04:15 UTC, 08:15 in Georgia.
 5. **(a) Luka manual checks:** review keyboard focus, screen-reader landmarks/headings and language announcements, search/live regions, Publications filtering, 200% text resize, 400% zoom/reflow, forced colours, reduced motion and Georgian readability. Check document/recording accessibility and repeat final hosted accessibility/performance checks after content changes.
 6. **(b) Nino / NEO:** review all nine [DRAFT] Actions in both languages: icm, erasmus-mundus, cbhe, jean-monnet, cb-vet, cb-youth, youth-mobility, virtual-exchanges and cb-sport. Use ACTION-REVIEW.md for coordinator/partner distinctions, the Georgia authority exclusion and CBHE Strand 3 clarification.
-7. **(b) Nino / NEO:** confirm funding wording and website obligations against the signed grant agreement and current visibility requirements. Keep the approved Georgian artwork and unchanged supplied disclaimer unless that review produces a new explicit decision.
+7. **(b) Nino / NEO:** confirm funding wording and website obligations against the signed grant agreement, expected at the end of November 2026, and current visibility requirements. Until then retain the current EACEA model grant agreement Article 17 wording. Keep the approved Georgian artwork and unchanged supplied disclaimer unless that review produces a new explicit decision.
 8. **(b) Nino / NEO:** provide editor names. Luka then arranges GitHub access and training with EDITING.md and records the maintenance contact.
 9. **(a) Luka editorial preparation:** replace or explicitly omit the remaining sample Calls/Events: call/cbhe-2025, call/cbhe-2026, call/icm-2026, call/jean-monnet-2026; event/information-day, event/past-session, event/webinar. Use the fixture-first Event removal proposal above. Supply approved dates, time zones, venues, links, agendas and relationships for retained production records.
 10. **(a) Luka editorial preparation:** replace or omit story/example; resource/guide and resource/session-notes; faq/sample-application, faq/sample-guidance and faq/sample-mobility; person/sample-here and person/sample-team; publication/sample-brochure and publication/sample-report with their two sample text files; page/about, page/accessibility and page/privacy. These are the remaining 20 sample records when combined with the Calls/Events in item 9. News samples are already isolated fixtures, not launch content.

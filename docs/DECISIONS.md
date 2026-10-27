@@ -268,3 +268,7 @@ Move update-1, update-2 and update-3 out of src/content/news into test/fixtures/
 
 ## 2026-10-27: Session 18 Action review remains pending (Luka)
 The recovered brief mentioned Nino's review via Luka, but the restart explicitly requires all nine Actions to retain [DRAFT]. No Action approval is recorded by this session. Preserve every Action text field and the shared Georgia eligibility note; list any proposed wording changes separately in ACTION-REVIEW.md for Nino. Partner-search navigation does not change eligibility or application wording.
+
+
+## 2026-10-27: Signed grant agreement expected in late November (Nino via Luka)
+The agreement is expected to be signed at the end of November 2026. Retain the current EACEA model grant agreement Article 17 funding and visibility wording until then. Recheck the funding statement and all website obligations against the signed agreement before launch; this does not approve launch or change the emblem/disclaimer.
