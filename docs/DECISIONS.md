@@ -280,3 +280,9 @@ Luka remains the only editor until further notice. Additional editor names/acces
 
 ## 2026-10-27: Official partner-search shortcuts (Nino via Luka)
 Add bilingual /opportunities/find-partners/ under Opportunities and link it from all nine Action pages, preserving the seven main destinations and all Action wording. Only official EU/programme tools are listed, including the SALTO training calendars linked by Erasmus+. Public URL checks and redirects are recorded in PARTNER-TOOLS.md, dated 2026-10-27. This also records Nino's request via Luka for Events calendars, a newsletter, projects involving Georgia and statistics; the following items define their authorised scope.
+
+
+## 2026-10-27: Static Event calendar and iCalendar files
+Keep /events/ as the accessible default list. Add /events/calendar/ with build-time month tables, translated Monday-first weekdays, month anchors and keyboard-scrollable regions, without runtime scripts or a calendar dependency. Dates use each Event's named zone; multi-day events cover local dates with exclusive midnight ends. Include the current Tbilisi month even when empty.
+
+Generate bilingual event.ics files per Event and upcoming.ics feeds during Eleventy builds. Resolve each raw wall time using the existing Temporal helper with disambiguation reject, then write UTC DTSTART/DTEND. UID is neo-georgia-event-<slug>@events.erasmus.org.ge and stays identical across languages, builds, time changes and hosting changes. Never rename a published Event slug without a migration decision. DTSTAMP is the build instant; feeds include in-progress Events until their end, matching the existing upcoming status. Zero-duration Events omit DTEND. Use RFC 5545 CRLF, text escaping and 75-octet UTF-8 folding. Downloads are static snapshots, not a live subscription service.

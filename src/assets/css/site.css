@@ -604,3 +604,14 @@ dd {
 .news-article li + li { margin-top: 0.5rem; }
 .news-article > p, .news-article > ul, .news-article > ol { margin-bottom: 1.25rem; }
 .news-article .news-image { margin-bottom: 1.5rem; }
+
+/* Static calendar: native links and a keyboard-scrollable table, without scripts. */
+.calendar-month-links { display: flex; flex-wrap: wrap; gap: 1rem 2rem; }
+.calendar-scroll { overflow-x: auto; margin-block: 1rem 2rem; }
+.calendar-scroll:focus-visible { outline: 3px solid var(--primary, #003399); outline-offset: 2px; }
+.event-calendar { border-collapse: collapse; table-layout: fixed; width: 100%; min-width: 52rem; }
+.event-calendar th, .event-calendar td { border: 1px solid #767676; padding: .5rem; vertical-align: top; overflow-wrap: anywhere; }
+.event-calendar td { height: 5rem; }
+.event-calendar caption { text-align: start; padding-block: .5rem; font-weight: 700; }
+.event-calendar ul { padding-inline-start: 1rem; }
+.calendar-time { display: block; font-size: .875rem; }

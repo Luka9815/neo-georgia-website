@@ -1,0 +1,46 @@
+---
+pagination:
+  data: pageTypes.eventCalendar
+  size: 1
+  alias: view
+permalink: "{{ view.path }}"
+eleventyExcludeFromCollections: true
+---
+{% extends 'page.njk' %}
+{% block pageContent %}
+<p><a href="/{{ view.lang }}/events/">{{ t.eventList }}</a></p>
+<p>{{ t.calendarZones }}</p>
+<p><a href="/{{ view.lang }}/events/upcoming.ics" download>{{ t.downloadUpcoming }}</a></p>
+<nav aria-label="{{ t.calendarMonths }}">
+  <ul class="calendar-month-links">
+  {% for month in eventCalendars.months %}
+    <li><a href="#month-{{ month.key }}">{{ t.months[month.month - 1] }} {{ month.year }}</a></li>
+  {% endfor %}
+  </ul>
+</nav>
+{% for month in eventCalendars.months %}
+<section aria-labelledby="month-{{ month.key }}">
+  <h2 id="month-{{ month.key }}">{{ t.months[month.month - 1] }} {{ month.year }}</h2>
+  <div class="calendar-scroll" tabindex="0" role="region" aria-labelledby="month-{{ month.key }}">
+    <table class="event-calendar">
+      <caption>{{ t.months[month.month - 1] }} {{ month.year }}</caption>
+      <thead><tr>{% for day in t.weekdays %}<th scope="col">{{ day }}</th>{% endfor %}</tr></thead>
+      <tbody>
+      {% for week in month.weeks %}
+        <tr>{% for day in week %}
+          <td>{% if day %}
+            <time datetime="{{ day.date }}">{{ day.day }}</time>
+            {% if day.events.length %}<ul>{% for event in day.events %}
+              <li><a href="/{{ view.lang }}/events/{{ event.slug }}/">{{ event[view.lang].title }}</a>
+                <span class="calendar-time">{{ event.date | replace('T', ' ') }} ({{ event.timeZone }})</span>
+              </li>
+            {% endfor %}</ul>{% endif %}
+          {% endif %}</td>
+        {% endfor %}</tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+{% endfor %}
+{% endblock %}

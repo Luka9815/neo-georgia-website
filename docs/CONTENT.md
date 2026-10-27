@@ -187,3 +187,8 @@ Only neo-dissemination-event-2025.jpg is attached, with Luka's approved Georgian
 update-1, update-2 and update-3 live in test/fixtures/news, outside the production catalogue. Tests explicitly copy them into temporary sites for CMS, optional-English fallback and responsive-image coverage. No new draft/publishing field or title-prefix filter was introduced: every record in src/content/news is a real promoted post, including all five bilingual legacy records. Events remain in production pending the fixture-first cleanup in HANDOVER.
 
 Cards derive up to 30 words from the first source prose paragraph and mark a longer excerpt with an ellipsis. Details retain the source fields and publication dates. The News renderer alone repairs malformed emphasis boundaries, standalone bold section headings, duplicate initial titles and the first project list marker; the stored body is not rewritten. See the visual review and editorial questions in docs/review/session-17.
+
+
+## Event calendar exports
+
+Static month tables and bilingual .ics downloads are built from the same Event data. Keep the slug stable once published: it defines the UID in both languages regardless of hosting. A download is a snapshot; editing or removing an Event requires a clean rebuild and does not recall earlier downloads. The upcoming feed follows the existing status through the Event end, including ongoing Events. Temporal rejects ambiguous/nonexistent wall times in the named timeZone. UTC ICS timestamps preserve those resolved instants; calendar applications display them in the user's zone.

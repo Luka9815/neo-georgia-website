@@ -10,6 +10,7 @@ eleventyExcludeFromCollections: true
 
 {% block pageContent %}
 {% set item = events | findSlug(view.slug) %}
+<p><a href="/{{ view.lang }}/events/{{ item.slug }}/event.ics" download>{{ t.downloadEvent }}</a></p>
 <p>
   <time datetime="{{ item.date }}">{{ item.date | dateLabel(t, item.timeZone) }}</time> ({{ item.timeZone }}), {{ t[item.status] }}</p>
   {{ item.body | markdown | safe }}

@@ -9,6 +9,8 @@ eleventyExcludeFromCollections: true
 {% extends 'page.njk' %}
 
 {% block pageContent %}
+<p><a href="/{{ view.lang }}/events/calendar/">{{ t.eventCalendar }}</a></p>
+<p><a href="/{{ view.lang }}/events/upcoming.ics" download>{{ t.downloadUpcoming }}</a></p>
 <section>
   <h2>{{ t.upcomingEvents }}</h2>
   {{ cards(events | status('upcoming'), 'event', t, view.lang) }}

@@ -57,6 +57,10 @@ Session 16's Lighthouse results in review/session-16 are historical measurements
 
 The bilingual Find partners page is linked from Opportunities and every Action. PARTNER-TOOLS.md records eight official destinations checked 2026-10-27. It adds navigation only; all Action wording stays unchanged. Recheck links during routine maintenance.
 
+## Session 18 Event calendar
+
+/events/ stays the default list. The bilingual /events/calendar/ tables and ICS downloads are built from the existing Event JSON without new dependencies or a network request. Per-language Event files live at /<lang>/events/<slug>/event.ics; the feed is /<lang>/events/upcoming.ics. Preserve Event slugs for stable UIDs across languages/hosts. The daily rebuild refreshes the feed; downloads are snapshots. Calendar dates use the Event's named zone. Sample Events remain labelled and must be replaced or removed using the existing fixture-first Launch checklist. Removing them also removes their calendar entries and ICS files on a clean build.
+
 ## Session 18 scope
 
 Restart from main eabf728 on codex/session-18-features. All nine Actions and the shared Georgia eligibility note retain [DRAFT] and unchanged wording. ACTION-REVIEW.md lists the session's Action wording changes separately: none. Projects and statistics are planning only, awaiting Luka's official CSV export; no importer or public dataset is authorised.

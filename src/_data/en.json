@@ -187,5 +187,20 @@
       "title": "SALTO-Youth European Training Calendar",
       "description": "Browse youth training and partner-building activities."
     }
-  }
+  },
+  "eventCalendar": "Events calendar",
+  "eventList": "Events list",
+  "calendarMonths": "Calendar months",
+  "calendarZones": "Dates and times use each Event’s named time zone. Multi-day Events appear on each date they cover.",
+  "downloadUpcoming": "Download upcoming events (.ics)",
+  "downloadEvent": "Add this event to your calendar (.ics)",
+  "weekdays": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ]
 }
