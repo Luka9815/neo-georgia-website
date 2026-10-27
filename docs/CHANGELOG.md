@@ -187,3 +187,8 @@ Newest at the top. One entry per working session: date, who (agent or person), w
 - Add bilingual build-time month tables linked from the default Events list, translated Georgian/English weekdays and month anchors, native table semantics and keyboard scrolling. Include multi-day Events with exclusive midnight ends and an empty current Tbilisi month. No runtime calendar dependency or external service.
 - Add static per-Event and upcoming-feed ICS downloads in both languages. Stable slug-based UIDs, named-zone conversion to UTC, build DTSTAMP, RFC 5545 escaping/CRLF/75-octet UTF-8 folding, and no DTEND for zero-duration Events. Keep all sample labels.
 - Add tests for spring/autumn Brussels DST transitions in both languages, rejected ambiguous/nonexistent times, Tbilisi conversion, UID stability, generated downloads, leap days and multi-day month boundaries. Extend browser checks with no-JavaScript keyboard scrolling/download navigation. Final validation is recorded under item 9.
+
+
+## 2026-10-27: Session 18, item 6, newsletter deferral
+
+- Log the institutional email/free mailing-account prerequisites and the later consent-bearing sign-up link. Add the newsletter to post-launch work; implement no form or sending.

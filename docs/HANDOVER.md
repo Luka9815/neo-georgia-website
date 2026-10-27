@@ -104,3 +104,5 @@ When a domain change is chosen later, ensure ERIDA registration/ownership and a 
 ## Post-launch work
 
 - Luka is the sole editor for now. When additional editors are named, arrange GitHub access and training using EDITING.md.
+
+- Newsletter: deferred until ERIDA has an institutional email and a free mailing-service account registered to it, for example MailerLite free tier. Then review service terms, privacy/consent wording and add a sign-up link. No sending, form, account or sign-up link is implemented in Session 18.
