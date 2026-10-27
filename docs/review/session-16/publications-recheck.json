@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-27",
+  "lighthouse": "13.0.1",
+  "origin": "http://127.0.0.1:8080",
+  "method": "Before the Publications initialisation change: three sequential Georgian mobile simulated-throttling navigations. Retained to show the intermittent layout shift.",
+  "pages": [
+    {
+      "path": "/ka/resources/publications/",
+      "performance": 88,
+      "accessibility": 100,
+      "fcpMs": 1660.0158000000001,
+      "lcpMs": 1735.0158000000001,
+      "tbtMs": 0,
+      "cls": 0.2222383388043042,
+      "warnings": [],
+      "failedAudits": [],
+      "opportunities": []
+    },
+    {
+      "path": "/ka/resources/publications/",
+      "performance": 99,
+      "accessibility": 100,
+      "fcpMs": 1657.4987999999998,
+      "lcpMs": 1732.4987999999998,
+      "tbtMs": 0,
+      "cls": 0.004258302604288601,
+      "warnings": [],
+      "failedAudits": [],
+      "opportunities": []
+    },
+    {
+      "path": "/ka/resources/publications/",
+      "performance": 88,
+      "accessibility": 100,
+      "fcpMs": 1662.6568499999998,
+      "lcpMs": 1737.6568499999998,
+      "tbtMs": 0,
+      "cls": 0.2222383388043042,
+      "warnings": [],
+      "failedAudits": [],
+      "opportunities": []
+    }
+  ]
+}

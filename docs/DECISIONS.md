@@ -240,3 +240,14 @@ Extend “Luka approves Pagefind with a Georgian ending fallback” with Luka's 
 
 ## 2026-10-27: Keep image alternatives as review-only drafts
 For session 14, place visually grounded Georgian/English alt drafts and image suitability/rights notes only in NEWS-PROMOTION.md. Do not attach images, modify migration review metadata or copy alternatives into News until Luka approves selection and wording; flag text/logo posters and the redundant chart rather than assuming every downloaded image should be used.
+
+
+## 2026-10-27: Drop opportunity filters (Luka)
+Supersedes the Opportunities hub filter requirement in SITE-PLAN and the opportunity-filter remaining task. With nine Actions, filters add little value; keep the complete sector-grouped listing with visible translated Key Action labels from keyAction. Revisit only if the listing grows substantially. No new target-group classifications are needed.
+
+## 2026-10-27: Publish one approved News photograph and hold the Europe Day image (Luka)
+Supersedes the publication hold in “Keep image alternatives as review-only drafts” only for neo-dissemination-event-2025.jpg. Attach it to the matching post using the session 14 Georgian and English alternatives as approved, through the session 13 optional image field and responsive pipeline. Omit the clarification graphic, statistics chart and Capacity Building infographic because they are text-heavy or redundant. Hold europe-day-in-kutaisi.png because it shows identifiable children; do not publish until NEO confirms consent to reuse. No other review image is authorised for upload.
+
+
+## 2026-10-27: Initialise Publications filters before the first paint
+Keep the complete no-JavaScript list and hidden-until-ready controls, but load the small local enhancement as a classic script immediately after the form instead of a deferred module. Lighthouse exposed intermittent layout shift when the module revealed the form after painting. Render the initial count statically, keep script scope private and synchronise the list after DOMContentLoaded. Validate filtering, reset and the no-JavaScript fallback.
