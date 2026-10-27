@@ -156,11 +156,9 @@ test('content relationships, non-empty text, and core bilingual parity', () => {
       item.en ? 1 : 0
     );
   }
-  assert.ok(!existsSync('_site/en/news/update-3/index.html'));
-  assert.equal(
-    load(read('_site/ka/news/update-3/index.html'))('header a[hreflang]').attr('href'),
-    publicPath('/en/news/')
-  );
+  for (const slug of ['update-1', 'update-2', 'update-3']) {
+    for (const lang of ['ka', 'en']) assert.ok(!existsSync(`_site/${lang}/news/${slug}/index.html`));
+  }
 });
 test('home has six blocks and action page includes every relationship block', () => {
   for (const lang of ['ka', 'en']) {

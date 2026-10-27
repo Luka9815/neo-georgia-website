@@ -34,6 +34,7 @@ test('five approved News splits preserve source wording and every body link', ()
 test('promoted News render both languages with sequential headings', () => {
   for (const slug of slugs) for (const lang of ['ka', 'en']) {
     const html = readFileSync(`_site/${lang}/news/${slug}/index.html`, 'utf8');
+    assert.doesNotMatch(load(html)('.news-article').text(), /\*\*/);
     let previous = 0;
     for (const match of html.matchAll(/<h([1-6])(?:\s[^>]*)?>/g)) {
       const level = Number(match[1]);
@@ -65,6 +66,43 @@ test('only the approved dissemination photograph is attached with the approved b
       assert.equal(picture.find('source[type="image/webp"]').length, 1);
       assert.ok(img.attr('src').startsWith(`${getPathPrefix()}assets/generated/news/`));
       assert.ok(existsSync('_site/' + img.attr('src').slice(getPathPrefix().length)));
+    }
+  }
+});
+
+
+test('the public News archive contains exactly five real posts, short source excerpts and article dates', () => {
+  for (const lang of ['ka', 'en']) {
+    const listing = load(readFileSync(`_site/${lang}/news/index.html`, 'utf8'));
+    const cards = listing('.cards-news > li');
+    assert.equal(cards.length, 5);
+    assert.doesNotMatch(cards.text(), /\[SAMPLE\]/);
+    for (const slug of slugs) {
+      const item = read(`src/content/news/${slug}.json`);
+      const link = listing(`.cards-news a[href="${getPathPrefix()}${lang}/news/${slug}/"]`);
+      assert.equal(link.text(), item[lang].title);
+      const card = link.closest('li');
+      assert.equal(card.find('.card-body > p').length, 1);
+      assert.equal(card.find('.card-body h1, .card-body h2, .card-body h3').length, 0);
+      const sourceText = load(md.render(item[lang].body)).text().replace(/\s+/g, ' ');
+      assert.ok(sourceText.includes(card.find('.card-body').text().replace(/\s+/g, ' ').trim().replace(/…$/, '')));
+      const article = load(readFileSync(`_site/${lang}/news/${slug}/index.html`, 'utf8'));
+      assert.equal(article('.news-article > p time').attr('datetime'), item.date);
+      assert.equal(article('article').attr('aria-labelledby'), 'page-title');
+    }
+  }
+});
+
+
+test('archive rendering fixes malformed emphasis and retains every official topic link', () => {
+  for (const lang of ['ka', 'en']) {
+    const $ = load(readFileSync(`_site/${lang}/news/information-about-capacity-building-project-proposals/index.html`, 'utf8'));
+    assert.doesNotMatch($('.news-article').text(), /\*\*/);
+    assert.equal($('.news-article a').length, 4);
+    const eve = load(readFileSync(`_site/${lang}/news/eve-statistics/index.html`, 'utf8'));
+    assert.equal(eve('.news-article ol').first().find('li > strong').first().text(), 'ARIVE');
+    for (const [code, id] of Object.entries(direct)) {
+      assert.equal($(`.news-article a[href="${topic}${id}"]`).text(), id, code);
     }
   }
 });

@@ -34,7 +34,7 @@
         {% if item.date %}
           <p class="card-date"><time datetime="{{ item.date }}">{% if type == 'news' %}{{ item.date | dateLabel(t, 'UTC', false) }}{% else %}{{ item.date | dateLabel(t, item.timeZone) }}{% endif %}</time></p>
         {% endif %}
-        <div class="card-body">{% if type == 'action' %}{{ item.summary | markdown | safe }}{% else %}{{ item.body | markdown | safe }}{% endif %}</div>
+        <div class="card-body">{% if type == 'action' %}{{ item.summary | markdown | safe }}{% elif type == 'news' %}{{ item.body | newsSummary | safe }}{% else %}{{ item.body | markdown | safe }}{% endif %}</div>
       {% endif %}
     </li>
   {% else %}

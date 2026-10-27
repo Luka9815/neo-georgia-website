@@ -596,3 +596,11 @@ dd {
 .search-results a { font-weight: 700; }
 
 .news-image { display: block; width: 100%; height: auto; border-radius: 0.25rem; }
+
+/* Keep archive reading lines comfortable without changing source wording. */
+.news-article { max-width: 65ch; }
+.news-title { max-width: 30ch; }
+.news-article ul, .news-article ol { padding-inline-start: 1.5rem; }
+.news-article li + li { margin-top: 0.5rem; }
+.news-article > p, .news-article > ul, .news-article > ol { margin-bottom: 1.25rem; }
+.news-article .news-image { margin-bottom: 1.5rem; }
