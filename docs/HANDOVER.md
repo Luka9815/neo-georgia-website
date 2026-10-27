@@ -81,6 +81,14 @@ ICS tests cover spring and autumn Brussels DST boundaries in both languages, rej
 
 Action JSON and shared Georgia eligibility text are byte-for-byte unchanged from eabf728. AGENTS.md remains canonical and CLAUDE.md remains its pointer; both are unchanged and consistent. siteLaunched=false, migration evidence and dependencies are unchanged. No importer or project/statistics data/routes are added. One commit per brief item; the final item records validation findings, including unique calendar region labels and chronological feed sorting by resolved instants.
 
+## PR #18 review fixes and validation, 27 October 2026
+
+UIDs now use exactly neo-georgia-event-<slug>, with no domain or @ part. The Static Event calendar and iCalendar files decision records Luka's reasoning and confirms no subscriber impact because no ICS files have been published to users. Luka verified the school partner-search URL in his normal browser on 2026-10-27; PARTNER-TOOLS.md closes that check and retains automated 403 results as history.
+
+After these fixes, clean root and project-prefix builds pass and all 111 tests pass in each layout. The project-prefix run uses an isolated copy of the committed branch so the two outputs remain independent. Browser checks pass all 75 non-redirect pages per layout, both languages, with zero axe violations, including 320 px overflow, keyboard/language navigation, no-JavaScript controls, calendar scrolling and ICS downloads. All eight generated ICS files per layout use the exact domain-independent UID form; named-zone/DST tests still pass in both languages.
+
+Three separate review commits cover the UID correction, browser-verification record and validation results. Push to the same codex/session-18-features branch and keep PR #18 open for review. All nine Actions remain [DRAFT] and unchanged; the remaining Launch checklist and siteLaunched=false still apply.
+
 ## Next task
 
 Review the Session 18 PR without automatic merging, then work through the Launch checklist. All nine Actions remain [DRAFT]. For Session 19, wait for Luka's official CSV and resolve the decisions in SITE-PLAN.md before building projects/statistics. Opportunity filters remain dropped.

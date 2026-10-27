@@ -238,3 +238,10 @@ Newest at the top. One entry per working session: date, who (agent or person), w
 ## 2026-10-27: PR #18 review, item 2, school partner URL verified
 
 - Record Luka's 2026-10-27 confirmation that the current school partner-search URL works in his normal browser. Update PARTNER-TOOLS and HANDOVER; retain the earlier automated 403/legacy-redirect results as history and close the browser-verification task. The published official URL is unchanged.
+
+
+## 2026-10-27: PR #18 review, item 3, clean validation rerun
+
+- Re-run clean root and project-prefix builds after the UID correction. All 111 tests pass in each layout, including the bilingual DST and exact UID checks. Inspect all eight static ICS files per layout: every UID uses neo-georgia-event-<slug> with no @ part. The project-prefix suite runs from an isolated copy of the committed branch.
+- Browser checks pass all 75 non-redirect pages per layout, both languages, with zero axe violations. Checks include 320 px overflow, keyboard/language navigation, no-JavaScript menus/controls, Publications, search, image decoding and calendar keyboard scrolling/ICS downloads. git diff --check passes.
+- Update HANDOVER with the review fixes and results. Keep the same branch and PR, one commit per review item, without merging or changing the launch flag. Action wording, shared eligibility, dependencies and AGENTS/CLAUDE guidance remain unchanged.
