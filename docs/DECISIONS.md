@@ -304,3 +304,7 @@ Authorise only the EVE Georgian sentence change from seven projects to seven par
 
 ## 2026-10-27: Calendar accessibility and feed ordering validation
 Use one named region per scrollable month table, with an unlabelled outer section, to avoid duplicate landmark names. Order the upcoming ICS feed by the resolved UTC start instant, so mixed named zones retain chronological order. Keep the existing list as the default and all exports static.
+
+
+## 2026-10-27: School partner URL verified in Luka's browser
+Luka confirms https://school-education.ec.europa.eu/en/connect/partner-search works in his normal browser on 2026-10-27. Keep this current official URL. PARTNER-TOOLS.md preserves the earlier automated 403/legacy-redirect evidence separately; do not revive the completed normal-browser verification task.

@@ -233,3 +233,8 @@ Newest at the top. One entry per working session: date, who (agent or person), w
 
 - Change UID to neo-georgia-event-<slug> without an @ part. Update the Static Event calendar and iCalendar files decision: RFC 5545 permits this form, the site is leaving the old domain, and ERIDA may never own it. Luka confirms no ICS files have been published to users, so there is no subscriber impact.
 - Update bilingual unit/generated-file/feed tests to require the exact domain-independent UID and retain stability across language, dates, builds and hosting changes. All named-zone/DST handling is unchanged. Full clean-build/test/browser results follow in review item 3.
+
+
+## 2026-10-27: PR #18 review, item 2, school partner URL verified
+
+- Record Luka's 2026-10-27 confirmation that the current school partner-search URL works in his normal browser. Update PARTNER-TOOLS and HANDOVER; retain the earlier automated 403/legacy-redirect results as history and close the browser-verification task. The published official URL is unchanged.

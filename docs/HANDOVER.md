@@ -55,7 +55,7 @@ Session 16's Lighthouse results in review/session-16 are historical measurements
 
 ## Session 18 partner shortcuts
 
-The bilingual Find partners page is linked from Opportunities and every Action. PARTNER-TOOLS.md records eight official destinations checked 2026-10-27. It adds navigation only; all Action wording stays unchanged. Recheck links during routine maintenance. The school partner page was retrieved through its legacy redirect; direct automated checks returned 403. PARTNER-TOOLS.md records this distinction for normal-browser verification.
+The bilingual Find partners page is linked from Opportunities and every Action. PARTNER-TOOLS.md records eight official destinations checked 2026-10-27. It adds navigation only; all Action wording stays unchanged. Recheck links during routine maintenance. Luka verified the current school partner-search URL in his normal browser on 2026-10-27. PARTNER-TOOLS.md retains the earlier automated 403 results as history; the normal-browser verification task is complete.
 
 ## Session 18 Event calendar
 
