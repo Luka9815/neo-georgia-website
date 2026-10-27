@@ -31,8 +31,8 @@ test('all rendered pages have language, metadata, seven menu links, one h1 and E
     files('_site').filter((f) => f.endsWith('.html')).length,
     getViews().length
   );
-  assert.equal(existsSync('src/assets/eu/funded-ka.png'), false);
-  assert.equal(existsSync('_site/assets/eu/funded-ka.png'), false);
+  assert.equal(existsSync('src/assets/eu/funded-ka.png'), true);
+  assert.equal(existsSync('_site/assets/eu/funded-ka.png'), true);
   for (const view of getViews()) {
     const $ = load(read(output(view.path)));
     assert.equal($('html').attr('lang'), view.lang, view.path);
@@ -49,16 +49,17 @@ test('all rendered pages have language, metadata, seven menu links, one h1 and E
         : /მათზე პასუხისმგებლობა არ ეკისრება არც ევროკავშირს და არც EACEA-ს\./
     );
     const strings = JSON.parse(read(`src/_data/${view.lang}.json`));
-    assert.equal(strings.emblemPath, '/assets/eu/funded-en.png');
-    assert.equal($('.eu-emblem').attr('src'), publicPath('/assets/eu/funded-en.png'));
+    assert.equal(strings.emblemPath, `/assets/eu/funded-${view.lang}.png`);
+    assert.ok($('.eu-emblem').attr('src').startsWith(publicPath('/assets/generated/eu/')));
+    assert.equal($('.eu-funding strong').length, 0);
     const emblemAlt =
       view.lang === 'ka'
-        ? 'დაფინანსებულია ევროკავშირის მიერ'
+        ? 'ევროკავშირი საქართველოსთვის'
         : 'Funded by the European Union';
     assert.equal(strings.emblemAlt, emblemAlt);
     assert.equal($('.eu-emblem').attr('alt'), emblemAlt);
-    assert.equal($('.eu-emblem').attr('width'), '4125');
-    assert.equal($('.eu-emblem').attr('height'), '919');
+    assert.equal($('.eu-emblem').attr('width'), '960');
+    assert.ok(Math.abs(Number($('.eu-emblem').attr('height')) / 960 - strings.emblemHeight / strings.emblemWidth) < 0.002);
     assert.ok(existsSync(`_site${strings.emblemPath}`));
     assert.equal($('.emblem-placeholder').length, 0);
     assert.equal($('header a[hreflang]').attr('href'), publicPath(view.alternate));
@@ -155,11 +156,9 @@ test('content relationships, non-empty text, and core bilingual parity', () => {
       item.en ? 1 : 0
     );
   }
-  assert.ok(!existsSync('_site/en/news/update-3/index.html'));
-  assert.equal(
-    load(read('_site/ka/news/update-3/index.html'))('header a[hreflang]').attr('href'),
-    publicPath('/en/news/')
-  );
+  for (const slug of ['update-1', 'update-2', 'update-3']) {
+    for (const lang of ['ka', 'en']) assert.ok(!existsSync(`_site/${lang}/news/${slug}/index.html`));
+  }
 });
 test('home has six blocks and action page includes every relationship block', () => {
   for (const lang of ['ka', 'en']) {
@@ -347,7 +346,10 @@ test('empty logoPath preserves the text wordmark and bilingual logo alternatives
   for (const lang of ['ka', 'en']) {
     const $ = load(read(`_site/${lang}/index.html`));
     assert.equal($('header .brand-image').length, 0);
-    assert.ok($('header .brand-name').text().trim());
+    assert.equal($('header .brand-name').text(), JSON.parse(read(`src/_data/${lang}.json`)).officeName);
+    assert.equal($('header .brand').attr('aria-label'), $('header .brand-name').text());
+    assert.equal($('header .brand-note').length, 0);
+    assert.equal($('link[rel=icon]').attr('href'), publicPath('/assets/favicon.svg'));
     assert.ok(JSON.parse(read(`src/_data/${lang}.json`)).logoAlt.trim());
   }
 });

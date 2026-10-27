@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
   cpSync,
+  existsSync,
   mkdtempSync,
   readFileSync,
   writeFileSync,
@@ -25,6 +26,7 @@ function isolatedSite() {
   for (const path of ['src', 'lib', 'eleventy.config.js', 'package.json']) {
     cpSync(path, join(root, path), { recursive: true });
   }
+  cpSync('test/fixtures/news', join(root, 'src/content/news'), { recursive: true });
   symlinkSync(resolve('node_modules'), join(root, 'node_modules'), 'dir');
   return root;
 }
@@ -137,6 +139,7 @@ for (const [type, mutate, expected] of [
     try {
       cpSync('src', join(root, 'src'), { recursive: true });
       const contentRoot = join(root, 'src/content');
+      cpSync('test/fixtures/news', join(contentRoot, 'news'), { recursive: true });
       const original = type === 'news' ? 'update-1' : 'webinar';
       const file = join(contentRoot, type, `${original}.json`);
       const item = JSON.parse(read(file));
@@ -164,6 +167,7 @@ for (const [label, mutate] of [
     try {
       cpSync('src', join(root, 'src'), { recursive: true });
       const contentRoot = join(root, 'src/content');
+      cpSync('test/fixtures/news', join(contentRoot, 'news'), { recursive: true });
       const file = join(contentRoot, 'news', 'update-1.json');
       const item = JSON.parse(read(file));
       mutate(item);
@@ -211,6 +215,9 @@ test('CMS-shaped JSON renders Markdown safely, keeps optional News English absen
     event.en.agenda = '   ';
     writeFileSync(eventPath, JSON.stringify(event));
     build(root);
+    assert.equal(load(read(join(root, '_site/ka/news/update-3/index.html')))('header a[hreflang]').attr('href'), '/neo-georgia-website/en/news/');
+    assert.equal(existsSync(join(root, '_site/en/news/update-3/index.html')), false);
+    assert.equal(load(read(join(root, '_site/en/news/index.html')))('main a[href$="/update-3/"]').length, 0);
     const $ = load(read(join(root, '_site/ka/news/cms-roundtrip/index.html')));
     assert.equal($('main strong').text(), 'Bold text');
     assert.equal($('main script').length, 0);
@@ -247,7 +254,7 @@ test('CMS-shaped JSON renders Markdown safely, keeps optional News English absen
       $('header .brand-image').attr('alt'),
       JSON.parse(read('src/_data/ka.json')).logoAlt
     );
-    assert.equal($('header .brand-name').length, 0);
+    assert.equal($('header .brand-name').length, 1);
   } finally {
     rmSync(root, { recursive: true, force: true });
   }

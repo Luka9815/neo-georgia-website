@@ -38,6 +38,7 @@ test('real Eleventy image builds produce local responsive article/card pictures 
     for (const path of ['src', 'lib', 'eleventy.config.js', 'package.json']) cpSync(path, join(root, path), { recursive: true });
     symlinkSync(resolve('node_modules'), join(root, 'node_modules'), 'dir');
     cpSync('test/fixtures/sample-news-image.png', join(root, 'src/assets/uploads/sample-news-image.png'));
+    cpSync('test/fixtures/news/update-1.json', join(root, 'src/content/news/update-1.json'));
     const file = join(root, 'src/content/news/update-1.json');
     const item = JSON.parse(readFileSync(file));
     item.image = { src: '/assets/uploads/sample-news-image.png', alt: { ka: '[SAMPLE] ლურჯი მართკუთხედი.', en: '[SAMPLE] Blue rectangle, $& "quoted" <description>.' } };
@@ -67,7 +68,8 @@ test('real Eleventy image builds produce local responsive article/card pictures 
         }
         assert.match(picture.find('source').first().attr('srcset'), /320w.*640w/);
         assert.equal($('[data-news-image]').length, 0);
-        assert.equal($('.eu-emblem').attr('src'), `${prefix}assets/eu/funded-en.png`);
+        assert.ok($('.eu-emblem').attr('src').startsWith(`${prefix}assets/generated/eu/`));
+        assert.equal($('.eu-emblem').attr('alt'), lang === 'ka' ? 'ევროკავშირი საქართველოსთვის' : 'Funded by the European Union');
       }
     }
     writeFileSync(join(root, 'src/assets/uploads/sample-news-image.png'), 'not an image');

@@ -10,6 +10,9 @@ eleventyExcludeFromCollections: true
 
 {% block pageContent %}
 {% set item = news | findSlug(view.slug) %}
+<article class="news-article" aria-labelledby="page-title">
+<p class="card-date"><time datetime="{{ item.date }}">{{ item.date | dateLabel(t, 'UTC', false) }}</time></p>
 {% if item.image %}<img data-news-image data-image-layout="article" src="{{ item.image.src }}" alt="{{ item.image.alt[view.lang] }}">{% endif %}
-{{ item.body | newsMarkdown | safe }}
+{{ item.body | newsMarkdown(item.title) | safe }}
+</article>
 {% endblock %}

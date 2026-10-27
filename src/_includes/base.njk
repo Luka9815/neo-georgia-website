@@ -16,6 +16,7 @@
   <meta property="og:description" content="{{ t.sample }}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ view.path | absoluteUrl(site.url) }}">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
   <link rel="stylesheet" href="/assets/css/site.css">
 </head>
 <body>
@@ -24,15 +25,9 @@
 <header class="site-header">
   <div class="wrapper header-inner">
     <div class="header-top">
-      <a class="brand" href="/{{ view.lang }}/">
-        {% if site.logoPath %}
-          <img class="brand-image" src="{{ site.logoPath }}" alt="{{ t.logoAlt }}" width="240" height="80">
-          <span class="brand-description">{{ t.officeName }}</span>
-        {% else %}
-          <span class="brand-name">{{ t.logoName }}</span>
-          <span class="brand-description">{{ t.officeName }}</span>
-          <span class="brand-note">{{ t.logoPlaceholder }}</span>
-        {% endif %}
+      <a class="brand" href="/{{ view.lang }}/" aria-label="{{ t.officeName }}">
+        {% if site.logoPath %}<img class="brand-image" src="{{ site.logoPath }}" alt="{{ t.logoAlt }}" width="240" height="80">{% endif %}
+        <span class="brand-name">{{ t.officeName }}</span>
       </a>
       <div class="header-tools">
       <a href="/{{ view.lang }}/search/">{{ t.search }}</a>
@@ -48,7 +43,7 @@
 </header>
 <main id="main" class="wrapper page-main" tabindex="-1">
   <p class="notice">{{ t.sample }}</p>
-  {% if view.kind != 'home' %}<h1>{{ title }}</h1>{% endif %}
+  {% if view.kind != 'home' %}<h1 id="page-title"{% if view.kind == 'news' and view.slug %} class="news-title"{% endif %}>{{ title }}</h1>{% endif %}
   {{ body | safe }}
 </main>
 <footer class="site-footer">
@@ -71,9 +66,8 @@
     </div>
     <p class="language-policy">{{ t.prevailingStatement }}</p>
     <div class="eu-footer">
-      <img class="eu-emblem" src="{{ t.emblemPath }}" alt="{{ t.emblemAlt }}" width="{{ t.emblemWidth }}" height="{{ t.emblemHeight }}" loading="lazy">
+      <img data-eu-emblem class="eu-emblem" src="{{ t.emblemPath }}" alt="{{ t.emblemAlt }}" width="{{ t.emblemWidth }}" height="{{ t.emblemHeight }}" loading="lazy">
       <div class="eu-funding">
-        <p><strong>{{ t.funding }}</strong></p>
         <p class="funding-disclaimer">{{ t.disclaimer }}</p>
         {% if view.kind == '404' %}<p lang="en">{{ en.disclaimer }}</p>{% endif %}
       </div>

@@ -8,11 +8,11 @@ Only **Europe Day in Kutaisi, 24–25 October** is newly written, from its Engli
 
 ## Images
 
-Session 16: Luka approves only neo-dissemination-event-2025.jpg and both session 14 alternatives below. The photograph is attached through the optional responsive News pipeline. Omit the clarification graphic, statistics chart and Capacity Building infographic. Hold the Europe Day photograph until NEO confirms consent to reuse the image of identifiable children. No other review image is uploaded. See NEWS-IMAGES.md for the current status.
+Session 16: Luka approves only neo-dissemination-event-2025.jpg and both session 14 alternatives below. The photograph is attached through the optional responsive News pipeline. Omit the clarification graphic, statistics chart and Capacity Building infographic. Session 17: Luka permanently omits the Europe Day photograph; it will not be used. No other review image is uploaded. See NEWS-IMAGES.md for the current status.
 
 ## Draft image alt text for Luka's approval (session 14)
 
-These session 14 drafts describe the five actual review files. In session 16 Luka approves the dissemination photograph and its two alternatives only; the other alternatives remain unused. The image choices and consent hold are recorded above. Visible logos do not establish reuse permission.
+These session 14 drafts describe the five actual review files. In session 16 Luka approves the dissemination photograph and its two alternatives only; the other alternatives remain unused. The current image choices are recorded above. Visible logos do not establish reuse permission.
 
 | Slug | Image file | Georgian alt draft | English alt draft | Image rights / suitability note |
 |---|---|---|---|---|
@@ -37,4 +37,4 @@ No promoted body links to erasmus.org.ge, Google Drive or Facebook tracking. Leg
 
 ## Sample News
 
-Retain update-1, update-2 and update-3. CMS integration tests edit update-1 and the missing-English fallback test explicitly checks update-3. Moving those fixtures out of live sample content is a separate cleanup; this session does not remove test coverage to delete samples.
+Session 17 moves update-1, update-2 and update-3 into test/fixtures/news. CMS and image tests copy the required fixture into temporary sites; the Georgian-only update-3 language fallback is checked in an isolated CMS build. No sample News detail URLs, cards, sitemap entries or search fragments are published. The real archive has exactly five bilingual posts. Render-only formatting uses source excerpts on cards, repairs missing emphasis boundaries and promotes bold section lines; wording, facts, dates and official link destinations are unchanged. See review/session-17/README.md for visual review and content questions.

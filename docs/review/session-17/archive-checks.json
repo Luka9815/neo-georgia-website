@@ -1,0 +1,902 @@
+[
+  {
+    "path": "/ka/news/",
+    "width": 360,
+    "overflow": false,
+    "h1": "სიახლეები",
+    "headings": [
+      [
+        "H1",
+        "სიახლეები"
+      ],
+      [
+        "H2",
+        "ბოლო სიახლეები"
+      ],
+      [
+        "H3",
+        "ინფორმაცია შესაძლებლობების გაძლიერების საპროექტო წინადადებებთან დაკავშირებით!"
+      ],
+      [
+        "H3",
+        "Erasmus+ ვირტუალური გაცვლების (EVE) 2025 წლის საპროექტო წინადადებების კონკურსის შედეგები"
+      ],
+      [
+        "H3",
+        "Erasmus+-ის ეროვნული ოფისის დისემინაციის ღონისძიება 2025"
+      ],
+      [
+        "H3",
+        "განმარტება, Erasmus+ პროგრამის შესაძლებლობების შესახებ, საგანმანათლებლო ინსტიტუციებისთვის საქართველოში"
+      ],
+      [
+        "H3",
+        "ევროპის დღე ქუთაისში 24-25 ოქტომბერი"
+      ]
+    ],
+    "dates": [
+      {
+        "value": "2026-02-09",
+        "text": "9 თებერვალი 2026"
+      },
+      {
+        "value": "2025-12-26",
+        "text": "26 დეკემბერი 2025"
+      },
+      {
+        "value": "2025-12-24",
+        "text": "24 დეკემბერი 2025"
+      },
+      {
+        "value": "2025-11-17",
+        "text": "17 ნოემბერი 2025"
+      },
+      {
+        "value": "2025-10-27",
+        "text": "27 ოქტომბერი 2025"
+      }
+    ],
+    "paragraphs": 0,
+    "lists": 0,
+    "links": []
+  },
+  {
+    "path": "/ka/news/europe-day-in-kutaisi/",
+    "width": 360,
+    "overflow": false,
+    "h1": "ევროპის დღე ქუთაისში 24-25 ოქტომბერი",
+    "headings": [
+      [
+        "H1",
+        "ევროპის დღე ქუთაისში 24-25 ოქტომბერი"
+      ]
+    ],
+    "dates": [
+      {
+        "value": "2025-10-27",
+        "text": "27 ოქტომბერი 2025"
+      }
+    ],
+    "paragraphs": 3,
+    "lists": 0,
+    "links": []
+  },
+  {
+    "path": "/ka/news/announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia/",
+    "width": 360,
+    "overflow": false,
+    "h1": "განმარტება, Erasmus+ პროგრამის შესაძლებლობების შესახებ, საგანმანათლებლო ინსტიტუციებისთვის საქართველოში",
+    "headings": [
+      [
+        "H1",
+        "განმარტება, Erasmus+ პროგრამის შესაძლებლობების შესახებ, საგანმანათლებლო ინსტიტუციებისთვის საქართველოში"
+      ]
+    ],
+    "dates": [
+      {
+        "value": "2025-11-17",
+        "text": "17 ნოემბერი 2025"
+      }
+    ],
+    "paragraphs": 4,
+    "lists": 0,
+    "links": []
+  },
+  {
+    "path": "/ka/news/neo-dissemination-event-2025/",
+    "width": 360,
+    "overflow": false,
+    "h1": "Erasmus+-ის ეროვნული ოფისის დისემინაციის ღონისძიება 2025",
+    "headings": [
+      [
+        "H1",
+        "Erasmus+-ის ეროვნული ოფისის დისემინაციის ღონისძიება 2025"
+      ],
+      [
+        "H2",
+        "Erasmus+ საქართველოში – 2025 წლის დისემინაციის შედეგები – მიღწევები, ზეგავლენა და თანამშრომლობა"
+      ]
+    ],
+    "dates": [
+      {
+        "value": "2025-12-24",
+        "text": "24 დეკემბერი 2025"
+      }
+    ],
+    "paragraphs": 13,
+    "lists": 0,
+    "links": []
+  },
+  {
+    "path": "/ka/news/eve-statistics/",
+    "width": 360,
+    "overflow": false,
+    "h1": "Erasmus+ ვირტუალური გაცვლების (EVE) 2025 წლის საპროექტო წინადადებების კონკურსის შედეგები",
+    "headings": [
+      [
+        "H1",
+        "Erasmus+ ვირტუალური გაცვლების (EVE) 2025 წლის საპროექტო წინადადებების კონკურსის შედეგები"
+      ],
+      [
+        "H2",
+        "პროექტების შინაარსი"
+      ],
+      [
+        "H3",
+        "2025 წლის საპროექტო წინადადებების კონკურსის შედეგები"
+      ],
+      [
+        "H3",
+        "კონსორციუმის მახასიათებლები"
+      ],
+      [
+        "H3",
+        "საქართველოს მონაწილეობა 2025 წლის Erasmus+ ვირტუალური გაცვლების კონკურსში"
+      ],
+      [
+        "H3",
+        "პროექტები, რომლებშიც მონაწილეობას იღებენ ქართული ორგანიზაციები"
+      ],
+      [
+        "H2",
+        "კვლევისა და ინოვაციის ხელშეწყობა უმაღლეს განათლებაში ვირტუალური გაცვლების საშუალებით"
+      ],
+      [
+        "H2",
+        "VirtuallyEDU 2.0 – ახალგაზრდების გაძლიერება ხელოვნური ინტელექტის მეშვეობით დაორგანიზებული ვირტუალური გაცვლებისა და ციფრული თანამშრომლობის გზით"
+      ],
+      [
+        "H2",
+        "ვირტუალური ინოვაციები და ტრეინინგები სწავლების ხელშესაწყობად"
+      ],
+      [
+        "H2",
+        "პროექტის მონაწილე ქართული უნივერსიტეტები:"
+      ],
+      [
+        "H2",
+        "ტოპ 10 ქვეყანა (პროექტების რაოდენობის მიხედვით)"
+      ]
+    ],
+    "dates": [
+      {
+        "value": "2025-12-26",
+        "text": "26 დეკემბერი 2025"
+      }
+    ],
+    "paragraphs": 9,
+    "lists": 10,
+    "links": []
+  },
+  {
+    "path": "/ka/news/information-about-capacity-building-project-proposals/",
+    "width": 360,
+    "overflow": false,
+    "h1": "ინფორმაცია შესაძლებლობების გაძლიერების საპროექტო წინადადებებთან დაკავშირებით!",
+    "headings": [
+      [
+        "H1",
+        "ინფორმაცია შესაძლებლობების გაძლიერების საპროექტო წინადადებებთან დაკავშირებით!"
+      ]
+    ],
+    "dates": [
+      {
+        "value": "2026-02-09",
+        "text": "9 თებერვალი 2026"
+      }
+    ],
+    "paragraphs": 16,
+    "lists": 0,
+    "links": [
+      {
+        "text": "ERASMUS-EDU-2026-CBHE-REGION-2",
+        "href": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/ERASMUS-EDU-2026-CBHE-REGION-2"
+      },
+      {
+        "text": "ERASMUS-EDU-2026-CB-VET-NE",
+        "href": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/ERASMUS-EDU-2026-CB-VET-NE"
+      },
+      {
+        "text": "ERASMUS-YOUTH-2026-CB-NE",
+        "href": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/ERASMUS-YOUTH-2026-CB-NE"
+      },
+      {
+        "text": "ERASMUS-SPORT-2026-CB",
+        "href": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/ERASMUS-SPORT-2026-CB"
+      }
+    ]
+  },
+  {
+    "path": "/en/news/",
+    "width": 360,
+    "overflow": false,
+    "h1": "News",
+    "headings": [
+      [
+        "H1",
+        "News"
+      ],
+      [
+        "H2",
+        "Latest news"
+      ],
+      [
+        "H3",
+        "Information about Capacity Building Project Proposals!"
+      ],
+      [
+        "H3",
+        "Erasmus+ Virtual Exchanges (EVE) Results of the 2025 Call for Proposals"
+      ],
+      [
+        "H3",
+        "Erasmus+ in Georgia – Achievements, Impact and Partnerships Highlighted at the 2025 Dissemination Event"
+      ],
+      [
+        "H3",
+        "Clarification on Erasmus+ Opportunities for Educational Institutions in Georgia"
+      ],
+      [
+        "H3",
+        "Europe Day in Kutaisi, 24–25 October"
+      ]
+    ],
+    "dates": [
+      {
+        "value": "2026-02-09",
+        "text": "9 February 2026"
+      },
+      {
+        "value": "2025-12-26",
+        "text": "26 December 2025"
+      },
+      {
+        "value": "2025-12-24",
+        "text": "24 December 2025"
+      },
+      {
+        "value": "2025-11-17",
+        "text": "17 November 2025"
+      },
+      {
+        "value": "2025-10-27",
+        "text": "27 October 2025"
+      }
+    ],
+    "paragraphs": 0,
+    "lists": 0,
+    "links": []
+  },
+  {
+    "path": "/en/news/europe-day-in-kutaisi/",
+    "width": 360,
+    "overflow": false,
+    "h1": "Europe Day in Kutaisi, 24–25 October",
+    "headings": [
+      [
+        "H1",
+        "Europe Day in Kutaisi, 24–25 October"
+      ]
+    ],
+    "dates": [
+      {
+        "value": "2025-10-27",
+        "text": "27 October 2025"
+      }
+    ],
+    "paragraphs": 3,
+    "lists": 0,
+    "links": []
+  },
+  {
+    "path": "/en/news/announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia/",
+    "width": 360,
+    "overflow": false,
+    "h1": "Clarification on Erasmus+ Opportunities for Educational Institutions in Georgia",
+    "headings": [
+      [
+        "H1",
+        "Clarification on Erasmus+ Opportunities for Educational Institutions in Georgia"
+      ]
+    ],
+    "dates": [
+      {
+        "value": "2025-11-17",
+        "text": "17 November 2025"
+      }
+    ],
+    "paragraphs": 4,
+    "lists": 0,
+    "links": []
+  },
+  {
+    "path": "/en/news/neo-dissemination-event-2025/",
+    "width": 360,
+    "overflow": false,
+    "h1": "Erasmus+ in Georgia – Achievements, Impact and Partnerships Highlighted at the 2025 Dissemination Event",
+    "headings": [
+      [
+        "H1",
+        "Erasmus+ in Georgia – Achievements, Impact and Partnerships Highlighted at the 2025 Dissemination Event"
+      ]
+    ],
+    "dates": [
+      {
+        "value": "2025-12-24",
+        "text": "24 December 2025"
+      }
+    ],
+    "paragraphs": 13,
+    "lists": 0,
+    "links": []
+  },
+  {
+    "path": "/en/news/eve-statistics/",
+    "width": 360,
+    "overflow": false,
+    "h1": "Erasmus+ Virtual Exchanges (EVE) Results of the 2025 Call for Proposals",
+    "headings": [
+      [
+        "H1",
+        "Erasmus+ Virtual Exchanges (EVE) Results of the 2025 Call for Proposals"
+      ],
+      [
+        "H2",
+        "Nature of the Projects"
+      ],
+      [
+        "H2",
+        "EVE Results of the 2025 Call"
+      ],
+      [
+        "H2",
+        "Consortium Characteristics"
+      ],
+      [
+        "H2",
+        "Georgia’s Participation in the 2025 Erasmus+ Virtual Exchanges Call"
+      ],
+      [
+        "H2",
+        "Projects involving Georgian institutions"
+      ],
+      [
+        "H2",
+        "Advancing Research and Innovation in Higher Education through Virtual Exchanges"
+      ],
+      [
+        "H2",
+        "VirtuallyEDU 2.0 – Empowering youth through AI-driven virtual exchanges and digital collaboration"
+      ],
+      [
+        "H2",
+        "Virtual Innovation and Training for Advancing Learning"
+      ],
+      [
+        "H2",
+        "Top 10 Countries (Ranked by Number of Projects)"
+      ]
+    ],
+    "dates": [
+      {
+        "value": "2025-12-26",
+        "text": "26 December 2025"
+      }
+    ],
+    "paragraphs": 10,
+    "lists": 10,
+    "links": []
+  },
+  {
+    "path": "/en/news/information-about-capacity-building-project-proposals/",
+    "width": 360,
+    "overflow": false,
+    "h1": "Information about Capacity Building Project Proposals!",
+    "headings": [
+      [
+        "H1",
+        "Information about Capacity Building Project Proposals!"
+      ],
+      [
+        "H2",
+        "📣 Information about Capacity Building Project Proposals!"
+      ]
+    ],
+    "dates": [
+      {
+        "value": "2026-02-09",
+        "text": "9 February 2026"
+      }
+    ],
+    "paragraphs": 15,
+    "lists": 0,
+    "links": [
+      {
+        "text": "ERASMUS-EDU-2026-CBHE-REGION-2",
+        "href": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/ERASMUS-EDU-2026-CBHE-REGION-2"
+      },
+      {
+        "text": "ERASMUS-EDU-2026-CB-VET-NE",
+        "href": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/ERASMUS-EDU-2026-CB-VET-NE"
+      },
+      {
+        "text": "ERASMUS-YOUTH-2026-CB-NE",
+        "href": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/ERASMUS-YOUTH-2026-CB-NE"
+      },
+      {
+        "text": "ERASMUS-SPORT-2026-CB",
+        "href": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/ERASMUS-SPORT-2026-CB"
+      }
+    ]
+  },
+  {
+    "path": "/ka/news/",
+    "width": 1280,
+    "overflow": false,
+    "h1": "სიახლეები",
+    "headings": [
+      [
+        "H1",
+        "სიახლეები"
+      ],
+      [
+        "H2",
+        "ბოლო სიახლეები"
+      ],
+      [
+        "H3",
+        "ინფორმაცია შესაძლებლობების გაძლიერების საპროექტო წინადადებებთან დაკავშირებით!"
+      ],
+      [
+        "H3",
+        "Erasmus+ ვირტუალური გაცვლების (EVE) 2025 წლის საპროექტო წინადადებების კონკურსის შედეგები"
+      ],
+      [
+        "H3",
+        "Erasmus+-ის ეროვნული ოფისის დისემინაციის ღონისძიება 2025"
+      ],
+      [
+        "H3",
+        "განმარტება, Erasmus+ პროგრამის შესაძლებლობების შესახებ, საგანმანათლებლო ინსტიტუციებისთვის საქართველოში"
+      ],
+      [
+        "H3",
+        "ევროპის დღე ქუთაისში 24-25 ოქტომბერი"
+      ]
+    ],
+    "dates": [
+      {
+        "value": "2026-02-09",
+        "text": "9 თებერვალი 2026"
+      },
+      {
+        "value": "2025-12-26",
+        "text": "26 დეკემბერი 2025"
+      },
+      {
+        "value": "2025-12-24",
+        "text": "24 დეკემბერი 2025"
+      },
+      {
+        "value": "2025-11-17",
+        "text": "17 ნოემბერი 2025"
+      },
+      {
+        "value": "2025-10-27",
+        "text": "27 ოქტომბერი 2025"
+      }
+    ],
+    "paragraphs": 0,
+    "lists": 0,
+    "links": []
+  },
+  {
+    "path": "/ka/news/europe-day-in-kutaisi/",
+    "width": 1280,
+    "overflow": false,
+    "h1": "ევროპის დღე ქუთაისში 24-25 ოქტომბერი",
+    "headings": [
+      [
+        "H1",
+        "ევროპის დღე ქუთაისში 24-25 ოქტომბერი"
+      ]
+    ],
+    "dates": [
+      {
+        "value": "2025-10-27",
+        "text": "27 ოქტომბერი 2025"
+      }
+    ],
+    "paragraphs": 3,
+    "lists": 0,
+    "links": []
+  },
+  {
+    "path": "/ka/news/announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia/",
+    "width": 1280,
+    "overflow": false,
+    "h1": "განმარტება, Erasmus+ პროგრამის შესაძლებლობების შესახებ, საგანმანათლებლო ინსტიტუციებისთვის საქართველოში",
+    "headings": [
+      [
+        "H1",
+        "განმარტება, Erasmus+ პროგრამის შესაძლებლობების შესახებ, საგანმანათლებლო ინსტიტუციებისთვის საქართველოში"
+      ]
+    ],
+    "dates": [
+      {
+        "value": "2025-11-17",
+        "text": "17 ნოემბერი 2025"
+      }
+    ],
+    "paragraphs": 4,
+    "lists": 0,
+    "links": []
+  },
+  {
+    "path": "/ka/news/neo-dissemination-event-2025/",
+    "width": 1280,
+    "overflow": false,
+    "h1": "Erasmus+-ის ეროვნული ოფისის დისემინაციის ღონისძიება 2025",
+    "headings": [
+      [
+        "H1",
+        "Erasmus+-ის ეროვნული ოფისის დისემინაციის ღონისძიება 2025"
+      ],
+      [
+        "H2",
+        "Erasmus+ საქართველოში – 2025 წლის დისემინაციის შედეგები – მიღწევები, ზეგავლენა და თანამშრომლობა"
+      ]
+    ],
+    "dates": [
+      {
+        "value": "2025-12-24",
+        "text": "24 დეკემბერი 2025"
+      }
+    ],
+    "paragraphs": 13,
+    "lists": 0,
+    "links": []
+  },
+  {
+    "path": "/ka/news/eve-statistics/",
+    "width": 1280,
+    "overflow": false,
+    "h1": "Erasmus+ ვირტუალური გაცვლების (EVE) 2025 წლის საპროექტო წინადადებების კონკურსის შედეგები",
+    "headings": [
+      [
+        "H1",
+        "Erasmus+ ვირტუალური გაცვლების (EVE) 2025 წლის საპროექტო წინადადებების კონკურსის შედეგები"
+      ],
+      [
+        "H2",
+        "პროექტების შინაარსი"
+      ],
+      [
+        "H3",
+        "2025 წლის საპროექტო წინადადებების კონკურსის შედეგები"
+      ],
+      [
+        "H3",
+        "კონსორციუმის მახასიათებლები"
+      ],
+      [
+        "H3",
+        "საქართველოს მონაწილეობა 2025 წლის Erasmus+ ვირტუალური გაცვლების კონკურსში"
+      ],
+      [
+        "H3",
+        "პროექტები, რომლებშიც მონაწილეობას იღებენ ქართული ორგანიზაციები"
+      ],
+      [
+        "H2",
+        "კვლევისა და ინოვაციის ხელშეწყობა უმაღლეს განათლებაში ვირტუალური გაცვლების საშუალებით"
+      ],
+      [
+        "H2",
+        "VirtuallyEDU 2.0 – ახალგაზრდების გაძლიერება ხელოვნური ინტელექტის მეშვეობით დაორგანიზებული ვირტუალური გაცვლებისა და ციფრული თანამშრომლობის გზით"
+      ],
+      [
+        "H2",
+        "ვირტუალური ინოვაციები და ტრეინინგები სწავლების ხელშესაწყობად"
+      ],
+      [
+        "H2",
+        "პროექტის მონაწილე ქართული უნივერსიტეტები:"
+      ],
+      [
+        "H2",
+        "ტოპ 10 ქვეყანა (პროექტების რაოდენობის მიხედვით)"
+      ]
+    ],
+    "dates": [
+      {
+        "value": "2025-12-26",
+        "text": "26 დეკემბერი 2025"
+      }
+    ],
+    "paragraphs": 9,
+    "lists": 10,
+    "links": []
+  },
+  {
+    "path": "/ka/news/information-about-capacity-building-project-proposals/",
+    "width": 1280,
+    "overflow": false,
+    "h1": "ინფორმაცია შესაძლებლობების გაძლიერების საპროექტო წინადადებებთან დაკავშირებით!",
+    "headings": [
+      [
+        "H1",
+        "ინფორმაცია შესაძლებლობების გაძლიერების საპროექტო წინადადებებთან დაკავშირებით!"
+      ]
+    ],
+    "dates": [
+      {
+        "value": "2026-02-09",
+        "text": "9 თებერვალი 2026"
+      }
+    ],
+    "paragraphs": 16,
+    "lists": 0,
+    "links": [
+      {
+        "text": "ERASMUS-EDU-2026-CBHE-REGION-2",
+        "href": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/ERASMUS-EDU-2026-CBHE-REGION-2"
+      },
+      {
+        "text": "ERASMUS-EDU-2026-CB-VET-NE",
+        "href": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/ERASMUS-EDU-2026-CB-VET-NE"
+      },
+      {
+        "text": "ERASMUS-YOUTH-2026-CB-NE",
+        "href": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/ERASMUS-YOUTH-2026-CB-NE"
+      },
+      {
+        "text": "ERASMUS-SPORT-2026-CB",
+        "href": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/ERASMUS-SPORT-2026-CB"
+      }
+    ]
+  },
+  {
+    "path": "/en/news/",
+    "width": 1280,
+    "overflow": false,
+    "h1": "News",
+    "headings": [
+      [
+        "H1",
+        "News"
+      ],
+      [
+        "H2",
+        "Latest news"
+      ],
+      [
+        "H3",
+        "Information about Capacity Building Project Proposals!"
+      ],
+      [
+        "H3",
+        "Erasmus+ Virtual Exchanges (EVE) Results of the 2025 Call for Proposals"
+      ],
+      [
+        "H3",
+        "Erasmus+ in Georgia – Achievements, Impact and Partnerships Highlighted at the 2025 Dissemination Event"
+      ],
+      [
+        "H3",
+        "Clarification on Erasmus+ Opportunities for Educational Institutions in Georgia"
+      ],
+      [
+        "H3",
+        "Europe Day in Kutaisi, 24–25 October"
+      ]
+    ],
+    "dates": [
+      {
+        "value": "2026-02-09",
+        "text": "9 February 2026"
+      },
+      {
+        "value": "2025-12-26",
+        "text": "26 December 2025"
+      },
+      {
+        "value": "2025-12-24",
+        "text": "24 December 2025"
+      },
+      {
+        "value": "2025-11-17",
+        "text": "17 November 2025"
+      },
+      {
+        "value": "2025-10-27",
+        "text": "27 October 2025"
+      }
+    ],
+    "paragraphs": 0,
+    "lists": 0,
+    "links": []
+  },
+  {
+    "path": "/en/news/europe-day-in-kutaisi/",
+    "width": 1280,
+    "overflow": false,
+    "h1": "Europe Day in Kutaisi, 24–25 October",
+    "headings": [
+      [
+        "H1",
+        "Europe Day in Kutaisi, 24–25 October"
+      ]
+    ],
+    "dates": [
+      {
+        "value": "2025-10-27",
+        "text": "27 October 2025"
+      }
+    ],
+    "paragraphs": 3,
+    "lists": 0,
+    "links": []
+  },
+  {
+    "path": "/en/news/announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia/",
+    "width": 1280,
+    "overflow": false,
+    "h1": "Clarification on Erasmus+ Opportunities for Educational Institutions in Georgia",
+    "headings": [
+      [
+        "H1",
+        "Clarification on Erasmus+ Opportunities for Educational Institutions in Georgia"
+      ]
+    ],
+    "dates": [
+      {
+        "value": "2025-11-17",
+        "text": "17 November 2025"
+      }
+    ],
+    "paragraphs": 4,
+    "lists": 0,
+    "links": []
+  },
+  {
+    "path": "/en/news/neo-dissemination-event-2025/",
+    "width": 1280,
+    "overflow": false,
+    "h1": "Erasmus+ in Georgia – Achievements, Impact and Partnerships Highlighted at the 2025 Dissemination Event",
+    "headings": [
+      [
+        "H1",
+        "Erasmus+ in Georgia – Achievements, Impact and Partnerships Highlighted at the 2025 Dissemination Event"
+      ]
+    ],
+    "dates": [
+      {
+        "value": "2025-12-24",
+        "text": "24 December 2025"
+      }
+    ],
+    "paragraphs": 13,
+    "lists": 0,
+    "links": []
+  },
+  {
+    "path": "/en/news/eve-statistics/",
+    "width": 1280,
+    "overflow": false,
+    "h1": "Erasmus+ Virtual Exchanges (EVE) Results of the 2025 Call for Proposals",
+    "headings": [
+      [
+        "H1",
+        "Erasmus+ Virtual Exchanges (EVE) Results of the 2025 Call for Proposals"
+      ],
+      [
+        "H2",
+        "Nature of the Projects"
+      ],
+      [
+        "H2",
+        "EVE Results of the 2025 Call"
+      ],
+      [
+        "H2",
+        "Consortium Characteristics"
+      ],
+      [
+        "H2",
+        "Georgia’s Participation in the 2025 Erasmus+ Virtual Exchanges Call"
+      ],
+      [
+        "H2",
+        "Projects involving Georgian institutions"
+      ],
+      [
+        "H2",
+        "Advancing Research and Innovation in Higher Education through Virtual Exchanges"
+      ],
+      [
+        "H2",
+        "VirtuallyEDU 2.0 – Empowering youth through AI-driven virtual exchanges and digital collaboration"
+      ],
+      [
+        "H2",
+        "Virtual Innovation and Training for Advancing Learning"
+      ],
+      [
+        "H2",
+        "Top 10 Countries (Ranked by Number of Projects)"
+      ]
+    ],
+    "dates": [
+      {
+        "value": "2025-12-26",
+        "text": "26 December 2025"
+      }
+    ],
+    "paragraphs": 10,
+    "lists": 10,
+    "links": []
+  },
+  {
+    "path": "/en/news/information-about-capacity-building-project-proposals/",
+    "width": 1280,
+    "overflow": false,
+    "h1": "Information about Capacity Building Project Proposals!",
+    "headings": [
+      [
+        "H1",
+        "Information about Capacity Building Project Proposals!"
+      ],
+      [
+        "H2",
+        "📣 Information about Capacity Building Project Proposals!"
+      ]
+    ],
+    "dates": [
+      {
+        "value": "2026-02-09",
+        "text": "9 February 2026"
+      }
+    ],
+    "paragraphs": 15,
+    "lists": 0,
+    "links": [
+      {
+        "text": "ERASMUS-EDU-2026-CBHE-REGION-2",
+        "href": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/ERASMUS-EDU-2026-CBHE-REGION-2"
+      },
+      {
+        "text": "ERASMUS-EDU-2026-CB-VET-NE",
+        "href": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/ERASMUS-EDU-2026-CB-VET-NE"
+      },
+      {
+        "text": "ERASMUS-YOUTH-2026-CB-NE",
+        "href": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/ERASMUS-YOUTH-2026-CB-NE"
+      },
+      {
+        "text": "ERASMUS-SPORT-2026-CB",
+        "href": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/ERASMUS-SPORT-2026-CB"
+      }
+    ]
+  }
+]
