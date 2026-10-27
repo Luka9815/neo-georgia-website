@@ -25,7 +25,7 @@ News now publishes exactly five bilingual legacy posts. update-1, update-2 and u
 
 Sample Events are still published: information-day, webinar and past-session (both languages). Proposed launch cleanup: first move their calendar, registration/agenda, CMS and relationship coverage into isolated fixture sites, then remove the live JSON, update production checks to use the remaining approved catalogue, clean output and verify their routes/search/sitemap entries are absent. Do not delete test coverage to remove samples. This session does not unpublish Events.
 
-The fetched main still ended at PR #14 and GitHub reported PR #16 open when work began. The working branch starts there, merges origin/assets/ka-emblem (23bda43, verified checksum), and carries the Session 16 branch locally so its approved image and checklist are preserved. No PR or main branch was merged by Codex; the new PR records this dependency.
+The branch starts from the initially fetched main and merges origin/assets/ka-emblem (23bda43, verified checksum). Session 16 was carried locally while GitHub still reported its PR open. The final fetch found main at 578e2fc with PRs #15 and #16 merged; that updated main is now merged into this working branch. Synchronisation added only the Session 15 changelog entry and did not change tested code. The PR targets the updated main; Codex did not merge any PR or change main.
 
 ## Turn on GitHub Pages: completed
 
