@@ -169,3 +169,8 @@ Newest at the top. One entry per working session: date, who (agent or person), w
 ## 2026-10-27: Session 18, item 2, grant agreement timing
 
 - Record Nino's expected end-of-November 2026 signature date via Luka. Keep the current model-agreement Article 17 wording and retain the signed-agreement funding/website review as a launch blocker.
+
+
+## 2026-10-27: Session 18, item 3, sole editor
+
+- Record Luka as sole editor until further notice, confirmed by Nino via Luka. Move additional editor access/training to post-launch and remove the editor-names launch prerequisite.

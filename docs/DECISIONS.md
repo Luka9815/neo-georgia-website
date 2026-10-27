@@ -272,3 +272,7 @@ The recovered brief mentioned Nino's review via Luka, but the restart explicitly
 
 ## 2026-10-27: Signed grant agreement expected in late November (Nino via Luka)
 The agreement is expected to be signed at the end of November 2026. Retain the current EACEA model grant agreement Article 17 funding and visibility wording until then. Recheck the funding statement and all website obligations against the signed agreement before launch; this does not approve launch or change the emblem/disclaimer.
+
+
+## 2026-10-27: Luka is the sole editor for now (Nino via Luka)
+Luka remains the only editor until further notice. Additional editor names/access are no longer a launch prerequisite; arrange staff access and EDITING.md training after launch when the team changes. Institutional ownership and maintenance responsibilities remain required.
