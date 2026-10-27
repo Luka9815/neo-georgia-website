@@ -78,6 +78,16 @@ test('sector groups and every Action page show draft eligibility and official so
           .sort()
       );
     }
+    for (const card of listing('.cards-action > li')) {
+      const node = listing(card);
+      const href = node.find('h4 a').attr('href');
+      const item = loadContent().action.find(item => href.endsWith(`/${item.slug}/`));
+      assert.ok(item, href);
+      const label = node.find('.action-key-label');
+      assert.equal(label.text(), `${strings.keyAction}: ${strings.keyActions[item.keyAction]}`);
+      assert.equal(label.attr('hidden'), undefined);
+      assert.equal(label.attr('aria-hidden'), undefined);
+    }
     for (const item of loadContent().action) {
       const page = load(
         readFileSync(`_site/${lang}/opportunities/${item.slug}/index.html`, 'utf8')

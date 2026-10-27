@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-27",
+  "lighthouse": "13.0.1",
+  "origin": "http://127.0.0.1:8080",
+  "method": "After the Publications initialisation change: three sequential Georgian mobile simulated-throttling navigations and one English navigation on the local production build.",
+  "pages": [
+    {
+      "path": "/ka/resources/publications/",
+      "performance": 99,
+      "accessibility": 100,
+      "fcpMs": 1655.1453000000001,
+      "lcpMs": 1730.1453000000001,
+      "tbtMs": 0,
+      "cls": 0.004258302604288601,
+      "warnings": [],
+      "failedAudits": [],
+      "opportunities": []
+    },
+    {
+      "path": "/ka/resources/publications/",
+      "performance": 97,
+      "accessibility": 100,
+      "fcpMs": 1658.9742,
+      "lcpMs": 1733.9742,
+      "tbtMs": 0,
+      "cls": 0.004258302604288601,
+      "warnings": [],
+      "failedAudits": [],
+      "opportunities": []
+    },
+    {
+      "path": "/ka/resources/publications/",
+      "performance": 99,
+      "accessibility": 100,
+      "fcpMs": 1655.77785,
+      "lcpMs": 1730.77785,
+      "tbtMs": 0,
+      "cls": 0.0036250255805617524,
+      "warnings": [],
+      "failedAudits": [],
+      "opportunities": []
+    },
+    {
+      "path": "/en/resources/publications/",
+      "performance": 100,
+      "accessibility": 100,
+      "fcpMs": 1506.0501,
+      "lcpMs": 1506.0501,
+      "tbtMs": 0,
+      "cls": 0.002806766532854844,
+      "warnings": [],
+      "failedAudits": [],
+      "opportunities": []
+    }
+  ]
+}

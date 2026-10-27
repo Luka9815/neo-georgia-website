@@ -21,8 +21,8 @@ eleventyExcludeFromCollections: true
     </select>
   </label>
   <button type="reset">{{ t.resetFilters }}</button>
-  <p role="status" data-publication-count data-label="{{ t.publicationResults }}"></p>
+  <p role="status" data-publication-count data-label="{{ t.publicationResults }}">{{ t.publicationResults }}: {{ publications.length }}</p>
 </form>
+<script src="/assets/js/publications.js"></script>
 {{ cards(publications, 'publication', t, view.lang, 'h2') }}
-<script type="module" src="/assets/js/publications.js"></script>
 {% endblock %}

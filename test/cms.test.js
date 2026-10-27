@@ -135,14 +135,15 @@ for (const [type, mutate, expected] of [
   test(`loader rejects ${type} editor mistake in ${expected}`, () => {
     const root = mkdtempSync(join(tmpdir(), 'neo-bad-content-'));
     try {
-      cpSync('src/content', root, { recursive: true });
+      cpSync('src', join(root, 'src'), { recursive: true });
+      const contentRoot = join(root, 'src/content');
       const original = type === 'news' ? 'update-1' : 'webinar';
-      const file = join(root, type, `${original}.json`);
+      const file = join(contentRoot, type, `${original}.json`);
       const item = JSON.parse(read(file));
       mutate(item);
       writeFileSync(file, JSON.stringify(item));
       assert.throws(
-        () => loadContent(root),
+        () => loadContent(contentRoot),
         (error) => {
           assert.ok(error.message.includes(`${file}: ${expected}:`), error.message);
           return true;
@@ -161,12 +162,13 @@ for (const [label, mutate] of [
   test(`loader accepts News with ${label}`, () => {
     const root = mkdtempSync(join(tmpdir(), 'neo-news-no-action-'));
     try {
-      cpSync('src/content', root, { recursive: true });
-      const file = join(root, 'news', 'update-1.json');
+      cpSync('src', join(root, 'src'), { recursive: true });
+      const contentRoot = join(root, 'src/content');
+      const file = join(contentRoot, 'news', 'update-1.json');
       const item = JSON.parse(read(file));
       mutate(item);
       writeFileSync(file, JSON.stringify(item));
-      const loaded = loadContent(root).news.find((n) => n.slug === item.slug);
+      const loaded = loadContent(contentRoot).news.find((n) => n.slug === item.slug);
       assert.deepEqual(loaded.actions, []);
     } finally {
       rmSync(root, { recursive: true, force: true });
