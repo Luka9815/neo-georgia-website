@@ -1,0 +1,9 @@
+2026-10-27: final accessibility checks
+
+Root
+Search: keyboard submit, typed ordering, language isolation, no-JS links and search-only loading passed.
+axe: 71 pages passed with zero violations; 320px overflow, keyboard skip links, language switches and no-JS mobile/desktop menus passed.
+
+Project prefix
+Search: keyboard submit, typed ordering, language isolation, no-JS links and search-only loading passed.
+axe: 71 pages passed with zero violations; 320px overflow, keyboard skip links, language switches and no-JS mobile/desktop menus passed.

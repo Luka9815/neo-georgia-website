@@ -6,7 +6,7 @@ All five have a downloaded review file available:
 
 | News slug | Review file | Publication status |
 |---|---|---|
-| europe-day-in-kutaisi | migration/review/images/europe-day-in-kutaisi.png | Held: NEO confirmation of consent to reuse the photograph of identifiable children |
+| europe-day-in-kutaisi | migration/review/images/europe-day-in-kutaisi.png | Permanently omitted by Luka, 2026-10-27 |
 | announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia | migration/review/images/announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia.png | Omitted by Luka: text-heavy or redundant |
 | neo-dissemination-event-2025 | migration/review/images/neo-dissemination-event-2025.jpg | Attached with approved Georgian and English alternatives |
 | eve-statistics | migration/review/images/eve-statistics.jpg | Omitted by Luka: text-heavy or redundant |

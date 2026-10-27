@@ -258,3 +258,9 @@ Supersedes “English beneficiary emblem on both languages until Georgian suppli
 
 ## 2026-10-27: Typographic office identity, no NEO graphic logo (Luka)
 No NEO graphic logo will be designed or used. EU Delegation guidelines require its approval for project-specific logos, and the Erasmus+ programme logo is not for beneficiary use. Use the exact translated officeName as the accessible home-link wordmark with existing fonts/colours, subordinate to the EU emblem; keep logoPath only for a future approved logo. The current Georgian source is “ერაზმუს+ საქართველოს ეროვნული ოფისი”, which differs from the prompt's example “ეროვნული Erasmus+ ოფისი საქართველოში”; retain the source name. English is “National Erasmus+ Office Georgia”. Use a typography-only E+ favicon without EU flag or programme artwork.
+
+## 2026-10-27: Permanently omit the Europe Day photograph (Luka)
+Supersedes the Europe Day consent hold in “Publish one approved News photograph and hold the Europe Day image”. Do not use europe-day-in-kutaisi.png at all. Remove the consent request from NEO inputs and the launch checklist. The dissemination photograph remains the only approved News image.
+
+## 2026-10-27: Keep sample News solely in isolated fixtures
+Move update-1, update-2 and update-3 out of src/content/news into test/fixtures/news. Copy them into temporary sites for CMS, responsive-image and missing-English fallback checks; produce no public sample News URLs or search/sitemap entries. News cards use up to the first 30 words of the first source prose paragraph with an ellipsis when needed, rather than the full article; details retain wording, facts and dates. At render time only, suppress an exact duplicate initial title, promote standalone bold section lines to headings and repair missing Markdown emphasis/line-break boundaries. Sample Events remain explicitly listed for a later launch cleanup, with coverage moved to fixtures first.
