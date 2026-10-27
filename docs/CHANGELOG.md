@@ -198,3 +198,22 @@ Newest at the top. One entry per working session: date, who (agent or person), w
 
 - Propose the Session 19 data model, bilingual pages, shared-data statistics, offline review/import workflow, updates and separately reviewed manual overlays in SITE-PLAN.md. List Luka's CSV/schema, coverage, link, translation, reuse and statistics decisions.
 - No importer code, project-data/terms fetch, public project/statistics data or new routes. Current licensing is explicitly unresolved until Luka supplies the official export and accompanying terms.
+
+
+## 2026-10-27: Session 18, item 8, authorised News editorial fixes
+
+- EVE Georgian: replace “ჯამში ჩართულია 7 პროექტი” with “ჯამში 7 მონაწილეობა სამ დაფინანსებულ პროექტში” to match seven participations across three funded projects. Preserve figures and English text.
+- Dissemination Georgian, spelling only (occurrence counts):
+  - ერივნული → ეროვნული (1).
+  - ტრეინინ → ტრენინგ (1).
+  - სექტორიში → სექტორში (2).
+  - პრორაგმაში → პროგრამაში (1).
+  - იყი → იყო (1).
+  - ინფროამციის → ინფორმაციის (1).
+  - დისსემინაციის → დისემინაციის (1).
+  - ოარგანიზაციების → ორგანიზაციების (1).
+  - დანერგას → დანერგვას (1).
+  - ერთმნეთისთვის → ერთმანეთისთვის (1).
+- Keep every dissemination figure, total and time window unchanged as published source figures. No other wording or punctuation change.
+- Add a separate bilingual note dated 2026-10-27 at the top of the November 2025 clarification, stating it reflects information at publication and linking to current Action pages. Preserve both original article bodies and the migration evidence.
+- Tests retain source paragraph/link preservation with only these explicit exceptions and check the dated note, full body invariance, spelling and numeric tokens.

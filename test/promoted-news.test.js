@@ -12,10 +12,16 @@ const topic = 'https://ec.europa.eu/info/funding-tenders/opportunities/portal/sc
 const direct = { KUPQy: 'ERASMUS-EDU-2026-CBHE-REGION-2', euXGT: 'ERASMUS-EDU-2026-CB-VET-NE', c3UWa: 'ERASMUS-YOUTH-2026-CB-NE', zx4x2: 'ERASMUS-SPORT-2026-CB' };
 const resolve = body => body.replace(/\[https:\/\/shorturl\.at\/(\w+)\]\(https:\/\/shorturl\.at\/\1\)/g, (all, id) => direct[id] ? `[${direct[id]}](${topic}${direct[id]})` : all);
 const links = body => [...body.matchAll(/\]\((https?:\/\/[^)]+)\)/g)].map(m => m[1]).sort();
-test('five approved News splits preserve source wording and every body link', () => {
+test('five approved News splits preserve source wording except authorised corrections, and every body link', () => {
   for (const slug of slugs) {
     const source = read(`migration/review/news/${slug}.json`);
     source.sourceText.body = resolve(source.sourceText.body);
+    if (slug === 'neo-dissemination-event-2025') {
+      for (const [old, corrected] of Object.entries(read('test/fixtures/session-18-spelling.json'))) {
+        source.sourceText.body = source.sourceText.body.replaceAll(old, corrected);
+      }
+    }
+    if (slug === 'eve-statistics') source.sourceText.body = source.sourceText.body.replace('ჯამში ჩართულია 7 პროექტი', 'ჯამში 7 მონაწილეობა სამ დაფინანსებულ პროექტში');
     const item = read(`src/content/news/${slug}.json`);
     assert.equal(item.date, source.date);
     if (slug !== 'neo-dissemination-event-2025') assert.ok(!item.image);
@@ -24,7 +30,7 @@ test('five approved News splits preserve source wording and every body link', ()
       assert.ok(item[lang].title);
       assert.match(item[lang].body, lang === 'ka' ? /[ა-ჰ]/ : /[A-Za-z]/);
       assert.doesNotMatch(item[lang].body, /For (English|Georgian).*Scroll|ALT NEEDED/i);
-      // Every retained paragraph is copied, including original spelling and punctuation.
+      // Every retained paragraph is copied, allowing only the logged spelling/EVE corrections.
       for (const paragraph of item[lang].body.split('\n\n')) assert.ok(source.sourceText.body.includes(paragraph), `${slug}: ${paragraph}`);
       assert.ok(md.render(item[lang].body).length > 100);
     }

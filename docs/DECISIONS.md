@@ -294,3 +294,7 @@ Do not implement newsletter sending, a sign-up form or a public sign-up link yet
 
 ## 2026-10-27: Projects and statistics remain a Session 19 plan (Luka)
 SITE-PLAN.md proposes linked projects/participations, an offline review importer and statistics from the same approved data. Luka supplies the official CSV later. Session 18 must add no importer code, source/data fetch, public project/statistics dataset or pages. Real headers, coverage, participation limits and current reuse/attribution terms must be confirmed before implementation/promotion; manual additions need evidence and explicit review.
+
+
+## 2026-10-27: Narrow promoted News corrections (Luka)
+Authorise only the EVE Georgian sentence change from seven projects to seven participations across three funded projects, the enumerated Georgian dissemination spelling corrections in CHANGELOG, and a bilingual note dated 2026-10-27 above the unchanged November 2025 clarification body linking to current Action pages. Preserve all figures and dissemination totals as published source figures, including their time windows. This narrowly supersedes source-wording preservation for those corrections only; migration/review evidence remains unchanged. No Action wording correction is authorised.

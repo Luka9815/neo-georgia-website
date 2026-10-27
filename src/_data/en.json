@@ -202,5 +202,6 @@
     "Friday",
     "Saturday",
     "Sunday"
-  ]
+  ],
+  "currentActions": "Current Action pages"
 }
