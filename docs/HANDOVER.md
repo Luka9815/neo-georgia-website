@@ -1,6 +1,6 @@
 # Handover
 
-Last updated: 2026-10-27 (Codex, session 18: partner shortcuts and static Event calendars)
+Last updated: 2026-10-27 (Codex, PR #18 review fixes)
 
 ## Current state
 
@@ -59,7 +59,7 @@ The bilingual Find partners page is linked from Opportunities and every Action. 
 
 ## Session 18 Event calendar
 
-/events/ stays the default list. The bilingual /events/calendar/ tables and ICS downloads are built from the existing Event JSON without new dependencies or a network request. Per-language Event files live at /<lang>/events/<slug>/event.ics; the feed is /<lang>/events/upcoming.ics. Preserve Event slugs for stable UIDs across languages/hosts. The daily rebuild refreshes the feed; downloads are snapshots. Calendar dates use the Event's named zone. Sample Events remain labelled and must be replaced or removed using the existing fixture-first Launch checklist. Removing them also removes their calendar entries and ICS files on a clean build.
+/events/ stays the default list. The bilingual /events/calendar/ tables and ICS downloads are built from the existing Event JSON without new dependencies or a network request. Per-language Event files live at /<lang>/events/<slug>/event.ics; the feed is /<lang>/events/upcoming.ics. UIDs are neo-georgia-event-<slug>, with no domain or @ part. Preserve Event slugs for stable UIDs across languages/hosts. Luka confirmed no ICS files have been published to users, so the pre-merge UID change has no subscriber impact. The daily rebuild refreshes the feed; downloads are snapshots. Calendar dates use the Event's named zone. Sample Events remain labelled and must be replaced or removed using the existing fixture-first Launch checklist. Removing them also removes their calendar entries and ICS files on a clean build.
 
 ## Session 19 planning only
 

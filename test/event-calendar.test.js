@@ -47,6 +47,8 @@ for (const lang of ['ka', 'en']) {
     assert.ok(unfolded.includes('\\n') && unfolded.includes('\\,') && unfolded.includes('\\\\'));
     assert.doesNotMatch(body, /DTEND:/);
     const uid = value => value.match(/^UID:(.+)$/m)[1];
+    assert.equal(uid(body), `neo-georgia-event-${item.slug}`);
+    assert.doesNotMatch(uid(body), /@/);
     assert.equal(uid(body), uid(eventIcs([{ ...item, date: '2027-07-01T10:00', end: '2027-07-01T11:00' }], lang === 'ka' ? 'en' : 'ka', 'https://other.example/', new Date())));
     assert.throws(() => eventIcs([{ ...item, end: '2026-11-01T09:00' }], lang, base), /end precedes start/);
   });
@@ -79,11 +81,12 @@ test('generated bilingual calendar has semantic weekdays, month anchors, list fa
     for (const anchor of $('.calendar-month-links a')) assert.equal($(anchor.attribs.href).length, 1);
     for (const item of events) {
       const file = readFileSync(`_site/${lang}/events/${item.slug}/event.ics`, 'utf8');
+      assert.equal(unfold(file).match(/^UID:(.+)$/m)[1], `neo-georgia-event-${item.slug}`);
       assert.ok(unfold(file).includes(`SUMMARY;LANGUAGE=${lang}:${item[lang].title}`));
       const detail = load(readFileSync(`_site/${lang}/events/${item.slug}/index.html`, 'utf8'));
       assert.equal(detail(`a[href="${getPathPrefix()}${lang}/events/${item.slug}/event.ics"][download]`).length, 1);
     }
     const feed = readFileSync(`_site/${lang}/events/upcoming.ics`, 'utf8');
-    for (const item of events) assert.equal(feed.includes(`UID:neo-georgia-event-${item.slug}@`), eventStatus(item) === 'upcoming');
+    for (const item of events) assert.equal(feed.includes(`UID:neo-georgia-event-${item.slug}\r\n`), eventStatus(item) === 'upcoming');
   }
 });

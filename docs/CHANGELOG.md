@@ -227,3 +227,9 @@ Newest at the top. One entry per working session: date, who (agent or person), w
 - Confirm all nine Action records/shared eligibility, AGENTS.md, CLAUDE.md, migration evidence, package manifest and lockfile are unchanged from eabf728. No Action wording changes, importer, project/statistics dataset or pages, newsletter form/sending, account or new runtime dependency. No added em dashes; git diff --check passes.
 - Partner checks are dated 2026-10-27. The school page resolves through its official legacy redirect; direct automated requests returned 403. PARTNER-TOOLS.md records the distinction for a normal-browser check before launch.
 - Nine item commits on codex/session-18-features from origin/main eabf728. Open one PR for review; do not merge or change the launch flag.
+
+
+## 2026-10-27: PR #18 review, item 1, domain-independent ICS UIDs
+
+- Change UID to neo-georgia-event-<slug> without an @ part. Update the Static Event calendar and iCalendar files decision: RFC 5545 permits this form, the site is leaving the old domain, and ERIDA may never own it. Luka confirms no ICS files have been published to users, so there is no subscriber impact.
+- Update bilingual unit/generated-file/feed tests to require the exact domain-independent UID and retain stability across language, dates, builds and hosting changes. All named-zone/DST handling is unchanged. Full clean-build/test/browser results follow in review item 3.
