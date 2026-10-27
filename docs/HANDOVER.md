@@ -1,6 +1,6 @@
 # Handover
 
-Last updated: 2026-10-27 (Codex, session 14: nominative search and draft image alternatives)
+Last updated: 2026-10-27 (Codex, session 15: housekeeping and filter data check)
 
 ## Current state
 
@@ -104,11 +104,17 @@ The browser check uses `/usr/bin/chromium`; set CHROMIUM_PATH if Chromium lives 
 
 ## Next task
 
-Luka reviews session 14 on codex/session-14-fixes, stacked on the fetched session-13-news-images at ad90a4b. Nothing is merged automatically. Review predecessors in order and retarget/rebase later PRs as needed for the chosen merge method.
+Session 14 (PR #14) is merged into main at 99d9c81. Session 15 checked this main commit before starting.
+
+Opportunity filters are blocked by missing structured target-group classifications. All nine Action records have keyAction, sectors and audience, but audience is ["organisations"] throughout. No field distinguishes higher education institutions, students, staff, youth organisations or others. Sector values describe subject areas, not target groups. Per Luka's session 15 instruction, stop filter implementation rather than infer classifications from prose or invent values. Next, obtain approved per-Action target-group values and a data-model brief before implementing both filters. No Action content was changed.
 
 Approve or revise the draft Georgian/English alt table in NEWS-PROMOTION.md before any image is attached. It is based on visual inspection of all five review files. The clarification graphic is mostly text/logos, the Capacity Building graphic is a text-heavy poster, and the statistics chart repeats figures already in the article; these may be better omitted. The table notes visible branding and reuse checks. No post, image field, public upload or migration review file was changed. Image selection and actual publication require a separate content update after Luka's approval.
 
 Search now includes nominative ა and ი last, with the same four-letter minimum and one-ending rule. All five required word-family checks reach full recall in both layouts; English ordered result URLs match session 12 exactly. Continue editorial review, hosted CMS image upload/save/reopen, the hosted emoji redirect check and review of the historical clarification. Replace [SAMPLE] content before launch and retain institutional domain ownership and existing funding checks.
+
+## Session 15 data check
+
+Housekeeping removes the obsolete session 14 review instruction while retaining alt-table approval, the hosted CMS image round trip, the hosted emoji redirect check and historical clarification review. Filter implementation and filter-specific tests are deferred under the explicit missing-field stop condition. AGENTS.md remains canonical and CLAUDE.md still points to it; neither requires a change. No logged decision is reversed. A clean production build and all 97 existing tests pass, including both project-prefix/custom-domain checks. No filter-specific tests were added because implementation stopped at the data prerequisite.
 
 ## Session 14 fixes
 
