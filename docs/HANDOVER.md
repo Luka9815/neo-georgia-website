@@ -1,6 +1,6 @@
 # Handover
 
-Last updated: 2026-10-27 (Codex, session 17: Georgian EU emblem, typographic identity and News archive)
+Last updated: 2026-10-27 (Codex, PR #18 review fixes)
 
 ## Current state
 
@@ -53,9 +53,45 @@ Original emblem checksums, derivative dimensions and files, exact office names, 
 
 Session 16's Lighthouse results in review/session-16 are historical measurements before this identity/archive work. They are not a new performance score for Session 17. The remaining manual and hosted checks appear only in the Launch checklist.
 
+## Session 18 partner shortcuts
+
+The bilingual Find partners page is linked from Opportunities and every Action. PARTNER-TOOLS.md records eight official destinations checked 2026-10-27. It adds navigation only; all Action wording stays unchanged. Recheck links during routine maintenance. Luka verified the current school partner-search URL in his normal browser on 2026-10-27. PARTNER-TOOLS.md retains the earlier automated 403 results as history; the normal-browser verification task is complete.
+
+## Session 18 Event calendar
+
+/events/ stays the default list. The bilingual /events/calendar/ tables and ICS downloads are built from the existing Event JSON without new dependencies or a network request. Per-language Event files live at /<lang>/events/<slug>/event.ics; the feed is /<lang>/events/upcoming.ics. UIDs are neo-georgia-event-<slug>, with no domain or @ part. Preserve Event slugs for stable UIDs across languages/hosts. Luka confirmed no ICS files have been published to users, so the pre-merge UID change has no subscriber impact. The daily rebuild refreshes the feed; downloads are snapshots. Calendar dates use the Event's named zone. Sample Events remain labelled and must be replaced or removed using the existing fixture-first Launch checklist. Removing them also removes their calendar entries and ICS files on a clean build.
+
+## Session 19 planning only
+
+Read the proposal at the end of SITE-PLAN.md. It specifies projects with Georgian participation, linked organisations/roles, completed/ongoing pages and statistics from the same approved snapshot, a future manual offline review importer, update/overlay rules and unresolved source terms. Luka will supply the official CSV; no importer, project-data fetch, public dataset or new project/statistics page is implemented. Do not revive the previous CSV download attempt. Agree the listed schema, coverage, licensing and editorial decisions with Luka before Session 19.
+
+## Session 18 editorial changes
+
+EVE Georgian now says seven participations across three funded projects without changing figures. Dissemination Georgian has only the ten spelling replacements listed with counts in CHANGELOG; published totals and time windows remain intact. The November 2025 clarification body is unchanged, with a separate bilingual note dated 2026-10-27 linking to current Action pages. Migration evidence remains unchanged. No Action wording changes are made.
+
+## Session 18 scope
+
+Restart from main eabf728 on codex/session-18-features. All nine Actions and the shared Georgia eligibility note retain [DRAFT] and unchanged wording. ACTION-REVIEW.md lists the session's Action wording changes separately: none. Projects and statistics are planning only, awaiting Luka's official CSV export; no importer or public dataset is authorised.
+
+## Session 18 validation
+
+Clean root and project-prefix builds pass, with all 111 tests in each layout. Axe passes all 75 non-redirect pages per layout, covering both languages with zero violations. Checks include 320 px overflow, skip links/language switches, no-JavaScript mobile/desktop menus, Publications, search, image decoding, and native calendar keyboard scrolling and ICS download navigation in both languages. Partner/calendar views were captured at 320/1280 px for visual review. These remain automated/local checks; the hosted/manual Launch checklist stays open.
+
+ICS tests cover spring and autumn Brussels DST boundaries in both languages, rejected ambiguous/nonexistent wall times, Tbilisi UTC conversion, stable UIDs across dates/languages/hosts, RFC text escaping, CRLF and UTF-8 folding, generated per-Event/feed links, zero-duration Events and leap/multi-day month boundaries. Source-preservation tests allow only the logged News corrections, compare original numeric tokens and protect unchanged English/clarification bodies.
+
+Action JSON and shared Georgia eligibility text are byte-for-byte unchanged from eabf728. AGENTS.md remains canonical and CLAUDE.md remains its pointer; both are unchanged and consistent. siteLaunched=false, migration evidence and dependencies are unchanged. No importer or project/statistics data/routes are added. One commit per brief item; the final item records validation findings, including unique calendar region labels and chronological feed sorting by resolved instants.
+
+## PR #18 review fixes and validation, 27 October 2026
+
+UIDs now use exactly neo-georgia-event-<slug>, with no domain or @ part. The Static Event calendar and iCalendar files decision records Luka's reasoning and confirms no subscriber impact because no ICS files have been published to users. Luka verified the school partner-search URL in his normal browser on 2026-10-27; PARTNER-TOOLS.md closes that check and retains automated 403 results as history.
+
+After these fixes, clean root and project-prefix builds pass and all 111 tests pass in each layout. The project-prefix run uses an isolated copy of the committed branch so the two outputs remain independent. Browser checks pass all 75 non-redirect pages per layout, both languages, with zero axe violations, including 320 px overflow, keyboard/language navigation, no-JavaScript controls, calendar scrolling and ICS downloads. All eight generated ICS files per layout use the exact domain-independent UID form; named-zone/DST tests still pass in both languages.
+
+Three separate review commits cover the UID correction, browser-verification record and validation results. Push to the same codex/session-18-features branch and keep PR #18 open for review. All nine Actions remain [DRAFT] and unchanged; the remaining Launch checklist and siteLaunched=false still apply.
+
 ## Next task
 
-Review this session's PR without automatic merging, then work through the Launch checklist. Opportunity filters are dropped; no target-group data expansion is required. Earlier session state and measurements remain in CHANGELOG and the subject documents, rather than duplicate launch lists here.
+Review the Session 18 PR without automatic merging, then work through the Launch checklist. All nine Actions remain [DRAFT]. For Session 19, wait for Luka's official CSV and resolve the decisions in SITE-PLAN.md before building projects/statistics. Opportunity filters remain dropped.
 
 ## Remaining work
 
@@ -63,7 +99,7 @@ The Launch checklist is the single list of launch blockers. Optional later work,
 
 ## Waiting on Nino / NEO
 
-Only three inputs remain here: signed grant agreement funding wording and website obligations, review of the nine [DRAFT] Actions, and the names of staff editors.
+The signed grant agreement is expected at the end of November 2026 (Nino via Luka, 2026-10-27). Keep the current EACEA model grant agreement Article 17 wording until then. Funding wording and website obligations must be rechecked against the signed agreement before launch. Review of the nine [DRAFT] Actions also remains open.
 
 ## Launch checklist
 
@@ -73,17 +109,23 @@ Keep siteLaunched=false until this single ordered list is complete. Completed Pa
 2. **(a) Luka hosted checks:** complete the CMS image upload/save/reopen round trip with an approved test image, check shared src and both alternatives, inspect responsive output and remove temporary test content. Do not use another review image.
 3. **(a) Luka hosted checks:** request the encoded historical emoji URL on Pages and verify it reaches the intended bilingual News post. Local output checks do not establish hosted URL decoding.
 4. **(a) Luka hosted checks:** confirm a daily rebuild completes and refreshes time-sensitive statuses. Monitor failures and re-enable after inactivity if needed. The configured time is 04:15 UTC, 08:15 in Georgia.
-5. **(a) Luka manual checks:** review keyboard focus, screen-reader landmarks/headings and language announcements, search/live regions, Publications filtering, 200% text resize, 400% zoom/reflow, forced colours, reduced motion and Georgian readability. Check document/recording accessibility and repeat final hosted accessibility/performance checks after content changes.
+5. **(a) Luka manual checks:** review keyboard focus, screen-reader landmarks/headings and language announcements, search/live regions, Publications filtering, calendar table navigation/scrolling and ICS downloads, 200% text resize, 400% zoom/reflow, forced colours, reduced motion and Georgian readability. Check document/recording accessibility and repeat final hosted accessibility/performance checks after content changes.
 6. **(b) Nino / NEO:** review all nine [DRAFT] Actions in both languages: icm, erasmus-mundus, cbhe, jean-monnet, cb-vet, cb-youth, youth-mobility, virtual-exchanges and cb-sport. Use ACTION-REVIEW.md for coordinator/partner distinctions, the Georgia authority exclusion and CBHE Strand 3 clarification.
-7. **(b) Nino / NEO:** confirm funding wording and website obligations against the signed grant agreement and current visibility requirements. Keep the approved Georgian artwork and unchanged supplied disclaimer unless that review produces a new explicit decision.
-8. **(b) Nino / NEO:** provide editor names. Luka then arranges GitHub access and training with EDITING.md and records the maintenance contact.
+7. **(b) Nino / NEO:** confirm funding wording and website obligations against the signed grant agreement, expected at the end of November 2026, and current visibility requirements. Until then retain the current EACEA model grant agreement Article 17 wording. Keep the approved Georgian artwork and unchanged supplied disclaimer unless that review produces a new explicit decision.
+8. **Editor status, confirmed 2026-10-27:** Luka is the sole editor until further notice (Nino via Luka). No additional editor names are needed for launch. Record Luka as the maintenance contact by role; additional editor access and training with EDITING.md move to after launch.
 9. **(a) Luka editorial preparation:** replace or explicitly omit the remaining sample Calls/Events: call/cbhe-2025, call/cbhe-2026, call/icm-2026, call/jean-monnet-2026; event/information-day, event/past-session, event/webinar. Use the fixture-first Event removal proposal above. Supply approved dates, time zones, venues, links, agendas and relationships for retained production records.
 10. **(a) Luka editorial preparation:** replace or omit story/example; resource/guide and resource/session-notes; faq/sample-application, faq/sample-guidance and faq/sample-mobility; person/sample-here and person/sample-team; publication/sample-brochure and publication/sample-report with their two sample text files; page/about, page/accessibility and page/privacy. These are the remaining 20 sample records when combined with the Calls/Events in item 9. News samples are already isolated fixtures, not launch content.
 11. **(a) Luka editorial preparation:** replace or remove every remaining sample translation value in both languages: sample, purpose, empty, contactPlaceholder, socialPlaceholder, sampleNumber, homeHeadline, homeGuideTitle, homeGuideBody, figuresNote, contactAddress, contactHours and contactEmail. The two unused logo placeholder/name keys are removed. Keep the noindex preview notice until the final launch copy is agreed; do not merely strip sample markers from illustrative claims.
-12. **(a) Luka editorial review:** resolve the content questions in review/session-17/README.md, including EVE's Georgian seven-projects versus English seven-participations wording, the dissemination totals' time windows and the historical clarification's current eligibility context. No wording or facts were corrected automatically.
+12. **Editorial status, Session 18:** Luka approved the EVE Georgian seven-participations correction, enumerated dissemination spelling corrections and a dated bilingual context note above the unchanged historical clarification. Dissemination totals and time windows remain unchanged as published source figures. See CHANGELOG for each correction; all other content questions in review/session-17/README.md remain subject to editorial review.
 13. **(c) Remaining code tasks:** move remaining sample-dependent checks into isolated fixtures before removing live samples, apply approved records/translations and validate relationships, local files, alternatives, dates and links. Resolve code findings from hosted/manual review.
-14. **(c) Remaining code tasks:** run clean root/project builds, the full suite and browser checks after final content edits. At the current Pages address, verify metadata, sitemap, language switches, bilingual 404, root/legacy redirects and launch indexing behaviour. After the remaining checks and approval, prepare siteLaunched=true as a separate reviewed change.
+14. **(c) Remaining code tasks:** run clean root/project builds, the full suite and browser checks after final content edits. At the current Pages address, verify metadata, sitemap, language switches, bilingual 404, root/legacy redirects, calendar/ICS downloads and launch indexing behaviour. After the remaining checks and approval, prepare siteLaunched=true as a separate reviewed change.
 
 ## Later Luka task: domain and institutional ownership
 
 When a domain change is chosen later, ensure ERIDA registration/ownership and a written transfer agreement if retaining erasmus.org.ge. Confirm institutional repository transfer arrangements, authorised redirect coverage and website obligations, then update SITE_URL, PATH_PREFIX and workflow values. Verify the final address, HTTPS, canonical/hreflang/OG URLs, sitemap, language switches and redirects after the change. This is not a request for Nino to decide a domain now.
+
+
+## Post-launch work
+
+- Luka is the sole editor for now. When additional editors are named, arrange GitHub access and training using EDITING.md.
+- Newsletter: deferred until ERIDA has an institutional email and a free mailing-service account registered to it, for example MailerLite free tier. Then review service terms, privacy/consent wording and add a sign-up link. No sending, form, account or sign-up link is implemented in Session 18.

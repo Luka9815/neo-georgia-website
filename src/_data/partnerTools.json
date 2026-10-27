@@ -1,0 +1,37 @@
+{
+  "checkedOn": "2026-10-27",
+  "tools": [
+    {
+      "key": "funding",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/how-to-participate/partner-search"
+    },
+    {
+      "key": "results",
+      "url": "https://erasmus-plus.ec.europa.eu/projects"
+    },
+    {
+      "key": "epale",
+      "url": "https://epale.ec.europa.eu/en/partner-search"
+    },
+    {
+      "key": "schools",
+      "url": "https://school-education.ec.europa.eu/en/connect/partner-search"
+    },
+    {
+      "key": "etwinning",
+      "url": "https://school-education.ec.europa.eu/en/etwinning"
+    },
+    {
+      "key": "otlas",
+      "url": "https://www.salto-youth.net/tools/otlas-partner-finding/"
+    },
+    {
+      "key": "saltoEducation",
+      "url": "https://salto-et.net/"
+    },
+    {
+      "key": "saltoYouth",
+      "url": "https://www.salto-youth.net/tools/european-training-calendar/"
+    }
+  ]
+}

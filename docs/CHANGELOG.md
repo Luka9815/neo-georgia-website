@@ -159,3 +159,89 @@ Newest at the top. One entry per working session: date, who (agent or person), w
 
 ## 2026-10-26 (Claude)
 - Repository seeded with AGENTS.md, CLAUDE.md, docs/HANDOVER.md, docs/DECISIONS.md, docs/CHANGELOG.md and docs/SITE-PLAN.md (site plan v0.1, converted from the approved Word version).
+
+
+## 2026-10-27: Session 18, item 1, preserve Action drafts
+
+- Restart from main eabf728. Keep all nine bilingual Actions and shared eligibility wording unchanged, including every [DRAFT] marker. Record the superseding restart scope and the separate Action wording review list (none). Nino's review remains on the Launch checklist.
+
+
+## 2026-10-27: Session 18, item 2, grant agreement timing
+
+- Record Nino's expected end-of-November 2026 signature date via Luka. Keep the current model-agreement Article 17 wording and retain the signed-agreement funding/website review as a launch blocker.
+
+
+## 2026-10-27: Session 18, item 3, sole editor
+
+- Record Luka as sole editor until further notice, confirmed by Nino via Luka. Move additional editor access/training to post-launch and remove the editor-names launch prerequisite.
+
+
+## 2026-10-27: Session 18, item 4, partner shortcuts
+
+- Add bilingual Find partners pages, central official URLs, one-line descriptions and links from Opportunities/all Actions. Keep all seven main destinations and every Action text field.
+- Verify eight destinations using the web tool on 2026-10-27, including the school search redirect. PARTNER-TOOLS.md records the results and Erasmus+ source for the two additional SALTO calendars.
+
+
+## 2026-10-27: Session 18, item 5, static Event calendars and ICS
+
+- Add bilingual build-time month tables linked from the default Events list, translated Georgian/English weekdays and month anchors, native table semantics and keyboard scrolling. Include multi-day Events with exclusive midnight ends and an empty current Tbilisi month. No runtime calendar dependency or external service.
+- Add static per-Event and upcoming-feed ICS downloads in both languages. Stable slug-based UIDs, named-zone conversion to UTC, build DTSTAMP, RFC 5545 escaping/CRLF/75-octet UTF-8 folding, and no DTEND for zero-duration Events. Keep all sample labels.
+- Add tests for spring/autumn Brussels DST transitions in both languages, rejected ambiguous/nonexistent times, Tbilisi conversion, UID stability, generated downloads, leap days and multi-day month boundaries. Extend browser checks with no-JavaScript keyboard scrolling/download navigation. Final validation is recorded under item 9.
+
+
+## 2026-10-27: Session 18, item 6, newsletter deferral
+
+- Log the institutional email/free mailing-account prerequisites and the later consent-bearing sign-up link. Add the newsletter to post-launch work; implement no form or sending.
+
+
+## 2026-10-27: Session 18, item 7, projects/statistics plan only
+
+- Propose the Session 19 data model, bilingual pages, shared-data statistics, offline review/import workflow, updates and separately reviewed manual overlays in SITE-PLAN.md. List Luka's CSV/schema, coverage, link, translation, reuse and statistics decisions.
+- No importer code, project-data/terms fetch, public project/statistics data or new routes. Current licensing is explicitly unresolved until Luka supplies the official export and accompanying terms.
+
+
+## 2026-10-27: Session 18, item 8, authorised News editorial fixes
+
+- EVE Georgian: replace “ჯამში ჩართულია 7 პროექტი” with “ჯამში 7 მონაწილეობა სამ დაფინანსებულ პროექტში” to match seven participations across three funded projects. Preserve figures and English text.
+- Dissemination Georgian, spelling only (occurrence counts):
+  - ერივნული → ეროვნული (1).
+  - ტრეინინ → ტრენინგ (1).
+  - სექტორიში → სექტორში (2).
+  - პრორაგმაში → პროგრამაში (1).
+  - იყი → იყო (1).
+  - ინფროამციის → ინფორმაციის (1).
+  - დისსემინაციის → დისემინაციის (1).
+  - ოარგანიზაციების → ორგანიზაციების (1).
+  - დანერგას → დანერგვას (1).
+  - ერთმნეთისთვის → ერთმანეთისთვის (1).
+- Keep every dissemination figure, total and time window unchanged as published source figures. No other wording or punctuation change.
+- Add a separate bilingual note dated 2026-10-27 at the top of the November 2025 clarification, stating it reflects information at publication and linking to current Action pages. Preserve both original article bodies and the migration evidence.
+- Tests retain source paragraph/link preservation with only these explicit exceptions and check the dated note, full body invariance, spelling and numeric tokens.
+
+
+## 2026-10-27: Session 18, item 9, final validation and handover
+
+- Clean root and project-prefix builds pass. All 111 tests pass in each layout, including isolated project-prefix/custom-domain and image/CMS builds. Axe passes all 75 non-redirect pages per layout, both languages, with zero violations. Browser checks cover 320 px overflow, keyboard/language navigation, no-JavaScript menus, Publications, search, image decoding and native calendar scrolling/ICS downloads. Partner/calendar screenshots were captured at 320/1280 px for visual review.
+- Fix duplicate calendar landmark names found by axe: retain the scroll-region label and remove it from the outer section. Sort the upcoming feed by resolved UTC instants. Keep the Events list as the default.
+- Update CONTENT for the code-maintained historical note; existing CMS merge mode preserves unmanaged fields. Refresh HANDOVER and its Launch checklist, preserving outstanding hosted/manual checks and siteLaunched=false.
+- Confirm all nine Action records/shared eligibility, AGENTS.md, CLAUDE.md, migration evidence, package manifest and lockfile are unchanged from eabf728. No Action wording changes, importer, project/statistics dataset or pages, newsletter form/sending, account or new runtime dependency. No added em dashes; git diff --check passes.
+- Partner checks are dated 2026-10-27. The school page resolves through its official legacy redirect; direct automated requests returned 403. PARTNER-TOOLS.md records the distinction for a normal-browser check before launch.
+- Nine item commits on codex/session-18-features from origin/main eabf728. Open one PR for review; do not merge or change the launch flag.
+
+
+## 2026-10-27: PR #18 review, item 1, domain-independent ICS UIDs
+
+- Change UID to neo-georgia-event-<slug> without an @ part. Update the Static Event calendar and iCalendar files decision: RFC 5545 permits this form, the site is leaving the old domain, and ERIDA may never own it. Luka confirms no ICS files have been published to users, so there is no subscriber impact.
+- Update bilingual unit/generated-file/feed tests to require the exact domain-independent UID and retain stability across language, dates, builds and hosting changes. All named-zone/DST handling is unchanged. Full clean-build/test/browser results follow in review item 3.
+
+
+## 2026-10-27: PR #18 review, item 2, school partner URL verified
+
+- Record Luka's 2026-10-27 confirmation that the current school partner-search URL works in his normal browser. Update PARTNER-TOOLS and HANDOVER; retain the earlier automated 403/legacy-redirect results as history and close the browser-verification task. The published official URL is unchanged.
+
+
+## 2026-10-27: PR #18 review, item 3, clean validation rerun
+
+- Re-run clean root and project-prefix builds after the UID correction. All 111 tests pass in each layout, including the bilingual DST and exact UID checks. Inspect all eight static ICS files per layout: every UID uses neo-georgia-event-<slug> with no @ part. The project-prefix suite runs from an isolated copy of the committed branch.
+- Browser checks pass all 75 non-redirect pages per layout, both languages, with zero axe violations. Checks include 320 px overflow, keyboard/language navigation, no-JavaScript menus/controls, Publications, search, image decoding and calendar keyboard scrolling/ICS downloads. git diff --check passes.
+- Update HANDOVER with the review fixes and results. Keep the same branch and PR, one commit per review item, without merging or changing the launch flag. Action wording, shared eligibility, dependencies and AGENTS/CLAUDE guidance remain unchanged.

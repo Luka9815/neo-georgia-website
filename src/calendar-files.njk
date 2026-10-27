@@ -1,0 +1,9 @@
+---
+pagination:
+  data: eventCalendars.files
+  size: 1
+  alias: calendarFile
+permalink: "{{ calendarFile.path }}"
+eleventyExcludeFromCollections: true
+---
+{{- calendarFile.body | safe -}}

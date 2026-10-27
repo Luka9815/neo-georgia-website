@@ -11,6 +11,12 @@ eleventyExcludeFromCollections: true
 {% block pageContent %}
 {% set item = news | findSlug(view.slug) %}
 <article class="news-article" aria-labelledby="page-title">
+{% if item.historicalNote %}
+<aside class="eligibility-note historical-note">
+  <p><time datetime="{{ item.historicalNote.date }}">{{ item.historicalNote.date | dateLabel(t, 'UTC', false) }}</time>: {{ item.historicalNote[view.lang] }}</p>
+  <p><a href="/{{ view.lang }}/opportunities/">{{ t.currentActions }}</a></p>
+</aside>
+{% endif %}
 <p class="card-date"><time datetime="{{ item.date }}">{{ item.date | dateLabel(t, 'UTC', false) }}</time></p>
 {% if item.image %}<img data-news-image data-image-layout="article" src="{{ item.image.src }}" alt="{{ item.image.alt[view.lang] }}">{% endif %}
 {{ item.body | newsMarkdown(item.title) | safe }}

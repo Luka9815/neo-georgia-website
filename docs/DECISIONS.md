@@ -264,3 +264,47 @@ Supersedes the Europe Day consent hold in “Publish one approved News photograp
 
 ## 2026-10-27: Keep sample News solely in isolated fixtures
 Move update-1, update-2 and update-3 out of src/content/news into test/fixtures/news. Copy them into temporary sites for CMS, responsive-image and missing-English fallback checks; produce no public sample News URLs or search/sitemap entries. News cards use up to the first 30 words of the first source prose paragraph with an ellipsis when needed, rather than the full article; details retain wording, facts and dates. At render time only, suppress an exact duplicate initial title, promote standalone bold section lines to headings and repair missing Markdown emphasis/line-break boundaries. Sample Events remain explicitly listed for a later launch cleanup, with coverage moved to fixtures first.
+
+
+## 2026-10-27: Session 18 Action review remains pending (Luka)
+The recovered brief mentioned Nino's review via Luka, but the restart explicitly requires all nine Actions to retain [DRAFT]. No Action approval is recorded by this session. Preserve every Action text field and the shared Georgia eligibility note; list any proposed wording changes separately in ACTION-REVIEW.md for Nino. Partner-search navigation does not change eligibility or application wording.
+
+
+## 2026-10-27: Signed grant agreement expected in late November (Nino via Luka)
+The agreement is expected to be signed at the end of November 2026. Retain the current EACEA model grant agreement Article 17 funding and visibility wording until then. Recheck the funding statement and all website obligations against the signed agreement before launch; this does not approve launch or change the emblem/disclaimer.
+
+
+## 2026-10-27: Luka is the sole editor for now (Nino via Luka)
+Luka remains the only editor until further notice. Additional editor names/access are no longer a launch prerequisite; arrange staff access and EDITING.md training after launch when the team changes. Institutional ownership and maintenance responsibilities remain required.
+
+
+## 2026-10-27: Official partner-search shortcuts (Nino via Luka)
+Add bilingual /opportunities/find-partners/ under Opportunities and link it from all nine Action pages, preserving the seven main destinations and all Action wording. Only official EU/programme tools are listed, including the SALTO training calendars linked by Erasmus+. Public URL checks and redirects are recorded in PARTNER-TOOLS.md, dated 2026-10-27. This also records Nino's request via Luka for Events calendars, a newsletter, projects involving Georgia and statistics; the following items define their authorised scope.
+
+
+## 2026-10-27: Static Event calendar and iCalendar files
+Keep /events/ as the accessible default list. Add /events/calendar/ with build-time month tables, translated Monday-first weekdays, month anchors and keyboard-scrollable regions, without runtime scripts or a calendar dependency. Dates use each Event's named zone; multi-day events cover local dates with exclusive midnight ends. Include the current Tbilisi month even when empty.
+
+Generate bilingual event.ics files per Event and upcoming.ics feeds during Eleventy builds. Resolve each raw wall time using the existing Temporal helper with disambiguation reject, then write UTC DTSTART/DTEND. UID is neo-georgia-event-<slug>, with no @ part, and stays identical across languages, builds, time changes and hosting changes. Never rename a published Event slug without a migration decision. DTSTAMP is the build instant; feeds include in-progress Events until their end, matching the existing upcoming status. Zero-duration Events omit DTEND. Use RFC 5545 CRLF, text escaping and 75-octet UTF-8 folding. Downloads are static snapshots, not a live subscription service.
+
+PR #18 review correction, 2026-10-27 (Luka): the domain-independent UID above supersedes the original @events.erasmus.org.ge suffix. RFC 5545 permits a UID without an @ part. Permanent identifiers must not depend on a domain the site is leaving and ERIDA may never own. No ICS files have been published to users yet, so this change has no subscriber impact. Keep the fixed neo-georgia-event- namespace and published Event slugs stable from the first release.
+
+
+## 2026-10-27: Defer newsletter pending an institutional account (Nino via Luka)
+Do not implement newsletter sending, a sign-up form or a public sign-up link yet. After ERIDA has an institutional email and a free mailing-service account registered to it (for example MailerLite's free tier), review the current service terms and add a sign-up link with consent wording. Keep this on the post-launch list and preserve institutional control of the account.
+
+
+## 2026-10-27: Projects and statistics remain a Session 19 plan (Luka)
+SITE-PLAN.md proposes linked projects/participations, an offline review importer and statistics from the same approved data. Luka supplies the official CSV later. Session 18 must add no importer code, source/data fetch, public project/statistics dataset or pages. Real headers, coverage, participation limits and current reuse/attribution terms must be confirmed before implementation/promotion; manual additions need evidence and explicit review.
+
+
+## 2026-10-27: Narrow promoted News corrections (Luka)
+Authorise only the EVE Georgian sentence change from seven projects to seven participations across three funded projects, the enumerated Georgian dissemination spelling corrections in CHANGELOG, and a bilingual note dated 2026-10-27 above the unchanged November 2025 clarification body linking to current Action pages. Preserve all figures and dissemination totals as published source figures, including their time windows. This narrowly supersedes source-wording preservation for those corrections only; migration/review evidence remains unchanged. No Action wording correction is authorised.
+
+
+## 2026-10-27: Calendar accessibility and feed ordering validation
+Use one named region per scrollable month table, with an unlabelled outer section, to avoid duplicate landmark names. Order the upcoming ICS feed by the resolved UTC start instant, so mixed named zones retain chronological order. Keep the existing list as the default and all exports static.
+
+
+## 2026-10-27: School partner URL verified in Luka's browser
+Luka confirms https://school-education.ec.europa.eu/en/connect/partner-search works in his normal browser on 2026-10-27. Keep this current official URL. PARTNER-TOOLS.md preserves the earlier automated 403/legacy-redirect evidence separately; do not revive the completed normal-browser verification task.
