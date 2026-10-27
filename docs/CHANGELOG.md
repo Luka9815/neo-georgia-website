@@ -192,3 +192,9 @@ Newest at the top. One entry per working session: date, who (agent or person), w
 ## 2026-10-27: Session 18, item 6, newsletter deferral
 
 - Log the institutional email/free mailing-account prerequisites and the later consent-bearing sign-up link. Add the newsletter to post-launch work; implement no form or sending.
+
+
+## 2026-10-27: Session 18, item 7, projects/statistics plan only
+
+- Propose the Session 19 data model, bilingual pages, shared-data statistics, offline review/import workflow, updates and separately reviewed manual overlays in SITE-PLAN.md. List Luka's CSV/schema, coverage, link, translation, reuse and statistics decisions.
+- No importer code, project-data/terms fetch, public project/statistics data or new routes. Current licensing is explicitly unresolved until Luka supplies the official export and accompanying terms.

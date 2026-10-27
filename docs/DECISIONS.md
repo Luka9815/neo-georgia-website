@@ -290,3 +290,7 @@ Generate bilingual event.ics files per Event and upcoming.ics feeds during Eleve
 
 ## 2026-10-27: Defer newsletter pending an institutional account (Nino via Luka)
 Do not implement newsletter sending, a sign-up form or a public sign-up link yet. After ERIDA has an institutional email and a free mailing-service account registered to it (for example MailerLite's free tier), review the current service terms and add a sign-up link with consent wording. Keep this on the post-launch list and preserve institutional control of the account.
+
+
+## 2026-10-27: Projects and statistics remain a Session 19 plan (Luka)
+SITE-PLAN.md proposes linked projects/participations, an offline review importer and statistics from the same approved data. Luka supplies the official CSV later. Session 18 must add no importer code, source/data fetch, public project/statistics dataset or pages. Real headers, coverage, participation limits and current reuse/attribution terms must be confirmed before implementation/promotion; manual additions need evidence and explicit review.

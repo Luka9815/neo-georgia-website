@@ -61,6 +61,10 @@ The bilingual Find partners page is linked from Opportunities and every Action. 
 
 /events/ stays the default list. The bilingual /events/calendar/ tables and ICS downloads are built from the existing Event JSON without new dependencies or a network request. Per-language Event files live at /<lang>/events/<slug>/event.ics; the feed is /<lang>/events/upcoming.ics. Preserve Event slugs for stable UIDs across languages/hosts. The daily rebuild refreshes the feed; downloads are snapshots. Calendar dates use the Event's named zone. Sample Events remain labelled and must be replaced or removed using the existing fixture-first Launch checklist. Removing them also removes their calendar entries and ICS files on a clean build.
 
+## Session 19 planning only
+
+Read the proposal at the end of SITE-PLAN.md. It specifies projects with Georgian participation, linked organisations/roles, completed/ongoing pages and statistics from the same approved snapshot, a future manual offline review importer, update/overlay rules and unresolved source terms. Luka will supply the official CSV; no importer, project-data fetch, public dataset or new project/statistics page is implemented. Do not revive the previous CSV download attempt. Agree the listed schema, coverage, licensing and editorial decisions with Luka before Session 19.
+
 ## Session 18 scope
 
 Restart from main eabf728 on codex/session-18-features. All nine Actions and the shared Georgia eligibility note retain [DRAFT] and unchanged wording. ACTION-REVIEW.md lists the session's Action wording changes separately: none. Projects and statistics are planning only, awaiting Luka's official CSV export; no importer or public dataset is authorised.
