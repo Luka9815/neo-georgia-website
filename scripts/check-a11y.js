@@ -57,7 +57,7 @@ try {
     count++;
   }
   // Native disclosure navigation must remain usable with page JavaScript disabled.
-  for (const width of [360, 600, 1280]) {
+  for (const width of [320, 360, 600, 768, 1024, 1280]) {
     const noJs = await browser.newContext({
       javaScriptEnabled: false,
       viewport: { width, height: 900 },
@@ -76,6 +76,10 @@ try {
         width >= 600,
         `Hero guide at ${width}px`
       );
+      const wordmark = await menuPage.locator('.brand').boundingBox();
+      const emblem = await menuPage.locator('.eu-emblem').boundingBox();
+      assert.ok(wordmark.width <= emblem.width && wordmark.height <= emblem.height, `EU emblem prominence: ${lang} at ${width}px`);
+      assert.equal(await menuPage.locator('.eu-emblem').evaluate(image => getComputedStyle(image).backgroundColor), 'rgb(255, 255, 255)');
       if (width < 1024) {
         const summary = menuPage.locator('.mobile-menu summary');
         await summary.focus();

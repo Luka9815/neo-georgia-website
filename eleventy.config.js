@@ -1,3 +1,4 @@
+import { renderEuImages } from './lib/eu-images.js';
 import { renderNewsImages } from './lib/news-images.js';
 import { EleventyHtmlBasePlugin } from '@11ty/eleventy';
 import { getPathPrefix, absoluteUrl } from './lib/urls.js';
@@ -11,6 +12,10 @@ export default function (config) {
   config.addTransform('news-images', async function (content) {
     return (this.page?.outputPath || this.outputPath || '').endsWith('.html')
       ? renderNewsImages(content, outputRoot, getPathPrefix()) : content;
+  });
+  config.addTransform('eu-images', async function (content) {
+    return (this.page?.outputPath || this.outputPath || '').endsWith('.html')
+      ? renderEuImages(content, outputRoot, getPathPrefix()) : content;
   });
   config.addFilter('absoluteUrl', absoluteUrl);
   config.ignores.add('src/assets/**/*.md');

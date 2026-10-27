@@ -120,7 +120,7 @@ No image sliders and no pop-ups. Site-wide search across both languages, to be t
 
 Clean and institutional: recognisably part of the Erasmus+ family, but simpler and faster than the official EU site.
 
-- **Identity:** NEO Georgia logo in the header; EU emblem with "Funded by the European Union" in the footer, used exactly as the EU and EACEA visibility guidelines require (current versions to be checked before build).
+- **Identity:** typographic office-name wordmark in the header (no graphic logo, Luka, 2026-10-27); EU emblem with "Funded by the European Union" in the footer, used exactly as the EU and EACEA visibility guidelines require (current versions to be checked before build).
 
 - **Colour:** a small set of named colours (primary blue, one accent, neutrals) taken from the current Erasmus+ visual identity, all passing contrast checks.
 
