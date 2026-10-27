@@ -57,7 +57,7 @@ Content is stored as linked types, not free pages. An action page then shows its
 
 | Type        | Key fields                                                                                                                                                                                                             | Appears on                                                    |
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
-| Action      | Title; Key Action (KA1, KA2, KA3, Jean Monnet); sectors (higher education, VET, school, adult, youth, sport); audience (individuals, organisations); summary; who can apply from Georgia; how to apply; official links | Opportunities pages and filters                               |
+| Action      | Title; Key Action (KA1, KA2, KA3, Jean Monnet); sectors (higher education, VET, school, adult, youth, sport); audience (individuals, organisations); summary; who can apply from Georgia; how to apply; official links | Opportunities pages                               |
 | Call        | Action; call year; deadline date and time (Brussels time); official call link; notes. Status (upcoming, open, closed) is calculated from dates                                                                         | Calls and deadlines; action page; homepage "next deadlines"   |
 | Event       | Title; type (information day, webinar, training, conference, Erasmus Days); dates; format (online, in person, hybrid); venue; organiser (NEO, EACEA, partner); registration link; agenda; related actions              | Events (upcoming and past, calculated); action page; homepage |
 | Resource    | Title; file or link; type (presentation, recording, guide, template); source (official EACEA/EU, NEO Georgia guidance, partner); language; year; related event and actions                                             | Event page; action page; Resources                            |
@@ -88,7 +88,7 @@ Fourteen templates cover the whole site; everything else is content.
 
     6.  Key figures strip (projects, mobilities, institutions)
 
-2.  **Opportunities hub**, with filters by audience, sector and Key Action
+2.  **Opportunities hub**, grouped by sector with visible Key Action labels. Luka dropped filters on 2026-10-27 because there are nine Actions; revisit only after substantial listing growth (see DECISIONS.md).
 
 3.  **Action page**: what it is, who can apply from Georgia, how to apply, then the automatic blocks (deadline, events, resources, stories, FAQ)
 

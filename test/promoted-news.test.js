@@ -1,6 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import { readFileSync, existsSync } from 'node:fs';
+import { load } from 'cheerio';
+import { getPathPrefix } from '../lib/urls.js';
 import MarkdownIt from 'markdown-it';
 const read = path => JSON.parse(readFileSync(path, 'utf8'));
 const slugs = ['europe-day-in-kutaisi', 'announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia', 'neo-dissemination-event-2025', 'eve-statistics', 'information-about-capacity-building-project-proposals'];
@@ -16,7 +18,7 @@ test('five approved News splits preserve source wording and every body link', ()
     source.sourceText.body = resolve(source.sourceText.body);
     const item = read(`src/content/news/${slug}.json`);
     assert.equal(item.date, source.date);
-    assert.ok(!item.image);
+    if (slug !== 'neo-dissemination-event-2025') assert.ok(!item.image);
     assert.deepEqual(links(item.ka.body + item.en.body), links(source.sourceText.body));
     for (const lang of ['ka', 'en']) {
       assert.ok(item[lang].title);
@@ -37,6 +39,32 @@ test('promoted News render both languages with sequential headings', () => {
       const level = Number(match[1]);
       assert.ok(level <= previous + 1, `${lang}/${slug}: h${previous} to h${level}`);
       previous = level;
+    }
+  }
+});
+
+
+test('only the approved dissemination photograph is attached with the approved bilingual alternatives', () => {
+  const slug = 'neo-dissemination-event-2025';
+  const item = read(`src/content/news/${slug}.json`);
+  const alt = {
+    ka: 'საკონფერენციო დარბაზში მსმენელები უყურებენ მომხსენებელსა და ეკრანზე ნაჩვენებ სლაიდს.',
+    en: 'An audience watches a speaker beside a projected slide in a conference room.',
+  };
+  assert.deepEqual(item.image, { src: `/assets/uploads/${slug}.jpg`, alt });
+  assert.deepEqual(readFileSync(`src${item.image.src}`), readFileSync(`migration/review/images/${slug}.jpg`));
+  for (const lang of ['ka', 'en']) {
+    for (const [path, loading] of [[`${lang}/news/${slug}/index.html`, 'eager'], [`${lang}/news/index.html`, 'lazy']]) {
+      const $ = load(readFileSync(`_site/${path}`, 'utf8'));
+      const img = $('main picture img').filter((_, el) => $(el).attr('alt') === alt[lang]);
+      assert.equal(img.length, 1, path);
+      assert.equal(img.attr('loading'), loading);
+      assert.ok(Number(img.attr('width')) > 0 && Number(img.attr('height')) > 0);
+      const picture = img.closest('picture');
+      assert.equal(picture.find('source[type="image/avif"]').length, 1);
+      assert.equal(picture.find('source[type="image/webp"]').length, 1);
+      assert.ok(img.attr('src').startsWith(`${getPathPrefix()}assets/generated/news/`));
+      assert.ok(existsSync('_site/' + img.attr('src').slice(getPathPrefix().length)));
     }
   }
 });

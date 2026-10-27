@@ -8,11 +8,11 @@ Only **Europe Day in Kutaisi, 24–25 October** is newly written, from its Engli
 
 ## Images
 
-Session 9 omitted images because News had no image support. Session 13 adds the optional validated/responsive field, but all five posts remain without images pending Luka's selection and bilingual alt text. Downloaded review availability is listed in NEWS-IMAGES.md. No [ALT NEEDED] is published.
+Session 16: Luka approves only neo-dissemination-event-2025.jpg and both session 14 alternatives below. The photograph is attached through the optional responsive News pipeline. Omit the clarification graphic, statistics chart and Capacity Building infographic. Hold the Europe Day photograph until NEO confirms consent to reuse the image of identifiable children. No other review image is uploaded. See NEWS-IMAGES.md for the current status.
 
 ## Draft image alt text for Luka's approval (session 14)
 
-These are unapproved drafts based on visual inspection of the five actual review files. They describe the images rather than repeat the News titles. No image field, alt text or review binary has been added to published content or public uploads. The two text-heavy graphics are poor candidates for News images; the labelled chart may also be redundant because its figures are already in the article. Visible logos do not establish reuse permission.
+These session 14 drafts describe the five actual review files. In session 16 Luka approves the dissemination photograph and its two alternatives only; the other alternatives remain unused. The image choices and consent hold are recorded above. Visible logos do not establish reuse permission.
 
 | Slug | Image file | Georgian alt draft | English alt draft | Image rights / suitability note |
 |---|---|---|---|---|

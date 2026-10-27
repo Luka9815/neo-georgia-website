@@ -47,7 +47,7 @@ test('real Eleventy image builds produce local responsive article/card pictures 
       execFileSync(process.execPath, ['node_modules/@11ty/eleventy/cmd.cjs', `--output=${output}`], { cwd: root, env: { ...process.env, PATH_PREFIX: prefix, SITE_URL: `https://example.org${prefix}` }, stdio: 'pipe' });
       for (const lang of ['ka', 'en']) for (const [path, article] of [[`${lang}/news/update-1/index.html`, true], [`${lang}/news/index.html`, false]]) {
         const $ = load(readFileSync(join(output, path), 'utf8'));
-        const picture = $('main picture').first();
+        const picture = $('main picture').filter((_, el) => $(el).find('img').attr('alt') === item.image.alt[lang]).first();
         assert.equal(picture.length, 1, path);
         assert.equal(picture.find('source[type="image/avif"]').length, 1);
         assert.equal(picture.find('source[type="image/webp"]').length, 1);

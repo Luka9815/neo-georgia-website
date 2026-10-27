@@ -121,6 +121,26 @@ try {
     assert.equal(await document.locator('[data-publication-filters]').isVisible(), false);
     await noJs.close();
   }
+  // The approved photograph must decode, and Action labels remain visible without JS.
+  for (const lang of ['ka', 'en']) {
+    for (const suffix of ['news/', 'news/neo-dissemination-event-2025/']) {
+      await page.goto(`${base}${prefix}${lang}/${suffix}`);
+      const image = page.locator('main picture img.news-image');
+      assert.equal(await image.count(), 1);
+      await image.scrollIntoViewIfNeeded();
+      await image.evaluate(image => image.decode());
+      assert.ok(await image.evaluate(image => image.naturalWidth > 0));
+    }
+    const noJs = await browser.newContext({ javaScriptEnabled: false, viewport: { width: 320, height: 800 } });
+    const listing = await noJs.newPage();
+    await listing.goto(`${base}${prefix}${lang}/opportunities/`);
+    const cards = listing.locator('.cards-action > li');
+    assert.equal(await cards.count(), 10); // Virtual Exchanges appears in two sectors.
+    for (const card of await cards.all()) {
+      assert.ok(await card.locator('.action-key-label').isVisible());
+    }
+    await noJs.close();
+  }
   await checkSearch(browser, base, prefix);
   console.log(
     `axe: ${count} pages passed with zero violations; ` +
