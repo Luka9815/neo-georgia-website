@@ -35,3 +35,8 @@ Nine unique records appear in four sector groups: higher education, VET, youth a
 Shared links/facts live outside translation objects. Cards render summary directly instead of duplicating it into body. The short who/how text is scoped to the requested Action and does not pretend to reproduce every consortium, award or exclusion condition. Remaining calls/events/resources are explicitly [SAMPLE]. Automated tests check the record set, draft markers, source comments, sector groups, shared restriction, links and relationships; they cannot replace the human legal/editorial source review.
 
 Initial proxy access failures were resolved before this review. No external account was created. The official English beneficiary emblem is used on both languages until an official Georgian beneficiary emblem is supplied. Provenance is in src/assets/eu/README.md.
+
+
+## Session 18 review status, 27 October 2026
+
+All nine Actions retain [DRAFT], following Luka's restart instructions. No Action wording changes are made or proposed in this session. The new partner-search navigation is separate from the stored Action title, summary, eligibility and application wording. Nino's bilingual review remains a launch blocker.

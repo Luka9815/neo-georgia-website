@@ -264,3 +264,7 @@ Supersedes the Europe Day consent hold in “Publish one approved News photograp
 
 ## 2026-10-27: Keep sample News solely in isolated fixtures
 Move update-1, update-2 and update-3 out of src/content/news into test/fixtures/news. Copy them into temporary sites for CMS, responsive-image and missing-English fallback checks; produce no public sample News URLs or search/sitemap entries. News cards use up to the first 30 words of the first source prose paragraph with an ellipsis when needed, rather than the full article; details retain wording, facts and dates. At render time only, suppress an exact duplicate initial title, promote standalone bold section lines to headings and repair missing Markdown emphasis/line-break boundaries. Sample Events remain explicitly listed for a later launch cleanup, with coverage moved to fixtures first.
+
+
+## 2026-10-27: Session 18 Action review remains pending (Luka)
+The recovered brief mentioned Nino's review via Luka, but the restart explicitly requires all nine Actions to retain [DRAFT]. No Action approval is recorded by this session. Preserve every Action text field and the shared Georgia eligibility note; list any proposed wording changes separately in ACTION-REVIEW.md for Nino. Partner-search navigation does not change eligibility or application wording.

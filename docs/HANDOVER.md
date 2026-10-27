@@ -1,6 +1,6 @@
 # Handover
 
-Last updated: 2026-10-27 (Codex, session 17: Georgian EU emblem, typographic identity and News archive)
+Last updated: 2026-10-27 (Codex, session 18: partner shortcuts and static Event calendars)
 
 ## Current state
 
@@ -52,6 +52,10 @@ Clean root and project builds pass, with all 102 tests in each layout, including
 Original emblem checksums, derivative dimensions and files, exact office names, favicon, original News source wording/links/dates, five-card listings, absence of sample News routes and the isolated Georgian-only fallback are covered. The page count falls from 76 to 71 because the three Georgian/two English sample News routes are removed. Representative screenshots, per-route observations and content questions are in review/session-17/README.md. The Georgian disclaimer remains byte-for-byte the approved translation value.
 
 Session 16's Lighthouse results in review/session-16 are historical measurements before this identity/archive work. They are not a new performance score for Session 17. The remaining manual and hosted checks appear only in the Launch checklist.
+
+## Session 18 scope
+
+Restart from main eabf728 on codex/session-18-features. All nine Actions and the shared Georgia eligibility note retain [DRAFT] and unchanged wording. ACTION-REVIEW.md lists the session's Action wording changes separately: none. Projects and statistics are planning only, awaiting Luka's official CSV export; no importer or public dataset is authorised.
 
 ## Next task
 
