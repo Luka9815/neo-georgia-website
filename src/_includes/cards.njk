@@ -30,6 +30,7 @@
           <div class="card-meta"><span class="card-section-label">{{ t.news }}</span></div>
         {% endif %}
         <{{ heading }}><a href="/{{ lang }}/{% if type == 'action' %}opportunities{% elif type == 'story' %}stories{% else %}{{ type }}{% if type == 'event' %}s{% endif %}{% endif %}/{{ item.slug }}/">{{ item.title }}</a></{{ heading }}>
+        {% if type == 'action' %}<p class="action-key-label">{{ t.keyAction }}: {{ t.keyActions[item.keyAction] }}</p>{% endif %}
         {% if item.date %}
           <p class="card-date"><time datetime="{{ item.date }}">{% if type == 'news' %}{{ item.date | dateLabel(t, 'UTC', false) }}{% else %}{{ item.date | dateLabel(t, item.timeZone) }}{% endif %}</time></p>
         {% endif %}
