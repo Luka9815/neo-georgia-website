@@ -150,5 +150,42 @@
   "searchError": "Search could not load. Please try again or use the section links below.",
   "searchNoJs": "Search needs JavaScript. You can browse the main sections below.",
   "searchEmpty": "Enter a word or phrase to search.",
-  "searchNone": "No results found. Try another word or browse the main sections."
+  "searchNone": "No results found. Try another word or browse the main sections.",
+  "findPartners": "Find partners",
+  "partnersIntro": "Official tools for finding organisations and cooperation opportunities. Check each tool’s participation rules and the current Action guidance before applying.",
+  "linksChecked": "Links checked",
+  "partnerTools": {
+    "funding": {
+      "title": "EU Funding & Tenders Portal",
+      "description": "Search organisations and partner requests for EU funding proposals."
+    },
+    "results": {
+      "title": "Erasmus+ Project Results Platform",
+      "description": "Explore funded projects and their participating organisations."
+    },
+    "epale": {
+      "title": "EPALE: adult education",
+      "description": "Find partners for adult learning projects."
+    },
+    "schools": {
+      "title": "European School Education Platform: partner search",
+      "description": "Browse school education partner and mobility opportunities."
+    },
+    "etwinning": {
+      "title": "eTwinning: school community",
+      "description": "Connect with schools and teachers for collaborative projects."
+    },
+    "otlas": {
+      "title": "SALTO-Youth OTLAS",
+      "description": "Find youth organisations and international project partners."
+    },
+    "saltoEducation": {
+      "title": "SALTO Education & Training",
+      "description": "Find training and cooperation activities to meet potential partners."
+    },
+    "saltoYouth": {
+      "title": "SALTO-Youth European Training Calendar",
+      "description": "Browse youth training and partner-building activities."
+    }
+  }
 }

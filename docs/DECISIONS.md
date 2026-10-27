@@ -276,3 +276,7 @@ The agreement is expected to be signed at the end of November 2026. Retain the c
 
 ## 2026-10-27: Luka is the sole editor for now (Nino via Luka)
 Luka remains the only editor until further notice. Additional editor names/access are no longer a launch prerequisite; arrange staff access and EDITING.md training after launch when the team changes. Institutional ownership and maintenance responsibilities remain required.
+
+
+## 2026-10-27: Official partner-search shortcuts (Nino via Luka)
+Add bilingual /opportunities/find-partners/ under Opportunities and link it from all nine Action pages, preserving the seven main destinations and all Action wording. Only official EU/programme tools are listed, including the SALTO training calendars linked by Erasmus+. Public URL checks and redirects are recorded in PARTNER-TOOLS.md, dated 2026-10-27. This also records Nino's request via Luka for Events calendars, a newsletter, projects involving Georgia and statistics; the following items define their authorised scope.

@@ -53,6 +53,10 @@ Original emblem checksums, derivative dimensions and files, exact office names, 
 
 Session 16's Lighthouse results in review/session-16 are historical measurements before this identity/archive work. They are not a new performance score for Session 17. The remaining manual and hosted checks appear only in the Launch checklist.
 
+## Session 18 partner shortcuts
+
+The bilingual Find partners page is linked from Opportunities and every Action. PARTNER-TOOLS.md records eight official destinations checked 2026-10-27. It adds navigation only; all Action wording stays unchanged. Recheck links during routine maintenance.
+
 ## Session 18 scope
 
 Restart from main eabf728 on codex/session-18-features. All nine Actions and the shared Georgia eligibility note retain [DRAFT] and unchanged wording. ACTION-REVIEW.md lists the session's Action wording changes separately: none. Projects and statistics are planning only, awaiting Luka's official CSV export; no importer or public dataset is authorised.

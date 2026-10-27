@@ -9,6 +9,7 @@ eleventyExcludeFromCollections: true
 {% extends 'page.njk' %}
 
 {% block pageContent %}
+<p><a href="/{{ view.lang }}/opportunities/find-partners/">{{ t.findPartners }}</a></p>
 {% set item = actions | findSlug(view.slug) %}
 {{ item.summary | markdown | safe }}
 <section>

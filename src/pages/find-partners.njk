@@ -1,0 +1,21 @@
+---
+pagination:
+  data: pageTypes.findPartners
+  size: 1
+  alias: view
+permalink: "{{ view.path }}"
+eleventyExcludeFromCollections: true
+---
+{% extends 'page.njk' %}
+{% block pageContent %}
+<p>{{ t.partnersIntro }}</p>
+<ul class="partner-tools">
+  {% for tool in partnerTools.tools %}
+  <li>
+    <h2><a href="{{ tool.url }}">{{ t.partnerTools[tool.key].title }}</a></h2>
+    <p>{{ t.partnerTools[tool.key].description }}</p>
+  </li>
+  {% endfor %}
+</ul>
+<p>{{ t.linksChecked }}: <time datetime="{{ partnerTools.checkedOn }}">{{ partnerTools.checkedOn | dateLabel(t, 'UTC', false) }}</time></p>
+{% endblock %}

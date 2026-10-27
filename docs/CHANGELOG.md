@@ -174,3 +174,9 @@ Newest at the top. One entry per working session: date, who (agent or person), w
 ## 2026-10-27: Session 18, item 3, sole editor
 
 - Record Luka as sole editor until further notice, confirmed by Nino via Luka. Move additional editor access/training to post-launch and remove the editor-names launch prerequisite.
+
+
+## 2026-10-27: Session 18, item 4, partner shortcuts
+
+- Add bilingual Find partners pages, central official URLs, one-line descriptions and links from Opportunities/all Actions. Keep all seven main destinations and every Action text field.
+- Verify eight destinations using the web tool on 2026-10-27, including the school search redirect. PARTNER-TOOLS.md records the results and Erasmus+ source for the two additional SALTO calendars.
