@@ -192,3 +192,8 @@ Cards derive up to 30 words from the first source prose paragraph and mark a lon
 ## Event calendar exports
 
 Static month tables and bilingual .ics downloads are built from the same Event data. Keep the slug stable once published: it defines the UID in both languages regardless of hosting. A download is a snapshot; editing or removing an Event requires a clean rebuild and does not recall earlier downloads. The upcoming feed follows the existing status through the Event end, including ongoing Events. Temporal rejects ambiguous/nonexistent wall times in the named timeZone. UTC ICS timestamps preserve those resolved instants; calendar applications display them in the user's zone.
+
+
+## Historical News context notes
+
+A News item may carry code-maintained historicalNote with a YYYY-MM-DD date and non-empty ka/en text. It renders separately above the unchanged source body and links to current Action pages. It is not a Pages CMS text field; the existing settings.content.merge=true preserves unmanaged keys on saves. Changes to the dated note require editorial review.

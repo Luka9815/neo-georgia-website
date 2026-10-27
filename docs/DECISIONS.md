@@ -298,3 +298,7 @@ SITE-PLAN.md proposes linked projects/participations, an offline review importer
 
 ## 2026-10-27: Narrow promoted News corrections (Luka)
 Authorise only the EVE Georgian sentence change from seven projects to seven participations across three funded projects, the enumerated Georgian dissemination spelling corrections in CHANGELOG, and a bilingual note dated 2026-10-27 above the unchanged November 2025 clarification body linking to current Action pages. Preserve all figures and dissemination totals as published source figures, including their time windows. This narrowly supersedes source-wording preservation for those corrections only; migration/review evidence remains unchanged. No Action wording correction is authorised.
+
+
+## 2026-10-27: Calendar accessibility and feed ordering validation
+Use one named region per scrollable month table, with an unlabelled outer section, to avoid duplicate landmark names. Order the upcoming ICS feed by the resolved UTC start instant, so mixed named zones retain chronological order. Keep the existing list as the default and all exports static.

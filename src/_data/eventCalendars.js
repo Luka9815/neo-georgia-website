@@ -1,4 +1,4 @@
-import { loadContent, eventStatus } from '../../lib/content.js';
+import { loadContent, eventStatus, zonedDateTime } from '../../lib/content.js';
 import { calendarMonths, eventIcs } from '../../lib/event-calendar.js';
 import { siteUrl } from '../../lib/urls.js';
 
@@ -17,7 +17,7 @@ export default function () {
     files.push({
       path: `/${lang}/events/upcoming.ics`,
       body: eventIcs(events.filter(item => eventStatus(item, now) === 'upcoming')
-        .sort((a, b) => a.date.localeCompare(b.date)), lang, base, now),
+        .sort((a, b) => Date.parse(zonedDateTime(a.date, a.timeZone)) - Date.parse(zonedDateTime(b.date, b.timeZone))), lang, base, now),
     });
   }
   return { months: calendarMonths(events), files };

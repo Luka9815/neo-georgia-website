@@ -14,7 +14,6 @@ const hash = text => createHash('sha256').update(text).digest('hex');
 
 test('editorial corrections preserve all published numeric tokens and original evidence', () => {
   for (const slug of [dissemination, 'eve-statistics']) {
-    const source = read(`migration/review/news/${slug}.json`).sourceText.body;
     const item = read(`src/content/news/${slug}.json`);
     for (const lang of ['ka', 'en']) {
       assert.deepEqual(digits(item[lang].body), baseline[slug][lang].numbers);

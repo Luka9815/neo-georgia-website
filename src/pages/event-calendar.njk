@@ -19,7 +19,7 @@ eleventyExcludeFromCollections: true
   </ul>
 </nav>
 {% for month in eventCalendars.months %}
-<section aria-labelledby="month-{{ month.key }}">
+<section>
   <h2 id="month-{{ month.key }}">{{ t.months[month.month - 1] }} {{ month.year }}</h2>
   <div class="calendar-scroll" tabindex="0" role="region" aria-labelledby="month-{{ month.key }}">
     <table class="event-calendar">

@@ -217,3 +217,13 @@ Newest at the top. One entry per working session: date, who (agent or person), w
 - Keep every dissemination figure, total and time window unchanged as published source figures. No other wording or punctuation change.
 - Add a separate bilingual note dated 2026-10-27 at the top of the November 2025 clarification, stating it reflects information at publication and linking to current Action pages. Preserve both original article bodies and the migration evidence.
 - Tests retain source paragraph/link preservation with only these explicit exceptions and check the dated note, full body invariance, spelling and numeric tokens.
+
+
+## 2026-10-27: Session 18, item 9, final validation and handover
+
+- Clean root and project-prefix builds pass. All 111 tests pass in each layout, including isolated project-prefix/custom-domain and image/CMS builds. Axe passes all 75 non-redirect pages per layout, both languages, with zero violations. Browser checks cover 320 px overflow, keyboard/language navigation, no-JavaScript menus, Publications, search, image decoding and native calendar scrolling/ICS downloads. Partner/calendar screenshots were captured at 320/1280 px for visual review.
+- Fix duplicate calendar landmark names found by axe: retain the scroll-region label and remove it from the outer section. Sort the upcoming feed by resolved UTC instants. Keep the Events list as the default.
+- Update CONTENT for the code-maintained historical note; existing CMS merge mode preserves unmanaged fields. Refresh HANDOVER and its Launch checklist, preserving outstanding hosted/manual checks and siteLaunched=false.
+- Confirm all nine Action records/shared eligibility, AGENTS.md, CLAUDE.md, migration evidence, package manifest and lockfile are unchanged from eabf728. No Action wording changes, importer, project/statistics dataset or pages, newsletter form/sending, account or new runtime dependency. No added em dashes; git diff --check passes.
+- Partner checks are dated 2026-10-27. The school page resolves through its official legacy redirect; direct automated requests returned 403. PARTNER-TOOLS.md records the distinction for a normal-browser check before launch.
+- Nine item commits on codex/session-18-features from origin/main eabf728. Open one PR for review; do not merge or change the launch flag.
