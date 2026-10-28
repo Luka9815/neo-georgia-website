@@ -8,6 +8,7 @@ import MarkdownIt from 'markdown-it';
 import {icon, actionIcons} from './lib/icons.js';
 import {renderPortalImages} from './lib/portal-images.js';
 import {chartRows, projectChart, miniChart} from './lib/project-charts.js';
+import {participantMap} from './lib/participant-map.js';
 import { localise, related, dateLabel, callYears } from './lib/content.js';
 const markdown = new MarkdownIt({ html: false });
 export default function (config) {
@@ -17,6 +18,7 @@ export default function (config) {
   config.addFilter('chartRows',chartRows);
   config.addFilter('projectChart',projectChart);
   config.addFilter('miniChart',miniChart);
+  config.addFilter('participantMap',participantMap);
   config.addPlugin(EleventyHtmlBasePlugin);
   let outputRoot = '_site';
   config.on('eleventy.before', ({ directories }) => {

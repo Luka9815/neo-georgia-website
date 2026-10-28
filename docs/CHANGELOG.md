@@ -439,3 +439,7 @@ Introduced icon heroes, responsive facts sidebars and source-derived Georgian-pa
 
 ## 2026-10-29: Session 21 item 3, remaining templates
 Applied the shared portal treatment to listings, calendar/tables, content, people, contact, policies and controls. FAQ uses native keyboard-accessible accordions; no client script is required to read answers.
+
+
+## 2026-10-29: Session 21 item 7, Georgian participants map
+Added a whole-border inline SVG map with area-scaled keyboard-accessible city bubbles, equivalent table, explicit unresolved-location row/details and public Natural Earth/GeoNames credits. Committed the reviewed coordinate/alias table, border source and reconciliation tests.

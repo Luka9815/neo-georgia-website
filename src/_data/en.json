@@ -304,5 +304,21 @@
   "chartTable": "View the chart data table",
   "homeChartDescription": "Projects by call year, with values printed above the bars. Expand the following table for the same data.",
   "actionFacts": "At a glance",
-  "actionSnapshotNote": "Project counts use the 28 October 2026 snapshot. Read the coverage limits on the project and statistics pages."
+  "actionSnapshotNote": "Project counts use the 28 October 2026 snapshot. Read the coverage limits on the project and statistics pages.",
+  "participantMap": "Georgian organisations by location",
+  "mapCity": "City or settlement",
+  "mapUnknown": "Unmapped or unresolved location",
+  "mapUnknownShort": "Unmapped",
+  "mapLocationDetails": "Unresolved source locations",
+  "mapReasons": {
+    "missing": "No location supplied",
+    "conflict": "Different locations for one source organisation identifier",
+    "unmapped": "No reviewed city alias or coordinate"
+  },
+  "mapDescription": "Bubble area is proportional to named organisations. Select a bubble to reach its table row. Unresolved locations are shown separately above the map, without a geographic position. The outline shows Georgia’s internationally recognised borders, including Abkhazia and the Tskhinvali region/South Ossetia.",
+  "mapCounting": "Each named source organisation identifier is counted once. Reviewed spelling variants are grouped by city; different cities for the same identifier are unresolved. Missing cities and places without reviewed coordinates are separate from mapped cities. These are organisation locations as submitted, not project sites or participant counts.",
+  "mapSource": "Map sources",
+  "mapSourceDate": "Outline and coordinate sources checked 29 October 2026",
+  "publicDomain": "public domain",
+  "total": "Total"
 }

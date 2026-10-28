@@ -445,3 +445,7 @@ Add each Action’s icon/Key Action hero, a facts sidebar with unchanged full el
 
 ## 2026-10-29: Session 21 item 3, shared template restyling (Luka)
 Apply the portal system across all existing templates without changing routes or authored content. FAQ answers become native details/summary accordions, preserving complete answers/source links and no-script access. Restyle Call/Event/Person cards, tables, filters, contact fields, search and policy prose with consistent surfaces and focus states. Keep working Publications, calendar, projects and search enhancements.
+
+
+## 2026-10-29: Session 21 item 7, static Georgia participant map (Luka)
+Use the committed public-domain Natural Earth 1:50m whole Georgian polygon, including Abkhazia and the Tskhinvali region/South Ossetia, with no internal divisions. Commit 40 GeoNames coordinate/alias records with source/check date and show source credits. Count named source IDs once: 567 mapped, 38 unresolved (23 missing, 5 conflicts, 10 unreviewed locations). Place unresolved counts outside the geographic outline and retain the city table/details, making both bubble and table totals 605. No guessed coordinates, name-based institution merges, tiles or external requests.
