@@ -245,3 +245,78 @@ Newest at the top. One entry per working session: date, who (agent or person), w
 - Re-run clean root and project-prefix builds after the UID correction. All 111 tests pass in each layout, including the bilingual DST and exact UID checks. Inspect all eight static ICS files per layout: every UID uses neo-georgia-event-<slug> with no @ part. The project-prefix suite runs from an isolated copy of the committed branch.
 - Browser checks pass all 75 non-redirect pages per layout, both languages, with zero axe violations. Checks include 320 px overflow, keyboard/language navigation, no-JavaScript menus/controls, Publications, search, image decoding and calendar keyboard scrolling/ICS downloads. git diff --check passes.
 - Update HANDOVER with the review fixes and results. Keep the same branch and PR, one commit per review item, without merging or changing the launch flag. Action wording, shared eligibility, dependencies and AGENTS/CLAUDE guidance remain unchanged.
+
+
+## 2026-10-28: Session 19, item 1, validated public project metadata
+
+- Start from data/projects-snapshot-2026-10-28 at 3cc2d40, based on merged main 14902c4. Add build-start validation and an explicit public-field allowlist. Keep source funding, descriptions, beneficiary websites and other excluded fields out of template data.
+- Record Luka's distinction between named institutions (605 organisations, 5,079 pairs) and 2,045 mobility-country entries. All 6,764 projects still count; raw 606/7,124 totals remain source regression checks. Resolve source calendar dates in Europe/Brussels and preserve original titles/statuses.
+
+
+## 2026-10-28: Session 19, item 2, project attribution
+
+- Add a shared bilingual attribution block with source link, beneficiary submission/NEO responsibility wording, snapshot day and separate build timestamp. Add Georgian/English project interface labels without translating source titles or names.
+
+
+## 2026-10-28: Session 19, item 3, Action mapping
+
+- Generate the complete exact-label map and PROJECT-ACTION-MAP review table with all 39 labels/counts. Use equivalent site Actions only; preserve sector-only groups for other labels. Keep KA131 distinct from ICM and cross-sector Creativity under other.
+
+
+## 2026-10-28: Session 19, item 4, static project pages
+
+- Add bilingual projects/year indexes and one static accessible table page per call year, grouped by mapped Action or sector. Keep all source titles/names, translated interface text, explicit source status/programme period and official-card links.
+- Link from Resources and mapped Action pages to matching static Action/year groups. No per-project pages, new main navigation item or JavaScript requirement. Include source/snapshot/build attribution on every new page.
+
+
+## 2026-10-28: Session 19, item 5, shared-data statistics
+
+- Add bilingual statistics tables and summary counts from the same mapped records as the catalogue. Break down projects by call year, Action/sector, source status and programme period, including an explicit unknown status row.
+- Show 6,764 projects, 605 named organisations, 5,079 institution participations, 106 Georgian-coordinated projects and 2,045 separate mobility-country projects. Explain source/date/counting limitations and omit funding entirely.
+
+
+## 2026-10-28: Session 19, item 6, real homepage figures
+
+- Replace illustrative homepage numbers with computed project, named-organisation and Georgian-coordinator counts, linking each to statistics and showing the snapshot date. Remove sampleNumber/figuresNote in both languages and close that part of the launch checklist.
+
+
+## 2026-10-28: Session 19, item 7, bounded static search
+
+- Index the projects index and statistics pages; exclude per-year tables after measuring a combined Pagefind increase from 1,315,137 to 3,235,348 bytes with them included. Keep the complete tables linked and in the sitemap. Update search page-count/recall checks for the explicit boundary. Final sizes follow in the performance report.
+
+## 2026-10-28: Session 19, item 8, guarded manual refresh
+
+- Add the manual Node 24 refresh command with captured-request configuration, serial POST pagination at size 100, 500 ms spacing, ignored raw pages, same-schema slim candidate, per-year totals and added/removed/changed reports. Fail on incomplete/duplicate/changing-total responses; never replace the approved source automatically or run in CI.
+- Add seven synthetic offline checks for request guards, CI refusal, numeric/string template substitution, pagination/spacing, completeness failures, slimming and differences. The live CLI refuses synthetic request fixtures.
+- The supplied source README omits the exact transport request and response contract. Document the gap and require a confirmed capture rather than inventing a production template. No live refresh was run; live reproduction remains unresolved pending those details.
+
+
+## 2026-10-28: Session 19, item 9, performance, validation and handover
+
+- Clean root/project-prefix builds and all 132 tests pass per layout. Axe scans cover 105 pages per layout with zero violations. Full prefix browser checks pass; after a root filter render-state timing assertion was stabilised, focused project/filter/reset/keyboard checks in both layouts and the remaining root search stage pass. Existing no-JavaScript, language, image, Publications and calendar checks remain covered.
+- Preserve all rows/original titles/official-card links in both languages and enforce each year page under 1,000,000 bytes. Largest: Georgian 2022, 579,207 bytes. Add complete source/mapping/counting/attribution/homepage/public-projection checks and synthetic fixtures for isolated CMS/image/redirect builds. Fix the statistics template's conditional rendering and preserve only explicit mapping fields.
+- Native fragment/CSS group filters make Action-specific navigation select matching groups without JavaScript, with an All projects reset and full-list fallback in older CSS engines. Update the preview notice to distinguish factual records from labelled [SAMPLE]/[DRAFT] items.
+- Root output: 81 to 111 HTML files, 2,900,139 to 11,856,455 bytes; Pagefind 1,315,137 to 1,324,245 bytes (3,235,348 if year tables are indexed). Observed root build time: 6.361 to 13.027 seconds. Prefix output: 111 HTML files, 11,924,961 bytes, Pagefind 1,325,413 bytes. Final timing runs overlapped other validation; these are observations, not controlled benchmarks.
+- Update HANDOVER/Launch checklist, CONTENT and SITE-PLAN; add full mapping, statistical/size JSON, methodology and representative mobile/desktop captures in review/session-19. All nine Action records/shared eligibility, dependencies, EU visibility assets/disclaimer and AGENTS/CLAUDE guidance remain unchanged. The launch flag stays false.
+- Remaining gap: no production POST/Origin/response contract was supplied. The guarded manual command is offline-tested but live reproduction remains unverified. Open the PR in draft with this gap explicit; do not merge.
+
+
+## 2026-10-28: PR #19 review, item 1, mobility coverage gap
+
+- Add a shared visible bilingual note beside the projects index's year/Action lists and the statistics year/Action tables. Explain missing 2014–2020 KA107/institution coverage, KA171 mobility-country entries and the invalidity of higher education mobility comparisons across 2020/2021.
+- Add bilingual placement/text checks and source regression checks for the missing legacy mobility cohort. Preserve the supplied data, all totals and Action wording. Record Luka's coverage decision.
+
+
+## 2026-10-28: PR #19 review, item 2, verified refresh request
+
+- Replace the generic request-template interface with Luka's exact verified POST/Origin/body and total/projectDocuments envelope. Use string call years, from offsets 0/100/200, size 100, 500 ms spacing and years 2014 through the current Tbilisi year. Stop at total/empty and fail the entire run on any per-year count mismatch.
+- Keep ignored raw candidates/reports, schema/duplicate guards, manual-only CI refusal and source protection. Identify the full organisation array by its record schema and fail on ambiguous structures. Remove the obsolete synthetic request-template file.
+- Ten synthetic tests cover exact request/headers, dynamic years, pagination/spacing, short/empty pages, per-year mismatch and existing error/slimming/difference cases. No live request was run, per Luka's instruction. Update source README, CONTENT, SITE-PLAN and HANDOVER; the missing request specification is resolved.
+
+
+## 2026-10-28: PR #19 review, item 3, clean validation and handover
+
+- Re-run clean root and isolated project-prefix production builds. All 136 tests pass in each layout, including the bilingual coverage-note placement checks and ten offline refresh tests. No live project fetch is run.
+- Both complete browser commands pass all 105 non-redirect pages per layout with zero axe violations, including keyboard/language/no-JavaScript controls, calendar/ICS, projects and search. This supersedes the initial root timing failure and focused rerun.
+- Refresh the four statistics screenshots at 320/1280 px in both languages. Check that coverage notes remain visible without JavaScript in both layouts, including Action-filtered indexes, with no 320 px page overflow.
+- Update the review report and handover to resolve the previous missing-request gap, retain initial performance observations separately and record post-review output sizes. Keep the same branch and PR, with one commit per review item and no merge. All nine Actions remain unchanged and [DRAFT]; siteLaunched remains false.

@@ -1,6 +1,6 @@
 # Handover
 
-Last updated: 2026-10-27 (Codex, PR #18 review fixes)
+Last updated: 2026-10-28 (Codex, Session 19 projects and statistics)
 
 ## Current state
 
@@ -61,9 +61,15 @@ The bilingual Find partners page is linked from Opportunities and every Action. 
 
 /events/ stays the default list. The bilingual /events/calendar/ tables and ICS downloads are built from the existing Event JSON without new dependencies or a network request. Per-language Event files live at /<lang>/events/<slug>/event.ics; the feed is /<lang>/events/upcoming.ics. UIDs are neo-georgia-event-<slug>, with no domain or @ part. Preserve Event slugs for stable UIDs across languages/hosts. Luka confirmed no ICS files have been published to users, so the pre-merge UID change has no subscriber impact. The daily rebuild refreshes the feed; downloads are snapshots. Calendar dates use the Event's named zone. Sample Events remain labelled and must be replaced or removed using the existing fixture-first Launch checklist. Removing them also removes their calendar entries and ICS files on a clean build.
 
-## Session 19 planning only
+## Session 19 projects and statistics
 
-Read the proposal at the end of SITE-PLAN.md. It specifies projects with Georgian participation, linked organisations/roles, completed/ongoing pages and statistics from the same approved snapshot, a future manual offline review importer, update/overlay rules and unresolved source terms. Luka will supply the official CSV; no importer, project-data fetch, public dataset or new project/statistics page is implemented. Do not revive the previous CSV download attempt. Agree the listed schema, coverage, licensing and editorial decisions with Luka before Session 19.
+PR #19 review: visible bilingual notes beside the year and Action comparisons now explain that 2014–2020 international credit mobility with Georgia (KA107) is not identifiable in the source and is not counted. KA171 country entries do not make higher education mobility comparisons across 2020/2021 meaningful. No records/counts are changed.
+
+Start from the supplied data branch 3cc2d40, main 14902c4 plus one source commit. PR #18 is merged. The search-service JSON replaces the expected CSV, with 6,764 projects and an official 2022 XLS sample. Read migration/source/README.md, CONTENT.md and the current implementation section in SITE-PLAN.md.
+
+Bilingual projects indexes/year tables and statistics are built from validated local metadata only. Homepage figures are 6,764 projects, 605 named Georgian organisations and 106 Georgian-coordinated projects. Statistics also show 5,079 institution participations and 2,045 mobility-country projects separately. Preserve the raw 606/7,124 source totals in tests. No funding, descriptions, results, contacts, beneficiary websites/media, per-project detail pages or project CMS fields are published. All nine Actions retain [DRAFT] and unchanged wording.
+
+PROJECT-ACTION-MAP.md lists all 39 exact source labels and their reviewed mapping for Luka. Original source titles/names remain unchanged, source status is preserved, calendar dates use Brussels and all public project/statistics pages carry source/snapshot/build attribution. Year tables are complete without JavaScript and excluded from Pagefind after size measurement. No live fetch belongs in a build, test or CI.
 
 ## Session 18 editorial changes
 
@@ -89,9 +95,23 @@ After these fixes, clean root and project-prefix builds pass and all 111 tests p
 
 Three separate review commits cover the UID correction, browser-verification record and validation results. Push to the same codex/session-18-features branch and keep PR #18 open for review. All nine Actions remain [DRAFT] and unchanged; the remaining Launch checklist and siteLaunched=false still apply.
 
+## Session 19 validation and review fixes
+
+Clean root and project-prefix builds pass. After the PR #19 review fixes, both full suites pass all 136 tests, including source/per-year facts, the strict public projection, complete exact-label mapping, institution-versus-mobility-country counts, complete static rows/original titles, page-size limits, attribution, homepage figures, the bilingual mobility coverage notes and ten offline manual-refresh checks. CMS/image/redirect isolated sites use small synthetic project snapshots.
+
+After the review fixes, both complete browser commands pass all 105 non-redirect pages per layout, both languages, with zero axe violations. This supersedes the initial root run's filter timing failure and focused rerun. Checks cover 320 px overflow, skip links/language switches, no-JavaScript menus/controls, Publications, images, calendar/ICS, project Action/year/filter/reset/keyboard navigation and search. Separate no-JavaScript checks confirm that both coverage notes remain visible at 320 px on both overview pages in each language/layout, including Action-filtered indexes. Four statistics captures were refreshed at 320/1280 px. Native Action/sector fragments retain an All projects reset; older CSS engines retain the complete anchor-linked list.
+
+Initial Session 19 measurements: 111 HTML files per layout (30 added), not thousands of project detail pages. Root output grows from 2,900,139 to 11,856,455 bytes; Pagefind from 1,315,137 to 1,324,245 bytes after excluding year tables. The largest year page is 579,207 bytes. Root single-run build time is 6.361 s before and 13.027 s after; final runs overlapped other validation and are not controlled benchmarks. Detailed counts, prefix sizes, mapping and representative captures are in review/session-19. After the coverage-note review fixes, output is 11,866,326 bytes at root and 11,934,856 bytes with the project prefix; Pagefind is 1,326,497 and 1,327,659 bytes respectively, with 111 HTML files in each layout.
+
+Luka supplied the verified refresh request on 2026-10-28. The command now uses it directly, reads total/projectDocuments, pages with from offsets 0/100/200 at size 100 with 0.5-second spacing, and covers 2014 through the current Tbilisi year. It fails the whole run on any per-year count mismatch. No request-template file is required; the previous missing-capture gap is resolved. No live fetch was run in this review, as instructed. The command still writes ignored raw/candidate/report files and never replaces the approved source automatically. See migration/source/README.md and CONTENT.md.
+
 ## Next task
 
-Review the Session 18 PR without automatic merging, then work through the Launch checklist. All nine Actions remain [DRAFT]. For Session 19, wait for Luka's official CSV and resolve the decisions in SITE-PLAN.md before building projects/statistics. Opportunity filters remain dropped.
+Review the Session 19 draft PR and full Action mapping without automatic merging. The verified request is now documented and offline-tested; no live fetch was authorised for this review. Work through the remaining Launch checklist. All nine Actions remain [DRAFT]. Opportunity filters remain dropped; no wider content promotion is authorised.
+
+## Session 19 homepage figures
+
+The homepage now uses the supplied snapshot: 6,764 projects, 605 named Georgian organisations and 106 Georgian-coordinated projects, all linking to statistics with snapshot date 28 October 2026. The illustrative figures/sampleNumber/figuresNote task is complete. Other sample translations and records remain on the Launch checklist.
 
 ## Remaining work
 
@@ -115,7 +135,7 @@ Keep siteLaunched=false until this single ordered list is complete. Completed Pa
 8. **Editor status, confirmed 2026-10-27:** Luka is the sole editor until further notice (Nino via Luka). No additional editor names are needed for launch. Record Luka as the maintenance contact by role; additional editor access and training with EDITING.md move to after launch.
 9. **(a) Luka editorial preparation:** replace or explicitly omit the remaining sample Calls/Events: call/cbhe-2025, call/cbhe-2026, call/icm-2026, call/jean-monnet-2026; event/information-day, event/past-session, event/webinar. Use the fixture-first Event removal proposal above. Supply approved dates, time zones, venues, links, agendas and relationships for retained production records.
 10. **(a) Luka editorial preparation:** replace or omit story/example; resource/guide and resource/session-notes; faq/sample-application, faq/sample-guidance and faq/sample-mobility; person/sample-here and person/sample-team; publication/sample-brochure and publication/sample-report with their two sample text files; page/about, page/accessibility and page/privacy. These are the remaining 20 sample records when combined with the Calls/Events in item 9. News samples are already isolated fixtures, not launch content.
-11. **(a) Luka editorial preparation:** replace or remove every remaining sample translation value in both languages: sample, purpose, empty, contactPlaceholder, socialPlaceholder, sampleNumber, homeHeadline, homeGuideTitle, homeGuideBody, figuresNote, contactAddress, contactHours and contactEmail. The two unused logo placeholder/name keys are removed. Keep the noindex preview notice until the final launch copy is agreed; do not merely strip sample markers from illustrative claims.
+11. **(a) Luka editorial preparation:** replace or remove every remaining sample translation value in both languages: sample, purpose, empty, contactPlaceholder, socialPlaceholder, homeHeadline, homeGuideTitle, homeGuideBody, contactAddress, contactHours and contactEmail. The two unused logo placeholder/name keys are removed. Keep the noindex preview notice until the final launch copy is agreed; do not merely strip sample markers from illustrative claims.
 12. **Editorial status, Session 18:** Luka approved the EVE Georgian seven-participations correction, enumerated dissemination spelling corrections and a dated bilingual context note above the unchanged historical clarification. Dissemination totals and time windows remain unchanged as published source figures. See CHANGELOG for each correction; all other content questions in review/session-17/README.md remain subject to editorial review.
 13. **(c) Remaining code tasks:** move remaining sample-dependent checks into isolated fixtures before removing live samples, apply approved records/translations and validate relationships, local files, alternatives, dates and links. Resolve code findings from hosted/manual review.
 14. **(c) Remaining code tasks:** run clean root/project builds, the full suite and browser checks after final content edits. At the current Pages address, verify metadata, sitemap, language switches, bilingual 404, root/legacy redirects, calendar/ICS downloads and launch indexing behaviour. After the remaining checks and approval, prepare siteLaunched=true as a separate reviewed change.

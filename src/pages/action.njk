@@ -11,6 +11,9 @@ eleventyExcludeFromCollections: true
 {% block pageContent %}
 <p><a href="/{{ view.lang }}/opportunities/find-partners/">{{ t.findPartners }}</a></p>
 {% set item = actions | findSlug(view.slug) %}
+{% if projectData.actionYears[item.slug] %}
+<p><a href="/{{ view.lang }}/resources/projects/#action-{{ item.slug }}">{{ t.projectsIndex }}</a></p>
+{% endif %}
 {{ item.summary | markdown | safe }}
 <section>
   <h2>{{ t.who }}</h2>

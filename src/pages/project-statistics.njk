@@ -1,0 +1,33 @@
+---
+pagination:
+  data: pageTypes.projectStatistics
+  size: 1
+  alias: view
+permalink: "{{ view.path }}"
+eleventyExcludeFromCollections: true
+---
+{% extends 'page.njk' %}
+{% block pageContent %}
+<p>{{ t.projectCoverage }}</p>
+<p>{{ t.projectCountingNote }}</p>
+<p>{{ t.projectSourceStatusNote }}</p>
+<dl class="project-summary">
+<div><dt>{{ t.projectCount }}</dt><dd data-project-total>{{ projectData.stats.total }}</dd></div>
+<div><dt>{{ t.projectNamedOrganisations }}</dt><dd data-project-organisations>{{ projectData.stats.organisations }}</dd></div>
+<div><dt>{{ t.projectParticipations }}</dt><dd data-project-participations>{{ projectData.stats.participations }}</dd></div>
+<div><dt>{{ t.projectCoordinated }}</dt><dd data-project-coordinated>{{ projectData.stats.coordinated }}</dd></div>
+<div><dt>{{ t.projectMobilityCountry }}</dt><dd data-project-mobility>{{ projectData.stats.mobilityCountry }}</dd></div>
+</dl>
+{% for kind, heading in [['years', 'projectYears'], ['groups', 'projectGroups'], ['statuses', 'projectStatuses'], ['periods', 'projectPeriods']] %}
+<section><h2>{{ t[heading] }}</h2>
+{% if kind == 'years' or kind == 'groups' %}{% include 'project-mobility-coverage.njk' %}{% endif %}
+<table class="project-statistics" data-project-statistics="{{ kind }}">
+<caption>{{ t[heading] }}</caption>
+<thead><tr><th scope="col">{% if kind == 'groups' %}{{ t.projectActionGroup }}{% elif kind == 'years' %}{{ t.projectCallYear }}{% elif kind == 'statuses' %}{{ t.projectStatus }}{% else %}{{ t.projectProgrammePeriod }}{% endif %}</th><th scope="col">{{ t.projectCount }}</th></tr></thead>
+<tbody>{% for row in projectData.stats[kind] %}<tr>
+<th scope="row">{% if kind == 'years' %}<a href="/{{ view.lang }}/resources/projects/{{ row.key }}/">{{ row.key }}</a>{% elif kind == 'groups' %}{{ t.projectActionLabels[row.action] if row.action else t.projectSectorLabels[row.sector] }}{% elif kind == 'statuses' %}{{ t.projectStatusLabels[row.key] }}{% else %}{{ row.key }}{% endif %}</th><td>{{ row.count }}</td>
+</tr>{% endfor %}</tbody></table></section>
+{% endfor %}
+<p><a href="/{{ view.lang }}/resources/projects/">{{ t.projectsIndex }}</a></p>
+{% include 'project-attribution.njk' %}
+{% endblock %}

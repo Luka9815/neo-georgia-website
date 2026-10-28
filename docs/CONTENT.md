@@ -197,3 +197,38 @@ Static month tables and bilingual .ics downloads are built from the same Event d
 ## Historical News context notes
 
 A News item may carry code-maintained historicalNote with a YYYY-MM-DD date and non-empty ka/en text. It renders separately above the unchanged source body and links to current Action pages. It is not a Pages CMS text field; the existing settings.content.merge=true preserves unmanaged keys on saves. Changes to the dated note require editorial review.
+
+
+## Projects with Georgian participation (Session 19)
+
+The supplied migration/source/erasmus-projects-georgia-2026-10-28.json is the source snapshot, with provenance/coverage in its README and the official XLS sample as column evidence. It is never copied into _site. lib/projects.js validates it at build start and projects only approved public facts; no source descriptions, results, contacts, beneficiary sites, images or grant amounts reach templates. The build reads local files only.
+
+Original titles/names stay unchanged. Titles default to English; a conservative script check labels predominantly Georgian, Cyrillic (und-Cyrl), Armenian, Greek or Arabic titles accordingly. This is not a translation or a full Latin-language detector. Source timestamps encode Brussels midnight and are converted to calendar days in Europe/Brussels. Empty/null source cities are allowed and omitted. Preserve finalized/ongoing/terminated/unknown source status, displaying finalized as completed rather than recalculating status from dates.
+
+Action mapping is exact and explicit in src/_data/projectActionMap.json. New labels stop the build until reviewed; do not infer Action eligibility from titles. PROJECT-ACTION-MAP.md lists all 39 source labels and mappings for review.
+
+Public catalogue routes are the bilingual projects index and one table page per call year; rows link to the official project card. The bilingual statistics page and homepage figures use the same projected records. Count named organisations by source identifier, and named-institution participations by project/identifier pair. Exclude role country-mobility from institution counts and report those projects separately. Keep source names/roles intact, with no alias merging or manual additions.
+
+Every catalogue/statistics page identifies the source, beneficiary submissions, NEO responsibility limit, snapshot day and separate build timestamp. The 2026/later years are incomplete and ongoing records may change. Source terms were checked 2026-10-28 at https://erasmus-plus.ec.europa.eu/projects/terms-use; do not infer blanket licensing for beneficiary content. Luka's approved factual field subset and attribution apply; no excluded content is reused.
+
+Per-year tables remain outside Pagefind after size measurement; projects overview/statistics pages are indexed. All pages and year/Action navigation work without JavaScript. Native fragment links progressively filter Action/sector groups with CSS :has/:target; All projects resets the view. Older CSS engines still show the complete grouped list and honour anchors. CMS, image and redirect isolated build tests use a small synthetic project snapshot, not live fetches or a copy of the full source.
+
+### Manual refresh, verified request (PR #19 review)
+
+Luka supplied the exact request on 2026-10-28; migration/source/README.md records its endpoint, headers, body and response envelope. Use Node 24 from the repository root, outside CI:
+
+```
+NODE_USE_ENV_PROXY=1 node scripts/fetch-projects.js
+```
+
+No request template is needed. NODE_USE_ENV_PROXY makes Node 24 honour an inherited proxy; preserve CA trust. The command is not referenced by build/start/test scripts or the workflow, and importing its functions does not start the CLI. No live fetch was run in this review, as instructed.
+
+The POST body uses from offsets 0/100/200, size 100, a string project.projectCallYear, index eplus2021, GE coordinator_or_partner organisation scope, empty keyword/sort/coordinator/partner, matchAllCountries=false and withAggregations=false. Response records are projectDocuments and total is an integer. Fetch each call year from 2014 through the current Tbilisi calendar year, with 500 ms between requests. Stop a year at from >= total or an empty page; require retrieved count == total for every year or abort the complete run. Short pages never change the 100-record offset increment. Totals changing mid-pagination, duplicate references, invalid data and unexpected/ambiguous organisation arrays also abort.
+
+The full organisation array is recognised by the organisationName/organisationCountry/organisationRole schema and must be unambiguous; no response property name is invented. Snapshot validation runs before a candidate is written. Tests inject small projectDocuments responses and a fake fetch while global live fetch throws. They check the exact verified body and headers, dynamic year range, offsets/spacing, empty/short pages, per-year completeness, schema errors, slimming and differences.
+
+Raw pages go to the already ignored migration/source/erasmus-projects-georgia-<Tbilisi-run-day>/ directory. Success writes snapshot.json and report.json there, with per-year totals and added/removed/changed references against the approved source. Failure records an incomplete report and never publishes a partial candidate. Existing run directories are not overwritten.
+
+The candidate keeps the supplied slim audit schema, including its source grant field, but drops long descriptions/results/contacts and retains only coordinator/GE organisations plus aggregate count/countries. The separate public projection discards the audit grant field; it is never shown or summed. No approved source or public content is replaced automatically.
+
+Review candidate differences, updated source terms, new labels and institution-versus-mobility-country counts before a separate promotion PR. If choosing a new dated source filename, update PROJECT_SOURCE, the source watch target and fixture-copy/test references. Refresh the source regression totals and mapping review deliberately, then rebuild/test/check both layouts. Daily builds reread the approved local snapshot only.

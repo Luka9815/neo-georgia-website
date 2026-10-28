@@ -308,3 +308,52 @@ Use one named region per scrollable month table, with an unlabelled outer sectio
 
 ## 2026-10-27: School partner URL verified in Luka's browser
 Luka confirms https://school-education.ec.europa.eu/en/connect/partner-search works in his normal browser on 2026-10-27. Keep this current official URL. PARTNER-TOOLS.md preserves the earlier automated 403/legacy-redirect evidence separately; do not revive the completed normal-browser verification task.
+
+
+## 2026-10-28: Session 19 public project fields and counts (Luka)
+Supersedes the Session 18 planning-only hold and the expected CSV requirement for Session 19. Use the supplied search-service snapshot, since the official XLS export is capped at 1,000 rows. Publish only project reference/original title, programme period, Action labels, call year, calendar dates, source status, coordinator name/country, Georgian names/cities/roles, total organisation count and official card link. Omit funding entirely, including projectGrantedEuAmount, descriptions, results, images, logos, contacts and beneficiary websites. Validate the snapshot before rendering with field-level errors; never pass raw objects into templates. Original titles are unmodified, lang=en by default, with conservative script detection for non-Latin titles. Service timestamps consistently encode Brussels midnight; resolve calendar dates in Europe/Brussels rather than truncating UTC.
+
+Luka's counting clarification: all 6,764 projects remain in totals. Show 605 named Georgian organisations and 5,079 institution project/organisation pairs. Exclude the synthetic Mobilities - Georgia identifier/role country-mobility from those institution counts. Report its 2,045 entries separately as mobility projects where Georgia is listed as a participating country without a named Georgian institution. Retain tests for the raw 606 source identifiers and 7,124 source pairs. Source status finalized maps to completed; ongoing/terminated/unknown retain their meanings and are not recomputed from end dates.
+
+
+## 2026-10-28: Bilingual project attribution (Luka)
+Every projects index, year table and statistics page identifies the Erasmus+ Project Results Platform with its source link, snapshot date 28 October 2026, information as submitted by beneficiaries, and a statement that the data are not endorsed by or the responsibility of the NEO. Show the snapshot day separately from the site build timestamp. Original source titles/names are not translated. The existing EU funding disclaimer remains unchanged.
+
+
+## 2026-10-28: Exact project Action mapping (Luka)
+Generate projectActionMap.json from the 39 distinct source labels. Map only equivalent Actions to the nine site slugs; all others get a sector without an Action. PROJECT-ACTION-MAP.md lists every label, count and mapping for PR review. The generic higher-education mobility label is KA131 in this snapshot and remains sector-only, while external-policy-funds mobility maps to icm. Partnerships for Creativity spans sectors and maps to other. Unknown future labels fail rather than being guessed. Action wording and [DRAFT] markers remain unchanged.
+
+
+## 2026-10-28: Static project catalogue pages (Luka)
+Publish bilingual projects indexes with counts and year links, plus one grouped accessible table page per call year. Rows link directly to official cards; no per-project detail pages. Keep seven main destinations. Resources links to the index; mapped Action pages link to that Action's static year index, whose links target the matching Action table group. All records and navigation work without JavaScript; omit optional filters for now. Check page sizes before shipping and propose a split if a year page exceeds about 1 MB.
+
+
+## 2026-10-28: Statistics from the approved project records (Luka)
+Compute statistics at build time from the same public projection used by the year tables: projects by call year, Action/sector, source status and programme period; named institution participations, unique source organisation identifiers and Georgian-coordinated projects. Apply Luka's 605/5,079 institution-count clarification and report 2,045 mobility-country projects separately. Use accessible tables and explain counting units, source status, incomplete 2026/later call years and changing ongoing records. Omit funding sums and optional charts.
+
+
+## 2026-10-28: Replace illustrative homepage figures (Luka)
+Use three computed figures linking to statistics: projects (6,764), named Georgian organisations (605) and Georgian-coordinated projects (106), with the data snapshot date. Remove sampleNumber and figuresNote from both language files and close only the illustrative-figures launch task. Keep other sample content/translation tasks and siteLaunched=false.
+
+
+## 2026-10-28: Keep year tables outside Pagefind (Luka)
+Index the projects index and statistics in both languages. Per-year tables increase Pagefind materially (1,315,137 bytes before Session 19 versus 3,235,348 bytes with year tables), so exclude projectYear routes from indexing. They remain static, linked and in the sitemap. Report final index sizes and keep project-title browsing in the year tables/official platform rather than claiming a complete local project search.
+
+## 2026-10-28: Manual source refresh only (Luka)
+Add scripts/fetch-projects.js for Node 24, outside build/test/CI, using the same endpoint and captured POST/Origin, per call year at size 100 with 0.5-second spacing. Keep raw pages ignored, regenerate the supplied slim schema, validate completeness and report per-year totals and differences before any reviewed promotion. Tests use synthetic data with live network forbidden.
+
+Implementation note (Codex): the supplied README/snapshot metadata omit the transport body, Origin, pagination fields and response paths. The script therefore requires a confirmed captured configuration and refuses a missing or synthetic production request. No live request is made and no live reproduction is claimed. A production capture and validation remain unresolved; this is not a new guessed API contract or an approval to publish refreshed data automatically.
+
+
+## 2026-10-28: Project build performance and final review evidence (Luka)
+Report clean-build wall time, output size, Pagefind size and year-page sizes before/after Session 19. No year page exceeds about 1 MB (largest 579,207 bytes), so no split is needed. Full measurements, source/count/mapping checks and local browser evidence live in review/session-19. Keep source reproduction explicitly unverified until the missing captured protocol is supplied and validated.
+
+Implementation notes (Codex): native fragment/CSS group selection with an All projects reset implements the requested Action-filtered links, superseding the earlier item-4 omission of optional group filters. No JavaScript is needed, and unsupported CSS engines retain full groups and anchors. Keep the preview notice but distinguish labelled illustrative/draft items from factual project records, superseding its inaccurate all-content-is-illustrative wording. All nine Actions and shared eligibility stay unchanged and [DRAFT]; source statuses, UI parity, existing EU visibility rules and siteLaunched=false remain intact.
+
+
+## 2026-10-28: Higher education mobility coverage break (Luka)
+The supplied snapshot contains zero KA107 projects and no 2014–2020 KA1 higher education mobility records. The platform does not list Georgian partner institutions on KA107 projects, while 2021–2027 KA171 projects appear through the Mobilities - Georgia country entry. International credit mobility with Georgia under the 2014–2020 programme is not identifiable in this source and is not counted. Show a visible bilingual note beside the year and Action comparisons on the projects index and statistics page: higher education mobility comparisons across 2020/2021 are not meaningful. Do not invent missing legacy records or alter the supplied totals.
+
+
+## 2026-10-28: Verified project refresh request (Luka)
+Supersedes the missing-capture/request-template implementation note in Manual source refresh only. Use Luka's verified POST to https://ec.europa.eu/programmes/service/search/project/search with Content-Type application/json and Origin https://erasmus-plus.ec.europa.eu. The exact body is recorded in migration/source/README.md: from=F, index=eplus2021, keyword/sort empty, matchAllCountries=false, project.projectCallYear as string Y, coordinator/partner empty objects, organisation GE/coordinator_or_partner, size=100 and withAggregations=false. Read total and projectDocuments; page F=0/100/200 until F>=total or an empty page, with 0.5-second spacing. Fetch 2014 through the current Tbilisi calendar year and fail the whole run if any retrieved year count differs from its total. Keep raw/candidate review, duplicate/schema guards and CI refusal. Do not run a live fetch in this review session.

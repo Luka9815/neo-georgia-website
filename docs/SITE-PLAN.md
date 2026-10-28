@@ -192,7 +192,7 @@ Later phases: full migration, publications archive, statistics, HEREs section, n
 
 7.  **Phase 2 priorities:** newsletter, project database and map, statistics dashboard. Which matter most?
 
-## Session 19 proposal: projects with Georgian participation and statistics
+## Historical Session 18 proposal for Session 19 (superseded below)
 
 Planning only, 27 October 2026. Luka will supply the official Erasmus+ Project Results Platform CSV export. Session 18 adds no importer, network fetch, dataset, project/statistics route or public project record. The existing illustrative homepage figures remain subject to the Launch checklist and are not replaced with invented totals.
 
@@ -250,3 +250,35 @@ The applicable export licence and attribution wording are unresolved until the s
 - Agree statistics units: unique projects, verified Georgian project/organisation participations, unique Georgian institutions and breakdown by Action/year/status. Any call-year versus start-year chart must state its basis. Unknown values get an explicit category. Do not count participant headcounts or mobilities from project counts.
 - Decide whether funding is needed at all. Confirm the source amount's scope/currency before any sum; never label consortium-wide grants as money awarded to Georgia.
 - Approve the proposed pages, minimal public fields, licence/attribution and the review/promotion procedure before building them.
+
+
+## Session 19 implementation, 28 October 2026
+
+Luka's Session 19 decisions supersede the historical proposal above. The supplied search-service JSON replaces the expected CSV/XLS input. The official XLS sample has 769 records for 2022 and documents 16 export columns, but a platform export is capped at 1,000 projects. The 6,764-record JSON snapshot covers GE participation in call years 2014–2026. No per-project detail pages, beneficiary links, descriptions/results/media, contacts, funding sums, automatic translation or CMS project collection are implemented.
+
+### Public model and pages
+
+lib/projects.js validates the snapshot at build start and creates an explicit projection: reference, original title/language, programme period, source Action labels, call year, Brussels calendar start/end dates, source status, coordinator name/country, Georgian organisation name/city/role and internal source identifier for counting, source organisation count and official card URL. Raw source funding and other fields never reach templates. Unknown labels/statuses, duplicates, invalid dates/cards and missing GE entries stop the build with a filename and field.
+
+- `/<lang>/resources/projects/`: summary counts, call-year index and mapped Action/year group links.
+- `/<lang>/resources/projects/<year>/`: complete static tables grouped by equivalent Action or sector, with official project-card links. No JavaScript is needed. An Action link opens its subset of year links, which target the matching table group. Native fragment links progressively filter the group through CSS :has/:target, with an All projects reset. No JavaScript is required; older CSS engines retain the complete grouped list and anchor navigation.
+- `/<lang>/resources/statistics/`: tables by year, Action/sector, source status and programme period, computed from the exact same records as the catalogue.
+- Homepage: computed project, named-organisation and Georgian-coordinator figures linking to statistics with the snapshot day.
+
+All these catalogue/statistics pages carry the bilingual source name/link, beneficiary-submission and NEO responsibility note, snapshot date and separate build timestamp. The seven main destinations stay unchanged. The shared source has 39 distinct level-3 labels; src/_data/projectActionMap.json and PROJECT-ACTION-MAP.md contain the full mapping. Generic KA131 mobility remains sector-only, not ICM; mixed Creativity labels map to other. All nine site Actions remain [DRAFT] and their wording is unchanged.
+
+### Counting and coverage
+
+6,764 unique project references: completed 4,584, ongoing 2,128 and terminated 52; source finalized maps to completed. Programme periods: 2014–2020 (3,134) and 2021–2027 (3,630). Georgian coordinators: 106. Named Georgian organisations: 605 source identifiers; institution participations: 5,079 unique project/organisation pairs. Another 2,045 projects contain only a mobility-country entry for Georgia rather than a named Georgian institution. They stay in project totals and are reported separately from institution counts. Tests preserve the raw 606 identifiers/7,124 pairs, which include the synthetic entry. No organisation-name merging or manual additions occur.
+
+The 2026 and later call years are incomplete, and ongoing/source records may change. Source status is not inferred from end dates. Source IDs may be PICs or newer organisation identifiers; counts use the supplied identifier, not guessed institution aliases. Missing cities are omitted rather than invented.
+
+### Search, performance and updates
+
+Index overview/statistics pages only. Including the year tables grows combined Pagefind assets from 1,315,137 to 3,235,348 bytes; exclusion yields 1,324,245 bytes while preserving the linked static tables and sitemap. The largest initial year page is about 579 KB, below the 1 MB split threshold. Final clean-build time/output measurements and validation appear in the Session 19 review report.
+
+Refreshes are manual and separate from builds, tests and CI. Keep raw responses in the ignored source snapshot directory and review changes, new labels, source terms and coverage before publishing a replacement. Do not fetch data in daily site rebuilds. scripts/fetch-projects.js implements guarded serial pagination, same-schema slim candidates and difference reports with synthetic offline tests. The PR #19 review supplies the verified POST/Origin and total/projectDocuments response envelope, so no request template is needed. Refresh covers 2014 through the current Tbilisi year, with per-year count equality required. No live fetch was run in the review, as instructed.
+
+### Reuse and source limits
+
+The platform terms at https://erasmus-plus.ec.europa.eu/projects/terms-use were checked on 2026-10-28. They distinguish beneficiary-owned submitted content and link the Europa legal notice; they do not establish blanket reuse rights for beneficiary descriptions, results or media. Publish only Luka's approved minimal factual metadata/original titles and official links, with attribution and the beneficiary/NEO responsibility wording on every page. Do not describe the snapshot as generally CC BY or reuse excluded content. The underlying supplied source snapshot remains audit evidence outside public build output.

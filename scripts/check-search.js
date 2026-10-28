@@ -46,7 +46,7 @@ export async function checkSearch(browser, base, prefix) {
         if (lang === 'en') assert.deepEqual(result.before, result.after);
         for (const url of result.after) assert.ok(url.startsWith(`${prefix}${lang}/`));
         const family = query.startsWith('მობილობ') ? 'მობილობ' : query.startsWith('თანამშრომლობ') ? 'თანამშრომლობ' : query.startsWith('ერასმუს') ? 'ერასმუს' : null;
-        const relevant = lang === 'ka' && family ? getViews().filter(view => view.lang === lang && !['search', '404', 'redirect', 'legacyRedirect'].includes(view.kind)).filter(view => {
+        const relevant = lang === 'ka' && family ? getViews().filter(view => view.lang === lang && !['search', '404', 'redirect', 'legacyRedirect', 'projectYear'].includes(view.kind)).filter(view => {
           const $ = load(readFileSync(`_site${view.path}index.html`, 'utf8')); $('.notice').remove(); return $('main').text().includes(family);
         }).map(view => prefix + view.path.slice(1)) : [];
         queries.push({ query, ...result, relevant: relevant.length, beforeRecall: relevant.filter(url => result.before.includes(url)).length, afterRecall: relevant.filter(url => result.after.includes(url)).length });

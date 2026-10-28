@@ -1,0 +1,41 @@
+---
+pagination:
+  data: pageTypes.projectsIndex
+  size: 1
+  alias: view
+permalink: "{{ view.path }}"
+eleventyExcludeFromCollections: true
+---
+{% extends 'page.njk' %}
+{% block pageContent %}
+<dl class="project-summary">
+<div><dt>{{ t.projectCount }}</dt><dd>{{ projectData.stats.total }}</dd></div>
+<div><dt>{{ t.projectNamedOrganisations }}</dt><dd>{{ projectData.stats.organisations }}</dd></div>
+<div><dt>{{ t.projectCoordinated }}</dt><dd>{{ projectData.stats.coordinated }}</dd></div>
+</dl>
+<p><a href="/{{ view.lang }}/resources/statistics/">{{ t.projectStatistics }}</a></p>
+<p>{{ t.projectCoverage }}</p>
+<section id="projects-all">
+  <h2>{{ t.projectYearIndex }}</h2>
+  {% include 'project-mobility-coverage.njk' %}
+  <ul class="project-year-index">
+  {% for year in projectData.yearGroups %}<li><a href="/{{ view.lang }}/resources/projects/{{ year.year }}/">{{ year.year }}</a>: {{ year.count }}</li>{% endfor %}
+  </ul>
+</section>
+<p><a href="#projects-all">{{ t.projectAll }}</a></p>
+<section data-project-action-index>
+<h2>{{ t.projectByAction }}</h2>
+{% include 'project-mobility-coverage.njk' %}
+<div class="project-action-index">
+{% for action, years in projectData.actionYears %}
+<section id="action-{{ action }}">
+  <h3>{{ t.projectActionLabels[action] }}</h3>
+  <ul class="project-year-index">
+  {% for year in years %}<li><a href="/{{ view.lang }}/resources/projects/{{ year.year }}/#action-{{ action }}">{{ year.year }}</a>: {{ year.count }}</li>{% endfor %}
+  </ul>
+</section>
+{% endfor %}
+</div>
+</section>
+{% include 'project-attribution.njk' %}
+{% endblock %}
