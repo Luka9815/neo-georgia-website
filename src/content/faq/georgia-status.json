@@ -1,0 +1,15 @@
+{
+  "slug": "georgia-status",
+  "topic": "applications",
+  "actions": [],
+  "sourceUrl": "https://erasmus-plus.ec.europa.eu/programme-guide/part-a/eligible-countries",
+  "sourceChecked": "2026-10-28",
+  "en": {
+    "title": "Can Georgia take part in Erasmus+?",
+    "body": "Georgia is a third country not associated with the programme, in Region 2 (Neighbourhood East). Participation is possible in specified Actions under their country and organisation rules. The Guide also excludes Georgian authorities, as defined in its country note."
+  },
+  "ka": {
+    "title": "შეუძლია საქართველოს Erasmus+-ში მონაწილეობა?",
+    "body": "საქართველო პროგრამასთან არაასოცირებული მესამე ქვეყანაა და ეკუთვნის მე-2 რეგიონს (აღმოსავლეთ სამეზობლო). მონაწილეობა შესაძლებელია განსაზღვრულ ქმედებებში, ქვეყნისა და ორგანიზაციის შესაბამისი წესებით. გზამკვლევის ქვეყნის შენიშვნა ასევე გამორიცხავს იქ განსაზღვრულ ქართულ ხელისუფლების ორგანოებს."
+  }
+}

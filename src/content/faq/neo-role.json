@@ -1,0 +1,15 @@
+{
+  "slug": "neo-role",
+  "topic": "applications",
+  "actions": [],
+  "sourceUrl": "https://erasmus-plus.ec.europa.eu/programme-guide/part-a/implementation",
+  "sourceChecked": "2026-10-28",
+  "en": {
+    "title": "Does the NEO select projects or award scholarships?",
+    "body": "No. The NEO provides information, guidance and support to applicants and beneficiaries. It does not evaluate or select proposals and does not award grants or scholarships. Institutional grant decisions belong to the responsible funding body; universities and master’s consortia manage their participant selections."
+  },
+  "ka": {
+    "title": "არჩევს ეროვნული ოფისი პროექტებს ან გასცემს სტიპენდიებს?",
+    "body": "არა. ეროვნული ოფისი განმცხადებლებსა და ბენეფიციარებს აწვდის ინფორმაციას, კონსულტაციასა და მხარდაჭერას. ის არ აფასებს და არ არჩევს პროექტებს და არ გასცემს გრანტებს ან სტიპენდიებს. საგრანტო გადაწყვეტილებებს იღებს პასუხისმგებელი დამფინანსებელი ორგანო; მონაწილეებს არჩევენ უნივერსიტეტები და სამაგისტრო კონსორციუმები."
+  }
+}

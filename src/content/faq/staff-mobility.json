@@ -1,0 +1,17 @@
+{
+  "slug": "staff-mobility",
+  "topic": "mobility",
+  "actions": [
+    "icm"
+  ],
+  "sourceUrl": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/higher-education-mobility-projects",
+  "sourceChecked": "2026-10-28",
+  "en": {
+    "title": "How can university staff join an Erasmus+ mobility?",
+    "body": "Ask your university about teaching or training opportunities under its Erasmus+ agreements and selection procedures. Your institution confirms eligibility, available places and required documents. Apply through its process rather than sending an institutional grant proposal to the NEO."
+  },
+  "ka": {
+    "title": "როგორ შეუძლია უნივერსიტეტის პერსონალს Erasmus+ მობილობაში მონაწილეობა?",
+    "body": "ჰკითხეთ საკუთარ უნივერსიტეტს Erasmus+ შეთანხმებებითა და შერჩევის წესებით გათვალისწინებული სწავლების ან ტრენინგის შესაძლებლობების შესახებ. დაწესებულება ადასტურებს უფლებამოსილებას, ადგილებსა და საჭირო საბუთებს. მიჰყევით მის პროცედურას და ნუ წარადგენთ ინსტიტუციურ საგრანტო განაცხადს ეროვნულ ოფისში."
+  }
+}

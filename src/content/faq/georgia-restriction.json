@@ -1,0 +1,15 @@
+{
+  "slug": "georgia-restriction",
+  "topic": "applications",
+  "actions": [],
+  "sourceUrl": "https://erasmus-plus.ec.europa.eu/programme-guide/part-a/eligible-countries",
+  "sourceChecked": "2026-10-28",
+  "en": {
+    "title": "What is the restriction concerning Georgian authorities?",
+    "body": "The 2026 Guide excludes Georgian authorities, defined as central government, local authorities, agencies and state-owned enterprises. Check an organisation’s actual legal status and the Action criteria. This website does not decide eligibility for an individual organisation or replace the official call conditions."
+  },
+  "ka": {
+    "title": "რა შეზღუდვა ეხება საქართველოს ხელისუფლების ორგანოებს?",
+    "body": "2026 წლის გზამკვლევი გამორიცხავს ქართულ ხელისუფლების ორგანოებს: ცენტრალურ ხელისუფლებას, ადგილობრივ ორგანოებს, სააგენტოებსა და სახელმწიფო საწარმოებს. გადაამოწმეთ ორგანიზაციის რეალური სამართლებრივი სტატუსი და ქმედების პირობები. ეს საიტი არ წყვეტს ცალკეული ორგანიზაციის უფლებამოსილებას და არ ცვლის კონკურსის ოფიციალურ პირობებს."
+  }
+}

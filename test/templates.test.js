@@ -36,10 +36,13 @@ test('Publications are complete without JavaScript and filter metadata matches r
   }
 });
 test('FAQ groups and related Action pages use the same records', () => {
-  assert.equal(data.faq.length, 3);
+  assert.equal(data.faq.length, 12);
   for (const lang of ['ka', 'en']) for (const item of data.faq) {
     const faq = load(read(`_site/${lang}/resources/faq/index.html`));
     assert.ok(faq('main').text().includes(item[lang].title));
+    assert.equal(item.sourceChecked, '2026-10-28');
+    assert.ok(faq(`a[href="${item.sourceUrl}"]`).length);
+    assert.doesNotMatch(item[lang].title+item[lang].body, /\[SAMPLE\]/);
     for (const action of data.action) {
       const page = load(read(`_site/${lang}/opportunities/${action.slug}/index.html`));
       assert.equal(page('main').text().includes(item[lang].title), item.actions.includes(action.slug));

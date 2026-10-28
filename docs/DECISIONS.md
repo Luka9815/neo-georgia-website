@@ -373,3 +373,7 @@ Remove the three illustrative Events only after preserving them and dependent re
 
 ## 2026-10-28: Session 20, conditional Stories (Luka)
 Remove the sample story after preserving relationship/mixed-home coverage in fixtures. Generate a language’s Stories index only when that language has a story; hide empty home/Action story sections and Resources navigation automatically, and omit absent routes from sitemap/search. Restore these surfaces when a first story is added. A missing-language story switch falls back to Resources if that language has no Stories index.
+
+
+## 2026-10-28: Session 20, source-linked bilingual FAQ (Luka)
+Replace the three samples with twelve bilingual FAQs in the existing Applications and Mobility groups. Base answers on the 2026 Guide and Commission student/application guidance, link each answer to an official source and record the check date. Keep Georgian authority restrictions and applicant/partner distinctions explicit; distinguish institutional deadlines from individual selection and explain that NEO does not select or fund projects.

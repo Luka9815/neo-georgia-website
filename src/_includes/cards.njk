@@ -23,6 +23,7 @@
       {% elif type == 'faq' %}
         <{{ heading }}>{{ item.title }}</{{ heading }}>
         {{ item.body | markdown | safe }}
+        {% if item.sourceUrl %}<p class="source-label"><a href="{{ item.sourceUrl }}">{{ t.official }}</a></p>{% endif %}
       {% else %}
         {% if type == 'news' and item.image %}<img data-news-image data-image-layout="card" src="{{ item.image.src }}" alt="{{ item.image.alt[lang] }}">{% endif %}
         {% if type == 'event' %}

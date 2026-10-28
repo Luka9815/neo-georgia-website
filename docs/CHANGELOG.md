@@ -344,3 +344,9 @@ Newest at the top. One entry per working session: date, who (agent or person), w
 
 - Remove the illustrative story. Hide empty Stories routes, home/Action listings and section links without changing the seven main destinations.
 - Test the empty production state and first-story fixture state, including navigation, listings and sitemap.
+
+
+## 2026-10-28: Session 20, item 5, source-linked bilingual FAQ
+
+- Publish twelve bilingual FAQs covering Georgia eligibility, HEI roles, ICM students/staff, Erasmus Mundus scholarships, youth, VET, partners, Jean Monnet, deadlines, the authority restriction and NEO’s role.
+- Render official source links and preserve related-Action checks for every FAQ.

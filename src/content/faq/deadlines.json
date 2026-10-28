@@ -1,0 +1,15 @@
+{
+  "slug": "deadlines",
+  "topic": "applications",
+  "actions": [],
+  "sourceUrl": "https://erasmus-plus.ec.europa.eu/programme-guide/part-c",
+  "sourceChecked": "2026-10-28",
+  "en": {
+    "title": "Where are the application deadlines?",
+    "body": "The Calls page lists verified institutional deadlines in Brussels time. Always read the official Guide and the relevant call for the exact conditions. University exchange selections and Erasmus Mundus student admissions have their own deadlines set by the institution or consortium."
+  },
+  "ka": {
+    "title": "სად ვნახო განაცხადის ვადები?",
+    "body": "კონკურსების გვერდზე მოცემულია გადამოწმებული ინსტიტუციური ვადები ბრიუსელის დროით. ზუსტი პირობებისთვის წაიკითხეთ ოფიციალური გზამკვლევი და შესაბამისი კონკურსი. უნივერსიტეტის გაცვლებსა და ერაზმუს მუნდუსის სტუდენტურ მიღებას დაწესებულების ან კონსორციუმის მიერ დადგენილი ცალკე ვადები აქვს."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "slug": "mundus-scholarships",
+  "topic": "mobility",
+  "actions": [
+    "erasmus-mundus"
+  ],
+  "sourceUrl": "https://erasmus-plus.ec.europa.eu/opportunities/individuals/students/erasmus-mundus-joint-masters",
+  "sourceChecked": "2026-10-28",
+  "en": {
+    "title": "How do I apply for an Erasmus Mundus scholarship?",
+    "body": "Choose a Joint Master and apply directly to the consortium running it. Each programme publishes its own admission and scholarship requirements and timetable. The institutional Erasmus Mundus call deadline on this website is not a student scholarship deadline."
+  },
+  "ka": {
+    "title": "როგორ შევიტანო განაცხადი ერაზმუს მუნდუსის სტიპენდიაზე?",
+    "body": "აირჩიეთ ერთობლივი სამაგისტრო პროგრამა და მიმართეთ უშუალოდ მის განმახორციელებელ კონსორციუმს. თითოეული პროგრამა აქვეყნებს მიღების, სტიპენდიისა და ვადების საკუთარ პირობებს. ამ საიტზე მითითებული ინსტიტუციური ერაზმუს მუნდუსის კონკურსის ვადა სტუდენტური სტიპენდიის ვადა არ არის."
+  }
+}

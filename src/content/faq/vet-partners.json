@@ -1,0 +1,17 @@
+{
+  "slug": "vet-partners",
+  "topic": "applications",
+  "actions": [
+    "cb-vet"
+  ],
+  "sourceUrl": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-vet",
+  "sourceChecked": "2026-10-28",
+  "en": {
+    "title": "Can Georgian VET organisations coordinate Capacity Building projects?",
+    "body": "Under Capacity Building in VET, eligible Georgian VET and labour-market organisations can participate as partners. The coordinator must be established in the EU or a country associated with Erasmus+. Check the Neighbourhood East call and its consortium requirements, alongside the Georgia restriction."
+  },
+  "ka": {
+    "title": "შეუძლიათ ქართულ პროფესიულ ორგანიზაციებს პოტენციალის განვითარების კოორდინირება?",
+    "body": "პროფესიულ განათლებაში პოტენციალის განვითარების ფარგლებში საქართველოს უფლებამოსილ პროფესიულ და შრომის ბაზრის ორგანიზაციებს შეუძლიათ პარტნიორებად მონაწილეობა. კოორდინატორი უნდა იყოს ევროკავშირში ან Erasmus+-თან ასოცირებულ ქვეყანაში. გადაამოწმეთ აღმოსავლეთ სამეზობლოს კონკურსი, კონსორციუმის მოთხოვნები და საქართველოს შეზღუდვა."
+  }
+}
