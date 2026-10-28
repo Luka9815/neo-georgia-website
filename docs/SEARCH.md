@@ -96,3 +96,8 @@ Because this candidate is rejected, the shipped page-weight/build-time increase 
 Keep Pagefind as a candidate only. Test a language-aware normaliser or reviewed Georgian word-family expansion using a broader corpus and native-speaker relevance review. Do not silently strip Georgian suffixes: that can conflate unrelated terms. Compare another account-free local static engine if it provides stronger Georgian analysis. Define acceptance queries with NEO before choosing. No alternative engine is selected in this session.
 
 Once quality is adequate, implement SITE-PLAN template 14 at matching /ka/search/ and /en/search/ routes, linked from the header without adding a top-level menu item. Require labelled keyboard-accessible controls/results, language-only indexes, a no-JavaScript explanation with main-section links, project-prefix checks, and an explicit payload budget. None of this conditional UI work is claimed complete here.
+
+
+## Session 19 catalogue boundary
+
+Index the bilingual projects indexes and statistics pages. Exclude per-year project tables: including them raises combined Pagefind assets from the pre-session 1,315,137 bytes to 3,235,348 bytes. The year tables remain complete static HTML with normal internal links, sitemap entries and language switches. Search does not promise individual project-title lookup; browse the year tables or use the official Project Results Platform for that. Final index sizes after exclusion are recorded in the Session 19 review report.

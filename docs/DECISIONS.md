@@ -334,3 +334,7 @@ Compute statistics at build time from the same public projection used by the yea
 
 ## 2026-10-28: Replace illustrative homepage figures (Luka)
 Use three computed figures linking to statistics: projects (6,764), named Georgian organisations (605) and Georgian-coordinated projects (106), with the data snapshot date. Remove sampleNumber and figuresNote from both language files and close only the illustrative-figures launch task. Keep other sample content/translation tasks and siteLaunched=false.
+
+
+## 2026-10-28: Keep year tables outside Pagefind (Luka)
+Index the projects index and statistics in both languages. Per-year tables increase Pagefind materially (1,315,137 bytes before Session 19 versus 3,235,348 bytes with year tables), so exclude projectYear routes from indexing. They remain static, linked and in the sitemap. Report final index sizes and keep project-title browsing in the year tables/official platform rather than claiming a complete local project search.

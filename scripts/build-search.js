@@ -10,7 +10,7 @@ export async function buildSearch(output = '_site', prefix = getPathPrefix()) {
     for (const lang of ['ka', 'en']) {
       const { index, errors } = await pagefind.createIndex({ forceLanguage: lang, rootSelector: 'main', excludeSelectors: ['.notice'] });
       if (errors.length || !index) throw new Error(errors.join('\n') || 'Missing Pagefind index');
-      const views = getViews().filter(view => view.lang === lang && !['redirect', 'legacyRedirect', '404', 'search'].includes(view.kind));
+      const views = getViews().filter(view => view.lang === lang && !['redirect', 'legacyRedirect', '404', 'search', 'projectYear'].includes(view.kind));
       for (const view of views) {
         const result = await index.addHTMLFile({ url: prefix + view.path.slice(1), content: readFileSync(join(output, view.path.slice(1), 'index.html'), 'utf8') });
         if (result.errors.length) throw new Error(result.errors.join('\n'));

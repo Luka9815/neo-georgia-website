@@ -278,3 +278,8 @@ Newest at the top. One entry per working session: date, who (agent or person), w
 ## 2026-10-28: Session 19, item 6, real homepage figures
 
 - Replace illustrative homepage numbers with computed project, named-organisation and Georgian-coordinator counts, linking each to statistics and showing the snapshot date. Remove sampleNumber/figuresNote in both languages and close that part of the launch checklist.
+
+
+## 2026-10-28: Session 19, item 7, bounded static search
+
+- Index the projects index and statistics pages; exclude per-year tables after measuring a combined Pagefind increase from 1,315,137 to 3,235,348 bytes with them included. Keep the complete tables linked and in the sitemap. Update search page-count/recall checks for the explicit boundary. Final sizes follow in the performance report.
