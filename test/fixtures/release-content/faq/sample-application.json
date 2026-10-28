@@ -1,0 +1,16 @@
+{
+  "slug": "sample-application",
+  "topic": "applications",
+  "actions": [
+    "cbhe",
+    "cb-vet"
+  ],
+  "ka": {
+    "title": "[SAMPLE] როგორ მოვამზადო განაცხადი?",
+    "body": "[SAMPLE] გაეცანით შესაბამისი კონკურსის მოთხოვნებს."
+  },
+  "en": {
+    "title": "[SAMPLE] How do I prepare an application?",
+    "body": "[SAMPLE] Check the requirements of the relevant call."
+  }
+}

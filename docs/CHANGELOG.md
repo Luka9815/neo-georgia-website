@@ -320,3 +320,9 @@ Newest at the top. One entry per working session: date, who (agent or person), w
 - Both complete browser commands pass all 105 non-redirect pages per layout with zero axe violations, including keyboard/language/no-JavaScript controls, calendar/ICS, projects and search. This supersedes the initial root timing failure and focused rerun.
 - Refresh the four statistics screenshots at 320/1280 px in both languages. Check that coverage notes remain visible without JavaScript in both layouts, including Action-filtered indexes, with no 320 px page overflow.
 - Update the review report and handover to resolve the previous missing-request gap, retain initial performance observations separately and record post-review output sizes. Keep the same branch and PR, with one commit per review item and no merge. All nine Actions remain unchanged and [DRAFT]; siteLaunched remains false.
+
+
+## 2026-10-28: Session 20, item 1, release candidate and Action review
+
+- Remove only the draft prefixes from nine bilingual Actions and shared Georgia eligibility. Preserve a baseline regression test for all other wording/metadata. Keep Nino’s nine-Action review list in ACTION-REVIEW.md.
+- Preserve all remaining sample content and publication files in test fixtures before later removal; no coverage is deleted.

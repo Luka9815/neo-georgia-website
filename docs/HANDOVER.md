@@ -1,6 +1,6 @@
 # Handover
 
-Last updated: 2026-10-28 (Codex, Session 19 projects and statistics)
+Last updated: 2026-10-28 (Codex, Session 20 release candidate)
 
 ## Current state
 
@@ -149,3 +149,8 @@ When a domain change is chosen later, ensure ERIDA registration/ownership and a 
 
 - Luka is the sole editor for now. When additional editors are named, arrange GitHub access and training using EDITING.md.
 - Newsletter: deferred until ERIDA has an institutional email and a free mailing-service account registered to it, for example MailerLite free tier. Then review service terms, privacy/consent wording and add a sign-up link. No sending, form, account or sign-up link is implemented in Session 18.
+
+
+## Session 20 release candidate
+
+Start from origin/main c2d3b9d on codex/session-20-release-candidate. Luka authorises removing public draft/sample markers, preserving the settled design and source-checked Action wording, and using [TBC] solely for missing NEO facts. Nino's review remains pending in ACTION-REVIEW.md. Keep siteLaunched=false and noindex. The Session 20 decisions supersede earlier public-marker/sample holds for this scope; no launch is authorised.

@@ -1,0 +1,14 @@
+{
+  "slug": "sample-here",
+  "group": "here",
+  "ka": {
+    "title": "[SAMPLE] სახელი და გვარი (HERE)",
+    "role": "[SAMPLE] უმაღლესი განათლების ექსპერტი",
+    "body": "[SAMPLE] გამოგონილი პროფილი."
+  },
+  "en": {
+    "title": "[SAMPLE] Name and surname (HERE)",
+    "role": "[SAMPLE] Higher education expert",
+    "body": "[SAMPLE] Fictional profile."
+  }
+}

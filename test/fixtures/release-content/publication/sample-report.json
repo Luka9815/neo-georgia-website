@@ -1,0 +1,15 @@
+{
+  "slug": "sample-report",
+  "year": 2026,
+  "type": "neo-report",
+  "file": "/assets/publications/sample-report.txt",
+  "language": "ka/en",
+  "ka": {
+    "title": "[SAMPLE] ეროვნული ოფისის ანგარიში",
+    "body": "[SAMPLE] მხოლოდ საილუსტრაციო მასალა."
+  },
+  "en": {
+    "title": "[SAMPLE] NEO report",
+    "body": "[SAMPLE] Illustrative publication only."
+  }
+}

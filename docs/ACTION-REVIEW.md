@@ -40,3 +40,8 @@ Initial proxy access failures were resolved before this review. No external acco
 ## Session 18 review status, 27 October 2026
 
 All nine Actions retain [DRAFT], following Luka's restart instructions. No Action wording changes are made or proposed in this session. The new partner-search navigation is separate from the stored Action title, summary, eligibility and application wording. Nino's bilingual review remains a launch blocker.
+
+
+## Session 20 final review status, 28 October 2026
+
+Luka authorises removing public [DRAFT] prefixes from all nine Actions and the shared Georgia restriction for the release candidate. This changes no source-checked wording and records no Nino approval. The nine rows in the table above remain Nino's bilingual review list, including applicant/partner distinctions, the Georgia authority restriction and CBHE Strand 3. Review status belongs in this file only; do not reintroduce public review markers. Earlier session notes above are historical.
