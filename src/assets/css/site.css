@@ -228,3 +228,34 @@ dd { margin: 0 0 var(--space-2); }
 .mini-chart rect { fill: var(--blue); }
 .mini-chart text { font-size: 12px; }
 @media (forced-colors: active) { .project-chart rect { fill: Highlight; } .project-chart text { fill: CanvasText; } }
+
+/* Full-width home sections keep one reading order and no fixed text heights. */
+.page-home { width: 100%; padding-inline: 0; }
+.page-home > .notice { width: calc(100% - 2rem); max-width: 71rem; margin-inline: auto; }
+.home-hero { margin: 0; background: var(--blue-dark); color: var(--paper); }
+.hero-grid { display: grid; padding-block: 0; }
+.hero-main { padding-block: 2.5rem; }
+.home-hero h1 { color: var(--paper); max-width: 22ch; font-size: clamp(1.8rem,3.5vw,3.1rem); }
+.eyebrow,.hero-intro { color: var(--inverse-muted); }
+.eyebrow { font-size: .875rem; }
+.hero-intro { max-width: 48ch; margin-bottom: 2rem; }
+.home-hero .button { color: var(--blue-dark); background: var(--paper); border-color: var(--paper); }
+.home-hero .button-secondary { background: var(--blue-dark); color: var(--paper); }
+.home-hero :focus-visible { outline-color: var(--paper); }
+.photo-hero { margin: 0; align-self: center; padding-block: 0 1.5rem; }
+.photo-hero figcaption,.photo-hero a { color: var(--inverse-muted); }
+.photo-hero .portal-image { border-radius: .25rem; }
+.home-band { margin: 0; padding-block: 3rem; }
+.band-soft { background: var(--surface); }
+.audience-tiles { grid-template-columns: repeat(auto-fit,minmax(min(100%,12rem),1fr)); gap: 1rem; }
+.audience-tiles .card > .icon:last-child { margin-top: auto; align-self: flex-end; }
+.home-action-sector { margin-block: 2rem; }
+.home-action-sector > h3 { border-bottom: 2px solid var(--teal); padding-bottom: 1rem; color: var(--teal); }
+.home-action-sector .cards { grid-template-columns: repeat(auto-fit,minmax(min(100%,18rem),1fr)); }
+.home-figures { background: var(--teal-soft); }
+.home-figures .figures { margin-block: 2rem; }
+.home-figures h3 { margin-top: 2rem; }
+.compact-update { padding-block: 1rem; border-bottom: 1px solid var(--line); margin: 0; font-weight: 700; }
+.chart-table summary { cursor: pointer; min-height: 44px; padding-block: .5rem; font-weight: 700; }
+.news-panel { width: 100%; height: 6rem; }
+@media (min-width: 64rem) { .hero-grid { grid-template-columns: 1fr 1fr; gap: 3rem; } .hero-main { padding-block: 3rem; } .photo-hero { padding-block: 2rem; } }

@@ -13,7 +13,7 @@ test('isolated sample content retains relationships, local-publication downloads
   for(const item of data.resource.filter(item=>item.event))assert.ok(data.event.some(event=>event.slug===item.event));
   for(const lang of ['ka','en']){
    const home=load(readFileSync(`${root}/_site/${lang}/index.html`,'utf8'));
-   assert.equal(home('main > section').length,6);
+   assert.equal(home('.home-band, .home-hero').length,8);
    assert.equal(home(`main a[href="${prefix}${lang}/stories/"]`).length,1);
    const resources=load(readFileSync(`${root}/_site/${lang}/resources/index.html`,'utf8'));
    assert.equal(resources(`main a[href="${prefix}${lang}/stories/"]`).length,1);

@@ -433,3 +433,7 @@ Reuse the expressly approved NEO dissemination photograph with visible credit an
 
 ## 2026-10-29: Session 21 item 6, build-time project charts (Luka)
 Render SVG year, Action/sector, status and top-15 organisation charts from the approved local projection. Keep labelled values and all equivalent HTML tables, with the KA107 coverage warning directly beneath the year chart. Rank by distinct project references per named source ID, preserving the first submitted original name and not merging names. No chart library, client fetch or participant-count inference.
+
+
+## 2026-10-29: Session 21 item 1, portal homepage (Luka)
+Replace the former fixed home order with a credited photo introduction, five static audience paths, nine distinct Action icon tiles grouped by primary sector, computed figures and a year mini-chart with equivalent table and coverage note. Retain latest News and conditional Stories. Empty Calls/Events become compact lines rather than empty cards; real future records restore their sections.

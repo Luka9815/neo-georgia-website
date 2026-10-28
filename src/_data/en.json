@@ -297,5 +297,10 @@
   "chartDescription": "Each bar is labelled with its value. The following table contains the same figures.",
   "topOrganisations": "Top 15 Georgian organisations by project count",
   "organisationChartNote": "Each named source organisation identifier is counted once per project. Names are shown as submitted, without merging aliases. These are project counts, not participant numbers.",
-  "projectOrganisation": "Organisation"
+  "projectOrganisation": "Organisation",
+  "allOpportunities": "Explore all Actions",
+  "callsCompact": "2027 calls expected late 2026",
+  "eventsCompact": "No events scheduled",
+  "chartTable": "View the chart data table",
+  "homeChartDescription": "Projects by call year, with values printed above the bars. Expand the following table for the same data."
 }

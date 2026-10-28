@@ -74,11 +74,8 @@ try {
           () => document.documentElement.scrollWidth <= innerWidth
         )
       );
-      assert.equal(
-        await menuPage.locator('.hero-guide').isVisible(),
-        width >= 600,
-        `Hero guide at ${width}px`
-      );
+      assert.equal(await menuPage.locator('.audience-tiles li').count(),5);
+      assert.equal(await menuPage.locator('.home-hero .entry a:visible').count(),2);
       const wordmark = await menuPage.locator('.brand').boundingBox();
       const emblem = await menuPage.locator('.eu-emblem').boundingBox();
       assert.ok(wordmark.width <= emblem.width && wordmark.height <= emblem.height, `EU emblem prominence: ${lang} at ${width}px`);

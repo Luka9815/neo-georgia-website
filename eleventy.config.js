@@ -116,6 +116,7 @@ export default function (config) {
   config.addFilter('actionGroup', (items, actions, group) =>
     items.filter((i) => actions.find((a) => a.slug === i.action)?.keyAction === group)
   );
+  config.addFilter('primarySector',(items,sector)=>items.filter(item=>item.sectors[0]===sector));
   config.addFilter('sector', (items, sector) =>
     items.filter((item) => item.sectors.includes(sector))
   );

@@ -427,3 +427,7 @@ Recorded the approved photograph’s source/permission/credit/date/hash and the 
 
 ## 2026-10-29: Session 21 item 6, accessible charts
 Added pure build-time SVG charts and a top-15 organisation table, with exact source-derived values, labelled bars, text alternatives, keyboard-scrollable regions and forced-colour support. Existing statistics tables and warnings remain.
+
+
+## 2026-10-29: Session 21 item 1, portal homepage
+Added full-width alternating home sections, photo hero, audience tiles, nine Action tiles, figures/chart band and News image/icon cards. Empty Calls/Events use compact updates, with populated fixture coverage retained.
