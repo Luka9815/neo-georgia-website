@@ -393,3 +393,7 @@ Replace sample-team with Coordinator, Programme Officer and Communications Offic
 
 ## 2026-10-28: Session 20, HERE explanation and pending membership (Luka)
 Replace the fictional HERE profile with a bilingual explanation, the official Commission/EACEA-supported SPHERE network page and the 2026 Guide’s HERE section. Keep the Georgian 2026–2027 membership list [TBC]. No standalone EACEA HERE landing URL could be verified; use the verified official Erasmus Networks destination rather than inventing a link or list.
+
+
+## 2026-10-28: Session 20, final About page (Luka)
+Publish final bilingual information on the EACEA-supported NEO’s information, guidance, applicant/beneficiary support, HERE coordination, monitoring and dissemination role. State that ERIDA hosts the office from January 2027, as supplied by Luka. Link the official Guide implementation and Commission management pages. Explain clearly that NEO does not evaluate, select or fund projects.

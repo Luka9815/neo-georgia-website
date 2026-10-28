@@ -371,3 +371,8 @@ Newest at the top. One entry per working session: date, who (agent or person), w
 ## 2026-10-28: Session 20, item 9, HERE explanation and pending membership
 
 - Remove sample-here and publish source-linked guidance on HERE’s role, with the requested dated membership placeholder. No expert names are invented.
+
+
+## 2026-10-28: Session 20, item 10, final About page
+
+- Replace the sample About page with source-linked bilingual copy and the confirmed future host, preserving team/HERE/contact navigation.
