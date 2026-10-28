@@ -57,7 +57,7 @@ test('people have national transliteration, separate groups and no contact detai
     if (!person.roleBased && !person.ka.title.startsWith('[SAMPLE]'))
       assert.equal(person.en.title.toLowerCase(), romanise(person.ka.title));
     assert.ok(!person.photo && !person.email && !person.phone);
-    if (person.roleBased) { assert.equal(person.name, '[TBC]'); assert.equal(person.roleEmail, '[TBC]'); }
+    if (person.roleBased) { assert.ok(person.name?.trim()); assert.ok(person.roleEmail?.trim()); }
     for (const lang of ['ka', 'en']) for (const [group, route] of [['neo', 'about/team'], ['here', 'here']]) {
       const $ = load(read(`_site/${lang}/${route}/index.html`));
       assert.equal($('main').text().includes(person[lang].title), person.group === group);
@@ -69,7 +69,8 @@ test('Contact uses final labelled fields with no form, map or third-party asset'
   for (const lang of ['ka', 'en']) {
     const $ = load(read(`_site/${lang}/about/contact/index.html`));
     assert.equal($('main dd').length, 4);
-    for (const dd of $('main dd')) assert.ok($(dd).text().includes('[TBC]'));
+    const strings = JSON.parse(read(`src/_data/${lang}.json`));
+    assert.deepEqual($('main dd').map((_, el) => $(el).text()).get(), [strings.contactAddress, strings.contactPhone, strings.contactHours, strings.contactEmail]);
     assert.equal($('footer h3').length, 0);
     assert.equal($('main form, iframe, main script').length, 0);
     for (const el of $('[src]')) assert.ok($(el).attr('src').startsWith(prefix));

@@ -24,7 +24,7 @@ eleventyExcludeFromCollections: true
   <h2>{{ t.how }}</h2>
   {{ item.how | markdown | safe }}
   <h3>{{ t.officialLinks }}</h3>
-  <ul>
+  <ul data-action-official-links>
     {% for link in item.officialLinks %}
       <li>
         <a href="{{ link.url }}">{{ t[link.labelKey] }}</a>

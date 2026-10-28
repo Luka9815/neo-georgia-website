@@ -138,6 +138,7 @@ for (const [type, mutate, expected] of [
       cpSync('src', join(root, 'src'), { recursive: true });
       const contentRoot = join(root, 'src/content');
       cpSync('test/fixtures/news', join(contentRoot, 'news'), { recursive: true });
+      if (type === 'event') cpSync('test/fixtures/release-content/event', join(contentRoot, 'event'), { recursive: true });
       const original = type === 'news' ? 'update-1' : 'webinar';
       const file = join(contentRoot, type, `${original}.json`);
       const item = JSON.parse(read(file));

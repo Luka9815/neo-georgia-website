@@ -1,5 +1,5 @@
 // Isolated test content only. Never imported by the production build.
-import { cpSync, mkdirSync, mkdtempSync, symlinkSync, readFileSync, statSync } from 'node:fs';
+import { cpSync, mkdirSync, mkdtempSync, symlinkSync, readFileSync, writeFileSync, statSync } from 'node:fs';
 import { join, resolve, extname } from 'node:path';
 import { tmpdir } from 'node:os';
 import { execFileSync } from 'node:child_process';
@@ -8,6 +8,21 @@ export function createFixtureSite(types = ['event', 'call', 'resource', 'story']
  const root=mkdtempSync(join(tmpdir(),'neo-content-fixtures-'));
  for(const path of ['src','lib','eleventy.config.js','package.json'])cpSync(path,join(root,path),{recursive:true});
  for(const type of types)cpSync(`test/fixtures/release-content/${type}`,join(root,`src/content/${type}`),{recursive:true});
+ if(types.includes('publication'))cpSync('test/fixtures/release-publications',join(root,'src/assets/publications'),{recursive:true});
+ // Synthetic copied fixtures need durable past/upcoming states after launch.
+ // Keep the archived JSON unchanged and never touch production records.
+ const year = new Date().getUTCFullYear();
+ if(types.includes('event'))for(const [slug,offset] of [['information-day',1],['webinar',1],['past-session',-1]]){
+  const path=join(root,`src/content/event/${slug}.json`);const item=JSON.parse(readFileSync(path,'utf8'));
+  for(const field of ['date','end'])item[field]=String(year+offset)+item[field].slice(4);
+  writeFileSync(path,JSON.stringify(item));
+ }
+ if(types.includes('call')){
+  const path=join(root,'src/content/call/cbhe-2026.json');const item=JSON.parse(readFileSync(path,'utf8'));
+  item.opens=`${year}-01-01T00:00`;item.deadline=`${year+1}-12-15T17:00`;
+  writeFileSync(path,JSON.stringify(item));
+ }
+
  mkdirSync(join(root,'migration/source'),{recursive:true});
  cpSync('test/fixtures/projects-snapshot.json',join(root,'migration/source/erasmus-projects-georgia-2026-10-28.json'));
  symlinkSync(resolve('node_modules'),join(root,'node_modules'),'dir');

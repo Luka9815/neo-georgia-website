@@ -397,3 +397,17 @@ Newest at the top. One entry per working session: date, who (agent or person), w
 
 - Finish home, preview, individual guidance, footer and empty-state copy in both languages. Hide empty Stories without changing the settled design.
 - Add a passing [TBC] inventory test that writes docs/review/session-20/TBC.md and a production HTML gate against public [SAMPLE]/[DRAFT] markers. Keep noindex and all source datasets unchanged.
+
+
+## 2026-10-28: Session 20, item quality, release validation and final review
+
+- Preserve empty optional pagination, add explicit Call date/zone/reference validation, scope Action-source assertions to their own link list and protect removed Event exports. Keep all sample-dependent relationship, CMS, ICS/DST and keyboard/download coverage in isolated fixtures.
+- Keep copied fixture dates relative to the test year so past/upcoming coverage survives January 2027. Exercise legacy publication downloads and resource/Event relationships privately. Index project links once per year page while retaining every source-row assertion.
+- Align new Georgian Capacity Building labels with the unchanged Action terminology. No stylesheet, dependency, approved EU asset/disclaimer, promoted News body or project snapshot changes are made.
+- Record 27 source destinations checked 2026-10-28, eleven verified deadlines, the 26-occurrence TBC inventory and 48 bilingual screenshots. Update CONTENT, EDITING, SITE-PLAN, AGENTS and the four-stage HANDOVER Launch checklist. Final build/test/browser counts are in review/session-20/report.json.
+
+- Clean root/project-prefix builds and all 150 tests per layout pass. The final suites use one worker after a concurrent custom-domain build process received SIGKILL; its isolated check and full serial rerun pass.
+
+- Make production Event/Story and contact/name checks follow actual content. Retain independent empty/populated fixture coverage without requiring live catalogues to stay empty or NEO facts to remain [TBC].
+
+- Both complete browser commands pass 95 non-redirect pages per layout with zero axe violations, plus native controls, Publications, calendar/ICS, projects and search. The relative-year populated fixture calendar checks pass separately in both layouts.

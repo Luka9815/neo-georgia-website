@@ -98,7 +98,7 @@ test('sector groups and every Action page show source-checked eligibility and of
       assert.ok(page('main').text().includes(item[lang].who));
       for (const link of item.officialLinks) {
         assert.equal(
-          page(`main a[href="${link.url}"]`).text(),
+          page(`[data-action-official-links] a[href="${link.url}"]`).text(),
           strings[link.labelKey]
         );
       }

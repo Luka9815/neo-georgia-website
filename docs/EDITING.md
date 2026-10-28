@@ -1,6 +1,6 @@
 # სიახლეებისა და ღონისძიებების დამატება
 
-ეს სახელმძღვანელო განკუთვნილია NEO-ს თანამშრომლებისთვის. კოდის ცოდნა საჭირო არ არის. გამოიყენეთ მხოლოდ დამტკიცებული მასალა. სატესტო მასალის სათაური და ტექსტი დაიწყეთ `[SAMPLE]` ნიშნით.
+ეს სახელმძღვანელო განკუთვნილია NEO-ს თანამშრომლებისთვის. კოდის ცოდნა საჭირო არ არის. გამოიყენეთ მხოლოდ დამტკიცებული მასალა. საჯარო მასალაში არ გამოიყენოთ `[SAMPLE]` ან `[DRAFT]`. მხოლოდ ეროვნული ოფისისგან დასადასტურებელი ფაქტი მონიშნეთ `[TBC]` ნიშნით დასრულებულ წინადადებაში. სატესტო ჩანაწერები შეამოწმეთ ცალკე სატესტო განშტოებაზე და არ გამოაქვეყნოთ მთავარ საიტზე.
 
 ## შესვლა
 
@@ -9,7 +9,7 @@
 3. აირჩიეთ `Luka9815/neo-georgia-website` და `main` განშტოება.
 4. მენიუში გამოჩნდება „სიახლეები (News)“, „ღონისძიებები (Events)“ და „პარამეტრები (Settings)“.
 
-რეპოზიტორიაზე წვდომა წინასწარ უნდა გქონდეთ. თუ ის სიაში არ ჩანს, ან შენახვა არ შეგიძლიათ, მიმართეთ `[NEO technical contact]`-ს. არ გაუზიაროთ პაროლი ან წვდომის გასაღები სხვას.
+რეპოზიტორიაზე წვდომა წინასწარ უნდა გქონდეთ. თუ ის სიაში არ ჩანს, ან შენახვა არ შეგიძლიათ, მიმართეთ ტექნიკურ პასუხისმგებელს, ლუკას. არ გაუზიაროთ პაროლი ან წვდომის გასაღები სხვას.
 
 ## ახალი სიახლე
 
@@ -68,7 +68,7 @@ HTML კოდი ან სურათი ტექსტის ველშ�
 - **ჩატარების ადგილი (Venue):** მისამართი ან ონლაინ ჩატარების ინფორმაცია.
 - **დღის წესრიგი (Agenda), არასავალდებულო:** შეხვედრის ძირითადი საკითხები და განრიგი.
 
-დროის ცვლილების დღეს ზოგი ადგილობრივი საათი არ არსებობს ან ორჯერ მეორდება. ასეთ შემთხვევაში გამოქვეყნების შემოწმება შეცდომას აჩვენებს. ნუ გამოიცნობთ სწორ დროს; გადაამოწმეთ ორგანიზატორთან და მიმართეთ `[NEO technical contact]`-ს.
+დროის ცვლილების დღეს ზოგი ადგილობრივი საათი არ არსებობს ან ორჯერ მეორდება. ასეთ შემთხვევაში გამოქვეყნების შემოწმება შეცდომას აჩვენებს. ნუ გამოიცნობთ სწორ დროს; გადაამოწმეთ ორგანიზატორთან და მიმართეთ ტექნიკურ პასუხისმგებელს, ლუკას.
 
 ## არსებული ჩანაწერის შეცვლა ან წაშლა
 
@@ -80,14 +80,29 @@ HTML კოდი ან სურათი ტექსტის ველშ�
 
 ## როდის გამოჩნდება ცვლილება
 
-`main` განშტოებაზე შენახვა ახალ გამოქვეყნებას იწყებს. ცვლილება საიტზე გამოჩნდება შემდეგი წარმატებული გამოქვეყნების დასრულებისას, ჩვეულებრივ დაახლოებით 2 წუთში. ზოგჯერ მეტი დროა საჭირო. განაახლეთ გვერდი და შეამოწმეთ ტექსტი, ბმულები და ენები. სხვა განშტოებაზე შენახული ცვლილება ჯერ მთავარ საიტზე არ გამოჩნდება.
+`main` განშტოებაზე შენახვა ახალ გამოქვეყნებას იწყებს. ცვლილება საიტზე გამოჩნდება შემდეგი წარმატებული გამოქვეყნების დასრულებისას, რამდენიმე წუთს შეიძლება დასჭირდეს. დაელოდეთ პროცესის წარმატებით დასრულებას. განაახლეთ გვერდი და შეამოწმეთ ტექსტი, ბმულები და ენები. სხვა განშტოებაზე შენახული ცვლილება ჯერ მთავარ საიტზე არ გამოჩნდება.
 
 ## თუ გამოქვეყნება ვერ დასრულდა
 
 შენახვა და საიტზე გამოქვეყნება ორი სხვადასხვა ნაბიჯია. თუ ცვლილება არ ჩანს, GitHub-ის Actions განყოფილებაში შეამოწმეთ „Deploy GitHub Pages“. წითელი ნიშანი მიუთითებს შეცდომაზე. წინა წარმატებით გამოქვეყნებული ვერსია ჩვეულებრივ ხელმისაწვდომი რჩება.
 
-შეცდომაში შეიძლება ეწეროს ფაილის სახელი და ველი, მაგალითად `ka.title` (ქართული სათაური), `actions` (მიმართულებები), `date` (დაწყება ან გამოქვეყნების თარიღი) ან `end` (დასრულება). გადაამოწმეთ ეს ველი და შეინახეთ ხელახლა. თუ მიზეზი გაუგებარია, მიმართეთ `[NEO technical contact]`-ს და გაუგზავნეთ შეცდომის ტექსტი და ჩანაწერის ბმული. პაროლი ან წვდომის გასაღები არ გაგზავნოთ. პრობლემის მოსაგვარებლად რამდენიმე ახალი ასლი არ შექმნათ.
+შეცდომაში შეიძლება ეწეროს ფაილის სახელი და ველი, მაგალითად `ka.title` (ქართული სათაური), `actions` (მიმართულებები), `date` (დაწყება ან გამოქვეყნების თარიღი) ან `end` (დასრულება). გადაამოწმეთ ეს ველი და შეინახეთ ხელახლა. თუ მიზეზი გაუგებარია, მიმართეთ ტექნიკურ პასუხისმგებელს, ლუკას, და გაუგზავნეთ შეცდომის ტექსტი და ჩანაწერის ბმული. პაროლი ან წვდომის გასაღები არ გაგზავნოთ. პრობლემის მოსაგვარებლად რამდენიმე ახალი ასლი არ შექმნათ.
 
 ## English summary
 
-Sign in at app.pagescms.org with GitHub, select Luka9815/neo-georgia-website and main. News needs Georgian title/body, a publication date, a stable ASCII slug and optional related actions (Events need at least one); English is optional but must be complete if supplied. Events require both languages, local start/end values in YYYY-MM-DDTHH:mm, a named time zone, the classification fields and venue. Registration and agenda are optional. Never type UTC offsets. Bodies stay Markdown; do not add HTML or inline images. An optional News image uses the separate Image field and approved alt text. Settings exposes the call year and optional approved logo path; keep the logo path empty for the text wordmark. Save starts a deployment on main; publication usually takes about two minutes. For failures contact [NEO technical contact] with the error and entry link. Remove test entries after checking them.
+Sign in at app.pagescms.org with GitHub, select Luka9815/neo-georgia-website and main. News needs Georgian title/body, a publication date, a stable ASCII slug and optional related actions (Events need at least one); English is optional but must be complete if supplied. Events require both languages, local start/end values in YYYY-MM-DDTHH:mm, a named time zone, the classification fields and venue. Registration and agenda are optional. Never type UTC offsets. Bodies stay Markdown; do not add HTML or inline images. An optional News image uses the separate Image field and approved alt text. Settings exposes the call year and optional approved logo path; keep the logo path empty for the text wordmark. Save starts a deployment on main; wait for a successful deployment before checking. For failures contact Luka, the technical lead with the error and entry link. Remove test entries after checking them.
+
+
+## გამოშვებისთვის მომზადებული ვერსია, 2026 წლის 28 ოქტომბერი
+
+ლუკა ამჟამად ერთადერთი რედაქტორია. 2026 წლის კონკურსები გადამოწმებულია და დახურულია; currentCallYear რჩება 2026. 2027 წლის ვადები არ გამოიცნოთ. ახალი გამოცემა შეცვალეთ მხოლოდ ოფიციალური კონკურსის შემოწმების შემდეგ.
+
+საჯარო ღონისძიებები ჯერ არ არის. ახალი ღონისძიება დაამატეთ მხოლოდ ნამდვილი თარიღებით, დასახელებული დროის სარტყლითა და ორივე ენით. კალენდარი და .ics ფაილები ავტომატურად შეიქმნება. გამოქვეყნებული ღონისძიების slug არ შეცვალოთ. ისტორიების განყოფილება ცარიელ მდგომარეობაში დამალულია და პირველი ისტორიის დამატების შემდეგ შესაბამის ენაზე ავტომატურად გამოჩნდება.
+
+გუნდის წევრთა სახელები, სამსახურებრივი ელფოსტა, ოფისისა და იურიდიული მონაცემები დასადასტურებელია. სრული სიაა review/session-20/TBC.md. პუბლიკაციები ბმულით იხსნება ოფიციალურ წყაროზე; საიტზე ასლები არ იტვირთება. ამ დამხმარე ჩანაწერების ცვლილებისთვის მიმართეთ ტექნიკურ პასუხისმგებელს.
+
+არ ჩართოთ საიტის ინდექსაცია და არ მოხსნათ წინასწარი ვერსიის შეტყობინება. გაშვება ცალკე ცვლილებაა ნინოს საბოლოო განხილვის, დასადასტურებელი ფაქტებისა და ხელმოწერილი საგრანტო შეთანხმების შემოწმების შემდეგ.
+
+### Release-candidate editing summary
+
+Use genuine source-checked records only. The eleven 2026 institutional calls are closed; keep currentCallYear=2026 until the official next call is checked. No production Event or Story samples remain. Adding a genuine Event regenerates calendar/ICS output; adding the first Story restores its language’s section automatically. Preserve published slugs. Missing NEO facts are listed in review/session-20/TBC.md; update that inventory through npm test after approved corrections. Do not insert public sample/draft markers, enable indexing or treat the source-based Action copy as Nino’s approval. Hosted Event and image round trips still need manual confirmation; local tests do not prove hosted CMS behaviour.

@@ -2,9 +2,9 @@
 
 One UTF-8 JSON file per item lives in `src/content/<type>/<slug>.json`. Types are action, call, event, resource, news, story, publication, faq, person and page. Empty types contain only `.gitkeep`. Filenames and `slug` use stable lowercase ASCII words separated by hyphens.
 
-Shared facts sit at the top level. Only text is nested inside `ka` and `en`. Each language has `title` and `body`; body is Markdown, rendered with raw HTML disabled. Actions also have translated `summary`, `who` and `how`. Events have translated `venue` and `agenda`. Core types require both languages. News and stories may omit `en` entirely. Their English listings then exclude the item; the Georgian language switch links to the English section index. Do not add a blank English object.
+Shared facts sit at the top level. Only text is nested inside `ka` and `en`. Each language has `title` and `body`; body is Markdown, rendered with raw HTML disabled. Actions also have translated `summary`, `who` and `how`. Events have translated `venue` and `agenda`. Core types require both languages. News and stories may omit `en` entirely. Their English listings then exclude the item; the Georgian language switch links to the English section index, or Resources when an English Stories index does not exist. Do not add a blank English object.
 
-Example shape:
+Example shape for isolated test fixtures only, never public content:
 
 ```json
 {
@@ -20,18 +20,18 @@ Example shape:
 
 - Calls and stories use `action`; events, news, resources and FAQs use `actions`, a list of action slugs.
 - Resources may also use `event`, an event slug. `source` is `official`, `neo` or `partner`. Always provide `url`; official items link to their original EU source.
-- Calls have `year`, `opens`, `deadline`, `timeZone: "Europe/Brussels"` and the official call `url`. Enter local wall-clock times as `YYYY-MM-DDTHH:mm`, for example `"deadline": "2026-12-15T17:00"`. Never enter a UTC offset or Z. The build resolves the named zone using Temporal and adds the correct seasonal offset to rendered machine-readable dates. Status is computed at build time, never saved.
-- Events have `date`, `end`, `timeZone`, `type`, `format`, `organiser` and `registration`. Upcoming includes ongoing events until their end. Use the same offset-free local format for `date` and `end`; `timeZone` is required. Samples use Asia/Tbilisi. Status is computed at build time.
+- Calls have `year`, optional verified `opens`, required `deadline`, `timeZone: "Europe/Brussels"` and the official call `url`. Enter local wall-clock times as `YYYY-MM-DDTHH:mm`, for example `"deadline": "2026-12-15T17:00"`. Never enter a UTC offset or Z. The build resolves the named zone using Temporal and adds the correct seasonal offset to rendered machine-readable dates. Status is computed at build time, never saved.
+- Events have `date`, `end`, `timeZone`, `type`, `format`, `organiser` and `registration`. Upcoming includes ongoing events until their end. Use the same offset-free local format for `date` and `end`; `timeZone` is required. Historical fixtures exercise both supported zones; no sample Events are public. Status is computed at build time.
 - A nonexistent spring-forward time or an ambiguous fall-back time stops the build with an error identifying the time and zone. Choose a valid, unambiguous time instead; the build never silently shifts it or guesses which occurrence is intended. Invalid dates, unknown zones and editor-entered offsets are also rejected.
 - For Call/Event CMS fields use plain text inputs with a `YYYY-MM-DDTHH:mm` format hint, not date widgets that serialise an offset or UTC. Keep `timeZone` as a separate named-zone field.
 - News has a single shared publication `date` in `YYYY-MM-DD` format, without a time or offset. Stories and publications have a single shared `year`. News samples were migrated from instant dates to calendar dates for CMS editing.
-- No sample images are published; sample people have no names, photos or contact details. Optional News images now use the shared path and language-specific alt contract below, with Eleventy Image responsive outputs. Do not add personal contact information to the public repository.
+- No sample images or fictional people are published. Team cards name roles, with [TBC] for names and role emails. Optional News images now use the shared path and language-specific alt contract below, with Eleventy Image responsive outputs. Do not add personal contact information to the public repository.
 
-`lib/content.js` handles relationships, localisation and status. `src/_data/catalog.js` orders lists. `src/_data/views.js` declares routes. Each page type has a Nunjucks template in `src/pages/`, inheriting the shared `_includes/page.njk` wrapper; `_data/pageTypes.js` groups the central route list. Bodies remain Markdown strings. Session 10 adds Publications, FAQ, People and Contact; remaining templates and full field validation remain later work, not a production content schema.
+`lib/content.js` handles relationships, localisation and status. `src/_data/catalog.js` orders lists. `src/_data/views.js` declares routes. Each page type has a Nunjucks template in `src/pages/`, inheriting the shared `_includes/page.njk` wrapper; `_data/pageTypes.js` groups the central route list. Bodies remain Markdown strings. Supporting templates and field contracts are described below; do not assume unlisted fields are validated.
 
 ## Current call edition
 
-`src/_data/settings.json` defines `currentCallYear: 2026` and `siteLaunched: false`; `site.js` reads and validates them. Update this setting when NEO changes call edition, not automatically at New Year. The calls page shows the selected edition first, even if empty, followed by all other available years as archives in descending order. Action pages use the same selected edition. The home deadline block remains chronological across editions. The Pages CMS Settings entry exposes currentCallYear and optional logoPath. siteLaunched is not a CMS field and stays maintained in code; settings.content.merge preserves it when saving the year. The 2025 CBHE sample demonstrates archival rendering.
+`src/_data/settings.json` defines `currentCallYear: 2026` and `siteLaunched: false`; `site.js` reads and validates them. Update this setting when NEO changes call edition, not automatically at New Year. The calls page shows the selected edition first, even if empty, followed by all other available years as archives in descending order. Action pages use the same selected edition. The home deadline block remains chronological across editions. The Pages CMS Settings entry exposes currentCallYear and optional logoPath. siteLaunched is not a CMS field and stays maintained in code; settings.content.merge preserves it when saving the year. The 2025 CBHE archival example is isolated in test fixtures.
 
 ## Pages CMS configuration and validation
 
@@ -80,9 +80,9 @@ logoPath in settings.json defaults to an empty string, which keeps the text word
 
 ## Action drafts and source evidence
 
-Nine Action records use programmeYear, sectors and officialLinks (objects with url and translated labelKey). Each ka/en object contains title, summary, who and how; all four remain [DRAFT] until editorial review. Cards render summary directly, with no duplicated body. The comment field records the official 2026 Guide edition, PDF URL, supporting pages/clauses and verified action URLs. See ACTION-REVIEW.md before changing eligibility.
+Nine Action records use programmeYear, sectors and officialLinks (objects with url and translated labelKey). Each ka/en object contains title, summary, who and how; Session 20 removes public draft prefixes without changing the source-checked wording. Review status and Nino’s list remain in ACTION-REVIEW.md. Cards render summary directly, with no duplicated body. The comment field records the official 2026 Guide edition, PDF URL, supporting pages/clauses and verified action URLs. See ACTION-REVIEW.md before changing eligibility.
 
-The shared Georgia authority exclusion is in src/_data/georgiaEligibility.json and appears on every Action page. Scope eligibility to the relevant strand, especially Erasmus Mundus and Jean Monnet. Do not infer coordinator eligibility from partner eligibility. Keep icm, cbhe and jean-monnet stable for existing sample relationships. A multi-sector action remains one JSON record; Virtual Exchanges appears in both higher education and youth groups. Both .pages.yml actions select lists contain all nine slugs and must be updated whenever an Action is added or removed.
+The shared Georgia authority exclusion is in src/_data/georgiaEligibility.json and appears on every Action page. Scope eligibility to the relevant strand, especially Erasmus Mundus and Jean Monnet. Do not infer coordinator eligibility from partner eligibility. Keep icm, cbhe and jean-monnet stable for production and fixture relationships. A multi-sector action remains one JSON record; Virtual Exchanges appears in both higher education and youth groups. Both .pages.yml actions select lists contain all nine slugs and must be updated whenever an Action is added or removed.
 
 The official Georgian and English originals, checksums, archive sources and dates are documented in src/assets/eu/README.md. Session 17 explicitly supersedes the earlier KA rejection: /ka/ uses the Commission Georgian artwork with alt “ევროკავშირი საქართველოსთვის”; /en/ uses English. Both carry the funding statement, so no adjacent repetition is shown. Keep originals unchanged; the existing image library sizes complete PNG derivatives with PATH_PREFIX, aspect ratio, whitespace and a white box preserved. The supplied Georgian disclaimer is unchanged.
 
@@ -146,18 +146,24 @@ Both image alt fields remain [ALT NEEDED]. Review rights and write proper Georgi
 
 Session 7 reviewed 76 posts and wrote 72 drafts under ka, while four English-prose sources remained only in inventory. The session 8 pass corrects that classification, preserves every source in a separate draft and identifies mixed in-post English sections and pairing candidates. Current results and the exact regenerated window are in REPORT.md and HANDOVER.
 
-## Session 10 supporting templates
+## Supporting templates, current release candidate
 
-Publications live at /ka/resources/publications/ and /en/resources/publications/. Shared fields: year (2014 to 2100), type (neo-report, here-publication, brochure, statistics), language (ka, en, ka/en), and file (existing /assets/publications/<slug>.pdf or a clearly labelled sample .txt). Both text objects contain title/body. Two sample text downloads demonstrate the archive without pretending to be approved publications. Lists are newest first. All files remain visible without JavaScript; year/type controls appear only after the local enhancement is ready. Empty results have a translated live count and a reset control.
+Publications live at /ka/resources/publications/ and /en/resources/publications/. Shared fields are publication year (2014 to 2100), type (neo-report, here-publication, brochure, statistics, report), language and either an HTTPS url plus publisher or an existing local file, never both. Production records link externally; sample text files exist only in test fixtures. Both languages contain title/body. Lists are newest first. All publications remain visible without JavaScript; progressive year/type filters retain live counts and reset. The archive note appears below three records.
 
-FAQ uses the existing title/body, topic and actions contract. Topics are applications and mobility, with labels in each language file. When adding a topic, update validate-supporting.js and both faqTopics dictionaries. The grouped FAQ is under Resources; Action pages automatically select the same records by actions. Three [SAMPLE] FAQs replace example.json.
+FAQ uses title/body, topic (applications or mobility), actions, sourceUrl and sourceChecked. Twelve bilingual source-linked answers share records with related Action pages. Update validate-supporting.js and both faqTopics dictionaries before adding a topic.
 
-People use group (neo or here), translated title (name), role and body. Team lives at /about/team/ and HEREs at /here/ in both languages. Sample names are fictional and use the national Georgian romanisation, retaining ejective apostrophes in names. No photos, personal emails or telephone numbers are stored. Approved contact/photo support remains future work.
+People use group (neo or here), title, role and body. Current Team records are role-based, with roleBased=true, shared name and roleEmail fields, and no photos or invented people. Use [TBC] while NEO facts are missing. Future actual names follow national Georgian romanisation. HERE currently has no person records: the people template shows source-linked guidance from here.json and the dated membership placeholder in translation data.
 
-Contact lives under /about/contact/ and is linked from About and the footer. Address, office hours and email placeholders come from ka.json/en.json. example.org is reserved for examples. There is no form, map embed or third-party asset. Publications and FAQ are linked from Resources; Team, HEREs and Contact are linked from About. The seven top-level destinations are unchanged.
+Contact has four labelled fields: address, phone, office hours and email, from language data. No form, map or third-party asset is loaded. socialLinks is empty; the social block renders only after real URLs and translated labels are supplied. Supporting records remain JSON-edited; no CMS collection is added.
 
-loadContent validates publication, FAQ and person text parity, their classifications, FAQ Action references and publication file existence before rendering. These three types remain JSON-edited; no new hosted CMS collections were added.
+No Events or Stories are public until genuine records are supplied. Empty Events retain the list/calendar empty state and static ICS feed. Stories indexes, home/Action listings and Resources links appear automatically when translated stories exist; absent routes stay out of sitemap and search. Empty optional pageTypes arrays prevent deleted detail templates from generating routes. Isolated content fixtures preserve the non-empty states, relationships, CMS editing, local publication downloads, per-Event files and keyboard/download coverage. Archived sample JSON stays unchanged; copied synthetic Call/Event dates use relative years so these states remain valid after launch.
 
+loadContent validates Call translations, Action references, year, Brussels zone, required deadline and optional opening time; invalid or ambiguous/nonexistent wall times fail with filename/field errors. It also validates publication, FAQ and person contracts. Role-based names and roleEmail fields must be non-empty, with [TBC] allowed during review.
+
+All authored missing NEO facts are inventoried by test/tbc.test.js into review/session-20/TBC.md. It passes while placeholders remain. Production HTML must contain no public sample/draft markers. The public preview notice remains until a separately reviewed launch change; siteLaunched=false keeps noindex and robots disallow.
+
+
+The release checks follow actual Event/Story content and displayed contact/name values. They do not require the catalogue to remain empty or facts to remain [TBC]. Separate isolated empty/populated fixtures preserve both states, so genuine records and confirmed NEO facts can be supplied without changing those checks.
 
 ## Optional News image (session 13)
 

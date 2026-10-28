@@ -1,0 +1,112 @@
+{
+  "session": 20,
+  "date": "2026-10-28",
+  "base": "c2d3b9d",
+  "branch": "codex/session-20-release-candidate",
+  "siteLaunched": false,
+  "sourceChecks": 27,
+  "tbcOccurrences": 26,
+  "calls": 11,
+  "faqs": 12,
+  "externalResources": 4,
+  "publications": 2,
+  "roleCards": 3,
+  "publicEvents": 0,
+  "publicStories": 0,
+  "validation": {
+    "status": "passed",
+    "builds": {
+      "root": {
+        "clean": true,
+        "exitCode": 0,
+        "command": "npm run build"
+      },
+      "projectPrefix": {
+        "clean": true,
+        "exitCode": 0,
+        "command": "PATH_PREFIX=/neo-georgia-website/ SITE_URL=https://luka9815.github.io/neo-georgia-website/ npm run build"
+      }
+    },
+    "tests": {
+      "root": {
+        "tests": 150,
+        "passed": 150,
+        "failed": 0,
+        "exitCode": 0,
+        "command": "npm test -- --test-concurrency=1"
+      },
+      "projectPrefix": {
+        "tests": 150,
+        "passed": 150,
+        "failed": 0,
+        "exitCode": 0,
+        "command": "npm test -- --test-concurrency=1 with project-prefix environment"
+      }
+    },
+    "method": "Both final full test suites passed with one worker to limit concurrent image/build resource use. An earlier parallel custom-domain subprocess received SIGKILL; its standalone check and final serial suites passed. All source rows remain asserted, with no sampling. Empty/populated fixtures preserve coverage without requiring the live catalogue to stay empty or NEO facts to remain TBC.",
+    "browser": {
+      "root": {
+        "pages": 95,
+        "axeViolations": 0,
+        "exitCode": 0,
+        "command": "npm run check:a11y with matching layout environment",
+        "method": "Complete all-page scan and functional checks, including no-JavaScript menus, Publications, empty and populated fixture calendars/ICS, project filters/scrolling and search."
+      },
+      "projectPrefix": {
+        "pages": 95,
+        "axeViolations": 0,
+        "exitCode": 0,
+        "command": "npm run check:a11y with matching layout environment",
+        "method": "Complete all-page scan and functional checks, including no-JavaScript menus, Publications, empty and populated fixture calendars/ICS, project filters/scrolling and search."
+      }
+    },
+    "fixtureCalendarFocused": {
+      "layouts": [
+        "root",
+        "projectPrefix"
+      ],
+      "passed": true,
+      "method": "Repeat populated calendar keyboard/download checks with the relative-year fixture helper."
+    },
+    "diffCheck": "passed"
+  },
+  "output": {
+    "root": {
+      "htmlFiles": 101,
+      "nonRedirectPages": 95,
+      "siteBytes": 11879141,
+      "pagefindBytes": 1357352,
+      "indexedPagesPerLanguage": 33,
+      "icsFiles": 2
+    },
+    "projectPrefix": {
+      "htmlFiles": 101,
+      "nonRedirectPages": 95,
+      "siteBytes": 11942143,
+      "pagefindBytes": 1358372,
+      "indexedPagesPerLanguage": 33,
+      "icsFiles": 2
+    }
+  },
+  "visual": {
+    "screenshots": 48,
+    "languages": [
+      "ka",
+      "en"
+    ],
+    "widths": [
+      360,
+      1280
+    ],
+    "javaScriptEnabled": false,
+    "pageOverflow": false,
+    "stylesheetChanged": false
+  },
+  "verificationLimits": [
+    "Georgia country factsheet not verified; omitted.",
+    "Standalone EACEA HERE landing page not verified; verified official SPHERE/Guide destinations used.",
+    "Authenticated portal/CMS workflows and full manual assistive-technology review not established by local checks.",
+    "No live project refresh run; source data unchanged.",
+    "No new Lighthouse score claimed."
+  ]
+}

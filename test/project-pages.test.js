@@ -20,8 +20,16 @@ test('both languages publish complete static year tables under 1 MB with origina
       assert.equal($('.project-table tbody tr').length, projects.length);
       total += projects.length;
       assert.equal($('.project-table th:not([scope])').length, 0);
+      // Index once instead of rescanning each large year table for every row.
+      // Still require exactly one original-title link for every source record.
+      const linksByUrl = new Map();
+      for (const element of $('.project-table a[href]')) {
+        const url = $(element).attr('href');
+        if (!linksByUrl.has(url)) linksByUrl.set(url, []);
+        linksByUrl.get(url).push(element);
+      }
       for (const project of projects) {
-        const link = $(`.project-table a[href="${project.officialUrl}"]`);
+        const link = $(linksByUrl.get(project.officialUrl) || []);
         assert.equal(link.length, 1);
         const title = link.closest('th').find('span').first();
         assert.equal(title.text(), project.title.replace(/\r\n?/g, '\n'));

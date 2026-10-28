@@ -1,0 +1,438 @@
+{
+  "date": "2026-10-28",
+  "javaScriptEnabled": false,
+  "records": [
+    {
+      "page": "home",
+      "path": "/ka/",
+      "language": "ka",
+      "width": 360,
+      "file": "home-ka-360.png",
+      "height": 5087,
+      "overflow": false
+    },
+    {
+      "page": "opportunities",
+      "path": "/ka/opportunities/",
+      "language": "ka",
+      "width": 360,
+      "file": "opportunities-ka-360.png",
+      "height": 5892,
+      "overflow": false
+    },
+    {
+      "page": "action",
+      "path": "/ka/opportunities/cbhe/",
+      "language": "ka",
+      "width": 360,
+      "file": "action-ka-360.png",
+      "height": 6534,
+      "overflow": false
+    },
+    {
+      "page": "calls",
+      "path": "/ka/calls/",
+      "language": "ka",
+      "width": 360,
+      "file": "calls-ka-360.png",
+      "height": 8211,
+      "overflow": false
+    },
+    {
+      "page": "events",
+      "path": "/ka/events/",
+      "language": "ka",
+      "width": 360,
+      "file": "events-ka-360.png",
+      "height": 1459,
+      "overflow": false
+    },
+    {
+      "page": "faq",
+      "path": "/ka/resources/faq/",
+      "language": "ka",
+      "width": 360,
+      "file": "faq-ka-360.png",
+      "height": 9151,
+      "overflow": false
+    },
+    {
+      "page": "about",
+      "path": "/ka/about/",
+      "language": "ka",
+      "width": 360,
+      "file": "about-ka-360.png",
+      "height": 2854,
+      "overflow": false
+    },
+    {
+      "page": "contact",
+      "path": "/ka/about/contact/",
+      "language": "ka",
+      "width": 360,
+      "file": "contact-ka-360.png",
+      "height": 1559,
+      "overflow": false
+    },
+    {
+      "page": "privacy",
+      "path": "/ka/privacy/",
+      "language": "ka",
+      "width": 360,
+      "file": "privacy-ka-360.png",
+      "height": 3692,
+      "overflow": false
+    },
+    {
+      "page": "accessibility",
+      "path": "/ka/accessibility/",
+      "language": "ka",
+      "width": 360,
+      "file": "accessibility-ka-360.png",
+      "height": 3328,
+      "overflow": false
+    },
+    {
+      "page": "projects",
+      "path": "/ka/resources/projects/",
+      "language": "ka",
+      "width": 360,
+      "file": "projects-ka-360.png",
+      "height": 5860,
+      "overflow": false
+    },
+    {
+      "page": "statistics",
+      "path": "/ka/resources/statistics/",
+      "language": "ka",
+      "width": 360,
+      "file": "statistics-ka-360.png",
+      "height": 7020,
+      "overflow": false
+    },
+    {
+      "page": "home",
+      "path": "/ka/",
+      "language": "ka",
+      "width": 1280,
+      "file": "home-ka-1280.png",
+      "height": 3009,
+      "overflow": false
+    },
+    {
+      "page": "opportunities",
+      "path": "/ka/opportunities/",
+      "language": "ka",
+      "width": 1280,
+      "file": "opportunities-ka-1280.png",
+      "height": 2964,
+      "overflow": false
+    },
+    {
+      "page": "action",
+      "path": "/ka/opportunities/cbhe/",
+      "language": "ka",
+      "width": 1280,
+      "file": "action-ka-1280.png",
+      "height": 3669,
+      "overflow": false
+    },
+    {
+      "page": "calls",
+      "path": "/ka/calls/",
+      "language": "ka",
+      "width": 1280,
+      "file": "calls-ka-1280.png",
+      "height": 3957,
+      "overflow": false
+    },
+    {
+      "page": "events",
+      "path": "/ka/events/",
+      "language": "ka",
+      "width": 1280,
+      "file": "events-ka-1280.png",
+      "height": 987,
+      "overflow": false
+    },
+    {
+      "page": "faq",
+      "path": "/ka/resources/faq/",
+      "language": "ka",
+      "width": 1280,
+      "file": "faq-ka-1280.png",
+      "height": 3317,
+      "overflow": false
+    },
+    {
+      "page": "about",
+      "path": "/ka/about/",
+      "language": "ka",
+      "width": 1280,
+      "file": "about-ka-1280.png",
+      "height": 1612,
+      "overflow": false
+    },
+    {
+      "page": "contact",
+      "path": "/ka/about/contact/",
+      "language": "ka",
+      "width": 1280,
+      "file": "contact-ka-1280.png",
+      "height": 1143,
+      "overflow": false
+    },
+    {
+      "page": "privacy",
+      "path": "/ka/privacy/",
+      "language": "ka",
+      "width": 1280,
+      "file": "privacy-ka-1280.png",
+      "height": 1896,
+      "overflow": false
+    },
+    {
+      "page": "accessibility",
+      "path": "/ka/accessibility/",
+      "language": "ka",
+      "width": 1280,
+      "file": "accessibility-ka-1280.png",
+      "height": 1652,
+      "overflow": false
+    },
+    {
+      "page": "projects",
+      "path": "/ka/resources/projects/",
+      "language": "ka",
+      "width": 1280,
+      "file": "projects-ka-1280.png",
+      "height": 2979,
+      "overflow": false
+    },
+    {
+      "page": "statistics",
+      "path": "/ka/resources/statistics/",
+      "language": "ka",
+      "width": 1280,
+      "file": "statistics-ka-1280.png",
+      "height": 4239,
+      "overflow": false
+    },
+    {
+      "page": "home",
+      "path": "/en/",
+      "language": "en",
+      "width": 360,
+      "file": "home-en-360.png",
+      "height": 4181,
+      "overflow": false
+    },
+    {
+      "page": "opportunities",
+      "path": "/en/opportunities/",
+      "language": "en",
+      "width": 360,
+      "file": "opportunities-en-360.png",
+      "height": 4792,
+      "overflow": false
+    },
+    {
+      "page": "action",
+      "path": "/en/opportunities/cbhe/",
+      "language": "en",
+      "width": 360,
+      "file": "action-en-360.png",
+      "height": 5027,
+      "overflow": false
+    },
+    {
+      "page": "calls",
+      "path": "/en/calls/",
+      "language": "en",
+      "width": 360,
+      "file": "calls-en-360.png",
+      "height": 6710,
+      "overflow": false
+    },
+    {
+      "page": "events",
+      "path": "/en/events/",
+      "language": "en",
+      "width": 360,
+      "file": "events-en-360.png",
+      "height": 1320,
+      "overflow": false
+    },
+    {
+      "page": "faq",
+      "path": "/en/resources/faq/",
+      "language": "en",
+      "width": 360,
+      "file": "faq-en-360.png",
+      "height": 6973,
+      "overflow": false
+    },
+    {
+      "page": "about",
+      "path": "/en/about/",
+      "language": "en",
+      "width": 360,
+      "file": "about-en-360.png",
+      "height": 2337,
+      "overflow": false
+    },
+    {
+      "page": "contact",
+      "path": "/en/about/contact/",
+      "language": "en",
+      "width": 360,
+      "file": "contact-en-360.png",
+      "height": 1448,
+      "overflow": false
+    },
+    {
+      "page": "privacy",
+      "path": "/en/privacy/",
+      "language": "en",
+      "width": 360,
+      "file": "privacy-en-360.png",
+      "height": 2895,
+      "overflow": false
+    },
+    {
+      "page": "accessibility",
+      "path": "/en/accessibility/",
+      "language": "en",
+      "width": 360,
+      "file": "accessibility-en-360.png",
+      "height": 2629,
+      "overflow": false
+    },
+    {
+      "page": "projects",
+      "path": "/en/resources/projects/",
+      "language": "en",
+      "width": 360,
+      "file": "projects-en-360.png",
+      "height": 4864,
+      "overflow": false
+    },
+    {
+      "page": "statistics",
+      "path": "/en/resources/statistics/",
+      "language": "en",
+      "width": 360,
+      "file": "statistics-en-360.png",
+      "height": 5484,
+      "overflow": false
+    },
+    {
+      "page": "home",
+      "path": "/en/",
+      "language": "en",
+      "width": 1280,
+      "file": "home-en-1280.png",
+      "height": 2781,
+      "overflow": false
+    },
+    {
+      "page": "opportunities",
+      "path": "/en/opportunities/",
+      "language": "en",
+      "width": 1280,
+      "file": "opportunities-en-1280.png",
+      "height": 2746,
+      "overflow": false
+    },
+    {
+      "page": "action",
+      "path": "/en/opportunities/cbhe/",
+      "language": "en",
+      "width": 1280,
+      "file": "action-en-1280.png",
+      "height": 3294,
+      "overflow": false
+    },
+    {
+      "page": "calls",
+      "path": "/en/calls/",
+      "language": "en",
+      "width": 1280,
+      "file": "calls-en-1280.png",
+      "height": 3499,
+      "overflow": false
+    },
+    {
+      "page": "events",
+      "path": "/en/events/",
+      "language": "en",
+      "width": 1280,
+      "file": "events-en-1280.png",
+      "height": 993,
+      "overflow": false
+    },
+    {
+      "page": "faq",
+      "path": "/en/resources/faq/",
+      "language": "en",
+      "width": 1280,
+      "file": "faq-en-1280.png",
+      "height": 2797,
+      "overflow": false
+    },
+    {
+      "page": "about",
+      "path": "/en/about/",
+      "language": "en",
+      "width": 1280,
+      "file": "about-en-1280.png",
+      "height": 1562,
+      "overflow": false
+    },
+    {
+      "page": "contact",
+      "path": "/en/about/contact/",
+      "language": "en",
+      "width": 1280,
+      "file": "contact-en-1280.png",
+      "height": 1149,
+      "overflow": false
+    },
+    {
+      "page": "privacy",
+      "path": "/en/privacy/",
+      "language": "en",
+      "width": 1280,
+      "file": "privacy-en-1280.png",
+      "height": 1675,
+      "overflow": false
+    },
+    {
+      "page": "accessibility",
+      "path": "/en/accessibility/",
+      "language": "en",
+      "width": 1280,
+      "file": "accessibility-en-1280.png",
+      "height": 1518,
+      "overflow": false
+    },
+    {
+      "page": "projects",
+      "path": "/en/resources/projects/",
+      "language": "en",
+      "width": 1280,
+      "file": "projects-en-1280.png",
+      "height": 2789,
+      "overflow": false
+    },
+    {
+      "page": "statistics",
+      "path": "/en/resources/statistics/",
+      "language": "en",
+      "width": 1280,
+      "file": "statistics-en-1280.png",
+      "height": 3934,
+      "overflow": false
+    }
+  ]
+}
