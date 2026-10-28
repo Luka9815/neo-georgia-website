@@ -256,3 +256,8 @@ Newest at the top. One entry per working session: date, who (agent or person), w
 ## 2026-10-28: Session 19, item 2, project attribution
 
 - Add a shared bilingual attribution block with source link, beneficiary submission/NEO responsibility wording, snapshot day and separate build timestamp. Add Georgian/English project interface labels without translating source titles or names.
+
+
+## 2026-10-28: Session 19, item 3, Action mapping
+
+- Generate the complete exact-label map and PROJECT-ACTION-MAP review table with all 39 labels/counts. Use equivalent site Actions only; preserve sector-only groups for other labels. Keep KA131 distinct from ICM and cross-sector Creativity under other.

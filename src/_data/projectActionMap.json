@@ -1,0 +1,158 @@
+{
+  "Capacity Building for youth in neighbouring and enlargement countries": {
+    "action": "cb-youth",
+    "sector": "youth"
+  },
+  "Capacity Building in Vocational Education and Training": {
+    "action": "cb-vet",
+    "sector": "vet"
+  },
+  "Capacity Building in higher education": {
+    "action": "cbhe",
+    "sector": "higher-education"
+  },
+  "Capacity Building in the field of Youth": {
+    "action": "cb-youth",
+    "sector": "youth"
+  },
+  "Capacity building in Sport": {
+    "action": "cb-sport",
+    "sector": "sport"
+  },
+  "Centers of Vocational Excellence": {
+    "action": null,
+    "sector": "vet"
+  },
+  "Collaborative Partnerships": {
+    "action": null,
+    "sector": "sport"
+  },
+  "Cooperation Partnerships in the field of Youth – European NGOs": {
+    "action": null,
+    "sector": "youth"
+  },
+  "Cooperation partnerships in adult education": {
+    "action": null,
+    "sector": "adult"
+  },
+  "Cooperation partnerships in higher education": {
+    "action": null,
+    "sector": "higher-education"
+  },
+  "Cooperation partnerships in school education": {
+    "action": null,
+    "sector": "school"
+  },
+  "Cooperation partnerships in vocational education and training": {
+    "action": null,
+    "sector": "vet"
+  },
+  "Cooperation partnerships in youth": {
+    "action": null,
+    "sector": "youth"
+  },
+  "Dialogue between young people and policy makers": {
+    "action": null,
+    "sector": "youth"
+  },
+  "Erasmus Mundus Design Measures": {
+    "action": "erasmus-mundus",
+    "sector": "higher-education"
+  },
+  "Erasmus Mundus Joint Master": {
+    "action": "erasmus-mundus",
+    "sector": "higher-education"
+  },
+  "Erasmus Mundus Joint Master Degrees": {
+    "action": "erasmus-mundus",
+    "sector": "higher-education"
+  },
+  "Higher Education tools - Initiative to support the implementation of EHEA reforms/Support to Bologna process": {
+    "action": null,
+    "sector": "higher-education"
+  },
+  "Jean Monnet Centres of Excellence": {
+    "action": "jean-monnet",
+    "sector": "higher-education"
+  },
+  "Jean Monnet Chairs": {
+    "action": "jean-monnet",
+    "sector": "higher-education"
+  },
+  "Jean Monnet Modules": {
+    "action": "jean-monnet",
+    "sector": "higher-education"
+  },
+  "Jean Monnet Networks": {
+    "action": "jean-monnet",
+    "sector": "higher-education"
+  },
+  "Jean Monnet Policy Debates - Thematic Networks in Higher Education": {
+    "action": "jean-monnet",
+    "sector": "higher-education"
+  },
+  "Jean Monnet Projects": {
+    "action": "jean-monnet",
+    "sector": "higher-education"
+  },
+  "Jean Monnet Support to Institutions and Associations": {
+    "action": "jean-monnet",
+    "sector": "higher-education"
+  },
+  "Mobility  of young people": {
+    "action": "youth-mobility",
+    "sector": "youth"
+  },
+  "Mobility of higher education students and staff": {
+    "action": null,
+    "sector": "higher-education"
+  },
+  "Mobility of higher education students and staff supported by external policy funds": {
+    "action": "icm",
+    "sector": "higher-education"
+  },
+  "Mobility of youth workers": {
+    "action": "youth-mobility",
+    "sector": "youth"
+  },
+  "Partnerships for Creativity": {
+    "action": null,
+    "sector": "other"
+  },
+  "Strategic Partnerships for adult education": {
+    "action": null,
+    "sector": "adult"
+  },
+  "Strategic Partnerships for vocational education and training": {
+    "action": null,
+    "sector": "vet"
+  },
+  "Strategic Partnerships for youth": {
+    "action": null,
+    "sector": "youth"
+  },
+  "Support to the better knowledge in the Youth policy": {
+    "action": null,
+    "sector": "youth"
+  },
+  "Virtual Exchanges in Higher Education and Youth": {
+    "action": "virtual-exchanges",
+    "sector": "higher-education"
+  },
+  "Volunteering Projects": {
+    "action": null,
+    "sector": "youth"
+  },
+  "Youth Dialogue Projects": {
+    "action": null,
+    "sector": "youth"
+  },
+  "Youth mobility": {
+    "action": "youth-mobility",
+    "sector": "youth"
+  },
+  "Youth participation activities": {
+    "action": null,
+    "sector": "youth"
+  }
+}

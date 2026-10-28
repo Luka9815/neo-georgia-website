@@ -255,5 +255,16 @@
     "adult": "Adult education",
     "sport": "Sport",
     "other": "Other"
+  },
+  "projectActionLabels": {
+    "icm": "International Credit Mobility",
+    "erasmus-mundus": "Erasmus Mundus",
+    "cbhe": "Capacity Building in Higher Education",
+    "jean-monnet": "Jean Monnet",
+    "cb-vet": "Capacity Building in VET",
+    "cb-youth": "Capacity Building in Youth",
+    "youth-mobility": "Youth mobility",
+    "virtual-exchanges": "Virtual Exchanges",
+    "cb-sport": "Capacity Building in Sport"
   }
 }

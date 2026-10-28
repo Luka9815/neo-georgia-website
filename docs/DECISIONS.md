@@ -318,3 +318,7 @@ Luka's counting clarification: all 6,764 projects remain in totals. Show 605 nam
 
 ## 2026-10-28: Bilingual project attribution (Luka)
 Every projects index, year table and statistics page identifies the Erasmus+ Project Results Platform with its source link, snapshot date 28 October 2026, information as submitted by beneficiaries, and a statement that the data are not endorsed by or the responsibility of the NEO. Show the snapshot day separately from the site build timestamp. Original source titles/names are not translated. The existing EU funding disclaimer remains unchanged.
+
+
+## 2026-10-28: Exact project Action mapping (Luka)
+Generate projectActionMap.json from the 39 distinct source labels. Map only equivalent Actions to the nine site slugs; all others get a sector without an Action. PROJECT-ACTION-MAP.md lists every label, count and mapping for PR review. The generic higher-education mobility label is KA131 in this snapshot and remains sector-only, while external-policy-funds mobility maps to icm. Partnerships for Creativity spans sectors and maps to other. Unknown future labels fail rather than being guessed. Action wording and [DRAFT] markers remain unchanged.
