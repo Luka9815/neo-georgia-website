@@ -1,0 +1,28 @@
+{
+  "slug": "funding-tenders",
+  "actions": [
+    "cb-sport",
+    "cb-vet",
+    "cb-youth",
+    "cbhe",
+    "erasmus-mundus",
+    "icm",
+    "jean-monnet",
+    "virtual-exchanges",
+    "youth-mobility"
+  ],
+  "source": "official",
+  "type": "website",
+  "language": "en",
+  "year": 2026,
+  "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/home",
+  "sourceChecked": "2026-10-28",
+  "en": {
+    "title": "EU Funding & Tenders Portal",
+    "body": "Find centrally managed calls and their application documents on the Commission’s portal."
+  },
+  "ka": {
+    "title": "ევროკავშირის დაფინანსებისა და ტენდერების პორტალი",
+    "body": "ევროკომისიის პორტალზე მოძებნეთ ცენტრალიზებულად მართული კონკურსები და მათი განაცხადის დოკუმენტები."
+  }
+}

@@ -377,3 +377,7 @@ Remove the sample story after preserving relationship/mixed-home coverage in fix
 
 ## 2026-10-28: Session 20, source-linked bilingual FAQ (Luka)
 Replace the three samples with twelve bilingual FAQs in the existing Applications and Mobility groups. Base answers on the 2026 Guide and Commission student/application guidance, link each answer to an official source and record the check date. Keep Georgian authority restrictions and applicant/partner distinctions explicit; distinguish institutional deadlines from individual selection and explain that NEO does not select or fund projects.
+
+
+## 2026-10-28: Session 20, official linked Resources (Luka)
+Replace sample Resources with the official 2026 English Guide, EACEA how-to-apply, Funding & Tenders and Project Results Platform links. State English-only availability of the linked Guide in both languages. Expose the explicitly requested local partner-tools and statistics pages as section navigation, alongside the external resources, rather than hosting document copies or labelling local guidance as an official EU publication.

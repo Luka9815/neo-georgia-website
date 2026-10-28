@@ -11,6 +11,7 @@
       {% elif type == 'resource' %}
         <p class="source-label source-{{ item.source }}">{{ t.source }}: {{ t[item.source] }}</p>
         <{{ heading }}><a href="{{ item.url }}">{{ item.title }}</a></{{ heading }}>
+        {{ item.body | markdown | safe }}
       {% elif type == 'publication' %}
         <{{ heading }}><a href="{{ item.file }}">{{ item.title }}</a></{{ heading }}>
         <p>{{ t.year }}: {{ item.year }} · {{ t.type }}: {{ t.publicationTypes[item.type] }}</p>
