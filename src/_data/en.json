@@ -60,7 +60,6 @@
   "format": "Format",
   "organiser": "Organiser",
   "related": "Related action",
-  "sampleNumber": "[SAMPLE] 0",
   "months": [
     "January",
     "February",
@@ -93,7 +92,6 @@
   "allEvents": "All events",
   "allNews": "All news",
   "allStories": "All stories",
-  "figuresNote": "[SAMPLE] Illustrative figures. Verified project data will be added before launch.",
   "officeName": "National Erasmus+ Office Georgia",
   "prevailingStatement": "In the event of any discrepancy between the Georgian and English versions, the English version prevails.",
   "logoAlt": "NEO Georgia",

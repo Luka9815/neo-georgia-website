@@ -330,3 +330,7 @@ Publish bilingual projects indexes with counts and year links, plus one grouped 
 
 ## 2026-10-28: Statistics from the approved project records (Luka)
 Compute statistics at build time from the same public projection used by the year tables: projects by call year, Action/sector, source status and programme period; named institution participations, unique source organisation identifiers and Georgian-coordinated projects. Apply Luka's 605/5,079 institution-count clarification and report 2,045 mobility-country projects separately. Use accessible tables and explain counting units, source status, incomplete 2026/later call years and changing ongoing records. Omit funding sums and optional charts.
+
+
+## 2026-10-28: Replace illustrative homepage figures (Luka)
+Use three computed figures linking to statistics: projects (6,764), named Georgian organisations (605) and Georgian-coordinated projects (106), with the data snapshot date. Remove sampleNumber and figuresNote from both language files and close only the illustrative-figures launch task. Keep other sample content/translation tasks and siteLaunched=false.

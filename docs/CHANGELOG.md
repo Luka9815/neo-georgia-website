@@ -273,3 +273,8 @@ Newest at the top. One entry per working session: date, who (agent or person), w
 
 - Add bilingual statistics tables and summary counts from the same mapped records as the catalogue. Break down projects by call year, Action/sector, source status and programme period, including an explicit unknown status row.
 - Show 6,764 projects, 605 named organisations, 5,079 institution participations, 106 Georgian-coordinated projects and 2,045 separate mobility-country projects. Explain source/date/counting limitations and omit funding entirely.
+
+
+## 2026-10-28: Session 19, item 6, real homepage figures
+
+- Replace illustrative homepage numbers with computed project, named-organisation and Georgian-coordinator counts, linking each to statistics and showing the snapshot date. Remove sampleNumber/figuresNote in both languages and close that part of the launch checklist.
