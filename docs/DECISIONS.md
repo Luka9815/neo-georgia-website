@@ -389,3 +389,7 @@ Replace sample publication records/files with two verified official publications
 
 ## 2026-10-28: Session 20, role-based NEO team (Luka)
 Replace sample-team with Coordinator, Programme Officer and Communications Officer role cards. Names and role emails remain [TBC], shared facts rather than invented people. Render each name and role email explicitly and show one shared NEO contact line. Preserve the national transliteration check for future named profiles; role titles are translated rather than treated as people’s names.
+
+
+## 2026-10-28: Session 20, HERE explanation and pending membership (Luka)
+Replace the fictional HERE profile with a bilingual explanation, the official Commission/EACEA-supported SPHERE network page and the 2026 Guide’s HERE section. Keep the Georgian 2026–2027 membership list [TBC]. No standalone EACEA HERE landing URL could be verified; use the verified official Erasmus Networks destination rather than inventing a link or list.

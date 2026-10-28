@@ -366,3 +366,8 @@ Newest at the top. One entry per working session: date, who (agent or person), w
 ## 2026-10-28: Session 20, item 8, role-based NEO team
 
 - Publish three bilingual role cards with explicit name/role-email [TBC] fields and a single shared contact line. Add no personal details or images.
+
+
+## 2026-10-28: Session 20, item 9, HERE explanation and pending membership
+
+- Remove sample-here and publish source-linked guidance on HERE’s role, with the requested dated membership placeholder. No expert names are invented.
