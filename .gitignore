@@ -9,3 +9,7 @@ Thumbs.db
 .wrangler/
 # Raw public WordPress responses may contain contact details. Commit review files only.
 migration/review/.cache/
+
+# Raw Erasmus+ Project Results Platform responses (about 108 MB). Commit only the slimmed snapshot.
+migration/source/erasmus-projects-georgia-*/
+_to_delete/
