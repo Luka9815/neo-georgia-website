@@ -14,14 +14,21 @@ export async function checkCalendar(browser, base, prefix) {
       await page.keyboard.press('ArrowRight');
       // Poll in Node: page requestAnimationFrame is unavailable when JS is disabled.
       await assertEventually(async () => await scroll.evaluate(el => el.scrollLeft) > 0);
-      await page.keyboard.press('Tab');
-      const link = page.locator(':focus');
-      assert.match(await link.getAttribute('href'), new RegExp(`^${prefix}${lang}/events/`));
-      await page.keyboard.press('Enter');
+      if (await page.locator('.event-calendar a').count()) {
+        await page.keyboard.press('Tab');
+        const link = page.locator(':focus');
+        assert.match(await link.getAttribute('href'), new RegExp(`^${prefix}${lang}/events/`));
+        await page.keyboard.press('Enter');
+      } else {
+        assert.equal(await page.locator('[data-events-empty]').count(), 1);
+        await page.locator('main a[download]').focus();
+      }
       const download = page.locator('main a[download]');
       const response = await context.request.get(`${base}${await download.getAttribute('href')}`);
       assert.equal(response.status(), 200);
-      assert.ok((await response.text()).startsWith('BEGIN:VCALENDAR\r\n'));
+      const ics = await response.text();
+      assert.ok(ics.startsWith('BEGIN:VCALENDAR\r\n'));
+      if (await page.locator('[data-events-empty]').count()) assert.doesNotMatch(ics, /BEGIN:VEVENT/);
     }
   } finally { await context.close(); }
 }

@@ -365,3 +365,7 @@ Supersedes the earlier requirement to keep public [DRAFT] markers. Preserve the 
 
 ## 2026-10-28: Session 20, verified 2026 Calls (Luka)
 Replace the four illustrative calls with eleven real records covering all nine Actions, both Erasmus Mundus lots and both youth mobility rounds. Deadlines are checked against the official 2026 Guide sections on 2026-10-28 and use Europe/Brussels, including DST for October. Distinguish institutional calls from student applications. Keep currentCallYear=2026 and the requested expectation note for 2027. Opening times are optional when not verified; do not invent them merely to populate a field. Existing supplied opening-time fixtures retain boundary coverage.
+
+
+## 2026-10-28: Session 20, empty Events and fixture coverage (Luka)
+Remove the three illustrative Events only after preserving them and dependent resource/story/call content in isolated fixtures. Keep the current-month accessible calendar and a valid empty static ICS feed. Both list and calendar show the requested bilingual empty state. Preserve non-empty Event detail, relationship, per-Event ICS, CMS and keyboard/download coverage in isolated builds.

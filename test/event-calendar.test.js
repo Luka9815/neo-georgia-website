@@ -90,3 +90,18 @@ test('generated bilingual calendar has semantic weekdays, month anchors, list fa
     for (const item of events) assert.equal(feed.includes(`UID:neo-georgia-event-${item.slug}\r\n`), eventStatus(item) === 'upcoming');
   }
 });
+
+
+test('empty production Events pages and feeds remain valid in both languages', () => {
+  assert.equal(loadContent().event.length, 0);
+  for (const lang of ['ka', 'en']) {
+    const strings = JSON.parse(readFileSync(`src/_data/${lang}.json`));
+    for (const path of ['events', 'events/calendar']) {
+      const $ = load(readFileSync(`_site/${lang}/${path}/index.html`, 'utf8'));
+      assert.equal($('[data-events-empty]').text(), strings.eventsEmpty);
+    }
+    const feed = readFileSync(`_site/${lang}/events/upcoming.ics`, 'utf8');
+    assert.equal(feed, eventIcs([], lang, base, now));
+    assert.doesNotMatch(feed, /BEGIN:VEVENT/);
+  }
+});

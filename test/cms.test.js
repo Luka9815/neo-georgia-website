@@ -1,3 +1,4 @@
+import { createFixtureSite } from '../scripts/fixture-site.js';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
@@ -23,14 +24,8 @@ const collection = (name) => config.content.find((entry) => entry.name === name)
 const field = (entry, name) => entry.fields.find((item) => item.name === name);
 
 function isolatedSite() {
-  const root = mkdtempSync(join(tmpdir(), 'neo-cms-'));
-  for (const path of ['src', 'lib', 'eleventy.config.js', 'package.json']) {
-    cpSync(path, join(root, path), { recursive: true });
-  }
+  const root = createFixtureSite();
   cpSync('test/fixtures/news', join(root, 'src/content/news'), { recursive: true });
-  mkdirSync(join(root, 'migration/source'), { recursive: true });
-  cpSync('test/fixtures/projects-snapshot.json', join(root, 'migration/source/erasmus-projects-georgia-2026-10-28.json'));
-  symlinkSync(resolve('node_modules'), join(root, 'node_modules'), 'dir');
   return root;
 }
 function build(root) {

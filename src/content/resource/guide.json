@@ -3,7 +3,6 @@
   "actions": [
     "cbhe"
   ],
-  "event": "past-session",
   "source": "official",
   "type": "guide",
   "language": "en",

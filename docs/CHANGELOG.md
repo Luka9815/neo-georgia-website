@@ -332,3 +332,9 @@ Newest at the top. One entry per working session: date, who (agent or person), w
 
 - Publish eleven bilingual source-linked 2026 call records, all closed as of this review. Replace invented opening/deadline dates with verified deadlines and source-check dates. Display application-route context on call cards.
 - Preserve optional explicit opening-time behaviour and DST boundary tests; omit unverified opening times from real records. Add the bilingual 2027 expectation note.
+
+
+## 2026-10-28: Session 20, item 3, empty Events and fixture coverage
+
+- Move the three public Event records to fixtures and remove obsolete routes on a clean build. Add bilingual empty list/calendar messages and empty-feed checks.
+- Restore sample Events explicitly in CMS/integration fixtures; preserve non-empty relationships, generated ICS files and native calendar keyboard/download checks in isolated builds.

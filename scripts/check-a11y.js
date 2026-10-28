@@ -1,3 +1,4 @@
+import { checkContentFixtures } from './check-content-fixtures.js';
 import { checkCalendar } from './check-calendar.js';
 import { checkProjects } from './check-projects.js';
 import { checkSearch } from './check-search.js';
@@ -150,6 +151,7 @@ try {
   await checkCalendar(browser, base, prefix);
   await checkProjects(browser, base, prefix);
   await checkSearch(browser, base, prefix);
+  await checkContentFixtures(browser, prefix);
   console.log(
     `axe: ${count} pages passed with zero violations; ` +
       '320px overflow, keyboard skip links, language switches and no-JS mobile/desktop menus passed.'

@@ -3,7 +3,6 @@
   "actions": [
     "cbhe"
   ],
-  "event": "past-session",
   "source": "neo",
   "type": "presentation",
   "language": "ka",

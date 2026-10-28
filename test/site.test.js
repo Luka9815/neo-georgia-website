@@ -160,17 +160,6 @@ test('content relationships, non-empty text, and core bilingual parity', () => {
     for (const lang of ['ka', 'en']) assert.ok(!existsSync(`_site/${lang}/news/${slug}/index.html`));
   }
 });
-test('home has six blocks and action page includes every relationship block', () => {
-  for (const lang of ['ka', 'en']) {
-    assert.equal(load(read(`_site/${lang}/index.html`))('main > section').length, 6);
-    const $ = load(read(`_site/${lang}/opportunities/cbhe/index.html`));
-    assert.equal($('main > section').length, 8);
-    assert.ok($('main a[href$="/events/past-session/"]').length);
-    assert.ok($('main a[href$="/stories/example/"]').length);
-    assert.ok($('main a[href$="/events/information-day/"]').length);
-  }
-});
-
 test('wall-clock conversion handles DST transitions and rejects unsafe editor input', () => {
   const zone = 'Europe/Brussels';
   assert.equal(zonedDateTime('2026-12-15T17:00', zone), '2026-12-15T17:00:00+01:00');
