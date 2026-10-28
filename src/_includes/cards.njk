@@ -24,9 +24,10 @@
         {% if item.roleBased %}<p>{{ t.nameLabel }}: {{ item.name }}</p><p>{{ t.roleEmail }}: {{ item.roleEmail }}</p>{% endif %}
         {{ item.body | markdown | safe }}
       {% elif type == 'faq' %}
-        <{{ heading }}>{{ item.title }}</{{ heading }}>
+        <details class="faq-item"><summary><{{ heading }}>{{ item.title }}</{{ heading }}></summary><div class="faq-answer">
         {{ item.body | markdown | safe }}
         {% if item.sourceUrl %}<p class="source-label"><a href="{{ item.sourceUrl }}">{{ t.official }}</a></p>{% endif %}
+        </div></details>
       {% else %}
         {% if type == 'action' %}<span class="icon-slot">{{ item.slug | actionIcon | icon | safe }}</span>{% elif type == 'news' and not item.image %}<span class="icon-slot news-panel">{{ 'book-open' | icon | safe }}</span>{% endif %}
         {% if type == 'news' and item.image %}<img data-news-image data-image-layout="card" src="{{ item.image.src }}" alt="{{ item.image.alt[lang] }}">{% endif %}

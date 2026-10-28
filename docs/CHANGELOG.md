@@ -435,3 +435,7 @@ Added full-width alternating home sections, photo hero, audience tiles, nine Act
 
 ## 2026-10-29: Session 21 item 2, Action pages
 Introduced icon heroes, responsive facts sidebars and source-derived Georgian-participation project counts on all nine Actions. Kept complete source-checked eligibility/how-to text, official links, relationships and shared restrictions.
+
+
+## 2026-10-29: Session 21 item 3, remaining templates
+Applied the shared portal treatment to listings, calendar/tables, content, people, contact, policies and controls. FAQ uses native keyboard-accessible accordions; no client script is required to read answers.

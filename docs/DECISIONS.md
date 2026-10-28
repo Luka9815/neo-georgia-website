@@ -441,3 +441,7 @@ Replace the former fixed home order with a credited photo introduction, five sta
 
 ## 2026-10-29: Session 21 item 2, Action hero and facts (Luka)
 Add each Action’s icon/Key Action hero, a facts sidebar with unchanged full eligibility text, shared short Georgia-role guidance, all current-edition Brussels deadlines/statuses and exact official links. Link a computed mapped-project count to the existing Action/year project index. Counts describe the dated snapshot with its existing limits, not a complete census.
+
+
+## 2026-10-29: Session 21 item 3, shared template restyling (Luka)
+Apply the portal system across all existing templates without changing routes or authored content. FAQ answers become native details/summary accordions, preserving complete answers/source links and no-script access. Restyle Call/Event/Person cards, tables, filters, contact fields, search and policy prose with consistent surfaces and focus states. Keep working Publications, calendar, projects and search enhancements.

@@ -276,3 +276,32 @@ dd { margin: 0 0 var(--space-2); }
 .action-project-count { background: var(--teal-soft); padding: 1rem; border-radius: var(--radius); }
 .action-project-count strong { font-size: 1.5rem; }
 @media (min-width: 64rem) { .action-layout { grid-template-columns: minmax(0,1fr) 20rem; } .action-facts { grid-column: 2; grid-row: 1; } .action-main { grid-column: 1; grid-row: 1; } .action-hero .icon-slot { display: flex; } }
+
+/* Shared secondary templates use the same portal surfaces and controls. */
+.lead { max-width: 65ch; font-size: 1.125rem; color: var(--muted); }
+.cards-call > .card { border-top: 4px solid var(--accent); }
+.cards-event > .card { border-top: 4px solid var(--teal); }
+.cards-person > .card { border-top: 4px solid var(--blue); }
+.project-summary > div { padding: 1.5rem; background: var(--surface); border-radius: var(--radius); border-top: 3px solid var(--teal); }
+.project-summary dt { font-size: .875rem; color: var(--muted); }
+.project-statistics th[scope=col],.project-table th[scope=col],.event-calendar th { background: var(--surface); color: var(--blue-dark); }
+.project-statistics tbody tr:nth-child(even),.project-table tbody tr:nth-child(even) { background: var(--surface); }
+.project-attribution { color: var(--muted); font-size: .875rem; padding-top: 1.5rem; }
+.project-year-index { list-style: none; padding: 0; }
+.project-year-index a { display: inline-flex; padding: .5rem .75rem; background: var(--surface); border: 1px solid var(--line); border-radius: .25rem; font-weight: 700; }
+.cards-faq { display: block; }
+.cards-faq > .card { margin-bottom: 1rem; padding: 0; box-shadow: none; }
+.faq-item summary { padding: 1.5rem; cursor: pointer; color: var(--blue); }
+.faq-item summary h3 { display: inline; font-size: 1.125rem; color: inherit; }
+.faq-item[open] summary { background: var(--surface); border-radius: var(--radius); }
+.faq-answer { padding: 1.5rem; }
+.find-results .card h2 { font-size: 1.4rem; }
+.page-contact dl { max-width: 50rem; }
+.page-contact dt { color: var(--blue); font-weight: 700; border-top: 1px solid var(--line); padding-top: 1rem; }
+.page-contact dd { margin-block: .5rem 1.5rem; }
+.page-page > p,.page-page > ul,.page-people > p { max-width: 72ch; }
+.search-controls input,.publication-filters select { background: var(--paper); color: var(--ink); border: 1px solid var(--muted); border-radius: .25rem; }
+.publication-filters button { background: var(--blue); color: var(--paper); border: 1px solid var(--blue); border-radius: .25rem; cursor: pointer; }
+.publication-filters select,.publication-filters button { min-height: 48px; }
+.calendar-month-links a { padding-block: .5rem; }
+@media (forced-colors: active) { .faq-item[open] summary { border-bottom: 1px solid CanvasText; } }
