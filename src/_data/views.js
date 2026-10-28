@@ -19,6 +19,7 @@ export default function () {
   for (const lang of ['ka', 'en']) {
     const other = lang === 'ka' ? 'en' : 'ka';
     for (const section of sections) {
+      if (section === 'stories' && !content.story.some(item => item[lang])) continue;
       const suffix =
         section === 'home' ? '' : section === '404' ? '404.html' : `${section}/`;
       views.push({
@@ -55,7 +56,9 @@ export default function () {
           // Missing translations switch to the other language's section index.
           alternate: item[other]
             ? `/${other}/${suffix}`
-            : `/${other}/${folder || ''}/`.replace(/\/+/g, '/'),
+            : type === 'story' && !content.story.some(story => story[other])
+              ? `/${other}/resources/`
+              : `/${other}/${folder || ''}/`.replace(/\/+/g, '/'),
           translated: Boolean(item[other]),
         });
       }

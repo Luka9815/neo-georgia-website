@@ -29,17 +29,22 @@ test('Publications are complete without JavaScript and filter metadata matches r
     assert.equal($('[data-publications] > li:not([hidden])').length, 2);
     for (const item of data.publication) {
       const row = $(`[data-publications] > li[data-year="${item.year}"][data-type="${item.type}"]`);
-      assert.equal(row.find('a').attr('href'), prefix + item.file.slice(1));
+      assert.equal(row.find('a').attr('href'), item.url || prefix + item.file.slice(1));
+      assert.ok(row.text().includes(item.publisher));
+      assert.equal(item.sourceChecked, '2026-10-28');
       assert.ok(row.text().includes(item[lang].title));
     }
     assert.equal($('#publication-year option').length, 3);
   }
 });
 test('FAQ groups and related Action pages use the same records', () => {
-  assert.equal(data.faq.length, 3);
+  assert.equal(data.faq.length, 12);
   for (const lang of ['ka', 'en']) for (const item of data.faq) {
     const faq = load(read(`_site/${lang}/resources/faq/index.html`));
     assert.ok(faq('main').text().includes(item[lang].title));
+    assert.equal(item.sourceChecked, '2026-10-28');
+    assert.ok(faq(`a[href="${item.sourceUrl}"]`).length);
+    assert.doesNotMatch(item[lang].title+item[lang].body, /\[SAMPLE\]/);
     for (const action of data.action) {
       const page = load(read(`_site/${lang}/opportunities/${action.slug}/index.html`));
       assert.equal(page('main').text().includes(item[lang].title), item.actions.includes(action.slug));
@@ -49,9 +54,10 @@ test('FAQ groups and related Action pages use the same records', () => {
 test('people have national transliteration, separate groups and no contact details or images', () => {
   for (const person of data.person) {
     // Placeholders carry no name; real names must follow the national system.
-    if (!person.ka.title.startsWith('[SAMPLE]'))
+    if (!person.roleBased && !person.ka.title.startsWith('[SAMPLE]'))
       assert.equal(person.en.title.toLowerCase(), romanise(person.ka.title));
     assert.ok(!person.photo && !person.email && !person.phone);
+    if (person.roleBased) { assert.ok(person.name?.trim()); assert.ok(person.roleEmail?.trim()); }
     for (const lang of ['ka', 'en']) for (const [group, route] of [['neo', 'about/team'], ['here', 'here']]) {
       const $ = load(read(`_site/${lang}/${route}/index.html`));
       assert.equal($('main').text().includes(person[lang].title), person.group === group);
@@ -59,11 +65,13 @@ test('people have national transliteration, separate groups and no contact detai
     }
   }
 });
-test('Contact uses translated placeholders with no form, map or third-party asset', () => {
+test('Contact uses final labelled fields with no form, map or third-party asset', () => {
   for (const lang of ['ka', 'en']) {
     const $ = load(read(`_site/${lang}/about/contact/index.html`));
-    assert.equal($('main dd').length, 3);
-    for (const dd of $('main dd')) assert.ok($(dd).text().startsWith('[SAMPLE]'));
+    assert.equal($('main dd').length, 4);
+    const strings = JSON.parse(read(`src/_data/${lang}.json`));
+    assert.deepEqual($('main dd').map((_, el) => $(el).text()).get(), [strings.contactAddress, strings.contactPhone, strings.contactHours, strings.contactEmail]);
+    assert.equal($('footer h3').length, 0);
     assert.equal($('main form, iframe, main script').length, 0);
     for (const el of $('[src]')) assert.ok($(el).attr('src').startsWith(prefix));
     const about = load(read(`_site/${lang}/about/index.html`));

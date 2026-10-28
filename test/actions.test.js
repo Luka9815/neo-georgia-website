@@ -20,7 +20,7 @@ const expected = {
 const guide =
   'https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/programme-guide-2026_en.pdf';
 
-test('nine bilingual Action drafts retain source evidence and stable relationships', () => {
+test('nine bilingual Actions retain source evidence and stable relationships', () => {
   const actions = loadContent().action;
   assert.deepEqual(
     actions.map((item) => item.slug).sort(),
@@ -44,14 +44,15 @@ test('nine bilingual Action drafts retain source evidence and stable relationshi
     for (const lang of ['ka', 'en']) {
       const strings = read(`src/_data/${lang}.json`);
       for (const field of ['title', 'summary', 'who', 'how']) {
-        assert.match(item[lang][field], /^\[DRAFT\] .+/);
+        assert.ok(item[lang][field].trim());
+        assert.doesNotMatch(item[lang][field], /\[DRAFT\]/);
       }
       for (const link of item.officialLinks) assert.ok(strings[link.labelKey]);
     }
   }
 });
 
-test('sector groups and every Action page show draft eligibility and official sources', () => {
+test('sector groups and every Action page show source-checked eligibility and official sources', () => {
   const shared = read('src/_data/georgiaEligibility.json');
   assert.match(shared.comment, /p\.34 Region 2 and footnote 46/);
   for (const lang of ['ka', 'en']) {
@@ -97,10 +98,21 @@ test('sector groups and every Action page show draft eligibility and official so
       assert.ok(page('main').text().includes(item[lang].who));
       for (const link of item.officialLinks) {
         assert.equal(
-          page(`main a[href="${link.url}"]`).text(),
+          page(`[data-action-official-links] a[href="${link.url}"]`).text(),
           strings[link.labelKey]
         );
       }
     }
   }
+});
+
+
+test('Session 20 removes only public draft prefixes from the source-checked Action wording', () => {
+  const baseline = read('test/fixtures/session-20-actions.json');
+  for (const action of baseline.action) for (const lang of ['ka', 'en']) {
+    for (const key of Object.keys(action[lang])) action[lang][key] = action[lang][key].replace(/^\[DRAFT\] /, '');
+  }
+  assert.deepEqual(loadContent().action, baseline.action);
+  for (const lang of ['ka', 'en']) baseline.eligibility[lang] = baseline.eligibility[lang].replace(/^\[DRAFT\] /, '');
+  assert.deepEqual(read('src/_data/georgiaEligibility.json'), baseline.eligibility);
 });

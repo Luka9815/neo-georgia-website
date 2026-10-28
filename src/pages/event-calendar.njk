@@ -9,7 +9,7 @@ eleventyExcludeFromCollections: true
 {% extends 'page.njk' %}
 {% block pageContent %}
 <p><a href="/{{ view.lang }}/events/">{{ t.eventList }}</a></p>
-<p>{{ t.calendarZones }}</p>
+{% if events.length %}<p>{{ t.calendarZones }}</p>{% else %}<p data-events-empty>{{ t.eventsEmpty }}</p>{% endif %}
 <p><a href="/{{ view.lang }}/events/upcoming.ics" download>{{ t.downloadUpcoming }}</a></p>
 <nav aria-label="{{ t.calendarMonths }}">
   <ul class="calendar-month-links">

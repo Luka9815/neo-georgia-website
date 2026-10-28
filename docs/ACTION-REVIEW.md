@@ -1,4 +1,10 @@
-# Session 6 Action source review
+# Action source evidence and Nino’s final review
+
+## Session 20 final review status, 28 October 2026
+
+Luka authorises removing public [DRAFT] prefixes from all nine Actions and the shared Georgia restriction for the release candidate. This changes no source-checked wording and records no Nino approval. The nine rows in the table below remain Nino's bilingual review list, including applicant/partner distinctions, the Georgia authority restriction and CBHE Strand 3. Review status belongs in this file only; do not reintroduce public review markers. Earlier session notes above are historical.
+
+## Original source review, 26 October 2026
 
 Checked 2026-10-26 against the official English Erasmus+ Programme Guide 2026, Version 1 of 12 November 2025. The official download page identifies this edition as part of the 2026 call. Action landing pages were opened through links in the official Guide navigation and their titles checked.
 
@@ -6,7 +12,7 @@ Checked 2026-10-26 against the official English Erasmus+ Programme Guide 2026, V
 - Full source: https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/programme-guide-2026_en.pdf
 - Download SHA-256: `8f14f67fc83d5081e7e85744ff39ae855aef34af8c842d22ba8c52e464c331a0`
 
-All new Action titles, summaries, eligibility and application guidance are [DRAFT] in both languages. Each JSON comment cites the edition, exact PDF URL, pages, supporting eligibility clauses and checked official action URLs. This is a source-based draft for NEO review, not approval of a particular organisation or application. Review Georgian terminology before publication and re-check the Guide/call when the programme year changes.
+At the initial source-review stage, all new Action titles, summaries, eligibility and application guidance carried [DRAFT] in both languages. Session 20 removes only those public prefixes, as recorded above. Each JSON comment cites the edition, exact PDF URL, pages, supporting eligibility clauses and checked official action URLs. This is a source-based draft for NEO review, not approval of a particular organisation or application. Review Georgian terminology before publication and re-check the Guide/call when the programme year changes.
 
 ## Shared Georgia restriction
 

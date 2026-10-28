@@ -1,0 +1,19 @@
+{
+  "slug": "hei-roles",
+  "topic": "applications",
+  "actions": [
+    "cbhe",
+    "erasmus-mundus",
+    "jean-monnet"
+  ],
+  "sourceUrl": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-higher-education",
+  "sourceChecked": "2026-10-28",
+  "en": {
+    "title": "Can a Georgian university lead a project?",
+    "body": "Eligible Georgian higher education institutions can coordinate CBHE and Erasmus Mundus Joint Masters, and apply singly for Jean Monnet teaching and research. ICM and Virtual Exchanges have different coordinator rules. Check each Action page, consortium rules and the Georgia restriction before choosing an application route."
+  },
+  "ka": {
+    "title": "შეუძლია ქართულ უნივერსიტეტს პროექტის კოორდინირება?",
+    "body": "საქართველოს უფლებამოსილ უმაღლეს სასწავლებლებს შეუძლიათ CBHE-სა და ერაზმუს მუნდუსის ერთობლივი სამაგისტრო პროექტების კოორდინირება და ჟან მონეს სწავლებისა და კვლევის ერთპიროვნული განაცხადის წარდგენა. ICM-სა და ვირტუალურ გაცვლებს კოორდინატორის სხვა წესები აქვს. გადაამოწმეთ შესაბამისი ქმედების, კონსორციუმისა და საქართველოს შეზღუდვის პირობები."
+  }
+}

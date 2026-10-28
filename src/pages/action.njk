@@ -24,7 +24,7 @@ eleventyExcludeFromCollections: true
   <h2>{{ t.how }}</h2>
   {{ item.how | markdown | safe }}
   <h3>{{ t.officialLinks }}</h3>
-  <ul>
+  <ul data-action-official-links>
     {% for link in item.officialLinks %}
       <li>
         <a href="{{ link.url }}">{{ t[link.labelKey] }}</a>
@@ -48,10 +48,12 @@ eleventyExcludeFromCollections: true
   <h2>{{ t.resources }}</h2>
   {{ cards(resources | related(item.slug), 'resource', t, view.lang) }}
 </section>
+{% if (stories | related(item.slug)).length %}
 <section>
   <h2>{{ t.story }}</h2>
   {{ cards(stories | related(item.slug), 'story', t, view.lang) }}
 </section>
+{% endif %}
 <section>
   <h2>{{ t.faq }}</h2>
   {{ cards(faqs | related(item.slug), 'faq', t, view.lang) }}

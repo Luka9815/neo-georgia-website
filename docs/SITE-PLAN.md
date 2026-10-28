@@ -1,5 +1,7 @@
 # NEO Georgia website: site plan
 
+Current release-candidate implementation (Session 20, 2026-10-28): design and seven main destinations remain settled. All nine Actions retain source-checked wording with public draft prefixes removed. Eleven verified 2026 institutional call records cover the nine Actions. Production Events/Stories are empty, with fixture-backed calendar/feed and conditional Stories surfaces. Twelve FAQs, official external Resources, two external Publications, role-based Team, HERE guidance, About, Contact and dated policy pages replace illustrative content. Missing NEO facts use [TBC], inventoried in review/session-20/TBC.md. No public sample/draft markers remain; the January 2027 preview notice, siteLaunched=false and noindex remain. This implementation and the dated Session 20 decisions supersede earlier sample/draft plans below.
+
 Version 0.1, 24 October 2026, Luka Janjgava. Approved October 2026 (see docs/DECISIONS.md). Source: Google Drive Cowork/NEO/06 Website.
 
 ## Purpose and principles

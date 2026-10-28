@@ -132,4 +132,4 @@ Source: EACEA visual identity 2021-2027, "European flag emblem and multilingual 
 - British English for English text.
 - No em dashes in any site text or documentation; use commas, colons, parentheses or separate sentences.
 - Plain, short sentences. Erasmus+ terminology as used in the current Erasmus+ Programme Guide (for example "Capacity Building in Higher Education", "International Credit Mobility", "Key Action 1").
-- Placeholder content must be obviously placeholder (prefixed `[SAMPLE]`), so it can never be mistaken for real information.
+- Release-candidate content has no public `[SAMPLE]` or `[DRAFT]` markers. Only missing NEO facts may use the single token `[TBC]` inside otherwise final bilingual sentences. Keep every occurrence in the generated Session 20 inventory. Synthetic sample content belongs only in isolated test fixtures, never public records. Action wording remains source-checked and unchanged; Nino’s review list/status is in ACTION-REVIEW.md.

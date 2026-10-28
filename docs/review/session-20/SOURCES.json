@@ -1,0 +1,167 @@
+{
+  "checked": "2026-10-28",
+  "sources": [
+    {
+      "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection",
+      "checked": "2026-10-28",
+      "method": "Official source content opened through the web tool. No authenticated application workflow or live project refresh.",
+      "evidence": "GitHub Pages security logging of visitors’ IP addresses."
+    },
+    {
+      "url": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
+      "checked": "2026-10-28",
+      "method": "Official source content opened through the web tool. No authenticated application workflow or live project refresh.",
+      "evidence": "GitHub privacy statement linked from official Pages documentation."
+    },
+    {
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/home",
+      "checked": "2026-10-28",
+      "method": "Official source content opened through the web tool. No authenticated application workflow or live project refresh.",
+      "evidence": "Official Funding & Tenders destination opened as a JavaScript shell; corroborated by EACEA’s link. Authenticated workflows not tested."
+    },
+    {
+      "url": "https://erasmus-networks.ec.europa.eu/aboutsphere",
+      "checked": "2026-10-28",
+      "method": "Official source content opened through the web tool. No authenticated application workflow or live project refresh.",
+      "evidence": "Official Commission/EACEA-supported SPHERE/HERE network and Georgia coverage."
+    },
+    {
+      "url": "https://erasmus-plus.ec.europa.eu/about-erasmus/how-erasmus-is-managed",
+      "checked": "2026-10-28",
+      "method": "Official source content opened through the web tool. No authenticated application workflow or live project refresh.",
+      "evidence": "Commission/EACEA responsibilities and NEO information, advice and monitoring role."
+    },
+    {
+      "url": "https://erasmus-plus.ec.europa.eu/opportunities/individuals/students/erasmus-mundus-joint-masters",
+      "checked": "2026-10-28",
+      "method": "Official source content opened through the web tool. No authenticated application workflow or live project refresh.",
+      "evidence": "Commission student guidance: apply directly to the chosen programme under its timetable."
+    },
+    {
+      "url": "https://erasmus-plus.ec.europa.eu/programme-guide/part-a/eligible-countries",
+      "checked": "2026-10-28",
+      "method": "Official source content opened through the web tool. No authenticated application workflow or live project refresh.",
+      "evidence": "Official 2026 Guide section: eligibility/application route and, where applicable, the When to apply deadline."
+    },
+    {
+      "url": "https://erasmus-plus.ec.europa.eu/programme-guide/part-a/implementation",
+      "checked": "2026-10-28",
+      "method": "Official source content opened through the web tool. No authenticated application workflow or live project refresh.",
+      "evidence": "Official 2026 Guide section: eligibility/application route and, where applicable, the When to apply deadline."
+    },
+    {
+      "url": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/jean-monnet-actions/higher-education-projects",
+      "checked": "2026-10-28",
+      "method": "Official source content opened through the web tool. No authenticated application workflow or live project refresh.",
+      "evidence": "Official 2026 Guide section: eligibility/application route and, where applicable, the When to apply deadline."
+    },
+    {
+      "url": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/higher-education-mobility-projects",
+      "checked": "2026-10-28",
+      "method": "Official source content opened through the web tool. No authenticated application workflow or live project refresh.",
+      "evidence": "Official 2026 Guide section: eligibility/application route and, where applicable, the When to apply deadline."
+    },
+    {
+      "url": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/mobility-youth-workers",
+      "checked": "2026-10-28",
+      "method": "Official source content opened through the web tool. No authenticated application workflow or live project refresh.",
+      "evidence": "Official 2026 Guide section: eligibility/application route and, where applicable, the When to apply deadline."
+    },
+    {
+      "url": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/virtual-exchanges",
+      "checked": "2026-10-28",
+      "method": "Official source content opened through the web tool. No authenticated application workflow or live project refresh.",
+      "evidence": "Official 2026 Guide section: eligibility/application route and, where applicable, the When to apply deadline."
+    },
+    {
+      "url": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/youth-exchanges",
+      "checked": "2026-10-28",
+      "method": "Official source content opened through the web tool. No authenticated application workflow or live project refresh.",
+      "evidence": "Official 2026 Guide section: eligibility/application route and, where applicable, the When to apply deadline."
+    },
+    {
+      "url": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/youth-workers",
+      "checked": "2026-10-28",
+      "method": "Official source content opened through the web tool. No authenticated application workflow or live project refresh.",
+      "evidence": "Official 2026 Guide section: eligibility/application route and, where applicable, the When to apply deadline."
+    },
+    {
+      "url": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-higher-education",
+      "checked": "2026-10-28",
+      "method": "Official source content opened through the web tool. No authenticated application workflow or live project refresh.",
+      "evidence": "Official 2026 Guide section: eligibility/application route and, where applicable, the When to apply deadline."
+    },
+    {
+      "url": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-sport",
+      "checked": "2026-10-28",
+      "method": "Official source content opened through the web tool. No authenticated application workflow or live project refresh.",
+      "evidence": "Official 2026 Guide section: eligibility/application route and, where applicable, the When to apply deadline."
+    },
+    {
+      "url": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-vet",
+      "checked": "2026-10-28",
+      "method": "Official source content opened through the web tool. No authenticated application workflow or live project refresh.",
+      "evidence": "Official 2026 Guide section: eligibility/application route and, where applicable, the When to apply deadline."
+    },
+    {
+      "url": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-youth",
+      "checked": "2026-10-28",
+      "method": "Official source content opened through the web tool. No authenticated application workflow or live project refresh.",
+      "evidence": "Official 2026 Guide section: eligibility/application route and, where applicable, the When to apply deadline."
+    },
+    {
+      "url": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/erasmus-mundus",
+      "checked": "2026-10-28",
+      "method": "Official source content opened through the web tool. No authenticated application workflow or live project refresh.",
+      "evidence": "Official 2026 Guide section: eligibility/application route and, where applicable, the When to apply deadline."
+    },
+    {
+      "url": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/erasmus-mundus-action",
+      "checked": "2026-10-28",
+      "method": "Official source content opened through the web tool. No authenticated application workflow or live project refresh.",
+      "evidence": "Official 2026 Guide section: eligibility/application route and, where applicable, the When to apply deadline."
+    },
+    {
+      "url": "https://erasmus-plus.ec.europa.eu/programme-guide/part-c",
+      "checked": "2026-10-28",
+      "method": "Official source content opened through the web tool. No authenticated application workflow or live project refresh.",
+      "evidence": "Official 2026 Guide section: eligibility/application route and, where applicable, the When to apply deadline."
+    },
+    {
+      "url": "https://erasmus-plus.ec.europa.eu/projects",
+      "checked": "2026-10-28",
+      "method": "Official source content opened through the web tool. No authenticated application workflow or live project refresh.",
+      "evidence": "Official Project Results Platform destination. No live project refresh was run."
+    },
+    {
+      "url": "https://erasmus-plus.ec.europa.eu/resources-and-tools/how-to-apply",
+      "checked": "2026-10-28",
+      "method": "Official source content opened through the web tool. No authenticated application workflow or live project refresh.",
+      "evidence": "Commission application guidance and partner-search routes."
+    },
+    {
+      "url": "https://erasmus-plus.ec.europa.eu/sites/default/files/2024-11/handbook-erasmus-icm_oct24-v6_1_en_0.pdf",
+      "checked": "2026-10-28",
+      "method": "Official source content opened through the web tool. No authenticated application workflow or live project refresh.",
+      "evidence": "ICM handbook version 6.1, October 2024, for the 2024/2025 calls. Historical scope labelled."
+    },
+    {
+      "url": "https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/programme-guide-2026_en.pdf",
+      "checked": "2026-10-28",
+      "method": "Official source content opened through the web tool. No authenticated application workflow or live project refresh.",
+      "evidence": "Official English Programme Guide 2026 PDF. Linked externally, no hosted copy."
+    },
+    {
+      "url": "https://op.europa.eu/en/publication-detail/-/publication/eb9511a3-c05a-11f0-a612-01aa75ed71a1/language-en",
+      "checked": "2026-10-28",
+      "method": "Official source content opened through the web tool. No authenticated application workflow or live project refresh.",
+      "evidence": "Annual report 2024: published 2025; European Commission DG EAC; English edition."
+    },
+    {
+      "url": "https://www.eacea.ec.europa.eu/grants/how-get-grant_en",
+      "checked": "2026-10-28",
+      "method": "Official source content opened through the web tool. No authenticated application workflow or live project refresh.",
+      "evidence": "EACEA application guidance and official Funding & Tenders link."
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+# Session 20: external source checks
+
+All 27 source destinations below were checked on 28 October 2026 through official page/PDF content. These are source and destination checks, not authenticated application tests. Portal JavaScript limitations are stated below. No live project refresh was run.
+
+| Source | Checked | What was verified |
+| --- | --- | --- |
+| [https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection) | 2026-10-28 | GitHub Pages security logging of visitors’ IP addresses. |
+| [https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement) | 2026-10-28 | GitHub privacy statement linked from official Pages documentation. |
+| [https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/home](https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/home) | 2026-10-28 | Official Funding & Tenders destination opened as a JavaScript shell; corroborated by EACEA’s link. Authenticated workflows not tested. |
+| [https://erasmus-networks.ec.europa.eu/aboutsphere](https://erasmus-networks.ec.europa.eu/aboutsphere) | 2026-10-28 | Official Commission/EACEA-supported SPHERE/HERE network and Georgia coverage. |
+| [https://erasmus-plus.ec.europa.eu/about-erasmus/how-erasmus-is-managed](https://erasmus-plus.ec.europa.eu/about-erasmus/how-erasmus-is-managed) | 2026-10-28 | Commission/EACEA responsibilities and NEO information, advice and monitoring role. |
+| [https://erasmus-plus.ec.europa.eu/opportunities/individuals/students/erasmus-mundus-joint-masters](https://erasmus-plus.ec.europa.eu/opportunities/individuals/students/erasmus-mundus-joint-masters) | 2026-10-28 | Commission student guidance: apply directly to the chosen programme under its timetable. |
+| [https://erasmus-plus.ec.europa.eu/programme-guide/part-a/eligible-countries](https://erasmus-plus.ec.europa.eu/programme-guide/part-a/eligible-countries) | 2026-10-28 | Official 2026 Guide section: eligibility/application route and, where applicable, the When to apply deadline. |
+| [https://erasmus-plus.ec.europa.eu/programme-guide/part-a/implementation](https://erasmus-plus.ec.europa.eu/programme-guide/part-a/implementation) | 2026-10-28 | Official 2026 Guide section: eligibility/application route and, where applicable, the When to apply deadline. |
+| [https://erasmus-plus.ec.europa.eu/programme-guide/part-b/jean-monnet-actions/higher-education-projects](https://erasmus-plus.ec.europa.eu/programme-guide/part-b/jean-monnet-actions/higher-education-projects) | 2026-10-28 | Official 2026 Guide section: eligibility/application route and, where applicable, the When to apply deadline. |
+| [https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/higher-education-mobility-projects](https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/higher-education-mobility-projects) | 2026-10-28 | Official 2026 Guide section: eligibility/application route and, where applicable, the When to apply deadline. |
+| [https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/mobility-youth-workers](https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/mobility-youth-workers) | 2026-10-28 | Official 2026 Guide section: eligibility/application route and, where applicable, the When to apply deadline. |
+| [https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/virtual-exchanges](https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/virtual-exchanges) | 2026-10-28 | Official 2026 Guide section: eligibility/application route and, where applicable, the When to apply deadline. |
+| [https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/youth-exchanges](https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/youth-exchanges) | 2026-10-28 | Official 2026 Guide section: eligibility/application route and, where applicable, the When to apply deadline. |
+| [https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/youth-workers](https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/youth-workers) | 2026-10-28 | Official 2026 Guide section: eligibility/application route and, where applicable, the When to apply deadline. |
+| [https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-higher-education](https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-higher-education) | 2026-10-28 | Official 2026 Guide section: eligibility/application route and, where applicable, the When to apply deadline. |
+| [https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-sport](https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-sport) | 2026-10-28 | Official 2026 Guide section: eligibility/application route and, where applicable, the When to apply deadline. |
+| [https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-vet](https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-vet) | 2026-10-28 | Official 2026 Guide section: eligibility/application route and, where applicable, the When to apply deadline. |
+| [https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-youth](https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-youth) | 2026-10-28 | Official 2026 Guide section: eligibility/application route and, where applicable, the When to apply deadline. |
+| [https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/erasmus-mundus](https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/erasmus-mundus) | 2026-10-28 | Official 2026 Guide section: eligibility/application route and, where applicable, the When to apply deadline. |
+| [https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/erasmus-mundus-action](https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/erasmus-mundus-action) | 2026-10-28 | Official 2026 Guide section: eligibility/application route and, where applicable, the When to apply deadline. |
+| [https://erasmus-plus.ec.europa.eu/programme-guide/part-c](https://erasmus-plus.ec.europa.eu/programme-guide/part-c) | 2026-10-28 | Official 2026 Guide section: eligibility/application route and, where applicable, the When to apply deadline. |
+| [https://erasmus-plus.ec.europa.eu/projects](https://erasmus-plus.ec.europa.eu/projects) | 2026-10-28 | Official Project Results Platform destination. No live project refresh was run. |
+| [https://erasmus-plus.ec.europa.eu/resources-and-tools/how-to-apply](https://erasmus-plus.ec.europa.eu/resources-and-tools/how-to-apply) | 2026-10-28 | Commission application guidance and partner-search routes. |
+| [https://erasmus-plus.ec.europa.eu/sites/default/files/2024-11/handbook-erasmus-icm_oct24-v6_1_en_0.pdf](https://erasmus-plus.ec.europa.eu/sites/default/files/2024-11/handbook-erasmus-icm_oct24-v6_1_en_0.pdf) | 2026-10-28 | ICM handbook version 6.1, October 2024, for the 2024/2025 calls. Historical scope labelled. |
+| [https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/programme-guide-2026_en.pdf](https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/programme-guide-2026_en.pdf) | 2026-10-28 | Official English Programme Guide 2026 PDF. Linked externally, no hosted copy. |
+| [https://op.europa.eu/en/publication-detail/-/publication/eb9511a3-c05a-11f0-a612-01aa75ed71a1/language-en](https://op.europa.eu/en/publication-detail/-/publication/eb9511a3-c05a-11f0-a612-01aa75ed71a1/language-en) | 2026-10-28 | Annual report 2024: published 2025; European Commission DG EAC; English edition. |
+| [https://www.eacea.ec.europa.eu/grants/how-get-grant_en](https://www.eacea.ec.europa.eu/grants/how-get-grant_en) | 2026-10-28 | EACEA application guidance and official Funding & Tenders link. |
+
+## Verified call deadlines
+
+All times below are Europe/Brussels, as stated by the official 2026 Guide. UTC values are derived from the named zone, including October DST. Unverified opening times are omitted.
+
+| Record | Action | Brussels deadline | UTC | Source |
+| --- | --- | --- | --- | --- |
+| cb-sport-2026 | cb-sport | 2026-03-05T17:00 | 2026-03-05T16:00:00+00:00 | [Official Guide](https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-sport) |
+| cb-vet-2026 | cb-vet | 2026-03-26T17:00 | 2026-03-26T16:00:00+00:00 | [Official Guide](https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-vet) |
+| cb-youth-2026 | cb-youth | 2026-02-26T17:00 | 2026-02-26T16:00:00+00:00 | [Official Guide](https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-youth) |
+| cbhe-2026 | cbhe | 2026-02-10T17:00 | 2026-02-10T16:00:00+00:00 | [Official Guide](https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-higher-education) |
+| erasmus-mundus-design-measures-2026 | erasmus-mundus | 2026-02-12T17:00 | 2026-02-12T16:00:00+00:00 | [Official Guide](https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/erasmus-mundus) |
+| erasmus-mundus-joint-masters-2026 | erasmus-mundus | 2026-02-12T17:00 | 2026-02-12T16:00:00+00:00 | [Official Guide](https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/erasmus-mundus) |
+| icm-2026 | icm | 2026-02-19T12:00 | 2026-02-19T11:00:00+00:00 | [Official Guide](https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/higher-education-mobility-projects) |
+| jean-monnet-2026 | jean-monnet | 2026-02-03T17:00 | 2026-02-03T16:00:00+00:00 | [Official Guide](https://erasmus-plus.ec.europa.eu/programme-guide/part-b/jean-monnet-actions/higher-education-projects) |
+| virtual-exchanges-2026 | virtual-exchanges | 2026-03-26T17:00 | 2026-03-26T16:00:00+00:00 | [Official Guide](https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/virtual-exchanges) |
+| youth-mobility-february-2026 | youth-mobility | 2026-02-12T12:00 | 2026-02-12T11:00:00+00:00 | [Official Guide](https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/youth-exchanges) |
+| youth-mobility-october-2026 | youth-mobility | 2026-10-01T12:00 | 2026-10-01T10:00:00+00:00 | [Official Guide](https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/youth-exchanges) |
+
+ERIDA hosting from January 2027 and the requested 2027-call expectation are supplied by Luka’s Session 20 brief. They are not attributed to an unrelated external page.
+
+A standalone EACEA HERE landing page and a Georgia country factsheet could not be verified. The site uses the verified official SPHERE destination and omits the factsheet. Earlier legacy annual-report URLs were not used after access failures; the verified Publications Office English record is used.

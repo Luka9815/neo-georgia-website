@@ -1,0 +1,321 @@
+{
+  "action": [
+    {
+      "slug": "cb-sport",
+      "keyAction": "KA2",
+      "sectors": [
+        "sport"
+      ],
+      "audience": [
+        "organisations"
+      ],
+      "programmeYear": 2026,
+      "comment": "Programme Guide 2026, Version 1 (12/11/2025), checked 2026-10-26. https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/programme-guide-2026_en.pdf . Part A p.34, Region 2 and footnote 46 (Georgia and the exclusion of Georgian authorities); Part B pp.352, 354-355, objectives and eligibility/Who can apply criteria. P.354 permits sport entities in Regions 1 and 2 and requires a nonprofit coordinator; fn.436 excludes Belarus and bars Armenia/Azerbaijan coordination, not Georgia. Apply p.34 fn.46 separately. Official action page read: https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-sport.",
+      "officialLinks": [
+        {
+          "labelKey": "programmeGuide2026",
+          "url": "https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/programme-guide-2026_en.pdf"
+        },
+        {
+          "labelKey": "officialActionPage",
+          "url": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-sport"
+        }
+      ],
+      "en": {
+        "title": "[DRAFT] Capacity Building in Sport",
+        "summary": "[DRAFT] International partnerships strengthen sport organisations and use sport to support inclusion and personal development.",
+        "who": "[DRAFT] Eligible Georgian nonprofit organisations active in sport can apply directly as consortium coordinator or join as partners. Other eligible bodies active in sport can join as partners; the coordinator must be nonprofit. Region 2 is eligible, and the coordinator exception naming Armenia and Azerbaijan does not name Georgia. The Georgia-authority exclusion still applies.",
+        "how": "[DRAFT] Check the nonprofit coordinator requirement and consortium conditions, then prepare the application for the official EACEA call."
+      },
+      "ka": {
+        "title": "[DRAFT] სპორტის სფეროს შესაძლებლობების განვითარება",
+        "summary": "[DRAFT] საერთაშორისო პარტნიორობა აძლიერებს სპორტულ ორგანიზაციებს და იყენებს სპორტს ჩართულობისა და პიროვნული განვითარების მხარდასაჭერად.",
+        "who": "[DRAFT] სპორტის სფეროში მოქმედ საქართველოს უფლებამოსილ არაკომერციულ ორგანიზაციებს შეუძლიათ პირდაპირ განაცხადის შეტანა კონსორციუმის კოორდინატორად ან პარტნიორად მონაწილეობა. სხვა უფლებამოსილი სპორტული ორგანიზაციები შეიძლება შეუერთდნენ პარტნიორებად; კოორდინატორი არაკომერციული უნდა იყოს. მეორე რეგიონი უფლებამოსილია, ხოლო სომხეთისა და აზერბაიჯანისთვის დასახელებული კოორდინატორობის გამონაკლისი საქართველოს არ ასახელებს. საქართველოს ხელისუფლების ორგანოების გამორიცხვის წესი კვლავ მოქმედებს.",
+        "how": "[DRAFT] შეამოწმეთ კოორდინატორის არაკომერციული სტატუსი და კონსორციუმის პირობები, შემდეგ მოამზადეთ განაცხადი EACEA-ს ოფიციალურ კონკურსზე."
+      }
+    },
+    {
+      "slug": "cb-vet",
+      "keyAction": "KA2",
+      "sectors": [
+        "vet"
+      ],
+      "audience": [
+        "organisations"
+      ],
+      "programmeYear": 2026,
+      "comment": "Programme Guide 2026, Version 1 (12/11/2025), checked 2026-10-26. https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/programme-guide-2026_en.pdf . Part A p.34, Region 2 and footnote 46 (Georgia and the exclusion of Georgian authorities); Part B pp.332, 337-338, objectives and eligibility/Who can apply criteria. P.337 includes Region 2 (except Belarus) but expressly says non-associated-country organisations cannot coordinate; VET/labour-market activity required. Official action page read: https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-vet.",
+      "officialLinks": [
+        {
+          "labelKey": "programmeGuide2026",
+          "url": "https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/programme-guide-2026_en.pdf"
+        },
+        {
+          "labelKey": "officialActionPage",
+          "url": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-vet"
+        }
+      ],
+      "en": {
+        "title": "[DRAFT] Capacity Building in VET",
+        "summary": "[DRAFT] Partnerships that strengthen vocational education providers, their quality and their connections to the labour market.",
+        "who": "[DRAFT] Eligible Georgian legal entities active in VET or the labour market can join as partners. They cannot apply as consortium coordinator: organisations in non-associated countries are explicitly excluded from coordination. The coordinator must be an eligible VET organisation in an EU or Programme-associated country.",
+        "how": "[DRAFT] Agree the VET partnership and regional consortium requirements with an eligible EU or associated-country coordinator, which submits the application through the official call."
+      },
+      "ka": {
+        "title": "[DRAFT] პროფესიული განათლების შესაძლებლობების განვითარება",
+        "summary": "[DRAFT] პარტნიორობა პროფესიული განათლების მიმწოდებლების, ხარისხისა და შრომის ბაზართან კავშირის გასაძლიერებლად.",
+        "who": "[DRAFT] პროფესიული განათლების ან შრომის ბაზრის სფეროში მოქმედ საქართველოს უფლებამოსილ იურიდიულ პირებს შეუძლიათ პარტნიორად მონაწილეობა. მათ არ შეუძლიათ კონსორციუმის კოორდინატორად განაცხადის შეტანა: არაასოცირებული ქვეყნების ორგანიზაციებს კოორდინატორობა პირდაპირ ეკრძალებათ. კოორდინატორი უნდა იყოს ევროკავშირის ან პროგრამასთან ასოცირებული ქვეყნის უფლებამოსილი პროფესიული განათლების ორგანიზაცია.",
+        "how": "[DRAFT] პარტნიორობა და რეგიონის მოთხოვნები შეათანხმეთ ევროკავშირის ან ასოცირებული ქვეყნის უფლებამოსილ კოორდინატორთან, რომელიც განაცხადს ოფიციალურ კონკურსზე წარადგენს."
+      }
+    },
+    {
+      "slug": "cb-youth",
+      "keyAction": "KA2",
+      "sectors": [
+        "youth"
+      ],
+      "audience": [
+        "organisations"
+      ],
+      "programmeYear": 2026,
+      "comment": "Programme Guide 2026, Version 1 (12/11/2025), checked 2026-10-26. https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/programme-guide-2026_en.pdf . Part A p.34, Region 2 and footnote 46 (Georgia and the exclusion of Georgian authorities); Part B pp.343, 347, objectives and eligibility/Who can apply criteria. P.347 permits youth NGOs as coordinators and Region 2 entities; fn.432 excludes Belarus and bars Armenia/Azerbaijan coordination, not Georgia. P.34 fn.46 separately excludes Georgian authorities. Official action page read: https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-youth.",
+      "officialLinks": [
+        {
+          "labelKey": "programmeGuide2026",
+          "url": "https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/programme-guide-2026_en.pdf"
+        },
+        {
+          "labelKey": "officialActionPage",
+          "url": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-youth"
+        }
+      ],
+      "en": {
+        "title": "[DRAFT] Capacity Building in Youth",
+        "summary": "[DRAFT] International cooperation to strengthen youth organisations, youth work and non-formal learning.",
+        "who": "[DRAFT] Eligible Georgian NGOs working in youth can apply directly as consortium coordinator or join as partners. Other eligible bodies may participate but not coordinate. Georgia is in eligible Region 2; the specific coordinator exclusions for Armenia, Azerbaijan and Sub-Saharan Africa must not be incorrectly applied to Georgia. The separate exclusion of Georgian authorities still applies.",
+        "how": "[DRAFT] Check the applicant type and required regional consortium, then use the official EACEA call. A direct application does not remove the consortium requirements."
+      },
+      "ka": {
+        "title": "[DRAFT] ახალგაზრდობის სფეროს შესაძლებლობების განვითარება",
+        "summary": "[DRAFT] საერთაშორისო თანამშრომლობა ახალგაზრდული ორგანიზაციების, ახალგაზრდული მუშაობისა და არაფორმალური სწავლების გასაძლიერებლად.",
+        "who": "[DRAFT] ახალგაზრდობის სფეროში მომუშავე საქართველოს უფლებამოსილ არასამთავრობო ორგანიზაციებს შეუძლიათ პირდაპირ განაცხადის შეტანა კოორდინატორად ან პარტნიორად მონაწილეობა. სხვა უფლებამოსილი ორგანიზაციები შეიძლება მონაწილეობდნენ, მაგრამ არა კოორდინატორებად. საქართველო მეორე უფლებამოსილ რეგიონშია; სომხეთის, აზერბაიჯანისა და სუბსაჰარული აფრიკისთვის განსაზღვრული კოორდინატორობის შეზღუდვა საქართველოზე შეცდომით არ უნდა გავრცელდეს. საქართველოს ხელისუფლების ორგანოების ცალკე გამორიცხვის წესი კვლავ მოქმედებს.",
+        "how": "[DRAFT] შეამოწმეთ განმცხადებლის ტიპი და მოთხოვნილი რეგიონული კონსორციუმი, შემდეგ გამოიყენეთ EACEA-ს ოფიციალური კონკურსი. პირდაპირი განაცხადი არ აუქმებს კონსორციუმის მოთხოვნებს."
+      }
+    },
+    {
+      "slug": "cbhe",
+      "keyAction": "KA2",
+      "sectors": [
+        "higher-education"
+      ],
+      "audience": [
+        "organisations"
+      ],
+      "programmeYear": 2026,
+      "comment": "Programme Guide 2026, Version 1 (12/11/2025), checked 2026-10-26. https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/programme-guide-2026_en.pdf . Part A p.34, Region 2 and footnote 46 (Georgia and the exclusion of Georgian authorities); Part B pp.314, 319-320, 323-324, objectives and eligibility/Who can apply criteria. P.319 (Strands 1/2) and p.323 (Strand 3) limit coordinators to HEIs/HEI organisations. P.324 requires the competent national authority in Strand 3; this draft flags its interaction with p.34 rather than inventing an exemption. Official action page read: https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-higher-education.",
+      "officialLinks": [
+        {
+          "labelKey": "programmeGuide2026",
+          "url": "https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/programme-guide-2026_en.pdf"
+        },
+        {
+          "labelKey": "officialActionPage",
+          "url": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-higher-education"
+        }
+      ],
+      "en": {
+        "title": "[DRAFT] Capacity Building in Higher Education",
+        "summary": "[DRAFT] International partnerships to improve higher education quality, institutional capacity and responsiveness in eligible non-associated countries.",
+        "who": "[DRAFT] For Strands 1 and 2, eligible Georgian HEIs and organisations of HEIs can apply directly as consortium coordinator or participate as partners. Other eligible education, training, youth or labour-market bodies can join as partners, not coordinators. Strand 3 has additional national-authority requirements; compatibility with the Georgia authority exclusion must be confirmed before preparing that strand.",
+        "how": "[DRAFT] Check the strand, consortium composition and regional criteria, then prepare the application for EACEA through the official call. Obtain clarification from EACEA for Strand 3 rather than assuming an authority can participate."
+      },
+      "ka": {
+        "title": "[DRAFT] უმაღლესი განათლების შესაძლებლობების განვითარება",
+        "summary": "[DRAFT] საერთაშორისო პარტნიორობა უმაღლესი განათლების ხარისხის, ინსტიტუციური შესაძლებლობებისა და საჭიროებებზე რეაგირების გასაუმჯობესებლად პროგრამასთან არაასოცირებულ უფლებამოსილ ქვეყნებში.",
+        "who": "[DRAFT] პირველ და მეორე მიმართულებებში საქართველოს უფლებამოსილ უმაღლეს სასწავლებლებსა და მათ გაერთიანებებს შეუძლიათ პირდაპირ განაცხადის შეტანა კოორდინატორად ან პარტნიორად მონაწილეობა. განათლების, მომზადების, ახალგაზრდობის ან შრომის ბაზრის სხვა უფლებამოსილი ორგანიზაციები მონაწილეობენ პარტნიორებად და არა კოორდინატორებად. მესამე მიმართულება დამატებით მოითხოვს ეროვნულ პასუხისმგებელ ორგანოს; მის მომზადებამდე EACEA-სთან უნდა დაზუსტდეს საქართველოს ხელისუფლების ორგანოების გამორიცხვის წესთან შესაბამისობა.",
+        "how": "[DRAFT] გადაამოწმეთ მიმართულება, კონსორციუმის შემადგენლობა და რეგიონის პირობები, შემდეგ მოამზადეთ განაცხადი EACEA-ს ოფიციალური კონკურსისთვის. მესამე მიმართულებისთვის მიიღეთ განმარტება EACEA-სგან და არ ივარაუდოთ, რომ ხელისუფლების ორგანოს მონაწილეობა შეუძლია."
+      }
+    },
+    {
+      "slug": "erasmus-mundus",
+      "keyAction": "KA2",
+      "sectors": [
+        "higher-education"
+      ],
+      "audience": [
+        "organisations"
+      ],
+      "programmeYear": 2026,
+      "comment": "Programme Guide 2026, Version 1 (12/11/2025), checked 2026-10-26. https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/programme-guide-2026_en.pdf . Part A p.34, Region 2 and footnote 46 (Georgia and the exclusion of Georgian authorities); Part B pp.274-275, 285-286, objectives and eligibility/Who can apply criteria. EMJM p.275 allows eligible non-associated-country HEIs and restricts other bodies from coordination. EMDM p.285 restricts applicants to EU/associated ECHE HEIs; p.286 states mono-beneficiary and says collaborating organisations do not sign the grant. Official action page read: https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/erasmus-mundus-action.",
+      "officialLinks": [
+        {
+          "labelKey": "programmeGuide2026",
+          "url": "https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/programme-guide-2026_en.pdf"
+        },
+        {
+          "labelKey": "officialActionPage",
+          "url": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/erasmus-mundus-action"
+        }
+      ],
+      "en": {
+        "title": "[DRAFT] Erasmus Mundus: Joint Masters and Design Measures",
+        "summary": "[DRAFT] Two distinct strands support the delivery of integrated international master programmes and the design of new joint master programmes.",
+        "who": "[DRAFT] Joint Masters: eligible Georgian higher education institutions may apply directly as consortium coordinator or join as partners; other eligible contributing organisations may participate but cannot coordinate. Design Measures: Georgian institutions cannot be the direct grant applicant, which must be an ECHE-holding HEI in an EU or associated country. Georgian HEIs may collaborate in designing the planned joint programme; this is not co-beneficiary status in the mono-beneficiary Design Measures grant.",
+        "how": "[DRAFT] Choose the strand first. Build the required international consortium for Joint Masters. For Design Measures, agree the Georgian contribution with the eligible single applicant, then use the relevant EACEA call."
+      },
+      "ka": {
+        "title": "[DRAFT] ერაზმუს მუნდუსი: ერთობლივი სამაგისტრო პროგრამები და პროგრამების შემუშავება",
+        "summary": "[DRAFT] ორი ცალკე მიმართულება მხარს უჭერს საერთაშორისო ერთობლივი სამაგისტრო პროგრამების განხორციელებას და ახალი პროგრამების შემუშავებას.",
+        "who": "[DRAFT] ერთობლივი სამაგისტრო პროგრამები: საქართველოს უფლებამოსილ უმაღლეს სასწავლებლებს შეუძლიათ პირდაპირ განაცხადის შეტანა კონსორციუმის კოორდინატორად ან პარტნიორად მონაწილეობა; სხვა უფლებამოსილ ორგანიზაციებს შეუძლიათ მონაწილეობა, მაგრამ არა კოორდინატორობა. პროგრამების შემუშავება: ქართული დაწესებულება ვერ იქნება გრანტის პირდაპირი განმცხადებელი; საჭიროა ECHE-ს მქონე უმაღლესი სასწავლებელი ევროკავშირის ან ასოცირებული ქვეყნიდან. ქართულ უმაღლეს სასწავლებლებს შეუძლიათ დაგეგმილი ერთობლივი პროგრამის შემუშავებაში თანამშრომლობა, მაგრამ ეს არ ნიშნავს ერთბენეფიციარიან გრანტში თანაბენეფიციარობას.",
+        "how": "[DRAFT] ჯერ აირჩიეთ მიმართულება. ერთობლივი სამაგისტრო პროგრამისთვის შექმენით მოთხოვნილი საერთაშორისო კონსორციუმი. შემუშავების მიმართულებისთვის ქართული წვლილი შეათანხმეთ უფლებამოსილ ერთპიროვნულ განმცხადებელთან და გამოიყენეთ EACEA-ს შესაბამისი კონკურსი."
+      }
+    },
+    {
+      "slug": "icm",
+      "keyAction": "KA1",
+      "sectors": [
+        "higher-education"
+      ],
+      "audience": [
+        "organisations"
+      ],
+      "programmeYear": 2026,
+      "comment": "Programme Guide 2026, Version 1 (12/11/2025), checked 2026-10-26. https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/programme-guide-2026_en.pdf . Part A p.34, Region 2 and footnote 46 (Georgia and the exclusion of Georgian authorities); Part B pp.42, 50-53, objectives and eligibility/Who can apply criteria. P.51 limits applicants to EU/associated-country ECHE institutions or accredited consortium coordinators; pp.52-53 require recognition and inter-institutional agreements for non-associated-country HEIs. Official action page read: https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/higher-education-mobility-projects.",
+      "officialLinks": [
+        {
+          "labelKey": "programmeGuide2026",
+          "url": "https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/programme-guide-2026_en.pdf"
+        },
+        {
+          "labelKey": "officialActionPage",
+          "url": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/higher-education-mobility-projects"
+        }
+      ],
+      "en": {
+        "title": "[DRAFT] International Credit Mobility",
+        "summary": "[DRAFT] Study, traineeship, teaching and training mobility linking Georgian higher education institutions with EU or Programme-associated-country partners.",
+        "who": "[DRAFT] Eligible, officially recognised Georgian higher education institutions can participate as sending or receiving partners, not as direct applicants for the mobility-project grant. The applicant must be an eligible institution or consortium coordinator established in an EU Member State or Programme-associated country. Students and staff do not apply directly for this project grant.",
+        "how": "[DRAFT] Work through an institutional partner and the required inter-institutional agreement. The eligible EU or associated-country applicant submits to its National Agency."
+      },
+      "ka": {
+        "title": "[DRAFT] საერთაშორისო კრედიტმობილობა",
+        "summary": "[DRAFT] სწავლის, პრაქტიკის, სწავლებისა და ტრენინგის მობილობა საქართველოს უმაღლეს სასწავლებლებსა და ევროკავშირის ან პროგრამასთან ასოცირებული ქვეყნების პარტნიორებს შორის.",
+        "who": "[DRAFT] საქართველოს უფლებამოსილ, ოფიციალურად აღიარებულ უმაღლეს სასწავლებლებს შეუძლიათ მონაწილეობა გამგზავნ ან მიმღებ პარტნიორებად, მაგრამ მობილობის პროექტის გრანტზე პირდაპირი განაცხადის შეტანა არ შეუძლიათ. განმცხადებელი უნდა იყოს ევროკავშირის ან პროგრამასთან ასოცირებული ქვეყნის უფლებამოსილი დაწესებულება ან კონსორციუმის კოორდინატორი. სტუდენტები და თანამშრომლები პროექტის გრანტზე პირდაპირ განაცხადს არ წარადგენენ.",
+        "how": "[DRAFT] იმუშავეთ ინსტიტუციურ პარტნიორთან და გააფორმეთ საჭირო შეთანხმება. უფლებამოსილი განმცხადებელი ევროკავშირის ან ასოცირებული ქვეყნიდან განაცხადს თავის ეროვნულ სააგენტოს წარუდგენს."
+      }
+    },
+    {
+      "slug": "jean-monnet",
+      "keyAction": "Jean Monnet",
+      "sectors": [
+        "higher-education"
+      ],
+      "audience": [
+        "organisations"
+      ],
+      "programmeYear": 2026,
+      "comment": "Programme Guide 2026, Version 1 (12/11/2025), checked 2026-10-26. https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/programme-guide-2026_en.pdf . Part A p.34, Region 2 and footnote 46 (Georgia and the exclusion of Georgian authorities); Part B pp.376-379, objectives and eligibility/Who can apply criteria. Pp.377-379 permit single HEI applicants from associated and non-associated countries, except the listed excluded countries. Other strands have separate eligibility tables (e.g. pp.393, 399, 403-404, 408); no eligibility for those strands is asserted here. Official action page read: https://erasmus-plus.ec.europa.eu/programme-guide/part-b/jean-monnet-actions/higher-education-projects.",
+      "officialLinks": [
+        {
+          "labelKey": "programmeGuide2026",
+          "url": "https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/programme-guide-2026_en.pdf"
+        },
+        {
+          "labelKey": "officialActionPage",
+          "url": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/jean-monnet-actions/higher-education-projects"
+        }
+      ],
+      "en": {
+        "title": "[DRAFT] Jean Monnet Actions",
+        "summary": "[DRAFT] Teaching and research about the European Union, including Modules, Chairs and Centres of Excellence in higher education.",
+        "who": "[DRAFT] Eligible Georgian HEIs may apply directly as single applicants for Modules, Chairs and Centres of Excellence; these are not consortium-partner applications. This overview concerns those higher education teaching/research actions. Do not assume the same country eligibility for Teacher Training, Learning EU or policy-debate/network calls; consult their separate 2026 criteria.",
+        "how": "[DRAFT] Choose the precise Jean Monnet action. For Modules, Chairs or Centres of Excellence, the eligible HEI prepares its own application to the corresponding EACEA call."
+      },
+      "ka": {
+        "title": "[DRAFT] ჟან მონეს ქმედებები",
+        "summary": "[DRAFT] ევროკავშირის შესახებ სწავლება და კვლევა, მათ შორის უმაღლეს განათლებაში მოდულები, კათედრები და საუკეთესო გამოცდილების ცენტრები.",
+        "who": "[DRAFT] საქართველოს უფლებამოსილ უმაღლეს სასწავლებლებს შეუძლიათ პირდაპირ, ერთპიროვნულ განმცხადებლად განაცხადის შეტანა მოდულებზე, კათედრებსა და საუკეთესო გამოცდილების ცენტრებზე; ეს არ არის კონსორციუმში პარტნიორული განაცხადი. ეს მიმოხილვა ეხება უმაღლესი განათლების სწავლებისა და კვლევის ამ ქმედებებს. მასწავლებელთა მომზადების, ევროკავშირის შესახებ სწავლებისა და პოლიტიკის დებატების/ქსელების კონკურსებისთვის იგივე ქვეყნის უფლებამოსილება არ ივარაუდოთ; შეამოწმეთ მათი ცალკე 2026 წლის პირობები.",
+        "how": "[DRAFT] აირჩიეთ ჟან მონეს ზუსტი ქმედება. მოდულის, კათედრის ან საუკეთესო გამოცდილების ცენტრისთვის უფლებამოსილი უმაღლესი სასწავლებელი ამზადებს საკუთარ განაცხადს EACEA-ს შესაბამის კონკურსზე."
+      }
+    },
+    {
+      "slug": "virtual-exchanges",
+      "keyAction": "KA1",
+      "sectors": [
+        "higher-education",
+        "youth"
+      ],
+      "audience": [
+        "organisations"
+      ],
+      "programmeYear": 2026,
+      "comment": "Programme Guide 2026, Version 1 (12/11/2025), checked 2026-10-26. https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/programme-guide-2026_en.pdf . Part A p.34, Region 2 and footnote 46 (Georgia and the exclusion of Georgian authorities); Part B pp.216, 218-219, objectives and eligibility/Who can apply criteria. P.218 includes Regions 1, 2, 3, 9 but bars all non-associated-country coordinators and requires the same region for non-associated partners. P.219 lists the Neighbourhood East call. Official action page read: https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/virtual-exchanges.",
+      "officialLinks": [
+        {
+          "labelKey": "programmeGuide2026",
+          "url": "https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/programme-guide-2026_en.pdf"
+        },
+        {
+          "labelKey": "officialActionPage",
+          "url": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/virtual-exchanges"
+        }
+      ],
+      "en": {
+        "title": "[DRAFT] Virtual Exchanges",
+        "summary": "[DRAFT] Facilitated online exchanges connect higher education and youth participants for intercultural dialogue and skills development.",
+        "who": "[DRAFT] Eligible Georgian higher education or youth-sector entities can participate as partners, not consortium coordinators or direct coordinating applicants. Coordinators must be an eligible HEI or youth organisation established in an EU or Programme-associated country. Georgia participates through the Neighbourhood East regional strand.",
+        "how": "[DRAFT] Join a consortium with an eligible EU or associated-country coordinator and partners from the same eligible non-associated region, then follow the official regional call criteria."
+      },
+      "ka": {
+        "title": "[DRAFT] ვირტუალური გაცვლები",
+        "summary": "[DRAFT] ფასილიტატორების დახმარებით ონლაინ გაცვლები აკავშირებს უმაღლესი განათლებისა და ახალგაზრდობის მონაწილეებს კულტურათაშორისი დიალოგისა და უნარების გასავითარებლად.",
+        "who": "[DRAFT] საქართველოს უმაღლესი განათლების ან ახალგაზრდობის სფეროს უფლებამოსილ ორგანიზაციებს შეუძლიათ პარტნიორად მონაწილეობა და არა კონსორციუმის კოორდინატორად ან პირდაპირ კოორდინირებად განმცხადებლად გამოსვლა. კოორდინატორი უნდა იყოს ევროკავშირის ან ასოცირებული ქვეყნის უფლებამოსილი უმაღლესი სასწავლებელი ან ახალგაზრდული ორგანიზაცია. საქართველო მონაწილეობს აღმოსავლეთ სამეზობლოს რეგიონული მიმართულებით.",
+        "how": "[DRAFT] შეუერთდით კონსორციუმს ევროკავშირის ან ასოცირებული ქვეყნის უფლებამოსილ კოორდინატორთან და იმავე უფლებამოსილი არაასოცირებული რეგიონის პარტნიორებთან; შემდეგ მიჰყევით ოფიციალური რეგიონული კონკურსის პირობებს."
+      }
+    },
+    {
+      "slug": "youth-mobility",
+      "keyAction": "KA1",
+      "sectors": [
+        "youth"
+      ],
+      "audience": [
+        "organisations"
+      ],
+      "programmeYear": 2026,
+      "comment": "Programme Guide 2026, Version 1 (12/11/2025), checked 2026-10-26. https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/programme-guide-2026_en.pdf . Part A p.34, Region 2 and footnote 46 (Georgia and the exclusion of Georgian authorities); Part B pp.152, 156-158, 165, 170-171, objectives and eligibility/Who can apply criteria. P.156 restricts Youth Exchange applicants to EU/associated countries; p.157 allows neighbouring Regions 1-4 partners and informal groups. P.170 has the same applicant-country restriction for youth-worker mobility and eligible Regions 1-4 partners. Official action page read: https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/youth-exchanges. Youth-worker page also read: https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/youth-workers.",
+      "officialLinks": [
+        {
+          "labelKey": "programmeGuide2026",
+          "url": "https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/programme-guide-2026_en.pdf"
+        },
+        {
+          "labelKey": "officialActionPage",
+          "url": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/youth-exchanges"
+        },
+        {
+          "labelKey": "youthWorkerActionPage",
+          "url": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/youth-workers"
+        }
+      ],
+      "en": {
+        "title": "[DRAFT] Youth mobility",
+        "summary": "[DRAFT] Youth Exchanges and youth-worker learning mobility support international non-formal learning and professional development.",
+        "who": "[DRAFT] Eligible Georgian youth organisations can participate as sending/receiving partners in these actions, not as direct project applicants. Applicants must be established in an EU or Programme-associated country. Youth Exchanges also allow eligible informal groups as partners; the specific activity and participant rules differ from youth-worker mobility.",
+        "how": "[DRAFT] Work with an eligible EU or associated-country applicant, which applies to its National Agency. Check the rules for the chosen Youth Exchange or youth-worker activity."
+      },
+      "ka": {
+        "title": "[DRAFT] ახალგაზრდული მობილობა",
+        "summary": "[DRAFT] ახალგაზრდული გაცვლები და ახალგაზრდულ მუშაკთა მობილობა ხელს უწყობს საერთაშორისო არაფორმალურ სწავლასა და პროფესიულ განვითარებას.",
+        "who": "[DRAFT] საქართველოს უფლებამოსილ ახალგაზრდულ ორგანიზაციებს შეუძლიათ მონაწილეობა გამგზავნ ან მიმღებ პარტნიორებად და არა პროექტის პირდაპირ განმცხადებლებად. განმცხადებელი უნდა იყოს ევროკავშირის ან პროგრამასთან ასოცირებულ ქვეყანაში. ახალგაზრდულ გაცვლებში პარტნიორებად უფლებამოსილი არაფორმალური ჯგუფებიც დაიშვებიან; აქტივობისა და მონაწილეთა წესები განსხვავდება ახალგაზრდულ მუშაკთა მობილობისგან.",
+        "how": "[DRAFT] იმუშავეთ ევროკავშირის ან ასოცირებული ქვეყნის უფლებამოსილ განმცხადებელთან, რომელიც თავის ეროვნულ სააგენტოს მიმართავს. გადაამოწმეთ შერჩეული ახალგაზრდული გაცვლის ან ახალგაზრდულ მუშაკთა აქტივობის პირობები."
+      }
+    }
+  ],
+  "eligibility": {
+    "programmeYear": 2026,
+    "comment": "Programme Guide 2026 v1 (12/11/2025), p.34 Region 2 and footnote 46; checked 2026-10-26; https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/programme-guide-2026_en.pdf#page=34",
+    "en": "[DRAFT] The 2026 Guide excludes Georgian authorities (central government, local authorities, agencies and state-owned enterprises) from all actions under this Guide. The organisation roles below apply only to entities that are not covered by that exclusion and that meet the action-specific conditions. Check the entity’s legal status before relying on these roles.",
+    "ka": "[DRAFT] 2026 წლის გზამკვლევი საქართველოს ხელისუფლების ორგანოებს (ცენტრალურ მთავრობას, ადგილობრივ ხელისუფლებას, სააგენტოებსა და სახელმწიფო საწარმოებს) ამ გზამკვლევის ყველა ქმედებიდან გამორიცხავს. ქვემოთ აღწერილი როლები ეხება მხოლოდ ორგანიზაციებს, რომლებიც ამ გამორიცხვას არ ექვემდებარებიან და შესაბამისი ქმედების პირობებს აკმაყოფილებენ. ამ როლებზე დაყრდნობამდე გადაამოწმეთ ორგანიზაციის სამართლებრივი სტატუსი."
+  }
+}

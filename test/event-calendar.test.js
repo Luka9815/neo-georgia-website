@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import { readFileSync, existsSync } from 'node:fs';
 import { load } from 'cheerio';
 import { calendarMonths, eventIcs } from '../lib/event-calendar.js';
 import { loadContent, eventStatus } from '../lib/content.js';
@@ -88,5 +88,27 @@ test('generated bilingual calendar has semantic weekdays, month anchors, list fa
     }
     const feed = readFileSync(`_site/${lang}/events/upcoming.ics`, 'utf8');
     for (const item of events) assert.equal(feed.includes(`UID:neo-georgia-event-${item.slug}\r\n`), eventStatus(item) === 'upcoming');
+  }
+});
+
+
+test('production Event empty states and feeds reflect the actual catalogue in both languages', () => {
+  const events = loadContent().event;
+  for (const lang of ['ka', 'en']) {
+    const strings = JSON.parse(readFileSync(`src/_data/${lang}.json`));
+    for (const path of ['events', 'events/calendar']) {
+      const $ = load(readFileSync(`_site/${lang}/${path}/index.html`, 'utf8'));
+      assert.equal($('[data-events-empty]').length, events.length ? 0 : 1);
+      if (!events.length) assert.equal($('[data-events-empty]').text(), strings.eventsEmpty);
+    }
+    const feed = readFileSync(`_site/${lang}/events/upcoming.ics`, 'utf8');
+    if (!events.length) {
+      assert.equal(feed, eventIcs([], lang, base, now));
+      assert.doesNotMatch(feed, /BEGIN:VEVENT/);
+    }
+    for (const slug of ['information-day', 'webinar', 'past-session'].filter(slug => !events.some(event => event.slug === slug))) {
+      assert.ok(!existsSync(`_site/${lang}/events/${slug}/index.html`));
+      assert.ok(!existsSync(`_site/${lang}/events/${slug}/event.ics`));
+    }
   }
 });

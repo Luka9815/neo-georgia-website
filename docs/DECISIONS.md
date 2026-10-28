@@ -357,3 +357,63 @@ The supplied snapshot contains zero KA107 projects and no 2014–2020 KA1 higher
 
 ## 2026-10-28: Verified project refresh request (Luka)
 Supersedes the missing-capture/request-template implementation note in Manual source refresh only. Use Luka's verified POST to https://ec.europa.eu/programmes/service/search/project/search with Content-Type application/json and Origin https://erasmus-plus.ec.europa.eu. The exact body is recorded in migration/source/README.md: from=F, index=eplus2021, keyword/sort empty, matchAllCountries=false, project.projectCallYear as string Y, coordinator/partner empty objects, organisation GE/coordinator_or_partner, size=100 and withAggregations=false. Read total and projectDocuments; page F=0/100/200 until F>=total or an empty page, with 0.5-second spacing. Fetch 2014 through the current Tbilisi calendar year and fail the whole run if any retrieved year count differs from its total. Keep raw/candidate review, duplicate/schema guards and CI refusal. Do not run a live fetch in this review session.
+
+
+## 2026-10-28: Session 20, release candidate and Action review (Luka)
+Supersedes the earlier requirement to keep public [DRAFT] markers. Preserve the settled design and source-checked Action wording; remove public [DRAFT]/[SAMPLE] markers for the release candidate, keep review status in ACTION-REVIEW.md and keep siteLaunched=false/noindex. Use only [TBC] for facts NEO must supply, within final bilingual copy. Do not invent facts. Move sample-dependent coverage into isolated fixtures before removal. Nino reviews the whole candidate before a separate launch change.
+
+
+## 2026-10-28: Session 20, verified 2026 Calls (Luka)
+Replace the four illustrative calls with eleven real records covering all nine Actions, both Erasmus Mundus lots and both youth mobility rounds. Deadlines are checked against the official 2026 Guide sections on 2026-10-28 and use Europe/Brussels, including DST for October. Distinguish institutional calls from student applications. Keep currentCallYear=2026 and the requested expectation note for 2027. Opening times are optional when not verified; do not invent them merely to populate a field. Existing supplied opening-time fixtures retain boundary coverage.
+
+
+## 2026-10-28: Session 20, empty Events and fixture coverage (Luka)
+Remove the three illustrative Events only after preserving them and dependent resource/story/call content in isolated fixtures. Keep the current-month accessible calendar and a valid empty static ICS feed. Both list and calendar show the requested bilingual empty state. Preserve non-empty Event detail, relationship, per-Event ICS, CMS and keyboard/download coverage in isolated builds.
+
+
+## 2026-10-28: Session 20, conditional Stories (Luka)
+Remove the sample story after preserving relationship/mixed-home coverage in fixtures. Generate a language’s Stories index only when that language has a story; hide empty home/Action story sections and Resources navigation automatically, and omit absent routes from sitemap/search. Restore these surfaces when a first story is added. A missing-language story switch falls back to Resources if that language has no Stories index.
+
+
+## 2026-10-28: Session 20, source-linked bilingual FAQ (Luka)
+Replace the three samples with twelve bilingual FAQs in the existing Applications and Mobility groups. Base answers on the 2026 Guide and Commission student/application guidance, link each answer to an official source and record the check date. Keep Georgian authority restrictions and applicant/partner distinctions explicit; distinguish institutional deadlines from individual selection and explain that NEO does not select or fund projects.
+
+
+## 2026-10-28: Session 20, official linked Resources (Luka)
+Replace sample Resources with the official 2026 English Guide, EACEA how-to-apply, Funding & Tenders and Project Results Platform links. State English-only availability of the linked Guide in both languages. Expose the explicitly requested local partner-tools and statistics pages as section navigation, alongside the external resources, rather than hosting document copies or labelling local guidance as an official EU publication.
+
+
+## 2026-10-28: Session 20, verified external Publications (Luka)
+Replace sample publication records/files with two verified official publications: the Erasmus+ annual report 2024 (published 2025) and ICM handbook version 6.1 (October 2024, scoped to the 2024/2025 calls). Link externally and show publication year, language and publisher. Since fewer than three items are published, show the bilingual NEO archive-since-2014 note. Keep the handbook’s historical scope explicit and direct current eligibility to the 2026 Guide. A Georgia country factsheet was not verified and is not invented.
+
+
+## 2026-10-28: Session 20, role-based NEO team (Luka)
+Replace sample-team with Coordinator, Programme Officer and Communications Officer role cards. Names and role emails remain [TBC], shared facts rather than invented people. Render each name and role email explicitly and show one shared NEO contact line. Preserve the national transliteration check for future named profiles; role titles are translated rather than treated as people’s names.
+
+
+## 2026-10-28: Session 20, HERE explanation and pending membership (Luka)
+Replace the fictional HERE profile with a bilingual explanation, the official Commission/EACEA-supported SPHERE network page and the 2026 Guide’s HERE section. Keep the Georgian 2026–2027 membership list [TBC]. No standalone EACEA HERE landing URL could be verified; use the verified official Erasmus Networks destination rather than inventing a link or list.
+
+
+## 2026-10-28: Session 20, final About page (Luka)
+Publish final bilingual information on the EACEA-supported NEO’s information, guidance, applicant/beneficiary support, HERE coordination, monitoring and dissemination role. State that ERIDA hosts the office from January 2027, as supplied by Luka. Link the official Guide implementation and Commission management pages. Explain clearly that NEO does not evaluate, select or fund projects.
+
+
+## 2026-10-28: Session 20, final contact layout and hidden social links (Luka)
+Publish labelled Address, Phone, Email and Monday–Friday 10:00–18:00 office-hours fields, with [TBC] for unconfirmed NEO facts in both languages. Hide the social block entirely while no real URLs are supplied; keep an empty shared socialLinks list for future approved links. Add no dead icons, maps or forms.
+
+
+## 2026-10-28: Session 20, static-site privacy notice (Luka)
+Publish a dated bilingual privacy notice for the actual static site: no site cookies, analytics, tracking or submission forms; browser-only search; GitHub Pages security logs/IP processing with official policy links; external-site policies and static ICS downloads; proportionate email enquiry handling and rights contact. ERIDA is the controller, with legal code, registered address and rights contact [TBC]. Do not invent a retention period or claim that GitHub keeps no logs.
+
+
+## 2026-10-28: Session 20, dated accessibility statement (Luka)
+Publish a dated bilingual WCAG 2.1 AA target and an accurate account of automated axe, keyboard/focus, language switching, 320 px and no-JavaScript checks. State known limits for third-party PDFs/sites, untranslated source project names/titles, scrollable tables and JavaScript search. Keep the reporting contact [TBC]. Do not claim a complete WCAG audit or completed assistive-technology review.
+
+
+## 2026-10-28: Session 20, final interface text and TBC inventory (Luka)
+Replace all remaining sample interface copy with final British English and Georgian text. Keep the exact requested small January 2027 preview notice and noindex/siteLaunched=false. Remove obsolete sample/contact/social and illustrative-figure keys. Use meaningful empty states for home Calls/Events. Inventory every authored [TBC] occurrence by file, field and occurrence in a generated review document; the test must pass while placeholders remain. No invented NEO facts or public sample/draft markers are allowed.
+
+
+## 2026-10-28: Session 20, release validation and final review (Luka)
+Keep the settled design and seven main destinations. Validate clean root and project-prefix builds, full tests, complete browser checks and 48 bilingual 360/1280 px captures. Archive the old handover and replace the Launch checklist with four stages: Nino’s final whole-site review, confirmed TBC values, the signed grant agreement check and a separate launch change. Retain unconfirmed hosted/manual checks within those stages, without claiming they passed. Align AGENTS with the new public-marker rule, keep CLAUDE as its pointer, record all source/check-date and verification-limit evidence, push a review PR and do not merge.

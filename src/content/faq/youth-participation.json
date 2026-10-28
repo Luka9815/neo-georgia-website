@@ -1,0 +1,18 @@
+{
+  "slug": "youth-participation",
+  "topic": "applications",
+  "actions": [
+    "cb-youth",
+    "youth-mobility"
+  ],
+  "sourceUrl": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-youth",
+  "sourceChecked": "2026-10-28",
+  "en": {
+    "title": "How can Georgian youth organisations participate?",
+    "body": "Eligible Georgian youth NGOs may coordinate Capacity Building in Youth. In Youth Exchanges and youth-worker mobility, Georgian organisations participate as eligible partners and an EU or associated-country organisation applies. These are separate Actions with different consortium and participation conditions."
+  },
+  "ka": {
+    "title": "როგორ შეუძლიათ ქართულ ახალგაზრდულ ორგანიზაციებს მონაწილეობა?",
+    "body": "საქართველოს უფლებამოსილ ახალგაზრდულ არასამთავრობო ორგანიზაციებს შეუძლიათ ახალგაზრდობის სფეროში შესაძლებლობების განვითარების კოორდინირება. ახალგაზრდულ გაცვლებსა და ახალგაზრდულ მუშაკთა მობილობაში ქართული ორგანიზაციები ერთვებიან უფლებამოსილ პარტნიორებად, ხოლო განაცხადს წარადგენს ევროკავშირის ან ასოცირებული ქვეყნის ორგანიზაცია. ამ ქმედებებს განსხვავებული პირობები აქვს."
+  }
+}

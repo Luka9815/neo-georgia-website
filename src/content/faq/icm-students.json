@@ -1,0 +1,17 @@
+{
+  "slug": "icm-students",
+  "topic": "mobility",
+  "actions": [
+    "icm"
+  ],
+  "sourceUrl": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/higher-education-mobility-projects",
+  "sourceChecked": "2026-10-28",
+  "en": {
+    "title": "How do I apply for an ICM student exchange?",
+    "body": "Contact the international relations office at your own university. It publishes the exchanges available through its agreements, selection criteria and local deadlines. Students do not submit the institutional Erasmus+ grant application to the Commission or the NEO."
+  },
+  "ka": {
+    "title": "როგორ შევიტანო განაცხადი ICM სტუდენტურ გაცვლაზე?",
+    "body": "მიმართეთ საკუთარი უნივერსიტეტის საერთაშორისო ურთიერთობების სამსახურს. ის აქვეყნებს შეთანხმებებით გათვალისწინებულ გაცვლებს, შერჩევის კრიტერიუმებსა და ადგილობრივ ვადებს. სტუდენტი ინსტიტუციურ Erasmus+ საგრანტო განაცხადს არ წარუდგენს ევროკომისიას ან ეროვნულ ოფისს."
+  }
+}

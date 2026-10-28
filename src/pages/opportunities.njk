@@ -12,7 +12,10 @@ eleventyExcludeFromCollections: true
 <p><a href="/{{ view.lang }}/opportunities/find-partners/">{{ t.findPartners }}</a></p>
 <section id="individuals">
   <h2>{{ t.individuals }}</h2>
-  <p>{{ t.sample }}</p>
+  <p>{{ t.individualsIntro }}</p>
+  <ul>
+    {% for slug in ['icm', 'erasmus-mundus', 'youth-mobility'] %}<li><a href="/{{ view.lang }}/opportunities/{{ slug }}/">{{ t.projectActionLabels[slug] }}</a></li>{% endfor %}
+  </ul>
 </section>
 <section id="organisations">
   <h2>{{ t.organisations }}</h2>

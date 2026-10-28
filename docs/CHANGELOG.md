@@ -320,3 +320,94 @@ Newest at the top. One entry per working session: date, who (agent or person), w
 - Both complete browser commands pass all 105 non-redirect pages per layout with zero axe violations, including keyboard/language/no-JavaScript controls, calendar/ICS, projects and search. This supersedes the initial root timing failure and focused rerun.
 - Refresh the four statistics screenshots at 320/1280 px in both languages. Check that coverage notes remain visible without JavaScript in both layouts, including Action-filtered indexes, with no 320 px page overflow.
 - Update the review report and handover to resolve the previous missing-request gap, retain initial performance observations separately and record post-review output sizes. Keep the same branch and PR, with one commit per review item and no merge. All nine Actions remain unchanged and [DRAFT]; siteLaunched remains false.
+
+
+## 2026-10-28: Session 20, item 1, release candidate and Action review
+
+- Remove only the draft prefixes from nine bilingual Actions and shared Georgia eligibility. Preserve a baseline regression test for all other wording/metadata. Keep Nino’s nine-Action review list in ACTION-REVIEW.md.
+- Preserve all remaining sample content and publication files in test fixtures before later removal; no coverage is deleted.
+
+
+## 2026-10-28: Session 20, item 2, verified 2026 Calls
+
+- Publish eleven bilingual source-linked 2026 call records, all closed as of this review. Replace invented opening/deadline dates with verified deadlines and source-check dates. Display application-route context on call cards.
+- Preserve optional explicit opening-time behaviour and DST boundary tests; omit unverified opening times from real records. Add the bilingual 2027 expectation note.
+
+
+## 2026-10-28: Session 20, item 3, empty Events and fixture coverage
+
+- Move the three public Event records to fixtures and remove obsolete routes on a clean build. Add bilingual empty list/calendar messages and empty-feed checks.
+- Restore sample Events explicitly in CMS/integration fixtures; preserve non-empty relationships, generated ICS files and native calendar keyboard/download checks in isolated builds.
+
+
+## 2026-10-28: Session 20, item 4, conditional Stories
+
+- Remove the illustrative story. Hide empty Stories routes, home/Action listings and section links without changing the seven main destinations.
+- Test the empty production state and first-story fixture state, including navigation, listings and sitemap.
+
+
+## 2026-10-28: Session 20, item 5, source-linked bilingual FAQ
+
+- Publish twelve bilingual FAQs covering Georgia eligibility, HEI roles, ICM students/staff, Erasmus Mundus scholarships, youth, VET, partners, Jean Monnet, deadlines, the authority restriction and NEO’s role.
+- Render official source links and preserve related-Action checks for every FAQ.
+
+
+## 2026-10-28: Session 20, item 6, official linked Resources
+
+- Replace two illustrative Resources with four official external destinations and final bilingual descriptions. Add partner-tools navigation beside the existing statistics link. No document is hosted locally.
+
+
+## 2026-10-28: Session 20, item 7, verified external Publications
+
+- Publish two official external publications with year, publisher and English-language descriptions. Remove the two sample text files from public assets while retaining fixture copies.
+- Extend publication validation/rendering for HTTPS URLs and publisher metadata; retain local-file fixture validation and complete progressive filtering/reset coverage. Show the bilingual archive note.
+
+
+## 2026-10-28: Session 20, item 8, role-based NEO team
+
+- Publish three bilingual role cards with explicit name/role-email [TBC] fields and a single shared contact line. Add no personal details or images.
+
+
+## 2026-10-28: Session 20, item 9, HERE explanation and pending membership
+
+- Remove sample-here and publish source-linked guidance on HERE’s role, with the requested dated membership placeholder. No expert names are invented.
+
+
+## 2026-10-28: Session 20, item 10, final About page
+
+- Replace the sample About page with source-linked bilingual copy and the confirmed future host, preserving team/HERE/contact navigation.
+
+
+## 2026-10-28: Session 20, item 11, final contact layout and hidden social links
+
+- Add the phone field and final bilingual contact labels/hours with [TBC] facts. Hide empty social navigation and retain no-form/no-third-party-asset checks.
+
+
+## 2026-10-28: Session 20, item 12, static-site privacy notice
+
+- Replace the sample privacy page with a dated notice describing actual site behaviour and GitHub hosting. Leave only NEO-supplied legal/contact facts [TBC], and distinguish local search from data-collection forms.
+
+
+## 2026-10-28: Session 20, item 13, dated accessibility statement
+
+- Replace the sample accessibility page with scope, testing method, known limitations and a problem-reporting contact. Final root/project-prefix results are recorded in the release review.
+
+
+## 2026-10-28: Session 20, item 14, final interface text and TBC inventory
+
+- Finish home, preview, individual guidance, footer and empty-state copy in both languages. Hide empty Stories without changing the settled design.
+- Add a passing [TBC] inventory test that writes docs/review/session-20/TBC.md and a production HTML gate against public [SAMPLE]/[DRAFT] markers. Keep noindex and all source datasets unchanged.
+
+
+## 2026-10-28: Session 20, item quality, release validation and final review
+
+- Preserve empty optional pagination, add explicit Call date/zone/reference validation, scope Action-source assertions to their own link list and protect removed Event exports. Keep all sample-dependent relationship, CMS, ICS/DST and keyboard/download coverage in isolated fixtures.
+- Keep copied fixture dates relative to the test year so past/upcoming coverage survives January 2027. Exercise legacy publication downloads and resource/Event relationships privately. Index project links once per year page while retaining every source-row assertion.
+- Align new Georgian Capacity Building labels with the unchanged Action terminology. No stylesheet, dependency, approved EU asset/disclaimer, promoted News body or project snapshot changes are made.
+- Record 27 source destinations checked 2026-10-28, eleven verified deadlines, the 26-occurrence TBC inventory and 48 bilingual screenshots. Update CONTENT, EDITING, SITE-PLAN, AGENTS and the four-stage HANDOVER Launch checklist. Final build/test/browser counts are in review/session-20/report.json.
+
+- Clean root/project-prefix builds and all 150 tests per layout pass. The final suites use one worker after a concurrent custom-domain build process received SIGKILL; its isolated check and full serial rerun pass.
+
+- Make production Event/Story and contact/name checks follow actual content. Retain independent empty/populated fixture coverage without requiring live catalogues to stay empty or NEO facts to remain [TBC].
+
+- Both complete browser commands pass 95 non-redirect pages per layout with zero axe violations, plus native controls, Publications, calendar/ICS, projects and search. The relative-year populated fixture calendar checks pass separately in both layouts.

@@ -11,6 +11,9 @@ eleventyExcludeFromCollections: true
 {% block pageContent %}
 <p><a href="/{{ view.lang }}/events/calendar/">{{ t.eventCalendar }}</a></p>
 <p><a href="/{{ view.lang }}/events/upcoming.ics" download>{{ t.downloadUpcoming }}</a></p>
+{% if not events.length %}
+<p data-events-empty>{{ t.eventsEmpty }}</p>
+{% else %}
 <section>
   <h2>{{ t.upcomingEvents }}</h2>
   {{ cards(events | status('upcoming'), 'event', t, view.lang) }}
@@ -19,4 +22,5 @@ eleventyExcludeFromCollections: true
   <h2>{{ t.pastEvents }}</h2>
   {{ cards(events | status('past'), 'event', t, view.lang) }}
 </section>
+{% endif %}
 {% endblock %}

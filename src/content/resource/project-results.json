@@ -1,0 +1,28 @@
+{
+  "slug": "project-results",
+  "actions": [
+    "cb-sport",
+    "cb-vet",
+    "cb-youth",
+    "cbhe",
+    "erasmus-mundus",
+    "icm",
+    "jean-monnet",
+    "virtual-exchanges",
+    "youth-mobility"
+  ],
+  "source": "official",
+  "type": "website",
+  "language": "en",
+  "year": 2026,
+  "url": "https://erasmus-plus.ec.europa.eu/projects",
+  "sourceChecked": "2026-10-28",
+  "en": {
+    "title": "Erasmus+ Project Results Platform",
+    "body": "Browse funded projects, their participating organisations and published results on the official platform."
+  },
+  "ka": {
+    "title": "Erasmus+ პროექტების შედეგების პლატფორმა",
+    "body": "ოფიციალურ პლატფორმაზე იხილეთ დაფინანსებული პროექტები, მონაწილე ორგანიზაციები და გამოქვეყნებული შედეგები."
+  }
+}

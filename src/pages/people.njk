@@ -8,5 +8,13 @@ eleventyExcludeFromCollections: true
 ---
 {% extends 'page.njk' %}
 {% block pageContent %}
+{% if view.group == 'here' %}
+<p>{{ t.hereIntro }}</p>
+<p><a href="{{ here.sourceUrl }}">{{ t.hereOfficial }}</a></p>
+<p><a href="{{ here.guideUrl }}">{{ t.programmeGuide }}</a></p>
+<p>{{ t.hereList }}</p>
+{% else %}
+<p>{{ t.neoContactLine }}</p>
 {{ cards(catalog.person | localise(view.lang) | personGroup(view.group), 'person', t, view.lang, 'h2') }}
+{% endif %}
 {% endblock %}

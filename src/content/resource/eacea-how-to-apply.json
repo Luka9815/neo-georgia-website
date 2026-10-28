@@ -1,0 +1,28 @@
+{
+  "slug": "eacea-how-to-apply",
+  "actions": [
+    "cb-sport",
+    "cb-vet",
+    "cb-youth",
+    "cbhe",
+    "erasmus-mundus",
+    "icm",
+    "jean-monnet",
+    "virtual-exchanges",
+    "youth-mobility"
+  ],
+  "source": "official",
+  "type": "website",
+  "language": "en",
+  "year": 2026,
+  "url": "https://www.eacea.ec.europa.eu/grants/how-get-grant_en",
+  "sourceChecked": "2026-10-28",
+  "en": {
+    "title": "EACEA: how to get a grant",
+    "body": "Official guidance on finding and applying for EACEA funding opportunities."
+  },
+  "ka": {
+    "title": "EACEA: როგორ მივიღოთ გრანტი",
+    "body": "ოფიციალური მითითებები EACEA-ს დაფინანსების შესაძლებლობების მოძიებისა და განაცხადის წარდგენის შესახებ."
+  }
+}
