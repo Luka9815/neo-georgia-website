@@ -137,9 +137,9 @@
   "address": "Address",
   "officeHours": "Office hours",
   "email": "Email",
-  "contactAddress": "[SAMPLE] Office address awaiting approval.",
-  "contactHours": "[SAMPLE] Office hours awaiting approval.",
-  "contactEmail": "[SAMPLE] office@example.org",
+  "contactAddress": "[TBC]",
+  "contactHours": "Monday to Friday, 10:00 to 18:00 [TBC].",
+  "contactEmail": "[TBC]",
   "search": "Search",
   "searchLabel": "Search this website",
   "searchSubmit": "Search",
@@ -277,5 +277,7 @@
   "neoContactLine": "NEO contact: [TBC].",
   "hereIntro": "Higher Education Reform Experts (HEREs) share expertise to support higher education reform in countries served by National Erasmus+ Offices. Their work includes policy development, dialogue and sharing project results. The European Commission and EACEA support the network through the SPHERE initiative.",
   "hereOfficial": "Official HERE network information: SPHERE",
-  "hereList": "The list of Georgian HEREs for 2026 to 2027: [TBC]."
+  "hereList": "The list of Georgian HEREs for 2026 to 2027: [TBC].",
+  "phone": "Phone",
+  "contactPhone": "[TBC]"
 }

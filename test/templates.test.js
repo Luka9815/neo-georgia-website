@@ -65,11 +65,12 @@ test('people have national transliteration, separate groups and no contact detai
     }
   }
 });
-test('Contact uses translated placeholders with no form, map or third-party asset', () => {
+test('Contact uses final labelled fields with no form, map or third-party asset', () => {
   for (const lang of ['ka', 'en']) {
     const $ = load(read(`_site/${lang}/about/contact/index.html`));
-    assert.equal($('main dd').length, 3);
-    for (const dd of $('main dd')) assert.ok($(dd).text().startsWith('[SAMPLE]'));
+    assert.equal($('main dd').length, 4);
+    for (const dd of $('main dd')) assert.ok($(dd).text().includes('[TBC]'));
+    assert.equal($('footer h3').length, 0);
     assert.equal($('main form, iframe, main script').length, 0);
     for (const el of $('[src]')) assert.ok($(el).attr('src').startsWith(prefix));
     const about = load(read(`_site/${lang}/about/index.html`));

@@ -376,3 +376,8 @@ Newest at the top. One entry per working session: date, who (agent or person), w
 ## 2026-10-28: Session 20, item 10, final About page
 
 - Replace the sample About page with source-linked bilingual copy and the confirmed future host, preserving team/HERE/contact navigation.
+
+
+## 2026-10-28: Session 20, item 11, final contact layout and hidden social links
+
+- Add the phone field and final bilingual contact labels/hours with [TBC] facts. Hide empty social navigation and retain no-form/no-third-party-asset checks.

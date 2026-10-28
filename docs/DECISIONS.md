@@ -397,3 +397,7 @@ Replace the fictional HERE profile with a bilingual explanation, the official Co
 
 ## 2026-10-28: Session 20, final About page (Luka)
 Publish final bilingual information on the EACEA-supported NEO’s information, guidance, applicant/beneficiary support, HERE coordination, monitoring and dissemination role. State that ERIDA hosts the office from January 2027, as supplied by Luka. Link the official Guide implementation and Commission management pages. Explain clearly that NEO does not evaluate, select or fund projects.
+
+
+## 2026-10-28: Session 20, final contact layout and hidden social links (Luka)
+Publish labelled Address, Phone, Email and Monday–Friday 10:00–18:00 office-hours fields, with [TBC] for unconfirmed NEO facts in both languages. Hide the social block entirely while no real URLs are supplied; keep an empty shared socialLinks list for future approved links. Add no dead icons, maps or forms.
