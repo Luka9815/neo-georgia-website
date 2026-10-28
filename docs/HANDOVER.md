@@ -1,8 +1,12 @@
 # Handover
 
-Last updated: 2026-10-28 (Codex, Session 20 release candidate)
+Last updated: 2026-10-29 (Codex, Session 21 in progress)
 
-## Current state
+## Session 21 progress
+
+Started from origin/main 0350527 on codex/session-21-redesign. The design system replaces the Session 20 visual freeze under Luka’s explicit redesign brief. Existing content/data/URLs, EU visibility and all four Launch stages below remain. Design tokens, sticky header, compact language/search and footer are implemented; numbered items and final validation are in progress. No merge or launch is authorised.
+
+## Session 20 baseline
 
 The branch codex/session-20-release-candidate starts from origin/main c2d3b9d. Design is settled; no stylesheet or visual redesign is introduced. Georgian remains primary, English has core-page parity, and the seven main destinations remain unchanged. AGENTS.md is canonical and CLAUDE.md points to it. The public marker rule now follows Luka’s Session 20 brief: no [SAMPLE]/[DRAFT] markers, missing NEO facts use [TBC], and Action review status stays in ACTION-REVIEW.md.
 

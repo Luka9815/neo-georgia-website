@@ -5,9 +5,12 @@ import { renderNewsImages } from './lib/news-images.js';
 import { EleventyHtmlBasePlugin } from '@11ty/eleventy';
 import { getPathPrefix, absoluteUrl } from './lib/urls.js';
 import MarkdownIt from 'markdown-it';
+import {icon, actionIcons} from './lib/icons.js';
 import { localise, related, dateLabel, callYears } from './lib/content.js';
 const markdown = new MarkdownIt({ html: false });
 export default function (config) {
+  config.addFilter('icon', icon);
+  config.addFilter('actionIcon', slug => actionIcons[slug]);
   config.addPlugin(EleventyHtmlBasePlugin);
   let outputRoot = '_site';
   config.on('eleventy.before', ({ directories }) => {

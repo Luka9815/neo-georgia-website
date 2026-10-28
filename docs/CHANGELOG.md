@@ -411,3 +411,7 @@ Newest at the top. One entry per working session: date, who (agent or person), w
 - Make production Event/Story and contact/name checks follow actual content. Retain independent empty/populated fixture coverage without requiring live catalogues to stay empty or NEO facts to remain [TBC].
 
 - Both complete browser commands pass 95 non-redirect pages per layout with zero axe violations, plus native controls, Publications, calendar/ICS, projects and search. The relative-year populated fixture calendar checks pass separately in both layouts.
+
+
+## 2026-10-29: Session 21, design system
+Introduced portal colour/spacing/type tokens, slimmer sticky header, labelled search icon, compact language control and dark three-column footer. Preserved seven links, native mobile menu, exact EU artwork/disclaimers and preview protections. Evaluated and declined FiraGO within the font budget.

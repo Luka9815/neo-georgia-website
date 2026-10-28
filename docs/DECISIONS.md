@@ -417,3 +417,7 @@ Replace all remaining sample interface copy with final British English and Georg
 
 ## 2026-10-28: Session 20, release validation and final review (Luka)
 Keep the settled design and seven main destinations. Validate clean root and project-prefix builds, full tests, complete browser checks and 48 bilingual 360/1280 px captures. Archive the old handover and replace the Launch checklist with four stages: Nino’s final whole-site review, confirmed TBC values, the signed grant agreement check and a separate launch change. Retain unconfirmed hosted/manual checks within those stages, without claiming they passed. Align AGENTS with the new public-marker rule, keep CLAUDE as its pointer, record all source/check-date and verification-limit evidence, push a review PR and do not merge.
+
+
+## 2026-10-29: Session 21, portal design system (Luka)
+Luka's redesign brief supersedes the Session 20 settled-design rule. Keep existing content, data, URLs, seven destinations, EU visibility and siteLaunched=false. Use plain CSS with blue/teal/warm tokens, eight-pixel spacing, a 75rem container, sticky native navigation, dark three-column footer and locally licensed Lucide icons. Retain Noto: the evaluated 60,068-byte FiraGO heading subset would raise total fonts to 159,252 bytes above the 140 KB budget. See DESIGN.md.

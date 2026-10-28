@@ -44,3 +44,12 @@ No text is clipped to force identical card heights. Full-width mobile buttons, w
 ## Session 6 refinements
 
 Below 600 px, hide the supplementary next-step panel so the primary purpose and audience paths take less vertical space. The same opportunities destination remains available in the hero buttons and menu. At 600 px and above the panel remains visible. Filled green #14532d with white text makes open calls the strongest status signal (9.11:1 contrast); other statuses keep their muted/pale treatments and all retain words. This adds a semantic status colour, not a second decorative brand accent. Card section labels are explicit only in the mixed home context; section listings and Action subsections keep status/source labels without redundant section names.
+
+
+## Session 21 portal redesign, 29 October 2026
+
+Luka's Session 21 brief supersedes the settled-design rule and earlier home block order. Retain all existing source content, data and URLs, seven main destinations and preview/noindex safeguards. Use deep blue #003399 and #05264f, teal #006b70 on #e9f5f3, warm deadline accent #854600 on #fff1d2 and existing neutrals. CSS custom properties define a 75rem content width and an eight-pixel spacing scale. All approved text/surface pairs, including teal, are tested at 4.5:1 minimum. Cards have equal-height grid tracks, visible borders, icon/image slots and hover/focus-within states, without clipping Georgian text.
+
+Keep Noto Sans Georgian and Noto Sans for body and headings. Re-evaluated FiraGO 1.001 Bold from the upstream Fonts/FiraGO_TTF_1001/Roman/FiraGO-Bold.ttf on 2026-10-29: a combined Georgian/Latin WOFF2 subset with shaping features is 60,068 bytes. Added to the existing 99,184 bytes this is 159,252 bytes, exceeding the 140,000-byte total budget. Do not adopt it or download it at runtime. Larger, tighter Noto heading scales improve hierarchy within budget. No Georgian case transformation. Human Georgian proofreading remains part of Nino's review.
+
+The slim sticky header has a blue colour bar, labelled search icon, compact ქა | EN control and native mobile details navigation. The footer has office, quick-link and legal columns on dark blue. Approved EU emblem originals, whole-image white-box derivatives and exact disclaimers are unchanged. Decorative Lucide SVG shapes are inline, with local originals and their ISC/Feather MIT notices in src/assets/icons. No icon font, third-party requests, trackers or programme logo. Reduced motion and forced-colour styles preserve native controls and focus.
