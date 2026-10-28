@@ -277,7 +277,7 @@ The 2026 and later call years are incomplete, and ongoing/source records may cha
 
 Index overview/statistics pages only. Including the year tables grows combined Pagefind assets from 1,315,137 to 3,235,348 bytes; exclusion yields 1,324,245 bytes while preserving the linked static tables and sitemap. The largest initial year page is about 579 KB, below the 1 MB split threshold. Final clean-build time/output measurements and validation appear in the Session 19 review report.
 
-Refreshes are manual and separate from builds, tests and CI. Keep raw responses in the ignored source snapshot directory and review changes, new labels, source terms and coverage before publishing a replacement. Do not fetch data in daily site rebuilds. scripts/fetch-projects.js implements guarded serial pagination, same-schema slim candidates and difference reports with synthetic offline tests. It requires the confirmed POST request/Origin and raw response paths; the supplied README omits those details, so live reproduction remains pending.
+Refreshes are manual and separate from builds, tests and CI. Keep raw responses in the ignored source snapshot directory and review changes, new labels, source terms and coverage before publishing a replacement. Do not fetch data in daily site rebuilds. scripts/fetch-projects.js implements guarded serial pagination, same-schema slim candidates and difference reports with synthetic offline tests. The PR #19 review supplies the verified POST/Origin and total/projectDocuments response envelope, so no request template is needed. Refresh covers 2014 through the current Tbilisi year, with per-year count equality required. No live fetch was run in the review, as instructed.
 
 ### Reuse and source limits
 

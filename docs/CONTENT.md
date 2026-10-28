@@ -213,27 +213,22 @@ Every catalogue/statistics page identifies the source, beneficiary submissions, 
 
 Per-year tables remain outside Pagefind after size measurement; projects overview/statistics pages are indexed. All pages and year/Action navigation work without JavaScript. Native fragment links progressively filter Action/sector groups with CSS :has/:target; All projects resets the view. Older CSS engines still show the complete grouped list and honour anchors. CMS, image and redirect isolated build tests use a small synthetic project snapshot, not live fetches or a copy of the full source.
 
-### Manual refresh command and missing production capture
+### Manual refresh, verified request (PR #19 review)
 
-The manual Node 24 command is:
+Luka supplied the exact request on 2026-10-28; migration/source/README.md records its endpoint, headers, body and response envelope. Use Node 24 from the repository root, outside CI:
 
 ```
-NODE_USE_ENV_PROXY=1 node scripts/fetch-projects.js --request /path/to/captured-request.json
+NODE_USE_ENV_PROXY=1 node scripts/fetch-projects.js
 ```
 
-Run it from the repository root, outside CI. NODE_USE_ENV_PROXY makes Node 24 honour an inherited environment proxy when one exists; preserve configured CA trust. The script is not referenced by build/start/test scripts or the deployment workflow. Importing its functions for synthetic tests never starts the CLI. No live fetch was performed for Session 19.
+No request template is needed. NODE_USE_ENV_PROXY makes Node 24 honour an inherited proxy; preserve CA trust. The command is not referenced by build/start/test scripts or the workflow, and importing its functions does not start the CLI. No live fetch was run in this review, as instructed.
 
-The initial source README gives the endpoint and logical filters, but omits the exact POST body, Origin header, pagination fields and response shape. Therefore no production request template is invented or supplied. The command refuses to send a request without a confirmed captured configuration. **Live reproduction remains pending that capture and validation.** The configuration contract is:
+The POST body uses from offsets 0/100/200, size 100, a string project.projectCallYear, index eplus2021, GE coordinator_or_partner organisation scope, empty keyword/sort/coordinator/partner, matchAllCountries=false and withAggregations=false. Response records are projectDocuments and total is an integer. Fetch each call year from 2014 through the current Tbilisi calendar year, with 500 ms between requests. Stop a year at from >= total or an empty page; require retrieved count == total for every year or abort the complete run. Short pages never change the 100-record offset increment. Totals changing mid-pagination, duplicate references, invalid data and unexpected/ambiguous organisation arrays also abort.
 
-- `confirmed: true` and a non-empty `evidence` note identifying the capture/reviewer/date.
-- `origin`: the exact captured HTTPS Origin, and `scope`: index eplus2021, organisationCountry GE, organisationRole coordinator_or_partner.
-- `body`: the exact POST object with only call year/pagination values parameterised. `{{year}}`, `{{size}}`, `{{offset}}` and `{{page}}` become numbers when they occupy a whole JSON value; `{{yearText}}` stays text. Markers embedded in query strings stay strings. Size is always 100; confirm `pageBase` as 0 or 1 if the captured body uses page numbers.
-- `itemsPath`, `totalPath`, `projectPath`, `organisationsPath`: arrays of captured JSON property names identifying the response items, integer total, project inside an item, and full organisation array inside that project. Empty paths select the current object. Do not infer these names from the slim snapshot.
+The full organisation array is recognised by the organisationName/organisationCountry/organisationRole schema and must be unambiguous; no response property name is invented. Snapshot validation runs before a candidate is written. Tests inject small projectDocuments responses and a fake fetch while global live fetch throws. They check the exact verified body and headers, dynamic year range, offsets/spacing, empty/short pages, per-year completeness, schema errors, slimming and differences.
 
-The committed `test/fixtures/project-search-request.json` is explicitly synthetic, not a platform capture. The live CLI refuses it. Tests inject small response fixtures and a fake fetch, while global network access throws.
+Raw pages go to the already ignored migration/source/erasmus-projects-georgia-<Tbilisi-run-day>/ directory. Success writes snapshot.json and report.json there, with per-year totals and added/removed/changed references against the approved source. Failure records an incomplete report and never publishes a partial candidate. Existing run directories are not overwritten.
 
-With a confirmed configuration, the script sends serial POST requests to the README endpoint per call year, 2014–2026, at size 100 with 500 ms between requests. It checks reported totals, short/duplicate pages, stable totals and returned call years, and validates the complete regenerated snapshot. Raw pages go to the already ignored `migration/source/erasmus-projects-georgia-<Tbilisi-run-day>/`. Success writes `snapshot.json` and `report.json` there, with per-year totals and added/removed/changed references against the approved source. Failure records an incomplete report and never publishes a partial snapshot. Existing run directories are not overwritten.
+The candidate keeps the supplied slim audit schema, including its source grant field, but drops long descriptions/results/contacts and retains only coordinator/GE organisations plus aggregate count/countries. The separate public projection discards the audit grant field; it is never shown or summed. No approved source or public content is replaced automatically.
 
-The candidate retains the supplied slim audit schema, including its source grant field, but drops long descriptions/results/contacts and all organisations except coordinator/GE entries plus aggregate count/countries. That audit field is never used in public statistics or passed to templates. No amount is summed. Publication uses the separate stricter public projection in lib/projects.js.
-
-Review the candidate/differences, updated source terms, new Action labels and the institution-versus-mobility-country counts before promoting it in a separate PR. The command never replaces the approved source or edits public content. When choosing a new dated source filename, update PROJECT_SOURCE, the source watch target and the corresponding fixture-copy/test source references. Refresh the source regression totals and mapping review table deliberately, then rebuild/test/check both layouts. Daily builds only reread the approved local snapshot.
+Review candidate differences, updated source terms, new labels and institution-versus-mobility-country counts before a separate promotion PR. If choosing a new dated source filename, update PROJECT_SOURCE, the source watch target and fixture-copy/test references. Refresh the source regression totals and mapping review deliberately, then rebuild/test/check both layouts. Daily builds reread the approved local snapshot only.

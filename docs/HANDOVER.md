@@ -95,7 +95,7 @@ After these fixes, clean root and project-prefix builds pass and all 111 tests p
 
 Three separate review commits cover the UID correction, browser-verification record and validation results. Push to the same codex/session-18-features branch and keep PR #18 open for review. All nine Actions remain [DRAFT] and unchanged; the remaining Launch checklist and siteLaunched=false still apply.
 
-## Session 19 validation, measurements and remaining capture
+## Session 19 validation and review fixes
 
 Clean root and project-prefix builds pass. Both full suites pass all 132 tests, including source/per-year facts, the strict public projection, complete exact-label mapping, institution-versus-mobility-country counts, complete static rows/original titles, page-size limits, attribution, homepage figures and seven offline manual-refresh checks. CMS/image/redirect isolated sites use small synthetic project snapshots.
 
@@ -103,11 +103,11 @@ Axe scans cover 105 non-redirect pages per layout, both languages, with zero vio
 
 There are 111 HTML files per layout (30 added), not thousands of project detail pages. Root output grows from 2,900,139 to 11,856,455 bytes; Pagefind from 1,315,137 to 1,324,245 bytes after excluding year tables. The largest year page is 579,207 bytes. Root single-run build time is 6.361 s before and 13.027 s after; final runs overlapped other validation and are not controlled benchmarks. Detailed counts, prefix sizes, mapping and representative captures are in review/session-19.
 
-The supplied README omits the exact POST body, Origin, pagination fields and raw response paths. scripts/fetch-projects.js therefore requires a confirmed captured request configuration; no production template is invented, no live refresh was run and live reproduction remains unverified. It writes only ignored raw pages/candidates/reports and never replaces the approved source. Obtain and validate the capture before marking that part complete. Keep the PR in draft while this gap remains.
+Luka supplied the verified refresh request on 2026-10-28. The command now uses it directly, reads total/projectDocuments, pages with from offsets 0/100/200 at size 100 with 0.5-second spacing, and covers 2014 through the current Tbilisi year. It fails the whole run on any per-year count mismatch. No request-template file is required; the previous missing-capture gap is resolved. No live fetch was run in this review, as instructed. The command still writes ignored raw/candidate/report files and never replaces the approved source automatically. See migration/source/README.md and CONTENT.md.
 
 ## Next task
 
-Review the Session 19 draft PR and full Action mapping without automatic merging. Supply the missing production refresh capture and verify it before marking source reproduction complete, then work through the remaining Launch checklist. All nine Actions remain [DRAFT]. Opportunity filters remain dropped; no wider content promotion is authorised.
+Review the Session 19 draft PR and full Action mapping without automatic merging. The verified request is now documented and offline-tested; no live fetch was authorised for this review. Work through the remaining Launch checklist. All nine Actions remain [DRAFT]. Opportunity filters remain dropped; no wider content promotion is authorised.
 
 ## Session 19 homepage figures
 

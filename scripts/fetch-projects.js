@@ -8,42 +8,36 @@ export const ENDPOINT = 'https://ec.europa.eu/programmes/service/search/project/
 const projectFields = ['projectName', 'projectCallYear', 'projectProgrammeYears', 'projectLevel2Label', 'projectLevel3Label', 'projectField', 'projectTitle', 'projectStatus', 'projectStartDate', 'projectEndDate', 'projectGrantedEuAmount', 'projectCoverage', 'projectGoodPractice', 'projectSuccessStory', 'projectWebsite', 'projectTopicsList', 'projectTotalPublishedResults', 'projectModifiedDate'];
 const orgFields = ['organisationName', 'organisationPIC', 'organisationRole', 'organisationCountry', 'organisationCity', 'organisationType', 'organisationWebsite'];
 const pick = (object, fields) => Object.fromEntries(fields.map(key => [key, object[key] ?? null]));
-const at = (object, path) => path.reduce((value, key) => value && Object.hasOwn(value, key) ? value[key] : undefined, object);
 const snapshotDay = () => Temporal.Now.plainDateISO('Asia/Tbilisi').toString();
 
-export function validateRequest(config) {
-  if (config?.confirmed !== true || typeof config.evidence !== 'string' || !config.evidence.trim()) {
-    throw new Error('A confirmed captured request with evidence is required; do not guess the platform protocol.');
-  }
-  try { if (new URL(config.origin).origin !== config.origin || !config.origin.startsWith('https://')) throw new Error(); }
-  catch { throw new Error('The captured HTTPS Origin header is required.'); }
-  if (!config.body || typeof config.body !== 'object' || Array.isArray(config.body)) throw new Error('The exact captured POST body template is required.');
-  for (const key of ['itemsPath', 'totalPath', 'projectPath', 'organisationsPath']) {
-    if (!Array.isArray(config[key]) || config[key].some(part => typeof part !== 'string' || ['__proto__', 'constructor', 'prototype'].includes(part))) {
-      throw new Error(`${key} must be an explicit safe JSON property path from the captured response.`);
-    }
-  }
-  const template = JSON.stringify(config.body);
-  if (config.scope?.index !== 'eplus2021' || config.scope?.organisationCountry !== 'GE' || config.scope?.organisationRole !== 'coordinator_or_partner') throw new Error('Confirm the captured eplus2021 / GE / coordinator_or_partner scope.');
-  for (const value of ['{{size}}']) {
-    if (!template.includes(value)) throw new Error(`Captured request template must retain ${value}`);
-  }
-  if (!template.includes('{{year}}') && !template.includes('{{yearText}}')) throw new Error('Captured call-year template is required.');
-  if (!template.includes('{{offset}}') && !template.includes('{{page}}')) throw new Error('Captured pagination template is required.');
-  if (template.includes('{{page}}') && ![0, 1].includes(config.pageBase)) throw new Error('Specify captured pageBase (0 or 1).');
-  return config;
+export const ORIGIN = 'https://erasmus-plus.ec.europa.eu';
+
+export function callYears(currentYear = Temporal.Now.plainDateISO('Asia/Tbilisi').year) {
+  if (!Number.isInteger(currentYear) || currentYear < 2014) throw new Error('Current call year must be an integer from 2014 onwards.');
+  return Array.from({ length: currentYear - 2014 + 1 }, (_, index) => 2014 + index);
 }
 
-export function requestBody(template, year, offset, pageBase = 0) {
-  if (Array.isArray(template)) return template.map(value => requestBody(value, year, offset, pageBase));
-  if (template && typeof template === 'object') return Object.fromEntries(Object.entries(template).map(([key, value]) => [key, requestBody(value, year, offset, pageBase)]));
-  const values = { '{{year}}': year, '{{yearText}}': String(year), '{{size}}': 100, '{{offset}}': offset, '{{page}}': offset / 100 + pageBase };
-  if (Object.hasOwn(values, template)) return values[template];
-  return typeof template === 'string' ? template.replace(/\{\{(?:year|yearText|size|offset|page)\}\}/g, key => String(values[key])) : template;
+// Exact request supplied and verified by Luka on 2026-10-28.
+export function requestBody(year, from) {
+  return {
+    from, index: 'eplus2021', keyword: '', matchAllCountries: false,
+    project: { projectCallYear: String(year) }, coordinator: {}, partner: {},
+    organisation: { organisationCountry: 'GE', organisationRole: 'coordinator_or_partner' },
+    size: 100, sort: '', withAggregations: false,
+  };
+}
+
+export function sourceOrganisations(project) {
+  // Identify by the organisation record schema, not an invented response property name.
+  const arrays = Object.values(project).filter(value => Array.isArray(value) && value.length && value.every(org =>
+    org && typeof org === 'object' && ['organisationName', 'organisationCountry', 'organisationRole'].every(key => Object.hasOwn(org, key))
+  ));
+  if (arrays.length !== 1) throw new Error(`${project.projectName}: expected one unambiguous full organisation array`);
+  return arrays[0];
 }
 
 export function slimProject(project, organisations) {
-  if (!project || typeof project !== 'object' || !Array.isArray(organisations)) throw new Error('Captured response paths do not identify a project and organisation array.');
+  if (!project || typeof project !== 'object' || !Array.isArray(organisations)) throw new Error('Response must contain a project and full organisation array.');
   const coordinators = organisations.filter(org => org.organisationRole === 'coordinator');
   if (coordinators.length !== 1) throw new Error(`${project.projectName}: expected exactly one coordinator`);
   return {
@@ -56,9 +50,7 @@ export function slimProject(project, organisations) {
   };
 }
 
-export async function collectProjects(config, { fetchImpl = globalThis.fetch, pause = ms => new Promise(done => setTimeout(done, ms)), onPage = async () => {}, years = Array.from({ length: 13 }, (_, index) => 2014 + index), retrieved = snapshotDay() } = {}) {
-  validateRequest(config);
-  if (config.synthetic && fetchImpl === globalThis.fetch) throw new Error('Synthetic request fixtures cannot make live requests.');
+export async function collectProjects({ fetchImpl = globalThis.fetch, pause = ms => new Promise(done => setTimeout(done, ms)), onPage = async () => {}, years = callYears(), retrieved = snapshotDay() } = {}) {
   const projects = [];
   const totals = {};
   const seen = new Set();
@@ -66,33 +58,34 @@ export async function collectProjects(config, { fetchImpl = globalThis.fetch, pa
   for (const year of years) {
     let offset = 0;
     let total;
+    let retrievedCount = 0;
     do {
       if (requests++) await pause(500);
       const response = await fetchImpl(ENDPOINT, {
-        method: 'POST', headers: { 'Content-Type': 'application/json', Origin: config.origin },
-        body: JSON.stringify(requestBody(config.body, year, offset, config.pageBase)),
+        method: 'POST', headers: { 'Content-Type': 'application/json', Origin: ORIGIN },
+        body: JSON.stringify(requestBody(year, offset)),
         signal: AbortSignal.timeout(30000),
       });
       if (!response.ok) throw new Error(`${year} offset ${offset}: HTTP ${response.status}; snapshot is incomplete`);
       const raw = await response.json();
       await onPage(year, offset, raw);
-      const items = at(raw, config.itemsPath);
-      const reportedTotal = at(raw, config.totalPath);
-      if (!Array.isArray(items) || !Number.isInteger(reportedTotal) || reportedTotal < 0) throw new Error(`${year}: captured response paths/total do not match; snapshot is incomplete`);
+      const items = raw.projectDocuments;
+      const reportedTotal = raw.total;
+      if (!Array.isArray(items) || !Number.isInteger(reportedTotal) || reportedTotal < 0) throw new Error(`${year}: expected projectDocuments array and integer total; snapshot is incomplete`);
       if (total !== undefined && total !== reportedTotal) throw new Error(`${year}: total changed during pagination; retry the incomplete snapshot`);
       total = reportedTotal;
-      if (items.length > 100 || (items.length < 100 && offset + items.length < total)) throw new Error(`${year}: short or oversized page before the reported total; snapshot is incomplete`);
-      for (const item of items) {
-        const project = at(item, config.projectPath);
-        const slim = slimProject(project, at(project, config.organisationsPath));
+      if (items.length > 100) throw new Error(`${year}: oversized page; snapshot is incomplete`);
+      if (!items.length) break;
+      for (const project of items) {
+        const slim = slimProject(project, sourceOrganisations(project));
         if (String(slim.projectCallYear) !== String(year)) throw new Error(`${slim.projectName}: response call year does not match request`);
         if (seen.has(slim.projectName)) throw new Error(`${slim.projectName}: duplicate project across pages/years`);
         seen.add(slim.projectName); projects.push(slim);
       }
-      offset += items.length;
-      if (!items.length && offset < total) throw new Error(`${year}: empty page before total; snapshot is incomplete`);
-      if (offset > total) throw new Error(`${year}: received more projects than the reported total`);
+      retrievedCount += items.length;
+      offset += 100;
     } while (offset < total);
+    if (retrievedCount !== total) throw new Error(`${year}: retrieved ${retrievedCount} projects but total is ${total}; snapshot is incomplete`);
     totals[year] = total;
   }
   const snapshot = { meta: {
@@ -123,10 +116,7 @@ export function snapshotDiff(previous, next) {
 export async function main(args = process.argv.slice(2)) {
   if (process.env.CI) throw new Error('Manual refresh only: refuse to run in CI.');
   if (resolve('.') !== fileURLToPath(new URL('../', import.meta.url)).replace(/\/$/, '')) throw new Error('Run the manual refresh from the repository root so raw files remain git-ignored.');
-  const requestIndex = args.indexOf('--request');
-  if (requestIndex < 0 || !args[requestIndex + 1]) throw new Error('Supply --request <captured-request.json>. The supplied README omits the exact POST body, Origin and response paths; no request is guessed or sent.');
-  const config = validateRequest(JSON.parse(await readFile(resolve(args[requestIndex + 1]), 'utf8')));
-  if (config.synthetic) throw new Error('Synthetic request fixtures cannot be used for a live refresh.');
+  if (args.length) throw new Error('Usage: node scripts/fetch-projects.js (no request template is needed).');
   const previous = JSON.parse(await readFile(PROJECT_SOURCE, 'utf8'));
   const retrieved = snapshotDay();
   const output = resolve(`migration/source/erasmus-projects-georgia-${retrieved}`);
@@ -134,7 +124,7 @@ export async function main(args = process.argv.slice(2)) {
   catch (error) { if (error.code !== 'ENOENT') throw error; }
   await mkdir(output, { recursive: true });
   try {
-    const result = await collectProjects(config, { retrieved, onPage: (year, offset, raw) => writeFile(join(output, `${year}-${offset}.json`), JSON.stringify(raw)) });
+    const result = await collectProjects({ retrieved, onPage: (year, offset, raw) => writeFile(join(output, `${year}-${offset}.json`), JSON.stringify(raw)) });
     const diff = snapshotDiff(previous, result.snapshot);
     const report = { complete: true, totals: result.totals, total: result.snapshot.projects.length, diff };
     await writeFile(join(output, 'snapshot.json'), JSON.stringify(result.snapshot, null, 2) + '\n');

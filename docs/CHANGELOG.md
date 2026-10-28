@@ -305,3 +305,10 @@ Newest at the top. One entry per working session: date, who (agent or person), w
 
 - Add a shared visible bilingual note beside the projects index's year/Action lists and the statistics year/Action tables. Explain missing 2014–2020 KA107/institution coverage, KA171 mobility-country entries and the invalidity of higher education mobility comparisons across 2020/2021.
 - Add bilingual placement/text checks and source regression checks for the missing legacy mobility cohort. Preserve the supplied data, all totals and Action wording. Record Luka's coverage decision.
+
+
+## 2026-10-28: PR #19 review, item 2, verified refresh request
+
+- Replace the generic request-template interface with Luka's exact verified POST/Origin/body and total/projectDocuments envelope. Use string call years, from offsets 0/100/200, size 100, 500 ms spacing and years 2014 through the current Tbilisi year. Stop at total/empty and fail the entire run on any per-year count mismatch.
+- Keep ignored raw candidates/reports, schema/duplicate guards, manual-only CI refusal and source protection. Identify the full organisation array by its record schema and fail on ambiguous structures. Remove the obsolete synthetic request-template file.
+- Ten synthetic tests cover exact request/headers, dynamic years, pagination/spacing, short/empty pages, per-year mismatch and existing error/slimming/difference cases. No live request was run, per Luka's instruction. Update source README, CONTENT, SITE-PLAN and HANDOVER; the missing request specification is resolved.
