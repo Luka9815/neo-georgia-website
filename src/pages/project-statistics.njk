@@ -20,6 +20,12 @@ eleventyExcludeFromCollections: true
 </dl>
 {% for kind, heading in [['years', 'projectYears'], ['groups', 'projectGroups'], ['statuses', 'projectStatuses'], ['periods', 'projectPeriods']] %}
 <section><h2>{{ t[heading] }}</h2>
+{% if kind != 'periods' %}
+{% set rows = projectData | chartRows(kind,t) %}
+<div class="chart-scroll" tabindex="0" role="region" aria-label="{{ t[heading] }}">
+{{ rows | projectChart(t[heading],t.chartDescription,view.lang ~ '-' ~ kind) | safe }}
+</div>
+{% endif %}
 {% if kind == 'years' or kind == 'groups' %}{% include 'project-mobility-coverage.njk' %}{% endif %}
 <table class="project-statistics" data-project-statistics="{{ kind }}">
 <caption>{{ t[heading] }}</caption>
@@ -28,6 +34,15 @@ eleventyExcludeFromCollections: true
 <th scope="row">{% if kind == 'years' %}<a href="/{{ view.lang }}/resources/projects/{{ row.key }}/">{{ row.key }}</a>{% elif kind == 'groups' %}{{ t.projectActionLabels[row.action] if row.action else t.projectSectorLabels[row.sector] }}{% elif kind == 'statuses' %}{{ t.projectStatusLabels[row.key] }}{% else %}{{ row.key }}{% endif %}</th><td>{{ row.count }}</td>
 </tr>{% endfor %}</tbody></table></section>
 {% endfor %}
+<section aria-labelledby="top-organisations-title">
+<h2 id="top-organisations-title">{{ t.topOrganisations }}</h2>
+<p>{{ t.organisationChartNote }}</p>
+{% set ranking = projectData | chartRows('organisations',t) %}
+<div class="chart-scroll" tabindex="0" role="region" aria-label="{{ t.topOrganisations }}">{{ ranking | projectChart(t.topOrganisations,t.chartDescription,view.lang ~ '-organisations') | safe }}</div>
+<table class="project-statistics" data-organisation-ranking><caption>{{ t.topOrganisations }}</caption>
+<thead><tr><th scope="col">{{ t.projectOrganisation }}</th><th scope="col">{{ t.projectCount }}</th></tr></thead>
+<tbody>{% for row in ranking %}<tr><th scope="row" lang="en">{{ row.label }}</th><td>{{ row.count }}</td></tr>{% endfor %}</tbody></table>
+</section>
 <p><a href="/{{ view.lang }}/resources/projects/">{{ t.projectsIndex }}</a></p>
 {% include 'project-attribution.njk' %}
 {% endblock %}

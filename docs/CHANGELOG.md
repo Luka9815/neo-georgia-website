@@ -423,3 +423,7 @@ Added five bilingual audience paths and a static finder index, linked from Oppor
 
 ## 2026-10-29: Session 21 item 4, licensed photo pipeline
 Recorded the approved photograph’s source/permission/credit/date/hash and the external-photo search limits. Added responsive portal pictures and a credited About photograph, preserving the approved original.
+
+
+## 2026-10-29: Session 21 item 6, accessible charts
+Added pure build-time SVG charts and a top-15 organisation table, with exact source-derived values, labelled bars, text alternatives, keyboard-scrollable regions and forced-colour support. Existing statistics tables and warnings remain.

@@ -293,5 +293,9 @@
   "individualMundusNext": "Choose a Joint Masters programme and apply to its consortium, including for a scholarship.",
   "individualYouthNext": "Find a sending organisation and an eligible exchange or youth-worker activity.",
   "institutionNext": "Read the Action’s application route and official call, then agree the required partnership.",
-  "individualRouteNote": "The role below concerns the institutional project grant. Students and young people apply through the contacts shown here, not directly for that grant."
+  "individualRouteNote": "The role below concerns the institutional project grant. Students and young people apply through the contacts shown here, not directly for that grant.",
+  "chartDescription": "Each bar is labelled with its value. The following table contains the same figures.",
+  "topOrganisations": "Top 15 Georgian organisations by project count",
+  "organisationChartNote": "Each named source organisation identifier is counted once per project. Names are shown as submitted, without merging aliases. These are project counts, not participant numbers.",
+  "projectOrganisation": "Organisation"
 }

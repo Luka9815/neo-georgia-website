@@ -429,3 +429,7 @@ Add bilingual /find/ and five audience pages using plain links, with matched Act
 
 ## 2026-10-29: Session 21 item 4, approved photography (Luka)
 Reuse the expressly approved NEO dissemination photograph with visible credit and a provenance/hash manifest on Home and About. One accepted image is fewer than five, so use icon/colour panels elsewhere. A CC BY campus candidate could not be downloaded under the network policy; no AV file with individual rights confirmed was accepted. Record the actual search outcome rather than invent licences. Use the existing Eleventy Image library for local AVIF/WebP/JPEG and eager hero/lazy below-fold loading.
+
+
+## 2026-10-29: Session 21 item 6, build-time project charts (Luka)
+Render SVG year, Action/sector, status and top-15 organisation charts from the approved local projection. Keep labelled values and all equivalent HTML tables, with the KA107 coverage warning directly beneath the year chart. Rank by distinct project references per named source ID, preserving the first submitted original name and not merging names. No chart library, client fetch or participant-count inference.

@@ -219,3 +219,12 @@ dd { margin: 0 0 var(--space-2); }
 .portal-photo picture,.portal-image { display: block; width: 100%; height: auto; }
 .portal-photo figcaption { padding: .5rem 0; font-size: .75rem; color: var(--muted); }
 .photo-about { max-width: 50rem; }
+
+.chart-scroll { max-width: 100%; overflow-x: auto; margin-block: 1.5rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--paper); }
+.project-chart { display: block; width: 100%; min-width: 41.25rem; height: auto; }
+.project-chart rect { fill: var(--teal); }
+.project-chart text { fill: var(--ink); font: 14px 'NEO Noto Georgian','NEO Noto Sans',sans-serif; }
+.project-chart .chart-value { font-weight: 700; }
+.mini-chart rect { fill: var(--blue); }
+.mini-chart text { font-size: 12px; }
+@media (forced-colors: active) { .project-chart rect { fill: Highlight; } .project-chart text { fill: CanvasText; } }
