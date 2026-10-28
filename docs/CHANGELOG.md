@@ -245,3 +245,9 @@ Newest at the top. One entry per working session: date, who (agent or person), w
 - Re-run clean root and project-prefix builds after the UID correction. All 111 tests pass in each layout, including the bilingual DST and exact UID checks. Inspect all eight static ICS files per layout: every UID uses neo-georgia-event-<slug> with no @ part. The project-prefix suite runs from an isolated copy of the committed branch.
 - Browser checks pass all 75 non-redirect pages per layout, both languages, with zero axe violations. Checks include 320 px overflow, keyboard/language navigation, no-JavaScript menus/controls, Publications, search, image decoding and calendar keyboard scrolling/ICS downloads. git diff --check passes.
 - Update HANDOVER with the review fixes and results. Keep the same branch and PR, one commit per review item, without merging or changing the launch flag. Action wording, shared eligibility, dependencies and AGENTS/CLAUDE guidance remain unchanged.
+
+
+## 2026-10-28: Session 19, item 1, validated public project metadata
+
+- Start from data/projects-snapshot-2026-10-28 at 3cc2d40, based on merged main 14902c4. Add build-start validation and an explicit public-field allowlist. Keep source funding, descriptions, beneficiary websites and other excluded fields out of template data.
+- Record Luka's distinction between named institutions (605 organisations, 5,079 pairs) and 2,045 mobility-country entries. All 6,764 projects still count; raw 606/7,124 totals remain source regression checks. Resolve source calendar dates in Europe/Brussels and preserve original titles/statuses.

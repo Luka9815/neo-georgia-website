@@ -1,4 +1,5 @@
 import { load } from 'cheerio';
+import { loadProjectSnapshot } from './lib/projects.js';
 import { renderEuImages } from './lib/eu-images.js';
 import { renderNewsImages } from './lib/news-images.js';
 import { EleventyHtmlBasePlugin } from '@11ty/eleventy';
@@ -9,7 +10,11 @@ const markdown = new MarkdownIt({ html: false });
 export default function (config) {
   config.addPlugin(EleventyHtmlBasePlugin);
   let outputRoot = '_site';
-  config.on('eleventy.before', ({ directories }) => { outputRoot = directories.output; });
+  config.on('eleventy.before', ({ directories }) => {
+    loadProjectSnapshot();
+    outputRoot = directories.output;
+  });
+  config.addWatchTarget('migration/source/erasmus-projects-georgia-2026-10-28.json');
   config.addTransform('news-images', async function (content) {
     return (this.page?.outputPath || this.outputPath || '').endsWith('.html')
       ? renderNewsImages(content, outputRoot, getPathPrefix()) : content;

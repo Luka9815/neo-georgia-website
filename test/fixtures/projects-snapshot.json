@@ -1,0 +1,59 @@
+{
+  "meta": {
+    "retrieved": "2026-10-28",
+    "total": 1
+  },
+  "projects": [
+    {
+      "projectName": "TEST-2022-001",
+      "projectCallYear": "2022",
+      "projectProgrammeYears": "PROGRAMME_2014_2020",
+      "projectLevel2Label": "Sport",
+      "projectLevel3Label": "Collaborative Partnerships",
+      "projectField": null,
+      "projectTitle": "Synthetic project",
+      "projectStatus": "finalized",
+      "projectStartDate": "2014-12-31T23:00:00.000+0000",
+      "projectEndDate": "2017-06-29T22:00:00.000+0000",
+      "projectGrantedEuAmount": 987654321,
+      "projectCoverage": "PL|GE|EL|TR|BG|MK",
+      "projectGoodPractice": true,
+      "projectSuccessStory": null,
+      "projectWebsite": "https://beneficiary.example/",
+      "projectTopicsList": [],
+      "projectTotalPublishedResults": 22,
+      "projectModifiedDate": "2025-03-28T21:30:25.259+0000",
+      "cardUrl": "https://erasmus-plus.ec.europa.eu/projects/search/details/TEST-2022-001",
+      "organisationCount": 6,
+      "organisationCountries": [
+        "BG",
+        "EL",
+        "GE",
+        "MK",
+        "PL",
+        "TR"
+      ],
+      "coordinator": {
+        "organisationName": "SPORT REHABILITATION ASSOCIATION START",
+        "organisationPIC": "939613587",
+        "organisationRole": "coordinator",
+        "organisationCountry": "PL",
+        "organisationCity": "POZNAN",
+        "organisationType": "31045415",
+        "organisationWebsite": ""
+      },
+      "georgianOrganisations": [
+        {
+          "organisationName": "COALITION FOR INDEPENDENT LIFE",
+          "organisationPIC": "939155165",
+          "organisationRole": "partner",
+          "organisationCountry": "GE",
+          "organisationCity": "TBILISI",
+          "organisationType": "31045415",
+          "organisationWebsite": "https://organisation.example/"
+        }
+      ],
+      "description": "DO NOT PUBLISH"
+    }
+  ]
+}
