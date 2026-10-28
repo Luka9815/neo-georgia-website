@@ -19,8 +19,9 @@
         {% if item.publisher %}<p>{{ t.publisher }}: {{ item.publisher }}</p>{% endif %}
         {{ item.body | markdown | safe }}
       {% elif type == 'person' %}
-        <{{ heading }}>{{ item.title }}</{{ heading }}>
+        <{{ heading }}>{{ item.title }}{% if item.roleBased %} {{ item.name }}{% endif %}</{{ heading }}>
         <p>{{ item.role }}</p>
+        {% if item.roleBased %}<p>{{ t.nameLabel }}: {{ item.name }}</p><p>{{ t.roleEmail }}: {{ item.roleEmail }}</p>{% endif %}
         {{ item.body | markdown | safe }}
       {% elif type == 'faq' %}
         <{{ heading }}>{{ item.title }}</{{ heading }}>

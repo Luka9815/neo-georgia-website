@@ -1,0 +1,17 @@
+{
+  "slug": "coordinator",
+  "group": "neo",
+  "roleBased": true,
+  "name": "[TBC]",
+  "roleEmail": "[TBC]",
+  "en": {
+    "title": "Coordinator",
+    "role": "Coordinator",
+    "body": "Contact the NEO for information and guidance on Erasmus+."
+  },
+  "ka": {
+    "title": "კოორდინატორი",
+    "role": "კოორდინატორი",
+    "body": "Erasmus+-ის შესახებ ინფორმაციისა და კონსულტაციისთვის მიმართეთ ეროვნულ ოფისს."
+  }
+}

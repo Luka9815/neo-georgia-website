@@ -8,5 +8,6 @@ eleventyExcludeFromCollections: true
 ---
 {% extends 'page.njk' %}
 {% block pageContent %}
+{% if view.group == 'neo' %}<p>{{ t.neoContactLine }}</p>{% endif %}
 {{ cards(catalog.person | localise(view.lang) | personGroup(view.group), 'person', t, view.lang, 'h2') }}
 {% endblock %}

@@ -271,5 +271,8 @@
   "callsNextYear": "The European Commission is expected to publish the 2027 calls in late 2026. This page will be updated when they are available.",
   "eventsEmpty": "No events are scheduled yet. Follow the news for announcements.",
   "publicationArchiveNote": "The NEO publications archive since 2014 will be added.",
-  "publisher": "Publisher"
+  "publisher": "Publisher",
+  "nameLabel": "Name",
+  "roleEmail": "Role email",
+  "neoContactLine": "NEO contact: [TBC]."
 }

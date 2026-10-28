@@ -385,3 +385,7 @@ Replace sample Resources with the official 2026 English Guide, EACEA how-to-appl
 
 ## 2026-10-28: Session 20, verified external Publications (Luka)
 Replace sample publication records/files with two verified official publications: the Erasmus+ annual report 2024 (published 2025) and ICM handbook version 6.1 (October 2024, scoped to the 2024/2025 calls). Link externally and show publication year, language and publisher. Since fewer than three items are published, show the bilingual NEO archive-since-2014 note. Keep the handbook’s historical scope explicit and direct current eligibility to the 2026 Guide. A Georgia country factsheet was not verified and is not invented.
+
+
+## 2026-10-28: Session 20, role-based NEO team (Luka)
+Replace sample-team with Coordinator, Programme Officer and Communications Officer role cards. Names and role emails remain [TBC], shared facts rather than invented people. Render each name and role email explicitly and show one shared NEO contact line. Preserve the national transliteration check for future named profiles; role titles are translated rather than treated as people’s names.

@@ -54,9 +54,10 @@ test('FAQ groups and related Action pages use the same records', () => {
 test('people have national transliteration, separate groups and no contact details or images', () => {
   for (const person of data.person) {
     // Placeholders carry no name; real names must follow the national system.
-    if (!person.ka.title.startsWith('[SAMPLE]'))
+    if (!person.roleBased && !person.ka.title.startsWith('[SAMPLE]'))
       assert.equal(person.en.title.toLowerCase(), romanise(person.ka.title));
     assert.ok(!person.photo && !person.email && !person.phone);
+    if (person.roleBased) { assert.equal(person.name, '[TBC]'); assert.equal(person.roleEmail, '[TBC]'); }
     for (const lang of ['ka', 'en']) for (const [group, route] of [['neo', 'about/team'], ['here', 'here']]) {
       const $ = load(read(`_site/${lang}/${route}/index.html`));
       assert.equal($('main').text().includes(person[lang].title), person.group === group);

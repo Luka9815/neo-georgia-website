@@ -1,0 +1,17 @@
+{
+  "slug": "communications-officer",
+  "group": "neo",
+  "roleBased": true,
+  "name": "[TBC]",
+  "roleEmail": "[TBC]",
+  "en": {
+    "title": "Communications Officer",
+    "role": "Communications Officer",
+    "body": "Contact the NEO for information and guidance on Erasmus+."
+  },
+  "ka": {
+    "title": "კომუნიკაციების ოფიცერი",
+    "role": "კომუნიკაციების ოფიცერი",
+    "body": "Erasmus+-ის შესახებ ინფორმაციისა და კონსულტაციისთვის მიმართეთ ეროვნულ ოფისს."
+  }
+}
