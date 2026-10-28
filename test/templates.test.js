@@ -29,7 +29,9 @@ test('Publications are complete without JavaScript and filter metadata matches r
     assert.equal($('[data-publications] > li:not([hidden])').length, 2);
     for (const item of data.publication) {
       const row = $(`[data-publications] > li[data-year="${item.year}"][data-type="${item.type}"]`);
-      assert.equal(row.find('a').attr('href'), prefix + item.file.slice(1));
+      assert.equal(row.find('a').attr('href'), item.url || prefix + item.file.slice(1));
+      assert.ok(row.text().includes(item.publisher));
+      assert.equal(item.sourceChecked, '2026-10-28');
       assert.ok(row.text().includes(item[lang].title));
     }
     assert.equal($('#publication-year option').length, 3);

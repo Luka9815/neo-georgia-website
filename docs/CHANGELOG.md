@@ -355,3 +355,9 @@ Newest at the top. One entry per working session: date, who (agent or person), w
 ## 2026-10-28: Session 20, item 6, official linked Resources
 
 - Replace two illustrative Resources with four official external destinations and final bilingual descriptions. Add partner-tools navigation beside the existing statistics link. No document is hosted locally.
+
+
+## 2026-10-28: Session 20, item 7, verified external Publications
+
+- Publish two official external publications with year, publisher and English-language descriptions. Remove the two sample text files from public assets while retaining fixture copies.
+- Extend publication validation/rendering for HTTPS URLs and publisher metadata; retain local-file fixture validation and complete progressive filtering/reset coverage. Show the bilingual archive note.

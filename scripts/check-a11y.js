@@ -113,7 +113,7 @@ try {
     await page.goto(url);
     const visible = page.locator('[data-publications] > li:visible');
     assert.equal(await visible.count(), 2);
-    await page.locator('#publication-year').selectOption('2026');
+    await page.locator('#publication-year').selectOption('2025');
     assert.equal(await visible.count(), 1);
     await page.locator('#publication-type').selectOption('brochure');
     assert.equal(await visible.count(), 0);

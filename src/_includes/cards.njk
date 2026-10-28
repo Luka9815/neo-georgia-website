@@ -13,9 +13,10 @@
         <{{ heading }}><a href="{{ item.url }}">{{ item.title }}</a></{{ heading }}>
         {{ item.body | markdown | safe }}
       {% elif type == 'publication' %}
-        <{{ heading }}><a href="{{ item.file }}">{{ item.title }}</a></{{ heading }}>
+        <{{ heading }}><a href="{{ item.url or item.file }}">{{ item.title }}</a></{{ heading }}>
         <p>{{ t.year }}: {{ item.year }} · {{ t.type }}: {{ t.publicationTypes[item.type] }}</p>
         <p>{{ t.publicationLanguage }}: {{ item.language }}</p>
+        {% if item.publisher %}<p>{{ t.publisher }}: {{ item.publisher }}</p>{% endif %}
         {{ item.body | markdown | safe }}
       {% elif type == 'person' %}
         <{{ heading }}>{{ item.title }}</{{ heading }}>

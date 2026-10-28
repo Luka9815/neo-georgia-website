@@ -118,7 +118,8 @@
     "neo-report": "NEO report",
     "here-publication": "HERE publication",
     "brochure": "Brochure",
-    "statistics": "Statistics"
+    "statistics": "Statistics",
+    "report": "Report"
   },
   "publicationLanguage": "Publication language",
   "openPublication": "Open publication",
@@ -268,5 +269,7 @@
   "projectMobilityCoverage": "International credit mobility with Georgia under the 2014–2020 programme (KA107) is not identifiable in the source and is not counted: Georgian partner institutions are not listed for KA107. The snapshot contains no 2014–2020 KA1 higher education mobility projects; 2021–2027 KA171 projects appear through the “Mobilities - Georgia” country entry. Year-on-year comparisons of higher education mobility across 2020/2021 are therefore not meaningful.",
   "projectByAction": "Projects by Action",
   "callsNextYear": "The European Commission is expected to publish the 2027 calls in late 2026. This page will be updated when they are available.",
-  "eventsEmpty": "No events are scheduled yet. Follow the news for announcements."
+  "eventsEmpty": "No events are scheduled yet. Follow the news for announcements.",
+  "publicationArchiveNote": "The NEO publications archive since 2014 will be added.",
+  "publisher": "Publisher"
 }

@@ -9,6 +9,7 @@ eleventyExcludeFromCollections: true
 {% extends 'page.njk' %}
 {% block pageContent %}
 {% set publications = catalog.publication | localise(view.lang) %}
+{% if publications.length < 3 %}<p data-publication-archive-note>{{ t.publicationArchiveNote }}</p>{% endif %}
 <form class="publication-filters" data-publication-filters hidden aria-label="{{ t.filterPublications }}">
   <label for="publication-year">{{ t.year }}
     <select id="publication-year" name="year"><option value="">{{ t.allYears }}</option>

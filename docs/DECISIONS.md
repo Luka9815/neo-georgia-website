@@ -381,3 +381,7 @@ Replace the three samples with twelve bilingual FAQs in the existing Application
 
 ## 2026-10-28: Session 20, official linked Resources (Luka)
 Replace sample Resources with the official 2026 English Guide, EACEA how-to-apply, Funding & Tenders and Project Results Platform links. State English-only availability of the linked Guide in both languages. Expose the explicitly requested local partner-tools and statistics pages as section navigation, alongside the external resources, rather than hosting document copies or labelling local guidance as an official EU publication.
+
+
+## 2026-10-28: Session 20, verified external Publications (Luka)
+Replace sample publication records/files with two verified official publications: the Erasmus+ annual report 2024 (published 2025) and ICM handbook version 6.1 (October 2024, scoped to the 2024/2025 calls). Link externally and show publication year, language and publisher. Since fewer than three items are published, show the bilingual NEO archive-since-2014 note. Keep the handbook’s historical scope explicit and direct current eligibility to the 2026 Guide. A Georgia country factsheet was not verified and is not invented.

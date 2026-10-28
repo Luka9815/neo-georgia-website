@@ -237,3 +237,8 @@ Review candidate differences, updated source terms, new labels and institution-v
 ### Session 20 call dates
 
 Call.deadline remains a required offset-free wall time with timeZone Europe/Brussels. Call.opens is optional: store an exact opening time only when verified. Without opens, status is open through the deadline and closed afterwards; no upcoming opening date is inferred. Real 2026 records carry sourceChecked and link to the exact Guide section; youth records also retain additionalSources for youth-worker mobility. Student application dates are set by their institution or consortium and must not be inferred from institutional grant deadlines.
+
+
+### External Publications
+
+Publication records may use an HTTPS url and required publisher instead of file, never both. The release candidate links to official external publications only; local publication files remain supported for isolated historical fixtures. year is the publication year, which can differ from the reporting year in the title. sourceChecked records link verification. Types include report. The archive note appears while fewer than three items are present.
