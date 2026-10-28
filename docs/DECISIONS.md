@@ -401,3 +401,7 @@ Publish final bilingual information on the EACEA-supported NEO’s information, 
 
 ## 2026-10-28: Session 20, final contact layout and hidden social links (Luka)
 Publish labelled Address, Phone, Email and Monday–Friday 10:00–18:00 office-hours fields, with [TBC] for unconfirmed NEO facts in both languages. Hide the social block entirely while no real URLs are supplied; keep an empty shared socialLinks list for future approved links. Add no dead icons, maps or forms.
+
+
+## 2026-10-28: Session 20, static-site privacy notice (Luka)
+Publish a dated bilingual privacy notice for the actual static site: no site cookies, analytics, tracking or submission forms; browser-only search; GitHub Pages security logs/IP processing with official policy links; external-site policies and static ICS downloads; proportionate email enquiry handling and rights contact. ERIDA is the controller, with legal code, registered address and rights contact [TBC]. Do not invent a retention period or claim that GitHub keeps no logs.

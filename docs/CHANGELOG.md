@@ -381,3 +381,8 @@ Newest at the top. One entry per working session: date, who (agent or person), w
 ## 2026-10-28: Session 20, item 11, final contact layout and hidden social links
 
 - Add the phone field and final bilingual contact labels/hours with [TBC] facts. Hide empty social navigation and retain no-form/no-third-party-asset checks.
+
+
+## 2026-10-28: Session 20, item 12, static-site privacy notice
+
+- Replace the sample privacy page with a dated notice describing actual site behaviour and GitHub hosting. Leave only NEO-supplied legal/contact facts [TBC], and distinguish local search from data-collection forms.
