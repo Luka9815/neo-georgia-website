@@ -437,3 +437,7 @@ Render SVG year, Action/sector, status and top-15 organisation charts from the a
 
 ## 2026-10-29: Session 21 item 1, portal homepage (Luka)
 Replace the former fixed home order with a credited photo introduction, five static audience paths, nine distinct Action icon tiles grouped by primary sector, computed figures and a year mini-chart with equivalent table and coverage note. Retain latest News and conditional Stories. Empty Calls/Events become compact lines rather than empty cards; real future records restore their sections.
+
+
+## 2026-10-29: Session 21 item 2, Action hero and facts (Luka)
+Add each Action’s icon/Key Action hero, a facts sidebar with unchanged full eligibility text, shared short Georgia-role guidance, all current-edition Brussels deadlines/statuses and exact official links. Link a computed mapped-project count to the existing Action/year project index. Counts describe the dated snapshot with its existing limits, not a complete census.

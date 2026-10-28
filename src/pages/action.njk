@@ -7,55 +7,27 @@ permalink: "{{ view.path }}"
 eleventyExcludeFromCollections: true
 ---
 {% extends 'page.njk' %}
-
 {% block pageContent %}
-<p><a href="/{{ view.lang }}/opportunities/find-partners/">{{ t.findPartners }}</a></p>
 {% set item = actions | findSlug(view.slug) %}
-{% if projectData.actionYears[item.slug] %}
-<p><a href="/{{ view.lang }}/resources/projects/#action-{{ item.slug }}">{{ t.projectsIndex }}</a></p>
-{% endif %}
-{{ item.summary | markdown | safe }}
-<section>
-  <h2>{{ t.who }}</h2>
-  <div class="eligibility-note">{{ georgiaEligibility[view.lang] | markdown | safe }}</div>
-  {{ item.who | markdown | safe }}
-</section>
-<section>
-  <h2>{{ t.how }}</h2>
-  {{ item.how | markdown | safe }}
-  <h3>{{ t.officialLinks }}</h3>
-  <ul data-action-official-links>
-    {% for link in item.officialLinks %}
-      <li>
-        <a href="{{ link.url }}">{{ t[link.labelKey] }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-</section>
-<section>
-  <h2>{{ t.calls }}</h2>
-  {{ cards(calls | related(item.slug) | callYear(site.currentCallYear), 'call', t, view.lang) }}
-</section>
-<section>
-  <h2>{{ t.upcomingEvents }}</h2>
-  {{ cards(events | related(item.slug) | status('upcoming'), 'event', t, view.lang) }}
-</section>
-<section>
-  <h2>{{ t.pastEvents }}</h2>
-  {{ cards(events | related(item.slug) | status('past'), 'event', t, view.lang) }}
-</section>
-<section>
-  <h2>{{ t.resources }}</h2>
-  {{ cards(resources | related(item.slug), 'resource', t, view.lang) }}
-</section>
-{% if (stories | related(item.slug)).length %}
-<section>
-  <h2>{{ t.story }}</h2>
-  {{ cards(stories | related(item.slug), 'story', t, view.lang) }}
-</section>
-{% endif %}
-<section>
-  <h2>{{ t.faq }}</h2>
-  {{ cards(faqs | related(item.slug), 'faq', t, view.lang) }}
-</section>
+{% set actionCalls = calls | related(item.slug) | callYear(site.currentCallYear) %}
+{% set count = projectData | projectActionCount(item.slug) %}
+<section class="action-hero" aria-labelledby="action-title"><span class="icon-slot">{{ item.slug | actionIcon | icon | safe }}</span><div><p class="action-key-label">{{ t.keyAction }}: {{ t.keyActions[item.keyAction] }}</p><h1 id="action-title">{{ item.title }}</h1>{{ item.summary | markdown | safe }}</div></section>
+<div class="action-layout">
+<aside class="action-facts" aria-labelledby="facts-title"><h2 id="facts-title">{{ t.actionFacts }}</h2>
+<dl><dt>{{ t.who }}</dt><dd>{{ item.who | markdown | safe }}</dd><dt>{{ t.georgiaRole }}</dt><dd>{{ actionGuidance[item.slug][view.lang] }}</dd>
+<dt>{{ t.calls }}: {{ site.currentCallYear }}</dt><dd>{% if actionCalls.length %}<ul>{% for call in actionCalls %}<li><time datetime="{{ call.deadline }}">{{ call.deadline | dateLabel(t) }}</time> ({{ t.brussels }}), {{ t[call.status] }}</li>{% endfor %}</ul>{% else %}{{ t.callsCompact }}{% endif %}</dd></dl>
+<h3>{{ t.officialLinks }}</h3><ul data-action-official-links>{% for link in item.officialLinks %}<li><a href="{{ link.url }}">{{ t[link.labelKey] }}</a></li>{% endfor %}</ul>
+</aside>
+<div class="action-main">
+<div class="eligibility-note">{{ georgiaEligibility[view.lang] | markdown | safe }}</div>
+<p><a href="/{{ view.lang }}/opportunities/find-partners/">{{ t.findPartners }}</a></p>
+<p class="action-project-count"><a href="/{{ view.lang }}/resources/projects/{% if count %}#action-{{ item.slug }}{% endif %}"><strong data-action-project-count>{{ count }}</strong> {{ t.projectsIndex }}</a></p><p>{{ t.actionSnapshotNote }}</p>
+<section><h2>{{ t.how }}</h2>{{ item.how | markdown | safe }}</section>
+<section><h2>{{ t.calls }}</h2>{{ cards(actionCalls,'call',t,view.lang) }}</section>
+<section><h2>{{ t.upcomingEvents }}</h2>{{ cards(events | related(item.slug) | status('upcoming'),'event',t,view.lang) }}</section>
+<section><h2>{{ t.pastEvents }}</h2>{{ cards(events | related(item.slug) | status('past'),'event',t,view.lang) }}</section>
+<section><h2>{{ t.resources }}</h2>{{ cards(resources | related(item.slug),'resource',t,view.lang) }}</section>
+{% if (stories | related(item.slug)).length %}<section><h2>{{ t.story }}</h2>{{ cards(stories | related(item.slug),'story',t,view.lang) }}</section>{% endif %}
+<section><h2>{{ t.faq }}</h2>{{ cards(faqs | related(item.slug),'faq',t,view.lang) }}</section>
+</div></div>
 {% endblock %}

@@ -4,7 +4,7 @@ Last updated: 2026-10-29 (Codex, Session 21 in progress)
 
 ## Session 21 progress
 
-Started from origin/main 0350527 on codex/session-21-redesign. The design system replaces the Session 20 visual freeze under Luka’s explicit redesign brief. Existing content/data/URLs, EU visibility and all four Launch stages below remain. Design tokens, sticky header, compact language/search and footer are implemented; item 5’s bilingual static opportunity finder is implemented; item 4’s one-photo provenance/pipeline and About placement are implemented; item 6’s build-time charts and tables are implemented; item 1’s portal home is implemented; remaining numbered items and final validation are in progress. No merge or launch is authorised.
+Started from origin/main 0350527 on codex/session-21-redesign. The design system replaces the Session 20 visual freeze under Luka’s explicit redesign brief. Existing content/data/URLs, EU visibility and all four Launch stages below remain. Design tokens, sticky header, compact language/search and footer are implemented; item 5’s bilingual static opportunity finder is implemented; item 4’s one-photo provenance/pipeline and About placement are implemented; item 6’s build-time charts and tables are implemented; item 1’s portal home is implemented; item 2’s nine Action heroes/facts/counts are implemented; remaining numbered items and final validation are in progress. No merge or launch is authorised.
 
 ## Session 20 baseline
 

@@ -28,7 +28,8 @@ test('isolated sample content retains relationships, local-publication downloads
     assert.equal(readFileSync(`${root}/_site${item.file}`,'utf8'),readFileSync(`test/fixtures/release-publications/${item.file.split('/').at(-1)}`,'utf8'));
    }
    const action=load(readFileSync(`${root}/_site/${lang}/opportunities/cbhe/index.html`,'utf8'));
-   assert.equal(action('main > section').length,8);
+   assert.equal(action('.action-main > section').length,7);
+   assert.equal(action('.action-facts').length,1);
    for(const suffix of ['events/past-session/','stories/example/','events/information-day/'])assert.ok(action(`main a[href$="/${suffix}"]`).length);
    for(const item of data.event){
     const ics=readFileSync(`${root}/_site/${lang}/events/${item.slug}/event.ics`,'utf8').replace(/\r\n /g,'');

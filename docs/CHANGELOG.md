@@ -431,3 +431,7 @@ Added pure build-time SVG charts and a top-15 organisation table, with exact sou
 
 ## 2026-10-29: Session 21 item 1, portal homepage
 Added full-width alternating home sections, photo hero, audience tiles, nine Action tiles, figures/chart band and News image/icon cards. Empty Calls/Events use compact updates, with populated fixture coverage retained.
+
+
+## 2026-10-29: Session 21 item 2, Action pages
+Introduced icon heroes, responsive facts sidebars and source-derived Georgian-participation project counts on all nine Actions. Kept complete source-checked eligibility/how-to text, official links, relationships and shared restrictions.

@@ -43,7 +43,7 @@
 </header>
 <main id="main" class="wrapper page-main page-{{ view.kind }}" tabindex="-1">
   <p class="notice">{{ t.previewNotice }}</p>
-  {% if view.kind != 'home' %}<h1 id="page-title"{% if view.kind == 'news' and view.slug %} class="news-title"{% endif %}>{{ title }}</h1>{% endif %}
+  {% if view.kind != 'home' and view.kind != 'action' %}<h1 id="page-title"{% if view.kind == 'news' and view.slug %} class="news-title"{% endif %}>{{ title }}</h1>{% endif %}
   {{ body | safe }}
 </main>
 <footer class="site-footer">

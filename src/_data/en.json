@@ -302,5 +302,7 @@
   "callsCompact": "2027 calls expected late 2026",
   "eventsCompact": "No events scheduled",
   "chartTable": "View the chart data table",
-  "homeChartDescription": "Projects by call year, with values printed above the bars. Expand the following table for the same data."
+  "homeChartDescription": "Projects by call year, with values printed above the bars. Expand the following table for the same data.",
+  "actionFacts": "At a glance",
+  "actionSnapshotNote": "Project counts use the 28 October 2026 snapshot. Read the coverage limits on the project and statistics pages."
 }
