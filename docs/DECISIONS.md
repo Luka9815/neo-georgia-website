@@ -421,3 +421,7 @@ Keep the settled design and seven main destinations. Validate clean root and pro
 
 ## 2026-10-29: Session 21, portal design system (Luka)
 Luka's redesign brief supersedes the Session 20 settled-design rule. Keep existing content, data, URLs, seven destinations, EU visibility and siteLaunched=false. Use plain CSS with blue/teal/warm tokens, eight-pixel spacing, a 75rem container, sticky native navigation, dark three-column footer and locally licensed Lucide icons. Retain Noto: the evaluated 60,068-byte FiraGO heading subset would raise total fonts to 159,252 bytes above the 140 KB budget. See DESIGN.md.
+
+
+## 2026-10-29: Session 21 item 5, static opportunity finder (Luka)
+Add bilingual /find/ and five audience pages using plain links, with matched Actions, applicant/partner qualifications, next steps and university/consortium/EACEA contacts. Keep the full Action text and authority exclusion authoritative. Erasmus Mundus Joint Masters and Design Measures remain distinct; individuals never apply for institutional grants. No script or new top-level destination.

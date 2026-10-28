@@ -279,5 +279,19 @@
   "individualsIntro": "For university exchanges, contact your own university. For Erasmus Mundus scholarships, apply to the programme consortium. Youth opportunities are organised through participating organisations.",
   "callsEmpty": "There are no open institutional calls at present. See the Calls page for the 2026 deadlines and updates on the next call year.",
   "quickLinks": "Quick links",
-  "legal": "Legal information"
+  "legal": "Legal information",
+  "find": "Find your opportunity",
+  "findIntro": "Choose your starting point. Check the full eligibility conditions on each Action page, including the exclusion of Georgian authorities.",
+  "georgiaRole": "Georgia’s role",
+  "nextStep": "Next step",
+  "rightContact": "Who to contact",
+  "universityContact": "Your university’s international relations office",
+  "consortiumContact": "The programme or project consortium",
+  "eaceaContact": "EACEA, through the official call",
+  "youthContact": "The sending youth organisation or project organiser",
+  "individualIcmNext": "Ask your own university about partner agreements, selection and its internal deadline.",
+  "individualMundusNext": "Choose a Joint Masters programme and apply to its consortium, including for a scholarship.",
+  "individualYouthNext": "Find a sending organisation and an eligible exchange or youth-worker activity.",
+  "institutionNext": "Read the Action’s application route and official call, then agree the required partnership.",
+  "individualRouteNote": "The role below concerns the institutional project grant. Students and young people apply through the contacts shown here, not directly for that grant."
 }

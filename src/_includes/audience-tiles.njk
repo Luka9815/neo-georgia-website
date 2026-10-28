@@ -1,0 +1,5 @@
+<ul class="cards audience-tiles">
+{% for audience in findAudiences %}
+<li class="card"><span class="icon-slot">{{ audience.icon | icon | safe }}</span><h3><a href="/{{ view.lang }}/find/{{ audience.slug }}/">{{ audience[view.lang] }}</a></h3>{{ 'arrow-up-right' | icon | safe }}</li>
+{% endfor %}
+</ul>

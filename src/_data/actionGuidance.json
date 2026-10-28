@@ -1,0 +1,38 @@
+{
+  "icm": {
+    "en": "Partner institutions; individuals use their university’s selection.",
+    "ka": "პარტნიორი დაწესებულებები; ინდივიდები უნივერსიტეტის შერჩევაში მონაწილეობენ."
+  },
+  "erasmus-mundus": {
+    "en": "Joint Masters: eligible Georgian HEIs may coordinate or partner. Design Measures: collaborate with the eligible applicant, without co-beneficiary status.",
+    "ka": "ერთობლივი სამაგისტრო პროგრამები: უფლებამოსილ ქართულ უნივერსიტეტებს შეუძლიათ კოორდინატორობა ან პარტნიორობა. პროგრამის შემუშავებაში მონაწილეობა უფლებამოსილ განმცხადებელთან თანამშრომლობას ნიშნავს და არა თანაბენეფიციარის სტატუსს."
+  },
+  "cbhe": {
+    "en": "Eligible Georgian HEIs may coordinate Strands 1 and 2 or partner. Strand 3 requires EACEA clarification.",
+    "ka": "უფლებამოსილ ქართულ უნივერსიტეტებს შეუძლიათ პირველი და მეორე მიმართულებების კოორდინატორობა ან პარტნიორობა. მესამე მიმართულებაზე საჭიროა EACEA-ს განმარტება."
+  },
+  "jean-monnet": {
+    "en": "Eligible Georgian HEIs apply directly for Modules, Chairs and Centres of Excellence.",
+    "ka": "უფლებამოსილი ქართული უნივერსიტეტები მოდულებზე, კათედრებსა და სრულყოფილების ცენტრებზე პირდაპირ წარადგენენ განაცხადს."
+  },
+  "cb-vet": {
+    "en": "Eligible Georgian organisations participate as partners, not coordinators.",
+    "ka": "უფლებამოსილი ქართული ორგანიზაციები მონაწილეობენ პარტნიორებად და არა კოორდინატორებად."
+  },
+  "cb-youth": {
+    "en": "Eligible Georgian youth NGOs may coordinate or partner; other eligible bodies may partner.",
+    "ka": "უფლებამოსილ ქართულ ახალგაზრდულ არასამთავრობო ორგანიზაციებს შეუძლიათ კოორდინატორობა ან პარტნიორობა; სხვა უფლებამოსილ ორგანიზაციებს შეუძლიათ პარტნიორობა."
+  },
+  "youth-mobility": {
+    "en": "Eligible Georgian organisations or, for Youth Exchanges, informal groups join as partners.",
+    "ka": "უფლებამოსილი ქართული ორგანიზაციები, ახალგაზრდული გაცვლების შემთხვევაში კი არაფორმალური ჯგუფებიც, მონაწილეობენ პარტნიორებად."
+  },
+  "virtual-exchanges": {
+    "en": "Eligible Georgian higher education or youth entities participate as partners in Neighbourhood East.",
+    "ka": "უფლებამოსილი ქართული უმაღლესი განათლების ან ახალგაზრდული ორგანიზაციები მონაწილეობენ აღმოსავლეთ სამეზობლოს პარტნიორებად."
+  },
+  "cb-sport": {
+    "en": "Eligible Georgian nonprofit sport organisations may coordinate; other eligible sport bodies may partner.",
+    "ka": "უფლებამოსილ ქართულ არაკომერციულ სპორტულ ორგანიზაციებს შეუძლიათ კოორდინატორობა; სხვა უფლებამოსილ სპორტულ ორგანიზაციებს შეუძლიათ პარტნიორობა."
+  }
+}

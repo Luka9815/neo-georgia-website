@@ -415,3 +415,7 @@ Newest at the top. One entry per working session: date, who (agent or person), w
 
 ## 2026-10-29: Session 21, design system
 Introduced portal colour/spacing/type tokens, slimmer sticky header, labelled search icon, compact language control and dark three-column footer. Preserved seven links, native mobile menu, exact EU artwork/disclaimers and preview protections. Evaluated and declined FiraGO within the font budget.
+
+
+## 2026-10-29: Session 21 item 5, opportunity finder
+Added five bilingual audience paths and a static finder index, linked from Opportunities, with shared role summaries and routes to the full eligibility and official guidance.

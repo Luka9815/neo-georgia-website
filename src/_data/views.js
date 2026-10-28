@@ -1,3 +1,4 @@
+import audiences from './findAudiences.json' with {type:'json'};
 import { redirectViews } from '../../lib/redirects.js';
 import { loadProjectSnapshot } from '../../lib/projects.js';
 import { loadContent } from '../../lib/content.js';
@@ -32,6 +33,8 @@ export default function () {
     for (const [kind, suffix] of [['projectStatistics', 'resources/statistics/'], ['projectsIndex', 'resources/projects/'], ['eventCalendar', 'events/calendar/'], ['findPartners', 'opportunities/find-partners/'], ['publications', 'resources/publications/'], ['faq', 'resources/faq/'], ['contact', 'about/contact/'], ['search', 'search/']]) {
       views.push({lang, kind, path: `/${lang}/${suffix}`, alternate: `/${other}/${suffix}`});
     }
+    views.push({lang,kind:'find',path:`/${lang}/find/`,alternate:`/${other}/find/`});
+    for(const audience of audiences) views.push({lang,kind:'find',audience:audience.slug,title:audience[lang],path:`/${lang}/find/${audience.slug}/`,alternate:`/${other}/find/${audience.slug}/`});
     for (const year of [...new Set(loadProjectSnapshot().projects.map(project => project.year))].sort((a, b) => b - a)) {
       views.push({lang, kind: 'projectYear', year, titleKey: 'projectsIndex', path: `/${lang}/resources/projects/${year}/`, alternate: `/${other}/resources/projects/${year}/`});
     }
