@@ -36,6 +36,8 @@ test('real Eleventy image builds produce local responsive article/card pictures 
   const root = mkdtempSync(join(tmpdir(), 'neo-news-picture-'));
   try {
     for (const path of ['src', 'lib', 'eleventy.config.js', 'package.json']) cpSync(path, join(root, path), { recursive: true });
+    mkdirSync(join(root, 'migration/source'), { recursive: true });
+    cpSync('test/fixtures/projects-snapshot.json', join(root, 'migration/source/erasmus-projects-georgia-2026-10-28.json'));
     symlinkSync(resolve('node_modules'), join(root, 'node_modules'), 'dir');
     cpSync('test/fixtures/sample-news-image.png', join(root, 'src/assets/uploads/sample-news-image.png'));
     cpSync('test/fixtures/news/update-1.json', join(root, 'src/content/news/update-1.json'));

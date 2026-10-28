@@ -631,3 +631,7 @@ dd {
 .project-statistics { border-collapse: collapse; width: 100%; margin-block: 1rem 2rem; }
 .project-statistics th, .project-statistics td { border-bottom: 1px solid #767676; text-align: start; padding: .5rem; overflow-wrap: anywhere; }
 .project-statistics caption { text-align: start; font-weight: 700; }
+
+/* Native fragment links select an Action/sector; older CSS engines retain all groups. */
+.project-groups:has(> section:target) > section:not(:target),
+.project-action-index:has(> section:target) > section:not(:target) { display: none; }

@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
   cpSync,
+  mkdirSync,
   existsSync,
   mkdtempSync,
   readFileSync,
@@ -27,6 +28,8 @@ function isolatedSite() {
     cpSync(path, join(root, path), { recursive: true });
   }
   cpSync('test/fixtures/news', join(root, 'src/content/news'), { recursive: true });
+  mkdirSync(join(root, 'migration/source'), { recursive: true });
+  cpSync('test/fixtures/projects-snapshot.json', join(root, 'migration/source/erasmus-projects-georgia-2026-10-28.json'));
   symlinkSync(resolve('node_modules'), join(root, 'node_modules'), 'dir');
   return root;
 }

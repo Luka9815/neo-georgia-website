@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
   cpSync,
+  mkdirSync,
   mkdtempSync,
   readFileSync,
   writeFileSync,
@@ -47,6 +48,8 @@ test('legacy stub renders with a prefixed refresh, canonical and working visible
     for (const path of ['src', 'lib', 'eleventy.config.js', 'package.json']) {
       cpSync(path, join(root, path), { recursive: true });
     }
+    mkdirSync(join(root, 'migration/source'), { recursive: true });
+    cpSync('test/fixtures/projects-snapshot.json', join(root, 'migration/source/erasmus-projects-georgia-2026-10-28.json'));
     symlinkSync(resolve('node_modules'), join(root, 'node_modules'), 'dir');
     const mappings = [{ from: '/old-cbhe/', to: '/ka/opportunities/cbhe/' }];
     writeFileSync(join(root, 'src/_data/redirects.json'), JSON.stringify(mappings));

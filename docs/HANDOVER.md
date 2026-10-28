@@ -1,6 +1,6 @@
 # Handover
 
-Last updated: 2026-10-27 (Codex, PR #18 review fixes)
+Last updated: 2026-10-28 (Codex, Session 19 projects and statistics)
 
 ## Current state
 
@@ -61,9 +61,13 @@ The bilingual Find partners page is linked from Opportunities and every Action. 
 
 /events/ stays the default list. The bilingual /events/calendar/ tables and ICS downloads are built from the existing Event JSON without new dependencies or a network request. Per-language Event files live at /<lang>/events/<slug>/event.ics; the feed is /<lang>/events/upcoming.ics. UIDs are neo-georgia-event-<slug>, with no domain or @ part. Preserve Event slugs for stable UIDs across languages/hosts. Luka confirmed no ICS files have been published to users, so the pre-merge UID change has no subscriber impact. The daily rebuild refreshes the feed; downloads are snapshots. Calendar dates use the Event's named zone. Sample Events remain labelled and must be replaced or removed using the existing fixture-first Launch checklist. Removing them also removes their calendar entries and ICS files on a clean build.
 
-## Session 19 planning only
+## Session 19 projects and statistics
 
-Read the proposal at the end of SITE-PLAN.md. It specifies projects with Georgian participation, linked organisations/roles, completed/ongoing pages and statistics from the same approved snapshot, a future manual offline review importer, update/overlay rules and unresolved source terms. Luka will supply the official CSV; no importer, project-data fetch, public dataset or new project/statistics page is implemented. Do not revive the previous CSV download attempt. Agree the listed schema, coverage, licensing and editorial decisions with Luka before Session 19.
+Start from the supplied data branch 3cc2d40, main 14902c4 plus one source commit. PR #18 is merged. The search-service JSON replaces the expected CSV, with 6,764 projects and an official 2022 XLS sample. Read migration/source/README.md, CONTENT.md and the current implementation section in SITE-PLAN.md.
+
+Bilingual projects indexes/year tables and statistics are built from validated local metadata only. Homepage figures are 6,764 projects, 605 named Georgian organisations and 106 Georgian-coordinated projects. Statistics also show 5,079 institution participations and 2,045 mobility-country projects separately. Preserve the raw 606/7,124 source totals in tests. No funding, descriptions, results, contacts, beneficiary websites/media, per-project detail pages or project CMS fields are published. All nine Actions retain [DRAFT] and unchanged wording.
+
+PROJECT-ACTION-MAP.md lists all 39 exact source labels and their reviewed mapping for Luka. Original source titles/names remain unchanged, source status is preserved, calendar dates use Brussels and all public project/statistics pages carry source/snapshot/build attribution. Year tables are complete without JavaScript and excluded from Pagefind after size measurement. No live fetch belongs in a build, test or CI.
 
 ## Session 18 editorial changes
 
@@ -89,9 +93,19 @@ After these fixes, clean root and project-prefix builds pass and all 111 tests p
 
 Three separate review commits cover the UID correction, browser-verification record and validation results. Push to the same codex/session-18-features branch and keep PR #18 open for review. All nine Actions remain [DRAFT] and unchanged; the remaining Launch checklist and siteLaunched=false still apply.
 
+## Session 19 validation, measurements and remaining capture
+
+Clean root and project-prefix builds pass. Both full suites pass all 132 tests, including source/per-year facts, the strict public projection, complete exact-label mapping, institution-versus-mobility-country counts, complete static rows/original titles, page-size limits, attribution, homepage figures and seven offline manual-refresh checks. CMS/image/redirect isolated sites use small synthetic project snapshots.
+
+Axe scans cover 105 non-redirect pages per layout, both languages, with zero violations. The project-prefix full browser command passes. In the root run, the complete scan preceded a render-state timing assertion in the new CSS filter check; waiting for rendered state fixes it, and both-language project/filter/reset/keyboard checks plus the remaining search stage pass on focused rerun. Full/targeted browser checks also cover 320 px overflow, keyboard/language navigation, no-JavaScript menus/controls, Publications, images and calendar downloads. Native Action/sector fragments filter groups with an All projects reset; older CSS engines retain the complete anchor-linked list.
+
+There are 111 HTML files per layout (30 added), not thousands of project detail pages. Root output grows from 2,900,139 to 11,856,455 bytes; Pagefind from 1,315,137 to 1,324,245 bytes after excluding year tables. The largest year page is 579,207 bytes. Root single-run build time is 6.361 s before and 13.027 s after; final runs overlapped other validation and are not controlled benchmarks. Detailed counts, prefix sizes, mapping and representative captures are in review/session-19.
+
+The supplied README omits the exact POST body, Origin, pagination fields and raw response paths. scripts/fetch-projects.js therefore requires a confirmed captured request configuration; no production template is invented, no live refresh was run and live reproduction remains unverified. It writes only ignored raw pages/candidates/reports and never replaces the approved source. Obtain and validate the capture before marking that part complete. Keep the PR in draft while this gap remains.
+
 ## Next task
 
-Review the Session 18 PR without automatic merging, then work through the Launch checklist. All nine Actions remain [DRAFT]. For Session 19, wait for Luka's official CSV and resolve the decisions in SITE-PLAN.md before building projects/statistics. Opportunity filters remain dropped.
+Review the Session 19 draft PR and full Action mapping without automatic merging. Supply the missing production refresh capture and verify it before marking source reproduction complete, then work through the remaining Launch checklist. All nine Actions remain [DRAFT]. Opportunity filters remain dropped; no wider content promotion is authorised.
 
 ## Session 19 homepage figures
 

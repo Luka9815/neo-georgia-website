@@ -1,0 +1,259 @@
+{
+  "sourceBranch": "data/projects-snapshot-2026-10-28",
+  "sourceCommit": "3cc2d40",
+  "snapshot": "2026-10-28",
+  "measurement": "Single local Node 24 production builds with clean output directories. Final runs overlapped other validation work, so wall times reflect variable host load and are observations, not controlled benchmarks.",
+  "before": {
+    "seconds": 6.361,
+    "siteBytes": 2900139,
+    "htmlPages": 81,
+    "pagefindBytes": 1315137
+  },
+  "after": {
+    "root": {
+      "seconds": 13.027,
+      "siteBytes": 11856455,
+      "htmlPages": 111,
+      "pagefindBytes": 1324245,
+      "largestYearPages": [
+        {
+          "path": "_site/ka/resources/projects/2022/index.html",
+          "bytes": 579207
+        },
+        {
+          "path": "_site/ka/resources/projects/2025/index.html",
+          "bytes": 570334
+        },
+        {
+          "path": "_site/ka/resources/projects/2023/index.html",
+          "bytes": 553246
+        }
+      ]
+    },
+    "projectPrefix": {
+      "seconds": 23.293,
+      "siteBytes": 11924961,
+      "htmlPages": 111,
+      "pagefindBytes": 1325413
+    }
+  },
+  "pagefindWithYearTables": 3235348,
+  "statistics": {
+    "projects": 6764,
+    "namedOrganisations": 605,
+    "institutionParticipations": 5079,
+    "georgianCoordinated": 106,
+    "mobilityCountryProjects": 2045,
+    "sourceIdentifiers": 606,
+    "sourcePairs": 7124,
+    "byYear": [
+      {
+        "year": "2014",
+        "count": 463
+      },
+      {
+        "year": "2015",
+        "count": 435
+      },
+      {
+        "year": "2016",
+        "count": 429
+      },
+      {
+        "year": "2017",
+        "count": 460
+      },
+      {
+        "year": "2018",
+        "count": 476
+      },
+      {
+        "year": "2019",
+        "count": 417
+      },
+      {
+        "year": "2020",
+        "count": 454
+      },
+      {
+        "year": "2021",
+        "count": 294
+      },
+      {
+        "year": "2022",
+        "count": 769
+      },
+      {
+        "year": "2023",
+        "count": 731
+      },
+      {
+        "year": "2024",
+        "count": 660
+      },
+      {
+        "year": "2025",
+        "count": 741
+      },
+      {
+        "year": "2026",
+        "count": 435
+      }
+    ],
+    "byActionOrSector": [
+      {
+        "key": "action-cb-sport",
+        "count": 3,
+        "action": "cb-sport",
+        "sector": "sport"
+      },
+      {
+        "key": "action-cb-vet",
+        "count": 10,
+        "action": "cb-vet",
+        "sector": "vet"
+      },
+      {
+        "key": "action-cb-youth",
+        "count": 95,
+        "action": "cb-youth",
+        "sector": "youth"
+      },
+      {
+        "key": "action-cbhe",
+        "count": 70,
+        "action": "cbhe",
+        "sector": "higher-education"
+      },
+      {
+        "key": "action-erasmus-mundus",
+        "count": 4,
+        "action": "erasmus-mundus",
+        "sector": "higher-education"
+      },
+      {
+        "key": "action-icm",
+        "count": 1810,
+        "action": "icm",
+        "sector": "higher-education"
+      },
+      {
+        "key": "action-jean-monnet",
+        "count": 48,
+        "action": "jean-monnet",
+        "sector": "higher-education"
+      },
+      {
+        "key": "action-virtual-exchanges",
+        "count": 10,
+        "action": "virtual-exchanges",
+        "sector": "higher-education"
+      },
+      {
+        "key": "action-youth-mobility",
+        "count": 4214,
+        "action": "youth-mobility",
+        "sector": "youth"
+      },
+      {
+        "key": "sector-adult",
+        "count": 13,
+        "action": null,
+        "sector": "adult"
+      },
+      {
+        "key": "sector-higher-education",
+        "count": 247,
+        "action": null,
+        "sector": "higher-education"
+      },
+      {
+        "key": "sector-other",
+        "count": 3,
+        "action": null,
+        "sector": "other"
+      },
+      {
+        "key": "sector-school",
+        "count": 4,
+        "action": null,
+        "sector": "school"
+      },
+      {
+        "key": "sector-sport",
+        "count": 8,
+        "action": null,
+        "sector": "sport"
+      },
+      {
+        "key": "sector-vet",
+        "count": 6,
+        "action": null,
+        "sector": "vet"
+      },
+      {
+        "key": "sector-youth",
+        "count": 219,
+        "action": null,
+        "sector": "youth"
+      }
+    ],
+    "byStatus": [
+      {
+        "key": "completed",
+        "count": 4584
+      },
+      {
+        "key": "ongoing",
+        "count": 2128
+      },
+      {
+        "key": "terminated",
+        "count": 52
+      },
+      {
+        "key": "unknown",
+        "count": 0
+      }
+    ],
+    "byProgrammePeriod": [
+      {
+        "period": "2014–2020",
+        "count": 3134
+      },
+      {
+        "period": "2021–2027",
+        "count": 3630
+      }
+    ]
+  },
+  "validation": {
+    "tests": {
+      "root": {
+        "tests": 132,
+        "passed": 132,
+        "failed": 0
+      },
+      "projectPrefix": {
+        "tests": 132,
+        "passed": 132,
+        "failed": 0
+      }
+    },
+    "browser": {
+      "root": {
+        "axePages": 105,
+        "axeViolations": 0,
+        "method": "Full axe/base scan completed; project filter/render-state timing assertion stabilised, then project and remaining search checks rerun successfully."
+      },
+      "projectPrefix": {
+        "axePages": 105,
+        "axeViolations": 0,
+        "method": "Full browser command passed; focused project filter/reset checks rerun after the timing assertion fix."
+      }
+    }
+  },
+  "unresolved": [
+    "Exact captured POST body, Origin, pagination fields and response paths are absent from the supplied README. The guarded manual command requires a confirmed capture. No live refresh was run or reproduced."
+  ]
+}

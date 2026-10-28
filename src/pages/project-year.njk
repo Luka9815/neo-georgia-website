@@ -11,10 +11,12 @@ eleventyExcludeFromCollections: true
 <p><a href="/{{ view.lang }}/resources/projects/">{{ t.projectYearIndex }}</a></p>
 <p>{{ t.projectCoverage }}</p>
 {% for year in projectData.yearGroups %}{% if year.year == view.year %}
-<p>{{ t.projectCount }}: {{ year.count }}.</p>
+<p>{{ t.projectAll }}: {{ year.count }}.</p>
+<p><a href="#projects-all">{{ t.projectAll }}</a></p>
 <nav aria-label="{{ t.projectActionGroup }}"><ul>{% for group in year.groups %}
 <li><a href="#{{ group.key }}">{{ t.projectActionLabels[group.action] if group.action else t.projectSectorLabels[group.sector] }}</a>: {{ group.projects.length }}</li>
 {% endfor %}</ul></nav>
+<div class="project-groups" id="projects-all">
 {% for group in year.groups %}
 <section id="{{ group.key }}">
 <h2 id="heading-{{ group.key }}">{{ t.projectActionLabels[group.action] if group.action else t.projectSectorLabels[group.sector] }}</h2>
@@ -25,7 +27,7 @@ eleventyExcludeFromCollections: true
 <tbody>{% for p in group.projects -%}
 <tr><th scope="row"><a href="{{ p.officialUrl }}">{{ p.reference }}</a><br><span lang="{{ p.titleLang }}">{{ p.title }}</span><br><small lang="en">{{ p.actionLabel }}</small></th><td><time datetime="{{ p.start }}">{{ p.start | dateLabel(t, 'UTC', false) }}</time><br><time datetime="{{ p.end }}">{{ p.end | dateLabel(t, 'UTC', false) }}</time></td><td>{{ t.projectStatusLabels[p.status] }}<br>{{ p.period }}</td><td>{{ p.coordinator.name }}<br>{{ p.coordinator.country }}</td><td>{% for o in p.organisations %}{{ o.name }}{% if o.city %}, {{ o.city }}{% endif %}: {{ t.projectRoles[o.role] }}{% if not loop.last %}<br>{% endif %}{% endfor %}</td><td>{{ p.organisationCount }}</td></tr>
 {%- endfor %}</tbody></table></div></section>
-{% endfor %}{% endif %}{% endfor %}
+{% endfor %}</div>{% endif %}{% endfor %}
 <p>{{ t.projectMobilityCountry }}.</p>
 {% include 'project-attribution.njk' %}
 {% endblock %}

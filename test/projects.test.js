@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { loadProjectSnapshot, validateProjectSnapshot } from '../lib/projects.js';
+import { loadProjectSnapshot, validateProjectSnapshot, mapProjectActions, projectStatistics } from '../lib/projects.js';
 
 globalThis.fetch = () => { throw new Error('Network access forbidden in project tests'); };
 const fixture = () => JSON.parse(readFileSync('test/fixtures/projects-snapshot.json', 'utf8'));
@@ -46,4 +46,27 @@ test('supplied snapshot reproduces official source facts and distinguishes mobil
   assert.equal(new Set(named.map(o => o.id)).size, 605);
   assert.equal(named.length, 5079);
   assert.equal(pairs.filter(o => o.role === 'country-mobility').length, 2045);
+});
+
+test('reviewed mapping is complete and does not treat KA131 or unrelated sectors as site Actions', () => {
+  const map = JSON.parse(readFileSync('src/_data/projectActionMap.json'));
+  const raw = loadProjectSnapshot();
+  assert.deepEqual(Object.keys(map).sort(), [...new Set(raw.projects.map(p => p.actionLabel))].sort());
+  assert.equal(Object.keys(map).length, 39);
+  assert.equal(map['Mobility of higher education students and staff'].action, null);
+  assert.equal(map['Mobility of higher education students and staff supported by external policy funds'].action, 'icm');
+  const synthetic = validateProjectSnapshot(fixture());
+  assert.throws(() => mapProjectActions(synthetic, {}), /missing or invalid reviewed mapping/);
+  const stats = projectStatistics(mapProjectActions(raw, map).projects);
+  assert.deepEqual([stats.total, stats.organisations, stats.participations, stats.coordinated, stats.mobilityCountry], [6764, 605, 5079, 106, 2045]);
+  for (const field of ['years', 'groups', 'statuses', 'periods']) assert.equal(stats[field].reduce((sum, row) => sum + row.count, 0), stats.total);
+});
+
+test('synthetic statistics deduplicate institutions and separate mobility-country records', () => {
+  const data = validateProjectSnapshot(fixture());
+  const project = { ...data.projects[0], action: null, sector: 'sport', group: 'sector-sport' };
+  const second = { ...structuredClone(project), reference: 'TEST-2022-002', coordinator: { name: 'Georgian coordinator', country: 'GE' } };
+  const mobility = { ...structuredClone(project), reference: 'TEST-2022-003', organisations: [{ id: 'COUNTRY-GE', name: 'Mobilities - Georgia', country: 'GE', role: 'country-mobility', city: '' }] };
+  const stats = projectStatistics([project, second, mobility]);
+  assert.deepEqual([stats.total, stats.organisations, stats.participations, stats.coordinated, stats.mobilityCountry], [3, 1, 2, 1, 1]);
 });

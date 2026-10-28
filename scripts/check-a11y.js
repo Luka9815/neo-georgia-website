@@ -1,4 +1,5 @@
 import { checkCalendar } from './check-calendar.js';
+import { checkProjects } from './check-projects.js';
 import { checkSearch } from './check-search.js';
 import { chromium } from 'playwright';
 import AxeBuilder from '@axe-core/playwright';
@@ -147,6 +148,7 @@ try {
     await noJs.close();
   }
   await checkCalendar(browser, base, prefix);
+  await checkProjects(browser, base, prefix);
   await checkSearch(browser, base, prefix);
   console.log(
     `axe: ${count} pages passed with zero violations; ` +

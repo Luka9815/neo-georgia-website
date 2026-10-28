@@ -1,0 +1,55 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { readFileSync, statSync } from 'node:fs';
+import { load } from 'cheerio';
+import projectData from '../src/_data/projectData.js';
+import { getPathPrefix } from '../lib/urls.js';
+
+globalThis.fetch = () => { throw new Error('Network access forbidden in project page tests'); };
+const data = projectData();
+const prefix = getPathPrefix();
+
+test('both languages publish complete static year tables under 1 MB with original titles and official cards', () => {
+  for (const lang of ['ka', 'en']) {
+    let total = 0;
+    for (const year of data.years) {
+      const file = `_site/${lang}/resources/projects/${year}/index.html`;
+      assert.ok(statSync(file).size < 1_000_000, file);
+      const $ = load(readFileSync(file, 'utf8'));
+      const projects = data.projects.filter(p => p.year === year);
+      assert.equal($('.project-table tbody tr').length, projects.length);
+      total += projects.length;
+      assert.equal($('.project-table th:not([scope])').length, 0);
+      for (const project of projects) {
+        const link = $(`.project-table a[href="${project.officialUrl}"]`);
+        assert.equal(link.length, 1);
+        const title = link.closest('th').find('span').first();
+        assert.equal(title.text(), project.title.replace(/\r\n?/g, '\n'));
+        assert.equal(title.attr('lang'), project.titleLang);
+      }
+      assert.equal($('[data-project-attribution] a').attr('href'), data.sourceUrl);
+      assert.equal($('[data-project-attribution] time').first().attr('datetime'), '2026-10-28');
+      assert.notEqual($('[data-project-attribution] time').last().attr('datetime'), '2026-10-28');
+      assert.ok($('h1').text().includes(String(year)));
+    }
+    assert.equal(total, 6764);
+  }
+});
+
+test('bilingual statistics and homepage use named-institution counts and no illustrative figure keys', () => {
+  for (const lang of ['ka', 'en']) {
+    const $ = load(readFileSync(`_site/${lang}/resources/statistics/index.html`, 'utf8'));
+    for (const [key, count] of [['total',6764], ['organisations',605], ['participations',5079], ['coordinated',106], ['mobility',2045]]) {
+      assert.equal($(`[data-project-${key}]`).text(), String(count));
+    }
+    for (const kind of ['years','groups','statuses','periods']) {
+      const sum = $(`[data-project-statistics="${kind}"] tbody td`).toArray().reduce((n, el) => n + Number($(el).text()), 0);
+      assert.equal(sum, 6764, kind);
+    }
+    const home = load(readFileSync(`_site/${lang}/index.html`, 'utf8'));
+    assert.deepEqual(home('.figures dd').map((_, el) => home(el).text()).get(), ['6764','605','106']);
+    assert.equal(home(`.figures a[href="${prefix}${lang}/resources/statistics/"]`).length, 3);
+    const strings = JSON.parse(readFileSync(`src/_data/${lang}.json`));
+    assert.ok(!('sampleNumber' in strings) && !('figuresNote' in strings));
+  }
+});

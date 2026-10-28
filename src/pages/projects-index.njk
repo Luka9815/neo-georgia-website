@@ -15,12 +15,14 @@ eleventyExcludeFromCollections: true
 </dl>
 <p><a href="/{{ view.lang }}/resources/statistics/">{{ t.projectStatistics }}</a></p>
 <p>{{ t.projectCoverage }}</p>
-<section>
+<section id="projects-all">
   <h2>{{ t.projectYearIndex }}</h2>
   <ul class="project-year-index">
   {% for year in projectData.yearGroups %}<li><a href="/{{ view.lang }}/resources/projects/{{ year.year }}/">{{ year.year }}</a>: {{ year.count }}</li>{% endfor %}
   </ul>
 </section>
+<p><a href="#projects-all">{{ t.projectAll }}</a></p>
+<div class="project-action-index">
 {% for action, years in projectData.actionYears %}
 <section id="action-{{ action }}">
   <h2>{{ t.projectActionLabels[action] }}</h2>
@@ -29,5 +31,6 @@ eleventyExcludeFromCollections: true
   </ul>
 </section>
 {% endfor %}
+</div>
 {% include 'project-attribution.njk' %}
 {% endblock %}
