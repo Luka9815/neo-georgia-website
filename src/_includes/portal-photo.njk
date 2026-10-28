@@ -1,0 +1,6 @@
+{% macro portalPhoto(photo, lang, layout='about') %}
+<figure class="portal-photo photo-{{ layout }}">
+<img data-portal-image="dissemination" data-image-layout="{{ layout }}" src="{{ photo.src }}" alt="{{ photo.alt[lang] }}">
+<figcaption><a href="{{ photo.source }}">{{ photo.credit[lang] }}</a> · {{ photo.change[lang] }}</figcaption>
+</figure>
+{% endmacro %}

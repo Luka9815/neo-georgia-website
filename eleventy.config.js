@@ -6,6 +6,7 @@ import { EleventyHtmlBasePlugin } from '@11ty/eleventy';
 import { getPathPrefix, absoluteUrl } from './lib/urls.js';
 import MarkdownIt from 'markdown-it';
 import {icon, actionIcons} from './lib/icons.js';
+import {renderPortalImages} from './lib/portal-images.js';
 import { localise, related, dateLabel, callYears } from './lib/content.js';
 const markdown = new MarkdownIt({ html: false });
 export default function (config) {
@@ -21,6 +22,10 @@ export default function (config) {
   config.addTransform('news-images', async function (content) {
     return (this.page?.outputPath || this.outputPath || '').endsWith('.html')
       ? renderNewsImages(content, outputRoot, getPathPrefix()) : content;
+  });
+  config.addTransform('portal-images', async function(content) {
+    return (this.page?.outputPath || this.outputPath || '').endsWith('.html')
+      ? renderPortalImages(content,outputRoot,getPathPrefix()) : content;
   });
   config.addTransform('eu-images', async function (content) {
     return (this.page?.outputPath || this.outputPath || '').endsWith('.html')

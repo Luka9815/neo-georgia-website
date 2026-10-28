@@ -425,3 +425,7 @@ Luka's redesign brief supersedes the Session 20 settled-design rule. Keep existi
 
 ## 2026-10-29: Session 21 item 5, static opportunity finder (Luka)
 Add bilingual /find/ and five audience pages using plain links, with matched Actions, applicant/partner qualifications, next steps and university/consortium/EACEA contacts. Keep the full Action text and authority exclusion authoritative. Erasmus Mundus Joint Masters and Design Measures remain distinct; individuals never apply for institutional grants. No script or new top-level destination.
+
+
+## 2026-10-29: Session 21 item 4, approved photography (Luka)
+Reuse the expressly approved NEO dissemination photograph with visible credit and a provenance/hash manifest on Home and About. One accepted image is fewer than five, so use icon/colour panels elsewhere. A CC BY campus candidate could not be downloaded under the network policy; no AV file with individual rights confirmed was accepted. Record the actual search outcome rather than invent licences. Use the existing Eleventy Image library for local AVIF/WebP/JPEG and eager hero/lazy below-fold loading.

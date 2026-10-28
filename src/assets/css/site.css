@@ -214,3 +214,8 @@ dd { margin: 0 0 var(--space-2); }
 /* Native fragment links select an Action/sector; older CSS engines retain all groups. */
 .project-groups:has(> section:target) > section:not(:target),
 .project-action-index:has(> section:target) > section:not(:target) { display: none; }
+
+.portal-photo { margin: 2rem 0; }
+.portal-photo picture,.portal-image { display: block; width: 100%; height: auto; }
+.portal-photo figcaption { padding: .5rem 0; font-size: .75rem; color: var(--muted); }
+.photo-about { max-width: 50rem; }
