@@ -46,6 +46,7 @@ eleventyExcludeFromCollections: true
   </div>
   {{ cards(news | take(3), 'news', t, view.lang, showSectionLabel=true) }}
 </section>
+{% if stories.length %}
 <section class="home-story" aria-labelledby="story-title">
   <div class="section-heading">
     <h2 id="story-title">{{ t.story }}</h2>
@@ -53,6 +54,7 @@ eleventyExcludeFromCollections: true
   </div>
   {{ cards(stories | take(1), 'story', t, view.lang, showSectionLabel=true) }}
 </section>
+{% endif %}
 <section class="home-figures" aria-labelledby="figures-title">
   <h2 id="figures-title">{{ t.figures }}</h2>
   <dl class="figures">

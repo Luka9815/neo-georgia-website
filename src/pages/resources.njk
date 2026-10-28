@@ -9,6 +9,7 @@ eleventyExcludeFromCollections: true
 {% extends 'page.njk' %}
 
 {% block pageContent %}
+{% if stories.length %}<p><a href="/{{ view.lang }}/stories/">{{ t.stories }}</a></p>{% endif %}
 <p><a href="/{{ view.lang }}/resources/statistics/">{{ t.projectStatistics }}</a></p>
 <p><a href="/{{ view.lang }}/resources/projects/">{{ t.projectsIndex }}</a></p>
 <p><a href="/{{ view.lang }}/resources/publications/">{{ t.publications }}</a></p>

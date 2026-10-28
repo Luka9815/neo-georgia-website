@@ -369,3 +369,7 @@ Replace the four illustrative calls with eleven real records covering all nine A
 
 ## 2026-10-28: Session 20, empty Events and fixture coverage (Luka)
 Remove the three illustrative Events only after preserving them and dependent resource/story/call content in isolated fixtures. Keep the current-month accessible calendar and a valid empty static ICS feed. Both list and calendar show the requested bilingual empty state. Preserve non-empty Event detail, relationship, per-Event ICS, CMS and keyboard/download coverage in isolated builds.
+
+
+## 2026-10-28: Session 20, conditional Stories (Luka)
+Remove the sample story after preserving relationship/mixed-home coverage in fixtures. Generate a language’s Stories index only when that language has a story; hide empty home/Action story sections and Resources navigation automatically, and omit absent routes from sitemap/search. Restore these surfaces when a first story is added. A missing-language story switch falls back to Resources if that language has no Stories index.

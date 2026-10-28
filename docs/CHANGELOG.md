@@ -338,3 +338,9 @@ Newest at the top. One entry per working session: date, who (agent or person), w
 
 - Move the three public Event records to fixtures and remove obsolete routes on a clean build. Add bilingual empty list/calendar messages and empty-feed checks.
 - Restore sample Events explicitly in CMS/integration fixtures; preserve non-empty relationships, generated ICS files and native calendar keyboard/download checks in isolated builds.
+
+
+## 2026-10-28: Session 20, item 4, conditional Stories
+
+- Remove the illustrative story. Hide empty Stories routes, home/Action listings and section links without changing the seven main destinations.
+- Test the empty production state and first-story fixture state, including navigation, listings and sitemap.

@@ -12,6 +12,10 @@ test('isolated sample content retains mixed home, Action relationships and gener
   for(const lang of ['ka','en']){
    const home=load(readFileSync(`${root}/_site/${lang}/index.html`,'utf8'));
    assert.equal(home('main > section').length,6);
+   assert.equal(home(`main a[href="${prefix}${lang}/stories/"]`).length,1);
+   const resources=load(readFileSync(`${root}/_site/${lang}/resources/index.html`,'utf8'));
+   assert.equal(resources(`main a[href="${prefix}${lang}/stories/"]`).length,1);
+   assert.ok(readFileSync(`${root}/_site/sitemap.xml`,'utf8').includes(`/${lang}/stories/`));
    for(const type of ['call','event','news']){
     const count=home(`.cards-${type} > .card:not(.empty-state)`).length;
     assert.ok(count>0);assert.equal(home(`.cards-${type} .card-section-label`).length,count);
