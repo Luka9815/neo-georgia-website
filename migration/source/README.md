@@ -12,3 +12,7 @@
 Content is as submitted by beneficiaries. Follow the platform disclaimer and terms of use before republishing any field.
 
 Caution: `projectGrantedEuAmount` is the grant for the whole project, not Georgia's share. Mobility projects with external policy funds (KA171/KA107) cover many partner countries. Never sum grant amounts as "EU funding to Georgia".
+
+## Session 19 refresh implementation note
+
+The original capture's exact POST body, Origin, pagination parameter names and raw response shape are not included in this supplied README or snapshot metadata. `scripts/fetch-projects.js` therefore requires a confirmed captured request configuration; it does not invent these details or claim a live reproduction. See docs/CONTENT.md for the manual command and configuration contract. The committed request fixture is synthetic and the live command refuses it. No refresh is run in build, tests or CI, and no live request was run in Session 19. A successful future run leaves its candidate and difference report in the ignored raw directory for review, without replacing the approved snapshot.

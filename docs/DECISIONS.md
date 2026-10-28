@@ -338,3 +338,8 @@ Use three computed figures linking to statistics: projects (6,764), named Georgi
 
 ## 2026-10-28: Keep year tables outside Pagefind (Luka)
 Index the projects index and statistics in both languages. Per-year tables increase Pagefind materially (1,315,137 bytes before Session 19 versus 3,235,348 bytes with year tables), so exclude projectYear routes from indexing. They remain static, linked and in the sitemap. Report final index sizes and keep project-title browsing in the year tables/official platform rather than claiming a complete local project search.
+
+## 2026-10-28: Manual source refresh only (Luka)
+Add scripts/fetch-projects.js for Node 24, outside build/test/CI, using the same endpoint and captured POST/Origin, per call year at size 100 with 0.5-second spacing. Keep raw pages ignored, regenerate the supplied slim schema, validate completeness and report per-year totals and differences before any reviewed promotion. Tests use synthetic data with live network forbidden.
+
+Implementation note (Codex): the supplied README/snapshot metadata omit the transport body, Origin, pagination fields and response paths. The script therefore requires a confirmed captured configuration and refuses a missing or synthetic production request. No live request is made and no live reproduction is claimed. A production capture and validation remain unresolved; this is not a new guessed API contract or an approval to publish refreshed data automatically.

@@ -1,0 +1,29 @@
+{
+  "synthetic": true,
+  "confirmed": true,
+  "evidence": "Synthetic offline test fixture, not the live platform protocol.",
+  "origin": "https://erasmus-plus.ec.europa.eu",
+  "scope": {
+    "index": "eplus2021",
+    "organisationCountry": "GE",
+    "organisationRole": "coordinator_or_partner"
+  },
+  "body": {
+    "index": "eplus2021",
+    "year": "{{year}}",
+    "size": "{{size}}",
+    "offset": "{{offset}}",
+    "country": "GE",
+    "role": "coordinator_or_partner"
+  },
+  "itemsPath": [
+    "items"
+  ],
+  "totalPath": [
+    "total"
+  ],
+  "projectPath": [],
+  "organisationsPath": [
+    "organisations"
+  ]
+}

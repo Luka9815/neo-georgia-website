@@ -197,3 +197,43 @@ Static month tables and bilingual .ics downloads are built from the same Event d
 ## Historical News context notes
 
 A News item may carry code-maintained historicalNote with a YYYY-MM-DD date and non-empty ka/en text. It renders separately above the unchanged source body and links to current Action pages. It is not a Pages CMS text field; the existing settings.content.merge=true preserves unmanaged keys on saves. Changes to the dated note require editorial review.
+
+
+## Projects with Georgian participation (Session 19)
+
+The supplied migration/source/erasmus-projects-georgia-2026-10-28.json is the source snapshot, with provenance/coverage in its README and the official XLS sample as column evidence. It is never copied into _site. lib/projects.js validates it at build start and projects only approved public facts; no source descriptions, results, contacts, beneficiary sites, images or grant amounts reach templates. The build reads local files only.
+
+Original titles/names stay unchanged. Titles default to English; a conservative script check labels predominantly Georgian, Cyrillic (und-Cyrl), Armenian, Greek or Arabic titles accordingly. This is not a translation or a full Latin-language detector. Source timestamps encode Brussels midnight and are converted to calendar days in Europe/Brussels. Empty/null source cities are allowed and omitted. Preserve finalized/ongoing/terminated/unknown source status, displaying finalized as completed rather than recalculating status from dates.
+
+Action mapping is exact and explicit in src/_data/projectActionMap.json. New labels stop the build until reviewed; do not infer Action eligibility from titles. PROJECT-ACTION-MAP.md lists all 39 source labels and mappings for review.
+
+Public catalogue routes are the bilingual projects index and one table page per call year; rows link to the official project card. The bilingual statistics page and homepage figures use the same projected records. Count named organisations by source identifier, and named-institution participations by project/identifier pair. Exclude role country-mobility from institution counts and report those projects separately. Keep source names/roles intact, with no alias merging or manual additions.
+
+Every catalogue/statistics page identifies the source, beneficiary submissions, NEO responsibility limit, snapshot day and separate build timestamp. The 2026/later years are incomplete and ongoing records may change. Source terms were checked 2026-10-28 at https://erasmus-plus.ec.europa.eu/projects/terms-use; do not infer blanket licensing for beneficiary content. Luka's approved factual field subset and attribution apply; no excluded content is reused.
+
+Per-year tables remain outside Pagefind after size measurement; projects overview/statistics pages are indexed. All pages and year/Action navigation work without JavaScript. CMS, image and redirect isolated build tests use a small synthetic project snapshot, not live fetches or a copy of the full source.
+
+### Manual refresh command and missing production capture
+
+The manual Node 24 command is:
+
+```
+NODE_USE_ENV_PROXY=1 node scripts/fetch-projects.js --request /path/to/captured-request.json
+```
+
+Run it from the repository root, outside CI. NODE_USE_ENV_PROXY makes Node 24 honour an inherited environment proxy when one exists; preserve configured CA trust. The script is not referenced by build/start/test scripts or the deployment workflow. Importing its functions for synthetic tests never starts the CLI. No live fetch was performed for Session 19.
+
+The initial source README gives the endpoint and logical filters, but omits the exact POST body, Origin header, pagination fields and response shape. Therefore no production request template is invented or supplied. The command refuses to send a request without a confirmed captured configuration. **Live reproduction remains pending that capture and validation.** The configuration contract is:
+
+- `confirmed: true` and a non-empty `evidence` note identifying the capture/reviewer/date.
+- `origin`: the exact captured HTTPS Origin, and `scope`: index eplus2021, organisationCountry GE, organisationRole coordinator_or_partner.
+- `body`: the exact POST object with only call year/pagination values parameterised. `{{year}}`, `{{size}}`, `{{offset}}` and `{{page}}` become numbers when they occupy a whole JSON value; `{{yearText}}` stays text. Markers embedded in query strings stay strings. Size is always 100; confirm `pageBase` as 0 or 1 if the captured body uses page numbers.
+- `itemsPath`, `totalPath`, `projectPath`, `organisationsPath`: arrays of captured JSON property names identifying the response items, integer total, project inside an item, and full organisation array inside that project. Empty paths select the current object. Do not infer these names from the slim snapshot.
+
+The committed `test/fixtures/project-search-request.json` is explicitly synthetic, not a platform capture. The live CLI refuses it. Tests inject small response fixtures and a fake fetch, while global network access throws.
+
+With a confirmed configuration, the script sends serial POST requests to the README endpoint per call year, 2014–2026, at size 100 with 500 ms between requests. It checks reported totals, short/duplicate pages, stable totals and returned call years, and validates the complete regenerated snapshot. Raw pages go to the already ignored `migration/source/erasmus-projects-georgia-<Tbilisi-run-day>/`. Success writes `snapshot.json` and `report.json` there, with per-year totals and added/removed/changed references against the approved source. Failure records an incomplete report and never publishes a partial snapshot. Existing run directories are not overwritten.
+
+The candidate retains the supplied slim audit schema, including its source grant field, but drops long descriptions/results/contacts and all organisations except coordinator/GE entries plus aggregate count/countries. That audit field is never used in public statistics or passed to templates. No amount is summed. Publication uses the separate stricter public projection in lib/projects.js.
+
+Review the candidate/differences, updated source terms, new Action labels and the institution-versus-mobility-country counts before promoting it in a separate PR. The command never replaces the approved source or edits public content. When choosing a new dated source filename, update PROJECT_SOURCE and the corresponding fixture-copy/test source references. Refresh the source regression totals and mapping review table deliberately, then rebuild/test/check both layouts. Daily builds only reread the approved local snapshot.

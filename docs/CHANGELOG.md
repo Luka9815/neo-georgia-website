@@ -283,3 +283,9 @@ Newest at the top. One entry per working session: date, who (agent or person), w
 ## 2026-10-28: Session 19, item 7, bounded static search
 
 - Index the projects index and statistics pages; exclude per-year tables after measuring a combined Pagefind increase from 1,315,137 to 3,235,348 bytes with them included. Keep the complete tables linked and in the sitemap. Update search page-count/recall checks for the explicit boundary. Final sizes follow in the performance report.
+
+## 2026-10-28: Session 19, item 8, guarded manual refresh
+
+- Add the manual Node 24 refresh command with captured-request configuration, serial POST pagination at size 100, 500 ms spacing, ignored raw pages, same-schema slim candidate, per-year totals and added/removed/changed reports. Fail on incomplete/duplicate/changing-total responses; never replace the approved source automatically or run in CI.
+- Add seven synthetic offline checks for request guards, CI refusal, numeric/string template substitution, pagination/spacing, completeness failures, slimming and differences. The live CLI refuses synthetic request fixtures.
+- The supplied source README omits the exact transport request and response contract. Document the gap and require a confirmed capture rather than inventing a production template. No live refresh was run; live reproduction remains unresolved pending those details.
