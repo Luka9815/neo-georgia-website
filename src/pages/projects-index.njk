@@ -1,0 +1,28 @@
+---
+pagination:
+  data: pageTypes.projectsIndex
+  size: 1
+  alias: view
+permalink: "{{ view.path }}"
+eleventyExcludeFromCollections: true
+---
+{% extends 'page.njk' %}
+{% block pageContent %}
+<p>{{ t.projectCount }}: <strong>{{ projectData.projects.length }}</strong>.</p>
+<p>{{ t.projectCoverage }}</p>
+<section>
+  <h2>{{ t.projectYearIndex }}</h2>
+  <ul class="project-year-index">
+  {% for year in projectData.yearGroups %}<li><a href="/{{ view.lang }}/resources/projects/{{ year.year }}/">{{ year.year }}</a>: {{ year.count }}</li>{% endfor %}
+  </ul>
+</section>
+{% for action, years in projectData.actionYears %}
+<section id="action-{{ action }}">
+  <h2>{{ t.projectActionLabels[action] }}</h2>
+  <ul class="project-year-index">
+  {% for year in years %}<li><a href="/{{ view.lang }}/resources/projects/{{ year.year }}/#action-{{ action }}">{{ year.year }}</a>: {{ year.count }}</li>{% endfor %}
+  </ul>
+</section>
+{% endfor %}
+{% include 'project-attribution.njk' %}
+{% endblock %}

@@ -1,0 +1,31 @@
+---
+pagination:
+  data: pageTypes.projectYear
+  size: 1
+  alias: view
+permalink: "{{ view.path }}"
+eleventyExcludeFromCollections: true
+---
+{% extends 'page.njk' %}
+{% block pageContent %}
+<p><a href="/{{ view.lang }}/resources/projects/">{{ t.projectYearIndex }}</a></p>
+<p>{{ t.projectCoverage }}</p>
+{% for year in projectData.yearGroups %}{% if year.year == view.year %}
+<p>{{ t.projectCount }}: {{ year.count }}.</p>
+<nav aria-label="{{ t.projectActionGroup }}"><ul>{% for group in year.groups %}
+<li><a href="#{{ group.key }}">{{ t.projectActionLabels[group.action] if group.action else t.projectSectorLabels[group.sector] }}</a>: {{ group.projects.length }}</li>
+{% endfor %}</ul></nav>
+{% for group in year.groups %}
+<section id="{{ group.key }}">
+<h2 id="heading-{{ group.key }}">{{ t.projectActionLabels[group.action] if group.action else t.projectSectorLabels[group.sector] }}</h2>
+<div class="project-table-scroll" tabindex="0" role="region" aria-labelledby="heading-{{ group.key }}">
+<table class="project-table">
+<caption>{{ t.projectCallYear }} {{ view.year }}: {{ t.projectActionLabels[group.action] if group.action else t.projectSectorLabels[group.sector] }} ({{ group.projects.length }})</caption>
+<thead><tr><th scope="col">{{ t.projectReference }}</th><th scope="col">{{ t.projectDates }}</th><th scope="col">{{ t.projectStatus }} / {{ t.projectProgrammePeriod }}</th><th scope="col">{{ t.projectCoordinator }}</th><th scope="col">{{ t.projectGeorgianParticipants }}</th><th scope="col">{{ t.projectOrganisationCount }}</th></tr></thead>
+<tbody>{% for p in group.projects -%}
+<tr><th scope="row"><a href="{{ p.officialUrl }}">{{ p.reference }}</a><br><span lang="{{ p.titleLang }}">{{ p.title }}</span><br><small lang="en">{{ p.actionLabel }}</small></th><td><time datetime="{{ p.start }}">{{ p.start | dateLabel(t, 'UTC', false) }}</time><br><time datetime="{{ p.end }}">{{ p.end | dateLabel(t, 'UTC', false) }}</time></td><td>{{ t.projectStatusLabels[p.status] }}<br>{{ p.period }}</td><td>{{ p.coordinator.name }}<br>{{ p.coordinator.country }}</td><td>{% for o in p.organisations %}{{ o.name }}{% if o.city %}, {{ o.city }}{% endif %}: {{ t.projectRoles[o.role] }}{% if not loop.last %}<br>{% endif %}{% endfor %}</td><td>{{ p.organisationCount }}</td></tr>
+{%- endfor %}</tbody></table></div></section>
+{% endfor %}{% endif %}{% endfor %}
+<p>{{ t.projectMobilityCountry }}.</p>
+{% include 'project-attribution.njk' %}
+{% endblock %}

@@ -322,3 +322,7 @@ Every projects index, year table and statistics page identifies the Erasmus+ Pro
 
 ## 2026-10-28: Exact project Action mapping (Luka)
 Generate projectActionMap.json from the 39 distinct source labels. Map only equivalent Actions to the nine site slugs; all others get a sector without an Action. PROJECT-ACTION-MAP.md lists every label, count and mapping for PR review. The generic higher-education mobility label is KA131 in this snapshot and remains sector-only, while external-policy-funds mobility maps to icm. Partnerships for Creativity spans sectors and maps to other. Unknown future labels fail rather than being guessed. Action wording and [DRAFT] markers remain unchanged.
+
+
+## 2026-10-28: Static project catalogue pages (Luka)
+Publish bilingual projects indexes with counts and year links, plus one grouped accessible table page per call year. Rows link directly to official cards; no per-project detail pages. Keep seven main destinations. Resources links to the index; mapped Action pages link to that Action's static year index, whose links target the matching Action table group. All records and navigation work without JavaScript; omit optional filters for now. Check page sizes before shipping and propose a split if a year page exceeds about 1 MB.

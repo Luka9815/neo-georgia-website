@@ -261,3 +261,9 @@ Newest at the top. One entry per working session: date, who (agent or person), w
 ## 2026-10-28: Session 19, item 3, Action mapping
 
 - Generate the complete exact-label map and PROJECT-ACTION-MAP review table with all 39 labels/counts. Use equivalent site Actions only; preserve sector-only groups for other labels. Keep KA131 distinct from ICM and cross-sector Creativity under other.
+
+
+## 2026-10-28: Session 19, item 4, static project pages
+
+- Add bilingual projects/year indexes and one static accessible table page per call year, grouped by mapped Action or sector. Keep all source titles/names, translated interface text, explicit source status/programme period and official-card links.
+- Link from Resources and mapped Action pages to matching static Action/year groups. No per-project pages, new main navigation item or JavaScript requirement. Include source/snapshot/build attribution on every new page.

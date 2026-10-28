@@ -1,4 +1,5 @@
 import { redirectViews } from '../../lib/redirects.js';
+import { loadProjectSnapshot } from '../../lib/projects.js';
 import { loadContent } from '../../lib/content.js';
 export default function () {
   const content = loadContent();
@@ -27,8 +28,11 @@ export default function () {
         alternate: `/${other}/${suffix}`,
       });
     }
-    for (const [kind, suffix] of [['eventCalendar', 'events/calendar/'], ['findPartners', 'opportunities/find-partners/'], ['publications', 'resources/publications/'], ['faq', 'resources/faq/'], ['contact', 'about/contact/'], ['search', 'search/']]) {
+    for (const [kind, suffix] of [['projectsIndex', 'resources/projects/'], ['eventCalendar', 'events/calendar/'], ['findPartners', 'opportunities/find-partners/'], ['publications', 'resources/publications/'], ['faq', 'resources/faq/'], ['contact', 'about/contact/'], ['search', 'search/']]) {
       views.push({lang, kind, path: `/${lang}/${suffix}`, alternate: `/${other}/${suffix}`});
+    }
+    for (const year of [...new Set(loadProjectSnapshot().projects.map(project => project.year))].sort((a, b) => b - a)) {
+      views.push({lang, kind: 'projectYear', year, titleKey: 'projectsIndex', path: `/${lang}/resources/projects/${year}/`, alternate: `/${other}/resources/projects/${year}/`});
     }
     for (const [group, suffix, titleKey] of [['neo', 'about/team/', 'team'], ['here', 'here/', 'here']]) {
       views.push({lang, kind: 'people', group, titleKey, path: `/${lang}/${suffix}`, alternate: `/${other}/${suffix}`});

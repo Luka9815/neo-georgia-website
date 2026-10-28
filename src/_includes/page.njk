@@ -1,6 +1,7 @@
 {% set t = ka if view.lang == 'ka' else en %}
 {% set other = 'en' if view.lang == 'ka' else 'ka' %}
 {% set title = view.title or t[view.titleKey or view.kind] %}
+{% if view.kind == 'projectYear' %}{% set title = title ~ ': ' ~ view.year %}{% endif %}
 {% if view.kind == 'redirect' or view.kind == 'legacyRedirect' %}
   {% set title = t.home %}
 {% endif %}
