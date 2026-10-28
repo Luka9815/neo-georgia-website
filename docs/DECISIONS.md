@@ -405,3 +405,7 @@ Publish labelled Address, Phone, Email and Monday–Friday 10:00–18:00 office-
 
 ## 2026-10-28: Session 20, static-site privacy notice (Luka)
 Publish a dated bilingual privacy notice for the actual static site: no site cookies, analytics, tracking or submission forms; browser-only search; GitHub Pages security logs/IP processing with official policy links; external-site policies and static ICS downloads; proportionate email enquiry handling and rights contact. ERIDA is the controller, with legal code, registered address and rights contact [TBC]. Do not invent a retention period or claim that GitHub keeps no logs.
+
+
+## 2026-10-28: Session 20, dated accessibility statement (Luka)
+Publish a dated bilingual WCAG 2.1 AA target and an accurate account of automated axe, keyboard/focus, language switching, 320 px and no-JavaScript checks. State known limits for third-party PDFs/sites, untranslated source project names/titles, scrollable tables and JavaScript search. Keep the reporting contact [TBC]. Do not claim a complete WCAG audit or completed assistive-technology review.

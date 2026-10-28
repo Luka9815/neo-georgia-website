@@ -386,3 +386,8 @@ Newest at the top. One entry per working session: date, who (agent or person), w
 ## 2026-10-28: Session 20, item 12, static-site privacy notice
 
 - Replace the sample privacy page with a dated notice describing actual site behaviour and GitHub hosting. Leave only NEO-supplied legal/contact facts [TBC], and distinguish local search from data-collection forms.
+
+
+## 2026-10-28: Session 20, item 13, dated accessibility statement
+
+- Replace the sample accessibility page with scope, testing method, known limitations and a problem-reporting contact. Final root/project-prefix results are recorded in the release review.
