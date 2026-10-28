@@ -2,7 +2,7 @@
   "sourceBranch": "data/projects-snapshot-2026-10-28",
   "sourceCommit": "3cc2d40",
   "snapshot": "2026-10-28",
-  "measurement": "Single local Node 24 production builds with clean output directories. Final runs overlapped other validation work, so wall times reflect variable host load and are observations, not controlled benchmarks.",
+  "measurement": "Initial Session 19 measurements before the PR review fixes. Single local Node 24 production builds with clean output directories. Final runs overlapped other validation work, so wall times reflect variable host load and are observations, not controlled benchmarks.",
   "before": {
     "seconds": 6.361,
     "siteBytes": 2900139,
@@ -230,13 +230,13 @@
   "validation": {
     "tests": {
       "root": {
-        "tests": 132,
-        "passed": 132,
+        "tests": 136,
+        "passed": 136,
         "failed": 0
       },
       "projectPrefix": {
-        "tests": 132,
-        "passed": 132,
+        "tests": 136,
+        "passed": 136,
         "failed": 0
       }
     },
@@ -244,16 +244,37 @@
       "root": {
         "axePages": 105,
         "axeViolations": 0,
-        "method": "Full axe/base scan completed; project filter/render-state timing assertion stabilised, then project and remaining search checks rerun successfully."
+        "exitCode": 0,
+        "method": "Complete npm run check:a11y command passed after review fixes: all pages, 320 px overflow, skip links/language switches, no-JavaScript menus, Publications, images, calendar/ICS, project navigation/filter/reset/keyboard scrolling and search."
       },
       "projectPrefix": {
         "axePages": 105,
         "axeViolations": 0,
-        "method": "Full browser command passed; focused project filter/reset checks rerun after the timing assertion fix."
+        "exitCode": 0,
+        "method": "Complete npm run check:a11y command passed after review fixes: all pages, 320 px overflow, skip links/language switches, no-JavaScript menus, Publications, images, calendar/ICS, project navigation/filter/reset/keyboard scrolling and search."
       }
-    }
+    },
+    "date": "2026-10-28",
+    "coverageNotes": "Both notes visible at 320 px with JavaScript disabled on projects/statistics in ka/en under root and project-prefix layouts, including Action-filtered indexes. Four statistics screenshots refreshed."
   },
-  "unresolved": [
-    "Exact captured POST body, Origin, pagination fields and response paths are absent from the supplied README. The guarded manual command requires a confirmed capture. No live refresh was run or reproduced."
-  ]
+  "unresolved": [],
+  "refreshReview": {
+    "verifiedBy": "Luka",
+    "verifiedOn": "2026-10-28",
+    "protocol": "Exact POST request and total/projectDocuments response fields in migration/source/README.md; offsets 0/100/200, size 100, 500 ms spacing, 2014 through current Tbilisi year; fail on per-year count mismatch.",
+    "liveFetchRun": false,
+    "reason": "Luka instructed no live fetch in this review session."
+  },
+  "reviewOutput": {
+    "root": {
+      "htmlPages": 111,
+      "siteBytes": 11866326,
+      "pagefindBytes": 1326497
+    },
+    "projectPrefix": {
+      "htmlPages": 111,
+      "siteBytes": 11934856,
+      "pagefindBytes": 1327659
+    }
+  }
 }

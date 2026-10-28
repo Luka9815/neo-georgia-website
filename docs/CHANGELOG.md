@@ -312,3 +312,11 @@ Newest at the top. One entry per working session: date, who (agent or person), w
 - Replace the generic request-template interface with Luka's exact verified POST/Origin/body and total/projectDocuments envelope. Use string call years, from offsets 0/100/200, size 100, 500 ms spacing and years 2014 through the current Tbilisi year. Stop at total/empty and fail the entire run on any per-year count mismatch.
 - Keep ignored raw candidates/reports, schema/duplicate guards, manual-only CI refusal and source protection. Identify the full organisation array by its record schema and fail on ambiguous structures. Remove the obsolete synthetic request-template file.
 - Ten synthetic tests cover exact request/headers, dynamic years, pagination/spacing, short/empty pages, per-year mismatch and existing error/slimming/difference cases. No live request was run, per Luka's instruction. Update source README, CONTENT, SITE-PLAN and HANDOVER; the missing request specification is resolved.
+
+
+## 2026-10-28: PR #19 review, item 3, clean validation and handover
+
+- Re-run clean root and isolated project-prefix production builds. All 136 tests pass in each layout, including the bilingual coverage-note placement checks and ten offline refresh tests. No live project fetch is run.
+- Both complete browser commands pass all 105 non-redirect pages per layout with zero axe violations, including keyboard/language/no-JavaScript controls, calendar/ICS, projects and search. This supersedes the initial root timing failure and focused rerun.
+- Refresh the four statistics screenshots at 320/1280 px in both languages. Check that coverage notes remain visible without JavaScript in both layouts, including Action-filtered indexes, with no 320 px page overflow.
+- Update the review report and handover to resolve the previous missing-request gap, retain initial performance observations separately and record post-review output sizes. Keep the same branch and PR, with one commit per review item and no merge. All nine Actions remain unchanged and [DRAFT]; siteLaunched remains false.
