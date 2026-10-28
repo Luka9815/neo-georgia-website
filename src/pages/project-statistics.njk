@@ -22,7 +22,7 @@ eleventyExcludeFromCollections: true
 <section><h2>{{ t[heading] }}</h2>
 {% if kind != 'periods' %}
 {% set rows = projectData | chartRows(kind,t) %}
-<div class="chart-scroll" tabindex="0" role="region" aria-label="{{ t[heading] }}">
+<div class="chart-scroll" tabindex="0" role="group" aria-label="{{ t[heading] }}">
 {{ rows | projectChart(t[heading],t.chartDescription,view.lang ~ '-' ~ kind) | safe }}
 </div>
 {% endif %}
@@ -38,7 +38,7 @@ eleventyExcludeFromCollections: true
 <h2 id="top-organisations-title">{{ t.topOrganisations }}</h2>
 <p>{{ t.organisationChartNote }}</p>
 {% set ranking = projectData | chartRows('organisations',t) %}
-<div class="chart-scroll" tabindex="0" role="region" aria-label="{{ t.topOrganisations }}">{{ ranking | projectChart(t.topOrganisations,t.chartDescription,view.lang ~ '-organisations') | safe }}</div>
+<div class="chart-scroll" tabindex="0" role="group" aria-label="{{ t.topOrganisations }}">{{ ranking | projectChart(t.topOrganisations,t.chartDescription,view.lang ~ '-organisations') | safe }}</div>
 <table class="project-statistics" data-organisation-ranking><caption>{{ t.topOrganisations }}</caption>
 <thead><tr><th scope="col">{{ t.projectOrganisation }}</th><th scope="col">{{ t.projectCount }}</th></tr></thead>
 <tbody>{% for row in ranking %}<tr><th scope="row" lang="en">{{ row.label }}</th><td>{{ row.count }}</td></tr>{% endfor %}</tbody></table>
@@ -46,7 +46,7 @@ eleventyExcludeFromCollections: true
 <p><a href="/{{ view.lang }}/resources/projects/">{{ t.projectsIndex }}</a></p>
 <section id="participant-map" aria-labelledby="map-title"><h2 id="map-title">{{ t.participantMap }}</h2>
 <p>{{ t.mapCounting }}</p>
-<div class="map-scroll" tabindex="0" role="region" aria-label="{{ t.participantMap }}">{{ participantMap | participantMap(t,view.lang) | safe }}</div>
+<div class="map-scroll" tabindex="0" role="group" aria-label="{{ t.participantMap }}">{{ participantMap | participantMap(t,view.lang) | safe }}</div>
 <p>{{ t.mapDescription }}</p>
 <p class="map-source">{{ t.mapSource }}: <a href="https://www.naturalearthdata.com/about/terms-of-use/">Natural Earth ({{ t.publicDomain }})</a>; <a href="https://www.geonames.org/about.html">GeoNames</a>, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. {{ t.mapSourceDate }}.</p>
 <table class="project-statistics" data-participant-cities><caption>{{ t.participantMap }}</caption><thead><tr><th scope="col">{{ t.mapCity }}</th><th scope="col">{{ t.projectNamedOrganisations }}</th></tr></thead>

@@ -32,7 +32,7 @@ eleventyExcludeFromCollections: true
  <dl class="figures">{% for key,label in [['total','projectCount'],['organisations','projectNamedOrganisations'],['coordinated','projectCoordinated']] %}<div><dt>{{ t[label] }}</dt><dd><a href="/{{ view.lang }}/resources/statistics/">{{ projectData.stats[key] }}</a></dd></div>{% endfor %}</dl>
  <p class="figures-note">{{ t.projectSnapshot }}: <time datetime="{{ projectData.snapshotDate }}">{{ projectData.snapshotDate | dateLabel(t,'UTC',false) }}</time>.</p>
  <h3>{{ t.projectYears }}</h3>
- <div class="chart-scroll" tabindex="0" role="region" aria-label="{{ t.projectYears }}">{{ projectData.stats.years | miniChart(t.projectYears,t.homeChartDescription,view.lang ~ '-home-years') | safe }}</div>
+ <div class="chart-scroll" tabindex="0" role="group" aria-label="{{ t.projectYears }}">{{ projectData.stats.years | miniChart(t.projectYears,t.homeChartDescription,view.lang ~ '-home-years') | safe }}</div>
  {% include 'project-mobility-coverage.njk' %}
  <details class="chart-table"><summary>{{ t.chartTable }}</summary><table class="project-statistics"><caption>{{ t.projectYears }}</caption><thead><tr><th scope="col">{{ t.projectCallYear }}</th><th scope="col">{{ t.projectCount }}</th></tr></thead><tbody>{% for row in projectData.stats.years %}<tr><th scope="row">{{ row.key }}</th><td>{{ row.count }}</td></tr>{% endfor %}</tbody></table></details>
  <p><a href="/{{ view.lang }}/resources/statistics/">{{ t.projectStatistics }}</a></p>

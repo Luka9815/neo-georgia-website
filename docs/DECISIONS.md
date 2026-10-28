@@ -449,3 +449,7 @@ Apply the portal system across all existing templates without changing routes or
 
 ## 2026-10-29: Session 21 item 7, static Georgia participant map (Luka)
 Use the committed public-domain Natural Earth 1:50m whole Georgian polygon, including Abkhazia and the Tskhinvali region/South Ossetia, with no internal divisions. Commit 40 GeoNames coordinate/alias records with source/check date and show source credits. Count named source IDs once: 567 mapped, 38 unresolved (23 missing, 5 conflicts, 10 unreviewed locations). Place unresolved counts outside the geographic outline and retain the city table/details, making both bubble and table totals 605. No guessed coordinates, name-based institution merges, tiles or external requests.
+
+
+## 2026-10-29: Session 21, quality review and publication (Luka)
+Validate clean root/project-prefix builds, all existing and new tests, complete browser checks, before/after captures and local mobile Lighthouse. Preserve no-JavaScript, keyboard, forced-colour and reduced-motion checks; return only full axe violation details while running every rule. Disable the restored local Node compile cache for full tests after observing suppressed parameterised-case output. Keep explicit limits: one approved photo, 38 unresolved map locations, a packaged coordinate check rather than live geocoding, and no hosted/manual audit claims. Publish one commit per item plus design-system and quality/evidence commits on codex/session-21-redesign, open PR #21 against main, and do not merge or launch. All four Launch stages remain.

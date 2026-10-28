@@ -443,3 +443,7 @@ Applied the shared portal treatment to listings, calendar/tables, content, peopl
 
 ## 2026-10-29: Session 21 item 7, Georgian participants map
 Added a whole-border inline SVG map with area-scaled keyboard-accessible city bubbles, equivalent table, explicit unresolved-location row/details and public Natural Earth/GeoNames credits. Committed the reviewed coordinate/alias table, border source and reconciliation tests.
+
+
+## 2026-10-29: Session 21, final quality and review evidence
+Validated clean root/project-prefix builds and 167 tests per layout. Complete browser checks cover 107 pages per layout, with zero axe violations and native menu, filter, image, calendar/ICS, projects, search and portal keyboard/no-JavaScript/forced-colour checks. Added 48 before/after captures, mobile Lighthouse/transfer comparisons, source records and per-item status under review/session-21. Fixed language accessible names, duplicate landmark roles, sidebar/card deadline assertions, map label/focus visibility and edge-aware native scrolling checks. Archived the Session 20 handover, updated maintenance/design documentation and retained every launch hold. No merge or launch.

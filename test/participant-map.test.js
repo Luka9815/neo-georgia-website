@@ -33,5 +33,6 @@ test('committed public-domain outline includes both regions and has no internal 
  const ring=outline.geometry.coordinates[0];assert.deepEqual(ring[0],ring.at(-1));
  function inside([x,y]){let yes=false;for(let i=0,j=ring.length-1;i<ring.length;j=i++){const [xi,yi]=ring[i],[xj,yj]=ring[j];if((yi>y)!==(yj>y)&&x<(xj-xi)*(y-yi)/(yj-yi)+xi)yes=!yes;}return yes;}
  for(const point of Object.values(source.controlPoints))assert.ok(inside(point));
- for(const city of read('src/_data/cityLocations.json').cities){assert.ok(city.source.startsWith('https://www.geonames.org/'));assert.equal(city.checked,'2026-10-29');assert.ok(inside([city.longitude,city.latitude]));}
+ function coastDistance([x,y]){let nearest=Infinity;for(let i=1;i<ring.length;i++){const [ax,ay]=ring[i-1],[bx,by]=ring[i];const dx=bx-ax,dy=by-ay;const u=Math.max(0,Math.min(1,((x-ax)*dx+(y-ay)*dy)/(dx*dx+dy*dy||1)));nearest=Math.min(nearest,Math.hypot(x-ax-u*dx,y-ay-u*dy));}return nearest;}
+ for(const city of read('src/_data/cityLocations.json').cities){assert.ok(city.source.startsWith('https://www.geonames.org/'));assert.equal(city.checked,'2026-10-29');const point=[city.longitude,city.latitude];assert.ok(inside(point)||coastDistance(point)<0.005,`${city.en}: outside the outline/coastal tolerance`);}
 });

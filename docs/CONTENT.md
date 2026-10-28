@@ -248,3 +248,10 @@ Call.deadline remains a required offset-free wall time with timeZone Europe/Brus
 ### External Publications
 
 Publication records may use an HTTPS url and required publisher instead of file, never both. The release candidate links to official external publications only; local publication files remain supported for isolated historical fixtures. year is the publication year, which can differ from the reporting year in the title. sourceChecked records link verification. Types include report. The archive note appears while fewer than three items are present.
+
+
+## Session 21 portal maintenance
+
+Existing content records, project source and URLs are unchanged. findAudiences.json defines five audience slugs and reviewed Action matches; actionGuidance.json supplies short bilingual role summaries. They do not replace the complete Action eligibility text or shared authority exclusion. portalPhotos.json records original image source/permission/credit/hash/alternatives; only approved photographs may be referenced by the marked portal picture component. Keep image and map source READMEs with their licences.
+
+Charts and Action/home figures use the same approved project projection. The top-15 list counts distinct project references per named source identifier and keeps the first submitted name, without name-based merging. cityLocations.json is the explicit reviewed GeoNames coordinate/alias table. Update aliases/coordinates through review, preserve unknown/conflicting values separately and retain the whole internationally recognised national outline. No map or project service is fetched in build/test/CI. New finder, chart, city/alias, border and image-provenance tests supplement all original content and relationship coverage.
