@@ -299,3 +299,9 @@ Newest at the top. One entry per working session: date, who (agent or person), w
 - Root output: 81 to 111 HTML files, 2,900,139 to 11,856,455 bytes; Pagefind 1,315,137 to 1,324,245 bytes (3,235,348 if year tables are indexed). Observed root build time: 6.361 to 13.027 seconds. Prefix output: 111 HTML files, 11,924,961 bytes, Pagefind 1,325,413 bytes. Final timing runs overlapped other validation; these are observations, not controlled benchmarks.
 - Update HANDOVER/Launch checklist, CONTENT and SITE-PLAN; add full mapping, statistical/size JSON, methodology and representative mobile/desktop captures in review/session-19. All nine Action records/shared eligibility, dependencies, EU visibility assets/disclaimer and AGENTS/CLAUDE guidance remain unchanged. The launch flag stays false.
 - Remaining gap: no production POST/Origin/response contract was supplied. The guarded manual command is offline-tested but live reproduction remains unverified. Open the PR in draft with this gap explicit; do not merge.
+
+
+## 2026-10-28: PR #19 review, item 1, mobility coverage gap
+
+- Add a shared visible bilingual note beside the projects index's year/Action lists and the statistics year/Action tables. Explain missing 2014–2020 KA107/institution coverage, KA171 mobility-country entries and the invalidity of higher education mobility comparisons across 2020/2021.
+- Add bilingual placement/text checks and source regression checks for the missing legacy mobility cohort. Preserve the supplied data, all totals and Action wording. Record Luka's coverage decision.

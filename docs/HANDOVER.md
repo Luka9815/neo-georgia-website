@@ -63,6 +63,8 @@ The bilingual Find partners page is linked from Opportunities and every Action. 
 
 ## Session 19 projects and statistics
 
+PR #19 review: visible bilingual notes beside the year and Action comparisons now explain that 2014–2020 international credit mobility with Georgia (KA107) is not identifiable in the source and is not counted. KA171 country entries do not make higher education mobility comparisons across 2020/2021 meaningful. No records/counts are changed.
+
 Start from the supplied data branch 3cc2d40, main 14902c4 plus one source commit. PR #18 is merged. The search-service JSON replaces the expected CSV, with 6,764 projects and an official 2022 XLS sample. Read migration/source/README.md, CONTENT.md and the current implementation section in SITE-PLAN.md.
 
 Bilingual projects indexes/year tables and statistics are built from validated local metadata only. Homepage figures are 6,764 projects, 605 named Georgian organisations and 106 Georgian-coordinated projects. Statistics also show 5,079 institution participations and 2,045 mobility-country projects separately. Preserve the raw 606/7,124 source totals in tests. No funding, descriptions, results, contacts, beneficiary websites/media, per-project detail pages or project CMS fields are published. All nine Actions retain [DRAFT] and unchanged wording.

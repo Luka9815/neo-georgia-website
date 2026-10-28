@@ -53,3 +53,29 @@ test('bilingual statistics and homepage use named-institution counts and no illu
     assert.ok(!('sampleNumber' in strings) && !('figuresNote' in strings));
   }
 });
+
+test('bilingual coverage notes sit beside year and Action comparisons and explain the 2020/2021 break', () => {
+  assert.equal(data.projects.filter(p => p.reference.includes('-KA107-')).length, 0);
+  assert.equal(data.projects.filter(p => p.period === '2014–2020' && /^Mobility\s+of higher education/.test(p.actionLabel)).length, 0);
+  for (const lang of ['ka', 'en']) {
+    const strings = JSON.parse(readFileSync(`src/_data/${lang}.json`));
+    for (const path of ['projects', 'statistics']) {
+      const $ = load(readFileSync(`_site/${lang}/resources/${path}/index.html`, 'utf8'));
+      const notes = $('[data-project-mobility-coverage]');
+      assert.equal(notes.length, 2, `${lang}/${path}`);
+      for (const note of notes) {
+        assert.equal($(note).text(), strings.projectMobilityCoverage);
+        assert.equal($(note).attr('hidden'), undefined);
+        assert.match($(note).text(), /KA107/);
+        assert.match($(note).text(), /KA171/);
+        assert.match($(note).text(), /2020\/2021/);
+      }
+      if (path === 'statistics') {
+        for (const kind of ['years', 'groups']) assert.equal($(`[data-project-statistics="${kind}"]`).prev('[data-project-mobility-coverage]').length, 1);
+      } else {
+        assert.equal($('#projects-all [data-project-mobility-coverage]').length, 1);
+        assert.equal($('[data-project-action-index] > [data-project-mobility-coverage]').length, 1);
+      }
+    }
+  }
+});
