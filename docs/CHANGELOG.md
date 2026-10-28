@@ -267,3 +267,9 @@ Newest at the top. One entry per working session: date, who (agent or person), w
 
 - Add bilingual projects/year indexes and one static accessible table page per call year, grouped by mapped Action or sector. Keep all source titles/names, translated interface text, explicit source status/programme period and official-card links.
 - Link from Resources and mapped Action pages to matching static Action/year groups. No per-project pages, new main navigation item or JavaScript requirement. Include source/snapshot/build attribution on every new page.
+
+
+## 2026-10-28: Session 19, item 5, shared-data statistics
+
+- Add bilingual statistics tables and summary counts from the same mapped records as the catalogue. Break down projects by call year, Action/sector, source status and programme period, including an explicit unknown status row.
+- Show 6,764 projects, 605 named organisations, 5,079 institution participations, 106 Georgian-coordinated projects and 2,045 separate mobility-country projects. Explain source/date/counting limitations and omit funding entirely.

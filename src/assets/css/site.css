@@ -625,3 +625,9 @@ dd {
 .project-table th:first-child { width: 28%; }
 .project-table caption { text-align: start; font-weight: 700; padding-block: .5rem; }
 .project-attribution { border-top: 1px solid #767676; margin-block-start: 2rem; }
+
+.project-summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); gap: 1rem; }
+.project-summary dd { font-size: 1.5rem; font-weight: 700; margin: 0; }
+.project-statistics { border-collapse: collapse; width: 100%; margin-block: 1rem 2rem; }
+.project-statistics th, .project-statistics td { border-bottom: 1px solid #767676; text-align: start; padding: .5rem; overflow-wrap: anywhere; }
+.project-statistics caption { text-align: start; font-weight: 700; }

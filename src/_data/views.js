@@ -28,7 +28,7 @@ export default function () {
         alternate: `/${other}/${suffix}`,
       });
     }
-    for (const [kind, suffix] of [['projectsIndex', 'resources/projects/'], ['eventCalendar', 'events/calendar/'], ['findPartners', 'opportunities/find-partners/'], ['publications', 'resources/publications/'], ['faq', 'resources/faq/'], ['contact', 'about/contact/'], ['search', 'search/']]) {
+    for (const [kind, suffix] of [['projectStatistics', 'resources/statistics/'], ['projectsIndex', 'resources/projects/'], ['eventCalendar', 'events/calendar/'], ['findPartners', 'opportunities/find-partners/'], ['publications', 'resources/publications/'], ['faq', 'resources/faq/'], ['contact', 'about/contact/'], ['search', 'search/']]) {
       views.push({lang, kind, path: `/${lang}/${suffix}`, alternate: `/${other}/${suffix}`});
     }
     for (const year of [...new Set(loadProjectSnapshot().projects.map(project => project.year))].sort((a, b) => b - a)) {

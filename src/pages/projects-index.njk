@@ -8,7 +8,12 @@ eleventyExcludeFromCollections: true
 ---
 {% extends 'page.njk' %}
 {% block pageContent %}
-<p>{{ t.projectCount }}: <strong>{{ projectData.projects.length }}</strong>.</p>
+<dl class="project-summary">
+<div><dt>{{ t.projectCount }}</dt><dd>{{ projectData.stats.total }}</dd></div>
+<div><dt>{{ t.projectNamedOrganisations }}</dt><dd>{{ projectData.stats.organisations }}</dd></div>
+<div><dt>{{ t.projectCoordinated }}</dt><dd>{{ projectData.stats.coordinated }}</dd></div>
+</dl>
+<p><a href="/{{ view.lang }}/resources/statistics/">{{ t.projectStatistics }}</a></p>
 <p>{{ t.projectCoverage }}</p>
 <section>
   <h2>{{ t.projectYearIndex }}</h2>
