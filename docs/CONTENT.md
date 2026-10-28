@@ -232,3 +232,8 @@ Raw pages go to the already ignored migration/source/erasmus-projects-georgia-<T
 The candidate keeps the supplied slim audit schema, including its source grant field, but drops long descriptions/results/contacts and retains only coordinator/GE organisations plus aggregate count/countries. The separate public projection discards the audit grant field; it is never shown or summed. No approved source or public content is replaced automatically.
 
 Review candidate differences, updated source terms, new labels and institution-versus-mobility-country counts before a separate promotion PR. If choosing a new dated source filename, update PROJECT_SOURCE, the source watch target and fixture-copy/test references. Refresh the source regression totals and mapping review deliberately, then rebuild/test/check both layouts. Daily builds reread the approved local snapshot only.
+
+
+### Session 20 call dates
+
+Call.deadline remains a required offset-free wall time with timeZone Europe/Brussels. Call.opens is optional: store an exact opening time only when verified. Without opens, status is open through the deadline and closed afterwards; no upcoming opening date is inferred. Real 2026 records carry sourceChecked and link to the exact Guide section; youth records also retain additionalSources for youth-worker mobility. Student application dates are set by their institution or consortium and must not be inferred from institutional grant deadlines.

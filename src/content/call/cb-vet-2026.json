@@ -1,0 +1,17 @@
+{
+  "slug": "cb-vet-2026",
+  "action": "cb-vet",
+  "year": 2026,
+  "deadline": "2026-03-26T17:00",
+  "timeZone": "Europe/Brussels",
+  "url": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-vet",
+  "sourceChecked": "2026-10-28",
+  "en": {
+    "title": "Capacity Building in VET: Neighbourhood East 2026",
+    "body": "Georgian VET and labour-market organisations may participate as eligible partners. The coordinator must be based in the EU or a country associated to the programme."
+  },
+  "ka": {
+    "title": "პოტენციალის განვითარება პროფესიულ განათლებაში: აღმოსავლეთ სამეზობლო 2026",
+    "body": "საქართველოს პროფესიული განათლებისა და შრომის ბაზრის ორგანიზაციებს შეუძლიათ მონაწილეობა უფლებამოსილ პარტნიორებად. კოორდინატორი უნდა იყოს ევროკავშირში ან პროგრამასთან ასოცირებულ ქვეყანაში."
+  }
+}

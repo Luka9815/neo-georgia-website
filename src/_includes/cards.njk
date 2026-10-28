@@ -6,6 +6,7 @@
         <div class="card-meta">{% if showSectionLabel %}<span class="card-section-label">{{ t.calls }}</span>{% endif %}<span class="status status-{{ item.status }}">{{ t[item.status] }}</span></div>
         <{{ heading }}><a href="/{{ lang }}/opportunities/{{ item.action }}/">{{ item.title }}</a></{{ heading }}>
         <p class="card-date"><time datetime="{{ item.deadline }}">{{ item.deadline | dateLabel(t) }}</time><br><span class="card-timezone">{{ t.brussels }}</span></p>
+        {{ item.body | markdown | safe }}
         <a class="card-link" href="{{ item.url }}">{{ t.officialLinks }}</a>
       {% elif type == 'resource' %}
         <p class="source-label source-{{ item.source }}">{{ t.source }}: {{ t[item.source] }}</p>

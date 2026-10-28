@@ -2,16 +2,16 @@
   "slug": "cbhe-2026",
   "action": "cbhe",
   "year": 2026,
-  "opens": "2026-01-01T00:00",
-  "deadline": "2026-12-15T17:00",
+  "deadline": "2026-02-10T17:00",
   "timeZone": "Europe/Brussels",
-  "url": "https://erasmus-plus.ec.europa.eu/programme-guide/erasmusplus-programme-guide",
+  "url": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-higher-education",
+  "sourceChecked": "2026-10-28",
   "en": {
-    "title": "[SAMPLE] cbhe illustrative call",
-    "body": "[SAMPLE] Illustrative content only."
+    "title": "Capacity Building in Higher Education 2026",
+    "body": "Deadline for the 2026 CBHE call, including Neighbourhood East. Check the strand, consortium and Georgia eligibility conditions on the Action page and in the Guide."
   },
   "ka": {
-    "title": "[SAMPLE] cbhe საილუსტრაციო კონკურსი",
-    "body": "[SAMPLE] მხოლოდ საილუსტრაციო მასალა."
+    "title": "პოტენციალის განვითარება უმაღლეს განათლებაში 2026",
+    "body": "2026 წლის CBHE კონკურსის ვადა, აღმოსავლეთ სამეზობლოს ჩათვლით. გადაამოწმეთ მიმართულების, კონსორციუმისა და საქართველოს უფლებამოსილების პირობები ქმედების გვერდზე და გზამკვლევში."
   }
 }

@@ -326,3 +326,9 @@ Newest at the top. One entry per working session: date, who (agent or person), w
 
 - Remove only the draft prefixes from nine bilingual Actions and shared Georgia eligibility. Preserve a baseline regression test for all other wording/metadata. Keep Nino’s nine-Action review list in ACTION-REVIEW.md.
 - Preserve all remaining sample content and publication files in test fixtures before later removal; no coverage is deleted.
+
+
+## 2026-10-28: Session 20, item 2, verified 2026 Calls
+
+- Publish eleven bilingual source-linked 2026 call records, all closed as of this review. Replace invented opening/deadline dates with verified deadlines and source-check dates. Display application-route context on call cards.
+- Preserve optional explicit opening-time behaviour and DST boundary tests; omit unverified opening times from real records. Add the bilingual 2027 expectation note.

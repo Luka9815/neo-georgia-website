@@ -12,7 +12,7 @@ export default function () {
     .map((i) => ({
       ...i,
       status: callStatus(i, now),
-      opens: zonedDateTime(i.opens, i.timeZone),
+      opens: i.opens ? zonedDateTime(i.opens, i.timeZone) : undefined,
       deadline: zonedDateTime(i.deadline, i.timeZone),
     }))
     .sort((a, b) => Date.parse(a.deadline) - Date.parse(b.deadline));

@@ -2,16 +2,16 @@
   "slug": "icm-2026",
   "action": "icm",
   "year": 2026,
-  "opens": "2026-11-01T00:00",
-  "deadline": "2026-12-20T12:00",
+  "deadline": "2026-02-19T12:00",
   "timeZone": "Europe/Brussels",
-  "url": "https://erasmus-plus.ec.europa.eu/programme-guide/erasmusplus-programme-guide",
+  "url": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/higher-education-mobility-projects",
+  "sourceChecked": "2026-10-28",
   "en": {
-    "title": "[SAMPLE] icm illustrative call",
-    "body": "[SAMPLE] Illustrative content only."
+    "title": "International Credit Mobility (KA171) 2026",
+    "body": "Institutional application deadline. The EU or associated-country institution applies to its National Agency. Students and staff apply through their own university."
   },
   "ka": {
-    "title": "[SAMPLE] icm საილუსტრაციო კონკურსი",
-    "body": "[SAMPLE] მხოლოდ საილუსტრაციო მასალა."
+    "title": "საერთაშორისო კრედიტმობილობა (KA171) 2026",
+    "body": "ინსტიტუციური განაცხადის ვადა. ევროკავშირის ან პროგრამასთან ასოცირებული ქვეყნის დაწესებულებას განაცხადი შეაქვს თავის ეროვნულ სააგენტოში. სტუდენტები და პერსონალი მიმართავენ საკუთარ უნივერსიტეტს."
   }
 }

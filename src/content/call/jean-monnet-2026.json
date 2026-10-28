@@ -2,16 +2,16 @@
   "slug": "jean-monnet-2026",
   "action": "jean-monnet",
   "year": 2026,
-  "opens": "2026-01-01T00:00",
-  "deadline": "2026-06-01T17:00",
+  "deadline": "2026-02-03T17:00",
   "timeZone": "Europe/Brussels",
-  "url": "https://erasmus-plus.ec.europa.eu/programme-guide/erasmusplus-programme-guide",
+  "url": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/jean-monnet-actions/higher-education-projects",
+  "sourceChecked": "2026-10-28",
   "en": {
-    "title": "[SAMPLE] jean-monnet illustrative call",
-    "body": "[SAMPLE] Illustrative content only."
+    "title": "Jean Monnet: Modules, Chairs and Centres of Excellence 2026",
+    "body": "Higher education teaching and research applications to EACEA. The eligible institution applies on its own; other Jean Monnet strands have separate conditions."
   },
   "ka": {
-    "title": "[SAMPLE] jean-monnet საილუსტრაციო კონკურსი",
-    "body": "[SAMPLE] მხოლოდ საილუსტრაციო მასალა."
+    "title": "ჟან მონე: მოდულები, კათედრები და საუკეთესო გამოცდილების ცენტრები 2026",
+    "body": "უმაღლესი განათლების სწავლებისა და კვლევის განაცხადები წარედგინება EACEA-ს. უფლებამოსილი დაწესებულება განაცხადს წარადგენს ერთპიროვნულად; ჟან მონეს სხვა მიმართულებებს ცალკე პირობები აქვს."
   }
 }

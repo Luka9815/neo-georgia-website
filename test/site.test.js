@@ -217,6 +217,7 @@ test('stored call/event times are offset-free and output time elements have deri
   ]) {
     for (const item of data[type]) {
       for (const field of fields) {
+        if (type === 'call' && field === 'opens' && item.opens == null) continue;
         assert.match(item[field], /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}$/);
         assert.ok(
           Number.isFinite(Date.parse(zonedDateTime(item[field], item.timeZone)))
