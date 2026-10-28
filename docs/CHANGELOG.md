@@ -251,3 +251,8 @@ Newest at the top. One entry per working session: date, who (agent or person), w
 
 - Start from data/projects-snapshot-2026-10-28 at 3cc2d40, based on merged main 14902c4. Add build-start validation and an explicit public-field allowlist. Keep source funding, descriptions, beneficiary websites and other excluded fields out of template data.
 - Record Luka's distinction between named institutions (605 organisations, 5,079 pairs) and 2,045 mobility-country entries. All 6,764 projects still count; raw 606/7,124 totals remain source regression checks. Resolve source calendar dates in Europe/Brussels and preserve original titles/statuses.
+
+
+## 2026-10-28: Session 19, item 2, project attribution
+
+- Add a shared bilingual attribution block with source link, beneficiary submission/NEO responsibility wording, snapshot day and separate build timestamp. Add Georgian/English project interface labels without translating source titles or names.

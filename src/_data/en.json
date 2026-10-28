@@ -203,5 +203,57 @@
     "Saturday",
     "Sunday"
   ],
-  "currentActions": "Current Action pages"
+  "currentActions": "Current Action pages",
+  "projectsIndex": "Projects with Georgian participation",
+  "projectStatistics": "Erasmus+ statistics for Georgia",
+  "projectSourceName": "Erasmus+ Project Results Platform",
+  "projectSource": "Source",
+  "projectSnapshot": "Data snapshot",
+  "projectBuild": "Site build",
+  "projectAttribution": "Information as submitted by beneficiaries. These data are not endorsed by, and are not the responsibility of, the National Erasmus+ Office in Georgia.",
+  "projectCoverage": "This snapshot covers call years 2014 to 2026. The 2026 and later call years are incomplete. Ongoing projects and source records may change.",
+  "projectReference": "Project reference and original title",
+  "projectDates": "Start and end dates",
+  "projectCoordinator": "Coordinator and country",
+  "projectGeorgianParticipants": "Georgian participants, city and role",
+  "projectOrganisationCount": "Total organisations",
+  "projectCallYear": "Call year",
+  "projectCount": "Projects",
+  "projectNamedOrganisations": "Named Georgian organisations",
+  "projectCoordinated": "Georgian-coordinated projects",
+  "projectParticipations": "Georgian institution participations",
+  "projectMobilityCountry": "Mobility projects where Georgia is listed as a participating country without a named Georgian institution",
+  "projectUnknown": "Not supplied",
+  "projectAll": "All projects",
+  "projectYearIndex": "Browse by call year",
+  "projectActionGroup": "Action or sector",
+  "projectStatus": "Source status",
+  "projectProgrammePeriod": "Programme period",
+  "projectYears": "Projects by call year",
+  "projectGroups": "Projects by Action or sector",
+  "projectStatuses": "Projects by source status",
+  "projectPeriods": "Projects by programme period",
+  "projectCountingNote": "Projects are counted once by official reference. Institution participations are unique project/organisation pairs. Named organisations are counted by the source PIC/organisation identifier, excluding mobility-country entries. No project grant amounts are shown or summed.",
+  "projectSourceStatusNote": "Source status is retained, rather than inferred from end dates. Completed corresponds to the source value finalized.",
+  "projectActionLinks": "Projects for this Action by call year",
+  "projectRoles": {
+    "coordinator": "Coordinator",
+    "partner": "Partner",
+    "country-mobility": "Mobility-country entry"
+  },
+  "projectStatusLabels": {
+    "completed": "Completed",
+    "ongoing": "Ongoing",
+    "terminated": "Terminated",
+    "unknown": "Unknown"
+  },
+  "projectSectorLabels": {
+    "higher-education": "Higher education",
+    "youth": "Youth",
+    "vet": "Vocational education and training",
+    "school": "School education",
+    "adult": "Adult education",
+    "sport": "Sport",
+    "other": "Other"
+  }
 }

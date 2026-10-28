@@ -1,0 +1,6 @@
+<aside class="project-attribution" data-project-attribution>
+  <p>{{ t.projectSource }}: <a href="{{ projectData.sourceUrl }}">{{ t.projectSourceName }}</a>.</p>
+  <p>{{ t.projectAttribution }}</p>
+  <p>{{ t.projectSnapshot }}: <time datetime="{{ projectData.snapshotDate }}">{{ projectData.snapshotDate | dateLabel(t, 'UTC', false) }}</time>.
+    {{ t.projectBuild }}: <time datetime="{{ projectData.buildTime }}">{{ projectData.buildTime | dateLabel(t, 'Asia/Tbilisi') }}</time> (Asia/Tbilisi).</p>
+</aside>
