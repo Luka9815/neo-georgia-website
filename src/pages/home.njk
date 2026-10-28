@@ -30,14 +30,14 @@ eleventyExcludeFromCollections: true
     <h2 id="deadlines-title">{{ t.deadlines }}</h2>
     <a href="/{{ view.lang }}/calls/">{{ t.allCalls }}</a>
   </div>
-  {{ cards(calls | withoutStatus('closed') | take(3), 'call', t, view.lang, showSectionLabel=true) }}
+  {{ cards(calls | withoutStatus('closed') | take(3), 'call', t, view.lang, showSectionLabel=true, emptyMessage=t.callsEmpty) }}
 </section>
 <section class="home-section" aria-labelledby="events-title">
   <div class="section-heading">
     <h2 id="events-title">{{ t.upcomingEvents }}</h2>
     <a href="/{{ view.lang }}/events/">{{ t.allEvents }}</a>
   </div>
-  {{ cards(events | status('upcoming') | take(3), 'event', t, view.lang, showSectionLabel=true) }}
+  {{ cards(events | status('upcoming') | take(3), 'event', t, view.lang, showSectionLabel=true, emptyMessage=t.eventsEmpty) }}
 </section>
 <section class="home-section" aria-labelledby="news-title">
   <div class="section-heading">

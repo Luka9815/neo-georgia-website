@@ -409,3 +409,7 @@ Publish a dated bilingual privacy notice for the actual static site: no site coo
 
 ## 2026-10-28: Session 20, dated accessibility statement (Luka)
 Publish a dated bilingual WCAG 2.1 AA target and an accurate account of automated axe, keyboard/focus, language switching, 320 px and no-JavaScript checks. State known limits for third-party PDFs/sites, untranslated source project names/titles, scrollable tables and JavaScript search. Keep the reporting contact [TBC]. Do not claim a complete WCAG audit or completed assistive-technology review.
+
+
+## 2026-10-28: Session 20, final interface text and TBC inventory (Luka)
+Replace all remaining sample interface copy with final British English and Georgian text. Keep the exact requested small January 2027 preview notice and noindex/siteLaunched=false. Remove obsolete sample/contact/social and illustrative-figure keys. Use meaningful empty states for home Calls/Events. Inventory every authored [TBC] occurrence by file, field and occurrence in a generated review document; the test must pass while placeholders remain. No invented NEO facts or public sample/draft markers are allowed.

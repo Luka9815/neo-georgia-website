@@ -1,4 +1,4 @@
-{% macro cards(items, type, t, lang, heading='h3', showSectionLabel=false) %}
+{% macro cards(items, type, t, lang, heading='h3', showSectionLabel=false, emptyMessage='') %}
 <ul class="cards cards-{{ type }}"{% if type == 'publication' %} data-publications{% endif %}>
   {% for item in items %}
     <li class="card"{% if type == 'publication' %} data-year="{{ item.year }}" data-type="{{ item.type }}"{% endif %}>
@@ -43,7 +43,7 @@
       {% endif %}
     </li>
   {% else %}
-    <li class="card empty-state">{{ t.empty }}</li>
+    <li class="card empty-state">{{ emptyMessage or t.empty }}</li>
   {% endfor %}
 </ul>
 {% endmacro %}

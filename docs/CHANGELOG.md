@@ -391,3 +391,9 @@ Newest at the top. One entry per working session: date, who (agent or person), w
 ## 2026-10-28: Session 20, item 13, dated accessibility statement
 
 - Replace the sample accessibility page with scope, testing method, known limitations and a problem-reporting contact. Final root/project-prefix results are recorded in the release review.
+
+
+## 2026-10-28: Session 20, item 14, final interface text and TBC inventory
+
+- Finish home, preview, individual guidance, footer and empty-state copy in both languages. Hide empty Stories without changing the settled design.
+- Add a passing [TBC] inventory test that writes docs/review/session-20/TBC.md and a production HTML gate against public [SAMPLE]/[DRAFT] markers. Keep noindex and all source datasets unchanged.
