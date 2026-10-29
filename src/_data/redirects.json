@@ -734,5 +734,65 @@
   {
     "from": "/en/here/",
     "to": "/en/about/here/"
+  },
+  {
+    "from": "/discover-erasmus-opportunities-introductory-webinar-invitation/",
+    "to": "/ka/events/"
+  },
+  {
+    "from": "/%e1%83%a3%e1%83%9b%e1%83%90%e1%83%a6%e1%83%9a%e1%83%94%e1%83%a1%e1%83%98-%e1%83%92%e1%83%90%e1%83%9c%e1%83%90%e1%83%97%e1%83%9a%e1%83%94%e1%83%91%e1%83%90/",
+    "to": "/ka/opportunities/"
+  },
+  {
+    "from": "/youth-participation-activities-non-formal-activities/",
+    "to": "/ka/opportunities/"
+  },
+  {
+    "from": "/inclusion-and-diversity/",
+    "to": "/ka/resources/"
+  },
+  {
+    "from": "/environment-and-fight-against-climate-change/",
+    "to": "/ka/resources/"
+  },
+  {
+    "from": "/digital-transformation/",
+    "to": "/ka/resources/"
+  },
+  {
+    "from": "/participation-in-democratic-life-common-values-and-civic-engagement/",
+    "to": "/ka/resources/"
+  },
+  {
+    "from": "/good-practice-examples/",
+    "to": "/ka/resources/"
+  },
+  {
+    "from": "/what-is-done-under-cb-vet-in-georgia/",
+    "to": "/ka/opportunities/cb-vet/"
+  },
+  {
+    "from": "/erasmus-charter-higher-education/",
+    "to": "/ka/opportunities/"
+  },
+  {
+    "from": "/capacity_building_in_the_field_artsector/",
+    "to": "/ka/opportunities/"
+  },
+  {
+    "from": "/long-term-politics-of-the-moesy/",
+    "to": "/ka/resources/"
+  },
+  {
+    "from": "/georgia-in-eurydice-network/",
+    "to": "/ka/resources/"
+  },
+  {
+    "from": "/vocational-education-and-training/",
+    "to": "/ka/opportunities/"
+  },
+  {
+    "from": "/procedure-for-the-recognition-of-academic-credits-obtained-through-education-abroad/",
+    "to": "/ka/resources/"
   }
 ]

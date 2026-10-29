@@ -555,3 +555,7 @@ Supersede the role-card presentation in “Session 21 item 3, shared template re
 
 ## 2026-10-30: Session 25 item 3, target-language redirect stubs (Luka)
 Supersede the Georgian-only chrome of “Session 24 item 4, approved WordPress page rules” (2026-10-29): every legacy stub, including former HERE routes, uses its target language and a translated “Continue to the new page” link. Root behaviour, noindex, canonical targets and all redirect validation remain unchanged.
+
+
+## 2026-10-30: Session 25 item 4, remaining approved WordPress pages (Luka)
+Supersede the omissions for the 15 paths listed in the Session 25 brief under “Session 24 item 4, approved WordPress page rules” (2026-10-29). Luka approved their Events, Opportunities, CB VET and Resources targets on 2026-10-29. Preserve exact encoded source paths and all decoded collision/target validation. Elementor drafts, placeholder-title page 34308 and blank /35915-2/ remain omitted; see migration/review/REDIRECTS-PAGES.md.
