@@ -501,3 +501,7 @@ Use one bilingual credit macro on every placement and the footer-linked credits 
 
 ## 2026-10-29: Session 23 item 4, responsive variants and local cache (Luka)
 Generate local AVIF/WebP/JPEG at 320/640/960/1280/1920/2560px without enlargement. Only page hero/header images are eager/high-priority; News cards remain lazy. Keep originals out of output. Use Eleventy Image's source/encoder-content hashes with a local generated cache in .cache/portal-images, then copy only variants into the selected output root. PORTAL_IMAGE_CACHE_DIR may share that cache across isolated quality builds; no network fetch or skipped encoding is involved. Limit the Image queue to two sources to bound memory. Explicit encoder quality keeps the full mobile Home transfer under the existing 500,000-byte target; final measurements and worst-case contrast must pass before publication.
+
+
+## 2026-10-29: Session 23 item 5, photograph regression checks (Luka)
+Check all eight source hashes/dimensions and per-image README records, the exact placement map, every bilingual author/licence/file-page/modification credit, all six responsive widths in each format and prefix-safe generated paths. Assert source/ is absent from output. Add 390/1280px browser checks for decoded headers, credit focus, no source requests, no overflow and Home text/credit separation. Run axe with JavaScript enabled and native functionality checks with JavaScript disabled; retain the complete existing site/fixture sweeps and forced-colour checks. Record final results in the Session 23 review evidence.
