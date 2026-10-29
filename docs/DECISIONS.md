@@ -457,3 +457,7 @@ Validate clean root/project-prefix builds, all existing and new tests, complete 
 
 ## 2026-10-29: Session 22 item 1, card and navigation links (Luka)
 Use a single native stretched title link for single-destination Action, News and audience cards, with a whole-card keyboard focus ring. Titles and navigation links underline on hover/focus; running-text links retain underlines. Multi-destination Call and finder guidance panels retain their explicit Action and official-source links, because collapsing them would remove approved destinations. No nested links or scripted card activation.
+
+
+## 2026-10-29: Session 22 item 2, compact audiences (Luka)
+Use approximately 68px icon/title/arrow rows on mobile and five compact columns at desktop. Allow Georgian labels to wrap and grow rather than clip text; remove the arrow's automatic top gap.
