@@ -543,3 +543,7 @@ Use LAUNCH.md as the ordered runbook for launch, later domain move and instituti
 
 ## 2026-10-29: Session 24 final schema parity and fixture evidence (Luka)
 Supersede the conditional English-alt rule in “Optional validated News images with responsive local output” (2026-10-27): all supplied images require ka/en alternatives. Require sourceChecked for Calls/FAQ/Resources/Publications and PDF-only local Publications, replacing historical text downloads with valid synthetic PDFs in isolated fixtures. Preserve News editorial regressions in isolated Session 24 snapshots so future staff records do not freeze archive counts.
+
+
+## 2026-10-30: Session 25 item 1, confirmed office address and hours (Luka)
+Luka confirmed on 2026-10-29: 47 Merab Kostava Street, Tbilisi, Georgia (მერაბ კოსტავას ქუჩა 47, თბილისი, საქართველო); Monday to Friday, 10:00 to 18:00 (ორშაბათიდან პარასკევის ჩათვლით, 10:00-დან 18:00-მდე). This supersedes the [TBC] status of contact.address and contact.hours in “Session 20, final contact layout and hidden social links” (2026-10-28). ERIDA’s registered address remains separately unconfirmed.
