@@ -10,10 +10,12 @@ eleventyExcludeFromCollections: true
 
 {% block pageContent %}
 {% set item = catalog[view.kind] | localise(view.lang) | findSlug(view.slug) %}
-{{ item.body | markdown | safe }}
 {% if view.slug == 'about' %}
 {% from 'portal-photo.njk' import portalPhoto %}
-{{ portalPhoto(portalPhotos.dissemination, view.lang) }}
+{{ portalPhoto(portalPhotos[photoPlacements.about],view.lang) }}
+{% endif %}
+{{ item.body | markdown | safe }}
+{% if view.slug == 'about' %}
 <ul>
   <li><a href="/{{ view.lang }}/about/team/">{{ t.team }}</a></li>
   <li><a href="/{{ view.lang }}/here/">{{ t.here }}</a></li>

@@ -489,3 +489,7 @@ Keep 48 bilingual before/after 390/1280px captures and reproducible root/prefix 
 
 ## 2026-10-29: Session 23 item 1, supplied Commons assets (Luka)
 Start from origin/main f4d07a1 and merge origin/assets/commons-photos c4886d6. Accept the eight supplied JPEGs after full decode, original/3840px dimension and visual-subject checks against Luka's Commons API metadata. Move COMMONS-SOURCES into assets/images/README.md, record hashes and actual dimensions, and exclude source/ from all deployed passthrough copies. Attribution verification comes from Luka's supplied records; do not claim a new live API check.
+
+
+## 2026-10-29: Session 23 item 2, photo placements and lighter Home overlay (Luka)
+Use the Sameba panorama on Home because its wide composition survives desktop text and mobile focal crops; reserve the TSU main building for About. Place Ilia, TSU evening, Rike Park, GTU and Batumi on the five requested Find audiences, and the river panorama on Opportunities. Keep the NEO image on its News post/cards. Store placements and focal points centrally. Secondary building headers use gentler desktop/mobile ratios to preserve facades. Lighten Home to 72%–58% black and make all overlaid text white; the worst-case white image pixel is #6b6b6b, to be checked at 4.5:1 minimum. Other header text stays outside photographs.

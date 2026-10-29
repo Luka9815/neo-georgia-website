@@ -9,6 +9,8 @@ eleventyExcludeFromCollections: true
 {% extends 'page.njk' %}
 
 {% block pageContent %}
+{% from 'portal-photo.njk' import portalPhoto %}
+{{ portalPhoto(portalPhotos[photoPlacements.opportunities],view.lang) }}
 <p><a class="button" href="/{{ view.lang }}/find/">{{ t.find }}</a></p>
 <p><a href="/{{ view.lang }}/opportunities/find-partners/">{{ t.findPartners }}</a></p>
 <section id="individuals">

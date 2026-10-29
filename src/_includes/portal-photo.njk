@@ -1,6 +1,6 @@
-{% macro portalPhoto(photo, lang, layout='about') %}
-<figure class="portal-photo photo-{{ layout }}">
-<img data-portal-image="dissemination" data-image-layout="{{ layout }}" src="{{ photo.src }}" alt="{{ photo.alt[lang] }}">
-<figcaption><a href="{{ photo.source }}">{{ photo.credit[lang] }}</a> · {{ photo.change[lang] }}</figcaption>
+{% macro portalPhoto(photo, lang, layout='banner') %}
+<figure class="portal-photo photo-{{ layout }}" data-photo-id="{{ photo.id }}" style="--photo-focal: {{ photo.focal.desktop }}; --photo-focal-mobile: {{ photo.focal.mobile }}">
+<img data-portal-image="{{ photo.id }}" data-image-layout="{{ layout }}" src="{{ photo.src }}" alt="{{ photo.alt[lang] }}">
+<figcaption><a href="{{ photo.source }}">{{ photo.author or photo.credit[lang] }}</a></figcaption>
 </figure>
 {% endmacro %}
