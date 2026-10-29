@@ -473,3 +473,7 @@ Supersede Session 21's no-CSS-cropping/no-overlay rule for the Home placement on
 
 ## 2026-10-29: Session 22 item 5, text-only News cards (Luka)
 Remove the placeholder icon panel when News has no approved image. Use a teal top border and equal grid tracks alongside image cards; preserve titles, dates and summaries without clipping.
+
+
+## 2026-10-29: Session 22 item 6, shared spacing and preview bar (Luka)
+Use 32px section spacing, baseline-aligned section links, 14px card corners and the existing soft shadow. Move the exact unchanged preview sentence into a slim full-width bar above the sticky header. Keep siteLaunched=false, noindex and EU artwork/disclaimers unchanged.

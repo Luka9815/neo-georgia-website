@@ -387,3 +387,13 @@ header a:is(:hover,:focus-visible), .footer-grid nav a:is(:hover,:focus-visible)
 .cards-news .news-text-only { border-top: 4px solid var(--teal); }
 .cards-news .card-body { margin-top: auto; }
 .cards-news .news-text-only :is(h2,h3) { margin-top: .75rem; }
+
+:root { --radius: .875rem; }
+section { margin-block: 2rem; }
+.home-band { margin: 0; padding-block: 2rem; }
+.section-heading { align-items: baseline; gap: .5rem 1rem; margin-bottom: 1rem; }
+.section-heading > a { padding-block: 0; }
+.preview-bar { background: var(--accent-soft); color: var(--muted); font-size: .75rem; }
+.preview-bar p { padding-block: .4rem; margin-bottom: 0; }
+.page-main { padding-top: 1.5rem; }
+.page-home { padding-top: 0; }

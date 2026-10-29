@@ -22,6 +22,7 @@
 <body>
 <a class="skip" href="#main">{{ t.skip }}</a>
 {% from 'navigation.njk' import navigationMenu %}
+<div class="preview-bar"><p class="wrapper">{{ t.previewNotice }}</p></div>
 <header class="site-header">
   <div class="wrapper header-inner">
     <div class="header-top">
@@ -42,7 +43,6 @@
   </div>
 </header>
 <main id="main" class="wrapper page-main page-{{ view.kind }}" tabindex="-1">
-  <p class="notice">{{ t.previewNotice }}</p>
   {% if view.kind != 'home' and view.kind != 'action' %}<h1 id="page-title"{% if view.kind == 'news' and view.slug %} class="news-title"{% endif %}>{{ title }}</h1>{% endif %}
   {{ body | safe }}
 </main>
