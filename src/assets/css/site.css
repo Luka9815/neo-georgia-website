@@ -399,3 +399,14 @@ section { margin-block: 2rem; }
 .page-home { padding-top: 0; }
 
 .preview-bar .notice { border: 0; background: transparent; margin: 0 auto; color: inherit; font-size: inherit; }
+
+.home-hero .photo-hero { z-index: auto; }
+@media (max-width: 47.99rem) {
+ .audience-tiles .card { gap: .5rem; padding: .5rem .75rem; }
+ .audience-tiles :is(h2,h3) { font-size: .875rem; line-height: 1.35; }
+}
+.home-hero .photo-hero { align-self: stretch; width: 100%; height: 100%; }
+.cards-news .card-body { margin-top: 0; }
+.compact-update a, .figures a, .calendar-month-links a { text-decoration: none; }
+.compact-update a:is(:hover,:focus-visible), .figures a:is(:hover,:focus-visible),
+.calendar-month-links a:is(:hover,:focus-visible) { text-decoration: underline; }

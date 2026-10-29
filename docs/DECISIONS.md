@@ -481,3 +481,7 @@ Use 32px section spacing, baseline-aligned section links, 14px card corners and 
 
 ## 2026-10-29: Session 22 item 7, Commons blocker and credits (Luka)
 Stop new photography after the Commons API CONNECT request returns HTTP 403. Do not use another source or invent candidate filenames/licences. Record the one exact previously verified TSU file page for manual download; six to eight new photographs and their placements remain blocked. Add bilingual footer-linked credits for the approved existing image and preserve page captions. New Commons files require API licence/dimension verification and visual review before pipeline integration.
+
+
+## 2026-10-29: Session 22 quality and review (Luka)
+Keep 48 bilingual before/after 390/1280px captures and reproducible root/prefix evidence under review/session-22. Both layouts pass 171 tests and 109 browser pages with zero axe violations; retain all rules and fixture coverage. All eight mobile Lighthouse trials meet performance 90+ (98–100 measured) and accessibility 100. Measure complete Home transfer with every image loaded: 274,749 bytes ka and 233,455 bytes en. Hero contrast is bounded over a worst-case white photo pixel at 13.58:1/11.07:1. Local checks do not replace hosted/manual review. Keep the Commons photography block explicit, push the seven item commits plus quality evidence, open a PR against main and do not merge.

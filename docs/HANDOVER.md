@@ -1,8 +1,18 @@
 # Handover
 
-Last updated: 2026-10-29 (Codex, Session 21 redesign)
+Last updated: 2026-10-29 (Codex, Session 22 polish)
 
-## Current state
+## Session 22 current state
+
+Branch codex/session-22-polish starts at origin/main e166d94 (merged PR #21). Seven separate item commits implement link polish, compact audiences, compact Home Actions, the full-width photo hero, text-only News, shared spacing/preview bar and the Commons blocker/credits. A final quality commit records checks and evidence. Keep siteLaunched=false, content/data, existing URLs and exact EU artwork/disclaimers unchanged. No merge or launch is authorised.
+
+Photography is blocked: Commons API CONNECT HTTP 403, no response metadata or new images. Do not use substitute sources. Luka can download the previously verified https://commons.wikimedia.org/wiki/File:Tbilisi_State_University.jpg into src/assets/images/source/ for a later metadata/dimension/visual check. No other filenames were selected before the block. The requested 6 to 8 photos and About/Find/Opportunities/sector photo placements remain pending. Existing Home/About imagery and page captions remain; /<lang>/about/credits/ is now linked from the footer.
+
+Single-destination cards have one native stretched link; multi-destination Call/finder guidance keeps explicit source links to preserve approved destinations. Mobile audience rows grow for long Georgian text. Hero cover/overlay supersedes the Session 21 no-crop/no-overlay placement rule, with a tested worst-case contrast bound. See DESIGN.md and review/session-22/README.md for reproduction, final results and limitations.
+
+Validation: clean root/project-prefix builds, 171 tests per layout and 109 browser pages per layout pass with zero axe violations. Latest portal checks cover keyboard card focus/activation, compact rows, no JavaScript, forced colours and hero image/credit hit testing. All eight mobile Lighthouse trials score performance 98–100 and accessibility 100. Complete Home transfer including every image is 274,749 bytes (ka) and 233,455 bytes (en), under 500,000. The 48 requested before/after captures, score table, raw logs and limits are in review/session-22. Before scores were performance 99–100 and accessibility 100; no speed improvement is claimed. Next: review this polish PR and manually supply the blocked Commons originals for a later verified photography change. Do not merge or launch automatically.
+
+## Session 21 baseline retained for reference
 
 Branch codex/session-21-redesign starts at origin/main 0350527. PR #21 targets main. Luka’s Session 21 brief supersedes the Session 20 visual freeze; the approved content, project snapshot, existing URLs and seven main destinations remain unchanged. No merge or launch is authorised. siteLaunched=false, exact January 2027 notice, noindex and robots disallow remain. The previous handover is archived at archive/HANDOVER-SESSION-20.md.
 

@@ -447,3 +447,8 @@ Added a whole-border inline SVG map with area-scaled keyboard-accessible city bu
 
 ## 2026-10-29: Session 21, final quality and review evidence
 Validated clean root/project-prefix builds and 167 tests per layout. Complete browser checks cover 107 pages per layout, with zero axe violations and native menu, filter, image, calendar/ICS, projects, search and portal keyboard/no-JavaScript/forced-colour checks. Added 48 before/after captures, mobile Lighthouse/transfer comparisons, source records and per-item status under review/session-21. Fixed language accessible names, duplicate landmark roles, sidebar/card deadline assertions, map label/focus visibility and edge-aware native scrolling checks. Archived the Session 20 handover, updated maintenance/design documentation and retained every launch hold. No merge or launch.
+
+
+## 2026-10-29: Session 22 design polish (Luka)
+
+Polish native card/navigation links and focus, compact audience rows and Home Action sector tiles, introduce a full-width contrasted Home photo hero, remove News placeholder icons, tighten spacing and move the exact preview notice above the header. Add bilingual footer-linked photo credits. Commons API access is blocked with HTTP 403; no new photographs or substitute sources are published. Record the exact previously verified TSU candidate for manual download. Preserve content, snapshot data, existing URLs, EU assets/disclaimers and siteLaunched=false. Review evidence and validation are in review/session-22; no merge or launch.
