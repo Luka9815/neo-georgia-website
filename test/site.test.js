@@ -250,9 +250,10 @@ test('selected call year is independent of the clock and precedes every archive 
     for (const item of data.call.filter((item) => item.action === 'cbhe')) {
       const time = zonedDateTime(item.deadline, item.timeZone);
       assert.equal(
-        action(`time[datetime="${time}"]`).length,
+        action(`.cards-call time[datetime="${time}"]`).length,
         item.year === selected ? 1 : 0
       );
+      assert.equal(action(`.action-facts time[datetime="${time}"]`).length,item.year === selected ? 1 : 0);
     }
   }
 });

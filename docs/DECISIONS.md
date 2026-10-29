@@ -417,3 +417,39 @@ Replace all remaining sample interface copy with final British English and Georg
 
 ## 2026-10-28: Session 20, release validation and final review (Luka)
 Keep the settled design and seven main destinations. Validate clean root and project-prefix builds, full tests, complete browser checks and 48 bilingual 360/1280 px captures. Archive the old handover and replace the Launch checklist with four stages: Nino’s final whole-site review, confirmed TBC values, the signed grant agreement check and a separate launch change. Retain unconfirmed hosted/manual checks within those stages, without claiming they passed. Align AGENTS with the new public-marker rule, keep CLAUDE as its pointer, record all source/check-date and verification-limit evidence, push a review PR and do not merge.
+
+
+## 2026-10-29: Session 21, portal design system (Luka)
+Luka's redesign brief supersedes the Session 20 settled-design rule. Keep existing content, data, URLs, seven destinations, EU visibility and siteLaunched=false. Use plain CSS with blue/teal/warm tokens, eight-pixel spacing, a 75rem container, sticky native navigation, dark three-column footer and locally licensed Lucide icons. Retain Noto: the evaluated 60,068-byte FiraGO heading subset would raise total fonts to 159,252 bytes above the 140 KB budget. See DESIGN.md.
+
+
+## 2026-10-29: Session 21 item 5, static opportunity finder (Luka)
+Add bilingual /find/ and five audience pages using plain links, with matched Actions, applicant/partner qualifications, next steps and university/consortium/EACEA contacts. Keep the full Action text and authority exclusion authoritative. Erasmus Mundus Joint Masters and Design Measures remain distinct; individuals never apply for institutional grants. No script or new top-level destination.
+
+
+## 2026-10-29: Session 21 item 4, approved photography (Luka)
+Reuse the expressly approved NEO dissemination photograph with visible credit and a provenance/hash manifest on Home and About. One accepted image is fewer than five, so use icon/colour panels elsewhere. A CC BY campus candidate could not be downloaded under the network policy; no AV file with individual rights confirmed was accepted. Record the actual search outcome rather than invent licences. Use the existing Eleventy Image library for local AVIF/WebP/JPEG and eager hero/lazy below-fold loading.
+
+
+## 2026-10-29: Session 21 item 6, build-time project charts (Luka)
+Render SVG year, Action/sector, status and top-15 organisation charts from the approved local projection. Keep labelled values and all equivalent HTML tables, with the KA107 coverage warning directly beneath the year chart. Rank by distinct project references per named source ID, preserving the first submitted original name and not merging names. No chart library, client fetch or participant-count inference.
+
+
+## 2026-10-29: Session 21 item 1, portal homepage (Luka)
+Replace the former fixed home order with a credited photo introduction, five static audience paths, nine distinct Action icon tiles grouped by primary sector, computed figures and a year mini-chart with equivalent table and coverage note. Retain latest News and conditional Stories. Empty Calls/Events become compact lines rather than empty cards; real future records restore their sections.
+
+
+## 2026-10-29: Session 21 item 2, Action hero and facts (Luka)
+Add each Action’s icon/Key Action hero, a facts sidebar with unchanged full eligibility text, shared short Georgia-role guidance, all current-edition Brussels deadlines/statuses and exact official links. Link a computed mapped-project count to the existing Action/year project index. Counts describe the dated snapshot with its existing limits, not a complete census.
+
+
+## 2026-10-29: Session 21 item 3, shared template restyling (Luka)
+Apply the portal system across all existing templates without changing routes or authored content. FAQ answers become native details/summary accordions, preserving complete answers/source links and no-script access. Restyle Call/Event/Person cards, tables, filters, contact fields, search and policy prose with consistent surfaces and focus states. Keep working Publications, calendar, projects and search enhancements.
+
+
+## 2026-10-29: Session 21 item 7, static Georgia participant map (Luka)
+Use the committed public-domain Natural Earth 1:50m whole Georgian polygon, including Abkhazia and the Tskhinvali region/South Ossetia, with no internal divisions. Commit 40 GeoNames coordinate/alias records with source/check date and show source credits. Count named source IDs once: 567 mapped, 38 unresolved (23 missing, 5 conflicts, 10 unreviewed locations). Place unresolved counts outside the geographic outline and retain the city table/details, making both bubble and table totals 605. No guessed coordinates, name-based institution merges, tiles or external requests.
+
+
+## 2026-10-29: Session 21, quality review and publication (Luka)
+Validate clean root/project-prefix builds, all existing and new tests, complete browser checks, before/after captures and local mobile Lighthouse. Preserve no-JavaScript, keyboard, forced-colour and reduced-motion checks; return only full axe violation details while running every rule. Disable the restored local Node compile cache for full tests after observing suppressed parameterised-case output. Keep explicit limits: one approved photo, 38 unresolved map locations, a packaged coordinate check rather than live geocoding, and no hosted/manual audit claims. Publish one commit per item plus design-system and quality/evidence commits on codex/session-21-redesign, open PR #21 against main, and do not merge or launch. All four Launch stages remain.

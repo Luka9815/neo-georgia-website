@@ -1,0 +1,555 @@
+{
+  "source": "GeoNames via geonamescache 3.0.2, cities500.json",
+  "licence": "CC BY 4.0",
+  "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "checked": "2026-10-29",
+  "cities": [
+    {
+      "slug": "tbilisi",
+      "en": "Tbilisi",
+      "ka": "თბილისი",
+      "aliases": [
+        "T'bilisi",
+        "TBILISI N/A",
+        "TBLISI",
+        "TIBILISI",
+        "TIBLISI",
+        "Tbilisi",
+        "Tbilissi",
+        "Tbillisi",
+        "Tiflis",
+        "T’bilisi",
+        "Village Dighomi, Tbilisi"
+      ],
+      "latitude": 41.69143,
+      "longitude": 44.83412,
+      "geonameId": 611717,
+      "source": "https://www.geonames.org/611717/",
+      "checked": "2026-10-29"
+    },
+    {
+      "slug": "kutaisi",
+      "en": "Kutaisi",
+      "ka": "ქუთაისი",
+      "aliases": [
+        "KUTAISIS",
+        "Kutaisi"
+      ],
+      "latitude": 42.26791,
+      "longitude": 42.69459,
+      "geonameId": 613607,
+      "source": "https://www.geonames.org/613607/",
+      "checked": "2026-10-29"
+    },
+    {
+      "slug": "rustavi",
+      "en": "Rustavi",
+      "ka": "რუსთავი",
+      "aliases": [
+        "Rustavi"
+      ],
+      "latitude": 41.56271,
+      "longitude": 44.9787,
+      "geonameId": 612287,
+      "source": "https://www.geonames.org/612287/",
+      "checked": "2026-10-29"
+    },
+    {
+      "slug": "batumi",
+      "en": "Batumi",
+      "ka": "ბათუმი",
+      "aliases": [
+        "Batumi"
+      ],
+      "latitude": 41.64077,
+      "longitude": 41.6306,
+      "geonameId": 615532,
+      "source": "https://www.geonames.org/615532/",
+      "checked": "2026-10-29"
+    },
+    {
+      "slug": "gori",
+      "en": "Gori",
+      "ka": "გორი",
+      "aliases": [
+        "Gori"
+      ],
+      "latitude": 41.98532,
+      "longitude": 44.1129,
+      "geonameId": 614455,
+      "source": "https://www.geonames.org/614455/",
+      "checked": "2026-10-29"
+    },
+    {
+      "slug": "telavi",
+      "en": "Telavi",
+      "ka": "თელავი",
+      "aliases": [
+        "Telavi"
+      ],
+      "latitude": 41.91957,
+      "longitude": 45.47002,
+      "geonameId": 611694,
+      "source": "https://www.geonames.org/611694/",
+      "checked": "2026-10-29"
+    },
+    {
+      "slug": "zugdidi",
+      "en": "Zugdidi",
+      "ka": "ზუგდიდი",
+      "aliases": [
+        "Zugdidi"
+      ],
+      "latitude": 42.5084,
+      "longitude": 41.86796,
+      "geonameId": 610824,
+      "source": "https://www.geonames.org/610824/",
+      "checked": "2026-10-29"
+    },
+    {
+      "slug": "kobuleti",
+      "en": "Kobuleti",
+      "ka": "ქობულეთი",
+      "aliases": [
+        "Kobuleti"
+      ],
+      "latitude": 41.83283,
+      "longitude": 41.77823,
+      "geonameId": 613762,
+      "source": "https://www.geonames.org/613762/",
+      "checked": "2026-10-29"
+    },
+    {
+      "slug": "mtskheta",
+      "en": "Mtskheta",
+      "ka": "მცხეთა",
+      "aliases": [
+        "Mtskheta"
+      ],
+      "latitude": 41.84514,
+      "longitude": 44.71875,
+      "geonameId": 612890,
+      "source": "https://www.geonames.org/612890/",
+      "checked": "2026-10-29"
+    },
+    {
+      "slug": "stepantsminda",
+      "en": "Stepantsminda",
+      "ka": "სტეფანწმინდა",
+      "aliases": [
+        "Kazbegi",
+        "Kazbegi, Stepantsminda",
+        "Stefantsminda",
+        "Stepantsminda"
+      ],
+      "latitude": 42.65691,
+      "longitude": 44.64311,
+      "geonameId": 614087,
+      "source": "https://www.geonames.org/614087/",
+      "checked": "2026-10-29"
+    },
+    {
+      "slug": "gurjaani",
+      "en": "Gurjaani",
+      "ka": "გურჯაანი",
+      "aliases": [
+        "Gurjaani"
+      ],
+      "latitude": 41.74384,
+      "longitude": 45.80246,
+      "geonameId": 614351,
+      "source": "https://www.geonames.org/614351/",
+      "checked": "2026-10-29"
+    },
+    {
+      "slug": "akhaltsikhe",
+      "en": "Akhaltsikhe",
+      "ka": "ახალციხე",
+      "aliases": [
+        "Akhaltsikhe"
+      ],
+      "latitude": 41.63952,
+      "longitude": 42.98604,
+      "geonameId": 615860,
+      "source": "https://www.geonames.org/615860/",
+      "checked": "2026-10-29"
+    },
+    {
+      "slug": "gardabani",
+      "en": "Gardabani",
+      "ka": "გარდაბანი",
+      "aliases": [
+        "Gardabani"
+      ],
+      "latitude": 41.45967,
+      "longitude": 45.08988,
+      "geonameId": 614575,
+      "source": "https://www.geonames.org/614575/",
+      "checked": "2026-10-29"
+    },
+    {
+      "slug": "vale",
+      "en": "Vale",
+      "ka": "ვალე",
+      "aliases": [
+        "Vale",
+        "Vale, Akhaltsikhe"
+      ],
+      "latitude": 41.61608,
+      "longitude": 42.88112,
+      "geonameId": 611230,
+      "source": "https://www.geonames.org/611230/",
+      "checked": "2026-10-29"
+    },
+    {
+      "slug": "chokhatauri",
+      "en": "Chokhatauri",
+      "ka": "ჩოხატაური",
+      "aliases": [
+        "Chokhatauri"
+      ],
+      "latitude": 42.01896,
+      "longitude": 42.23945,
+      "geonameId": 615118,
+      "source": "https://www.geonames.org/615118/",
+      "checked": "2026-10-29"
+    },
+    {
+      "slug": "kareli",
+      "en": "Kareli",
+      "ka": "ქარელი",
+      "aliases": [
+        "Kareli"
+      ],
+      "latitude": 42.0215,
+      "longitude": 43.89553,
+      "geonameId": 7669163,
+      "source": "https://www.geonames.org/7669163/",
+      "checked": "2026-10-29"
+    },
+    {
+      "slug": "ozurgeti",
+      "en": "Ozurgeti",
+      "ka": "ოზურგეთი",
+      "aliases": [
+        "Ozurgeti"
+      ],
+      "latitude": 41.92336,
+      "longitude": 42.00525,
+      "geonameId": 612536,
+      "source": "https://www.geonames.org/612536/",
+      "checked": "2026-10-29"
+    },
+    {
+      "slug": "zestaponi",
+      "en": "Zestaponi",
+      "ka": "ზესტაფონი",
+      "aliases": [
+        "Zestafoni",
+        "Zestaponi"
+      ],
+      "latitude": 42.10752,
+      "longitude": 43.03291,
+      "geonameId": 610864,
+      "source": "https://www.geonames.org/610864/",
+      "checked": "2026-10-29"
+    },
+    {
+      "slug": "martvili",
+      "en": "Martvili",
+      "ka": "მარტვილი",
+      "aliases": [
+        "Martvili"
+      ],
+      "latitude": 42.41429,
+      "longitude": 42.37892,
+      "geonameId": 613065,
+      "source": "https://www.geonames.org/613065/",
+      "checked": "2026-10-29"
+    },
+    {
+      "slug": "samtredia",
+      "en": "Samtredia",
+      "ka": "სამტრედია",
+      "aliases": [
+        "Samtredia"
+      ],
+      "latitude": 42.1537,
+      "longitude": 42.33517,
+      "geonameId": 612126,
+      "source": "https://www.geonames.org/612126/",
+      "checked": "2026-10-29"
+    },
+    {
+      "slug": "khashuri",
+      "en": "Khashuri",
+      "ka": "ხაშური",
+      "aliases": [
+        "Khashuri"
+      ],
+      "latitude": 41.99733,
+      "longitude": 43.59905,
+      "geonameId": 613988,
+      "source": "https://www.geonames.org/613988/",
+      "checked": "2026-10-29"
+    },
+    {
+      "slug": "kaspi",
+      "en": "Kaspi",
+      "ka": "კასპი",
+      "aliases": [
+        "Kaspi"
+      ],
+      "latitude": 41.92776,
+      "longitude": 44.42355,
+      "geonameId": 614104,
+      "source": "https://www.geonames.org/614104/",
+      "checked": "2026-10-29"
+    },
+    {
+      "slug": "tsnori",
+      "en": "Tsnori",
+      "ka": "წნორი",
+      "aliases": [
+        "Tsnori"
+      ],
+      "latitude": 41.618,
+      "longitude": 45.979,
+      "geonameId": 611373,
+      "source": "https://www.geonames.org/611373/",
+      "checked": "2026-10-29"
+    },
+    {
+      "slug": "akhalkalaki",
+      "en": "Akhalkalaki",
+      "ka": "ახალქალაქი",
+      "aliases": [
+        "Akhalakalaki",
+        "Akhalkalaki"
+      ],
+      "latitude": 41.40514,
+      "longitude": 43.48629,
+      "geonameId": 615893,
+      "source": "https://www.geonames.org/615893/",
+      "checked": "2026-10-29"
+    },
+    {
+      "slug": "marneuli",
+      "en": "Marneuli",
+      "ka": "მარნეული",
+      "aliases": [
+        "Marneuli"
+      ],
+      "latitude": 41.48758,
+      "longitude": 44.79845,
+      "geonameId": 613074,
+      "source": "https://www.geonames.org/613074/",
+      "checked": "2026-10-29"
+    },
+    {
+      "slug": "poti",
+      "en": "Poti",
+      "ka": "ფოთი",
+      "aliases": [
+        "Poti"
+      ],
+      "latitude": 42.14272,
+      "longitude": 41.67384,
+      "geonameId": 612366,
+      "source": "https://www.geonames.org/612366/",
+      "checked": "2026-10-29"
+    },
+    {
+      "slug": "tskaltubo",
+      "en": "Tskaltubo",
+      "ka": "წყალტუბო",
+      "aliases": [
+        "Tskaltubo",
+        "Tsqaltubo"
+      ],
+      "latitude": 42.32858,
+      "longitude": 42.59808,
+      "geonameId": 824288,
+      "source": "https://www.geonames.org/824288/",
+      "checked": "2026-10-29"
+    },
+    {
+      "slug": "sagarejo",
+      "en": "Sagarejo",
+      "ka": "საგარეჯო",
+      "aliases": [
+        "Sagarejo"
+      ],
+      "latitude": 41.73691,
+      "longitude": 45.32596,
+      "geonameId": 612230,
+      "source": "https://www.geonames.org/612230/",
+      "checked": "2026-10-29"
+    },
+    {
+      "slug": "dusheti",
+      "en": "Dusheti",
+      "ka": "დუშეთი",
+      "aliases": [
+        "Dusheti"
+      ],
+      "latitude": 42.08642,
+      "longitude": 44.695,
+      "geonameId": 614843,
+      "source": "https://www.geonames.org/614843/",
+      "checked": "2026-10-29"
+    },
+    {
+      "slug": "chkhorotsku",
+      "en": "Chkhorotsku",
+      "ka": "ჩხოროწყუ",
+      "aliases": [
+        "CHKHOROTSKU",
+        "Chkhorotsku",
+        "Chkhorotsqu"
+      ],
+      "latitude": 42.51954,
+      "longitude": 42.12734,
+      "geonameId": 615140,
+      "source": "https://www.geonames.org/615140/",
+      "checked": "2026-10-29"
+    },
+    {
+      "slug": "akhmeta",
+      "en": "Akhmeta",
+      "ka": "ახმეტა",
+      "aliases": [
+        "Akhmeta"
+      ],
+      "latitude": 42.03495,
+      "longitude": 45.20804,
+      "geonameId": 615844,
+      "source": "https://www.geonames.org/615844/",
+      "checked": "2026-10-29"
+    },
+    {
+      "slug": "lagodekhi",
+      "en": "Lagodekhi",
+      "ka": "ლაგოდეხი",
+      "aliases": [
+        "Lagodekhi"
+      ],
+      "latitude": 41.82747,
+      "longitude": 46.27495,
+      "geonameId": 613342,
+      "source": "https://www.geonames.org/613342/",
+      "checked": "2026-10-29"
+    },
+    {
+      "slug": "borjomi",
+      "en": "Borjomi",
+      "ka": "ბორჯომი",
+      "aliases": [
+        "Borjomi"
+      ],
+      "latitude": 41.84692,
+      "longitude": 43.3971,
+      "geonameId": 615403,
+      "source": "https://www.geonames.org/615403/",
+      "checked": "2026-10-29"
+    },
+    {
+      "slug": "aspindza",
+      "en": "Aspindza",
+      "ka": "ასპინძა",
+      "aliases": [
+        "Aspindza",
+        "Aspindza townlet"
+      ],
+      "latitude": 41.57314,
+      "longitude": 43.24842,
+      "geonameId": 615660,
+      "source": "https://www.geonames.org/615660/",
+      "checked": "2026-10-29"
+    },
+    {
+      "slug": "surami",
+      "en": "Surami",
+      "ka": "სურამი",
+      "aliases": [
+        "Surami"
+      ],
+      "latitude": 42.02431,
+      "longitude": 43.55556,
+      "geonameId": 611809,
+      "source": "https://www.geonames.org/611809/",
+      "checked": "2026-10-29"
+    },
+    {
+      "slug": "tetritsqaro",
+      "en": "Tetritsqaro",
+      "ka": "თეთრიწყარო",
+      "aliases": [
+        "Tetritskaro",
+        "Tetritsqaro"
+      ],
+      "latitude": 41.54379,
+      "longitude": 44.46181,
+      "geonameId": 611674,
+      "source": "https://www.geonames.org/611674/",
+      "checked": "2026-10-29"
+    },
+    {
+      "slug": "sartichala",
+      "en": "Sartichala",
+      "ka": "სართიჭალა",
+      "aliases": [
+        "Sartichala",
+        "Sartich’ala"
+      ],
+      "latitude": 41.7179,
+      "longitude": 45.1757,
+      "geonameId": 612092,
+      "source": "https://www.geonames.org/612092/",
+      "checked": "2026-10-29"
+    },
+    {
+      "slug": "chiatura",
+      "en": "Chiatura",
+      "ka": "ჭიათურა",
+      "aliases": [
+        "Chiatura",
+        "Tchiatura"
+      ],
+      "latitude": 42.29806,
+      "longitude": 43.29889,
+      "geonameId": 615211,
+      "source": "https://www.geonames.org/615211/",
+      "checked": "2026-10-29"
+    },
+    {
+      "slug": "sachkhere",
+      "en": "Sachkhere",
+      "ka": "საჩხერე",
+      "aliases": [
+        "Sachkhere"
+      ],
+      "latitude": 42.33594,
+      "longitude": 43.40575,
+      "geonameId": 612256,
+      "source": "https://www.geonames.org/612256/",
+      "checked": "2026-10-29"
+    },
+    {
+      "slug": "khobi",
+      "en": "Khobi",
+      "ka": "ხობი",
+      "aliases": [
+        "Khobi"
+      ],
+      "latitude": 42.31746,
+      "longitude": 41.9002,
+      "geonameId": 613918,
+      "source": "https://www.geonames.org/613918/",
+      "checked": "2026-10-29"
+    }
+  ],
+  "cacheSource": "https://github.com/yaph/geonamescache",
+  "cacheFile": "geonamescache 3.0.2 / data/cities500.json",
+  "cacheSha256": "1523be8c6f083eeee946e1c27a0916474d0f0de4361a15104fcc70218bc4d55e"
+}

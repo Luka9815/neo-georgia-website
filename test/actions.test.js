@@ -4,7 +4,9 @@ import { readFileSync } from 'node:fs';
 import { load } from 'cheerio';
 import { loadContent } from '../lib/content.js';
 import { getPathPrefix } from '../lib/urls.js';
+import projectData from '../src/_data/projectData.js';
 
+const projectRows=projectData().projects;
 const read = (path) => JSON.parse(readFileSync(path, 'utf8'));
 const expected = {
   icm: ['higher-education'],
@@ -94,6 +96,7 @@ test('sector groups and every Action page show source-checked eligibility and of
         readFileSync(`_site/${lang}/opportunities/${item.slug}/index.html`, 'utf8')
       );
       assert.equal(page('h1').text(), item[lang].title);
+      assert.equal(Number(page('[data-action-project-count]').text()),projectRows.filter(project=>project.action===item.slug).length);
       assert.equal(page('.eligibility-note').text().trim(), shared[lang]);
       assert.ok(page('main').text().includes(item[lang].who));
       for (const link of item.officialLinks) {

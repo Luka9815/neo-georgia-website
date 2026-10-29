@@ -5,9 +5,20 @@ import { renderNewsImages } from './lib/news-images.js';
 import { EleventyHtmlBasePlugin } from '@11ty/eleventy';
 import { getPathPrefix, absoluteUrl } from './lib/urls.js';
 import MarkdownIt from 'markdown-it';
+import {icon, actionIcons} from './lib/icons.js';
+import {renderPortalImages} from './lib/portal-images.js';
+import {chartRows, projectChart, miniChart} from './lib/project-charts.js';
+import {participantMap} from './lib/participant-map.js';
 import { localise, related, dateLabel, callYears } from './lib/content.js';
 const markdown = new MarkdownIt({ html: false });
 export default function (config) {
+  config.addFilter('icon', icon);
+  config.addFilter('actionIcon', slug => actionIcons[slug]);
+  config.addFilter('projectActionCount',(data,slug)=>(data.actionYears[slug]||[]).reduce((sum,row)=>sum+row.count,0));
+  config.addFilter('chartRows',chartRows);
+  config.addFilter('projectChart',projectChart);
+  config.addFilter('miniChart',miniChart);
+  config.addFilter('participantMap',participantMap);
   config.addPlugin(EleventyHtmlBasePlugin);
   let outputRoot = '_site';
   config.on('eleventy.before', ({ directories }) => {
@@ -18,6 +29,10 @@ export default function (config) {
   config.addTransform('news-images', async function (content) {
     return (this.page?.outputPath || this.outputPath || '').endsWith('.html')
       ? renderNewsImages(content, outputRoot, getPathPrefix()) : content;
+  });
+  config.addTransform('portal-images', async function(content) {
+    return (this.page?.outputPath || this.outputPath || '').endsWith('.html')
+      ? renderPortalImages(content,outputRoot,getPathPrefix()) : content;
   });
   config.addTransform('eu-images', async function (content) {
     return (this.page?.outputPath || this.outputPath || '').endsWith('.html')
@@ -104,6 +119,7 @@ export default function (config) {
   config.addFilter('actionGroup', (items, actions, group) =>
     items.filter((i) => actions.find((a) => a.slug === i.action)?.keyAction === group)
   );
+  config.addFilter('primarySector',(items,sector)=>items.filter(item=>item.sectors[0]===sector));
   config.addFilter('sector', (items, sector) =>
     items.filter((item) => item.sectors.includes(sector))
   );

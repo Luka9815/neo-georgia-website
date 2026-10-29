@@ -20,6 +20,12 @@ eleventyExcludeFromCollections: true
 </dl>
 {% for kind, heading in [['years', 'projectYears'], ['groups', 'projectGroups'], ['statuses', 'projectStatuses'], ['periods', 'projectPeriods']] %}
 <section><h2>{{ t[heading] }}</h2>
+{% if kind != 'periods' %}
+{% set rows = projectData | chartRows(kind,t) %}
+<div class="chart-scroll" tabindex="0" role="group" aria-label="{{ t[heading] }}">
+{{ rows | projectChart(t[heading],t.chartDescription,view.lang ~ '-' ~ kind) | safe }}
+</div>
+{% endif %}
 {% if kind == 'years' or kind == 'groups' %}{% include 'project-mobility-coverage.njk' %}{% endif %}
 <table class="project-statistics" data-project-statistics="{{ kind }}">
 <caption>{{ t[heading] }}</caption>
@@ -28,6 +34,26 @@ eleventyExcludeFromCollections: true
 <th scope="row">{% if kind == 'years' %}<a href="/{{ view.lang }}/resources/projects/{{ row.key }}/">{{ row.key }}</a>{% elif kind == 'groups' %}{{ t.projectActionLabels[row.action] if row.action else t.projectSectorLabels[row.sector] }}{% elif kind == 'statuses' %}{{ t.projectStatusLabels[row.key] }}{% else %}{{ row.key }}{% endif %}</th><td>{{ row.count }}</td>
 </tr>{% endfor %}</tbody></table></section>
 {% endfor %}
+<section aria-labelledby="top-organisations-title">
+<h2 id="top-organisations-title">{{ t.topOrganisations }}</h2>
+<p>{{ t.organisationChartNote }}</p>
+{% set ranking = projectData | chartRows('organisations',t) %}
+<div class="chart-scroll" tabindex="0" role="group" aria-label="{{ t.topOrganisations }}">{{ ranking | projectChart(t.topOrganisations,t.chartDescription,view.lang ~ '-organisations') | safe }}</div>
+<table class="project-statistics" data-organisation-ranking><caption>{{ t.topOrganisations }}</caption>
+<thead><tr><th scope="col">{{ t.projectOrganisation }}</th><th scope="col">{{ t.projectCount }}</th></tr></thead>
+<tbody>{% for row in ranking %}<tr><th scope="row" lang="en">{{ row.label }}</th><td>{{ row.count }}</td></tr>{% endfor %}</tbody></table>
+</section>
 <p><a href="/{{ view.lang }}/resources/projects/">{{ t.projectsIndex }}</a></p>
+<section id="participant-map" aria-labelledby="map-title"><h2 id="map-title">{{ t.participantMap }}</h2>
+<p>{{ t.mapCounting }}</p>
+<div class="map-scroll" tabindex="0" role="group" aria-label="{{ t.participantMap }}">{{ participantMap | participantMap(t,view.lang) | safe }}</div>
+<p>{{ t.mapDescription }}</p>
+<p class="map-source">{{ t.mapSource }}: <a href="https://www.naturalearthdata.com/about/terms-of-use/">Natural Earth ({{ t.publicDomain }})</a>; <a href="https://www.geonames.org/about.html">GeoNames</a>, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. {{ t.mapSourceDate }}.</p>
+<table class="project-statistics" data-participant-cities><caption>{{ t.participantMap }}</caption><thead><tr><th scope="col">{{ t.mapCity }}</th><th scope="col">{{ t.projectNamedOrganisations }}</th></tr></thead>
+<tbody>{% for city in participantMap.cities %}<tr id="city-{{ city.slug }}"><th scope="row">{{ city[view.lang] }}</th><td>{{ city.count }}</td></tr>{% endfor %}
+{% if participantMap.unknown %}<tr id="city-unknown"><th scope="row">{{ t.mapUnknown }}</th><td>{{ participantMap.unknown }}</td></tr>{% endif %}</tbody>
+<tfoot><tr><th scope="row">{{ t.total }}</th><td>{{ participantMap.total }}</td></tr></tfoot></table>
+{% if participantMap.unresolved.length %}<details class="chart-table"><summary>{{ t.mapLocationDetails }}</summary><ul>{% for row in participantMap.unresolved %}<li>{% if row.label %}<span lang="en">{{ row.label }}</span>: {% endif %}{{ t.mapReasons[row.reason] }} ({{ row.count }})</li>{% endfor %}</ul></details>{% endif %}
+</section>
 {% include 'project-attribution.njk' %}
 {% endblock %}

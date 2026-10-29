@@ -1,0 +1,41 @@
+✔ AA contrast: ink text on paper (2.171778ms)
+✔ AA contrast: muted text on paper (0.241432ms)
+✔ AA contrast: blue text on paper (0.685979ms)
+✔ AA contrast: blue-dark text on paper (0.582318ms)
+✔ AA contrast: accent text on paper (0.226403ms)
+✔ AA contrast: teal text on paper (0.196495ms)
+✔ AA contrast: ink text on surface (0.381552ms)
+✔ AA contrast: muted text on surface (1.520541ms)
+✔ AA contrast: blue text on surface (0.26044ms)
+✔ AA contrast: blue-dark text on surface (0.349392ms)
+✔ AA contrast: accent text on surface (0.331234ms)
+✔ AA contrast: teal text on surface (0.219568ms)
+✔ AA contrast: ink text on accent-soft (0.356408ms)
+✔ AA contrast: muted text on accent-soft (0.113882ms)
+✔ AA contrast: blue text on accent-soft (0.137871ms)
+✔ AA contrast: blue-dark text on accent-soft (0.070814ms)
+✔ AA contrast: accent text on accent-soft (0.215832ms)
+✔ AA contrast: teal text on accent-soft (0.099769ms)
+✔ AA contrast: ink text on teal-soft (0.048912ms)
+✔ AA contrast: muted text on teal-soft (0.040252ms)
+✔ AA contrast: blue text on teal-soft (0.329092ms)
+✔ AA contrast: blue-dark text on teal-soft (0.067584ms)
+✔ AA contrast: accent text on teal-soft (0.043643ms)
+✔ AA contrast: teal text on teal-soft (0.040762ms)
+✔ AA inverse contrast: paper text on blue (0.131173ms)
+✔ AA inverse contrast: inverse-muted text on blue (0.082781ms)
+✔ AA inverse contrast: paper text on blue-dark (0.048195ms)
+✔ AA inverse contrast: inverse-muted text on blue-dark (0.039626ms)
+✔ AA open status: paper text on the prominent green surface (0.098866ms)
+✔ portal home has five audience paths, nine distinct Action tiles, a real photo and equivalent mini-chart data (1367.098556ms)
+✔ mapped and unresolved bubbles and table rows reconcile to all 605 named organisations in both languages (756.995099ms)
+✔ reviewed city variants deduplicate by source ID while conflicts, unknowns and mobility remain explicit (1.705391ms)
+✔ committed public-domain outline includes both regions and has no internal borders; coordinate sources are dated (3.304046ms)
+ℹ tests 33
+ℹ suites 0
+ℹ pass 33
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3264.212978

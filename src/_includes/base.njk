@@ -30,8 +30,8 @@
         <span class="brand-name">{{ t.officeName }}</span>
       </a>
       <div class="header-tools">
-      <a href="/{{ view.lang }}/search/">{{ t.search }}</a>
-      <a class="language-switch" href="{{ view.alternate }}" lang="{{ other }}" hreflang="{{ other }}">{{ t.switch }}</a>
+      <a class="search-link" href="/{{ view.lang }}/search/" aria-label="{{ t.search }}">{{ 'search' | icon | safe }}<span class="search-label">{{ t.search }}</span></a>
+      <div class="language-control"><span class="language-current" lang="{{ view.lang }}">{{ 'ქა' if view.lang == 'ka' else 'EN' }}</span><span aria-hidden="true">|</span><a class="language-switch" href="{{ view.alternate }}" lang="{{ other }}" hreflang="{{ other }}" aria-label="{{ 'EN' if other == 'en' else 'ქა' }}: {{ t.switch }}">{{ 'EN' if other == 'en' else 'ქა' }}</a></div>
       </div>
     </div>
     {{ navigationMenu(navigation, t, view, 'desktop-navigation') }}
@@ -41,9 +41,9 @@
     </details>
   </div>
 </header>
-<main id="main" class="wrapper page-main" tabindex="-1">
+<main id="main" class="wrapper page-main page-{{ view.kind }}" tabindex="-1">
   <p class="notice">{{ t.previewNotice }}</p>
-  {% if view.kind != 'home' %}<h1 id="page-title"{% if view.kind == 'news' and view.slug %} class="news-title"{% endif %}>{{ title }}</h1>{% endif %}
+  {% if view.kind != 'home' and view.kind != 'action' %}<h1 id="page-title"{% if view.kind == 'news' and view.slug %} class="news-title"{% endif %}>{{ title }}</h1>{% endif %}
   {{ body | safe }}
 </main>
 <footer class="site-footer">
@@ -58,7 +58,12 @@
         <ul>{% for link in socialLinks %}<li><a href="{{ link.url }}">{{ link[view.lang] }}</a></li>{% endfor %}</ul>
         {% endif %}
       </section>
+      <nav aria-label="{{ t.quickLinks }}">
+        <h2>{{ t.quickLinks }}</h2>
+        <ul>{% for key in ['opportunities','calls','resources'] %}<li><a href="/{{ view.lang }}/{{ key }}/">{{ t[key] }}</a></li>{% endfor %}</ul>
+      </nav>
       <nav aria-label="{{ t.about }}">
+        <h2>{{ t.legal }}</h2>
         <ul>
           {% for key in ['privacy','accessibility','language'] %}
             <li><a href="/{{ view.lang }}/{{ key }}/">{{ t[key] }}</a></li>

@@ -411,3 +411,39 @@ Newest at the top. One entry per working session: date, who (agent or person), w
 - Make production Event/Story and contact/name checks follow actual content. Retain independent empty/populated fixture coverage without requiring live catalogues to stay empty or NEO facts to remain [TBC].
 
 - Both complete browser commands pass 95 non-redirect pages per layout with zero axe violations, plus native controls, Publications, calendar/ICS, projects and search. The relative-year populated fixture calendar checks pass separately in both layouts.
+
+
+## 2026-10-29: Session 21, design system
+Introduced portal colour/spacing/type tokens, slimmer sticky header, labelled search icon, compact language control and dark three-column footer. Preserved seven links, native mobile menu, exact EU artwork/disclaimers and preview protections. Evaluated and declined FiraGO within the font budget.
+
+
+## 2026-10-29: Session 21 item 5, opportunity finder
+Added five bilingual audience paths and a static finder index, linked from Opportunities, with shared role summaries and routes to the full eligibility and official guidance.
+
+
+## 2026-10-29: Session 21 item 4, licensed photo pipeline
+Recorded the approved photograph’s source/permission/credit/date/hash and the external-photo search limits. Added responsive portal pictures and a credited About photograph, preserving the approved original.
+
+
+## 2026-10-29: Session 21 item 6, accessible charts
+Added pure build-time SVG charts and a top-15 organisation table, with exact source-derived values, labelled bars, text alternatives, keyboard-scrollable regions and forced-colour support. Existing statistics tables and warnings remain.
+
+
+## 2026-10-29: Session 21 item 1, portal homepage
+Added full-width alternating home sections, photo hero, audience tiles, nine Action tiles, figures/chart band and News image/icon cards. Empty Calls/Events use compact updates, with populated fixture coverage retained.
+
+
+## 2026-10-29: Session 21 item 2, Action pages
+Introduced icon heroes, responsive facts sidebars and source-derived Georgian-participation project counts on all nine Actions. Kept complete source-checked eligibility/how-to text, official links, relationships and shared restrictions.
+
+
+## 2026-10-29: Session 21 item 3, remaining templates
+Applied the shared portal treatment to listings, calendar/tables, content, people, contact, policies and controls. FAQ uses native keyboard-accessible accordions; no client script is required to read answers.
+
+
+## 2026-10-29: Session 21 item 7, Georgian participants map
+Added a whole-border inline SVG map with area-scaled keyboard-accessible city bubbles, equivalent table, explicit unresolved-location row/details and public Natural Earth/GeoNames credits. Committed the reviewed coordinate/alias table, border source and reconciliation tests.
+
+
+## 2026-10-29: Session 21, final quality and review evidence
+Validated clean root/project-prefix builds and 167 tests per layout. Complete browser checks cover 107 pages per layout, with zero axe violations and native menu, filter, image, calendar/ICS, projects, search and portal keyboard/no-JavaScript/forced-colour checks. Added 48 before/after captures, mobile Lighthouse/transfer comparisons, source records and per-item status under review/session-21. Fixed language accessible names, duplicate landmark roles, sidebar/card deadline assertions, map label/focus visibility and edge-aware native scrolling checks. Archived the Session 20 handover, updated maintenance/design documentation and retained every launch hold. No merge or launch.

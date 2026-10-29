@@ -1,4 +1,5 @@
 import { checkContentFixtures } from './check-content-fixtures.js';
+import {checkPortal} from './check-portal.js';
 import { checkCalendar } from './check-calendar.js';
 import { checkProjects } from './check-projects.js';
 import { checkSearch } from './check-search.js';
@@ -17,9 +18,7 @@ try {
   const page = await context.newPage();
   const base = process.env.TEST_URL || 'http://127.0.0.1:8080';
   let count = 0;
-  for (const view of getViews().filter(
-    (v) => !['redirect', 'legacyRedirect'].includes(v.kind)
-  )) {
+  async function checkView(view,page) {
     const response = await page.goto(`${base}${prefix}${view.path.slice(1)}`);
     assert.equal(response.status(), 200, view.path);
     await page.evaluate(() => document.fonts.ready);
@@ -31,7 +30,9 @@ try {
       ),
       `Local font: ${view.path}`
     );
-    const results = await new AxeBuilder({ page }).analyze();
+    // Run every rule, returning full details only for violations. Thousands of
+    // successful table-cell results need not cross the browser/Node boundary.
+    const results = await new AxeBuilder({ page }).options({resultTypes:['violations']}).analyze();
     assert.deepEqual(
       results.violations.map((v) => ({
         id: v.id,
@@ -58,7 +59,15 @@ try {
     await alternate.click();
     assert.equal(page.url(), destination);
     count++;
+    if(count % 20 === 0)console.log(`axe: checked ${count} pages`);
   }
+  // Independent complete-page scans use two workers; coverage is unchanged.
+  const queue=getViews().filter(v=>!['redirect','legacyRedirect'].includes(v.kind));
+  await Promise.all(Array.from({length:2},async()=>{
+    const worker=await context.newPage();
+    try { while(queue.length){const view=queue.shift();await checkView(view,worker);} }
+    finally {await worker.close();}
+  }));
   // Native disclosure navigation must remain usable with page JavaScript disabled.
   for (const width of [320, 360, 600, 768, 1024, 1280]) {
     const noJs = await browser.newContext({
@@ -74,11 +83,8 @@ try {
           () => document.documentElement.scrollWidth <= innerWidth
         )
       );
-      assert.equal(
-        await menuPage.locator('.hero-guide').isVisible(),
-        width >= 600,
-        `Hero guide at ${width}px`
-      );
+      assert.equal(await menuPage.locator('.audience-tiles li').count(),5);
+      assert.equal(await menuPage.locator('.home-hero .entry a:visible').count(),2);
       const wordmark = await menuPage.locator('.brand').boundingBox();
       const emblem = await menuPage.locator('.eu-emblem').boundingBox();
       assert.ok(wordmark.width <= emblem.width && wordmark.height <= emblem.height, `EU emblem prominence: ${lang} at ${width}px`);
@@ -152,6 +158,7 @@ try {
   await checkProjects(browser, base, prefix);
   await checkSearch(browser, base, prefix);
   await checkContentFixtures(browser, prefix);
+  await checkPortal(browser,base,prefix);
   console.log(
     `axe: ${count} pages passed with zero violations; ` +
       '320px overflow, keyboard skip links, language switches and no-JS mobile/desktop menus passed.'

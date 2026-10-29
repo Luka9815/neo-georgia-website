@@ -1,0 +1,38 @@
+---
+pagination:
+  data: pageTypes.find
+  size: 1
+  alias: view
+permalink: "{{ view.path }}"
+eleventyExcludeFromCollections: true
+---
+{% extends 'page.njk' %}
+{% block pageContent %}
+<p class="lead">{{ t.findIntro }}</p>
+{% if not view.audience %}
+{% include 'audience-tiles.njk' %}
+{% else %}
+{% set audience = findAudiences | findSlug(view.audience) %}
+<p><a href="/{{ view.lang }}/find/">{{ t.find }}</a></p>
+{% if view.audience == 'student' or view.audience == 'youth' %}<p>{{ t.individualRouteNote }}</p>{% endif %}
+<ul class="cards find-results">
+{% for slug in audience.actions %}
+{% set item = actions | findSlug(slug) %}
+<li class="card" data-find-action="{{ slug }}">
+  <span class="icon-slot">{{ slug | actionIcon | icon | safe }}</span>
+  <h2><a href="/{{ view.lang }}/opportunities/{{ slug }}/">{{ item.title }}</a></h2>
+  <p><strong>{{ t.georgiaRole }}:</strong> {{ actionGuidance[slug][view.lang] }}</p>
+  {% set next = t.institutionNext %}{% set contact = t.eaceaContact %}
+  {% if slug == 'icm' %}{% set contact = t.universityContact %}{% endif %}
+  {% if view.audience == 'student' and slug == 'icm' %}{% set next = t.individualIcmNext %}
+  {% elif view.audience == 'student' and slug == 'erasmus-mundus' %}{% set next = t.individualMundusNext %}{% set contact = t.consortiumContact %}
+  {% elif slug == 'youth-mobility' %}{% set next = t.individualYouthNext %}{% set contact = t.youthContact %}
+  {% elif slug == 'cb-vet' or slug == 'virtual-exchanges' %}{% set contact = t.consortiumContact %}{% endif %}
+  <p><strong>{{ t.nextStep }}:</strong> {{ next }}</p>
+  <p><strong>{{ t.rightContact }}:</strong> {{ contact }}</p>
+  <a class="card-link" href="{{ item.officialLinks[1].url }}">{{ t.officialActionPage }}</a>
+</li>
+{% endfor %}
+</ul>
+{% endif %}
+{% endblock %}

@@ -1,6 +1,6 @@
 # Interface design
 
-## Font comparison, 26 October 2026
+## Historical font comparison, 26 October 2026
 
 Both candidates were compared with Georgian navigation, mixed Georgian/Latin text, numerals and potentially confused Latin letters at 16, 20 and 32 px. The regular-face browser comparison is saved in review/session-5/font-comparison.png. FiraGO is narrower and fits more Latin text on a line. Noto has more open, generously spaced Georgian forms and a comfortable mixed-script reading rhythm; its wider Latin text needs room, so navigation wraps and mobile links are full-width.
 
@@ -34,7 +34,7 @@ Use the exact translated officeName as a typographic home-link wordmark, with no
 
 Cards distinguish type, title, date and action in that order. Call/Event status badges and resource source labels retain explicit text and reuse the tested palette. Cards grow with Georgian text rather than clipping it. The footer separates contact/legal links from the funding block. Session 17 uses the verified official Georgian Commission archive artwork on /ka/ and English on /en/, with accurate alternatives. Original bytes are retained; the existing image pipeline resizes complete PNGs without cropping, recolouring or removing whitespace. A white background box and the original aspect ratio are retained. Both artworks carry the funding statement, so adjacent repetition is omitted; the Georgian disclaimer remains unchanged. This explicitly supersedes the earlier KA artwork rejection recorded in DECISIONS. Source details are in src/assets/eu/README.md.
 
-## Home page
+## Historical home page, superseded by Session 21
 
 Keep the six approved blocks in order. A blue introduction gives the two audience paths clear priority, with a small guidance panel alongside on desktop and below on mobile. Listing headings link to their complete sections. Calls and Events use consistent date/status cards, News retains language filtering, the single story gets a quiet feature panel, and key figures carry an explicit illustrative-data note. All sample content remains labelled; no statistics, images or organisational claims have been invented.
 
@@ -44,3 +44,28 @@ No text is clipped to force identical card heights. Full-width mobile buttons, w
 ## Session 6 refinements
 
 Below 600 px, hide the supplementary next-step panel so the primary purpose and audience paths take less vertical space. The same opportunities destination remains available in the hero buttons and menu. At 600 px and above the panel remains visible. Filled green #14532d with white text makes open calls the strongest status signal (9.11:1 contrast); other statuses keep their muted/pale treatments and all retain words. This adds a semantic status colour, not a second decorative brand accent. Card section labels are explicit only in the mixed home context; section listings and Action subsections keep status/source labels without redundant section names.
+
+
+## Session 21 portal redesign, 29 October 2026
+
+Luka's Session 21 brief supersedes the settled-design rule and earlier home block order. Retain all existing source content, data and URLs, seven main destinations and preview/noindex safeguards. Use deep blue #003399 and #05264f, teal #006b70 on #e9f5f3, warm deadline accent #854600 on #fff1d2 and existing neutrals. CSS custom properties define a 75rem content width and an eight-pixel spacing scale. All approved text/surface pairs, including teal, are tested at 4.5:1 minimum. Cards have equal-height grid tracks, visible borders, icon/image slots and hover/focus-within states, without clipping Georgian text.
+
+Keep Noto Sans Georgian and Noto Sans for body and headings. Re-evaluated FiraGO 1.001 Bold from the upstream Fonts/FiraGO_TTF_1001/Roman/FiraGO-Bold.ttf on 2026-10-29: a combined Georgian/Latin WOFF2 subset with shaping features is 60,068 bytes. Added to the existing 99,184 bytes this is 159,252 bytes, exceeding the 140,000-byte total budget. Do not adopt it or download it at runtime. Larger, tighter Noto heading scales improve hierarchy within budget. No Georgian case transformation. Human Georgian proofreading remains part of Nino's review.
+
+The slim sticky header has a blue colour bar, labelled search icon, compact ქა | EN control and native mobile details navigation. The footer has office, quick-link and legal columns on dark blue. Approved EU emblem originals, whole-image white-box derivatives and exact disclaimers are unchanged. Decorative Lucide SVG shapes are inline, with local originals and their ISC/Feather MIT notices in src/assets/icons. No icon font, third-party requests, trackers or programme logo. Reduced motion and forced-colour styles preserve native controls and focus.
+
+### Current page composition and data visuals
+
+Home uses full-width alternating bands around a 75rem container: photo introduction, five audience choices, nine distinct Actions grouped by their primary sector, computed figures and a year mini-chart, conditional Calls/Events, latest News and conditional Stories. Empty Calls/Events are one compact linked line each. Action pages add icon/Key Action heroes and facts sidebars, with all current-edition deadlines and shared source-derived project counts. Every other template inherits the same type, spacing, card, table and control system. FAQ uses native details/summary. None of these paths requires JavaScript. Existing optional search and filter enhancements remain.
+
+New /find/ pages use stable English slugs in both languages, never audience detection. Full Action text is authoritative; short shared role summaries do not replace eligibility restrictions. Projects/statistics remain local snapshot projections, not live feeds.
+
+Charts are SVG generated by lib/project-charts.js with titles, descriptions and printed numeric labels. Existing equivalent tables remain; Home’s mini-chart has a native disclosure table. The KA107/2020–2021 coverage break sits directly under the year visuals. Long names wrap without truncating original source wording. Chart scroll regions keep a readable minimum SVG width, accept keyboard scrolling at 320px and do not overflow the page. No chart library or client data fetch.
+
+The participants map uses one whole national outline and no internal region paths. Its GeoNames city/alias table and Natural Earth provenance are committed. Bubble area is proportional to named source identifiers, including an explicitly non-geographic unresolved bubble, with native links into the equivalent city table. Label callouts and white halos keep text readable around clustered bubbles. Details and reconciliation are in src/assets/maps/README.md. SVGs use system colours in forced-colour mode.
+
+### Photography and budget
+
+One photograph, the already approved NEO dissemination event, is accepted for Home/About. Its original, bilingual alternatives, explicit site-reuse permission, visible credit, date and checksum are recorded. No additional suitably obtained and inspected image was accepted; icon/colour panels fill the remaining slots. This follows the brief’s fewer-than-five fallback. See src/assets/images/README.md for checked candidate sources and the blocked campus download. Complete images use the existing Eleventy Image dependency and local AVIF/WebP/JPEG variants. Hero is eager/high-priority; below-fold pictures are lazy. No cropping or unverified association with another event/person.
+
+Total font files stay at 99,184 bytes. Mobile Home’s complete measured transfer must remain below 500,000 bytes, including the selected hero variant (a stricter check than excluding the largest hero variant). Lighthouse before/after and screenshot evidence is in review/session-21. Local results are not a hosted Lighthouse guarantee or a full manual WCAG audit.

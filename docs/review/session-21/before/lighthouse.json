@@ -1,0 +1,328 @@
+{
+  "date": "2026-10-29",
+  "method": "Lighthouse default simulated mobile throttling, cold navigation, one run per page; local uncompressed HTTP server",
+  "records": [
+    {
+      "page": "home",
+      "lang": "ka",
+      "url": "http://127.0.0.1:8140/ka/",
+      "version": "13.6.0",
+      "performance": 100,
+      "accessibility": 100,
+      "transferBytes": 160530,
+      "lcpMs": 1008,
+      "cls": 0.0003378633724440777,
+      "failedAudits": [
+        {
+          "id": "speed-index",
+          "score": 0.99,
+          "displayValue": "2.2 s"
+        },
+        {
+          "id": "max-potential-fid",
+          "score": 0.54,
+          "displayValue": "240 ms"
+        },
+        {
+          "id": "unminified-css",
+          "score": 0.5,
+          "displayValue": "Est savings of 3 KiB"
+        },
+        {
+          "id": "cache-insight",
+          "score": 0.5,
+          "displayValue": "Est savings of 141 KiB"
+        },
+        {
+          "id": "document-latency-insight",
+          "score": 0.5,
+          "displayValue": "Est savings of 10 KiB"
+        },
+        {
+          "id": "image-delivery-insight",
+          "score": 0.5,
+          "displayValue": "Est savings of 19 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "page": "action",
+      "lang": "ka",
+      "url": "http://127.0.0.1:8140/ka/opportunities/cbhe/",
+      "version": "13.6.0",
+      "performance": 100,
+      "accessibility": 100,
+      "transferBytes": 133805,
+      "lcpMs": 1081,
+      "cls": 0.0005038924523736417,
+      "failedAudits": [
+        {
+          "id": "first-contentful-paint",
+          "score": 0.99,
+          "displayValue": "1.1 s"
+        },
+        {
+          "id": "speed-index",
+          "score": 0.99,
+          "displayValue": "2.3 s"
+        },
+        {
+          "id": "max-potential-fid",
+          "score": 0.5,
+          "displayValue": "250 ms"
+        },
+        {
+          "id": "unminified-css",
+          "score": 0.5,
+          "displayValue": "Est savings of 3 KiB"
+        },
+        {
+          "id": "cache-insight",
+          "score": 0.5,
+          "displayValue": "Est savings of 112 KiB"
+        },
+        {
+          "id": "document-latency-insight",
+          "score": 0.5,
+          "displayValue": "Est savings of 12 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "page": "statistics",
+      "lang": "ka",
+      "url": "http://127.0.0.1:8140/ka/resources/statistics/",
+      "version": "13.6.0",
+      "performance": 100,
+      "accessibility": 100,
+      "transferBytes": 134470,
+      "lcpMs": 1100,
+      "cls": 0.0005038924523736417,
+      "failedAudits": [
+        {
+          "id": "first-contentful-paint",
+          "score": 0.99,
+          "displayValue": "1.1 s"
+        },
+        {
+          "id": "max-potential-fid",
+          "score": 0.62,
+          "displayValue": "210 ms"
+        },
+        {
+          "id": "unminified-css",
+          "score": 0.5,
+          "displayValue": "Est savings of 3 KiB"
+        },
+        {
+          "id": "unused-css-rules",
+          "score": 0.5,
+          "displayValue": "Est savings of 10 KiB"
+        },
+        {
+          "id": "cache-insight",
+          "score": 0.5,
+          "displayValue": "Est savings of 112 KiB"
+        },
+        {
+          "id": "document-latency-insight",
+          "score": 0.5,
+          "displayValue": "Est savings of 12 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "page": "home",
+      "lang": "en",
+      "url": "http://127.0.0.1:8140/en/",
+      "version": "13.6.0",
+      "performance": 83,
+      "accessibility": 100,
+      "transferBytes": 175583,
+      "lcpMs": 1571,
+      "cls": 0.0004710344900114294,
+      "failedAudits": [
+        {
+          "id": "first-contentful-paint",
+          "score": 0.95,
+          "displayValue": "1.6 s"
+        },
+        {
+          "id": "largest-contentful-paint",
+          "score": 0.99,
+          "displayValue": "1.6 s"
+        },
+        {
+          "id": "speed-index",
+          "score": 0.99,
+          "displayValue": "2.1 s"
+        },
+        {
+          "id": "total-blocking-time",
+          "score": 0.46,
+          "displayValue": "650 ms"
+        },
+        {
+          "id": "max-potential-fid",
+          "score": 0,
+          "displayValue": "830 ms"
+        },
+        {
+          "id": "interactive",
+          "score": 0.98,
+          "displayValue": "2.4 s"
+        },
+        {
+          "id": "mainthread-work-breakdown",
+          "score": 0,
+          "displayValue": "3.2 s"
+        },
+        {
+          "id": "unminified-css",
+          "score": 0.5,
+          "displayValue": "Est savings of 3 KiB"
+        },
+        {
+          "id": "cache-insight",
+          "score": 0.5,
+          "displayValue": "Est savings of 161 KiB"
+        },
+        {
+          "id": "document-latency-insight",
+          "score": 0.5,
+          "displayValue": "Est savings of 7 KiB"
+        },
+        {
+          "id": "image-delivery-insight",
+          "score": 0.5,
+          "displayValue": "Est savings of 42 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "page": "action",
+      "lang": "en",
+      "url": "http://127.0.0.1:8140/en/opportunities/cbhe/",
+      "version": "13.6.0",
+      "performance": 96,
+      "accessibility": 100,
+      "transferBytes": 109664,
+      "lcpMs": 1005,
+      "cls": 0.01160116549748013,
+      "failedAudits": [
+        {
+          "id": "speed-index",
+          "score": 0.99,
+          "displayValue": "2.3 s"
+        },
+        {
+          "id": "total-blocking-time",
+          "score": 0.88,
+          "displayValue": "220 ms"
+        },
+        {
+          "id": "max-potential-fid",
+          "score": 0.23,
+          "displayValue": "360 ms"
+        },
+        {
+          "id": "unminified-css",
+          "score": 0.5,
+          "displayValue": "Est savings of 3 KiB"
+        },
+        {
+          "id": "cache-insight",
+          "score": 0.5,
+          "displayValue": "Est savings of 97 KiB"
+        },
+        {
+          "id": "document-latency-insight",
+          "score": 0.5,
+          "displayValue": "Est savings of 7 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "page": "statistics",
+      "lang": "en",
+      "url": "http://127.0.0.1:8140/en/resources/statistics/",
+      "version": "13.6.0",
+      "performance": 100,
+      "accessibility": 100,
+      "transferBytes": 110664,
+      "lcpMs": 904,
+      "cls": 0.01578160658383923,
+      "failedAudits": [
+        {
+          "id": "unminified-css",
+          "score": 0,
+          "displayValue": "Est savings of 3 KiB"
+        },
+        {
+          "id": "unused-css-rules",
+          "score": 0,
+          "displayValue": "Est savings of 10 KiB"
+        },
+        {
+          "id": "cache-insight",
+          "score": 0,
+          "displayValue": "Est savings of 97 KiB"
+        },
+        {
+          "id": "document-latency-insight",
+          "score": 0.5,
+          "displayValue": "Est savings of 7 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0,
+          "displayValue": "Est savings of 130 ms"
+        }
+      ]
+    }
+  ]
+}

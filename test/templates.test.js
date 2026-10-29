@@ -42,6 +42,8 @@ test('FAQ groups and related Action pages use the same records', () => {
   for (const lang of ['ka', 'en']) for (const item of data.faq) {
     const faq = load(read(`_site/${lang}/resources/faq/index.html`));
     assert.ok(faq('main').text().includes(item[lang].title));
+    const accordion=faq('.faq-item').filter((_,el)=>faq(el).find('summary').text().includes(item[lang].title));
+    assert.equal(accordion.length,1);assert.ok(accordion.find('.faq-answer').text().trim());
     assert.equal(item.sourceChecked, '2026-10-28');
     assert.ok(faq(`a[href="${item.sourceUrl}"]`).length);
     assert.doesNotMatch(item[lang].title+item[lang].body, /\[SAMPLE\]/);

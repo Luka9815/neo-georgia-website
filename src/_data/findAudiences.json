@@ -1,0 +1,55 @@
+[
+  {
+    "slug": "student",
+    "icon": "graduation-cap",
+    "en": "Student or graduate",
+    "ka": "სტუდენტი ან კურსდამთავრებული",
+    "actions": [
+      "icm",
+      "erasmus-mundus",
+      "youth-mobility"
+    ]
+  },
+  {
+    "slug": "university",
+    "icon": "building",
+    "en": "University staff or institution",
+    "ka": "უნივერსიტეტის თანამშრომელი ან დაწესებულება",
+    "actions": [
+      "icm",
+      "erasmus-mundus",
+      "cbhe",
+      "jean-monnet",
+      "virtual-exchanges"
+    ]
+  },
+  {
+    "slug": "youth",
+    "icon": "users",
+    "en": "Youth organisation or young person",
+    "ka": "ახალგაზრდული ორგანიზაცია ან ახალგაზრდა",
+    "actions": [
+      "cb-youth",
+      "youth-mobility",
+      "virtual-exchanges"
+    ]
+  },
+  {
+    "slug": "vet",
+    "icon": "wrench",
+    "en": "VET organisation",
+    "ka": "პროფესიული განათლების ორგანიზაცია",
+    "actions": [
+      "cb-vet"
+    ]
+  },
+  {
+    "slug": "sport",
+    "icon": "trophy",
+    "en": "Sport organisation",
+    "ka": "სპორტული ორგანიზაცია",
+    "actions": [
+      "cb-sport"
+    ]
+  }
+]

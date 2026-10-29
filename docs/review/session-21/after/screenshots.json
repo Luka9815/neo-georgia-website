@@ -1,0 +1,194 @@
+[
+  {
+    "name": "home",
+    "lang": "ka",
+    "width": 360,
+    "file": "home-ka-360.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "action",
+    "lang": "ka",
+    "width": 360,
+    "file": "action-ka-360.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "statistics",
+    "lang": "ka",
+    "width": 360,
+    "file": "statistics-ka-360.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "find",
+    "lang": "ka",
+    "width": 360,
+    "file": "find-ka-360.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "calls",
+    "lang": "ka",
+    "width": 360,
+    "file": "calls-ka-360.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "news",
+    "lang": "ka",
+    "width": 360,
+    "file": "news-ka-360.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "home",
+    "lang": "ka",
+    "width": 1280,
+    "file": "home-ka-1280.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "action",
+    "lang": "ka",
+    "width": 1280,
+    "file": "action-ka-1280.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "statistics",
+    "lang": "ka",
+    "width": 1280,
+    "file": "statistics-ka-1280.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "find",
+    "lang": "ka",
+    "width": 1280,
+    "file": "find-ka-1280.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "calls",
+    "lang": "ka",
+    "width": 1280,
+    "file": "calls-ka-1280.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "news",
+    "lang": "ka",
+    "width": 1280,
+    "file": "news-ka-1280.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "home",
+    "lang": "en",
+    "width": 360,
+    "file": "home-en-360.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "action",
+    "lang": "en",
+    "width": 360,
+    "file": "action-en-360.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "statistics",
+    "lang": "en",
+    "width": 360,
+    "file": "statistics-en-360.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "find",
+    "lang": "en",
+    "width": 360,
+    "file": "find-en-360.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "calls",
+    "lang": "en",
+    "width": 360,
+    "file": "calls-en-360.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "news",
+    "lang": "en",
+    "width": 360,
+    "file": "news-en-360.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "home",
+    "lang": "en",
+    "width": 1280,
+    "file": "home-en-1280.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "action",
+    "lang": "en",
+    "width": 1280,
+    "file": "action-en-1280.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "statistics",
+    "lang": "en",
+    "width": 1280,
+    "file": "statistics-en-1280.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "find",
+    "lang": "en",
+    "width": 1280,
+    "file": "find-en-1280.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "calls",
+    "lang": "en",
+    "width": 1280,
+    "file": "calls-en-1280.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "news",
+    "lang": "en",
+    "width": 1280,
+    "file": "news-en-1280.png",
+    "absent": false,
+    "status": 200
+  }
+]
