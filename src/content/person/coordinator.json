@@ -12,5 +12,6 @@
     "role": "კოორდინატორი",
     "body": "Erasmus+-ის შესახებ ინფორმაციისა და კონსულტაციისთვის მიმართეთ ეროვნულ ოფისს."
   },
-  "officeKey": "coordinator"
+  "officeKey": "coordinator",
+  "order": 1
 }

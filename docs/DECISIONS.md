@@ -547,3 +547,7 @@ Supersede the conditional English-alt rule in “Optional validated News images 
 
 ## 2026-10-30: Session 25 item 1, confirmed office address and hours (Luka)
 Luka confirmed on 2026-10-29: 47 Merab Kostava Street, Tbilisi, Georgia (მერაბ კოსტავას ქუჩა 47, თბილისი, საქართველო); Monday to Friday, 10:00 to 18:00 (ორშაბათიდან პარასკევის ჩათვლით, 10:00-დან 18:00-მდე). This supersedes the [TBC] status of contact.address and contact.hours in “Session 20, final contact layout and hidden social links” (2026-10-28). ERIDA’s registered address remains separately unconfirmed.
+
+
+## 2026-10-30: Session 25 item 2, ordered Team role cards (Luka)
+Supersede the role-card presentation in “Session 21 item 3, shared template restyling” (2026-10-29): show the role title once, labelled name, role email and body. Real role emails use mailto links; [TBC] stays plain text. Person records require integer order values; ascending order places Coordinator, Programme Officer, Communications Officer without relying on filenames.
