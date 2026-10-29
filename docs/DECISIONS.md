@@ -512,14 +512,14 @@ Keep Campus E's full source frame after review found that a desktop crop cut int
 
 
 ## 2026-10-29: Session 24 item 1, central office facts (Luka)
-Supersede Session 20 scattered Person/contact/policy facts with src/_data/office.json and generated review/TBC.md. Store shared facts once, bilingual names explicitly, and show “The list of experts will be published once membership is confirmed.” / “ექსპერტების სია გამოქვეყნდება წევრობის დადასტურების შემდეგ.” for empty HERE membership.
+Supersede “Supporting records and public contact placeholders” (2026-10-26) and the Session 20 scattered Person/contact/policy facts with src/_data/office.json and generated review/TBC.md. Store shared facts once, bilingual names explicitly, and show “The list of experts will be published once membership is confirmed.” / “ექსპერტების სია გამოქვეყნდება წევრობის დადასტურების შემდეგ.” for empty HERE membership.
 
 
 ## 2026-10-29: Session 24 item 2, reviewed one-switch launch (Luka)
 Keep siteLaunched=false and outside CMS. A reviewed true value removes the preview and enables indexing/robots/hreflang sitemap, with authored and rendered marker checks that fail the build; github.io emits a warning only. No environment launch override exists.
 
 ## 2026-10-29: Session 24 item 3, staff collections and Settings group (Luka)
-Supersede the News/Events-only CMS scope with the seven staff collections and office form. Source-verified CMS file entries save one path, so use one Settings group containing settings.json and office.json file entries; Team/HERE are office sections, with merge preserving siteLaunched. The build enforces integer years and cross-field rules unavailable in widgets.
+Supersede “Pages CMS for News and Events” (2026-10-26), expanding the News/Events-only CMS scope with the seven staff collections and office form. Source-verified CMS file entries save one path, so use one Settings group containing settings.json and office.json file entries; Team/HERE are office sections, with merge preserving siteLaunched. The build enforces integer years and cross-field rules unavailable in widgets.
 
 
 ## 2026-10-29: Session 24 item 4, approved WordPress page rules (Luka)
@@ -535,3 +535,11 @@ Translation maintenance retains dynamic dictionary/state choices and checks iden
 
 ## 2026-10-29: Session 24 item 6, honest quality evidence (Luka)
 Keep Action wording and EU text unchanged. Record wording changes and the bilingual glossary, enforce no U+2014, and run a manual external-link audit outside CI. Browser accessibility/resize/media evidence and serial mobile Lighthouse are local checks; state network limits and do not imply a real screen-reader or hosted review.
+
+
+## 2026-10-29: Session 24 item 7, launch operations (Luka)
+Use LAUNCH.md as the ordered runbook for launch, later domain move and institutional repository transfer, with named owners, verification and rollback. Correct Session 23’s merged status; retain Nino review, real facts, signed-grant review and hosted CMS checks as prerequisites, and record the blocked live GitHub documentation check.
+
+
+## 2026-10-29: Session 24 final schema parity and fixture evidence (Luka)
+Supersede the conditional English-alt rule in “Optional validated News images with responsive local output” (2026-10-27): all supplied images require ka/en alternatives. Require sourceChecked for Calls/FAQ/Resources/Publications and PDF-only local Publications, replacing historical text downloads with valid synthetic PDFs in isolated fixtures. Preserve News editorial regressions in isolated Session 24 snapshots so future staff records do not freeze archive counts.
