@@ -94,3 +94,17 @@ test('every approved page stub targets an existing route without collisions in t
   const stub=join('_site',view.path,view.path.endsWith('/')?'index.html':'');assert.ok(existsSync(stub),stub);
  }
 });
+
+test('every redirect stub uses its target language and accurate visible link',()=>{
+ for(const view of getViews().filter(view=>view.target)){
+  const $=load(readFileSync(join('_site',view.path,view.path.endsWith('/')?'index.html':''),'utf8'));
+  const lang=view.target.split('/')[1];const strings=JSON.parse(readFileSync(`src/_data/${lang}.json`,'utf8'));
+  const prefix=process.env.PATH_PREFIX?.replace(/\/$/,'')||'';
+  assert.equal($('html').attr('lang'),lang,view.path);
+  assert.equal($('main a').first().text().trim(),view.path==='/'?strings.returnHome:strings.continueToNewPage,view.path);
+  assert.equal($('main a').first().attr('href'),prefix+view.target,view.path);
+  assert.match($('meta[name=robots]').attr('content'),/noindex/,view.path);
+  assert.ok($('link[rel=canonical]').attr('href').endsWith(prefix+view.target),view.path);
+ }
+ const english=redirectViews(getViews(),[{from:'/english-fixture/',to:'/en/about/team/'}])[0];assert.equal(english.lang,'en');
+});

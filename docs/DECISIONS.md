@@ -551,3 +551,7 @@ Luka confirmed on 2026-10-29: 47 Merab Kostava Street, Tbilisi, Georgia (მე�
 
 ## 2026-10-30: Session 25 item 2, ordered Team role cards (Luka)
 Supersede the role-card presentation in “Session 21 item 3, shared template restyling” (2026-10-29): show the role title once, labelled name, role email and body. Real role emails use mailto links; [TBC] stays plain text. Person records require integer order values; ascending order places Coordinator, Programme Officer, Communications Officer without relying on filenames.
+
+
+## 2026-10-30: Session 25 item 3, target-language redirect stubs (Luka)
+Supersede the Georgian-only chrome of “Session 24 item 4, approved WordPress page rules” (2026-10-29): every legacy stub, including former HERE routes, uses its target language and a translated “Continue to the new page” link. Root behaviour, noindex, canonical targets and all redirect validation remain unchanged.
