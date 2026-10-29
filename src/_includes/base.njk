@@ -22,7 +22,7 @@
 <body>
 <a class="skip" href="#main">{{ t.skip }}</a>
 {% from 'navigation.njk' import navigationMenu %}
-<div class="preview-bar"><p class="wrapper">{{ t.previewNotice }}</p></div>
+<div class="preview-bar"><p class="wrapper notice">{{ t.previewNotice }}</p></div>
 <header class="site-header">
   <div class="wrapper header-inner">
     <div class="header-top">
@@ -68,6 +68,7 @@
           {% for key in ['privacy','accessibility','language'] %}
             <li><a href="/{{ view.lang }}/{{ key }}/">{{ t[key] }}</a></li>
           {% endfor %}
+          <li><a href="/{{ view.lang }}/about/credits/">{{ t.credits }}</a></li>
         </ul>
       </nav>
     </div>

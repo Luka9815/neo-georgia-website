@@ -30,7 +30,7 @@ export default function () {
         alternate: `/${other}/${suffix}`,
       });
     }
-    for (const [kind, suffix] of [['projectStatistics', 'resources/statistics/'], ['projectsIndex', 'resources/projects/'], ['eventCalendar', 'events/calendar/'], ['findPartners', 'opportunities/find-partners/'], ['publications', 'resources/publications/'], ['faq', 'resources/faq/'], ['contact', 'about/contact/'], ['search', 'search/']]) {
+    for (const [kind, suffix] of [['projectStatistics', 'resources/statistics/'], ['projectsIndex', 'resources/projects/'], ['eventCalendar', 'events/calendar/'], ['findPartners', 'opportunities/find-partners/'], ['publications', 'resources/publications/'], ['faq', 'resources/faq/'], ['contact', 'about/contact/'], ['search', 'search/'], ['credits','about/credits/']]) {
       views.push({lang, kind, path: `/${lang}/${suffix}`, alternate: `/${other}/${suffix}`});
     }
     views.push({lang,kind:'find',path:`/${lang}/find/`,alternate:`/${other}/find/`});

@@ -477,3 +477,7 @@ Remove the placeholder icon panel when News has no approved image. Use a teal to
 
 ## 2026-10-29: Session 22 item 6, shared spacing and preview bar (Luka)
 Use 32px section spacing, baseline-aligned section links, 14px card corners and the existing soft shadow. Move the exact unchanged preview sentence into a slim full-width bar above the sticky header. Keep siteLaunched=false, noindex and EU artwork/disclaimers unchanged.
+
+
+## 2026-10-29: Session 22 item 7, Commons blocker and credits (Luka)
+Stop new photography after the Commons API CONNECT request returns HTTP 403. Do not use another source or invent candidate filenames/licences. Record the one exact previously verified TSU file page for manual download; six to eight new photographs and their placements remain blocked. Add bilingual footer-linked credits for the approved existing image and preserve page captions. New Commons files require API licence/dimension verification and visual review before pipeline integration.

@@ -397,3 +397,5 @@ section { margin-block: 2rem; }
 .preview-bar p { padding-block: .4rem; margin-bottom: 0; }
 .page-main { padding-top: 1.5rem; }
 .page-home { padding-top: 0; }
+
+.preview-bar .notice { border: 0; background: transparent; margin: 0 auto; color: inherit; font-size: inherit; }
