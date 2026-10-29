@@ -493,3 +493,7 @@ Start from origin/main f4d07a1 and merge origin/assets/commons-photos c4886d6. A
 
 ## 2026-10-29: Session 23 item 2, photo placements and lighter Home overlay (Luka)
 Use the Sameba panorama on Home because its wide composition survives desktop text and mobile focal crops; reserve the TSU main building for About. Place Ilia, TSU evening, Rike Park, GTU and Batumi on the five requested Find audiences, and the river panorama on Opportunities. Keep the NEO image on its News post/cards. Store placements and focal points centrally. Secondary building headers use gentler desktop/mobile ratios to preserve facades. Lighten Home to 72%–58% black and make all overlaid text white; the worst-case white image pixel is #6b6b6b, to be checked at 4.5:1 minimum. Other header text stays outside photographs.
+
+
+## 2026-10-29: Session 23 item 3, Commons attribution (Luka)
+Use one bilingual credit macro on every placement and the footer-linked credits page. Preserve each Commons author name exactly, including the public-domain author, and link the supplied licence and exact file page. Label cropped/reformatted CC BY-SA adaptations as modified and retain the same image licence version; the Home credit additionally names the overlay. List all eight Commons records plus the existing permission-based NEO News image, without inventing an open licence for NEO.

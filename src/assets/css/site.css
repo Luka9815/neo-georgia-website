@@ -425,3 +425,7 @@ section { margin-block: 2rem; }
 /* At least 58% black keeps white text above 4.5:1 even over a white pixel. */
 .photo-hero picture::after { background: linear-gradient(90deg,rgb(0 0 0 / 72%),rgb(0 0 0 / 58%)); }
 .home-hero :is(.eyebrow,.hero-intro) { color: var(--paper); }
+
+.photo-modified { display: block; }
+.portal-photo figcaption { line-height: 1.5; }
+.photo-hero figcaption { overflow-wrap: anywhere; }

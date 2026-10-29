@@ -12,7 +12,7 @@ eleventyExcludeFromCollections: true
 {% set item = catalog[view.kind] | localise(view.lang) | findSlug(view.slug) %}
 {% if view.slug == 'about' %}
 {% from 'portal-photo.njk' import portalPhoto %}
-{{ portalPhoto(portalPhotos[photoPlacements.about],view.lang) }}
+{{ portalPhoto(portalPhotos[photoPlacements.about],view.lang,'banner',t) }}
 {% endif %}
 {{ item.body | markdown | safe }}
 {% if view.slug == 'about' %}

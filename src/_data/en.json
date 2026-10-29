@@ -321,5 +321,9 @@
   "mapSourceDate": "Outline and coordinate sources checked 29 October 2026",
   "publicDomain": "public domain",
   "total": "Total",
-  "credits": "Photo credits"
+  "credits": "Photo credits",
+  "photoLabel": "Photo",
+  "photoViaCommons": "via Wikimedia Commons",
+  "photoModified": "modified: cropped, resized and reformatted",
+  "photoModifiedOverlay": "modified: cropped, resized, reformatted and overlaid"
 }

@@ -14,7 +14,7 @@ eleventyExcludeFromCollections: true
   <div class="hero-main"><p class="eyebrow">{{ t.homeEyebrow }}</p><h1 id="home-title">{{ t.homeHeadline }}</h1><p class="hero-intro">{{ t.purpose }}</p>
    <div class="entry"><a class="button" href="/{{ view.lang }}/find/student/">{{ t.individuals }}</a><a class="button button-secondary" href="/{{ view.lang }}/find/university/">{{ t.organisations }}</a></div>
   </div>
-  {{ portalPhoto(portalPhotos[photoPlacements.home],view.lang,'hero') }}
+  {{ portalPhoto(portalPhotos[photoPlacements.home],view.lang,'hero',t) }}
  </div>
 </section>
 <section class="home-band band-soft" aria-labelledby="audiences-title"><div class="wrapper">
