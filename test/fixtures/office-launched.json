@@ -1,0 +1,66 @@
+{
+  "contact": {
+    "address": {
+      "ka": "სატესტო მისამართი",
+      "en": "Fixture address"
+    },
+    "phone": "+1 202 555 0100",
+    "email": "office@example.org",
+    "hours": {
+      "ka": "სატესტო საათები",
+      "en": "Fixture hours"
+    }
+  },
+  "legal": {
+    "eridaIdentificationCode": "FIXTURE-000",
+    "registeredAddress": {
+      "ka": "სატესტო იურიდიული მისამართი",
+      "en": "Fixture registered address"
+    }
+  },
+  "privacyContact": "privacy@example.org",
+  "accessibilityContact": "accessibility@example.org",
+  "team": {
+    "coordinator": {
+      "name": {
+        "ka": "ანა",
+        "en": "ana"
+      },
+      "roleEmail": "role@example.org"
+    },
+    "programmeOfficer": {
+      "name": {
+        "ka": "ანა",
+        "en": "ana"
+      },
+      "roleEmail": "role@example.org"
+    },
+    "communicationsOfficer": {
+      "name": {
+        "ka": "ანა",
+        "en": "ana"
+      },
+      "roleEmail": "role@example.org"
+    }
+  },
+  "here": {
+    "period": {
+      "ka": "სატესტო პერიოდი",
+      "en": "Fixture period"
+    },
+    "members": [
+      {
+        "name": {
+          "ka": "ანა",
+          "en": "ana"
+        },
+        "institution": {
+          "ka": "სატესტო დაწესებულება",
+          "en": "Fixture institution"
+        },
+        "email": "here@example.org"
+      }
+    ]
+  },
+  "socialLinks": []
+}

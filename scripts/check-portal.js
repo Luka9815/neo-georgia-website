@@ -56,7 +56,7 @@ export async function checkPortal(browser,base,prefix) {
       assert.ok(moved,`Chart keyboard scrolling: ${lang}, forced colours ${forcedColors}, initial ${JSON.stringify(start)}`);
       const bubble=page.locator('.participant-map a').first();await bubble.focus();
       assert.ok(await bubble.evaluate(el=>el===document.activeElement));
-      const hash=await bubble.getAttribute('href');await page.keyboard.press('Enter');
+      const hash=await bubble.getAttribute('href');await Promise.all([page.waitForURL(url=>url.hash===hash),page.keyboard.press('Enter')]);
       assert.equal(new URL(page.url()).hash,hash);
       assert.ok(await page.locator(hash).isVisible());
      }

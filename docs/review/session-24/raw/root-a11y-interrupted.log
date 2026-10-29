@@ -1,0 +1,27 @@
+
+> check:a11y
+> node scripts/check-a11y.js
+
+axe: checked 20 pages
+axe: checked 40 pages
+axe: checked 60 pages
+axe: checked 80 pages
+axe: checked 100 pages
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Local font: /en/accessibility/
+    at checkView (file:///workspace/neo-georgia-website/scripts/check-a11y.js:25:12)
+    at async file:///workspace/neo-georgia-website/scripts/check-a11y.js:68:56
+    at async Promise.all (index 1)
+    at async file:///workspace/neo-georgia-website/scripts/check-a11y.js:66:3 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v24.19.0

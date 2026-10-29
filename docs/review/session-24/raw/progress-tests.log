@@ -1,0 +1,713 @@
+
+> test
+> node --test --test-concurrency=1
+
+✔ nine bilingual Actions retain source evidence and stable relationships (15.675538ms)
+✔ sector groups and every Action page show source-checked eligibility and official sources (193.701812ms)
+✔ Session 20 removes only public draft prefixes from the source-checked Action wording (3.592273ms)
+✔ eleven verified institutional calls cover all nine Actions with Brussels deadlines and no invented opening times (28.854316ms)
+✔ Calls reject missing/invalid deadlines, ambiguous DST, bad relationships and invented unsafe opening fields (7.003715ms)
+✔ bilingual SVG charts reproduce every statistics table value and retain the coverage warning directly below (59.227623ms)
+✔ organisation ranking counts unique projects by source ID and excludes the synthetic mobility entry (0.947888ms)
+✖ CMS schema matches JSON collections, local time rules, translations and action slugs (26.155986ms)
+✖ a deliberately bad Event fixture stops the real build with filename and field (325.90567ms)
+✔ loader rejects news editor mistake in date (15.074286ms)
+✔ loader rejects news editor mistake in ka.title (14.962383ms)
+✔ loader rejects news editor mistake in ka.body (18.837777ms)
+✔ loader rejects news editor mistake in date (17.878737ms)
+✔ loader rejects news editor mistake in date (14.3466ms)
+✔ loader rejects news editor mistake in actions[0] (15.624906ms)
+✔ loader rejects news editor mistake in en.body (16.294055ms)
+✔ loader rejects event editor mistake in timeZone (27.002421ms)
+✔ loader rejects event editor mistake in en.title (14.086768ms)
+✔ loader rejects event editor mistake in date (13.941239ms)
+✔ loader rejects event editor mistake in end (19.527381ms)
+✔ loader rejects event editor mistake in actions[0] (14.778019ms)
+✔ loader rejects event editor mistake in actions (17.302424ms)
+✔ loader rejects news editor mistake in actions (11.554762ms)
+✔ loader rejects event editor mistake in end (14.989374ms)
+✔ loader accepts News with an empty Action list (17.606202ms)
+✔ loader accepts News with no Action field (16.502879ms)
+✖ CMS-shaped JSON renders Markdown safely, keeps optional News English absent, and reads settings (324.613474ms)
+✔ AA contrast: ink text on paper (1.424236ms)
+✔ AA contrast: muted text on paper (0.117417ms)
+✔ AA contrast: blue text on paper (0.175024ms)
+✔ AA contrast: blue-dark text on paper (0.170487ms)
+✔ AA contrast: accent text on paper (0.171809ms)
+✔ AA contrast: teal text on paper (0.116055ms)
+✔ AA contrast: ink text on surface (0.069334ms)
+✔ AA contrast: muted text on surface (0.119039ms)
+✔ AA contrast: blue text on surface (0.190947ms)
+✔ AA contrast: blue-dark text on surface (0.267984ms)
+✔ AA contrast: accent text on surface (0.1729ms)
+✔ AA contrast: teal text on surface (0.252611ms)
+✔ AA contrast: ink text on accent-soft (0.998124ms)
+✔ AA contrast: muted text on accent-soft (0.087632ms)
+✔ AA contrast: blue text on accent-soft (0.043305ms)
+✔ AA contrast: blue-dark text on accent-soft (0.096796ms)
+✔ AA contrast: accent text on accent-soft (0.106671ms)
+✔ AA contrast: teal text on accent-soft (0.109345ms)
+✔ AA contrast: ink text on teal-soft (0.142404ms)
+✔ AA contrast: muted text on teal-soft (0.035043ms)
+✔ AA contrast: blue text on teal-soft (0.02682ms)
+✔ AA contrast: blue-dark text on teal-soft (0.02637ms)
+✔ AA contrast: accent text on teal-soft (0.047892ms)
+✔ AA contrast: teal text on teal-soft (0.0265ms)
+✔ AA inverse contrast: paper text on blue (0.123466ms)
+✔ AA inverse contrast: inverse-muted text on blue (0.077597ms)
+✔ AA inverse contrast: paper text on blue-dark (0.056145ms)
+✔ AA inverse contrast: inverse-muted text on blue-dark (0.029104ms)
+✔ AA open status: paper text on the prominent green surface (0.07278ms)
+✔ AA Home text over worst-case white photograph with the lighter overlay (0.286401ms)
+✔ editorial corrections preserve all published numeric tokens and original evidence (3.251545ms)
+✔ clarification note is bilingual, dated, above the unchanged article and links to current Actions (19.451097ms)
+✔ ICS resolves spring/autumn DST boundaries and rejects ambiguous/nonexistent times (ka) (13.640215ms)
+✔ ICS is RFC-shaped with stable slug UID, CRLF, escaped text and UTF-8 folding (ka) (2.469552ms)
+✔ ICS resolves spring/autumn DST boundaries and rejects ambiguous/nonexistent times (en) (1.666611ms)
+✔ ICS is RFC-shaped with stable slug UID, CRLF, escaped text and UTF-8 folding (en) (1.166278ms)
+✔ month tables handle Monday offsets, leap days, empty months and exclusive midnight ends (12.04419ms)
+✔ generated bilingual calendar has semantic weekdays, month anchors, list fallback and static ICS links (43.275959ms)
+✖ production Event empty states and feeds reflect the actual catalogue in both languages (22.377171ms)
+✔ refresh tests forbid live network and importing the script does not run the CLI (8.675243ms)
+✔ manual CLI refuses CI before any read or network operation (0.328284ms)
+✔ request is exactly Luka’s verified body, with a string call year and numeric from/size (1.889928ms)
+✔ projectDocuments pagination uses exact headers, from 0/100, 500 ms spacing and matching totals (25.433577ms)
+✔ short pages still advance from by 100 and fail if retrieved count differs from total (0.741517ms)
+✔ an empty page ends pagination and fails the year if its total is not met (1.021389ms)
+✔ each year is independently checked and failed/duplicate/changing-total responses abort the run (4.01463ms)
+✔ unexpected response/organisation structures fail instead of guessing or publishing partial data (0.568066ms)
+✔ slimming retains the audit schema and discards long/contact fields (0.299121ms)
+✔ snapshot differences report added/removed/changed references and ignore property/array ordering (0.685403ms)
+✔ five bilingual static audience routes retain correct Action matches, contacts and switches (68.740292ms)
+✔ portal home has five audience paths, nine distinct Action tiles, a real photo and equivalent mini-chart data (573.955316ms)
+✔ official emblem originals retain verified bytes and full-aspect PNG derivatives (35.986339ms)
+✔ favicon is typography only and contains no flag or programme artwork (2.533608ms)
+✖ reviewed launch switch controls all indexable output at / (305.647715ms)
+✖ reviewed launch switch controls all indexable output at /neo-georgia-website/ (270.007073ms)
+✖ launched build names the unresolved source file, JSON path and language (266.269547ms)
+✔ optional News image validates local files and alt text for published languages (3.893026ms)
+✖ real Eleventy image builds produce local responsive article/card pictures in both layouts (272.48256ms)
+✖ CMS offers an optional News-only local image with Georgian-first alt labels (14.873765ms)
+✔ News processing leaves unmarked images and marker words in alt text alone (4.773514ms)
+✔ office facts validate and the generated inventory reflects every authored placeholder (16.620337ms)
+✔ office errors name file and contact.email (0.640144ms)
+✔ office errors name file and contact.phone (0.280292ms)
+✔ office errors name file and team.coordinator.name.en (0.424129ms)
+✔ office errors name file and contact.address.ka (0.203206ms)
+✔ office errors name file and legal.registeredAddress.en (0.161994ms)
+✔ office errors name file and socialLinks (0.196626ms)
+✔ mapped and unresolved bubbles and table rows reconcile to all 605 named organisations in both languages (544.34174ms)
+✔ reviewed city variants deduplicate by source ID while conflicts, unknowns and mobility remain explicit (1.176894ms)
+✔ committed public-domain outline includes both regions and has no internal borders; coordinate sources are dated (2.261337ms)
+✔ official partner tools have bilingual descriptions, checked dates and reachable entry links (114.549786ms)
+✔ polished ka cards keep one native destination, credits and compact Home (65.510103ms)
+✔ polished en cards keep one native destination, credits and compact Home (39.153334ms)
+✔ all eight Commons sources retain their reviewed hashes, dimensions and per-image README provenance outside output (34.838732ms)
+✔ every Commons placement has local responsive variants and an accurate bilingual author licence source and modification credit (83.5903ms)
+✔ the approved NEO News photo keeps its original alternatives and visible credit without adding a second card link (15.725538ms)
+✔ build resolves links, metadata and refresh targets under https://luka9815.github.io/neo-georgia-website/ (8907.279682ms)
+✔ build resolves links, metadata and refresh targets under https://example.org/ (7088.05689ms)
+✔ both languages publish complete static year tables under 1 MB with original titles and official cards (1643.748664ms)
+✔ bilingual statistics and homepage use named-institution counts and no illustrative figure keys (19.842744ms)
+✔ bilingual coverage notes sit beside year and Action comparisons and explain the 2020/2021 break (14.827185ms)
+✔ public project projection drops all excluded source fields and restores Brussels calendar dates (9.896795ms)
+✔ snapshot rejects missing title with file/field evidence (0.618793ms)
+✔ snapshot rejects duplicate reference with file/field evidence (0.956912ms)
+✔ snapshot rejects no Georgian organisation with file/field evidence (0.658122ms)
+✔ snapshot rejects wrong country with file/field evidence (0.470028ms)
+✔ snapshot rejects unknown status with file/field evidence (0.229406ms)
+✔ snapshot rejects bad calendar date with file/field evidence (0.204389ms)
+✔ snapshot rejects unsafe card with file/field evidence (0.433634ms)
+✔ snapshot rejects bad count with file/field evidence (0.326692ms)
+✔ supplied snapshot reproduces official source facts and distinguishes mobility-country entries (433.865677ms)
+✔ reviewed mapping is complete and does not treat KA131 or unrelated sectors as site Actions (13.924504ms)
+✔ synthetic statistics deduplicate institutions and separate mobility-country records (0.728588ms)
+✔ five approved News splits preserve source wording except authorised corrections, and every body link (15.815524ms)
+✔ promoted News render both languages with sequential headings (42.653489ms)
+✔ only the approved dissemination photograph is attached with the approved bilingual alternatives (13.336518ms)
+✔ the public News archive contains exactly five real posts, short source excerpts and article dates (33.645685ms)
+✔ archive rendering fixes malformed emphasis and retains every official topic link (16.046462ms)
+✔ legacy mappings reject collisions, unsafe paths and unknown targets (448.599551ms)
+✖ legacy stub renders with a prefixed refresh, canonical and working visible link (255.8227ms)
+✔ encoded legacy emoji produces the decoded static-host path (4.575996ms)
+✔ all release content sources have a dated verification record and official HTTPS destinations (2.048318ms)
+✔ official Resources remain external and requested partner/statistics navigation is present in both languages (17.478355ms)
+✔ verified Publications show publisher/year, link externally and replace sample downloads with the archive note (7.565383ms)
+✔ Team has three explicit role cards and HERE uses guidance rather than a fictional person (6.113255ms)
+✔ dated policy pages and final preview retain noindex without claiming launch or public draft status (13.864748ms)
+✖ isolated sample content retains relationships, local-publication downloads and per-Event ICS coverage (274.416321ms)
+✔ copied synthetic fixtures retain past/upcoming coverage after the January 2027 launch (19.256416ms)
+✖ isolated empty Events and Stories remain covered when genuine production records are later added (257.698071ms)
+✔ production Pagefind indexes have only their own language and exclude utility pages (407.26969ms)
+✔ Georgian fallback removes at most one longest ending and keeps four letters (0.55738ms)
+✔ fallback preserves typed ranking, de-duplicates pages and leaves English unchanged (0.357349ms)
+✔ search markup loads only on search pages, has active index and no-JS section links (1114.777479ms)
+✖ all rendered pages have language, metadata, seven menu links, one h1 and EU footer (405.433863ms)
+✔ every internal link, fragment, and stylesheet resolves (15387.609781ms)
+✔ call boundaries, event end, and Brussels summer and winter dates (3.156256ms)
+✖ content relationships, non-empty text, and core bilingual parity (9.186725ms)
+✔ wall-clock conversion handles DST transitions and rejects unsafe editor input (1.956218ms)
+✔ stored call/event times are offset-free and output time elements have derived offsets (1041.307237ms)
+✔ selected call year is independent of the clock and precedes every archive year (9.295068ms)
+✖ Pages output has a bilingual root 404 and a static home redirect (0.818603ms)
+✔ unlaunched site blocks indexing on all pages and in robots.txt (1029.042093ms)
+✔ home renders upcoming/open deadlines instead of rejecting every status (30.833358ms)
+✔ English-prevails policy is identical in each footer and its language page (2.175338ms)
+✔ Georgian disclaimer exactly preserves the supplied project wording (655.55722ms)
+✔ empty logoPath preserves the text wordmark and bilingual logo alternatives (6.34998ms)
+✔ card section labels appear on the mixed home, not individual section lists (10.910964ms)
+✖ Stories routes, navigation, listings and sitemap reflect the actual language catalogue (449.078412ms)
+✖ production HTML contains no public sample or draft markers (12.512427ms)
+✔ new sitemap pages render both languages, exact switches and EU footer (70.637871ms)
+✔ Publications are complete without JavaScript and filter metadata matches records (3.095395ms)
+✔ FAQ groups and related Action pages use the same records (404.879255ms)
+✔ people have national transliteration, separate groups and no contact details or images (6.108656ms)
+✔ Contact uses final labelled fields with no form, map or third-party asset (4.088161ms)
+✔ supporting content rejects missing translation, invalid references and unsafe files (0.782129ms)
+✔ saved Elementor HTML becomes readable Markdown with links and lists (34.05946ms)
+✔ image variants and PDFs are inventoried with alt text but no embeds (7.277834ms)
+✔ contact redaction, table rows and lazy images survive cleanup safely (16.904566ms)
+✔ URL cleanup drops tracking and unsafe schemes while preserving real parameters (0.315045ms)
+✔ national romanisation covers the whole modern Georgian alphabet and Mtavruli (0.633254ms)
+✔ slugs are ASCII, bounded, deterministic and unique after apostrophe removal (10.586575ms)
+✔ exact window includes the start, excludes the end and rejects missing GMT (18.165858ms)
+✔ even explicit English relations remain candidates and source records are not merged (12.890266ms)
+✔ Action evidence is suggested, empty matches stay empty, Events stay News-shaped (8.227059ms)
+✔ media metadata keeps known sizes, gallery/featured usage and duplicates for review (14.311758ms)
+✔ title/body detection keeps mixed bodies outside ka and ignores URL letters (3.103317ms)
+✔ pure English bodies with Georgian titles are flagged separately, not called Georgian (1.701445ms)
+✔ date proximity needs topic/media/slug evidence and never merges candidates (6.29034ms)
+✔ theme cleanup removes leading dates and empty info markers, preserving meaningful body emoji (1.18735ms)
+✔ clean legacy slugs take precedence and romanised fallback truncates whole words (0.405992ms)
+✔ image selection chooses the largest eligible variant and skips HEIC/oversized sources (0.717531ms)
+✔ review image downloads retain provenance/alt placeholders and deduplicate network bytes (4.081912ms)
+✔ an image wider than advertised is rejected before any file is written (2.103079ms)
+✔ review table and CSV provide one row per source without pre-approving a pair (4.254782ms)
+ℹ tests 181
+ℹ suites 0
+ℹ pass 164
+ℹ fail 17
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 53313.584126
+
+✖ failing tests:
+
+test at test/cms.test.js:43:1
+✖ CMS schema matches JSON collections, local time rules, translations and action slugs (26.155986ms)
+  TypeError: Cannot read properties of undefined (reading 'path')
+      at TestContext.<anonymous> (file:///workspace/neo-georgia-website/test/cms.test.js:85:25)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.start (node:internal/test_runner/test:1242:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17)
+
+test at test/cms.test.js:95:1
+✖ a deliberately bad Event fixture stops the real build with filename and field (325.90567ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /src\/content\/event\/missing-title.json: ka.title: required/. Input:
+  
+  '\n' +
+    '[11ty] Eleventy Fatal Error (CLI):\n' +
+    "[11ty] 1. Error in your Eleventy config file 'eleventy.config.js'. (via EleventyConfigError)\n" +
+    "[11ty] 2. There was a problem importing 'eleventy.config.js' via import(esm) (via EleventyImportError)\n" +
+    "[11ty] 3. Cannot find module '/tmp/neo-content-fixtures-UzamKC/scripts/wp/convert.js' imported from /tmp/neo-content-fixtures-UzamKC/lib/office.js\n" +
+    '[11ty] \n' +
+    "[11ty] Original error stack trace: Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/tmp/neo-content-fixtures-UzamKC/scripts/wp/convert.js' imported from /tmp/neo-content-fixtures-UzamKC/lib/office.js\n" +
+    '[11ty]     at finalizeResolution (node:internal/modules/esm/resolve:271:11)\n' +
+    '[11ty]     at moduleResolve (node:internal/modules/esm/resolve:865:10)\n' +
+    '[11ty]     at defaultResolve (node:internal/modules/esm/resolve:992:11)\n' +
+    '[11ty]     at #cachedDefaultResolve (node:internal/modules/esm/loader:701:20)\n' +
+    '[11ty]     at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:721:38)\n' +
+    '[11ty]     at nextStep (node:internal/modules/customization_hooks:189:26)\n' +
+    '[11ty]     at resolve (file:///workspace/neo-georgia-website/node_modules/@11ty/eleventy/src/Util/EsmResolver.js:54:9)\n' +
+    '[11ty]     at nextStep (node:internal/modules/customization_hooks:189:26)\n' +
+    '[11ty]     at resolveWithHooks (node:internal/modules/customization_hooks:417:10)\n' +
+    '[11ty]     at ModuleLoader.resolveSync (node:internal/modules/esm/loader:747:16)\n'
+  
+      at Object.<anonymous> (file:///workspace/neo-georgia-website/test/cms.test.js:106:16)
+      at expectedException (node:assert:578:17)
+      at expectsError (node:assert:703:21)
+      at strict.throws (node:assert:759:3)
+      at TestContext.<anonymous> (file:///workspace/neo-georgia-website/test/cms.test.js:102:12)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: "\n[11ty] Eleventy Fatal Error (CLI):\n[11ty] 1. Error in your Eleventy config file 'eleventy.config.js'. (via EleventyConfigError)\n[11ty] 2. There was a problem importing 'eleventy.config.js' via import(esm) (via EleventyImportError)\n[11ty] 3. Cannot find module '/tmp/neo-content-fixtures-UzamKC/scripts/wp/convert.js' imported from /tmp/neo-content-fixtures-UzamKC/lib/office.js\n[11ty] \n[11ty] Original error stack trace: Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/tmp/neo-content-fixtures-UzamKC/scripts/wp/convert.js' imported from /tmp/neo-content-fixtures-UzamKC/lib/office.js\n[11ty]     at finalizeResolution (node:internal/modules/esm/resolve:271:11)\n[11ty]     at moduleResolve (node:internal/modules/esm/resolve:865:10)\n[11ty]     at defaultResolve (node:internal/modules/esm/resolve:992:11)\n[11ty]     at #cachedDefaultResolve (node:internal/modules/esm/loader:701:20)\n[11ty]     at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:721:38)\n[11ty]     at nextStep (node:internal/modules/customization_hooks:189:26)\n[11ty]     at resolve (file:///workspace/neo-georgia-website/node_modules/@11ty/eleventy/src/Util/EsmResolver.js:54:9)\n[11ty]     at nextStep (node:internal/modules/customization_hooks:189:26)\n[11ty]     at resolveWithHooks (node:internal/modules/customization_hooks:417:10)\n[11ty]     at ModuleLoader.resolveSync (node:internal/modules/esm/loader:747:16)\n",
+    expected: /src\/content\/event\/missing-title.json: ka.title: required/,
+    operator: 'match',
+    diff: 'simple'
+  }
+
+test at test/cms.test.js:182:1
+✖ CMS-shaped JSON renders Markdown safely, keeps optional News English absent, and reads settings (324.613474ms)
+  Error: Command failed: /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node node_modules/@11ty/eleventy/cmd.cjs
+  [11ty] Eleventy Fatal Error (CLI):
+  [11ty] 1. Error in your Eleventy config file 'eleventy.config.js'. (via EleventyConfigError)
+  [11ty] 2. There was a problem importing 'eleventy.config.js' via import(esm) (via EleventyImportError)
+  [11ty] 3. Cannot find module '/tmp/neo-content-fixtures-6iHaWj/scripts/wp/convert.js' imported from /tmp/neo-content-fixtures-6iHaWj/lib/office.js
+  [11ty] 
+  [11ty] Original error stack trace: Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/tmp/neo-content-fixtures-6iHaWj/scripts/wp/convert.js' imported from /tmp/neo-content-fixtures-6iHaWj/lib/office.js
+  [11ty]     at finalizeResolution (node:internal/modules/esm/resolve:271:11)
+  [11ty]     at moduleResolve (node:internal/modules/esm/resolve:865:10)
+  [11ty]     at defaultResolve (node:internal/modules/esm/resolve:992:11)
+  [11ty]     at #cachedDefaultResolve (node:internal/modules/esm/loader:701:20)
+  [11ty]     at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:721:38)
+  [11ty]     at nextStep (node:internal/modules/customization_hooks:189:26)
+  [11ty]     at resolve (file:///workspace/neo-georgia-website/node_modules/@11ty/eleventy/src/Util/EsmResolver.js:54:9)
+  [11ty]     at nextStep (node:internal/modules/customization_hooks:189:26)
+  [11ty]     at resolveWithHooks (node:internal/modules/customization_hooks:417:10)
+  [11ty]     at ModuleLoader.resolveSync (node:internal/modules/esm/loader:747:16)
+  
+      at genericNodeError (node:internal/errors:985:15)
+      at wrappedFn (node:internal/errors:539:14)
+      at checkExecSyncError (node:child_process:942:11)
+      at execFileSync (node:child_process:978:15)
+      at build (file:///workspace/neo-georgia-website/test/cms.test.js:32:10)
+      at TestContext.<anonymous> (file:///workspace/neo-georgia-website/test/cms.test.js:216:5)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19) {
+    status: 1,
+    signal: null,
+    output: [ null, <Buffer >, <Buffer 5b 31 31 74 79 5d 20 45 6c 65 76 65 6e 74 79 20 46 61 74 61 6c 20 45 72 72 6f 72 20 28 43 4c 49 29 3a 0a 5b 31 31 74 79 5d 20 31 2e 20 45 72 72 6f 72 ... 1357 more bytes> ],
+    pid: 2066,
+    stdout: <Buffer >,
+    stderr: <Buffer 5b 31 31 74 79 5d 20 45 6c 65 76 65 6e 74 79 20 46 61 74 61 6c 20 45 72 72 6f 72 20 28 43 4c 49 29 3a 0a 5b 31 31 74 79 5d 20 31 2e 20 45 72 72 6f 72 ... 1357 more bytes>
+  }
+
+test at test/event-calendar.test.js:95:1
+✖ production Event empty states and feeds reflect the actual catalogue in both languages (22.377171ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(!existsSync(`_site/${lang}/events/${slug}/index.html`))
+  
+      at TestContext.<anonymous> (file:///workspace/neo-georgia-website/test/event-calendar.test.js:110:14)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at test/launch.test.js:16:51
+✖ reviewed launch switch controls all indexable output at / (305.647715ms)
+  Error: Command failed: /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node node_modules/@11ty/eleventy/cmd.cjs
+  [11ty] Eleventy Fatal Error (CLI):
+  [11ty] 1. Error in your Eleventy config file 'eleventy.config.js'. (via EleventyConfigError)
+  [11ty] 2. There was a problem importing 'eleventy.config.js' via import(esm) (via EleventyImportError)
+  [11ty] 3. Cannot find module '/tmp/neo-content-fixtures-IdQZU1/scripts/wp/convert.js' imported from /tmp/neo-content-fixtures-IdQZU1/lib/office.js
+  [11ty] 
+  [11ty] Original error stack trace: Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/tmp/neo-content-fixtures-IdQZU1/scripts/wp/convert.js' imported from /tmp/neo-content-fixtures-IdQZU1/lib/office.js
+  [11ty]     at finalizeResolution (node:internal/modules/esm/resolve:271:11)
+  [11ty]     at moduleResolve (node:internal/modules/esm/resolve:865:10)
+  [11ty]     at defaultResolve (node:internal/modules/esm/resolve:992:11)
+  [11ty]     at #cachedDefaultResolve (node:internal/modules/esm/loader:701:20)
+  [11ty]     at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:721:38)
+  [11ty]     at nextStep (node:internal/modules/customization_hooks:189:26)
+  [11ty]     at resolve (file:///workspace/neo-georgia-website/node_modules/@11ty/eleventy/src/Util/EsmResolver.js:54:9)
+  [11ty]     at nextStep (node:internal/modules/customization_hooks:189:26)
+  [11ty]     at resolveWithHooks (node:internal/modules/customization_hooks:417:10)
+  [11ty]     at ModuleLoader.resolveSync (node:internal/modules/esm/loader:747:16)
+  
+      at genericNodeError (node:internal/errors:985:15)
+      at wrappedFn (node:internal/errors:539:14)
+      at checkExecSyncError (node:child_process:942:11)
+      at execFileSync (node:child_process:978:15)
+      at buildFixtureSite (file:///workspace/neo-georgia-website/scripts/fixture-site.js:32:2)
+      at TestContext.<anonymous> (file:///workspace/neo-georgia-website/test/launch.test.js:19:23)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.start (node:internal/test_runner/test:1242:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    status: 1,
+    signal: null,
+    output: [ null, <Buffer >, <Buffer 5b 31 31 74 79 5d 20 45 6c 65 76 65 6e 74 79 20 46 61 74 61 6c 20 45 72 72 6f 72 20 28 43 4c 49 29 3a 0a 5b 31 31 74 79 5d 20 31 2e 20 45 72 72 6f 72 ... 1357 more bytes> ],
+    pid: 2143,
+    stdout: <Buffer >,
+    stderr: <Buffer 5b 31 31 74 79 5d 20 45 6c 65 76 65 6e 74 79 20 46 61 74 61 6c 20 45 72 72 6f 72 20 28 43 4c 49 29 3a 0a 5b 31 31 74 79 5d 20 31 2e 20 45 72 72 6f 72 ... 1357 more bytes>
+  }
+
+test at test/launch.test.js:16:51
+✖ reviewed launch switch controls all indexable output at /neo-georgia-website/ (270.007073ms)
+  Error: Command failed: /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node node_modules/@11ty/eleventy/cmd.cjs
+  [11ty] Eleventy Fatal Error (CLI):
+  [11ty] 1. Error in your Eleventy config file 'eleventy.config.js'. (via EleventyConfigError)
+  [11ty] 2. There was a problem importing 'eleventy.config.js' via import(esm) (via EleventyImportError)
+  [11ty] 3. Cannot find module '/tmp/neo-content-fixtures-gKhiKp/scripts/wp/convert.js' imported from /tmp/neo-content-fixtures-gKhiKp/lib/office.js
+  [11ty] 
+  [11ty] Original error stack trace: Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/tmp/neo-content-fixtures-gKhiKp/scripts/wp/convert.js' imported from /tmp/neo-content-fixtures-gKhiKp/lib/office.js
+  [11ty]     at finalizeResolution (node:internal/modules/esm/resolve:271:11)
+  [11ty]     at moduleResolve (node:internal/modules/esm/resolve:865:10)
+  [11ty]     at defaultResolve (node:internal/modules/esm/resolve:992:11)
+  [11ty]     at #cachedDefaultResolve (node:internal/modules/esm/loader:701:20)
+  [11ty]     at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:721:38)
+  [11ty]     at nextStep (node:internal/modules/customization_hooks:189:26)
+  [11ty]     at resolve (file:///workspace/neo-georgia-website/node_modules/@11ty/eleventy/src/Util/EsmResolver.js:54:9)
+  [11ty]     at nextStep (node:internal/modules/customization_hooks:189:26)
+  [11ty]     at resolveWithHooks (node:internal/modules/customization_hooks:417:10)
+  [11ty]     at ModuleLoader.resolveSync (node:internal/modules/esm/loader:747:16)
+  
+      at genericNodeError (node:internal/errors:985:15)
+      at wrappedFn (node:internal/errors:539:14)
+      at checkExecSyncError (node:child_process:942:11)
+      at execFileSync (node:child_process:978:15)
+      at buildFixtureSite (file:///workspace/neo-georgia-website/scripts/fixture-site.js:32:2)
+      at TestContext.<anonymous> (file:///workspace/neo-georgia-website/test/launch.test.js:19:23)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19) {
+    status: 1,
+    signal: null,
+    output: [ null, <Buffer >, <Buffer 5b 31 31 74 79 5d 20 45 6c 65 76 65 6e 74 79 20 46 61 74 61 6c 20 45 72 72 6f 72 20 28 43 4c 49 29 3a 0a 5b 31 31 74 79 5d 20 31 2e 20 45 72 72 6f 72 ... 1357 more bytes> ],
+    pid: 2150,
+    stdout: <Buffer >,
+    stderr: <Buffer 5b 31 31 74 79 5d 20 45 6c 65 76 65 6e 74 79 20 46 61 74 61 6c 20 45 72 72 6f 72 20 28 43 4c 49 29 3a 0a 5b 31 31 74 79 5d 20 31 2e 20 45 72 72 6f 72 ... 1357 more bytes>
+  }
+
+test at test/launch.test.js:31:1
+✖ launched build names the unresolved source file, JSON path and language (266.269547ms)
+  AssertionError [ERR_ASSERTION]: The validation function is expected to return "true". Received false
+  
+  Caught error:
+  
+  Error: Command failed: /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node node_modules/@11ty/eleventy/cmd.cjs
+  [11ty] Eleventy Fatal Error (CLI):
+  [11ty] 1. Error in your Eleventy config file 'eleventy.config.js'. (via EleventyConfigError)
+  [11ty] 2. There was a problem importing 'eleventy.config.js' via import(esm) (via EleventyImportError)
+  [11ty] 3. Cannot find module '/tmp/neo-content-fixtures-I0O7o8/scripts/wp/convert.js' imported from /tmp/neo-content-fixtures-I0O7o8/lib/office.js
+  [11ty] 
+  [11ty] Original error stack trace: Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/tmp/neo-content-fixtures-I0O7o8/scripts/wp/convert.js' imported from /tmp/neo-content-fixtures-I0O7o8/lib/office.js
+  [11ty]     at finalizeResolution (node:internal/modules/esm/resolve:271:11)
+  [11ty]     at moduleResolve (node:internal/modules/esm/resolve:865:10)
+  [11ty]     at defaultResolve (node:internal/modules/esm/resolve:992:11)
+  [11ty]     at #cachedDefaultResolve (node:internal/modules/esm/loader:701:20)
+  [11ty]     at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:721:38)
+  [11ty]     at nextStep (node:internal/modules/customization_hooks:189:26)
+  [11ty]     at resolve (file:///workspace/neo-georgia-website/node_modules/@11ty/eleventy/src/Util/EsmResolver.js:54:9)
+  [11ty]     at nextStep (node:internal/modules/customization_hooks:189:26)
+  [11ty]     at resolveWithHooks (node:internal/modules/customization_hooks:417:10)
+  [11ty]     at ModuleLoader.resolveSync (node:internal/modules/esm/loader:747:16)
+  
+      at TestContext.<anonymous> (file:///workspace/neo-georgia-website/test/launch.test.js:32:225)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: Error: Command failed: /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node node_modules/@11ty/eleventy/cmd.cjs
+    [11ty] Eleventy Fatal Error (CLI):
+    [11ty] 1. Error in your Eleventy config file 'eleventy.config.js'. (via EleventyConfigError)
+    [11ty] 2. There was a problem importing 'eleventy.config.js' via import(esm) (via EleventyImportError)
+    [11ty] 3. Cannot find module '/tmp/neo-content-fixtures-I0O7o8/scripts/wp/convert.js' imported from /tmp/neo-content-fixtures-I0O7o8/lib/office.js
+    [11ty] 
+    [11ty] Original error stack trace: Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/tmp/neo-content-fixtures-I0O7o8/scripts/wp/convert.js' imported from /tmp/neo-content-fixtures-I0O7o8/lib/office.js
+    [11ty]     at finalizeResolution (node:internal/modules/esm/resolve:271:11)
+    [11ty]     at moduleResolve (node:internal/modules/esm/resolve:865:10)
+    [11ty]     at defaultResolve (node:internal/modules/esm/resolve:992:11)
+    [11ty]     at #cachedDefaultResolve (node:internal/modules/esm/loader:701:20)
+    [11ty]     at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:721:38)
+    [11ty]     at nextStep (node:internal/modules/customization_hooks:189:26)
+    [11ty]     at resolve (file:///workspace/neo-georgia-website/node_modules/@11ty/eleventy/src/Util/EsmResolver.js:54:9)
+    [11ty]     at nextStep (node:internal/modules/customization_hooks:189:26)
+    [11ty]     at resolveWithHooks (node:internal/modules/customization_hooks:417:10)
+    [11ty]     at ModuleLoader.resolveSync (node:internal/modules/esm/loader:747:16)
+    
+        at genericNodeError (node:internal/errors:985:15)
+        at wrappedFn (node:internal/errors:539:14)
+        at checkExecSyncError (node:child_process:942:11)
+        at execFileSync (node:child_process:978:15)
+        at buildFixtureSite (file:///workspace/neo-georgia-website/scripts/fixture-site.js:32:2)
+        at file:///workspace/neo-georgia-website/test/launch.test.js:32:236
+        at getActual (node:assert:611:5)
+        at strict.throws (node:assert:759:24)
+        at TestContext.<anonymous> (file:///workspace/neo-georgia-website/test/launch.test.js:32:225)
+        at Test.runInAsyncScope (node:async_hooks:227:14),
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at test/news-image.test.js:35:1
+✖ real Eleventy image builds produce local responsive article/card pictures in both layouts (272.48256ms)
+  Error: Command failed: /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node node_modules/@11ty/eleventy/cmd.cjs --output=/tmp/neo-news-picture-4yzQ7m/root-output
+  [11ty] Eleventy Fatal Error (CLI):
+  [11ty] 1. Error in your Eleventy config file 'eleventy.config.js'. (via EleventyConfigError)
+  [11ty] 2. There was a problem importing 'eleventy.config.js' via import(esm) (via EleventyImportError)
+  [11ty] 3. Cannot find module '/tmp/neo-news-picture-4yzQ7m/scripts/wp/convert.js' imported from /tmp/neo-news-picture-4yzQ7m/lib/office.js
+  [11ty] 
+  [11ty] Original error stack trace: Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/tmp/neo-news-picture-4yzQ7m/scripts/wp/convert.js' imported from /tmp/neo-news-picture-4yzQ7m/lib/office.js
+  [11ty]     at finalizeResolution (node:internal/modules/esm/resolve:271:11)
+  [11ty]     at moduleResolve (node:internal/modules/esm/resolve:865:10)
+  [11ty]     at defaultResolve (node:internal/modules/esm/resolve:992:11)
+  [11ty]     at #cachedDefaultResolve (node:internal/modules/esm/loader:701:20)
+  [11ty]     at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:721:38)
+  [11ty]     at nextStep (node:internal/modules/customization_hooks:189:26)
+  [11ty]     at resolve (file:///workspace/neo-georgia-website/node_modules/@11ty/eleventy/src/Util/EsmResolver.js:54:9)
+  [11ty]     at nextStep (node:internal/modules/customization_hooks:189:26)
+  [11ty]     at resolveWithHooks (node:internal/modules/customization_hooks:417:10)
+  [11ty]     at ModuleLoader.resolveSync (node:internal/modules/esm/loader:747:16)
+  
+      at genericNodeError (node:internal/errors:985:15)
+      at wrappedFn (node:internal/errors:539:14)
+      at checkExecSyncError (node:child_process:942:11)
+      at execFileSync (node:child_process:978:15)
+      at TestContext.<anonymous> (file:///workspace/neo-georgia-website/test/news-image.test.js:50:7)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12) {
+    status: 1,
+    signal: null,
+    output: [ null, <Buffer >, <Buffer 5b 31 31 74 79 5d 20 45 6c 65 76 65 6e 74 79 20 46 61 74 61 6c 20 45 72 72 6f 72 20 28 43 4c 49 29 3a 0a 5b 31 31 74 79 5d 20 31 2e 20 45 72 72 6f 72 ... 1341 more bytes> ],
+    pid: 2176,
+    stdout: <Buffer >,
+    stderr: <Buffer 5b 31 31 74 79 5d 20 45 6c 65 76 65 6e 74 79 20 46 61 74 61 6c 20 45 72 72 6f 72 20 28 43 4c 49 29 3a 0a 5b 31 31 74 79 5d 20 31 2e 20 45 72 72 6f 72 ... 1341 more bytes>
+  }
+
+test at test/news-image.test.js:83:1
+✖ CMS offers an optional News-only local image with Georgian-first alt labels (14.873765ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  true !== false
+  
+      at TestContext.<anonymous> (file:///workspace/neo-georgia-website/test/news-image.test.js:92:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: true,
+    expected: false,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at test/redirects.test.js:45:1
+✖ legacy stub renders with a prefixed refresh, canonical and working visible link (255.8227ms)
+  Error: Command failed: /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node node_modules/@11ty/eleventy/cmd.cjs
+  [11ty] Eleventy Fatal Error (CLI):
+  [11ty] 1. Error in your Eleventy config file 'eleventy.config.js'. (via EleventyConfigError)
+  [11ty] 2. There was a problem importing 'eleventy.config.js' via import(esm) (via EleventyImportError)
+  [11ty] 3. Cannot find module '/tmp/neo-redirect-GHkIy0/scripts/wp/convert.js' imported from /tmp/neo-redirect-GHkIy0/lib/office.js
+  [11ty] 
+  [11ty] Original error stack trace: Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/tmp/neo-redirect-GHkIy0/scripts/wp/convert.js' imported from /tmp/neo-redirect-GHkIy0/lib/office.js
+  [11ty]     at finalizeResolution (node:internal/modules/esm/resolve:271:11)
+  [11ty]     at moduleResolve (node:internal/modules/esm/resolve:865:10)
+  [11ty]     at defaultResolve (node:internal/modules/esm/resolve:992:11)
+  [11ty]     at #cachedDefaultResolve (node:internal/modules/esm/loader:701:20)
+  [11ty]     at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:721:38)
+  [11ty]     at nextStep (node:internal/modules/customization_hooks:189:26)
+  [11ty]     at resolve (file:///workspace/neo-georgia-website/node_modules/@11ty/eleventy/src/Util/EsmResolver.js:54:9)
+  [11ty]     at nextStep (node:internal/modules/customization_hooks:189:26)
+  [11ty]     at resolveWithHooks (node:internal/modules/customization_hooks:417:10)
+  [11ty]     at ModuleLoader.resolveSync (node:internal/modules/esm/loader:747:16)
+  
+      at genericNodeError (node:internal/errors:985:15)
+      at wrappedFn (node:internal/errors:539:14)
+      at checkExecSyncError (node:child_process:942:11)
+      at execFileSync (node:child_process:978:15)
+      at TestContext.<anonymous> (file:///workspace/neo-georgia-website/test/redirects.test.js:56:5)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12) {
+    status: 1,
+    signal: null,
+    output: [ null, <Buffer >, <Buffer 5b 31 31 74 79 5d 20 45 6c 65 76 65 6e 74 79 20 46 61 74 61 6c 20 45 72 72 6f 72 20 28 43 4c 49 29 3a 0a 5b 31 31 74 79 5d 20 31 2e 20 45 72 72 6f 72 ... 1325 more bytes> ],
+    pid: 2327,
+    stdout: <Buffer >,
+    stderr: <Buffer 5b 31 31 74 79 5d 20 45 6c 65 76 65 6e 74 79 20 46 61 74 61 6c 20 45 72 72 6f 72 20 28 43 4c 49 29 3a 0a 5b 31 31 74 79 5d 20 31 2e 20 45 72 72 6f 72 ... 1325 more bytes>
+  }
+
+test at test/release-fixtures.test.js:8:1
+✖ isolated sample content retains relationships, local-publication downloads and per-Event ICS coverage (274.416321ms)
+  Error: Command failed: /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node node_modules/@11ty/eleventy/cmd.cjs
+  [11ty] Eleventy Fatal Error (CLI):
+  [11ty] 1. Error in your Eleventy config file 'eleventy.config.js'. (via EleventyConfigError)
+  [11ty] 2. There was a problem importing 'eleventy.config.js' via import(esm) (via EleventyImportError)
+  [11ty] 3. Cannot find module '/tmp/neo-content-fixtures-Z6jn1o/scripts/wp/convert.js' imported from /tmp/neo-content-fixtures-Z6jn1o/lib/office.js
+  [11ty] 
+  [11ty] Original error stack trace: Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/tmp/neo-content-fixtures-Z6jn1o/scripts/wp/convert.js' imported from /tmp/neo-content-fixtures-Z6jn1o/lib/office.js
+  [11ty]     at finalizeResolution (node:internal/modules/esm/resolve:271:11)
+  [11ty]     at moduleResolve (node:internal/modules/esm/resolve:865:10)
+  [11ty]     at defaultResolve (node:internal/modules/esm/resolve:992:11)
+  [11ty]     at #cachedDefaultResolve (node:internal/modules/esm/loader:701:20)
+  [11ty]     at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:721:38)
+  [11ty]     at nextStep (node:internal/modules/customization_hooks:189:26)
+  [11ty]     at resolve (file:///workspace/neo-georgia-website/node_modules/@11ty/eleventy/src/Util/EsmResolver.js:54:9)
+  [11ty]     at nextStep (node:internal/modules/customization_hooks:189:26)
+  [11ty]     at resolveWithHooks (node:internal/modules/customization_hooks:417:10)
+  [11ty]     at ModuleLoader.resolveSync (node:internal/modules/esm/loader:747:16)
+  
+      at genericNodeError (node:internal/errors:985:15)
+      at wrappedFn (node:internal/errors:539:14)
+      at checkExecSyncError (node:child_process:942:11)
+      at execFileSync (node:child_process:978:15)
+      at buildFixtureSite (file:///workspace/neo-georgia-website/scripts/fixture-site.js:32:2)
+      at TestContext.<anonymous> (file:///workspace/neo-georgia-website/test/release-fixtures.test.js:11:3)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.start (node:internal/test_runner/test:1242:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    status: 1,
+    signal: null,
+    output: [ null, <Buffer >, <Buffer 5b 31 31 74 79 5d 20 45 6c 65 76 65 6e 74 79 20 46 61 74 61 6c 20 45 72 72 6f 72 20 28 43 4c 49 29 3a 0a 5b 31 31 74 79 5d 20 31 2e 20 45 72 72 6f 72 ... 1357 more bytes> ],
+    pid: 2350,
+    stdout: <Buffer >,
+    stderr: <Buffer 5b 31 31 74 79 5d 20 45 6c 65 76 65 6e 74 79 20 46 61 74 61 6c 20 45 72 72 6f 72 20 28 43 4c 49 29 3a 0a 5b 31 31 74 79 5d 20 31 2e 20 45 72 72 6f 72 ... 1357 more bytes>
+  }
+
+test at test/release-fixtures.test.js:61:1
+✖ isolated empty Events and Stories remain covered when genuine production records are later added (257.698071ms)
+  Error: Command failed: /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node node_modules/@11ty/eleventy/cmd.cjs
+  [11ty] Eleventy Fatal Error (CLI):
+  [11ty] 1. Error in your Eleventy config file 'eleventy.config.js'. (via EleventyConfigError)
+  [11ty] 2. There was a problem importing 'eleventy.config.js' via import(esm) (via EleventyImportError)
+  [11ty] 3. Cannot find module '/tmp/neo-content-fixtures-v1GnSE/scripts/wp/convert.js' imported from /tmp/neo-content-fixtures-v1GnSE/lib/office.js
+  [11ty] 
+  [11ty] Original error stack trace: Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/tmp/neo-content-fixtures-v1GnSE/scripts/wp/convert.js' imported from /tmp/neo-content-fixtures-v1GnSE/lib/office.js
+  [11ty]     at finalizeResolution (node:internal/modules/esm/resolve:271:11)
+  [11ty]     at moduleResolve (node:internal/modules/esm/resolve:865:10)
+  [11ty]     at defaultResolve (node:internal/modules/esm/resolve:992:11)
+  [11ty]     at #cachedDefaultResolve (node:internal/modules/esm/loader:701:20)
+  [11ty]     at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:721:38)
+  [11ty]     at nextStep (node:internal/modules/customization_hooks:189:26)
+  [11ty]     at resolve (file:///workspace/neo-georgia-website/node_modules/@11ty/eleventy/src/Util/EsmResolver.js:54:9)
+  [11ty]     at nextStep (node:internal/modules/customization_hooks:189:26)
+  [11ty]     at resolveWithHooks (node:internal/modules/customization_hooks:417:10)
+  [11ty]     at ModuleLoader.resolveSync (node:internal/modules/esm/loader:747:16)
+  
+      at genericNodeError (node:internal/errors:985:15)
+      at wrappedFn (node:internal/errors:539:14)
+      at checkExecSyncError (node:child_process:942:11)
+      at execFileSync (node:child_process:978:15)
+      at buildFixtureSite (file:///workspace/neo-georgia-website/scripts/fixture-site.js:32:2)
+      at TestContext.<anonymous> (file:///workspace/neo-georgia-website/test/release-fixtures.test.js:67:3)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19) {
+    status: 1,
+    signal: null,
+    output: [ null, <Buffer >, <Buffer 5b 31 31 74 79 5d 20 45 6c 65 76 65 6e 74 79 20 46 61 74 61 6c 20 45 72 72 6f 72 20 28 43 4c 49 29 3a 0a 5b 31 31 74 79 5d 20 31 2e 20 45 72 72 6f 72 ... 1357 more bytes> ],
+    pid: 2357,
+    stdout: <Buffer >,
+    stderr: <Buffer 5b 31 31 74 79 5d 20 45 6c 65 76 65 6e 74 79 20 46 61 74 61 6c 20 45 72 72 6f 72 20 28 43 4c 49 29 3a 0a 5b 31 31 74 79 5d 20 31 2e 20 45 72 72 6f 72 ... 1357 more bytes>
+  }
+
+test at test/site.test.js:29:1
+✖ all rendered pages have language, metadata, seven menu links, one h1 and EU footer (405.433863ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  311 !== 294
+  
+      at TestContext.<anonymous> (file:///workspace/neo-georgia-website/test/site.test.js:30:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.start (node:internal/test_runner/test:1242:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 311,
+    expected: 294,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at test/site.test.js:125:1
+✖ content relationships, non-empty text, and core bilingual parity (9.186725ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(!existsSync(`_site/${lang}/news/${slug}/index.html`))
+  
+      at TestContext.<anonymous> (file:///workspace/neo-georgia-website/test/site.test.js:160:45)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at test/site.test.js:261:1
+✖ Pages output has a bilingual root 404 and a static home redirect (0.818603ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(!existsSync('_site/ka/404.html'))
+  
+      at TestContext.<anonymous> (file:///workspace/neo-georgia-website/test/site.test.js:263:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at test/stories.test.js:8:1
+✖ Stories routes, navigation, listings and sitemap reflect the actual language catalogue (449.078412ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  true !== false
+  
+      at TestContext.<anonymous> (file:///workspace/neo-georgia-website/test/stories.test.js:14:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.start (node:internal/test_runner/test:1242:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: true,
+    expected: false,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at test/tbc.test.js:6:1
+✖ production HTML contains no public sample or draft markers (12.512427ms)
+  AssertionError [ERR_ASSERTION]: _site/en/404.html
+      at TestContext.<anonymous> (file:///workspace/neo-georgia-website/test/tbc.test.js:7:79)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.start (node:internal/test_runner/test:1242:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: '\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<!doctype html>\n<html lang="en">\n<head>\n  <meta charset="utf-8">\n  \n  <meta name="viewport" content="width=device-width, initial-scale=1">\n  <title>Page not found | NEO Georgia</title>\n  <meta name="description" content="Page not found. [SAMPLE] Development preview. All content and dates are illustrative.">\n  <meta name="robots" content="noindex, nofollow">\n  <link rel="canonical" href="https://example.org/en/404.html">\n  <link rel="alternate" hreflang="en" href="https://example.org/en/404.html">\n  <link rel="alternate" hreflang="ka" href="https://example.org/ka/404.html">\n  <meta property="og:title" content="Page not found | NEO Georgia">\n  <meta property="og:description" content="[SAMPLE] Development preview. All content and dates are illustrative.">\n  <meta property="og:type" content="website">\n  <meta property="og:url" content="https://example.org/en/404.html">\n  <link rel="stylesheet" href="/assets/css/site.css">\n</head>\n<body>\n<a class="skip" href="#main">Skip to content</a>\n<header class="wrapper">\n  <a class="brand" href="/en/">NEO Georgia</a>\n  <nav aria-label="Main navigation"><ul>\n  <li><a href="/en/">Home</a></li><li><a href="/en/opportunities/">Opportunities</a></li><li><a href="/en/calls/">Calls and deadlines</a></li><li><a href="/en/events/">Events</a></li><li><a href="/en/news/">News</a></li><li><a href="/en/resources/">Resources</a></li><li><a href="/en/about/">About</a></li>\n  </ul></nav>\n  <a href="/ka/404.html" lang="ka" hreflang="ka">ქართული</a>\n</header>\n<main id="main" class="wrapper" tabindex="-1">\n  <p class="notice">[SAMPLE] Development preview. All content and dates are illustrative.</p>\n  <h1>Page not found</h1>\n  \n<p><a href="/en/">Return to the home page</a></p>\n\n\n</main>\n<footer class="wrapper">\n  <div class="footer-grid">\n    <section><h2>Contact</h2><p>[SAMPLE] Contact details awaiting NEO approval.</p><h3>Social links</h3><p>[SAMPLE] Social links awaiting NEO approval.</p></section>\n    <nav aria-label="About"><ul><li><a href="/en/privacy/">Privacy and cookies</a></li><li><a href="/en/accessibility/">Accessibility</a></li><li><a href="/en/language/">Prevailing language</a></li></ul></nav>\n  </div>\n  <div class="eu-footer"><p class="emblem-placeholder">[SAMPLE] Official EU emblem placeholder. Original files required before launch.</p><p><strong>Funded by the European Union</strong></p><p>Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them.</p></div>\n</footer>\n</body>\n</html>\n\n',
+    expected: /\[(?:SAMPLE|DRAFT)\]/,
+    operator: 'doesNotMatch',
+    diff: 'simple'
+  }

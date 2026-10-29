@@ -46,3 +46,7 @@ Initial proxy access failures were resolved before this review. No external acco
 ## Session 18 review status, 27 October 2026
 
 All nine Actions retain [DRAFT], following Luka's restart instructions. No Action wording changes are made or proposed in this session. The new partner-search navigation is separate from the stored Action title, summary, eligibility and application wording. Nino's bilingual review remains a launch blocker.
+
+## Session 24 terminology review, 2026-10-29
+
+No Action wording was edited. Nino should confirm the Georgian equivalents in TERMINOLOGY.md against the complete eligibility/applicant/partner qualifications already listed here. Retain the distinction between institutional grant deadlines and student application dates. No additional wording correction is asserted without her review.

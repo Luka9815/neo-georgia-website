@@ -1,0 +1,210 @@
+- link "Skip to content":
+  - /url: "#main"
+- complementary "Preview. The National Erasmus+ Office Georgia website opens in January 2027.":
+  - paragraph: Preview. The National Erasmus+ Office Georgia website opens in January 2027.
+- banner:
+  - link "National Erasmus+ Office Georgia":
+    - /url: /en/
+  - link "Search":
+    - /url: /en/search/
+  - text: EN
+  - 'link "ქა: ქართული"':
+    - /url: /ka/calls/
+    - text: ქა
+  - navigation "Main navigation":
+    - list:
+      - listitem:
+        - link "Home":
+          - /url: /en/
+      - listitem:
+        - link "Opportunities":
+          - /url: /en/opportunities/
+      - listitem:
+        - link "Calls and deadlines":
+          - /url: /en/calls/
+      - listitem:
+        - link "Events":
+          - /url: /en/events/
+      - listitem:
+        - link "News":
+          - /url: /en/news/
+      - listitem:
+        - link "Resources":
+          - /url: /en/resources/
+      - listitem:
+        - link "About":
+          - /url: /en/about/
+- main:
+  - heading "Calls and deadlines" [level=1]
+  - paragraph: Brussels time (Europe/Brussels)
+  - paragraph: The European Commission is expected to publish the 2027 calls in late 2026. This page will be updated when they are available.
+  - paragraph:
+    - link "Erasmus+ Programme Guide":
+      - /url: https://erasmus-plus.ec.europa.eu/programme-guide/erasmusplus-programme-guide
+  - 'heading "Call year: 2026" [level=2]'
+  - 'heading "Key Action: KA1" [level=3]'
+  - list:
+    - listitem:
+      - text: Closed
+      - 'heading "Youth Exchanges and youth-worker mobility: February round 2026" [level=4]':
+        - 'link "Youth Exchanges and youth-worker mobility: February round 2026"':
+          - /url: /en/opportunities/youth-mobility/
+      - paragraph:
+        - time: 12 February 2026, 12:00
+        - text: Brussels time (Europe/Brussels)
+      - paragraph: The EU or associated-country applicant submits to its National Agency. Georgian organisations participate as eligible partners, subject to each action’s conditions.
+      - link "Official links":
+        - /url: https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/youth-exchanges
+    - listitem:
+      - text: Closed
+      - heading "International Credit Mobility (KA171) 2026" [level=4]:
+        - link "International Credit Mobility (KA171) 2026":
+          - /url: /en/opportunities/icm/
+      - paragraph:
+        - time: 19 February 2026, 12:00
+        - text: Brussels time (Europe/Brussels)
+      - paragraph: Institutional application deadline. The EU or associated-country institution applies to its National Agency. Students and staff apply through their own university.
+      - link "Official links":
+        - /url: https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/higher-education-mobility-projects
+    - listitem:
+      - text: Closed
+      - 'heading "Virtual Exchanges: Neighbourhood East 2026" [level=4]':
+        - 'link "Virtual Exchanges: Neighbourhood East 2026"':
+          - /url: /en/opportunities/virtual-exchanges/
+      - paragraph:
+        - time: 26 March 2026, 17:00
+        - text: Brussels time (Europe/Brussels)
+      - paragraph: Institutional application deadline for Neighbourhood East. Georgian organisations may join eligible partnerships coordinated from the EU or an associated country.
+      - link "Official links":
+        - /url: https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/virtual-exchanges
+    - listitem:
+      - text: Closed
+      - 'heading "Youth Exchanges and youth-worker mobility: October round 2026" [level=4]':
+        - 'link "Youth Exchanges and youth-worker mobility: October round 2026"':
+          - /url: /en/opportunities/youth-mobility/
+      - paragraph:
+        - time: 1 October 2026, 12:00
+        - text: Brussels time (Europe/Brussels)
+      - paragraph: Second 2026 application round for Youth Exchanges and youth-worker mobility. Georgian organisations join as eligible partners; the EU or associated-country organisation applies.
+      - link "Official links":
+        - /url: https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/youth-exchanges
+  - 'heading "Key Action: KA2" [level=3]'
+  - list:
+    - listitem:
+      - text: Closed
+      - heading "Capacity Building in Higher Education 2026" [level=4]:
+        - link "Capacity Building in Higher Education 2026":
+          - /url: /en/opportunities/cbhe/
+      - paragraph:
+        - time: 10 February 2026, 17:00
+        - text: Brussels time (Europe/Brussels)
+      - paragraph: Deadline for the 2026 CBHE call, including Neighbourhood East. Check the strand, consortium and Georgia eligibility conditions on the Action page and in the Guide.
+      - link "Official links":
+        - /url: https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-higher-education
+    - listitem:
+      - text: Closed
+      - heading "Erasmus Mundus Design Measures 2026" [level=4]:
+        - link "Erasmus Mundus Design Measures 2026":
+          - /url: /en/opportunities/erasmus-mundus/
+      - paragraph:
+        - time: 12 February 2026, 17:00
+        - text: Brussels time (Europe/Brussels)
+      - paragraph: The applicant must be an eligible EU or associated-country higher education institution. Georgian institutions may contribute to programme design; this is not co-beneficiary status.
+      - link "Official links":
+        - /url: https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/erasmus-mundus
+    - listitem:
+      - text: Closed
+      - heading "Erasmus Mundus Joint Masters 2026" [level=4]:
+        - link "Erasmus Mundus Joint Masters 2026":
+          - /url: /en/opportunities/erasmus-mundus/
+      - paragraph:
+        - time: 12 February 2026, 17:00
+        - text: Brussels time (Europe/Brussels)
+      - paragraph: Consortium project deadline, not a student scholarship deadline. Students apply directly to their chosen master’s consortium under its own timetable.
+      - link "Official links":
+        - /url: https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/erasmus-mundus
+    - listitem:
+      - text: Closed
+      - heading "Capacity Building in Youth 2026" [level=4]:
+        - link "Capacity Building in Youth 2026":
+          - /url: /en/opportunities/cb-youth/
+      - paragraph:
+        - time: 26 February 2026, 17:00
+        - text: Brussels time (Europe/Brussels)
+      - paragraph: Institutional deadline for the 2026 call. Check eligible organisations and the regional consortium requirements in the official Guide.
+      - link "Official links":
+        - /url: https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-youth
+    - listitem:
+      - text: Closed
+      - heading "Capacity Building in Sport 2026" [level=4]:
+        - link "Capacity Building in Sport 2026":
+          - /url: /en/opportunities/cb-sport/
+      - paragraph:
+        - time: 5 March 2026, 17:00
+        - text: Brussels time (Europe/Brussels)
+      - paragraph: Institutional deadline for the 2026 call. Check the official consortium, organisation and country eligibility requirements before preparing a proposal.
+      - link "Official links":
+        - /url: https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-sport
+    - listitem:
+      - text: Closed
+      - 'heading "Capacity Building in VET: Neighbourhood East 2026" [level=4]':
+        - 'link "Capacity Building in VET: Neighbourhood East 2026"':
+          - /url: /en/opportunities/cb-vet/
+      - paragraph:
+        - time: 26 March 2026, 17:00
+        - text: Brussels time (Europe/Brussels)
+      - paragraph: Georgian VET and labour-market organisations may participate as eligible partners. The coordinator must be based in the EU or a country associated to the programme.
+      - link "Official links":
+        - /url: https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-vet
+  - 'heading "Key Action: KA3" [level=3]'
+  - list:
+    - listitem: No items are available.
+  - 'heading "Key Action: Jean Monnet" [level=3]'
+  - list:
+    - listitem:
+      - text: Closed
+      - 'heading "Jean Monnet: Modules, Chairs and Centres of Excellence 2026" [level=4]':
+        - 'link "Jean Monnet: Modules, Chairs and Centres of Excellence 2026"':
+          - /url: /en/opportunities/jean-monnet/
+      - paragraph:
+        - time: 3 February 2026, 17:00
+        - text: Brussels time (Europe/Brussels)
+      - paragraph: Higher education teaching and research applications to EACEA. The eligible institution applies on its own; other Jean Monnet strands have separate conditions.
+      - link "Official links":
+        - /url: https://erasmus-plus.ec.europa.eu/programme-guide/part-b/jean-monnet-actions/higher-education-projects
+- contentinfo:
+  - heading "Contact" [level=2]
+  - paragraph: "Email: [TBC]"
+  - paragraph:
+    - link "Contact":
+      - /url: /en/about/contact/
+  - navigation "Quick links":
+    - heading "Quick links" [level=2]
+    - list:
+      - listitem:
+        - link "Opportunities":
+          - /url: /en/opportunities/
+      - listitem:
+        - link "Calls and deadlines":
+          - /url: /en/calls/
+      - listitem:
+        - link "Resources":
+          - /url: /en/resources/
+  - navigation "About":
+    - heading "Legal information" [level=2]
+    - list:
+      - listitem:
+        - link "Privacy and cookies":
+          - /url: /en/privacy/
+      - listitem:
+        - link "Accessibility":
+          - /url: /en/accessibility/
+      - listitem:
+        - link "Prevailing language":
+          - /url: /en/language/
+      - listitem:
+        - link "Photo credits":
+          - /url: /en/about/credits/
+  - paragraph: In the event of any discrepancy between the Georgian and English versions, the English version prevails.
+  - img "Funded by the European Union"
+  - paragraph: Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them.

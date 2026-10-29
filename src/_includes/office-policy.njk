@@ -1,0 +1,4 @@
+{% if view.slug == 'privacy' %}
+{% if view.lang == 'en' %}<p>The data controller is ERIDA (Education, Research and International Development Association). Identification code: {{ office.legal.eridaIdentificationCode }}. Registered address: {{ office.legal.registeredAddress.en }}. Contact for privacy and rights requests: {{ office.privacyContact }}.</p>
+{% else %}<p>მონაცემთა დამუშავებისთვის პასუხისმგებელია ERIDA (განათლების, კვლევისა და საერთაშორისო განვითარების ასოციაცია). საიდენტიფიკაციო კოდი: {{ office.legal.eridaIdentificationCode }}. იურიდიული მისამართი: {{ office.legal.registeredAddress.ka }}. კონფიდენციალურობისა და უფლებებთან დაკავშირებული მოთხოვნების საკონტაქტო ინფორმაცია: {{ office.privacyContact }}.</p>{% endif %}
+{% else %}<p>{{ 'Contact:' if view.lang == 'en' else 'საკონტაქტო ინფორმაცია:' }} {{ office.accessibilityContact }}.</p>{% endif %}

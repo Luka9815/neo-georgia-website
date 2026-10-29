@@ -1,0 +1,514 @@
+[
+  {
+    "lang": "ka",
+    "width": 390,
+    "path": "about/contact/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/ka/about/contact/",
+    "file": "contact-ka-390.png"
+  },
+  {
+    "lang": "ka",
+    "width": 390,
+    "path": "about/team/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/ka/about/team/",
+    "file": "team-ka-390.png"
+  },
+  {
+    "lang": "ka",
+    "width": 390,
+    "path": "here/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/ka/about/here/",
+    "file": "hereOld-ka-390.png"
+  },
+  {
+    "lang": "ka",
+    "width": 390,
+    "path": "about/here/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/ka/about/here/",
+    "file": "hereNew-ka-390.png"
+  },
+  {
+    "lang": "ka",
+    "width": 390,
+    "path": "privacy/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/ka/privacy/",
+    "file": "privacy-ka-390.png"
+  },
+  {
+    "lang": "ka",
+    "width": 390,
+    "path": "accessibility/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/ka/accessibility/",
+    "file": "accessibility-ka-390.png"
+  },
+  {
+    "lang": "ka",
+    "width": 390,
+    "path": "about/credits/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/ka/about/credits/",
+    "file": "credits-ka-390.png"
+  },
+  {
+    "lang": "ka",
+    "width": 390,
+    "path": "calls/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/ka/calls/",
+    "file": "calls-ka-390.png"
+  },
+  {
+    "lang": "ka",
+    "width": 390,
+    "path": "",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/ka/",
+    "file": "home-ka-390.png"
+  },
+  {
+    "lang": "ka",
+    "width": 390,
+    "path": "about/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/ka/about/",
+    "file": "about-ka-390.png"
+  },
+  {
+    "lang": "ka",
+    "width": 390,
+    "path": "opportunities/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/ka/opportunities/",
+    "file": "opportunities-ka-390.png"
+  },
+  {
+    "lang": "ka",
+    "width": 390,
+    "path": "find/student/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/ka/find/student/",
+    "file": "student-ka-390.png"
+  },
+  {
+    "lang": "ka",
+    "width": 390,
+    "path": "find/university/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/ka/find/university/",
+    "file": "university-ka-390.png"
+  },
+  {
+    "lang": "ka",
+    "width": 390,
+    "path": "find/youth/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/ka/find/youth/",
+    "file": "youth-ka-390.png"
+  },
+  {
+    "lang": "ka",
+    "width": 390,
+    "path": "find/vet/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/ka/find/vet/",
+    "file": "vet-ka-390.png"
+  },
+  {
+    "lang": "ka",
+    "width": 390,
+    "path": "find/sport/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/ka/find/sport/",
+    "file": "sport-ka-390.png"
+  },
+  {
+    "lang": "ka",
+    "width": 1280,
+    "path": "about/contact/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/ka/about/contact/",
+    "file": "contact-ka-1280.png"
+  },
+  {
+    "lang": "ka",
+    "width": 1280,
+    "path": "about/team/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/ka/about/team/",
+    "file": "team-ka-1280.png"
+  },
+  {
+    "lang": "ka",
+    "width": 1280,
+    "path": "here/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/ka/about/here/",
+    "file": "hereOld-ka-1280.png"
+  },
+  {
+    "lang": "ka",
+    "width": 1280,
+    "path": "about/here/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/ka/about/here/",
+    "file": "hereNew-ka-1280.png"
+  },
+  {
+    "lang": "ka",
+    "width": 1280,
+    "path": "privacy/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/ka/privacy/",
+    "file": "privacy-ka-1280.png"
+  },
+  {
+    "lang": "ka",
+    "width": 1280,
+    "path": "accessibility/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/ka/accessibility/",
+    "file": "accessibility-ka-1280.png"
+  },
+  {
+    "lang": "ka",
+    "width": 1280,
+    "path": "about/credits/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/ka/about/credits/",
+    "file": "credits-ka-1280.png"
+  },
+  {
+    "lang": "ka",
+    "width": 1280,
+    "path": "calls/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/ka/calls/",
+    "file": "calls-ka-1280.png"
+  },
+  {
+    "lang": "ka",
+    "width": 1280,
+    "path": "",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/ka/",
+    "file": "home-ka-1280.png"
+  },
+  {
+    "lang": "ka",
+    "width": 1280,
+    "path": "about/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/ka/about/",
+    "file": "about-ka-1280.png"
+  },
+  {
+    "lang": "ka",
+    "width": 1280,
+    "path": "opportunities/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/ka/opportunities/",
+    "file": "opportunities-ka-1280.png"
+  },
+  {
+    "lang": "ka",
+    "width": 1280,
+    "path": "find/student/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/ka/find/student/",
+    "file": "student-ka-1280.png"
+  },
+  {
+    "lang": "ka",
+    "width": 1280,
+    "path": "find/university/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/ka/find/university/",
+    "file": "university-ka-1280.png"
+  },
+  {
+    "lang": "ka",
+    "width": 1280,
+    "path": "find/youth/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/ka/find/youth/",
+    "file": "youth-ka-1280.png"
+  },
+  {
+    "lang": "ka",
+    "width": 1280,
+    "path": "find/vet/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/ka/find/vet/",
+    "file": "vet-ka-1280.png"
+  },
+  {
+    "lang": "ka",
+    "width": 1280,
+    "path": "find/sport/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/ka/find/sport/",
+    "file": "sport-ka-1280.png"
+  },
+  {
+    "lang": "en",
+    "width": 390,
+    "path": "about/contact/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/en/about/contact/",
+    "file": "contact-en-390.png"
+  },
+  {
+    "lang": "en",
+    "width": 390,
+    "path": "about/team/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/en/about/team/",
+    "file": "team-en-390.png"
+  },
+  {
+    "lang": "en",
+    "width": 390,
+    "path": "here/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/en/about/here/",
+    "file": "hereOld-en-390.png"
+  },
+  {
+    "lang": "en",
+    "width": 390,
+    "path": "about/here/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/en/about/here/",
+    "file": "hereNew-en-390.png"
+  },
+  {
+    "lang": "en",
+    "width": 390,
+    "path": "privacy/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/en/privacy/",
+    "file": "privacy-en-390.png"
+  },
+  {
+    "lang": "en",
+    "width": 390,
+    "path": "accessibility/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/en/accessibility/",
+    "file": "accessibility-en-390.png"
+  },
+  {
+    "lang": "en",
+    "width": 390,
+    "path": "about/credits/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/en/about/credits/",
+    "file": "credits-en-390.png"
+  },
+  {
+    "lang": "en",
+    "width": 390,
+    "path": "calls/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/en/calls/",
+    "file": "calls-en-390.png"
+  },
+  {
+    "lang": "en",
+    "width": 390,
+    "path": "",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/en/",
+    "file": "home-en-390.png"
+  },
+  {
+    "lang": "en",
+    "width": 390,
+    "path": "about/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/en/about/",
+    "file": "about-en-390.png"
+  },
+  {
+    "lang": "en",
+    "width": 390,
+    "path": "opportunities/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/en/opportunities/",
+    "file": "opportunities-en-390.png"
+  },
+  {
+    "lang": "en",
+    "width": 390,
+    "path": "find/student/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/en/find/student/",
+    "file": "student-en-390.png"
+  },
+  {
+    "lang": "en",
+    "width": 390,
+    "path": "find/university/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/en/find/university/",
+    "file": "university-en-390.png"
+  },
+  {
+    "lang": "en",
+    "width": 390,
+    "path": "find/youth/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/en/find/youth/",
+    "file": "youth-en-390.png"
+  },
+  {
+    "lang": "en",
+    "width": 390,
+    "path": "find/vet/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/en/find/vet/",
+    "file": "vet-en-390.png"
+  },
+  {
+    "lang": "en",
+    "width": 390,
+    "path": "find/sport/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/en/find/sport/",
+    "file": "sport-en-390.png"
+  },
+  {
+    "lang": "en",
+    "width": 1280,
+    "path": "about/contact/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/en/about/contact/",
+    "file": "contact-en-1280.png"
+  },
+  {
+    "lang": "en",
+    "width": 1280,
+    "path": "about/team/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/en/about/team/",
+    "file": "team-en-1280.png"
+  },
+  {
+    "lang": "en",
+    "width": 1280,
+    "path": "here/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/en/about/here/",
+    "file": "hereOld-en-1280.png"
+  },
+  {
+    "lang": "en",
+    "width": 1280,
+    "path": "about/here/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/en/about/here/",
+    "file": "hereNew-en-1280.png"
+  },
+  {
+    "lang": "en",
+    "width": 1280,
+    "path": "privacy/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/en/privacy/",
+    "file": "privacy-en-1280.png"
+  },
+  {
+    "lang": "en",
+    "width": 1280,
+    "path": "accessibility/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/en/accessibility/",
+    "file": "accessibility-en-1280.png"
+  },
+  {
+    "lang": "en",
+    "width": 1280,
+    "path": "about/credits/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/en/about/credits/",
+    "file": "credits-en-1280.png"
+  },
+  {
+    "lang": "en",
+    "width": 1280,
+    "path": "calls/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/en/calls/",
+    "file": "calls-en-1280.png"
+  },
+  {
+    "lang": "en",
+    "width": 1280,
+    "path": "",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/en/",
+    "file": "home-en-1280.png"
+  },
+  {
+    "lang": "en",
+    "width": 1280,
+    "path": "about/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/en/about/",
+    "file": "about-en-1280.png"
+  },
+  {
+    "lang": "en",
+    "width": 1280,
+    "path": "opportunities/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/en/opportunities/",
+    "file": "opportunities-en-1280.png"
+  },
+  {
+    "lang": "en",
+    "width": 1280,
+    "path": "find/student/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/en/find/student/",
+    "file": "student-en-1280.png"
+  },
+  {
+    "lang": "en",
+    "width": 1280,
+    "path": "find/university/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/en/find/university/",
+    "file": "university-en-1280.png"
+  },
+  {
+    "lang": "en",
+    "width": 1280,
+    "path": "find/youth/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/en/find/youth/",
+    "file": "youth-en-1280.png"
+  },
+  {
+    "lang": "en",
+    "width": 1280,
+    "path": "find/vet/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/en/find/vet/",
+    "file": "vet-en-1280.png"
+  },
+  {
+    "lang": "en",
+    "width": 1280,
+    "path": "find/sport/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:8142/en/find/sport/",
+    "file": "sport-en-1280.png"
+  }
+]

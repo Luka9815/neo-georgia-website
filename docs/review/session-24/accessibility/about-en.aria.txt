@@ -1,0 +1,108 @@
+- link "Skip to content":
+  - /url: "#main"
+- complementary "Preview. The National Erasmus+ Office Georgia website opens in January 2027.":
+  - paragraph: Preview. The National Erasmus+ Office Georgia website opens in January 2027.
+- banner:
+  - link "National Erasmus+ Office Georgia":
+    - /url: /en/
+  - link "Search":
+    - /url: /en/search/
+  - text: EN
+  - 'link "ქა: ქართული"':
+    - /url: /ka/about/
+    - text: ქა
+  - navigation "Main navigation":
+    - list:
+      - listitem:
+        - link "Home":
+          - /url: /en/
+      - listitem:
+        - link "Opportunities":
+          - /url: /en/opportunities/
+      - listitem:
+        - link "Calls and deadlines":
+          - /url: /en/calls/
+      - listitem:
+        - link "Events":
+          - /url: /en/events/
+      - listitem:
+        - link "News":
+          - /url: /en/news/
+      - listitem:
+        - link "Resources":
+          - /url: /en/resources/
+      - listitem:
+        - link "About":
+          - /url: /en/about/
+- main:
+  - heading "About NEO Georgia" [level=1]
+  - 'figure "Photo: Patrik Kunec, CC BY-SA 4.0, via Wikimedia Commons (Tbilisi, Georgia - Building of the Tbilisi State University - 2023.jpg). Modified: cropped, resized and reformatted."':
+    - img "The main building of Tbilisi State University behind mature trees."
+    - text: "Photo: Patrik Kunec,"
+    - link "CC BY-SA 4.0":
+      - /url: https://creativecommons.org/licenses/by-sa/4.0
+    - text: ", via Wikimedia Commons ("
+    - link "Tbilisi, Georgia - Building of the Tbilisi State University - 2023.jpg":
+      - /url: https://commons.wikimedia.org/wiki/File:Tbilisi,_Georgia_-_Building_of_the_Tbilisi_State_University_-_2023.jpg
+    - text: "). Modified: cropped, resized and reformatted."
+  - paragraph: The National Erasmus+ Office (NEO) Georgia is an information and support office for Erasmus+ in Georgia, a third country not associated with the programme. It supports the European Commission and the European Education and Culture Executive Agency (EACEA) in the programme’s international dimension.
+  - heading "What we do" [level=2]
+  - paragraph: We provide information and guidance on the opportunities open to Georgia, support applicants and beneficiaries, coordinate support for Higher Education Reform Experts (HEREs), contribute to project monitoring and share results. We also support dialogue and events about education and cooperation.
+  - heading "Host organisation" [level=2]
+  - paragraph: From January 2027, the office is hosted by ERIDA (Education, Research and International Development Association).
+  - heading "What we do not do" [level=2]
+  - paragraph: The NEO does not evaluate or select proposals, award grants or select scholarship recipients. Applications and funding decisions follow the procedures of the responsible National Agency, EACEA, university or programme consortium.
+  - heading "Official sources" [level=2]
+  - list:
+    - listitem:
+      - 'link "Programme Guide 2026: programme implementation"':
+        - /url: https://erasmus-plus.ec.europa.eu/programme-guide/part-a/implementation
+    - listitem:
+      - 'link "European Commission: how Erasmus+ is managed"':
+        - /url: https://erasmus-plus.ec.europa.eu/about-erasmus/how-erasmus-is-managed
+  - list:
+    - listitem:
+      - link "NEO team":
+        - /url: /en/about/team/
+    - listitem:
+      - link "Higher Education Reform Experts":
+        - /url: /en/about/here/
+    - listitem:
+      - link "Contact":
+        - /url: /en/about/contact/
+- contentinfo:
+  - heading "Contact" [level=2]
+  - paragraph: "Email: [TBC]"
+  - paragraph:
+    - link "Contact":
+      - /url: /en/about/contact/
+  - navigation "Quick links":
+    - heading "Quick links" [level=2]
+    - list:
+      - listitem:
+        - link "Opportunities":
+          - /url: /en/opportunities/
+      - listitem:
+        - link "Calls and deadlines":
+          - /url: /en/calls/
+      - listitem:
+        - link "Resources":
+          - /url: /en/resources/
+  - navigation "About":
+    - heading "Legal information" [level=2]
+    - list:
+      - listitem:
+        - link "Privacy and cookies":
+          - /url: /en/privacy/
+      - listitem:
+        - link "Accessibility":
+          - /url: /en/accessibility/
+      - listitem:
+        - link "Prevailing language":
+          - /url: /en/language/
+      - listitem:
+        - link "Photo credits":
+          - /url: /en/about/credits/
+  - paragraph: In the event of any discrepancy between the Georgian and English versions, the English version prevails.
+  - img "Funded by the European Union"
+  - paragraph: Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them.

@@ -2,7 +2,7 @@
   "slug": "sample-brochure",
   "year": 2025,
   "type": "brochure",
-  "file": "/assets/publications/sample-brochure.txt",
+  "file": "/assets/publications/sample-brochure.pdf",
   "language": "ka/en",
   "ka": {
     "title": "[SAMPLE] საინფორმაციო ბროშურა",
@@ -11,5 +11,6 @@
   "en": {
     "title": "[SAMPLE] Information brochure",
     "body": "[SAMPLE] Illustrative publication only."
-  }
+  },
+  "sourceChecked": "2026-10-26"
 }

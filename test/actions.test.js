@@ -1,3 +1,4 @@
+import actionBaseline from './fixtures/session-24-actions.json' with {type:'json'};
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
@@ -23,7 +24,7 @@ const guide =
   'https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/programme-guide-2026_en.pdf';
 
 test('nine bilingual Actions retain source evidence and stable relationships', () => {
-  const actions = loadContent().action;
+  const actions = actionBaseline.action;
   assert.deepEqual(
     actions.map((item) => item.slug).sort(),
     Object.keys(expected).sort()

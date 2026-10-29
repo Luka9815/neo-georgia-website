@@ -1,3 +1,4 @@
+import {checkEditableSurfaces} from './check-editable-surfaces.js';
 import { checkContentFixtures } from './check-content-fixtures.js';
 import {checkPortal} from './check-portal.js';
 import { checkCalendar } from './check-calendar.js';
@@ -113,47 +114,7 @@ try {
     }
     await noJs.close();
   }
-  // Progressive filters: all files remain reachable without page JavaScript.
-  for (const lang of ['ka', 'en']) {
-    const url = `${base}${prefix}${lang}/resources/publications/`;
-    await page.goto(url);
-    const visible = page.locator('[data-publications] > li:visible');
-    assert.equal(await visible.count(), 2);
-    await page.locator('#publication-year').selectOption('2025');
-    assert.equal(await visible.count(), 1);
-    await page.locator('#publication-type').selectOption('brochure');
-    assert.equal(await visible.count(), 0);
-    assert.match(await page.locator('[role=status]').textContent(), /0$/);
-    await page.locator('button[type=reset]').click();
-    await page.waitForFunction(() => [...document.querySelectorAll('[data-publications] > li')].every(item => !item.hidden));
-    assert.equal(await visible.count(), 2);
-    const noJs = await browser.newContext({ javaScriptEnabled: false });
-    const document = await noJs.newPage();
-    await document.goto(url);
-    assert.equal(await document.locator('[data-publications] > li:visible').count(), 2);
-    assert.equal(await document.locator('[data-publication-filters]').isVisible(), false);
-    await noJs.close();
-  }
-  // The approved photograph must decode, and Action labels remain visible without JS.
-  for (const lang of ['ka', 'en']) {
-    for (const suffix of ['news/', 'news/neo-dissemination-event-2025/']) {
-      await page.goto(`${base}${prefix}${lang}/${suffix}`);
-      const image = page.locator('main picture img.news-image');
-      assert.equal(await image.count(), 1);
-      await image.scrollIntoViewIfNeeded();
-      await image.evaluate(image => image.decode());
-      assert.ok(await image.evaluate(image => image.naturalWidth > 0));
-    }
-    const noJs = await browser.newContext({ javaScriptEnabled: false, viewport: { width: 320, height: 800 } });
-    const listing = await noJs.newPage();
-    await listing.goto(`${base}${prefix}${lang}/opportunities/`);
-    const cards = listing.locator('.cards-action > li');
-    assert.equal(await cards.count(), 10); // Virtual Exchanges appears in two sectors.
-    for (const card of await cards.all()) {
-      assert.ok(await card.locator('.action-key-label').isVisible());
-    }
-    await noJs.close();
-  }
+  await checkEditableSurfaces(browser,base,prefix);
   await checkCalendar(browser, base, prefix);
   await checkProjects(browser, base, prefix);
   await checkSearch(browser, base, prefix);

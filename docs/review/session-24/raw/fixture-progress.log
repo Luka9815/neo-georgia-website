@@ -1,0 +1,34 @@
+✔ CMS schema matches JSON collections, local time rules, translations and action slugs (17.531962ms)
+✔ a deliberately bad Event fixture stops the real build with filename and field (580.84157ms)
+✔ loader rejects news editor mistake in date (12.695613ms)
+✔ loader rejects news editor mistake in ka.title (13.368297ms)
+✔ loader rejects news editor mistake in ka.body (14.227212ms)
+✔ loader rejects news editor mistake in date (12.889906ms)
+✔ loader rejects news editor mistake in date (12.133897ms)
+✔ loader rejects news editor mistake in actions[0] (10.937523ms)
+✔ loader rejects news editor mistake in en.body (12.472487ms)
+✔ loader rejects event editor mistake in timeZone (15.10141ms)
+✔ loader rejects event editor mistake in en.title (12.759339ms)
+✔ loader rejects event editor mistake in date (11.858371ms)
+✔ loader rejects event editor mistake in end (12.485406ms)
+✔ loader rejects event editor mistake in actions[0] (12.772539ms)
+✔ loader rejects event editor mistake in actions (13.759687ms)
+✔ loader rejects news editor mistake in actions (12.780476ms)
+✔ loader rejects event editor mistake in end (14.366852ms)
+✔ loader accepts News with an empty Action list (15.535098ms)
+✔ loader accepts News with no Action field (17.093402ms)
+✔ CMS-shaped JSON renders Markdown safely, keeps optional News English absent, and reads settings (4008.865623ms)
+✔ reviewed launch switch controls all indexable output at / (4227.436061ms)
+✔ reviewed launch switch controls all indexable output at /neo-georgia-website/ (4156.046131ms)
+✔ launched build names the unresolved source file, JSON path and language (475.221434ms)
+✔ isolated sample content retains relationships, local-publication downloads and per-Event ICS coverage (3494.30698ms)
+✔ copied synthetic fixtures retain past/upcoming coverage after the January 2027 launch (15.603738ms)
+✔ isolated empty Events and Stories remain covered when genuine production records are later added (3595.687111ms)
+ℹ tests 26
+ℹ suites 0
+ℹ pass 26
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 21504.979116

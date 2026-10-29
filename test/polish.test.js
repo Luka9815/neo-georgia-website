@@ -1,3 +1,4 @@
+import {loadContent} from '../lib/content.js';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
@@ -15,7 +16,7 @@ for(const lang of ['ka','en']) test(`polished ${lang} cards keep one native dest
   assert.equal($('footer a[href$="/about/credits/"]').length,1);
   assert.equal($('.news-text-only picture,.news-text-only .icon-slot').length,0);
   if(route==='') {
-   assert.equal($('.cards-compact .card').length,9);
+   assert.equal($('.cards-compact .card').length,loadContent().action.length);
    assert.equal($('.cards-compact .card-body').length,0);
   }
  }

@@ -2,7 +2,7 @@
   "slug": "sample-report",
   "year": 2026,
   "type": "neo-report",
-  "file": "/assets/publications/sample-report.txt",
+  "file": "/assets/publications/sample-report.pdf",
   "language": "ka/en",
   "ka": {
     "title": "[SAMPLE] ეროვნული ოფისის ანგარიში",
@@ -11,5 +11,6 @@
   "en": {
     "title": "[SAMPLE] NEO report",
     "body": "[SAMPLE] Illustrative publication only."
-  }
+  },
+  "sourceChecked": "2026-10-26"
 }

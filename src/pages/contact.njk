@@ -9,9 +9,9 @@ eleventyExcludeFromCollections: true
 {% extends 'page.njk' %}
 {% block pageContent %}
 <dl>
-  <dt>{{ t.address }}</dt><dd>{{ t.contactAddress }}</dd>
-  <dt>{{ t.phone }}</dt><dd>{{ t.contactPhone }}</dd>
-  <dt>{{ t.officeHours }}</dt><dd>{{ t.contactHours }}</dd>
-  <dt>{{ t.email }}</dt><dd>{{ t.contactEmail }}</dd>
+  <dt>{{ t.address }}</dt><dd>{{ office.contact.address[view.lang] }}</dd>
+  <dt>{{ t.phone }}</dt><dd>{{ office.contact.phone }}</dd>
+  <dt>{{ t.officeHours }}</dt><dd>{{ office.contact.hours[view.lang] }}</dd>
+  <dt>{{ t.email }}</dt><dd>{{ office.contact.email }}</dd>
 </dl>
 {% endblock %}

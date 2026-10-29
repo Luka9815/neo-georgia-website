@@ -457,3 +457,12 @@ Polish native card/navigation links and focus, compact audience rows and Home Ac
 ## 2026-10-29: Session 23 Commons photograph placements (Luka)
 
 Integrate the eight supplied Commons photographs after full decode, dimension/hash and visual-subject checks. Move their provenance into assets/images/README.md, exclude source JPEGs from deployment, and generate responsive local AVIF/WebP/JPEG up to 2560px. Place the panoramas/campuses on Home, About, five Find audiences and Opportunities, with reviewed focal points and a lighter contrasted Home overlay. Preserve the full tightly framed Campus E photograph. Add bilingual author/licence/file-page/modification credits, all eight credits-page records and visible permission-based credits for the retained NEO News image. Preserve content, data, URLs, EU visibility and siteLaunched=false. Validation, screenshots and limits are in review/session-23. No merge or launch.
+
+
+## 2026-10-29: Session 24 launch readiness (Luka)
+
+Centralise bilingual office/legal/Team/HERE facts and generate review/TBC.md; enforce reviewed one-switch launch markers/indexing; expand staff CMS forms and rewrite bilingual EDITING guidance; resolve legacy top-level page redirects and move HERE under About; capitalise photo-credit sentences and replace production-count assumptions with content/fixture checks. Add terminology, wording evidence, external-link audit, browser accessibility/mobile Lighthouse tools and the LAUNCH runbook. Keep siteLaunched=false and all external approval/hosted checks explicit. Final verification and limitations are recorded in review/session-24/README.md.
+
+Validation: clean root/prefix builds, 197 tests and 109 browser pages with zero axe violations per layout; 192 bilingual before/after/launched fixture captures. External link checks remain unverified under the environment’s outbound restrictions. See review/session-24 for serial mobile Lighthouse, raw evidence and manual/hosted limits.
+
+Final serial mobile Lighthouse: 34 runs, performance 96–100, accessibility/best practices 100; preview/noindex limits SEO to 69.

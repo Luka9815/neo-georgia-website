@@ -1,3 +1,5 @@
+import {romanise} from '../../lib/romanise.js';
+export {romanise} from '../../lib/romanise.js';
 import { createHash } from 'node:crypto';
 import { load } from 'cheerio';
 import TurndownService from 'turndown';
@@ -5,43 +7,7 @@ import { Temporal } from '@js-temporal/polyfill';
 import { postLanguage, pairingCandidates } from './language-review.js';
 import { oldSite } from './client.js';
 
-// Georgian national romanisation: ejectives have apostrophes here. The URL
-// slug subsequently drops apostrophes because the site accepts a-z, 0-9, '-'.
-const alphabet = {
-  ა: 'a',
-  ბ: 'b',
-  გ: 'g',
-  დ: 'd',
-  ე: 'e',
-  ვ: 'v',
-  ზ: 'z',
-  თ: 't',
-  ი: 'i',
-  კ: "k'",
-  ლ: 'l',
-  მ: 'm',
-  ნ: 'n',
-  ო: 'o',
-  პ: "p'",
-  ჟ: 'zh',
-  რ: 'r',
-  ს: 's',
-  ტ: "t'",
-  უ: 'u',
-  ფ: 'p',
-  ქ: 'k',
-  ღ: 'gh',
-  ყ: "q'",
-  შ: 'sh',
-  ჩ: 'ch',
-  ც: 'ts',
-  ძ: 'dz',
-  წ: "ts'",
-  ჭ: "ch'",
-  ხ: 'kh',
-  ჯ: 'j',
-  ჰ: 'h',
-};
+
 const email = /[A-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[A-Z0-9.-]+\.[A-Z]{2,}/gi;
 export const redact = (value) =>
   String(value ?? '').replace(email, '[email removed]');
@@ -76,11 +42,6 @@ export function cleanThemeMarkdown(markdown) {
     .trim();
 }
 
-export function romanise(title) {
-  return [...title.normalize('NFKC').toLowerCase()]
-    .map((letter) => alphabet[letter] ?? letter)
-    .join('');
-}
 export function truncateAtWord(value, limit) {
   if (value.length <= limit) return value;
   const boundary = value.slice(0, limit + 1).lastIndexOf('-');

@@ -1,3 +1,6 @@
+import {readFileSync} from 'node:fs';
+import {assertNoPlaceholders} from './lib/placeholders.js';
+import {loadOffice} from './lib/office.js';
 import { load } from 'cheerio';
 import { loadProjectSnapshot } from './lib/projects.js';
 import { renderEuImages } from './lib/eu-images.js';
@@ -21,10 +24,18 @@ export default function (config) {
   config.addFilter('participantMap',participantMap);
   config.addPlugin(EleventyHtmlBasePlugin);
   let outputRoot = '_site';
+  let launched = false;
   config.on('eleventy.before', ({ directories }) => {
+    launched = JSON.parse(readFileSync('src/_data/settings.json','utf8')).siteLaunched;
+    if (launched) {
+      assertNoPlaceholders('src');
+      if (new URL(process.env.SITE_URL || 'https://luka9815.github.io/neo-georgia-website/').hostname.endsWith('github.io')) console.warn('Launch warning: SITE_URL still points at github.io; verify the live URL before the domain move.');
+    }
+    loadOffice();
     loadProjectSnapshot();
     outputRoot = directories.output;
   });
+  config.on('eleventy.after', () => { if (launched) assertNoPlaceholders(outputRoot); });
   config.addWatchTarget('migration/source/erasmus-projects-georgia-2026-10-28.json');
   config.addTransform('news-images', async function (content) {
     return (this.page?.outputPath || this.outputPath || '').endsWith('.html')
@@ -108,6 +119,7 @@ export default function (config) {
     }
     return markdown.renderer.render(tokens, markdown.options, {});
   });
+  config.addFilter('officePeople', (items, office, lang) => items.map(item => item.officeKey ? {...item, name: office.team[item.officeKey].name[lang], roleEmail: office.team[item.officeKey].roleEmail} : item));
   config.addFilter('personGroup', (items, group) => items.filter(item => item.group === group));
   config.addFilter('topic', (items, topic) => items.filter(item => item.topic === topic));
   config.addFilter('publicationYears', items => [...new Set(items.map(item => item.year))].sort((a, b) => b - a));

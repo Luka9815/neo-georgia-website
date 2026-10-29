@@ -1,3 +1,4 @@
+import {loadContent} from '../lib/content.js';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,existsSync} from 'node:fs';
@@ -55,18 +56,18 @@ test('every Commons placement has local responsive variants and an accurate bili
 });
 
 
-test('the approved NEO News photo keeps its original alternatives and visible credit without adding a second card link',()=>{
- const photo=photos.dissemination;
+test('approved NEO News photo credits follow the actual article and Home/archive selections',()=>{
+ const photo=photos.dissemination;const news=loadContent().news.sort((a,b)=>b.date.localeCompare(a.date));
  for(const lang of ['ka','en']){
+  const local=news.filter(item=>item[lang]);
   for(const route of ['','news/']){
-   const $=load(readFileSync(`_site/${lang}/${route}index.html`,'utf8'));
-   const card=$('[data-news-photo-credit]').closest('.card');assert.equal(card.length,1);
-   assert.equal(card.find('a').length,1);assert.ok(card.text().includes(photo.credit[lang]));
-   assert.equal(card.find('img').attr('alt'),photo.alt[lang]);
+   const selection=route?local:local.slice(0,3);const expected=selection.filter(item=>item.image?.src===photo.src);
+   const $=load(readFileSync(`_site/${lang}/${route}index.html`,'utf8'));const cards=$('[data-news-photo-credit]').closest('.card');assert.equal(cards.length,expected.length);
+   for(const card of cards){assert.equal($(card).find('a').length,1);assert.ok($(card).text().includes(photo.credit[lang]));}
   }
-  const $=load(readFileSync(`_site/${lang}/news/neo-dissemination-event-2025/index.html`,'utf8'));
-  assert.ok($('.news-photo figcaption').text().includes(photo.credit[lang]));
-  assert.equal($('.news-photo img').attr('alt'),photo.alt[lang]);
-  assert.equal($('.news-photo a').attr('href'),photo.source);
+  for(const item of local.filter(item=>item.image?.src===photo.src)){
+   const $=load(readFileSync(`_site/${lang}/news/${item.slug}/index.html`,'utf8'));
+   assert.ok($('.news-photo figcaption').text().includes(photo.credit[lang]));assert.equal($('.news-photo img').attr('alt'),item.image.alt[lang]);assert.equal($('.news-photo a').attr('href'),photo.source);
+  }
  }
 });

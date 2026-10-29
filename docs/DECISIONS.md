@@ -509,3 +509,37 @@ Check all eight source hashes/dimensions and per-image README records, the exact
 
 ## 2026-10-29: Session 23 item 6, final crop review and publication (Luka)
 Keep Campus E's full source frame after review found that a desktop crop cut into its facade; describe that modification accurately. Add visible permission-based NEO News credits while retaining one link per card. Update the existing pointer check for both Commons credit links. Both clean layouts pass 172 tests, 109 full browser pages with zero axe violations, and 80 focused photo/News checks each. Eight cold mobile Lighthouse runs score performance 98–99 and accessibility 100; complete Home transfer is 288,384 bytes ka and 247,069 bytes en. Worst-case hero contrast is 5.33:1. Keep 80 before/after captures, provenance and raw results under review/session-23, and use a job-local generated-image cache in the Pages workflow. Push the six item commits and supplied asset history, open a PR against main and do not merge or launch. Hosted/manual review and the four launch stages remain.
+
+
+## 2026-10-29: Session 24 item 1, central office facts (Luka)
+Supersede “Supporting records and public contact placeholders” (2026-10-26) and the Session 20 scattered Person/contact/policy facts with src/_data/office.json and generated review/TBC.md. Store shared facts once, bilingual names explicitly, and show “The list of experts will be published once membership is confirmed.” / “ექსპერტების სია გამოქვეყნდება წევრობის დადასტურების შემდეგ.” for empty HERE membership.
+
+
+## 2026-10-29: Session 24 item 2, reviewed one-switch launch (Luka)
+Keep siteLaunched=false and outside CMS. A reviewed true value removes the preview and enables indexing/robots/hreflang sitemap, with authored and rendered marker checks that fail the build; github.io emits a warning only. No environment launch override exists.
+
+## 2026-10-29: Session 24 item 3, staff collections and Settings group (Luka)
+Supersede “Pages CMS for News and Events” (2026-10-26), expanding the News/Events-only CMS scope with the seven staff collections and office form. Source-verified CMS file entries save one path, so use one Settings group containing settings.json and office.json file entries; Team/HERE are office sections, with merge preserving siteLaunched. The build enforces integer years and cross-field rules unavailable in widgets.
+
+
+## 2026-10-29: Session 24 item 4, approved WordPress page rules (Luka)
+Wire the unambiguous top-level page mappings approved in the brief to validated HTML redirect stubs. Record every included/omitted row in migration/review/REDIRECTS-PAGES.md; leave ambiguous titles and unsupported programmes without a matching approved rule omitted. Move HERE now so the approved redirect targets exist.
+
+## 2026-10-29: Session 24 item 5b, HERE under About (Luka)
+Supersede “Supporting templates follow the approved sitemap” (2026-10-26) for HERE placement: use /ka/about/here/ and /en/about/here/ alongside Team/Contact, retaining redirect stubs at both former /here/ URLs. Central views drive switching, search and sitemap.
+
+## 2026-10-29: Session 24 item 5, maintenance invariants (Luka)
+Capitalise all three English modification sentences after the licence/source punctuation. Preserve historical source/deadline checks in isolated fixtures while rendering checks derive counts and contact facts from current content; staff additions and filled office facts must not freeze production counts.
+
+Translation maintenance retains dynamic dictionary/state choices and checks identical bilingual key sets. Remove only keys without template, route, data or script references; preserve historical evidence and scripts referenced by documentation.
+
+## 2026-10-29: Session 24 item 6, honest quality evidence (Luka)
+Keep Action wording and EU text unchanged. Record wording changes and the bilingual glossary, enforce no U+2014, and run a manual external-link audit outside CI. Browser accessibility/resize/media evidence and serial mobile Lighthouse are local checks; state network limits and do not imply a real screen-reader or hosted review.
+
+
+## 2026-10-29: Session 24 item 7, launch operations (Luka)
+Use LAUNCH.md as the ordered runbook for launch, later domain move and institutional repository transfer, with named owners, verification and rollback. Correct Session 23’s merged status; retain Nino review, real facts, signed-grant review and hosted CMS checks as prerequisites, and record the blocked live GitHub documentation check.
+
+
+## 2026-10-29: Session 24 final schema parity and fixture evidence (Luka)
+Supersede the conditional English-alt rule in “Optional validated News images with responsive local output” (2026-10-27): all supplied images require ka/en alternatives. Require sourceChecked for Calls/FAQ/Resources/Publications and PDF-only local Publications, replacing historical text downloads with valid synthetic PDFs in isolated fixtures. Preserve News editorial regressions in isolated Session 24 snapshots so future staff records do not freeze archive counts.

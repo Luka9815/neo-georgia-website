@@ -1,11 +1,583 @@
-# Field options verified against current Pages CMS docs; see docs/CONTENT.md.
+# Source checked 2026-10-29: pagescms/pagescms 6f4e860; see docs/CONTENT.md.
 media:
-  input: src/assets/uploads
-  output: /assets/uploads
+  - name: images
+    label: სურათები (Images)
+    input: src/assets/uploads
+    output: /assets/uploads
+    extensions:
+      - jpg
+      - jpeg
+      - png
+      - webp
+      - avif
+  - name: publications
+    label: პუბლიკაციები (Publications)
+    input: src/assets/publications
+    output: /assets/publications
+    extensions:
+      - pdf
 settings:
   content:
     merge: true
 content:
+  - name: calls
+    label: კონკურსები (Calls)
+    type: collection
+    path: src/content/call
+    format: json
+    filename:
+      template: '{fields.slug}.json'
+      field: false
+    exclude:
+      - .gitkeep
+    fields:
+      - name: slug
+        label: ბმულის სახელი (Slug)
+        type: string
+        required: true
+        pattern:
+          regex: ^[a-z0-9]+(?:-[a-z0-9]+)*$
+          message: გადაამოწმეთ ფორმატი (Check the format).
+      - name: action
+        label: მიმართულება (Action)
+        type: select
+        required: true
+        options:
+          values:
+            - name: cb-sport
+              label: სპორტის სფეროს შესაძლებლობების განვითარება (Capacity Building in Sport)
+            - name: cb-vet
+              label: პროფესიული განათლების შესაძლებლობების განვითარება (Capacity Building in VET)
+            - name: cb-youth
+              label: ახალგაზრდობის სფეროს შესაძლებლობების განვითარება (Capacity Building in Youth)
+            - name: cbhe
+              label: უმაღლესი განათლების შესაძლებლობების განვითარება (Capacity Building in Higher Education)
+            - name: erasmus-mundus
+              label: >-
+                ერაზმუს მუნდუსი: ერთობლივი სამაგისტრო პროგრამები და პროგრამების შემუშავება (Erasmus Mundus: Joint
+                Masters and Design Measures)
+            - name: icm
+              label: საერთაშორისო კრედიტმობილობა (International Credit Mobility)
+            - name: jean-monnet
+              label: ჟან მონეს ქმედებები (Jean Monnet Actions)
+            - name: virtual-exchanges
+              label: ვირტუალური გაცვლები (Virtual Exchanges)
+            - name: youth-mobility
+              label: ახალგაზრდული მობილობა (Youth mobility)
+      - name: year
+        label: წელი (Year)
+        type: number
+        required: true
+        options:
+          min: 2000
+          max: 2100
+        description: მთელი წელი (Integer year). Build rejects fractional values.
+      - name: deadline
+        label: ვადა (Deadline)
+        type: string
+        required: true
+        pattern:
+          regex: ^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}$
+          message: გადაამოწმეთ ფორმატი (Check the format).
+      - name: opens
+        label: გახსნა (Opens)
+        type: string
+        required: false
+        pattern:
+          regex: ^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}$
+          message: გადაამოწმეთ ფორმატი (Check the format).
+      - name: timeZone
+        label: timeZone
+        type: string
+        required: true
+        default: Europe/Brussels
+        readonly: true
+        hidden: true
+      - name: url
+        label: ოფიციალური ბმული (Official URL)
+        type: string
+        required: true
+        pattern:
+          regex: ^https://[^\s]+$
+          message: გადაამოწმეთ ფორმატი (Check the format).
+      - name: sourceChecked
+        label: წყაროს შემოწმება (Source checked)
+        type: date
+        required: true
+        options:
+          format: yyyy-MM-dd
+      - name: ka
+        label: ქართული (Georgian)
+        type: object
+        required: true
+        fields:
+          - name: title
+            label: სათაური (Title)
+            type: string
+            required: true
+          - name: body
+            label: ტექსტი (Body)
+            type: rich-text
+            required: true
+            options:
+              format: markdown
+              media: false
+      - name: en
+        label: ინგლისური (English)
+        type: object
+        required: true
+        fields:
+          - name: title
+            label: სათაური (Title)
+            type: string
+            required: true
+          - name: body
+            label: ტექსტი (Body)
+            type: rich-text
+            required: true
+            options:
+              format: markdown
+              media: false
+  - name: faq
+    label: ხშირი კითხვები (FAQ)
+    type: collection
+    path: src/content/faq
+    format: json
+    filename:
+      template: '{fields.slug}.json'
+      field: false
+    exclude:
+      - .gitkeep
+    fields:
+      - name: slug
+        label: ბმულის სახელი (Slug)
+        type: string
+        required: true
+        pattern:
+          regex: ^[a-z0-9]+(?:-[a-z0-9]+)*$
+          message: გადაამოწმეთ ფორმატი (Check the format).
+      - name: topic
+        label: თემა (Topic)
+        type: select
+        required: true
+        options:
+          values:
+            - name: applications
+              label: applications
+            - name: mobility
+              label: mobility
+      - name: actions
+        label: მიმართულებები (Actions)
+        type: select
+        required: true
+        options:
+          values:
+            - name: cb-sport
+              label: სპორტის სფეროს შესაძლებლობების განვითარება (Capacity Building in Sport)
+            - name: cb-vet
+              label: პროფესიული განათლების შესაძლებლობების განვითარება (Capacity Building in VET)
+            - name: cb-youth
+              label: ახალგაზრდობის სფეროს შესაძლებლობების განვითარება (Capacity Building in Youth)
+            - name: cbhe
+              label: უმაღლესი განათლების შესაძლებლობების განვითარება (Capacity Building in Higher Education)
+            - name: erasmus-mundus
+              label: >-
+                ერაზმუს მუნდუსი: ერთობლივი სამაგისტრო პროგრამები და პროგრამების შემუშავება (Erasmus Mundus: Joint
+                Masters and Design Measures)
+            - name: icm
+              label: საერთაშორისო კრედიტმობილობა (International Credit Mobility)
+            - name: jean-monnet
+              label: ჟან მონეს ქმედებები (Jean Monnet Actions)
+            - name: virtual-exchanges
+              label: ვირტუალური გაცვლები (Virtual Exchanges)
+            - name: youth-mobility
+              label: ახალგაზრდული მობილობა (Youth mobility)
+          multiple: true
+      - name: sourceUrl
+        label: წყაროს ბმული (Source URL)
+        type: string
+        required: true
+        pattern:
+          regex: ^https://[^\s]+$
+          message: გადაამოწმეთ ფორმატი (Check the format).
+      - name: sourceChecked
+        label: წყაროს შემოწმება (Source checked)
+        type: date
+        required: true
+        options:
+          format: yyyy-MM-dd
+      - name: ka
+        label: ქართული (Georgian)
+        type: object
+        required: true
+        fields:
+          - name: title
+            label: სათაური (Title)
+            type: string
+            required: true
+          - name: body
+            label: ტექსტი (Body)
+            type: rich-text
+            required: true
+            options:
+              format: markdown
+              media: false
+      - name: en
+        label: ინგლისური (English)
+        type: object
+        required: true
+        fields:
+          - name: title
+            label: სათაური (Title)
+            type: string
+            required: true
+          - name: body
+            label: ტექსტი (Body)
+            type: rich-text
+            required: true
+            options:
+              format: markdown
+              media: false
+  - name: resources
+    label: რესურსები (Resources)
+    type: collection
+    path: src/content/resource
+    format: json
+    filename:
+      template: '{fields.slug}.json'
+      field: false
+    exclude:
+      - .gitkeep
+    fields:
+      - name: slug
+        label: ბმულის სახელი (Slug)
+        type: string
+        required: true
+        pattern:
+          regex: ^[a-z0-9]+(?:-[a-z0-9]+)*$
+          message: გადაამოწმეთ ფორმატი (Check the format).
+      - name: source
+        label: წყარო (Source)
+        type: select
+        required: true
+        options:
+          values:
+            - name: official
+              label: official
+            - name: neo
+              label: neo
+            - name: partner
+              label: partner
+      - name: type
+        label: ტიპი (Type)
+        type: select
+        required: true
+        options:
+          values:
+            - name: presentation
+              label: presentation
+            - name: recording
+              label: recording
+            - name: guide
+              label: guide
+            - name: template
+              label: template
+            - name: website
+              label: website
+      - name: language
+        label: ენა (Language)
+        type: select
+        required: true
+        options:
+          values:
+            - name: ka
+              label: ka
+            - name: en
+              label: en
+            - name: ka/en
+              label: ka/en
+      - name: year
+        label: წელი (Year)
+        type: number
+        required: true
+        options:
+          min: 2000
+          max: 2100
+        description: მთელი წელი (Integer year). Build rejects fractional values.
+      - name: actions
+        label: მიმართულებები (Actions)
+        type: select
+        required: true
+        options:
+          values:
+            - name: cb-sport
+              label: სპორტის სფეროს შესაძლებლობების განვითარება (Capacity Building in Sport)
+            - name: cb-vet
+              label: პროფესიული განათლების შესაძლებლობების განვითარება (Capacity Building in VET)
+            - name: cb-youth
+              label: ახალგაზრდობის სფეროს შესაძლებლობების განვითარება (Capacity Building in Youth)
+            - name: cbhe
+              label: უმაღლესი განათლების შესაძლებლობების განვითარება (Capacity Building in Higher Education)
+            - name: erasmus-mundus
+              label: >-
+                ერაზმუს მუნდუსი: ერთობლივი სამაგისტრო პროგრამები და პროგრამების შემუშავება (Erasmus Mundus: Joint
+                Masters and Design Measures)
+            - name: icm
+              label: საერთაშორისო კრედიტმობილობა (International Credit Mobility)
+            - name: jean-monnet
+              label: ჟან მონეს ქმედებები (Jean Monnet Actions)
+            - name: virtual-exchanges
+              label: ვირტუალური გაცვლები (Virtual Exchanges)
+            - name: youth-mobility
+              label: ახალგაზრდული მობილობა (Youth mobility)
+          multiple: true
+      - name: event
+        label: ღონისძიების ბმულის სახელი (Event slug)
+        type: string
+        required: false
+        pattern:
+          regex: ^[a-z0-9]+(?:-[a-z0-9]+)*$
+          message: გადაამოწმეთ ფორმატი (Check the format).
+      - name: url
+        label: ოფიციალური ბმული (Official URL)
+        type: string
+        required: true
+        pattern:
+          regex: ^https://[^\s]+$
+          message: გადაამოწმეთ ფორმატი (Check the format).
+      - name: sourceChecked
+        label: წყაროს შემოწმება (Source checked)
+        type: date
+        required: true
+        options:
+          format: yyyy-MM-dd
+      - name: ka
+        label: ქართული (Georgian)
+        type: object
+        required: true
+        fields:
+          - name: title
+            label: სათაური (Title)
+            type: string
+            required: true
+          - name: body
+            label: ტექსტი (Body)
+            type: rich-text
+            required: true
+            options:
+              format: markdown
+              media: false
+      - name: en
+        label: ინგლისური (English)
+        type: object
+        required: true
+        fields:
+          - name: title
+            label: სათაური (Title)
+            type: string
+            required: true
+          - name: body
+            label: ტექსტი (Body)
+            type: rich-text
+            required: true
+            options:
+              format: markdown
+              media: false
+  - name: publications
+    label: პუბლიკაციები (Publications)
+    type: collection
+    path: src/content/publication
+    format: json
+    filename:
+      template: '{fields.slug}.json'
+      field: false
+    exclude:
+      - .gitkeep
+    fields:
+      - name: slug
+        label: ბმულის სახელი (Slug)
+        type: string
+        required: true
+        pattern:
+          regex: ^[a-z0-9]+(?:-[a-z0-9]+)*$
+          message: გადაამოწმეთ ფორმატი (Check the format).
+      - name: year
+        label: წელი (Year)
+        type: number
+        required: true
+        options:
+          min: 2014
+          max: 2100
+        description: მთელი წელი (Integer year). Build rejects fractional values.
+      - name: type
+        label: ტიპი (Type)
+        type: select
+        required: true
+        options:
+          values:
+            - name: neo-report
+              label: neo-report
+            - name: here-publication
+              label: here-publication
+            - name: brochure
+              label: brochure
+            - name: statistics
+              label: statistics
+            - name: report
+              label: report
+      - name: language
+        label: ენა (Language)
+        type: select
+        required: true
+        options:
+          values:
+            - name: ka
+              label: ka
+            - name: en
+              label: en
+            - name: ka/en
+              label: ka/en
+      - name: file
+        label: PDF ფაილი (PDF file)
+        type: file
+        required: false
+        options:
+          media: publications
+          extensions:
+            - pdf
+      - name: url
+        label: ოფიციალური ბმული (Official URL)
+        type: string
+        required: false
+        pattern:
+          regex: ^https://[^\s]+$
+          message: გადაამოწმეთ ფორმატი (Check the format).
+      - name: publisher
+        label: გამომცემელი (Publisher)
+        type: string
+        required: false
+      - name: sourceChecked
+        label: წყაროს შემოწმება (Source checked)
+        type: date
+        required: true
+        options:
+          format: yyyy-MM-dd
+      - name: ka
+        label: ქართული (Georgian)
+        type: object
+        required: true
+        fields:
+          - name: title
+            label: სათაური (Title)
+            type: string
+            required: true
+          - name: body
+            label: ტექსტი (Body)
+            type: rich-text
+            required: true
+            options:
+              format: markdown
+              media: false
+      - name: en
+        label: ინგლისური (English)
+        type: object
+        required: true
+        fields:
+          - name: title
+            label: სათაური (Title)
+            type: string
+            required: true
+          - name: body
+            label: ტექსტი (Body)
+            type: rich-text
+            required: true
+            options:
+              format: markdown
+              media: false
+  - name: stories
+    label: ისტორიები (Stories)
+    type: collection
+    path: src/content/story
+    format: json
+    filename:
+      template: '{fields.slug}.json'
+      field: false
+    exclude:
+      - .gitkeep
+    fields:
+      - name: slug
+        label: ბმულის სახელი (Slug)
+        type: string
+        required: true
+        pattern:
+          regex: ^[a-z0-9]+(?:-[a-z0-9]+)*$
+          message: გადაამოწმეთ ფორმატი (Check the format).
+      - name: action
+        label: მიმართულება (Action)
+        type: select
+        required: true
+        options:
+          values:
+            - name: cb-sport
+              label: სპორტის სფეროს შესაძლებლობების განვითარება (Capacity Building in Sport)
+            - name: cb-vet
+              label: პროფესიული განათლების შესაძლებლობების განვითარება (Capacity Building in VET)
+            - name: cb-youth
+              label: ახალგაზრდობის სფეროს შესაძლებლობების განვითარება (Capacity Building in Youth)
+            - name: cbhe
+              label: უმაღლესი განათლების შესაძლებლობების განვითარება (Capacity Building in Higher Education)
+            - name: erasmus-mundus
+              label: >-
+                ერაზმუს მუნდუსი: ერთობლივი სამაგისტრო პროგრამები და პროგრამების შემუშავება (Erasmus Mundus: Joint
+                Masters and Design Measures)
+            - name: icm
+              label: საერთაშორისო კრედიტმობილობა (International Credit Mobility)
+            - name: jean-monnet
+              label: ჟან მონეს ქმედებები (Jean Monnet Actions)
+            - name: virtual-exchanges
+              label: ვირტუალური გაცვლები (Virtual Exchanges)
+            - name: youth-mobility
+              label: ახალგაზრდული მობილობა (Youth mobility)
+      - name: year
+        label: წელი (Year)
+        type: number
+        required: true
+        options:
+          min: 2000
+          max: 2100
+        description: მთელი წელი (Integer year). Build rejects fractional values.
+      - name: ka
+        label: ქართული (Georgian)
+        type: object
+        required: true
+        fields:
+          - name: title
+            label: სათაური (Title)
+            type: string
+            required: true
+          - name: body
+            label: ტექსტი (Body)
+            type: rich-text
+            required: true
+            options:
+              format: markdown
+              media: false
+      - name: en
+        label: ინგლისური (English)
+        type: object
+        required: false
+        fields:
+          - name: title
+            label: სათაური (Title)
+            type: string
+            required: true
+          - name: body
+            label: ტექსტი (Body)
+            type: rich-text
+            required: true
+            options:
+              format: markdown
+              media: false
   - name: news
     label: სიახლეები (News)
     type: collection
@@ -38,30 +610,26 @@ content:
         required: false
         options:
           values:
-            - label: '[DRAFT] სპორტის სფეროს შესაძლებლობების განვითარება (Capacity Building in Sport)'
-              name: cb-sport
-            - label: '[DRAFT] პროფესიული განათლების შესაძლებლობების განვითარება (Capacity Building in VET)'
-              name: cb-vet
-            - label: >-
-                [DRAFT] ახალგაზრდობის სფეროს შესაძლებლობების განვითარება (Capacity Building in
-                Youth)
-              name: cb-youth
-            - label: >-
-                [DRAFT] უმაღლესი განათლების შესაძლებლობების განვითარება (Capacity Building in Higher
-                Education)
-              name: cbhe
-            - label: >-
-                [DRAFT] ერაზმუს მუნდუსი: ერთობლივი სამაგისტრო პროგრამები და პროგრამების შემუშავება
-                (Erasmus Mundus: Joint Masters and Design Measures)
-              name: erasmus-mundus
-            - label: '[DRAFT] საერთაშორისო კრედიტმობილობა (International Credit Mobility)'
-              name: icm
-            - label: '[DRAFT] ჟან მონეს ქმედებები (Jean Monnet Actions)'
-              name: jean-monnet
-            - label: '[DRAFT] ვირტუალური გაცვლები (Virtual Exchanges)'
-              name: virtual-exchanges
-            - label: '[DRAFT] ახალგაზრდული მობილობა (Youth mobility)'
-              name: youth-mobility
+            - name: cb-sport
+              label: სპორტის სფეროს შესაძლებლობების განვითარება (Capacity Building in Sport)
+            - name: cb-vet
+              label: პროფესიული განათლების შესაძლებლობების განვითარება (Capacity Building in VET)
+            - name: cb-youth
+              label: ახალგაზრდობის სფეროს შესაძლებლობების განვითარება (Capacity Building in Youth)
+            - name: cbhe
+              label: უმაღლესი განათლების შესაძლებლობების განვითარება (Capacity Building in Higher Education)
+            - name: erasmus-mundus
+              label: >-
+                ერაზმუს მუნდუსი: ერთობლივი სამაგისტრო პროგრამები და პროგრამების შემუშავება (Erasmus Mundus: Joint
+                Masters and Design Measures)
+            - name: icm
+              label: საერთაშორისო კრედიტმობილობა (International Credit Mobility)
+            - name: jean-monnet
+              label: ჟან მონეს ქმედებები (Jean Monnet Actions)
+            - name: virtual-exchanges
+              label: ვირტუალური გაცვლები (Virtual Exchanges)
+            - name: youth-mobility
+              label: ახალგაზრდული მობილობა (Youth mobility)
           multiple: true
           min: 1
       - name: image
@@ -74,7 +642,9 @@ content:
             label: სურათის ფაილი (Image file)
             type: image
             required: true
-            description: ადგილობრივი JPG, PNG, WebP ან AVIF ფაილი uploads საქაღალდეში. ფაილის სახელში გამოიყენეთ ლათინური ასოები, ციფრები და დეფისი.
+            description: >-
+              ადგილობრივი JPG, PNG, WebP ან AVIF ფაილი uploads საქაღალდეში. ფაილის სახელში გამოიყენეთ ლათინური ასოები,
+              ციფრები და დეფისი.
           - name: alt
             label: ალტერნატიული ტექსტი (Alt text)
             type: object
@@ -87,8 +657,8 @@ content:
               - name: en
                 label: ინგლისური აღწერა (English alt text)
                 type: string
-                required: false
-                description: აუცილებელია, თუ სიახლეს ინგლისური ვერსია აქვს. არ გამოიყენოთ [ALT NEEDED].
+                required: true
+                description: აუცილებელია ორივე ენის აღწერა, ქართული სიახლისთვისაც. არ გამოიყენოთ [ALT NEEDED].
       - name: ka
         label: ქართული (Georgian)
         type: object
@@ -214,36 +784,35 @@ content:
         type: string
         required: false
         description: სრული ბმული, რომელიც იწყება https://-ით.
+        pattern:
+          regex: ^https://[^\s]+$
+          message: გადაამოწმეთ ფორმატი (Check the format).
       - name: actions
         label: დაკავშირებული მიმართულებები (Actions)
         type: select
         required: true
         options:
           values:
-            - label: '[DRAFT] სპორტის სფეროს შესაძლებლობების განვითარება (Capacity Building in Sport)'
-              name: cb-sport
-            - label: '[DRAFT] პროფესიული განათლების შესაძლებლობების განვითარება (Capacity Building in VET)'
-              name: cb-vet
-            - label: >-
-                [DRAFT] ახალგაზრდობის სფეროს შესაძლებლობების განვითარება (Capacity Building in
-                Youth)
-              name: cb-youth
-            - label: >-
-                [DRAFT] უმაღლესი განათლების შესაძლებლობების განვითარება (Capacity Building in Higher
-                Education)
-              name: cbhe
-            - label: >-
-                [DRAFT] ერაზმუს მუნდუსი: ერთობლივი სამაგისტრო პროგრამები და პროგრამების შემუშავება
-                (Erasmus Mundus: Joint Masters and Design Measures)
-              name: erasmus-mundus
-            - label: '[DRAFT] საერთაშორისო კრედიტმობილობა (International Credit Mobility)'
-              name: icm
-            - label: '[DRAFT] ჟან მონეს ქმედებები (Jean Monnet Actions)'
-              name: jean-monnet
-            - label: '[DRAFT] ვირტუალური გაცვლები (Virtual Exchanges)'
-              name: virtual-exchanges
-            - label: '[DRAFT] ახალგაზრდული მობილობა (Youth mobility)'
-              name: youth-mobility
+            - name: cb-sport
+              label: სპორტის სფეროს შესაძლებლობების განვითარება (Capacity Building in Sport)
+            - name: cb-vet
+              label: პროფესიული განათლების შესაძლებლობების განვითარება (Capacity Building in VET)
+            - name: cb-youth
+              label: ახალგაზრდობის სფეროს შესაძლებლობების განვითარება (Capacity Building in Youth)
+            - name: cbhe
+              label: უმაღლესი განათლების შესაძლებლობების განვითარება (Capacity Building in Higher Education)
+            - name: erasmus-mundus
+              label: >-
+                ერაზმუს მუნდუსი: ერთობლივი სამაგისტრო პროგრამები და პროგრამების შემუშავება (Erasmus Mundus: Joint
+                Masters and Design Measures)
+            - name: icm
+              label: საერთაშორისო კრედიტმობილობა (International Credit Mobility)
+            - name: jean-monnet
+              label: ჟან მონეს ქმედებები (Jean Monnet Actions)
+            - name: virtual-exchanges
+              label: ვირტუალური გაცვლები (Virtual Exchanges)
+            - name: youth-mobility
+              label: ახალგაზრდული მობილობა (Youth mobility)
           multiple: true
           min: 1
       - name: ka
@@ -296,24 +865,265 @@ content:
             label: დღის წესრიგი (Agenda)
             type: text
             required: false
-  - name: settings
+  - name: settings-group
     label: პარამეტრები (Settings)
-    type: file
-    path: src/_data/settings.json
-    format: json
-    fields:
-      - name: currentCallYear
-        label: მიმდინარე კონკურსის წელი (Current call year)
-        type: number
-        required: true
-        options:
-          min: 2000
-          max: 2100
-      - name: logoPath
-        label: ლოგოს ფაილის მისამართი (Logo path)
-        type: string
-        required: false
-        default: ''
-        description: >-
-          ცარიელი ველი ტოვებს ტექსტურ ლოგოს. მხოლოდ დამტკიცებული /assets/ ფაილი, პროექტის პრეფიქსის
-          გარეშე.
+    type: group
+    items:
+      - name: settings
+        label: პარამეტრები (Settings)
+        type: file
+        path: src/_data/settings.json
+        format: json
+        fields:
+          - name: currentCallYear
+            label: მიმდინარე კონკურსის წელი (Current call year)
+            type: number
+            required: true
+            options:
+              min: 2000
+              max: 2100
+          - name: logoPath
+            label: ლოგოს ფაილის მისამართი (Logo path)
+            type: string
+            required: false
+            default: ''
+            description: ცარიელი ველი ტოვებს ტექსტურ ლოგოს. მხოლოდ დამტკიცებული /assets/ ფაილი, პროექტის პრეფიქსის გარეშე.
+      - name: office
+        label: ოფისის მონაცემები (Office details)
+        type: file
+        path: src/_data/office.json
+        format: json
+        fields:
+          - name: contact
+            label: საკონტაქტო ინფორმაცია (Contact)
+            type: object
+            required: true
+            fields:
+              - name: address
+                label: მისამართი (Address)
+                type: object
+                required: true
+                fields:
+                  - name: ka
+                    label: ქართული (Georgian)
+                    type: string
+                    required: true
+                  - name: en
+                    label: ინგლისური (English)
+                    type: string
+                    required: true
+              - name: phone
+                label: ტელეფონი (Phone)
+                type: string
+                required: true
+                pattern:
+                  regex: ^(?:\[TBC\]|\+?[0-9][0-9 ()-]{5,24})$
+                  message: გადაამოწმეთ ფორმატი (Check the format).
+              - name: email
+                label: ელფოსტა (Email)
+                type: string
+                required: true
+                pattern:
+                  regex: ^(?:\[TBC\]|[^\s@]+@[^\s@]+\.[^\s@]+)$
+                  message: გადაამოწმეთ ფორმატი (Check the format).
+              - name: hours
+                label: სამუშაო საათები (Hours)
+                type: object
+                required: true
+                fields:
+                  - name: ka
+                    label: ქართული (Georgian)
+                    type: string
+                    required: true
+                  - name: en
+                    label: ინგლისური (English)
+                    type: string
+                    required: true
+          - name: legal
+            label: იურიდიული მონაცემები (Legal)
+            type: object
+            required: true
+            fields:
+              - name: eridaIdentificationCode
+                label: ERIDA-ს საიდენტიფიკაციო კოდი (ERIDA identification code)
+                type: string
+                required: true
+              - name: registeredAddress
+                label: იურიდიული მისამართი (Registered address)
+                type: object
+                required: true
+                fields:
+                  - name: ka
+                    label: ქართული (Georgian)
+                    type: string
+                    required: true
+                  - name: en
+                    label: ინგლისური (English)
+                    type: string
+                    required: true
+          - name: privacyContact
+            label: კონფიდენციალურობის კონტაქტი (Privacy contact)
+            type: string
+            required: true
+          - name: accessibilityContact
+            label: ხელმისაწვდომობის კონტაქტი (Accessibility contact)
+            type: string
+            required: true
+          - name: team
+            label: გუნდი (Team)
+            type: object
+            required: true
+            fields:
+              - name: coordinator
+                label: კოორდინატორი (Coordinator)
+                type: object
+                required: true
+                fields:
+                  - name: name
+                    label: სახელი (Name)
+                    type: object
+                    required: true
+                    fields:
+                      - name: ka
+                        label: ქართული (Georgian)
+                        type: string
+                        required: true
+                      - name: en
+                        label: ინგლისური (English)
+                        type: string
+                        required: true
+                  - name: roleEmail
+                    label: სამსახურებრივი ელფოსტა (Role email)
+                    type: string
+                    required: true
+                    pattern:
+                      regex: ^(?:\[TBC\]|[^\s@]+@[^\s@]+\.[^\s@]+)$
+                      message: გადაამოწმეთ ფორმატი (Check the format).
+              - name: programmeOfficer
+                label: პროგრამის ოფიცერი (Programme Officer)
+                type: object
+                required: true
+                fields:
+                  - name: name
+                    label: სახელი (Name)
+                    type: object
+                    required: true
+                    fields:
+                      - name: ka
+                        label: ქართული (Georgian)
+                        type: string
+                        required: true
+                      - name: en
+                        label: ინგლისური (English)
+                        type: string
+                        required: true
+                  - name: roleEmail
+                    label: სამსახურებრივი ელფოსტა (Role email)
+                    type: string
+                    required: true
+                    pattern:
+                      regex: ^(?:\[TBC\]|[^\s@]+@[^\s@]+\.[^\s@]+)$
+                      message: გადაამოწმეთ ფორმატი (Check the format).
+              - name: communicationsOfficer
+                label: კომუნიკაციების ოფიცერი (Communications Officer)
+                type: object
+                required: true
+                fields:
+                  - name: name
+                    label: სახელი (Name)
+                    type: object
+                    required: true
+                    fields:
+                      - name: ka
+                        label: ქართული (Georgian)
+                        type: string
+                        required: true
+                      - name: en
+                        label: ინგლისური (English)
+                        type: string
+                        required: true
+                  - name: roleEmail
+                    label: სამსახურებრივი ელფოსტა (Role email)
+                    type: string
+                    required: true
+                    pattern:
+                      regex: ^(?:\[TBC\]|[^\s@]+@[^\s@]+\.[^\s@]+)$
+                      message: გადაამოწმეთ ფორმატი (Check the format).
+          - name: here
+            label: უმაღლესი განათლების რეფორმის ექსპერტები (HERE)
+            type: object
+            required: true
+            fields:
+              - name: period
+                label: წევრობის პერიოდი (Membership period)
+                type: object
+                required: true
+                fields:
+                  - name: ka
+                    label: ქართული (Georgian)
+                    type: string
+                    required: true
+                  - name: en
+                    label: ინგლისური (English)
+                    type: string
+                    required: true
+              - name: members
+                label: წევრები (Members)
+                type: object
+                required: false
+                list: true
+                fields:
+                  - name: name
+                    label: სახელი (Name)
+                    type: object
+                    required: true
+                    fields:
+                      - name: ka
+                        label: ქართული (Georgian)
+                        type: string
+                        required: true
+                      - name: en
+                        label: ინგლისური (English)
+                        type: string
+                        required: true
+                  - name: institution
+                    label: დაწესებულება (Institution)
+                    type: object
+                    required: true
+                    fields:
+                      - name: ka
+                        label: ქართული (Georgian)
+                        type: string
+                        required: true
+                      - name: en
+                        label: ინგლისური (English)
+                        type: string
+                        required: true
+                  - name: email
+                    label: ელფოსტა (Email)
+                    type: string
+                    required: false
+                    pattern:
+                      regex: ^[^\s@]+@[^\s@]+\.[^\s@]+$
+                      message: გადაამოწმეთ ფორმატი (Check the format).
+          - name: socialLinks
+            label: სოციალური ბმულები (Social links)
+            type: object
+            required: false
+            list: true
+            fields:
+              - name: ka
+                label: ქართული (Georgian)
+                type: string
+                required: true
+              - name: en
+                label: ინგლისური (English)
+                type: string
+                required: true
+              - name: url
+                label: ოფიციალური ბმული (Official URL)
+                type: string
+                required: true
+                pattern:
+                  regex: ^https://[^\s]+$
+                  message: გადაამოწმეთ ფორმატი (Check the format).

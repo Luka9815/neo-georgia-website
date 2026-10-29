@@ -7,6 +7,8 @@ import { createServer } from 'node:http';
 export function createFixtureSite(types = ['event', 'call', 'resource', 'story']) {
  const root=mkdtempSync(join(tmpdir(),'neo-content-fixtures-'));
  for(const path of ['src','lib','eleventy.config.js','package.json'])cpSync(path,join(root,path),{recursive:true});
+ const settingsPath=join(root,'src/_data/settings.json');
+ const settings=JSON.parse(readFileSync(settingsPath,'utf8'));settings.currentCallYear=2026;settings.siteLaunched=false;writeFileSync(settingsPath,JSON.stringify(settings));
  for(const type of types)cpSync(`test/fixtures/release-content/${type}`,join(root,`src/content/${type}`),{recursive:true});
  if(types.includes('publication'))cpSync('test/fixtures/release-publications',join(root,'src/assets/publications'),{recursive:true});
  // Synthetic copied fixtures need durable past/upcoming states after launch.

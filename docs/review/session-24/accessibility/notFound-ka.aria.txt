@@ -1,0 +1,83 @@
+- link "შინაარსზე გადასვლა":
+  - /url: "#main"
+- complementary "წინასწარი ვერსია. Erasmus+-ის საქართველოს ეროვნული ოფისის ვებსაიტი 2027 წლის იანვარში გაიხსნება.":
+  - paragraph: წინასწარი ვერსია. Erasmus+-ის საქართველოს ეროვნული ოფისის ვებსაიტი 2027 წლის იანვარში გაიხსნება.
+- banner:
+  - link "ერაზმუს+ საქართველოს ეროვნული ოფისი":
+    - /url: /ka/
+  - link "ძიება":
+    - /url: /ka/search/
+  - text: ქა
+  - 'link "EN: English"':
+    - /url: /404.html#not-found-en
+    - text: EN
+  - navigation "მთავარი ნავიგაცია":
+    - list:
+      - listitem:
+        - link "მთავარი":
+          - /url: /ka/
+      - listitem:
+        - link "შესაძლებლობები":
+          - /url: /ka/opportunities/
+      - listitem:
+        - link "კონკურსები და ვადები":
+          - /url: /ka/calls/
+      - listitem:
+        - link "ღონისძიებები":
+          - /url: /ka/events/
+      - listitem:
+        - link "სიახლეები":
+          - /url: /ka/news/
+      - listitem:
+        - link "რესურსები":
+          - /url: /ka/resources/
+      - listitem:
+        - link "ოფისის შესახებ":
+          - /url: /ka/about/
+- main:
+  - heading "გვერდი ვერ მოიძებნა" [level=1]
+  - paragraph:
+    - link "მთავარ გვერდზე დაბრუნება":
+      - /url: /ka/
+  - heading "Page not found" [level=2]
+  - paragraph:
+    - link "Return to the home page":
+      - /url: /en/
+  - paragraph: Preview. The National Erasmus+ Office Georgia website opens in January 2027.
+- contentinfo:
+  - heading "კონტაქტი" [level=2]
+  - paragraph: "ელფოსტა: [TBC]"
+  - paragraph:
+    - link "კონტაქტი":
+      - /url: /ka/about/contact/
+  - navigation "სწრაფი ბმულები":
+    - heading "სწრაფი ბმულები" [level=2]
+    - list:
+      - listitem:
+        - link "შესაძლებლობები":
+          - /url: /ka/opportunities/
+      - listitem:
+        - link "კონკურსები და ვადები":
+          - /url: /ka/calls/
+      - listitem:
+        - link "რესურსები":
+          - /url: /ka/resources/
+  - navigation "ოფისის შესახებ":
+    - heading "სამართლებრივი ინფორმაცია" [level=2]
+    - list:
+      - listitem:
+        - link "კონფიდენციალურობა და ფაილები":
+          - /url: /ka/privacy/
+      - listitem:
+        - link "ხელმისაწვდომობა":
+          - /url: /ka/accessibility/
+      - listitem:
+        - link "უპირატესი ენა":
+          - /url: /ka/language/
+      - listitem:
+        - link "ფოტოების წყაროები":
+          - /url: /ka/about/credits/
+  - paragraph: ქართულ და ინგლისურ ვერსიებს შორის შეუსაბამობის შემთხვევაში უპირატესობა ენიჭება ინგლისურ ვერსიას.
+  - img "ევროკავშირი საქართველოსთვის"
+  - paragraph: დაფინანსებულია ევროკავშირის მიერ. გამოთქმული შეხედულებები და მოსაზრებები მხოლოდ ავტორ(ებ)ს ეკუთვნის და შესაძლოა არ ასახავდეს ევროკავშირის ან განათლებისა და კულტურის ევროპული აღმასრულებელი სააგენტოს (EACEA) შეხედულებებს. მათზე პასუხისმგებლობა არ ეკისრება არც ევროკავშირს და არც EACEA-ს.
+  - paragraph: Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them.

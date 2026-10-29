@@ -1,0 +1,2 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {readFileSync} from 'node:fs';import {files} from '../lib/placeholders.js';
+test('site source and documentation contain no U+2014',()=>{for(const file of ['src','docs'].flatMap(files).filter(p=>/\.(json|js|css|njk|md|txt|html|yml|svg)$/.test(p)))assert.ok(!readFileSync(file,'utf8').includes(String.fromCodePoint(0x2014)),file);});
