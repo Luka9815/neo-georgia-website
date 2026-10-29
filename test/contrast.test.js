@@ -48,10 +48,11 @@ test('AA open status: paper text on the prominent green surface', () => {
   assert.ok(ratio >= 4.5, `open status contrast ${ratio.toFixed(2)} < 4.5`);
 });
 
-// A white image pixel under the least opaque (82% black) gradient is #2e2e2e.
-for (const foreground of ['paper','inverse-muted']) {
- test(`AA hero overlay worst-case white photograph: ${foreground}`,()=>{
-  const background = luminance('#2e2e2e');
-  assert.ok((luminance(tokens[foreground])+.05)/(background+.05)>=4.5);
- });
-}
+// A white image pixel under the lightest 58% black overlay rounds to #6b6b6b.
+// All text on the Home image is white; secondary hero titles sit outside photos.
+test('AA Home text over worst-case white photograph with the lighter overlay',()=>{
+ const background=luminance('#6b6b6b');
+ assert.ok((luminance(tokens.paper)+.05)/(background+.05)>=4.5);
+ assert.match(css,/rgb\(0 0 0 \/ 58%\)/);
+ assert.match(css,/\.home-hero :is\(\.eyebrow,\.hero-intro\) \{ color: var\(--paper\)/);
+});

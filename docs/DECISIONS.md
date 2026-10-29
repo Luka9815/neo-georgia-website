@@ -497,3 +497,7 @@ Use the Sameba panorama on Home because its wide composition survives desktop te
 
 ## 2026-10-29: Session 23 item 3, Commons attribution (Luka)
 Use one bilingual credit macro on every placement and the footer-linked credits page. Preserve each Commons author name exactly, including the public-domain author, and link the supplied licence and exact file page. Label cropped/reformatted CC BY-SA adaptations as modified and retain the same image licence version; the Home credit additionally names the overlay. List all eight Commons records plus the existing permission-based NEO News image, without inventing an open licence for NEO.
+
+
+## 2026-10-29: Session 23 item 4, responsive variants and local cache (Luka)
+Generate local AVIF/WebP/JPEG at 320/640/960/1280/1920/2560px without enlargement. Only page hero/header images are eager/high-priority; News cards remain lazy. Keep originals out of output. Use Eleventy Image's source/encoder-content hashes with a local generated cache in .cache/portal-images, then copy only variants into the selected output root. PORTAL_IMAGE_CACHE_DIR may share that cache across isolated quality builds; no network fetch or skipped encoding is involved. Limit the Image queue to two sources to bound memory. Explicit encoder quality keeps the full mobile Home transfer under the existing 500,000-byte target; final measurements and worst-case contrast must pass before publication.
