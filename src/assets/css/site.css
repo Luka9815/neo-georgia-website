@@ -20,7 +20,7 @@ p { margin-block: 0 var(--space-2); }
 section { margin-block: 2rem; }
 /* Layout */
 .wrapper { width: min(100%,var(--content-width)); margin-inline: auto; padding-inline: var(--space-2); }
-.page-main { padding-block: var(--space-3) var(--space-8); min-height: 40vh; padding-top: 1.5rem; }
+.page-main { padding-block: var(--space-3) var(--space-8); min-height: 40vh; padding-top: 0; }
 .page-home { width: 100%; padding-inline: 0px; padding-top: 0px; }
 /* Header */
 .site-header { position: sticky; top: 0px; z-index: 10; background: var(--paper); border-top: 4px solid var(--blue); border-bottom: 1px solid var(--line); box-shadow: rgba(5, 38, 79, 0.04) 0px 2px 12px; }
@@ -221,12 +221,12 @@ dd { margin: 0 0 var(--space-2); }
 .home-figures { background: var(--teal-soft); }
 .home-figures .figures { margin-block: 2rem; }
 .home-figures h3 { margin-top: 2rem; }
-.action-hero { display: flex; align-items: flex-start; gap: 1.5rem; padding: 2rem; margin-top: 0px; border-radius: var(--radius); background: var(--surface); border-bottom: 4px solid var(--teal); }
-.action-hero h1 { margin-block: 0.5rem 1.5rem; }
+.action-hero { display: flex; align-items: flex-start; gap: 1.5rem;  margin-top: 0px;   border-bottom: 4px solid var(--teal); margin: 0 0 2.5rem; padding: 3.5rem 0 3rem; border: 0; border-radius: 0; color: var(--paper); background: var(--navy); box-shadow: 0 0 0 100vmax var(--navy); clip-path: inset(0 -100vmax); }
+.action-hero h1 { margin-block: 0.5rem 1.5rem; color: var(--paper); font-size: clamp(2rem,4vw,3.4rem); max-width: none; overflow-wrap: normal; hyphens: none; }
 .action-hero p:last-child { margin: 0px; }
-.action-hero .icon-slot { display: none; }
+.action-hero .icon-slot { display: none; background: #ffffff1f; color: var(--paper); }
 .action-layout { display: grid; gap: 2rem; align-items: start; }
-.action-facts { padding: 1.5rem; border: 1px solid var(--line); border-top: 4px solid var(--blue); border-radius: var(--radius); background: var(--surface); }
+.action-facts { padding: 1.5rem;   border-radius: var(--radius); background: var(--paper); border: 1px solid #d6dde8; border-top: 4px solid var(--gold); box-shadow: 0 1px 2px #05264f14, 0 10px 28px #05264f12; }
 .action-facts h2 { font-size: 1.4rem; }
 .action-facts dt { font-weight: 700; color: var(--blue-dark); }
 .action-facts dd { margin-block: 0.5rem 1.5rem; font-size: 0.9375rem; }
@@ -248,13 +248,17 @@ dd { margin: 0 0 var(--space-2); }
 .photo-hero figcaption a { color: var(--paper); }
 .home-hero .hero-intro { margin-bottom: 1.25rem; }
 .photo-banner { margin: 0px 0px 1.5rem; }
-.photo-banner picture { aspect-ratio: 2.4 / 1; overflow: hidden; border-radius: var(--radius); }
+.photo-banner picture { overflow: hidden; border-radius: var(--radius); aspect-ratio: 3.2; box-shadow: 0 1px 2px #05264f14, 0 10px 28px #05264f12; }
 .photo-banner .portal-image { width: 100%; height: 100%; object-fit: cover; object-position: var(--photo-focal); }
 .photo-banner:is([data-photo-id="tsuMain"], [data-photo-id="tsuEvening"], [data-photo-id="ilia"], [data-photo-id="gtu"]) picture { aspect-ratio: 1.6 / 1; }
 .photo-banner figcaption { overflow-wrap: anywhere; }
 .home-hero :is(.eyebrow, .hero-intro) { color: var(--paper); }
 .photo-modified { display: block; }
 .photo-banner[data-photo-id="ilia"] picture { aspect-ratio: 4 / 3; }
+.page-main > #page-title { max-width: none; margin: 0 0 2.5rem; padding-block: 3.5rem 3rem; color: var(--paper); background: var(--navy); box-shadow: 0 0 0 100vmax var(--navy); clip-path: inset(0 -100vmax); font-size: clamp(2rem,4vw,3.4rem); overflow-wrap: normal; hyphens: none; }
+.page-main > #page-title::after, .action-hero h1::after { content: ""; display: block; width: 4rem; height: 4px; margin-top: 1.25rem; background: var(--gold); }
+.page-main > #page-title + .photo-banner { margin-top: -1rem; }
+.action-hero p { color: var(--inverse-muted); font-size: 1.1rem; max-width: 60ch; }
 /* Utilities */
 .skip { position: absolute; top: -10rem; left: 1rem; padding: 1rem; background: var(--paper); color: var(--blue); z-index: 20; }
 .skip:focus { top: 1rem; position: fixed; }
@@ -355,4 +359,8 @@ dd { margin: 0 0 var(--space-2); }
 
 @media (min-width: 64rem) {
  .photo-hero figcaption { inset-inline: auto 1rem; bottom: 1rem; max-width: 30rem; border-radius: .5rem; background: var(--navy); font-size: .7rem; }
+}
+
+@media (min-width: 64rem) {
+ .action-facts { position: sticky; top: 10rem; max-height: calc(100dvh - 11rem); overflow: auto; }
 }

@@ -574,3 +574,7 @@ Supersede the 75rem width and compact branding/navigation scale in “Session 21
 
 ## 2026-10-30: Session 26 item 3, directional Home overlay (Luka)
 Supersede the overlay in “Session 23 item 2, photo placements and lighter Home overlay” (2026-10-29), retaining all photo placements. Use the approved navy gradient on desktop and the full mobile overlay. Limit desktop text to the smaller of 46rem and 58% of the inner wrapper so its right edge remains within the contrast-safe gradient at 1024/1280/1440/1920px. White-pixel contrast must remain at least 4.5:1. Keep headings unbroken within Georgian words and a compact bottom-right credit.
+
+
+## 2026-10-30: Session 26 item 4, full-bleed title and Action bands (Luka)
+Supersede the Action hero in “Session 21 item 2, Action hero and facts” (2026-10-29). Shared inner-page h1 and Action sections use navy bands with white headings, gold rules and inverse-muted summaries. Painted bleed uses a clipped shadow instead of viewport-width layout, avoiding scrollbar overflow. Facts stick below the desktop header with their own bounded scrolling area. Landscape/facade banners follow the band; keep Campus E’s full-frame exception.
