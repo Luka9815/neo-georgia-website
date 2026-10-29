@@ -559,3 +559,6 @@ Supersede the Georgian-only chrome of “Session 24 item 4, approved WordPress p
 
 ## 2026-10-30: Session 25 item 4, remaining approved WordPress pages (Luka)
 Supersede the omissions for the 15 paths listed in the Session 25 brief under “Session 24 item 4, approved WordPress page rules” (2026-10-29). Luka approved their Events, Opportunities, CB VET and Resources targets on 2026-10-29. Preserve exact encoded source paths and all decoded collision/target validation. Elementor drafts, placeholder-title page 34308 and blank /35915-2/ remain omitted; see migration/review/REDIRECTS-PAGES.md.
+
+## 2026-10-30: Session 25 item 5, external-link review and sampling (Luka)
+Supersede the exhaustive generated-link audit approach in “Session 24 item 6, honest quality evidence” (2026-10-29): check all hand-entered URLs and randomly sample generated project-result URLs, default 200, with incremental results and a polite Erasmus+ host delay. Record Luka’s supplied 2026-10-29 Claude review separately from local verification. Store final Guide/licence URLs in source; retain EPALE for a manual browser check. No network audit enters build, tests or CI.

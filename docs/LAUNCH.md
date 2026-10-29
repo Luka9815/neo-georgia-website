@@ -60,3 +60,7 @@ Do this separately after institutional ownership/domain access is confirmed. HTM
 5. [ ] **Luka:** record the new owner, access responsibilities, settings, CMS app authorisation and verification in DECISIONS and HANDOVER. **Verify:** the institution can deploy and recover access without the previous personal account.
 
 **Transfer rollback, owners and Luka:** if deployment or CMS access fails, restore authorisation/settings first; if necessary coordinate a transfer back under GitHub’s current rules and restore the previous workflow URL. Preserve history and published slugs. Do not delete either account or the old host until institutional deployment and editing are verified. Live transfer documentation was not verified in this environment; review it before acting.
+
+## EPALE manual browser check (Luka)
+
+Before launch, open https://epale.ec.europa.eu/en/partner-search in a normal browser and confirm the partner-search page works. Luka’s supplied 2026-10-29 external review returned 403 to automated requests, likely bot protection. Keep this URL unchanged; the automated result does not establish a broken link. See review/session-25/LINKS.md for the supplied audit method and results.

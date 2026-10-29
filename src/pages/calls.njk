@@ -12,7 +12,7 @@ eleventyExcludeFromCollections: true
 <p>{{ t.brussels }}</p>
 <p>{{ t.callsNextYear }}</p>
 <p>
-  <a href="https://erasmus-plus.ec.europa.eu/programme-guide/erasmusplus-programme-guide">{{ t.programmeGuide }}</a>
+  <a href="https://erasmus-plus.ec.europa.eu/erasmus-programme-guide">{{ t.programmeGuide }}</a>
 </p>
 {% for year in calls | callYears(site.currentCallYear) %}
   <section data-call-year="{{ year }}">
