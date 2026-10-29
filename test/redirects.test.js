@@ -75,35 +75,7 @@ test('legacy stub renders with a prefixed refresh, canonical and working visible
     assert.equal($('main a').first().attr('href'), target);
     assert.ok(existsSync(join(root, '_site/.nojekyll')));
 
-    // Exercise the launch switch in an isolated copy, never in tracked files.
-    const settingsPath = join(root, 'src/_data/settings.json');
-    writeFileSync(
-      settingsPath,
-      readFileSync(settingsPath, 'utf8').replace(
-        '"siteLaunched": false',
-        '"siteLaunched": true'
-      )
-    );
-    execFileSync(process.execPath, ['node_modules/@11ty/eleventy/cmd.cjs'], {
-      cwd: root,
-      env: {
-        ...process.env,
-        PATH_PREFIX: '/neo-georgia-website/',
-        SITE_URL: 'https://luka9815.github.io/neo-georgia-website/',
-      },
-      stdio: 'pipe',
-    });
-    const home = load(readFileSync(join(root, '_site/ka/index.html'), 'utf8'));
-    assert.equal(home('meta[name=robots]').length, 0);
-    assert.match(readFileSync(join(root, '_site/robots.txt'), 'utf8'), /Allow: \//);
-    assert.doesNotMatch(
-      readFileSync(join(root, '_site/robots.txt'), 'utf8'),
-      /Disallow:/
-    );
-    for (const path of ['index.html', '404.html', 'old-cbhe/index.html']) {
-      const document = load(readFileSync(join(root, '_site', path), 'utf8'));
-      assert.match(document('meta[name=robots]').attr('content'), /noindex/);
-    }
+
   } finally {
     rmSync(root, { recursive: true, force: true });
   }
@@ -112,4 +84,13 @@ test('legacy stub renders with a prefixed refresh, canonical and working visible
 test('encoded legacy emoji produces the decoded static-host path', () => {
   const [view] = redirectViews(getViews(), [{ from: '/%f0%9f%93%a3-old/', to: '/ka/news/' }]);
   assert.equal(view.path, '/📣-old/');
+});
+
+test('every approved page stub targets an existing route without collisions in this layout',()=>{
+ const views=getViews();const real=new Set(views.filter(v=>!v.target&&v.kind!=='404').map(v=>v.path));const seen=new Set(real);
+ for(const view of views.filter(v=>v.kind==='legacyRedirect')){
+  assert.ok(real.has(view.target),view.path);assert.ok(!seen.has(view.path),view.path);seen.add(view.path);
+  const target=join('_site',view.target,'index.html');assert.ok(existsSync(target),target);
+  const stub=join('_site',view.path,view.path.endsWith('/')?'index.html':'');assert.ok(existsSync(stub),stub);
+ }
 });

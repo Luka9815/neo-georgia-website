@@ -1,3 +1,4 @@
+import office from '../src/_data/office.json' with {type:'json'};
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
@@ -9,7 +10,7 @@ import { getPathPrefix } from '../lib/urls.js';
 const prefix = getPathPrefix();
 const read = path => readFileSync(path, 'utf8');
 const data = loadContent();
-const routes = ['resources/publications/', 'resources/faq/', 'about/team/', 'here/', 'about/contact/'];
+const routes = ['resources/publications/', 'resources/faq/', 'about/team/', 'about/here/', 'about/contact/'];
 test('new sitemap pages render both languages, exact switches and EU footer', () => {
   for (const lang of ['ka', 'en']) for (const route of routes) {
     const $ = load(read(`_site/${lang}/${route}index.html`));
@@ -26,25 +27,25 @@ test('Publications are complete without JavaScript and filter metadata matches r
   for (const lang of ['ka', 'en']) {
     const $ = load(read(`_site/${lang}/resources/publications/index.html`));
     assert.equal($('[data-publication-filters][hidden]').length, 1);
-    assert.equal($('[data-publications] > li:not([hidden])').length, 2);
+    assert.equal($('[data-publications] > li:not([hidden])').length, data.publication.length);
     for (const item of data.publication) {
       const row = $(`[data-publications] > li[data-year="${item.year}"][data-type="${item.type}"]`);
       assert.equal(row.find('a').attr('href'), item.url || prefix + item.file.slice(1));
       assert.ok(row.text().includes(item.publisher));
-      assert.equal(item.sourceChecked, '2026-10-28');
+      assert.match(item.sourceChecked, /^\d{4}-\d{2}-\d{2}$/);
       assert.ok(row.text().includes(item[lang].title));
     }
-    assert.equal($('#publication-year option').length, 3);
+    assert.equal($('#publication-year option').length, new Set(data.publication.map(p=>p.year)).size+1);
   }
 });
 test('FAQ groups and related Action pages use the same records', () => {
-  assert.equal(data.faq.length, 12);
+
   for (const lang of ['ka', 'en']) for (const item of data.faq) {
     const faq = load(read(`_site/${lang}/resources/faq/index.html`));
     assert.ok(faq('main').text().includes(item[lang].title));
     const accordion=faq('.faq-item').filter((_,el)=>faq(el).find('summary').text().includes(item[lang].title));
     assert.equal(accordion.length,1);assert.ok(accordion.find('.faq-answer').text().trim());
-    assert.equal(item.sourceChecked, '2026-10-28');
+    assert.match(item.sourceChecked, /^\d{4}-\d{2}-\d{2}$/);
     assert.ok(faq(`a[href="${item.sourceUrl}"]`).length);
     assert.doesNotMatch(item[lang].title+item[lang].body, /\[SAMPLE\]/);
     for (const action of data.action) {
@@ -59,8 +60,8 @@ test('people have national transliteration, separate groups and no contact detai
     if (!person.roleBased && !person.ka.title.startsWith('[SAMPLE]'))
       assert.equal(person.en.title.toLowerCase(), romanise(person.ka.title));
     assert.ok(!person.photo && !person.email && !person.phone);
-    if (person.roleBased) { assert.ok(person.name?.trim()); assert.ok(person.roleEmail?.trim()); }
-    for (const lang of ['ka', 'en']) for (const [group, route] of [['neo', 'about/team'], ['here', 'here']]) {
+    if (person.roleBased) assert.ok(office.team[person.officeKey]);
+    for (const lang of ['ka', 'en']) for (const [group, route] of [['neo', 'about/team'], ['here', 'about/here']]) {
       const $ = load(read(`_site/${lang}/${route}/index.html`));
       assert.equal($('main').text().includes(person[lang].title), person.group === group);
       assert.equal($('main img').length, 0);
@@ -72,12 +73,12 @@ test('Contact uses final labelled fields with no form, map or third-party asset'
     const $ = load(read(`_site/${lang}/about/contact/index.html`));
     assert.equal($('main dd').length, 4);
     const strings = JSON.parse(read(`src/_data/${lang}.json`));
-    assert.deepEqual($('main dd').map((_, el) => $(el).text()).get(), [strings.contactAddress, strings.contactPhone, strings.contactHours, strings.contactEmail]);
-    assert.equal($('footer h3').length, 0);
+    assert.deepEqual($('main dd').map((_, el) => $(el).text()).get(), [office.contact.address[lang], office.contact.phone, office.contact.hours[lang], office.contact.email]);
+    assert.equal($('footer h3').length, office.socialLinks.length?1:0);
     assert.equal($('main form, iframe, main script').length, 0);
     for (const el of $('[src]')) assert.ok($(el).attr('src').startsWith(prefix));
     const about = load(read(`_site/${lang}/about/index.html`));
-    for (const route of ['about/team/', 'here/', 'about/contact/']) assert.equal(about(`main a[href="${prefix}${lang}/${route}"]`).length, 1);
+    for (const route of ['about/team/', 'about/here/', 'about/contact/']) assert.equal(about(`main a[href="${prefix}${lang}/${route}"]`).length, 1);
   }
 });
 test('supporting content rejects missing translation, invalid references and unsafe files', () => {

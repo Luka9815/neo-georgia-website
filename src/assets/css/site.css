@@ -218,7 +218,6 @@ dd { margin: 0 0 var(--space-2); }
 .portal-photo { margin: 2rem 0; }
 .portal-photo picture,.portal-image { display: block; width: 100%; height: auto; }
 .portal-photo figcaption { padding: .5rem 0; font-size: .75rem; color: var(--muted); }
-.photo-about { max-width: 50rem; }
 
 .chart-scroll { max-width: 100%; overflow-x: auto; margin-block: 1.5rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--paper); }
 .project-chart { display: block; width: 100%; min-width: 41.25rem; height: auto; }
@@ -257,7 +256,6 @@ dd { margin: 0 0 var(--space-2); }
 .home-figures h3 { margin-top: 2rem; }
 .compact-update { padding-block: 1rem; border-bottom: 1px solid var(--line); margin: 0; font-weight: 700; }
 .chart-table summary { cursor: pointer; min-height: 44px; padding-block: .5rem; font-weight: 700; }
-.news-panel { width: 100%; height: 6rem; }
 @media (min-width: 64rem) { .hero-grid { grid-template-columns: 1fr 1fr; gap: 3rem; } .hero-main { padding-block: 3rem; } .photo-hero { padding-block: 2rem; } }
 
 .action-hero { display: flex; align-items: flex-start; gap: 1.5rem; padding: 2rem; margin-top: 0; border-radius: var(--radius); background: var(--surface); border-bottom: 4px solid var(--teal); }

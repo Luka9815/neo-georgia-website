@@ -1,6 +1,15 @@
+import {createFixtureSite,buildFixtureSite} from '../scripts/fixture-site.js';
+import {cpSync,rmSync} from 'node:fs';
+import {after} from 'node:test';
+const baselineRoot=createFixtureSite([]);
+rmSync(baselineRoot+'/src/content/news',{recursive:true,force:true});
+cpSync('test/fixtures/session-24-news',baselineRoot+'/src/content/news',{recursive:true});
+buildFixtureSite(baselineRoot,process.env.PATH_PREFIX||'/');
+after(()=>rmSync(baselineRoot,{recursive:true,force:true}));
+const readFileSync=(path,...args)=>sourceReadFileSync((path.startsWith('_site/')||path.startsWith('src/content/news/'))?baselineRoot+'/'+path:path,...args);
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { readFileSync, existsSync } from 'node:fs';
+import { readFileSync as sourceReadFileSync, existsSync } from 'node:fs';
 import { load } from 'cheerio';
 import { getPathPrefix } from '../lib/urls.js';
 import MarkdownIt from 'markdown-it';

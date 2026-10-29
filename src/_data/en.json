@@ -43,7 +43,6 @@
   "disclaimer": "Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them.",
   "notFound": "Page not found",
   "returnHome": "Return to the home page",
-  "readMore": "Read more",
   "programmeGuide": "Erasmus+ Programme Guide",
   "keyAction": "Key Action",
   "currentYear": "Call year",
@@ -52,8 +51,6 @@
   "venue": "Venue",
   "agenda": "Agenda",
   "type": "Type",
-  "format": "Format",
-  "organiser": "Organiser",
   "related": "Related action",
   "months": [
     "January",
@@ -80,8 +77,6 @@
   "menuToggle": "Menu",
   "homeHeadline": "Erasmus+ opportunities for Georgia",
   "homeEyebrow": "National Erasmus+ Office Georgia",
-  "homeGuideTitle": "Find your next step",
-  "homeGuideBody": "Explore the Actions open to Georgia, check who can participate and follow the official application guidance.",
   "homeGuideLink": "Explore opportunities",
   "allCalls": "All calls and deadlines",
   "allEvents": "All events",
@@ -117,7 +112,6 @@
     "report": "Report"
   },
   "publicationLanguage": "Publication language",
-  "openPublication": "Open publication",
   "publicationResults": "Matching publications",
   "faqTopics": {
     "applications": "Applications",
@@ -125,10 +119,6 @@
   },
   "team": "NEO team",
   "here": "Higher Education Reform Experts",
-  "personGroups": {
-    "neo": "NEO team",
-    "here": "Higher Education Reform Experts"
-  },
   "address": "Address",
   "officeHours": "Office hours",
   "email": "Email",
@@ -214,7 +204,6 @@
   "projectCoordinated": "Georgian-coordinated projects",
   "projectParticipations": "Georgian institution participations",
   "projectMobilityCountry": "Mobility projects where Georgia is listed as a participating country without a named Georgian institution",
-  "projectUnknown": "Not supplied",
   "projectAll": "All projects",
   "projectYearIndex": "Browse by call year",
   "projectActionGroup": "Action or sector",
@@ -226,7 +215,6 @@
   "projectPeriods": "Projects by programme period",
   "projectCountingNote": "Projects are counted once by official reference. Institution participations are unique project/organisation pairs. Named organisations are counted by the source PIC/organisation identifier, excluding mobility-country entries. No project grant amounts are shown or summed.",
   "projectSourceStatusNote": "Source status is retained, rather than inferred from end dates. Completed corresponds to the source value finalized.",
-  "projectActionLinks": "Projects for this Action by call year",
   "projectRoles": {
     "coordinator": "Coordinator",
     "partner": "Partner",
@@ -272,7 +260,6 @@
   "phone": "Phone",
   "previewNotice": "Preview. The National Erasmus+ Office Georgia website opens in January 2027.",
   "individualsIntro": "For university exchanges, contact your own university. For Erasmus Mundus scholarships, apply to the programme consortium. Youth opportunities are organised through participating organisations.",
-  "callsEmpty": "There are no open institutional calls at present. See the Calls page for the 2026 deadlines and updates on the next call year.",
   "quickLinks": "Quick links",
   "legal": "Legal information",
   "find": "Find your opportunity",
@@ -319,9 +306,9 @@
   "credits": "Photo credits",
   "photoLabel": "Photo",
   "photoViaCommons": "via Wikimedia Commons",
-  "photoModified": "modified: cropped, resized and reformatted",
-  "photoModifiedOverlay": "modified: cropped, resized, reformatted and overlaid",
+  "photoModified": "Modified: cropped, resized and reformatted",
+  "photoModifiedOverlay": "Modified: cropped, resized, reformatted and overlaid",
   "photoSitePermission": "Used with permission; no open licence asserted.",
-  "photoResized": "modified: resized and reformatted; full frame retained",
+  "photoResized": "Modified: resized and reformatted; full frame retained",
   "herePending": "The list of experts will be published once membership is confirmed."
 }

@@ -77,3 +77,7 @@ test('isolated empty Events and Stories remain covered when genuine production r
   }
  }finally{rmSync(root,{recursive:true,force:true});}
 });
+
+test('historical populated fixtures choose their own call edition independently of staff Settings',()=>{
+ const root=createFixtureSite([]);try{assert.equal(JSON.parse(readFileSync(`${root}/src/_data/settings.json`)).currentCallYear,2026);}finally{rmSync(root,{recursive:true,force:true});}
+});

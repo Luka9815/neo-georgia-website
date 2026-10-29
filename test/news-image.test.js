@@ -15,7 +15,7 @@ test('optional News image validates local files and alt text for published langu
       const item = { image: optional }; validateNewsImage(item, file); assert.equal(item.image, undefined);
     }
     validateNewsImage({ image: structuredClone(image), en: {} }, file);
-    validateNewsImage({ image: { src: image.src, alt: { ka: image.alt.ka } } }, file);
+    assert.throws(() => validateNewsImage({ image: { src: image.src, alt: { ka: image.alt.ka } } }, file), /image.alt.en/);
     assert.throws(() => validateNewsImage({ image: { src: image.src, alt: { ka: image.alt.ka, en: '[ALT NEEDED]' } } }, file), /image.alt.en/);
     for (const [path, value] of [['src', 'https://example.org/photo.png'], ['src', '/assets/eu/funded-en.png'], ['src', '/assets/uploads/../secret.png'], ['src', '/assets/uploads/missing.png'], ['alt.ka', ''], ['alt.ka', '[ALT NEEDED]'], ['alt.en', '[alt needed]'], ['alt.en', '']]) {
       const item = { image: structuredClone(image), en: {} };
@@ -89,7 +89,7 @@ test('CMS offers an optional News-only local image with Georgian-first alt label
   assert.equal(image.fields.find(field => field.name === 'src').type, 'image');
   const alt = image.fields.find(field => field.name === 'alt');
   assert.equal(alt.fields.find(field => field.name === 'ka').required, true);
-  assert.equal(alt.fields.find(field => field.name === 'en').required, false);
+  assert.equal(alt.fields.find(field => field.name === 'en').required, true);
   assert.equal(schema.content.find(item => item.name === 'events').fields.some(field => field.name === 'image'), false);
 });
 

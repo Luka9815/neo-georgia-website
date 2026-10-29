@@ -20,7 +20,7 @@ import { loadContent } from '../lib/content.js';
 import { eventOptions } from '../lib/validate-content.js';
 const read = (file) => readFileSync(file, 'utf8');
 const config = yaml(read('.pages.yml'));
-const collection = (name) => config.content.find((entry) => entry.name === name);
+const collection = (name) => config.content.flatMap(e=>e.items||[e]).find((entry) => entry.name === name);
 const field = (entry, name) => entry.fields.find((item) => item.name === name);
 
 function isolatedSite() {
@@ -88,8 +88,8 @@ test('CMS schema matches JSON collections, local time rules, translations and ac
     ['currentCallYear', 'logoPath']
   );
   assert.equal(config.settings.content.merge, true);
-  assert.equal(config.media.input, 'src/assets/uploads');
-  assert.equal(config.media.output, '/assets/uploads');
+  assert.equal(config.media[0].input, 'src/assets/uploads');
+  assert.equal(config.media[0].output, '/assets/uploads');
 });
 
 test('a deliberately bad Event fixture stops the real build with filename and field', () => {
