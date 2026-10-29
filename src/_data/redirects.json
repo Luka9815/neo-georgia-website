@@ -18,5 +18,721 @@
   {
     "from": "/%f0%9f%93%a3-information-about-capacity-building-project-proposals/",
     "to": "/ka/news/information-about-capacity-building-project-proposals/"
+  },
+  {
+    "from": "/about/",
+    "to": "/ka/about/"
+  },
+  {
+    "from": "/all-courses/",
+    "to": "/ka/about/"
+  },
+  {
+    "from": "/contact/",
+    "to": "/ka/about/contact/"
+  },
+  {
+    "from": "/open-calls/",
+    "to": "/ka/calls/"
+  },
+  {
+    "from": "/recourses/",
+    "to": "/ka/resources/"
+  },
+  {
+    "from": "/here/",
+    "to": "/ka/about/here/"
+  },
+  {
+    "from": "/publications/",
+    "to": "/ka/resources/publications/"
+  },
+  {
+    "from": "/news/",
+    "to": "/ka/news/"
+  },
+  {
+    "from": "/statistics/",
+    "to": "/ka/resources/statistics/"
+  },
+  {
+    "from": "/faqs/",
+    "to": "/ka/resources/faq/"
+  },
+  {
+    "from": "/რას-აკეთებს-here/",
+    "to": "/ka/about/here/"
+  },
+  {
+    "from": "/here-2021-2027/",
+    "to": "/ka/about/here/"
+  },
+  {
+    "from": "/deadlines/",
+    "to": "/ka/calls/"
+  },
+  {
+    "from": "/heres-event-2024/",
+    "to": "/ka/about/here/"
+  },
+  {
+    "from": "/the-remarkable-path-of-georgian-youth-sector-in-the-erasmus/",
+    "to": "/ka/news/"
+  },
+  {
+    "from": "/can-georgia-become-an-associated-country-to-the-erasmus-programme/",
+    "to": "/ka/news/"
+  },
+  {
+    "from": "/navigating-the-path-to-international-partnerships-in-erasmus/",
+    "to": "/ka/news/"
+  },
+  {
+    "from": "/how-to-know-what-are-the-opportunities-available-for-georgian-organizations-and-institutions/",
+    "to": "/ka/news/"
+  },
+  {
+    "from": "/erasmus-goes-global-why-it-matters-for-georgia/",
+    "to": "/ka/news/"
+  },
+  {
+    "from": "/how-to-know-what-are-the-opportunities-available-for-georgian-organizations-and-institutions-2/",
+    "to": "/ka/news/"
+  },
+  {
+    "from": "/erasmus-mobility-preparing-georgias-students-for-the-global-workforce/",
+    "to": "/ka/news/"
+  },
+  {
+    "from": "/title-embracing-eu-values-a-pathway-to-opportunity-for-applicants-from-georgia/",
+    "to": "/ka/news/"
+  },
+  {
+    "from": "/understanding-erasmus-support-structures/",
+    "to": "/ka/news/"
+  },
+  {
+    "from": "/understanding-erasmus-support-structures-2/",
+    "to": "/ka/news/"
+  },
+  {
+    "from": "/erasmus-mobility-for-students/",
+    "to": "/ka/news/"
+  },
+  {
+    "from": "/breaking-down-barriers-with-erasmus/",
+    "to": "/ka/news/"
+  },
+  {
+    "from": "/rethinking-higher-education-practices-in-the-era-of-artificial-intelligence-alexander-tevzadze/",
+    "to": "/ka/news/"
+  },
+  {
+    "from": "/internationalization-as-a-tool-for-quality-enhancement/",
+    "to": "/ka/news/"
+  },
+  {
+    "from": "/square-project-irma-grdzelidze/",
+    "to": "/ka/news/"
+  },
+  {
+    "from": "/fostering-the-third-mission-of-universities-tamar-sanikidze/",
+    "to": "/ka/news/"
+  },
+  {
+    "from": "/neo-ს-პრეს-რელიზი-2/",
+    "to": "/ka/news/"
+  },
+  {
+    "from": "/reminder-ერასმუს-მსხვილმასშტაბ/",
+    "to": "/ka/opportunities/cbhe/"
+  },
+  {
+    "from": "/heres-event-on-reforming-research-assessment-in-the-european-union-2/",
+    "to": "/ka/about/here/"
+  },
+  {
+    "from": "/erasmusstatisticsbefore2014/",
+    "to": "/ka/resources/statistics/"
+  },
+  {
+    "from": "/erasmusstatistics2014-2020/",
+    "to": "/ka/resources/statistics/"
+  },
+  {
+    "from": "/erasmusstatistics2021-2027/",
+    "to": "/ka/resources/statistics/"
+  },
+  {
+    "from": "/28330-2/",
+    "to": "/ka/opportunities/"
+  },
+  {
+    "from": "/28343-2/",
+    "to": "/ka/opportunities/"
+  },
+  {
+    "from": "/28347-2/",
+    "to": "/ka/opportunities/"
+  },
+  {
+    "from": "/28360-2/",
+    "to": "/ka/opportunities/"
+  },
+  {
+    "from": "/28366-2/",
+    "to": "/ka/opportunities/"
+  },
+  {
+    "from": "/28377-2/",
+    "to": "/ka/opportunities/"
+  },
+  {
+    "from": "/28382-2/",
+    "to": "/ka/opportunities/"
+  },
+  {
+    "from": "/28390-2/",
+    "to": "/ka/opportunities/"
+  },
+  {
+    "from": "/28392-2/",
+    "to": "/ka/opportunities/"
+  },
+  {
+    "from": "/28395-2/",
+    "to": "/ka/opportunities/"
+  },
+  {
+    "from": "/28666-2/",
+    "to": "/ka/resources/statistics/"
+  },
+  {
+    "from": "/პროგრამები/",
+    "to": "/ka/opportunities/"
+  },
+  {
+    "from": "/mobility-projects-for-he-students-and-staff/",
+    "to": "/ka/opportunities/icm/"
+  },
+  {
+    "from": "/icm-he-students-and-staff/",
+    "to": "/ka/opportunities/icm/"
+  },
+  {
+    "from": "/mobility-for-learners-and-staff-in-vet/",
+    "to": "/ka/resources/"
+  },
+  {
+    "from": "/mobility-for-young-people-youth-exchange/",
+    "to": "/ka/opportunities/youth-mobility/"
+  },
+  {
+    "from": "/mobility-projects-for-youth-workers/",
+    "to": "/ka/opportunities/youth-mobility/"
+  },
+  {
+    "from": "/virtual-exchanges-in-higher-education-and-youth/",
+    "to": "/ka/opportunities/virtual-exchanges/"
+  },
+  {
+    "from": "/cooperation-partnerships-for-higher-education/",
+    "to": "/ka/opportunities/"
+  },
+  {
+    "from": "/cooperation-partnership-in-the-filed-of-vet/",
+    "to": "/ka/opportunities/"
+  },
+  {
+    "from": "/cooperation-partnership-in-the-filed-of-school/",
+    "to": "/ka/opportunities/"
+  },
+  {
+    "from": "/cooperation-partnership-in-the-filed-of-adult-education/",
+    "to": "/ka/opportunities/"
+  },
+  {
+    "from": "/cooperation-partnership-in-the-filed-of-youth/",
+    "to": "/ka/opportunities/"
+  },
+  {
+    "from": "/cooperation-partnership-in-the-filed-of-sport/",
+    "to": "/ka/opportunities/"
+  },
+  {
+    "from": "/centers-of-vocation-excellence/",
+    "to": "/ka/opportunities/"
+  },
+  {
+    "from": "/erasmus-mundus-joint-master-degree/",
+    "to": "/ka/opportunities/erasmus-mundus/"
+  },
+  {
+    "from": "/alliances-for-innovation-hei-vet-training-broader-socio-economic-env/",
+    "to": "/ka/opportunities/"
+  },
+  {
+    "from": "/capacity-builiding-in-the-filed-of-higher-education/",
+    "to": "/ka/opportunities/cbhe/"
+  },
+  {
+    "from": "/capacity-builiding-in-the-filed-of-vet/",
+    "to": "/ka/opportunities/cb-vet/"
+  },
+  {
+    "from": "/jean-monnet-in-the-filed-of-higher-education/",
+    "to": "/ka/opportunities/jean-monnet/"
+  },
+  {
+    "from": "/jean-monnet-policy-debate/",
+    "to": "/ka/opportunities/jean-monnet/"
+  },
+  {
+    "from": "/news-2/",
+    "to": "/ka/news/"
+  },
+  {
+    "from": "/horizontal-priorities/",
+    "to": "/ka/resources/"
+  },
+  {
+    "from": "/vet-statistics-2021-20027/",
+    "to": "/ka/resources/statistics/"
+  },
+  {
+    "from": "/statistics-adult-education-2027/",
+    "to": "/ka/resources/statistics/"
+  },
+  {
+    "from": "/statistics-youth-2027/",
+    "to": "/ka/resources/statistics/"
+  },
+  {
+    "from": "/schools/",
+    "to": "/ka/opportunities/"
+  },
+  {
+    "from": "/sport-statistics-2027/",
+    "to": "/ka/resources/statistics/"
+  },
+  {
+    "from": "/statistics-schools-2027/",
+    "to": "/ka/resources/statistics/"
+  },
+  {
+    "from": "/general-information-about-erasmus/",
+    "to": "/ka/about/"
+  },
+  {
+    "from": "/capacity-building-in-youth/",
+    "to": "/ka/opportunities/cb-youth/"
+  },
+  {
+    "from": "/capacity-building-in-sport/",
+    "to": "/ka/opportunities/cb-sport/"
+  },
+  {
+    "from": "/heres-lominadze/",
+    "to": "/ka/about/here/"
+  },
+  {
+    "from": "/heres-gergedava/",
+    "to": "/ka/about/here/"
+  },
+  {
+    "from": "/heres-margishvili/",
+    "to": "/ka/about/here/"
+  },
+  {
+    "from": "/heres_tevzadze/",
+    "to": "/ka/about/here/"
+  },
+  {
+    "from": "/heres_grdzelidze/",
+    "to": "/ka/about/here/"
+  },
+  {
+    "from": "/heres_buchashvili/",
+    "to": "/ka/about/here/"
+  },
+  {
+    "from": "/heres-tepnadze/",
+    "to": "/ka/about/here/"
+  },
+  {
+    "from": "/heres_sanikidze_/",
+    "to": "/ka/about/here/"
+  },
+  {
+    "from": "/heres_tsotniashvili_/",
+    "to": "/ka/about/here/"
+  },
+  {
+    "from": "/heres_zedgenidze__/",
+    "to": "/ka/about/here/"
+  },
+  {
+    "from": "/staff_week/",
+    "to": "/ka/events/"
+  },
+  {
+    "from": "/პუბლიკაციები-2014-2020/",
+    "to": "/ka/resources/publications/"
+  },
+  {
+    "from": "/publications-erasmus/",
+    "to": "/ka/resources/publications/"
+  },
+  {
+    "from": "/2025-deadlines/",
+    "to": "/ka/calls/"
+  },
+  {
+    "from": "/erasmusdays2024publication/",
+    "to": "/ka/resources/publications/"
+  },
+  {
+    "from": "/theeugreendeal/",
+    "to": "/ka/news/"
+  },
+  {
+    "from": "/technical_assistance_mission/",
+    "to": "/ka/news/"
+  },
+  {
+    "from": "/enhancing_university-industry_collaboration/",
+    "to": "/ka/news/"
+  },
+  {
+    "from": "/tips-for-creating-a-competitive-proposal-for-erasmus-capacity-building-in-higher-education-cbhe-programme/",
+    "to": "/ka/opportunities/cbhe/"
+  },
+  {
+    "from": "/georgias-unique-cultural-heritage/",
+    "to": "/ka/news/"
+  },
+  {
+    "from": "/capacity-building-in-higher-education-cbhe-in-georgia-2014-2024/",
+    "to": "/ka/opportunities/cbhe/"
+  },
+  {
+    "from": "/jean-monnet-programme-overview-in-georgian-context/",
+    "to": "/ka/opportunities/jean-monnet/"
+  },
+  {
+    "from": "/embarking-on-an-erasmus-journey/",
+    "to": "/ka/news/"
+  },
+  {
+    "from": "/erasmus-breaking-barriers-in-cultural-differences/",
+    "to": "/ka/news/"
+  },
+  {
+    "from": "/exploring-erasmus-mundus-joint-masters/",
+    "to": "/ka/opportunities/erasmus-mundus/"
+  },
+  {
+    "from": "/impact-of-erasmus/",
+    "to": "/ka/opportunities/icm/"
+  },
+  {
+    "from": "/how-to-participate-in-student-mobility/",
+    "to": "/ka/opportunities/icm/"
+  },
+  {
+    "from": "/how-to-participate-in-erasmus-mundus-joint-masters/",
+    "to": "/ka/opportunities/erasmus-mundus/"
+  },
+  {
+    "from": "/how-to-participate-in-youth-mobility/",
+    "to": "/ka/opportunities/youth-mobility/"
+  },
+  {
+    "from": "/erasmus-programmes/",
+    "to": "/ka/opportunities/"
+  },
+  {
+    "from": "/difference-between-na-and-neo/",
+    "to": "/ka/about/"
+  },
+  {
+    "from": "/how-to-participate-in-staff-mobility/",
+    "to": "/ka/opportunities/icm/"
+  },
+  {
+    "from": "/difference-between-ftop-and-webgate/",
+    "to": "/ka/resources/"
+  },
+  {
+    "from": "/how-to-get-oid-number/",
+    "to": "/ka/resources/"
+  },
+  {
+    "from": "/adding_or_deleting_a_bank_account/",
+    "to": "/ka/resources/"
+  },
+  {
+    "from": "/organisation_data_updates/",
+    "to": "/ka/resources/"
+  },
+  {
+    "from": "/lears_account_administrators/",
+    "to": "/ka/resources/"
+  },
+  {
+    "from": "/electronic_submission_system/",
+    "to": "/ka/resources/"
+  },
+  {
+    "from": "/lear_appointmentvalidation/",
+    "to": "/ka/resources/"
+  },
+  {
+    "from": "/cbhe_project_page_limitation/",
+    "to": "/ka/opportunities/cbhe/"
+  },
+  {
+    "from": "/ftop_registration/",
+    "to": "/ka/resources/"
+  },
+  {
+    "from": "/short_instructions_for_registering_on_ftop_and_webgate/",
+    "to": "/ka/resources/"
+  },
+  {
+    "from": "/registration_ftop_webgate/",
+    "to": "/ka/resources/"
+  },
+  {
+    "from": "/faq-bank-account/",
+    "to": "/ka/resources/faq/"
+  },
+  {
+    "from": "/webgate-registration/",
+    "to": "/ka/resources/"
+  },
+  {
+    "from": "/განათლების-სისტემა/",
+    "to": "/ka/resources/"
+  },
+  {
+    "from": "/education-system-in-georgia/",
+    "to": "/ka/resources/"
+  },
+  {
+    "from": "/event-directory/",
+    "to": "/ka/events/"
+  },
+  {
+    "from": "/support-letters/",
+    "to": "/ka/about/"
+  },
+  {
+    "from": "/დღგ-სგან-გათავისუფლება/",
+    "to": "/ka/about/"
+  },
+  {
+    "from": "/statistics-2/",
+    "to": "/ka/resources/statistics/"
+  },
+  {
+    "from": "/statistics-3/",
+    "to": "/ka/resources/statistics/"
+  },
+  {
+    "from": "/მიკროკრედიტები-უნარები/",
+    "to": "/ka/news/"
+  },
+  {
+    "from": "/publication_31-07/",
+    "to": "/ka/resources/publications/"
+  },
+  {
+    "from": "/publication_workshops-erasmus-practical-experience-examples-and-financial-management/",
+    "to": "/ka/resources/publications/"
+  },
+  {
+    "from": "/faq-21-internships/",
+    "to": "/ka/resources/faq/"
+  },
+  {
+    "from": "/emjm_2025/",
+    "to": "/ka/opportunities/erasmus-mundus/"
+  },
+  {
+    "from": "/publication_eaie/",
+    "to": "/ka/resources/publications/"
+  },
+  {
+    "from": "/ინსტიტუციური-შესაძლებლო/",
+    "to": "/ka/news/"
+  },
+  {
+    "from": "/publication-eaie/",
+    "to": "/ka/resources/publications/"
+  },
+  {
+    "from": "/უმაღლესი-განათლების-მობი/",
+    "to": "/ka/news/"
+  },
+  {
+    "from": "/erasmus-ის-ინკლუზიური-ხარვეზის/",
+    "to": "/ka/news/"
+  },
+  {
+    "from": "/აკადემიისა-და-ინდუსტრიის/",
+    "to": "/ka/news/"
+  },
+  {
+    "from": "/უმაღლესი-განათლების-ბირთ/",
+    "to": "/ka/news/"
+  },
+  {
+    "from": "/ეროვნული-და-საერთაშორისო/",
+    "to": "/ka/news/"
+  },
+  {
+    "from": "/პროფესიული-და-უმაღლესი-გ/",
+    "to": "/ka/news/"
+  },
+  {
+    "from": "/ერთი-ინსტიტუციის-ფარგლებ/",
+    "to": "/ka/news/"
+  },
+  {
+    "from": "/publication_navigating-generative-ai-in-international-higher-education-opportunities-and-challenges/",
+    "to": "/ka/resources/publications/"
+  },
+  {
+    "from": "/deadlines-2026/",
+    "to": "/ka/calls/"
+  },
+  {
+    "from": "/publication-digital-transformation-ai-governance-and-the-future-of-higher-education-insights-from-the-bucharest-sphere-2025-symposium/",
+    "to": "/ka/resources/publications/"
+  },
+  {
+    "from": "/erasmus-mundus-joint-masters-mobility/",
+    "to": "/ka/opportunities/erasmus-mundus/"
+  },
+  {
+    "from": "/capacity-building-in-the-field-of-higher-education/",
+    "to": "/ka/opportunities/cbhe/"
+  },
+  {
+    "from": "/jean-monnet-actions/",
+    "to": "/ka/opportunities/jean-monnet/"
+  },
+  {
+    "from": "/cooperation-partnership-in-higher-education/",
+    "to": "/ka/opportunities/"
+  },
+  {
+    "from": "/cooperation-partnership-in-vocational-education-and-trainings/",
+    "to": "/ka/opportunities/"
+  },
+  {
+    "from": "/centres-of-vocational-excellence/",
+    "to": "/ka/opportunities/"
+  },
+  {
+    "from": "/ersmus-mundus-joint-master-projects/",
+    "to": "/ka/opportunities/erasmus-mundus/"
+  },
+  {
+    "from": "/erasmus-mundus-design-measures/",
+    "to": "/ka/opportunities/erasmus-mundus/"
+  },
+  {
+    "from": "/capacity-building-in-the-field-of-youth/",
+    "to": "/ka/opportunities/cb-youth/"
+  },
+  {
+    "from": "/erasmus-virtual-eschanges/",
+    "to": "/ka/opportunities/virtual-exchanges/"
+  },
+  {
+    "from": "/cooperation-partnership-in-youth/",
+    "to": "/ka/opportunities/"
+  },
+  {
+    "from": "/capacity-building-in-the-field-of-sport/",
+    "to": "/ka/opportunities/cb-sport/"
+  },
+  {
+    "from": "/cooperation-partnership-in-sport/",
+    "to": "/ka/opportunities/"
+  },
+  {
+    "from": "/innovative-didactical-approaches-in-engineering-education/",
+    "to": "/ka/resources/publications/"
+  },
+  {
+    "from": "/cooperation-patnership-in-adult-education/",
+    "to": "/ka/opportunities/"
+  },
+  {
+    "from": "/publication_quality-assurance-and-recognition-of-distance-education-programs-delivered-by-either-fully-online-or-blended-learning-mode/",
+    "to": "/ka/resources/publications/"
+  },
+  {
+    "from": "/coopertion-partnership-in-schools/",
+    "to": "/ka/opportunities/"
+  },
+  {
+    "from": "/irma-grdzelidze_advancing-higher-education-through-sustainability-publication/",
+    "to": "/ka/resources/publications/"
+  },
+  {
+    "from": "/tam-micro-credentials-and-industry-collaboration-ensuring-qualification-relevance-and-employment-opportunities_publication_buchashvili-zedginidze-zubrzycki/",
+    "to": "/ka/resources/publications/"
+  },
+  {
+    "from": "/innovative-didactical-approaches-in-engineering-education_tsotniashvili-lominadze-publication/",
+    "to": "/ka/resources/publications/"
+  },
+  {
+    "from": "/tamar-sanikidze-irma-grdzelidze_publication/",
+    "to": "/ka/resources/publications/"
+  },
+  {
+    "from": "/publication-tamar-lominadze-tam-2/",
+    "to": "/ka/resources/publications/"
+  },
+  {
+    "from": "/organisation-data-can-only-be-modified-if-the-user-is-authorised-as-an-account-administrator-self-registrant-or-legal-entity-appointed-representative-lear/",
+    "to": "/ka/resources/"
+  },
+  {
+    "from": "/publication_sanikidze-tevzadze/",
+    "to": "/ka/resources/publications/"
+  },
+  {
+    "from": "/publication-intersectoral-cluster-development-within-erasmus/",
+    "to": "/ka/resources/publications/"
+  },
+  {
+    "from": "/the-erasmus-2026-call-results-for-capacity-building-in-higher-education-cbhe/",
+    "to": "/ka/opportunities/cbhe/"
+  },
+  {
+    "from": "/newsletter-publication-vol-6/",
+    "to": "/ka/resources/publications/"
+  },
+  {
+    "from": "/publication-tamar-sanikidze-irma-grdzelidze/",
+    "to": "/ka/resources/publications/"
+  },
+  {
+    "from": "/publication-values-in-higher-education-challenges-practices-and-perspectives/",
+    "to": "/ka/resources/publications/"
+  },
+  {
+    "from": "/ka/here/",
+    "to": "/ka/about/here/"
+  },
+  {
+    "from": "/en/here/",
+    "to": "/en/about/here/"
   }
 ]

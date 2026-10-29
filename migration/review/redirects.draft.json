@@ -1,5 +1,5 @@
 {
-  "status": "DRAFT: manual review required; not connected to src/_data/redirects.json",
+  "status": "News suggestions remain review-only. Top-level pages reviewed on 2026-10-29 under Luka-approved Session 24 rules; included page mappings are connected to src/_data/redirects.json.",
   "source": "https://erasmus.org.ge",
   "runDate": "2026-10-26",
   "window": {
@@ -552,7 +552,11 @@
         "from": "https://erasmus.org.ge/about/",
         "suggestedTargetSection": "/ka/about/",
         "reason": "About: office, team, services, HEREs or contact",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/about/",
+        "included": true,
+        "rule": "office/services",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 201,
@@ -560,7 +564,11 @@
         "from": "https://erasmus.org.ge/all-courses/",
         "suggestedTargetSection": "/ka/about/",
         "reason": "About: office, team, services, HEREs or contact",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/about/",
+        "included": true,
+        "rule": "office/services",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 25727,
@@ -568,7 +576,11 @@
         "from": "https://erasmus.org.ge/",
         "suggestedTargetSection": "/ka/",
         "reason": "Old site root maps to the Georgian home in the approved sitemap",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/",
+        "included": true,
+        "rule": "existing root",
+        "reviewReason": "Existing root redirect already serves this path."
       },
       {
         "wpId": 25728,
@@ -576,7 +588,11 @@
         "from": "https://erasmus.org.ge/contact/",
         "suggestedTargetSection": "/ka/about/",
         "reason": "About: office, team, services, HEREs or contact",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/about/contact/",
+        "included": true,
+        "rule": "contact",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 25771,
@@ -584,7 +600,11 @@
         "from": "https://erasmus.org.ge/open-calls/",
         "suggestedTargetSection": "/ka/calls/",
         "reason": "Calls and deadlines",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/calls/",
+        "included": true,
+        "rule": "calls/archive",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 25774,
@@ -592,7 +612,11 @@
         "from": "https://erasmus.org.ge/recourses/",
         "suggestedTargetSection": "/ka/resources/",
         "reason": "Resources: publications, statistics, FAQ, priorities or education system",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/",
+        "included": true,
+        "rule": "resources/organisation guidance",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 25777,
@@ -600,7 +624,11 @@
         "from": "https://erasmus.org.ge/here/",
         "suggestedTargetSection": "/ka/about/",
         "reason": "About: office, team, services, HEREs or contact",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/about/here/",
+        "included": true,
+        "rule": "HERE guidance/membership",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 25780,
@@ -608,7 +636,11 @@
         "from": "https://erasmus.org.ge/publications/",
         "suggestedTargetSection": "/ka/resources/",
         "reason": "Resources: publications, statistics, FAQ, priorities or education system",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/publications/",
+        "included": true,
+        "rule": "publication/newsletter",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 25783,
@@ -616,7 +648,11 @@
         "from": "https://erasmus.org.ge/news/",
         "suggestedTargetSection": "/ka/news/",
         "reason": "News, split into News and Events after type review",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/news/",
+        "included": true,
+        "rule": "news index",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 25786,
@@ -624,7 +660,11 @@
         "from": "https://erasmus.org.ge/statistics/",
         "suggestedTargetSection": "/ka/resources/",
         "reason": "Resources: publications, statistics, FAQ, priorities or education system",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/statistics/",
+        "included": true,
+        "rule": "statistics",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 25789,
@@ -632,7 +672,11 @@
         "from": "https://erasmus.org.ge/faqs/",
         "suggestedTargetSection": "/ka/opportunities/",
         "reason": "Opportunities: review the relevant structured Action page",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/faq/",
+        "included": true,
+        "rule": "FAQ",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 25891,
@@ -640,7 +684,11 @@
         "from": "https://erasmus.org.ge/%e1%83%a0%e1%83%90%e1%83%a1-%e1%83%90%e1%83%99%e1%83%94%e1%83%97%e1%83%94%e1%83%91%e1%83%a1-here/",
         "suggestedTargetSection": "/ka/about/",
         "reason": "About: office, team, services, HEREs or contact",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/about/here/",
+        "included": true,
+        "rule": "HERE guidance/membership",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 25894,
@@ -648,7 +696,11 @@
         "from": "https://erasmus.org.ge/here-2021-2027/",
         "suggestedTargetSection": "/ka/about/",
         "reason": "About: office, team, services, HEREs or contact",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/about/here/",
+        "included": true,
+        "rule": "HERE guidance/membership",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 26076,
@@ -656,7 +708,11 @@
         "from": "https://erasmus.org.ge/deadlines/",
         "suggestedTargetSection": "/ka/calls/",
         "reason": "Calls and deadlines",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/calls/",
+        "included": true,
+        "rule": "calls/archive",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 26321,
@@ -664,7 +720,11 @@
         "from": "https://erasmus.org.ge/heres-event-2024/",
         "suggestedTargetSection": "/ka/about/",
         "reason": "About: office, team, services, HEREs or contact",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/about/here/",
+        "included": true,
+        "rule": "HERE guidance/membership",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 26365,
@@ -672,7 +732,11 @@
         "from": "https://erasmus.org.ge/discover-erasmus-opportunities-introductory-webinar-invitation/",
         "suggestedTargetSection": "/ka/opportunities/",
         "reason": "Opportunities: review the relevant structured Action page",
-        "suggested": true
+        "suggested": false,
+        "to": null,
+        "included": false,
+        "rule": "unresolved",
+        "reviewReason": "No approved rule establishes a destination; omitted without guessing."
       },
       {
         "wpId": 26385,
@@ -680,7 +744,11 @@
         "from": "https://erasmus.org.ge/elementor-26385/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": null,
+        "included": false,
+        "rule": "excluded draft",
+        "reviewReason": "Elementor draft or placeholder title."
       },
       {
         "wpId": 26401,
@@ -688,7 +756,11 @@
         "from": "https://erasmus.org.ge/elementor-26401/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": null,
+        "included": false,
+        "rule": "excluded draft",
+        "reviewReason": "Elementor draft or placeholder title."
       },
       {
         "wpId": 26418,
@@ -696,7 +768,11 @@
         "from": "https://erasmus.org.ge/elementor-26418/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": null,
+        "included": false,
+        "rule": "excluded draft",
+        "reviewReason": "Elementor draft or placeholder title."
       },
       {
         "wpId": 26434,
@@ -704,7 +780,11 @@
         "from": "https://erasmus.org.ge/elementor-26434/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": null,
+        "included": false,
+        "rule": "excluded draft",
+        "reviewReason": "Elementor draft or placeholder title."
       },
       {
         "wpId": 26446,
@@ -712,7 +792,11 @@
         "from": "https://erasmus.org.ge/elementor-26446/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": null,
+        "included": false,
+        "rule": "excluded draft",
+        "reviewReason": "Elementor draft or placeholder title."
       },
       {
         "wpId": 26466,
@@ -720,7 +804,11 @@
         "from": "https://erasmus.org.ge/the-remarkable-path-of-georgian-youth-sector-in-the-erasmus/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/news/",
+        "included": true,
+        "rule": "opinion/blog",
+        "reviewReason": "No matching migrated News slug exists; use the approved News index fallback."
       },
       {
         "wpId": 26474,
@@ -728,7 +816,11 @@
         "from": "https://erasmus.org.ge/can-georgia-become-an-associated-country-to-the-erasmus-programme/",
         "suggestedTargetSection": "/ka/opportunities/",
         "reason": "Opportunities: review the relevant structured Action page",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/news/",
+        "included": true,
+        "rule": "opinion/blog",
+        "reviewReason": "No matching migrated News slug exists; use the approved News index fallback."
       },
       {
         "wpId": 26482,
@@ -736,7 +828,11 @@
         "from": "https://erasmus.org.ge/navigating-the-path-to-international-partnerships-in-erasmus/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/news/",
+        "included": true,
+        "rule": "opinion/blog",
+        "reviewReason": "No matching migrated News slug exists; use the approved News index fallback."
       },
       {
         "wpId": 26497,
@@ -744,7 +840,11 @@
         "from": "https://erasmus.org.ge/how-to-know-what-are-the-opportunities-available-for-georgian-organizations-and-institutions/",
         "suggestedTargetSection": "/ka/opportunities/",
         "reason": "Opportunities: review the relevant structured Action page",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/news/",
+        "included": true,
+        "rule": "opinion/blog",
+        "reviewReason": "No matching migrated News slug exists; use the approved News index fallback."
       },
       {
         "wpId": 26510,
@@ -752,7 +852,11 @@
         "from": "https://erasmus.org.ge/erasmus-goes-global-why-it-matters-for-georgia/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/news/",
+        "included": true,
+        "rule": "opinion/blog",
+        "reviewReason": "No matching migrated News slug exists; use the approved News index fallback."
       },
       {
         "wpId": 26528,
@@ -760,7 +864,11 @@
         "from": "https://erasmus.org.ge/how-to-know-what-are-the-opportunities-available-for-georgian-organizations-and-institutions-2/",
         "suggestedTargetSection": "/ka/opportunities/",
         "reason": "Opportunities: review the relevant structured Action page",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/news/",
+        "included": true,
+        "rule": "opinion/blog",
+        "reviewReason": "No matching migrated News slug exists; use the approved News index fallback."
       },
       {
         "wpId": 26545,
@@ -768,7 +876,11 @@
         "from": "https://erasmus.org.ge/erasmus-mobility-preparing-georgias-students-for-the-global-workforce/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/news/",
+        "included": true,
+        "rule": "opinion/blog",
+        "reviewReason": "No matching migrated News slug exists; use the approved News index fallback."
       },
       {
         "wpId": 26569,
@@ -776,7 +888,11 @@
         "from": "https://erasmus.org.ge/title-embracing-eu-values-a-pathway-to-opportunity-for-applicants-from-georgia/",
         "suggestedTargetSection": "/ka/opportunities/",
         "reason": "Opportunities: review the relevant structured Action page",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/news/",
+        "included": true,
+        "rule": "opinion/blog",
+        "reviewReason": "No matching migrated News slug exists; use the approved News index fallback."
       },
       {
         "wpId": 26584,
@@ -784,7 +900,11 @@
         "from": "https://erasmus.org.ge/understanding-erasmus-support-structures/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/news/",
+        "included": true,
+        "rule": "opinion/blog",
+        "reviewReason": "No matching migrated News slug exists; use the approved News index fallback."
       },
       {
         "wpId": 26591,
@@ -792,7 +912,11 @@
         "from": "https://erasmus.org.ge/understanding-erasmus-support-structures-2/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/news/",
+        "included": true,
+        "rule": "opinion/blog",
+        "reviewReason": "No matching migrated News slug exists; use the approved News index fallback."
       },
       {
         "wpId": 26606,
@@ -800,7 +924,11 @@
         "from": "https://erasmus.org.ge/erasmus-mobility-for-students/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/news/",
+        "included": true,
+        "rule": "opinion/blog",
+        "reviewReason": "No matching migrated News slug exists; use the approved News index fallback."
       },
       {
         "wpId": 26632,
@@ -808,7 +936,11 @@
         "from": "https://erasmus.org.ge/breaking-down-barriers-with-erasmus/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/news/",
+        "included": true,
+        "rule": "opinion/blog",
+        "reviewReason": "No matching migrated News slug exists; use the approved News index fallback."
       },
       {
         "wpId": 26644,
@@ -816,7 +948,11 @@
         "from": "https://erasmus.org.ge/rethinking-higher-education-practices-in-the-era-of-artificial-intelligence-alexander-tevzadze/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/news/",
+        "included": true,
+        "rule": "opinion/blog",
+        "reviewReason": "No matching migrated News slug exists; use the approved News index fallback."
       },
       {
         "wpId": 26658,
@@ -824,7 +960,11 @@
         "from": "https://erasmus.org.ge/internationalization-as-a-tool-for-quality-enhancement/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/news/",
+        "included": true,
+        "rule": "opinion/blog",
+        "reviewReason": "No matching migrated News slug exists; use the approved News index fallback."
       },
       {
         "wpId": 26666,
@@ -832,7 +972,11 @@
         "from": "https://erasmus.org.ge/square-project-irma-grdzelidze/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/news/",
+        "included": true,
+        "rule": "opinion/blog",
+        "reviewReason": "No matching migrated News slug exists; use the approved News index fallback."
       },
       {
         "wpId": 26678,
@@ -840,7 +984,11 @@
         "from": "https://erasmus.org.ge/fostering-the-third-mission-of-universities-tamar-sanikidze/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/news/",
+        "included": true,
+        "rule": "opinion/blog",
+        "reviewReason": "No matching migrated News slug exists; use the approved News index fallback."
       },
       {
         "wpId": 26728,
@@ -848,7 +996,11 @@
         "from": "https://erasmus.org.ge/elementor-26728/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": null,
+        "included": false,
+        "rule": "excluded draft",
+        "reviewReason": "Elementor draft or placeholder title."
       },
       {
         "wpId": 26741,
@@ -856,7 +1008,11 @@
         "from": "https://erasmus.org.ge/elementor-26741/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": null,
+        "included": false,
+        "rule": "excluded draft",
+        "reviewReason": "Elementor draft or placeholder title."
       },
       {
         "wpId": 26772,
@@ -864,7 +1020,11 @@
         "from": "https://erasmus.org.ge/neo-%e1%83%a1-%e1%83%9e%e1%83%a0%e1%83%94%e1%83%a1-%e1%83%a0%e1%83%94%e1%83%9a%e1%83%98%e1%83%96%e1%83%98-2/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/news/",
+        "included": true,
+        "rule": "opinion/blog",
+        "reviewReason": "No matching migrated News slug exists; use the approved News index fallback."
       },
       {
         "wpId": 27161,
@@ -872,7 +1032,11 @@
         "from": "https://erasmus.org.ge/reminder-%e1%83%94%e1%83%a0%e1%83%90%e1%83%a1%e1%83%9b%e1%83%a3%e1%83%a1-%e1%83%9b%e1%83%a1%e1%83%ae%e1%83%95%e1%83%98%e1%83%9a%e1%83%9b%e1%83%90%e1%83%a1%e1%83%a8%e1%83%a2%e1%83%90%e1%83%91/",
         "suggestedTargetSection": "/ka/opportunities/",
         "reason": "Opportunities: review the relevant structured Action page",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/cbhe/",
+        "included": true,
+        "rule": "matching Action",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 27524,
@@ -880,7 +1044,11 @@
         "from": "https://erasmus.org.ge/heres-event-on-reforming-research-assessment-in-the-european-union-2/",
         "suggestedTargetSection": "/ka/about/",
         "reason": "About: office, team, services, HEREs or contact",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/about/here/",
+        "included": true,
+        "rule": "HERE guidance/membership",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 27586,
@@ -888,7 +1056,11 @@
         "from": "https://erasmus.org.ge/erasmusstatisticsbefore2014/",
         "suggestedTargetSection": "/ka/resources/",
         "reason": "Resources: publications, statistics, FAQ, priorities or education system",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/statistics/",
+        "included": true,
+        "rule": "statistics",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 27592,
@@ -896,7 +1068,11 @@
         "from": "https://erasmus.org.ge/erasmusstatistics2014-2020/",
         "suggestedTargetSection": "/ka/resources/",
         "reason": "Resources: publications, statistics, FAQ, priorities or education system",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/statistics/",
+        "included": true,
+        "rule": "statistics",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 27597,
@@ -904,7 +1080,11 @@
         "from": "https://erasmus.org.ge/erasmusstatistics2021-2027/",
         "suggestedTargetSection": "/ka/resources/",
         "reason": "Resources: publications, statistics, FAQ, priorities or education system",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/statistics/",
+        "included": true,
+        "rule": "statistics",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 28330,
@@ -912,7 +1092,11 @@
         "from": "https://erasmus.org.ge/28330-2/",
         "suggestedTargetSection": "/ka/opportunities/",
         "reason": "Opportunities: review the relevant structured Action page",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/",
+        "included": true,
+        "rule": "unmatched programme/SEO",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 28343,
@@ -920,7 +1104,11 @@
         "from": "https://erasmus.org.ge/28343-2/",
         "suggestedTargetSection": "/ka/opportunities/",
         "reason": "Opportunities: review the relevant structured Action page",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/",
+        "included": true,
+        "rule": "unmatched programme/SEO",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 28347,
@@ -928,7 +1116,11 @@
         "from": "https://erasmus.org.ge/28347-2/",
         "suggestedTargetSection": "/ka/opportunities/",
         "reason": "Opportunities: review the relevant structured Action page",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/",
+        "included": true,
+        "rule": "unmatched programme/SEO",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 28360,
@@ -936,7 +1128,11 @@
         "from": "https://erasmus.org.ge/28360-2/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/",
+        "included": true,
+        "rule": "unmatched programme/SEO",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 28366,
@@ -944,7 +1140,11 @@
         "from": "https://erasmus.org.ge/28366-2/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/",
+        "included": true,
+        "rule": "unmatched programme/SEO",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 28377,
@@ -952,7 +1152,11 @@
         "from": "https://erasmus.org.ge/28377-2/",
         "suggestedTargetSection": "/ka/opportunities/",
         "reason": "Opportunities: review the relevant structured Action page",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/",
+        "included": true,
+        "rule": "unmatched programme/SEO",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 28382,
@@ -960,7 +1164,11 @@
         "from": "https://erasmus.org.ge/28382-2/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/",
+        "included": true,
+        "rule": "unmatched programme/SEO",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 28390,
@@ -968,7 +1176,11 @@
         "from": "https://erasmus.org.ge/28390-2/",
         "suggestedTargetSection": "/ka/opportunities/",
         "reason": "Opportunities: review the relevant structured Action page",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/",
+        "included": true,
+        "rule": "unmatched programme/SEO",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 28392,
@@ -976,7 +1188,11 @@
         "from": "https://erasmus.org.ge/28392-2/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/",
+        "included": true,
+        "rule": "unmatched programme/SEO",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 28395,
@@ -984,7 +1200,11 @@
         "from": "https://erasmus.org.ge/28395-2/",
         "suggestedTargetSection": "/ka/opportunities/",
         "reason": "Opportunities: review the relevant structured Action page",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/",
+        "included": true,
+        "rule": "unmatched programme/SEO",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 28666,
@@ -992,7 +1212,11 @@
         "from": "https://erasmus.org.ge/28666-2/",
         "suggestedTargetSection": "/ka/resources/",
         "reason": "Resources: publications, statistics, FAQ, priorities or education system",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/statistics/",
+        "included": true,
+        "rule": "statistics",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 29063,
@@ -1000,7 +1224,11 @@
         "from": "https://erasmus.org.ge/%e1%83%9e%e1%83%a0%e1%83%9d%e1%83%92%e1%83%a0%e1%83%90%e1%83%9b%e1%83%94%e1%83%91%e1%83%98/",
         "suggestedTargetSection": "/ka/opportunities/",
         "reason": "Opportunities: review the relevant structured Action page",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/",
+        "included": true,
+        "rule": "unmatched programme/SEO",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 29140,
@@ -1008,7 +1236,11 @@
         "from": "https://erasmus.org.ge/%e1%83%a3%e1%83%9b%e1%83%90%e1%83%a6%e1%83%9a%e1%83%94%e1%83%a1%e1%83%98-%e1%83%92%e1%83%90%e1%83%9c%e1%83%90%e1%83%97%e1%83%9a%e1%83%94%e1%83%91%e1%83%90/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": null,
+        "included": false,
+        "rule": "unresolved",
+        "reviewReason": "No approved rule establishes a destination; omitted without guessing."
       },
       {
         "wpId": 29177,
@@ -1016,7 +1248,11 @@
         "from": "https://erasmus.org.ge/mobility-projects-for-he-students-and-staff/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/icm/",
+        "included": true,
+        "rule": "matching Action",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 29191,
@@ -1024,7 +1260,11 @@
         "from": "https://erasmus.org.ge/icm-he-students-and-staff/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/icm/",
+        "included": true,
+        "rule": "matching Action",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 29197,
@@ -1032,7 +1272,11 @@
         "from": "https://erasmus.org.ge/mobility-for-learners-and-staff-in-vet/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/",
+        "included": true,
+        "rule": "resources/organisation guidance",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 29207,
@@ -1040,7 +1284,11 @@
         "from": "https://erasmus.org.ge/mobility-for-young-people-youth-exchange/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/youth-mobility/",
+        "included": true,
+        "rule": "matching Action",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 29212,
@@ -1048,7 +1296,11 @@
         "from": "https://erasmus.org.ge/mobility-projects-for-youth-workers/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/youth-mobility/",
+        "included": true,
+        "rule": "matching Action",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 29217,
@@ -1056,7 +1308,11 @@
         "from": "https://erasmus.org.ge/youth-participation-activities-non-formal-activities/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": null,
+        "included": false,
+        "rule": "unresolved",
+        "reviewReason": "No approved rule establishes a destination; omitted without guessing."
       },
       {
         "wpId": 29222,
@@ -1064,7 +1320,11 @@
         "from": "https://erasmus.org.ge/virtual-exchanges-in-higher-education-and-youth/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/virtual-exchanges/",
+        "included": true,
+        "rule": "matching Action",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 29229,
@@ -1072,7 +1332,11 @@
         "from": "https://erasmus.org.ge/cooperation-partnerships-for-higher-education/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/",
+        "included": true,
+        "rule": "unmatched programme/SEO",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 29235,
@@ -1080,7 +1344,11 @@
         "from": "https://erasmus.org.ge/cooperation-partnership-in-the-filed-of-vet/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/",
+        "included": true,
+        "rule": "unmatched programme/SEO",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 29240,
@@ -1088,7 +1356,11 @@
         "from": "https://erasmus.org.ge/cooperation-partnership-in-the-filed-of-school/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/",
+        "included": true,
+        "rule": "unmatched programme/SEO",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 29245,
@@ -1096,7 +1368,11 @@
         "from": "https://erasmus.org.ge/cooperation-partnership-in-the-filed-of-adult-education/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/",
+        "included": true,
+        "rule": "unmatched programme/SEO",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 29250,
@@ -1104,7 +1380,11 @@
         "from": "https://erasmus.org.ge/cooperation-partnership-in-the-filed-of-youth/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/",
+        "included": true,
+        "rule": "unmatched programme/SEO",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 29255,
@@ -1112,7 +1392,11 @@
         "from": "https://erasmus.org.ge/cooperation-partnership-in-the-filed-of-sport/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/",
+        "included": true,
+        "rule": "unmatched programme/SEO",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 29260,
@@ -1120,7 +1404,11 @@
         "from": "https://erasmus.org.ge/centers-of-vocation-excellence/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/",
+        "included": true,
+        "rule": "unmatched programme/SEO",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 29265,
@@ -1128,7 +1416,11 @@
         "from": "https://erasmus.org.ge/erasmus-mundus-joint-master-degree/",
         "suggestedTargetSection": "/ka/opportunities/",
         "reason": "Opportunities: review the relevant structured Action page",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/erasmus-mundus/",
+        "included": true,
+        "rule": "matching Action",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 29270,
@@ -1136,7 +1428,11 @@
         "from": "https://erasmus.org.ge/alliances-for-innovation-hei-vet-training-broader-socio-economic-env/",
         "suggestedTargetSection": "/ka/about/",
         "reason": "About: office, team, services, HEREs or contact",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/",
+        "included": true,
+        "rule": "unmatched programme/SEO",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 29275,
@@ -1144,7 +1440,11 @@
         "from": "https://erasmus.org.ge/capacity-builiding-in-the-filed-of-higher-education/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/cbhe/",
+        "included": true,
+        "rule": "matching Action",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 29280,
@@ -1152,7 +1452,11 @@
         "from": "https://erasmus.org.ge/capacity-builiding-in-the-filed-of-vet/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/cb-vet/",
+        "included": true,
+        "rule": "matching Action",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 29285,
@@ -1160,7 +1464,11 @@
         "from": "https://erasmus.org.ge/jean-monnet-in-the-filed-of-higher-education/",
         "suggestedTargetSection": "/ka/opportunities/",
         "reason": "Opportunities: review the relevant structured Action page",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/jean-monnet/",
+        "included": true,
+        "rule": "matching Action",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 29290,
@@ -1168,7 +1476,11 @@
         "from": "https://erasmus.org.ge/jean-monnet-policy-debate/",
         "suggestedTargetSection": "/ka/opportunities/",
         "reason": "Opportunities: review the relevant structured Action page",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/jean-monnet/",
+        "included": true,
+        "rule": "matching Action",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 29548,
@@ -1176,7 +1488,11 @@
         "from": "https://erasmus.org.ge/news-2/",
         "suggestedTargetSection": "/ka/news/",
         "reason": "News, split into News and Events after type review",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/news/",
+        "included": true,
+        "rule": "news index",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 30276,
@@ -1184,7 +1500,11 @@
         "from": "https://erasmus.org.ge/horizontal-priorities/",
         "suggestedTargetSection": "/ka/resources/",
         "reason": "Resources: publications, statistics, FAQ, priorities or education system",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/",
+        "included": true,
+        "rule": "resources/organisation guidance",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 30368,
@@ -1192,7 +1512,11 @@
         "from": "https://erasmus.org.ge/inclusion-and-diversity/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": null,
+        "included": false,
+        "rule": "unresolved",
+        "reviewReason": "No approved rule establishes a destination; omitted without guessing."
       },
       {
         "wpId": 30370,
@@ -1200,7 +1524,11 @@
         "from": "https://erasmus.org.ge/environment-and-fight-against-climate-change/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": null,
+        "included": false,
+        "rule": "unresolved",
+        "reviewReason": "No approved rule establishes a destination; omitted without guessing."
       },
       {
         "wpId": 30372,
@@ -1208,7 +1536,11 @@
         "from": "https://erasmus.org.ge/digital-transformation/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": null,
+        "included": false,
+        "rule": "unresolved",
+        "reviewReason": "No approved rule establishes a destination; omitted without guessing."
       },
       {
         "wpId": 30374,
@@ -1216,7 +1548,11 @@
         "from": "https://erasmus.org.ge/participation-in-democratic-life-common-values-and-civic-engagement/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": null,
+        "included": false,
+        "rule": "unresolved",
+        "reviewReason": "No approved rule establishes a destination; omitted without guessing."
       },
       {
         "wpId": 30514,
@@ -1224,7 +1560,11 @@
         "from": "https://erasmus.org.ge/vet-statistics-2021-20027/",
         "suggestedTargetSection": "/ka/resources/",
         "reason": "Resources: publications, statistics, FAQ, priorities or education system",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/statistics/",
+        "included": true,
+        "rule": "statistics",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 30543,
@@ -1232,7 +1572,11 @@
         "from": "https://erasmus.org.ge/statistics-adult-education-2027/",
         "suggestedTargetSection": "/ka/resources/",
         "reason": "Resources: publications, statistics, FAQ, priorities or education system",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/statistics/",
+        "included": true,
+        "rule": "statistics",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 30548,
@@ -1240,7 +1584,11 @@
         "from": "https://erasmus.org.ge/statistics-youth-2027/",
         "suggestedTargetSection": "/ka/resources/",
         "reason": "Resources: publications, statistics, FAQ, priorities or education system",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/statistics/",
+        "included": true,
+        "rule": "statistics",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 30553,
@@ -1248,7 +1596,11 @@
         "from": "https://erasmus.org.ge/schools/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/",
+        "included": true,
+        "rule": "unmatched programme/SEO",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 30555,
@@ -1256,7 +1608,11 @@
         "from": "https://erasmus.org.ge/sport-statistics-2027/",
         "suggestedTargetSection": "/ka/resources/",
         "reason": "Resources: publications, statistics, FAQ, priorities or education system",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/statistics/",
+        "included": true,
+        "rule": "statistics",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 30570,
@@ -1264,7 +1620,11 @@
         "from": "https://erasmus.org.ge/statistics-schools-2027/",
         "suggestedTargetSection": "/ka/resources/",
         "reason": "Resources: publications, statistics, FAQ, priorities or education system",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/statistics/",
+        "included": true,
+        "rule": "statistics",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 30603,
@@ -1272,7 +1632,11 @@
         "from": "https://erasmus.org.ge/general-information-about-erasmus/",
         "suggestedTargetSection": "/ka/about/",
         "reason": "About: office, team, services, HEREs or contact",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/about/",
+        "included": true,
+        "rule": "office/services",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 30616,
@@ -1280,7 +1644,11 @@
         "from": "https://erasmus.org.ge/good-practice-examples/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": null,
+        "included": false,
+        "rule": "unresolved",
+        "reviewReason": "No approved rule establishes a destination; omitted without guessing."
       },
       {
         "wpId": 30650,
@@ -1288,7 +1656,11 @@
         "from": "https://erasmus.org.ge/capacity-building-in-youth/",
         "suggestedTargetSection": "/ka/opportunities/",
         "reason": "Opportunities: review the relevant structured Action page",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/cb-youth/",
+        "included": true,
+        "rule": "matching Action",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 30652,
@@ -1296,7 +1668,11 @@
         "from": "https://erasmus.org.ge/capacity-building-in-sport/",
         "suggestedTargetSection": "/ka/opportunities/",
         "reason": "Opportunities: review the relevant structured Action page",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/cb-sport/",
+        "included": true,
+        "rule": "matching Action",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 30784,
@@ -1304,7 +1680,11 @@
         "from": "https://erasmus.org.ge/heres-lominadze/",
         "suggestedTargetSection": "/ka/about/",
         "reason": "About: office, team, services, HEREs or contact",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/about/here/",
+        "included": true,
+        "rule": "HERE guidance/membership",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 30789,
@@ -1312,7 +1692,11 @@
         "from": "https://erasmus.org.ge/heres-gergedava/",
         "suggestedTargetSection": "/ka/about/",
         "reason": "About: office, team, services, HEREs or contact",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/about/here/",
+        "included": true,
+        "rule": "HERE guidance/membership",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 30794,
@@ -1320,7 +1704,11 @@
         "from": "https://erasmus.org.ge/heres-margishvili/",
         "suggestedTargetSection": "/ka/about/",
         "reason": "About: office, team, services, HEREs or contact",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/about/here/",
+        "included": true,
+        "rule": "HERE guidance/membership",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 30799,
@@ -1328,7 +1716,11 @@
         "from": "https://erasmus.org.ge/heres_tevzadze/",
         "suggestedTargetSection": "/ka/about/",
         "reason": "About: office, team, services, HEREs or contact",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/about/here/",
+        "included": true,
+        "rule": "HERE guidance/membership",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 30804,
@@ -1336,7 +1728,11 @@
         "from": "https://erasmus.org.ge/heres_grdzelidze/",
         "suggestedTargetSection": "/ka/about/",
         "reason": "About: office, team, services, HEREs or contact",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/about/here/",
+        "included": true,
+        "rule": "HERE guidance/membership",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 30809,
@@ -1344,7 +1740,11 @@
         "from": "https://erasmus.org.ge/heres_buchashvili/",
         "suggestedTargetSection": "/ka/about/",
         "reason": "About: office, team, services, HEREs or contact",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/about/here/",
+        "included": true,
+        "rule": "HERE guidance/membership",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 30814,
@@ -1352,7 +1752,11 @@
         "from": "https://erasmus.org.ge/heres-tepnadze/",
         "suggestedTargetSection": "/ka/about/",
         "reason": "About: office, team, services, HEREs or contact",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/about/here/",
+        "included": true,
+        "rule": "HERE guidance/membership",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 30819,
@@ -1360,7 +1764,11 @@
         "from": "https://erasmus.org.ge/heres_sanikidze_/",
         "suggestedTargetSection": "/ka/about/",
         "reason": "About: office, team, services, HEREs or contact",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/about/here/",
+        "included": true,
+        "rule": "HERE guidance/membership",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 30824,
@@ -1368,7 +1776,11 @@
         "from": "https://erasmus.org.ge/heres_tsotniashvili_/",
         "suggestedTargetSection": "/ka/about/",
         "reason": "About: office, team, services, HEREs or contact",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/about/here/",
+        "included": true,
+        "rule": "HERE guidance/membership",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 30829,
@@ -1376,7 +1788,11 @@
         "from": "https://erasmus.org.ge/heres_zedgenidze__/",
         "suggestedTargetSection": "/ka/about/",
         "reason": "About: office, team, services, HEREs or contact",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/about/here/",
+        "included": true,
+        "rule": "HERE guidance/membership",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 31047,
@@ -1384,7 +1800,11 @@
         "from": "https://erasmus.org.ge/staff_week/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/events/",
+        "included": true,
+        "rule": "events index",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 32292,
@@ -1392,7 +1812,11 @@
         "from": "https://erasmus.org.ge/%e1%83%9e%e1%83%a3%e1%83%91%e1%83%9a%e1%83%98%e1%83%99%e1%83%90%e1%83%aa%e1%83%98%e1%83%94%e1%83%91%e1%83%98-2014-2020/",
         "suggestedTargetSection": "/ka/resources/",
         "reason": "Resources: publications, statistics, FAQ, priorities or education system",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/publications/",
+        "included": true,
+        "rule": "publication/newsletter",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 32520,
@@ -1400,7 +1824,11 @@
         "from": "https://erasmus.org.ge/publications-erasmus/",
         "suggestedTargetSection": "/ka/resources/",
         "reason": "Resources: publications, statistics, FAQ, priorities or education system",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/publications/",
+        "included": true,
+        "rule": "publication/newsletter",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 32550,
@@ -1408,7 +1836,11 @@
         "from": "https://erasmus.org.ge/2025-deadlines/",
         "suggestedTargetSection": "/ka/calls/",
         "reason": "Calls and deadlines",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/calls/",
+        "included": true,
+        "rule": "calls/archive",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 32653,
@@ -1416,7 +1848,11 @@
         "from": "https://erasmus.org.ge/erasmusdays2024publication/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/publications/",
+        "included": true,
+        "rule": "publication/newsletter",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 32669,
@@ -1424,7 +1860,11 @@
         "from": "https://erasmus.org.ge/theeugreendeal/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/news/",
+        "included": true,
+        "rule": "opinion/blog",
+        "reviewReason": "No matching migrated News slug exists; use the approved News index fallback."
       },
       {
         "wpId": 32710,
@@ -1432,7 +1872,11 @@
         "from": "https://erasmus.org.ge/technical_assistance_mission/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/news/",
+        "included": true,
+        "rule": "opinion/blog",
+        "reviewReason": "No matching migrated News slug exists; use the approved News index fallback."
       },
       {
         "wpId": 32733,
@@ -1440,7 +1884,11 @@
         "from": "https://erasmus.org.ge/enhancing_university-industry_collaboration/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/news/",
+        "included": true,
+        "rule": "opinion/blog",
+        "reviewReason": "No matching migrated News slug exists; use the approved News index fallback."
       },
       {
         "wpId": 32750,
@@ -1448,7 +1896,11 @@
         "from": "https://erasmus.org.ge/tips-for-creating-a-competitive-proposal-for-erasmus-capacity-building-in-higher-education-cbhe-programme/",
         "suggestedTargetSection": "/ka/opportunities/",
         "reason": "Opportunities: review the relevant structured Action page",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/cbhe/",
+        "included": true,
+        "rule": "matching Action",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 32760,
@@ -1456,7 +1908,11 @@
         "from": "https://erasmus.org.ge/georgias-unique-cultural-heritage/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/news/",
+        "included": true,
+        "rule": "opinion/blog",
+        "reviewReason": "No matching migrated News slug exists; use the approved News index fallback."
       },
       {
         "wpId": 32776,
@@ -1464,7 +1920,11 @@
         "from": "https://erasmus.org.ge/what-is-done-under-cb-vet-in-georgia/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": null,
+        "included": false,
+        "rule": "unresolved",
+        "reviewReason": "No approved rule establishes a destination; omitted without guessing."
       },
       {
         "wpId": 32785,
@@ -1472,7 +1932,11 @@
         "from": "https://erasmus.org.ge/capacity-building-in-higher-education-cbhe-in-georgia-2014-2024/",
         "suggestedTargetSection": "/ka/opportunities/",
         "reason": "Opportunities: review the relevant structured Action page",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/cbhe/",
+        "included": true,
+        "rule": "matching Action",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 32795,
@@ -1480,7 +1944,11 @@
         "from": "https://erasmus.org.ge/jean-monnet-programme-overview-in-georgian-context/",
         "suggestedTargetSection": "/ka/opportunities/",
         "reason": "Opportunities: review the relevant structured Action page",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/jean-monnet/",
+        "included": true,
+        "rule": "matching Action",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 32804,
@@ -1488,7 +1956,11 @@
         "from": "https://erasmus.org.ge/embarking-on-an-erasmus-journey/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/news/",
+        "included": true,
+        "rule": "opinion/blog",
+        "reviewReason": "No matching migrated News slug exists; use the approved News index fallback."
       },
       {
         "wpId": 32812,
@@ -1496,7 +1968,11 @@
         "from": "https://erasmus.org.ge/erasmus-breaking-barriers-in-cultural-differences/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/news/",
+        "included": true,
+        "rule": "opinion/blog",
+        "reviewReason": "No matching migrated News slug exists; use the approved News index fallback."
       },
       {
         "wpId": 32821,
@@ -1504,7 +1980,11 @@
         "from": "https://erasmus.org.ge/exploring-erasmus-mundus-joint-masters/",
         "suggestedTargetSection": "/ka/opportunities/",
         "reason": "Opportunities: review the relevant structured Action page",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/erasmus-mundus/",
+        "included": true,
+        "rule": "matching Action",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 33008,
@@ -1512,7 +1992,11 @@
         "from": "https://erasmus.org.ge/impact-of-erasmus/",
         "suggestedTargetSection": "/ka/opportunities/",
         "reason": "Opportunities: review the relevant structured Action page",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/icm/",
+        "included": true,
+        "rule": "matching Action",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 33037,
@@ -1520,7 +2004,11 @@
         "from": "https://erasmus.org.ge/how-to-participate-in-student-mobility/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/icm/",
+        "included": true,
+        "rule": "matching Action",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 33040,
@@ -1528,7 +2016,11 @@
         "from": "https://erasmus.org.ge/how-to-participate-in-erasmus-mundus-joint-masters/",
         "suggestedTargetSection": "/ka/opportunities/",
         "reason": "Opportunities: review the relevant structured Action page",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/erasmus-mundus/",
+        "included": true,
+        "rule": "matching Action",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 33042,
@@ -1536,7 +2028,11 @@
         "from": "https://erasmus.org.ge/how-to-participate-in-youth-mobility/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/youth-mobility/",
+        "included": true,
+        "rule": "matching Action",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 33044,
@@ -1544,7 +2040,11 @@
         "from": "https://erasmus.org.ge/erasmus-programmes/",
         "suggestedTargetSection": "/ka/opportunities/",
         "reason": "Opportunities: review the relevant structured Action page",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/",
+        "included": true,
+        "rule": "unmatched programme/SEO",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 33046,
@@ -1552,7 +2052,11 @@
         "from": "https://erasmus.org.ge/erasmus-charter-higher-education/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": null,
+        "included": false,
+        "rule": "unresolved",
+        "reviewReason": "No approved rule establishes a destination; omitted without guessing."
       },
       {
         "wpId": 33048,
@@ -1560,7 +2064,11 @@
         "from": "https://erasmus.org.ge/difference-between-na-and-neo/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/about/",
+        "included": true,
+        "rule": "office/services",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 33050,
@@ -1568,7 +2076,11 @@
         "from": "https://erasmus.org.ge/how-to-participate-in-staff-mobility/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/icm/",
+        "included": true,
+        "rule": "matching Action",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 33052,
@@ -1576,7 +2088,11 @@
         "from": "https://erasmus.org.ge/difference-between-ftop-and-webgate/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/",
+        "included": true,
+        "rule": "resources/organisation guidance",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 33107,
@@ -1584,7 +2100,11 @@
         "from": "https://erasmus.org.ge/how-to-get-oid-number/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/",
+        "included": true,
+        "rule": "resources/organisation guidance",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 33174,
@@ -1592,7 +2112,11 @@
         "from": "https://erasmus.org.ge/adding_or_deleting_a_bank_account/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/",
+        "included": true,
+        "rule": "resources/organisation guidance",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 33176,
@@ -1600,7 +2124,11 @@
         "from": "https://erasmus.org.ge/organisation_data_updates/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/",
+        "included": true,
+        "rule": "resources/organisation guidance",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 33178,
@@ -1608,7 +2136,11 @@
         "from": "https://erasmus.org.ge/lears_account_administrators/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/",
+        "included": true,
+        "rule": "resources/organisation guidance",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 33180,
@@ -1616,7 +2148,11 @@
         "from": "https://erasmus.org.ge/electronic_submission_system/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/",
+        "included": true,
+        "rule": "resources/organisation guidance",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 33182,
@@ -1624,7 +2160,11 @@
         "from": "https://erasmus.org.ge/lear_appointmentvalidation/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/",
+        "included": true,
+        "rule": "resources/organisation guidance",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 33184,
@@ -1632,7 +2172,11 @@
         "from": "https://erasmus.org.ge/cbhe_project_page_limitation/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/cbhe/",
+        "included": true,
+        "rule": "matching Action",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 33300,
@@ -1640,7 +2184,11 @@
         "from": "https://erasmus.org.ge/ftop_registration/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/",
+        "included": true,
+        "rule": "resources/organisation guidance",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 33326,
@@ -1648,7 +2196,11 @@
         "from": "https://erasmus.org.ge/short_instructions_for_registering_on_ftop_and_webgate/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/",
+        "included": true,
+        "rule": "resources/organisation guidance",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 33338,
@@ -1656,7 +2208,11 @@
         "from": "https://erasmus.org.ge/registration_ftop_webgate/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/",
+        "included": true,
+        "rule": "resources/organisation guidance",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 33412,
@@ -1664,7 +2220,11 @@
         "from": "https://erasmus.org.ge/faq-bank-account/",
         "suggestedTargetSection": "/ka/resources/",
         "reason": "Resources: publications, statistics, FAQ, priorities or education system",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/faq/",
+        "included": true,
+        "rule": "FAQ",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 33417,
@@ -1672,7 +2232,11 @@
         "from": "https://erasmus.org.ge/webgate-registration/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/",
+        "included": true,
+        "rule": "resources/organisation guidance",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 33450,
@@ -1680,7 +2244,11 @@
         "from": "https://erasmus.org.ge/capacity_building_in_the_field_artsector/",
         "suggestedTargetSection": "/ka/opportunities/",
         "reason": "Opportunities: review the relevant structured Action page",
-        "suggested": true
+        "suggested": false,
+        "to": null,
+        "included": false,
+        "rule": "unresolved",
+        "reviewReason": "No approved rule establishes a destination; omitted without guessing."
       },
       {
         "wpId": 33581,
@@ -1688,7 +2256,11 @@
         "from": "https://erasmus.org.ge/%e1%83%92%e1%83%90%e1%83%9c%e1%83%90%e1%83%97%e1%83%9a%e1%83%94%e1%83%91%e1%83%98%e1%83%a1-%e1%83%a1%e1%83%98%e1%83%a1%e1%83%a2%e1%83%94%e1%83%9b%e1%83%90/",
         "suggestedTargetSection": "/ka/resources/",
         "reason": "Resources: publications, statistics, FAQ, priorities or education system",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/",
+        "included": true,
+        "rule": "resources/organisation guidance",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 33586,
@@ -1696,7 +2268,11 @@
         "from": "https://erasmus.org.ge/long-term-politics-of-the-moesy/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": null,
+        "included": false,
+        "rule": "unresolved",
+        "reviewReason": "No approved rule establishes a destination; omitted without guessing."
       },
       {
         "wpId": 33591,
@@ -1704,7 +2280,11 @@
         "from": "https://erasmus.org.ge/georgia-in-eurydice-network/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": null,
+        "included": false,
+        "rule": "unresolved",
+        "reviewReason": "No approved rule establishes a destination; omitted without guessing."
       },
       {
         "wpId": 33605,
@@ -1712,7 +2292,11 @@
         "from": "https://erasmus.org.ge/education-system-in-georgia/",
         "suggestedTargetSection": "/ka/resources/",
         "reason": "Resources: publications, statistics, FAQ, priorities or education system",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/",
+        "included": true,
+        "rule": "resources/organisation guidance",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 33650,
@@ -1720,7 +2304,11 @@
         "from": "https://erasmus.org.ge/event-directory/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/events/",
+        "included": true,
+        "rule": "events index",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 34013,
@@ -1728,7 +2316,11 @@
         "from": "https://erasmus.org.ge/support-letters/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/about/",
+        "included": true,
+        "rule": "office/services",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 34014,
@@ -1736,7 +2328,11 @@
         "from": "https://erasmus.org.ge/%e1%83%93%e1%83%a6%e1%83%92-%e1%83%a1%e1%83%92%e1%83%90%e1%83%9c-%e1%83%92%e1%83%90%e1%83%97%e1%83%90%e1%83%95%e1%83%98%e1%83%a1%e1%83%a3%e1%83%a4%e1%83%9a%e1%83%94%e1%83%91%e1%83%90/",
         "suggestedTargetSection": "/ka/about/",
         "reason": "About: office, team, services, HEREs or contact",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/about/",
+        "included": true,
+        "rule": "office/services",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 34102,
@@ -1744,7 +2340,11 @@
         "from": "https://erasmus.org.ge/statistics-2/",
         "suggestedTargetSection": "/ka/resources/",
         "reason": "Resources: publications, statistics, FAQ, priorities or education system",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/statistics/",
+        "included": true,
+        "rule": "statistics",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 34103,
@@ -1752,7 +2352,11 @@
         "from": "https://erasmus.org.ge/statistics-3/",
         "suggestedTargetSection": "/ka/resources/",
         "reason": "Resources: publications, statistics, FAQ, priorities or education system",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/statistics/",
+        "included": true,
+        "rule": "statistics",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 34189,
@@ -1760,7 +2364,11 @@
         "from": "https://erasmus.org.ge/%e1%83%9b%e1%83%98%e1%83%99%e1%83%a0%e1%83%9d%e1%83%99%e1%83%a0%e1%83%94%e1%83%93%e1%83%98%e1%83%a2%e1%83%94%e1%83%91%e1%83%98-%e1%83%a3%e1%83%9c%e1%83%90%e1%83%a0%e1%83%94%e1%83%91%e1%83%98/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/news/",
+        "included": true,
+        "rule": "opinion/blog",
+        "reviewReason": "No matching migrated News slug exists; use the approved News index fallback."
       },
       {
         "wpId": 34194,
@@ -1768,7 +2376,11 @@
         "from": "https://erasmus.org.ge/publication_31-07/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/publications/",
+        "included": true,
+        "rule": "publication/newsletter",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 34257,
@@ -1776,7 +2388,11 @@
         "from": "https://erasmus.org.ge/publication_workshops-erasmus-practical-experience-examples-and-financial-management/",
         "suggestedTargetSection": "/ka/resources/",
         "reason": "Resources: publications, statistics, FAQ, priorities or education system",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/publications/",
+        "included": true,
+        "rule": "publication/newsletter",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 34284,
@@ -1784,7 +2400,11 @@
         "from": "https://erasmus.org.ge/faq-21-internships/",
         "suggestedTargetSection": "/ka/resources/",
         "reason": "Resources: publications, statistics, FAQ, priorities or education system",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/faq/",
+        "included": true,
+        "rule": "FAQ",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 34308,
@@ -1792,7 +2412,11 @@
         "from": "https://erasmus.org.ge/%e1%83%90%e1%83%a5-%e1%83%a9%e1%83%90%e1%83%ac%e1%83%94%e1%83%a0%e1%83%94-%e1%83%92%e1%83%95%e1%83%94%e1%83%a0%e1%83%93%e1%83%98%e1%83%a1-%e1%83%a1%e1%83%90%e1%83%ae%e1%83%94%e1%83%9a%e1%83%98/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": null,
+        "included": false,
+        "rule": "excluded draft",
+        "reviewReason": "Elementor draft or placeholder title."
       },
       {
         "wpId": 34421,
@@ -1800,7 +2424,11 @@
         "from": "https://erasmus.org.ge/emjm_2025/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/erasmus-mundus/",
+        "included": true,
+        "rule": "matching Action",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 34653,
@@ -1808,7 +2436,11 @@
         "from": "https://erasmus.org.ge/publication_eaie/",
         "suggestedTargetSection": "/ka/resources/",
         "reason": "Resources: publications, statistics, FAQ, priorities or education system",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/publications/",
+        "included": true,
+        "rule": "publication/newsletter",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 34683,
@@ -1816,7 +2448,11 @@
         "from": "https://erasmus.org.ge/%e1%83%98%e1%83%9c%e1%83%a1%e1%83%a2%e1%83%98%e1%83%a2%e1%83%a3%e1%83%aa%e1%83%98%e1%83%a3%e1%83%a0%e1%83%98-%e1%83%a8%e1%83%94%e1%83%a1%e1%83%90%e1%83%ab%e1%83%9a%e1%83%94%e1%83%91%e1%83%9a%e1%83%9d/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/news/",
+        "included": true,
+        "rule": "opinion/blog",
+        "reviewReason": "No matching migrated News slug exists; use the approved News index fallback."
       },
       {
         "wpId": 34699,
@@ -1824,7 +2460,11 @@
         "from": "https://erasmus.org.ge/publication-eaie/",
         "suggestedTargetSection": "/ka/resources/",
         "reason": "Resources: publications, statistics, FAQ, priorities or education system",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/publications/",
+        "included": true,
+        "rule": "publication/newsletter",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 34714,
@@ -1832,7 +2472,11 @@
         "from": "https://erasmus.org.ge/%e1%83%a3%e1%83%9b%e1%83%90%e1%83%a6%e1%83%9a%e1%83%94%e1%83%a1%e1%83%98-%e1%83%92%e1%83%90%e1%83%9c%e1%83%90%e1%83%97%e1%83%9a%e1%83%94%e1%83%91%e1%83%98%e1%83%a1-%e1%83%9b%e1%83%9d%e1%83%91%e1%83%98/",
         "suggestedTargetSection": "/ka/opportunities/",
         "reason": "Opportunities: review the relevant structured Action page",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/news/",
+        "included": true,
+        "rule": "opinion/blog",
+        "reviewReason": "No matching migrated News slug exists; use the approved News index fallback."
       },
       {
         "wpId": 34730,
@@ -1840,7 +2484,11 @@
         "from": "https://erasmus.org.ge/erasmus-%e1%83%98%e1%83%a1-%e1%83%98%e1%83%9c%e1%83%99%e1%83%9a%e1%83%a3%e1%83%96%e1%83%98%e1%83%a3%e1%83%a0%e1%83%98-%e1%83%ae%e1%83%90%e1%83%a0%e1%83%95%e1%83%94%e1%83%96%e1%83%98%e1%83%a1/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/news/",
+        "included": true,
+        "rule": "opinion/blog",
+        "reviewReason": "No matching migrated News slug exists; use the approved News index fallback."
       },
       {
         "wpId": 34741,
@@ -1848,7 +2496,11 @@
         "from": "https://erasmus.org.ge/%e1%83%90%e1%83%99%e1%83%90%e1%83%93%e1%83%94%e1%83%9b%e1%83%98%e1%83%98%e1%83%a1%e1%83%90-%e1%83%93%e1%83%90-%e1%83%98%e1%83%9c%e1%83%93%e1%83%a3%e1%83%a1%e1%83%a2%e1%83%a0%e1%83%98%e1%83%98%e1%83%a1/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/news/",
+        "included": true,
+        "rule": "opinion/blog",
+        "reviewReason": "No matching migrated News slug exists; use the approved News index fallback."
       },
       {
         "wpId": 34752,
@@ -1856,7 +2508,11 @@
         "from": "https://erasmus.org.ge/%e1%83%a3%e1%83%9b%e1%83%90%e1%83%a6%e1%83%9a%e1%83%94%e1%83%a1%e1%83%98-%e1%83%92%e1%83%90%e1%83%9c%e1%83%90%e1%83%97%e1%83%9a%e1%83%94%e1%83%91%e1%83%98%e1%83%a1-%e1%83%91%e1%83%98%e1%83%a0%e1%83%97/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/news/",
+        "included": true,
+        "rule": "opinion/blog",
+        "reviewReason": "No matching migrated News slug exists; use the approved News index fallback."
       },
       {
         "wpId": 34761,
@@ -1864,7 +2520,11 @@
         "from": "https://erasmus.org.ge/%e1%83%94%e1%83%a0%e1%83%9d%e1%83%95%e1%83%9c%e1%83%a3%e1%83%9a%e1%83%98-%e1%83%93%e1%83%90-%e1%83%a1%e1%83%90%e1%83%94%e1%83%a0%e1%83%97%e1%83%90%e1%83%a8%e1%83%9d%e1%83%a0%e1%83%98%e1%83%a1%e1%83%9d/",
         "suggestedTargetSection": "/ka/resources/",
         "reason": "Resources: publications, statistics, FAQ, priorities or education system",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/news/",
+        "included": true,
+        "rule": "opinion/blog",
+        "reviewReason": "No matching migrated News slug exists; use the approved News index fallback."
       },
       {
         "wpId": 34776,
@@ -1872,7 +2532,11 @@
         "from": "https://erasmus.org.ge/%e1%83%9e%e1%83%a0%e1%83%9d%e1%83%a4%e1%83%94%e1%83%a1%e1%83%98%e1%83%a3%e1%83%9a%e1%83%98-%e1%83%93%e1%83%90-%e1%83%a3%e1%83%9b%e1%83%90%e1%83%a6%e1%83%9a%e1%83%94%e1%83%a1%e1%83%98-%e1%83%92/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/news/",
+        "included": true,
+        "rule": "opinion/blog",
+        "reviewReason": "No matching migrated News slug exists; use the approved News index fallback."
       },
       {
         "wpId": 34781,
@@ -1880,7 +2544,11 @@
         "from": "https://erasmus.org.ge/%e1%83%94%e1%83%a0%e1%83%97%e1%83%98-%e1%83%98%e1%83%9c%e1%83%a1%e1%83%a2%e1%83%98%e1%83%a2%e1%83%a3%e1%83%aa%e1%83%98%e1%83%98%e1%83%a1-%e1%83%a4%e1%83%90%e1%83%a0%e1%83%92%e1%83%9a%e1%83%94%e1%83%91/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/news/",
+        "included": true,
+        "rule": "opinion/blog",
+        "reviewReason": "No matching migrated News slug exists; use the approved News index fallback."
       },
       {
         "wpId": 35012,
@@ -1888,7 +2556,11 @@
         "from": "https://erasmus.org.ge/publication_navigating-generative-ai-in-international-higher-education-opportunities-and-challenges/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/publications/",
+        "included": true,
+        "rule": "publication/newsletter",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 35043,
@@ -1896,7 +2568,11 @@
         "from": "https://erasmus.org.ge/deadlines-2026/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/calls/",
+        "included": true,
+        "rule": "calls/archive",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 35227,
@@ -1904,7 +2580,11 @@
         "from": "https://erasmus.org.ge/publication-digital-transformation-ai-governance-and-the-future-of-higher-education-insights-from-the-bucharest-sphere-2025-symposium/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/publications/",
+        "included": true,
+        "rule": "publication/newsletter",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 35306,
@@ -1912,7 +2592,11 @@
         "from": "https://erasmus.org.ge/erasmus-mundus-joint-masters-mobility/",
         "suggestedTargetSection": "/ka/opportunities/",
         "reason": "Opportunities: review the relevant structured Action page",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/erasmus-mundus/",
+        "included": true,
+        "rule": "matching Action",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 35331,
@@ -1920,7 +2604,11 @@
         "from": "https://erasmus.org.ge/capacity-building-in-the-field-of-higher-education/",
         "suggestedTargetSection": "/ka/opportunities/",
         "reason": "Opportunities: review the relevant structured Action page",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/cbhe/",
+        "included": true,
+        "rule": "matching Action",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 35348,
@@ -1928,7 +2616,11 @@
         "from": "https://erasmus.org.ge/jean-monnet-actions/",
         "suggestedTargetSection": "/ka/opportunities/",
         "reason": "Opportunities: review the relevant structured Action page",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/jean-monnet/",
+        "included": true,
+        "rule": "matching Action",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 35364,
@@ -1936,7 +2628,11 @@
         "from": "https://erasmus.org.ge/cooperation-partnership-in-higher-education/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/",
+        "included": true,
+        "rule": "unmatched programme/SEO",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 35381,
@@ -1944,7 +2640,11 @@
         "from": "https://erasmus.org.ge/vocational-education-and-training/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": null,
+        "included": false,
+        "rule": "unresolved",
+        "reviewReason": "No approved rule establishes a destination; omitted without guessing."
       },
       {
         "wpId": 35388,
@@ -1952,7 +2652,11 @@
         "from": "https://erasmus.org.ge/cooperation-partnership-in-vocational-education-and-trainings/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/",
+        "included": true,
+        "rule": "unmatched programme/SEO",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 35409,
@@ -1960,7 +2664,11 @@
         "from": "https://erasmus.org.ge/centres-of-vocational-excellence/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/",
+        "included": true,
+        "rule": "unmatched programme/SEO",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 35421,
@@ -1968,7 +2676,11 @@
         "from": "https://erasmus.org.ge/ersmus-mundus-joint-master-projects/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/erasmus-mundus/",
+        "included": true,
+        "rule": "matching Action",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 35434,
@@ -1976,7 +2688,11 @@
         "from": "https://erasmus.org.ge/erasmus-mundus-design-measures/",
         "suggestedTargetSection": "/ka/opportunities/",
         "reason": "Opportunities: review the relevant structured Action page",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/erasmus-mundus/",
+        "included": true,
+        "rule": "matching Action",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 35451,
@@ -1984,7 +2700,11 @@
         "from": "https://erasmus.org.ge/capacity-building-in-the-field-of-youth/",
         "suggestedTargetSection": "/ka/opportunities/",
         "reason": "Opportunities: review the relevant structured Action page",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/cb-youth/",
+        "included": true,
+        "rule": "matching Action",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 35466,
@@ -1992,7 +2712,11 @@
         "from": "https://erasmus.org.ge/erasmus-virtual-eschanges/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/virtual-exchanges/",
+        "included": true,
+        "rule": "matching Action",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 35482,
@@ -2000,7 +2724,11 @@
         "from": "https://erasmus.org.ge/cooperation-partnership-in-youth/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/",
+        "included": true,
+        "rule": "unmatched programme/SEO",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 35501,
@@ -2008,7 +2736,11 @@
         "from": "https://erasmus.org.ge/capacity-building-in-the-field-of-sport/",
         "suggestedTargetSection": "/ka/opportunities/",
         "reason": "Opportunities: review the relevant structured Action page",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/cb-sport/",
+        "included": true,
+        "rule": "matching Action",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 35514,
@@ -2016,7 +2748,11 @@
         "from": "https://erasmus.org.ge/cooperation-partnership-in-sport/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/",
+        "included": true,
+        "rule": "unmatched programme/SEO",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 35531,
@@ -2024,7 +2760,11 @@
         "from": "https://erasmus.org.ge/innovative-didactical-approaches-in-engineering-education/",
         "suggestedTargetSection": "/ka/about/",
         "reason": "About: office, team, services, HEREs or contact",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/publications/",
+        "included": true,
+        "rule": "publication/newsletter",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 35544,
@@ -2032,7 +2772,11 @@
         "from": "https://erasmus.org.ge/cooperation-patnership-in-adult-education/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/",
+        "included": true,
+        "rule": "unmatched programme/SEO",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 35547,
@@ -2040,7 +2784,11 @@
         "from": "https://erasmus.org.ge/publication_quality-assurance-and-recognition-of-distance-education-programs-delivered-by-either-fully-online-or-blended-learning-mode/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/publications/",
+        "included": true,
+        "rule": "publication/newsletter",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 35574,
@@ -2048,7 +2796,11 @@
         "from": "https://erasmus.org.ge/coopertion-partnership-in-schools/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/",
+        "included": true,
+        "rule": "unmatched programme/SEO",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 35598,
@@ -2056,7 +2808,11 @@
         "from": "https://erasmus.org.ge/irma-grdzelidze_advancing-higher-education-through-sustainability-publication/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/publications/",
+        "included": true,
+        "rule": "publication/newsletter",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 35608,
@@ -2064,7 +2820,11 @@
         "from": "https://erasmus.org.ge/tam-micro-credentials-and-industry-collaboration-ensuring-qualification-relevance-and-employment-opportunities_publication_buchashvili-zedginidze-zubrzycki/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/publications/",
+        "included": true,
+        "rule": "publication/newsletter",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 35624,
@@ -2072,7 +2832,11 @@
         "from": "https://erasmus.org.ge/innovative-didactical-approaches-in-engineering-education_tsotniashvili-lominadze-publication/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/publications/",
+        "included": true,
+        "rule": "publication/newsletter",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 35687,
@@ -2080,7 +2844,11 @@
         "from": "https://erasmus.org.ge/tamar-sanikidze-irma-grdzelidze_publication/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/publications/",
+        "included": true,
+        "rule": "publication/newsletter",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 35800,
@@ -2088,7 +2856,11 @@
         "from": "https://erasmus.org.ge/procedure-for-the-recognition-of-academic-credits-obtained-through-education-abroad/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": null,
+        "included": false,
+        "rule": "unresolved",
+        "reviewReason": "No approved rule establishes a destination; omitted without guessing."
       },
       {
         "wpId": 35861,
@@ -2096,7 +2868,11 @@
         "from": "https://erasmus.org.ge/publication-tamar-lominadze-tam-2/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/publications/",
+        "included": true,
+        "rule": "publication/newsletter",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 35915,
@@ -2104,7 +2880,11 @@
         "from": "https://erasmus.org.ge/35915-2/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": null,
+        "included": false,
+        "rule": "unresolved",
+        "reviewReason": "No approved rule establishes a destination; omitted without guessing."
       },
       {
         "wpId": 35932,
@@ -2112,7 +2892,11 @@
         "from": "https://erasmus.org.ge/organisation-data-can-only-be-modified-if-the-user-is-authorised-as-an-account-administrator-self-registrant-or-legal-entity-appointed-representative-lear/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/",
+        "included": true,
+        "rule": "resources/organisation guidance",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 36005,
@@ -2120,7 +2904,11 @@
         "from": "https://erasmus.org.ge/publication_sanikidze-tevzadze/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/publications/",
+        "included": true,
+        "rule": "publication/newsletter",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 36026,
@@ -2128,7 +2916,11 @@
         "from": "https://erasmus.org.ge/publication-intersectoral-cluster-development-within-erasmus/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/publications/",
+        "included": true,
+        "rule": "publication/newsletter",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 36247,
@@ -2136,7 +2928,11 @@
         "from": "https://erasmus.org.ge/the-erasmus-2026-call-results-for-capacity-building-in-higher-education-cbhe/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/opportunities/cbhe/",
+        "included": true,
+        "rule": "matching Action",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 36296,
@@ -2144,7 +2940,11 @@
         "from": "https://erasmus.org.ge/newsletter-publication-vol-6/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/publications/",
+        "included": true,
+        "rule": "publication/newsletter",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 36324,
@@ -2152,7 +2952,11 @@
         "from": "https://erasmus.org.ge/publication-tamar-sanikidze-irma-grdzelidze/",
         "suggestedTargetSection": null,
         "reason": "No SITE-PLAN section matched; Luka must choose",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/publications/",
+        "included": true,
+        "rule": "publication/newsletter",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       },
       {
         "wpId": 36398,
@@ -2160,8 +2964,13 @@
         "from": "https://erasmus.org.ge/publication-values-in-higher-education-challenges-practices-and-perspectives/",
         "suggestedTargetSection": "/ka/resources/",
         "reason": "Resources: publications, statistics, FAQ, priorities or education system",
-        "suggested": true
+        "suggested": false,
+        "to": "/ka/resources/publications/",
+        "included": true,
+        "rule": "publication/newsletter",
+        "reviewReason": "Approved by Luka’s Session 24 mapping rules; no source content is republished."
       }
-    ]
+    ],
+    "status": "Reviewed 2026-10-29 under Luka-approved Session 24 rules; included items wired to redirects.json."
   }
 }

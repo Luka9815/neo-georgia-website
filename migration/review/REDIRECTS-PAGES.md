@@ -1,0 +1,208 @@
+# WordPress top-level page redirects
+
+Reviewed 2026-10-29 under Luka’s Session 24 rules. Source: redirects.draft.json pages.items (202 records). No body export is available for these pages, so ambiguous titles/paths are omitted. Specific approved paths take precedence over blank titles (for example support-letters and deadlines-2026). Unmatched blank/near-blank titles are omitted. Opinion/blog titles use News only where clear. Targets are validated against the generated routes. HTML stubs take effect on old links only once the domain points here; they are not HTTP 301 responses. Root already has its own redirect.
+
+| Old path | Title | Target | Rule | Included | Reason |
+| --- | --- | --- | --- | --- | --- |
+| /about/ | Neo Georgea | /ka/about/ | office/services | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /all-courses/ | What does Neo do | /ka/about/ | office/services | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| / | Erasmus Georgia | /ka/ | existing root | yes | Existing root redirect already serves this path. |
+| /contact/ | Contact us | /ka/about/contact/ | contact | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /open-calls/ | open calls | /ka/calls/ | calls/archive | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /recourses/ | recourses | /ka/resources/ | resources/organisation guidance | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /here/ | HERE | /ka/about/here/ | HERE guidance/membership | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /publications/ | PUBLICATIONS | /ka/resources/publications/ | publication/newsletter | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /news/ | News | /ka/news/ | news index | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /statistics/ | statistics | /ka/resources/statistics/ | statistics | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /faqs/ | Capacity_Building_in_the_Field_of_Youth_ArtSector | /ka/resources/faq/ | FAQ | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /რას-აკეთებს-here/ | რას აკეთებს HERE? | /ka/about/here/ | HERE guidance/membership | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /here-2021-2027/ | HERE 2021-2027 | /ka/about/here/ | HERE guidance/membership | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /deadlines/ | Deadlines | /ka/calls/ | calls/archive | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /heres-event-2024/ | HEREs Event 2024 | /ka/about/here/ | HERE guidance/membership | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /discover-erasmus-opportunities-introductory-webinar-invitation/ | DISCOVER ERASMUS+ OPPORTUNITIES – INTRODUCTORY WEBINAR INVITATION |  | unresolved | no | No approved rule establishes a destination; omitted without guessing. |
+| /elementor-26385/ | Elementor #26385 |  | excluded draft | no | Elementor draft or placeholder title. |
+| /elementor-26401/ | Elementor #26401 |  | excluded draft | no | Elementor draft or placeholder title. |
+| /elementor-26418/ | Elementor #26418 |  | excluded draft | no | Elementor draft or placeholder title. |
+| /elementor-26434/ | Elementor #26434 |  | excluded draft | no | Elementor draft or placeholder title. |
+| /elementor-26446/ | Elementor #26446 |  | excluded draft | no | Elementor draft or placeholder title. |
+| /the-remarkable-path-of-georgian-youth-sector-in-the-erasmus/ | The remarkable path of Georgian youth sector in the Erasmus+ | /ka/news/ | opinion/blog | yes | No matching migrated News slug exists; use the approved News index fallback. |
+| /can-georgia-become-an-associated-country-to-the-erasmus-programme/ | Can Georgia become an Associated Country to the Erasmus+ programme? | /ka/news/ | opinion/blog | yes | No matching migrated News slug exists; use the approved News index fallback. |
+| /navigating-the-path-to-international-partnerships-in-erasmus/ | Navigating the path to international partnerships in Erasmus+ | /ka/news/ | opinion/blog | yes | No matching migrated News slug exists; use the approved News index fallback. |
+| /how-to-know-what-are-the-opportunities-available-for-georgian-organizations-and-institutions/ | How to know what are the opportunities available for Georgian organizations and institutions? | /ka/news/ | opinion/blog | yes | No matching migrated News slug exists; use the approved News index fallback. |
+| /erasmus-goes-global-why-it-matters-for-georgia/ | Erasmus+ Goes Global: Why It Matters for Georgia | /ka/news/ | opinion/blog | yes | No matching migrated News slug exists; use the approved News index fallback. |
+| /how-to-know-what-are-the-opportunities-available-for-georgian-organizations-and-institutions-2/ | How to know what are the opportunities available for Georgian organizations and institutions? | /ka/news/ | opinion/blog | yes | No matching migrated News slug exists; use the approved News index fallback. |
+| /erasmus-mobility-preparing-georgias-students-for-the-global-workforce/ | Erasmus+ Mobility: Preparing Georgia’s Students for the Global Workforce | /ka/news/ | opinion/blog | yes | No matching migrated News slug exists; use the approved News index fallback. |
+| /title-embracing-eu-values-a-pathway-to-opportunity-for-applicants-from-georgia/ | Title: Embracing EU Values: A Pathway to Opportunity for Applicants from Georgia | /ka/news/ | opinion/blog | yes | No matching migrated News slug exists; use the approved News index fallback. |
+| /understanding-erasmus-support-structures/ | Understanding Erasmus+ Support Structures | /ka/news/ | opinion/blog | yes | No matching migrated News slug exists; use the approved News index fallback. |
+| /understanding-erasmus-support-structures-2/ | Understanding Erasmus+ Support Structures | /ka/news/ | opinion/blog | yes | No matching migrated News slug exists; use the approved News index fallback. |
+| /erasmus-mobility-for-students/ | Erasmus+ Mobility for Students | /ka/news/ | opinion/blog | yes | No matching migrated News slug exists; use the approved News index fallback. |
+| /breaking-down-barriers-with-erasmus/ | Breaking Down Barriers with Erasmus+ | /ka/news/ | opinion/blog | yes | No matching migrated News slug exists; use the approved News index fallback. |
+| /rethinking-higher-education-practices-in-the-era-of-artificial-intelligence-alexander-tevzadze/ | Rethinking Higher Education Practices in the Era of Artificial Intelligence – Alexander Tevzadze | /ka/news/ | opinion/blog | yes | No matching migrated News slug exists; use the approved News index fallback. |
+| /internationalization-as-a-tool-for-quality-enhancement/ | Internationalization as a tool for quality enhancement | /ka/news/ | opinion/blog | yes | No matching migrated News slug exists; use the approved News index fallback. |
+| /square-project-irma-grdzelidze/ | SQUARE Project – Irma Grdzelidze | /ka/news/ | opinion/blog | yes | No matching migrated News slug exists; use the approved News index fallback. |
+| /fostering-the-third-mission-of-universities-tamar-sanikidze/ | Fostering the third mission of universities – Tamar Sanikidze | /ka/news/ | opinion/blog | yes | No matching migrated News slug exists; use the approved News index fallback. |
+| /elementor-26728/ | Elementor #26728 |  | excluded draft | no | Elementor draft or placeholder title. |
+| /elementor-26741/ | Elementor #26741 |  | excluded draft | no | Elementor draft or placeholder title. |
+| /neo-ს-პრეს-რელიზი-2/ | NEO-ს პრეს-რელიზი | /ka/news/ | opinion/blog | yes | No matching migrated News slug exists; use the approved News index fallback. |
+| /reminder-ერასმუს-მსხვილმასშტაბ/ | Reminder – ერასმუს+ მსხვილმასშტაბიანი CBHE პროგრამის კლასტერული შეხვედრა საქართველოში | /ka/opportunities/cbhe/ | matching Action | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /heres-event-on-reforming-research-assessment-in-the-european-union-2/ | HEREs event on reforming research assessment in the European Union | /ka/about/here/ | HERE guidance/membership | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /erasmusstatisticsbefore2014/ | erasmus+ statisticsbefore2014 | /ka/resources/statistics/ | statistics | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /erasmusstatistics2014-2020/ | erasmus+statistics2014-2020 | /ka/resources/statistics/ | statistics | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /erasmusstatistics2021-2027/ | erasmus+statistics2021-2027 | /ka/resources/statistics/ | statistics | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /28330-2/ | გაცვლითი პროგრამა | /ka/opportunities/ | unmatched programme/SEO | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /28343-2/ | განათლება საერთაშორისო გაცვლითი პროგრამებით | /ka/opportunities/ | unmatched programme/SEO | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /28347-2/ | Erasmus პროგრამა საქართველოში | /ka/opportunities/ | unmatched programme/SEO | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /28360-2/ | erasmus | /ka/opportunities/ | unmatched programme/SEO | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /28366-2/ | Erasmus+ საქართველოში | /ka/opportunities/ | unmatched programme/SEO | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /28377-2/ | “Erasmus-ის პროგრამა საქართველოში: ყველაფერი, რაც უნდა იცოდეთ!” | /ka/opportunities/ | unmatched programme/SEO | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /28382-2/ | Erasmus Program in Georgia | /ka/opportunities/ | unmatched programme/SEO | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /28390-2/ | “Erasmus Georgia – Opportunities for International Education and Development” | /ka/opportunities/ | unmatched programme/SEO | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /28392-2/ | Erasmus Georgia Program | /ka/opportunities/ | unmatched programme/SEO | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /28395-2/ | “Erasmus Georgia – Explore International Education and Exchange Opportunities” | /ka/opportunities/ | unmatched programme/SEO | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /28666-2/ | erasmus cbhe 2024 statistics link | /ka/resources/statistics/ | statistics | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /პროგრამები/ | პროგრამები | /ka/opportunities/ | unmatched programme/SEO | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /უმაღლესი-განათლება/ | უმაღლესი განათლება |  | unresolved | no | No approved rule establishes a destination; omitted without guessing. |
+| /mobility-projects-for-he-students-and-staff/ | Mobility projects for HE students and staff | /ka/opportunities/icm/ | matching Action | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /icm-he-students-and-staff/ | ICM HE students and staff | /ka/opportunities/icm/ | matching Action | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /mobility-for-learners-and-staff-in-vet/ | Mobility for learners and staff in VET | /ka/resources/ | resources/organisation guidance | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /mobility-for-young-people-youth-exchange/ | Mobility for young people – Youth exchange | /ka/opportunities/youth-mobility/ | matching Action | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /mobility-projects-for-youth-workers/ | Mobility projects for youth workers | /ka/opportunities/youth-mobility/ | matching Action | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /youth-participation-activities-non-formal-activities/ | Youth participation activities – non-formal activities |  | unresolved | no | No approved rule establishes a destination; omitted without guessing. |
+| /virtual-exchanges-in-higher-education-and-youth/ | Virtual exchanges in higher education and youth | /ka/opportunities/virtual-exchanges/ | matching Action | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /cooperation-partnerships-for-higher-education/ | Cooperation Partnerships for Higher Education | /ka/opportunities/ | unmatched programme/SEO | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /cooperation-partnership-in-the-filed-of-vet/ | Cooperation partnership in the filed of VET | /ka/opportunities/ | unmatched programme/SEO | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /cooperation-partnership-in-the-filed-of-school/ | Cooperation partnership in the filed of School | /ka/opportunities/ | unmatched programme/SEO | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /cooperation-partnership-in-the-filed-of-adult-education/ | Cooperation partnership in the filed of adult education | /ka/opportunities/ | unmatched programme/SEO | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /cooperation-partnership-in-the-filed-of-youth/ | Cooperation partnership in the filed of youth | /ka/opportunities/ | unmatched programme/SEO | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /cooperation-partnership-in-the-filed-of-sport/ | Cooperation partnership in the filed of Sport | /ka/opportunities/ | unmatched programme/SEO | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /centers-of-vocation-excellence/ | Centers of vocation excellence | /ka/opportunities/ | unmatched programme/SEO | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /erasmus-mundus-joint-master-degree/ | Erasmus Mundus Joint Master Degree | /ka/opportunities/erasmus-mundus/ | matching Action | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /alliances-for-innovation-hei-vet-training-broader-socio-economic-env/ | Alliances for innovation | /ka/opportunities/ | unmatched programme/SEO | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /capacity-builiding-in-the-filed-of-higher-education/ | Capacity builiding in the filed of higher education | /ka/opportunities/cbhe/ | matching Action | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /capacity-builiding-in-the-filed-of-vet/ | Capacity builiding in the filed of VET | /ka/opportunities/cb-vet/ | matching Action | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /jean-monnet-in-the-filed-of-higher-education/ | Jean Monnet in the filed of Higher Education | /ka/opportunities/jean-monnet/ | matching Action | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /jean-monnet-policy-debate/ | Jean Monnet policy debate | /ka/opportunities/jean-monnet/ | matching Action | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /news-2/ | NEWS. | /ka/news/ | news index | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /horizontal-priorities/ | ჰორიზონტალური პრიორიტეტები | /ka/resources/ | resources/organisation guidance | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /inclusion-and-diversity/ | Inclusion and Diversity |  | unresolved | no | No approved rule establishes a destination; omitted without guessing. |
+| /environment-and-fight-against-climate-change/ | Environment and fight against climate change |  | unresolved | no | No approved rule establishes a destination; omitted without guessing. |
+| /digital-transformation/ | Digital Transformation |  | unresolved | no | No approved rule establishes a destination; omitted without guessing. |
+| /participation-in-democratic-life-common-values-and-civic-engagement/ | Participation in democratic life, common values and civic engagement |  | unresolved | no | No approved rule establishes a destination; omitted without guessing. |
+| /vet-statistics-2021-20027/ | vet-statistics-2021-2027 | /ka/resources/statistics/ | statistics | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /statistics-adult-education-2027/ | statistics – adult education – 2027 | /ka/resources/statistics/ | statistics | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /statistics-youth-2027/ | statistics- youth – 2027 | /ka/resources/statistics/ | statistics | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /schools/ | schools | /ka/opportunities/ | unmatched programme/SEO | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /sport-statistics-2027/ | sport statistics 2027 | /ka/resources/statistics/ | statistics | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /statistics-schools-2027/ | statistics – schools – 2027 | /ka/resources/statistics/ | statistics | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /general-information-about-erasmus/ | general information about Erasmus+ | /ka/about/ | office/services | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /good-practice-examples/ | good practice examples |  | unresolved | no | No approved rule establishes a destination; omitted without guessing. |
+| /capacity-building-in-youth/ | capacity building in youth | /ka/opportunities/cb-youth/ | matching Action | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /capacity-building-in-sport/ | capacity building in sport | /ka/opportunities/cb-sport/ | matching Action | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /heres-lominadze/ | Heres-LOMINADZE | /ka/about/here/ | HERE guidance/membership | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /heres-gergedava/ | HERES-GERGEDAVA | /ka/about/here/ | HERE guidance/membership | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /heres-margishvili/ | HERES-MARGISHVILI | /ka/about/here/ | HERE guidance/membership | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /heres_tevzadze/ | HEREs_TEVZADZE | /ka/about/here/ | HERE guidance/membership | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /heres_grdzelidze/ | HEREs_GRDZELIDZE | /ka/about/here/ | HERE guidance/membership | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /heres_buchashvili/ | HEREs_BUCHASHVILI | /ka/about/here/ | HERE guidance/membership | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /heres-tepnadze/ | HEREs-TEPNADZE | /ka/about/here/ | HERE guidance/membership | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /heres_sanikidze_/ | HEREs_SANIKIDZE_ | /ka/about/here/ | HERE guidance/membership | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /heres_tsotniashvili_/ | HERES_TSOTNIASHVILI_ | /ka/about/here/ | HERE guidance/membership | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /heres_zedgenidze__/ | HEREs_ZEDGENIDZE__ | /ka/about/here/ | HERE guidance/membership | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /staff_week/ | staff_week | /ka/events/ | events index | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /პუბლიკაციები-2014-2020/ | პუბლიკაციები 2014-2020 | /ka/resources/publications/ | publication/newsletter | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /publications-erasmus/ | პუბლიკაციები | /ka/resources/publications/ | publication/newsletter | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /2025-deadlines/ | 2025 Deadlines | /ka/calls/ | calls/archive | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /erasmusdays2024publication/ | Erasmus Days 2024: საგანმანათლებლო შესაძლებლობების გლობალური დღესასწაული | /ka/resources/publications/ | publication/newsletter | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /theeugreendeal/ | ევროკავშირის მწვანე შეთანხმება | /ka/news/ | opinion/blog | yes | No matching migrated News slug exists; use the approved News index fallback. |
+| /technical_assistance_mission/ | ტექნიკური დახმარების მისია (TAM) – ევროპული უნივერსიტეტების ალიანსები | /ka/news/ | opinion/blog | yes | No matching migrated News slug exists; use the approved News index fallback. |
+| /enhancing_university-industry_collaboration/ | უნივერსიტეტისა და ინდუსტრიას შორის თანამშრომლობის გაძლიერება მიმდინარე და მომავალი დასაქმების, ინოვაციებისა და მდგრადი ეკოსისტემებისთვის | /ka/news/ | opinion/blog | yes | No matching migrated News slug exists; use the approved News index fallback. |
+| /tips-for-creating-a-competitive-proposal-for-erasmus-capacity-building-in-higher-education-cbhe-programme/ | Tips for Creating a Competitive Proposal for Erasmus+ Capacity Building in Higher Education (CBHE) Programme | /ka/opportunities/cbhe/ | matching Action | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /georgias-unique-cultural-heritage/ | Georgia’s Unique Cultural Heritage | /ka/news/ | opinion/blog | yes | No matching migrated News slug exists; use the approved News index fallback. |
+| /what-is-done-under-cb-vet-in-georgia/ | What Is Done Under CB VET in Georgia |  | unresolved | no | No approved rule establishes a destination; omitted without guessing. |
+| /capacity-building-in-higher-education-cbhe-in-georgia-2014-2024/ | Capacity Building in Higher Education (CBHE) in Georgia (2014-2024) | /ka/opportunities/cbhe/ | matching Action | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /jean-monnet-programme-overview-in-georgian-context/ | Jean Monnet Programme Overview in Georgian Context (2014-2024) Fostering European Integration and Knowledge | /ka/opportunities/jean-monnet/ | matching Action | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /embarking-on-an-erasmus-journey/ | Embarking on an Erasmus+ Journey | /ka/news/ | opinion/blog | yes | No matching migrated News slug exists; use the approved News index fallback. |
+| /erasmus-breaking-barriers-in-cultural-differences/ | Erasmus+ Breaking Barriers in Cultural Differences | /ka/news/ | opinion/blog | yes | No matching migrated News slug exists; use the approved News index fallback. |
+| /exploring-erasmus-mundus-joint-masters/ | Exploring Erasmus Mundus Joint Masters | /ka/opportunities/erasmus-mundus/ | matching Action | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /impact-of-erasmus/ | International Credit Mobility | /ka/opportunities/icm/ | matching Action | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /how-to-participate-in-student-mobility/ | how to participate in student mobility | /ka/opportunities/icm/ | matching Action | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /how-to-participate-in-erasmus-mundus-joint-masters/ | how to participate in erasmus mundus joint masters | /ka/opportunities/erasmus-mundus/ | matching Action | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /how-to-participate-in-youth-mobility/ | how to participate in youth mobility | /ka/opportunities/youth-mobility/ | matching Action | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /erasmus-programmes/ | erasmus+ programmes | /ka/opportunities/ | unmatched programme/SEO | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /erasmus-charter-higher-education/ | Erasmus Charter Higher Education |  | unresolved | no | No approved rule establishes a destination; omitted without guessing. |
+| /difference-between-na-and-neo/ | Difference between NA and NEO | /ka/about/ | office/services | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /how-to-participate-in-staff-mobility/ | How to participate in staff mobility | /ka/opportunities/icm/ | matching Action | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /difference-between-ftop-and-webgate/ | Difference between FTOP and Webgate | /ka/resources/ | resources/organisation guidance | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /how-to-get-oid-number/ | How to get OID number? | /ka/resources/ | resources/organisation guidance | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /adding_or_deleting_a_bank_account/ | Adding_or_Deleting_a_Bank_Account | /ka/resources/ | resources/organisation guidance | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /organisation_data_updates/ | Organisation_data_updates | /ka/resources/ | resources/organisation guidance | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /lears_account_administrators/ | LEARs_Account_Administrators | /ka/resources/ | resources/organisation guidance | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /electronic_submission_system/ | Electronic_Submission_System | /ka/resources/ | resources/organisation guidance | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /lear_appointmentvalidation/ | LEAR_appointment&validation | /ka/resources/ | resources/organisation guidance | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /cbhe_project_page_limitation/ | CBHE_Project_page_limitation | /ka/opportunities/cbhe/ | matching Action | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /ftop_registration/ | ftop_registration | /ka/resources/ | resources/organisation guidance | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /short_instructions_for_registering_on_ftop_and_webgate/ | FTOP-ზე და Webgate-ზე რეგისტრაციის მოკლე ინსტრუქცია | /ka/resources/ | resources/organisation guidance | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /registration_ftop_webgate/ | Registration_FTOP_WEBGATE | /ka/resources/ | resources/organisation guidance | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /faq-bank-account/ | faq-bank-account | /ka/resources/faq/ | FAQ | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /webgate-registration/ | Webgate-registration | /ka/resources/ | resources/organisation guidance | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /capacity_building_in_the_field_artsector/ | როგორ შეიძლება Erasmus+ პროგრამის გამოყენება ხელოვნების სფეროში? |  | unresolved | no | No approved rule establishes a destination; omitted without guessing. |
+| /განათლების-სისტემა/ | განათლების სისტემა | /ka/resources/ | resources/organisation guidance | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /long-term-politics-of-the-moesy/ | Long term politics of the MoESY |  | unresolved | no | No approved rule establishes a destination; omitted without guessing. |
+| /georgia-in-eurydice-network/ | Georgia in Eurydice Network |  | unresolved | no | No approved rule establishes a destination; omitted without guessing. |
+| /education-system-in-georgia/ | საქართველოს განათლების სისტემა | /ka/resources/ | resources/organisation guidance | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /event-directory/ | Events | /ka/events/ | events index | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /support-letters/ |  | /ka/about/ | office/services | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /დღგ-სგან-გათავისუფლება/ | დღგ-სგან გათავისუფლება | /ka/about/ | office/services | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /statistics-2/ | statistics | /ka/resources/statistics/ | statistics | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /statistics-3/ | Statistics | /ka/resources/statistics/ | statistics | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /მიკროკრედიტები-უნარები/ | მიკროკრედიტები, უნარები და დასაქმება | /ka/news/ | opinion/blog | yes | No matching migrated News slug exists; use the approved News index fallback. |
+| /publication_31-07/ | Microcredentials | /ka/resources/publications/ | publication/newsletter | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /publication_workshops-erasmus-practical-experience-examples-and-financial-management/ | Publication_Workshops: Erasmus+ practical experience examples and financial management | /ka/resources/publications/ | publication/newsletter | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /faq-21-internships/ | faq-21-internships | /ka/resources/faq/ | FAQ | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /აქ-ჩაწერე-გვერდის-სახელი/ | აქ ჩაწერე გვერდის სახელი, ეს დასახელება ასევე აისახება URL-ში |  | excluded draft | no | Elementor draft or placeholder title. |
+| /emjm_2025/ | emjm_2025 | /ka/opportunities/erasmus-mundus/ | matching Action | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /publication_eaie/ | Publication_EAIE | /ka/resources/publications/ | publication/newsletter | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /ინსტიტუციური-შესაძლებლო/ | ინსტიტუციური შესაძლებლობების მაქსიმიზაცია EAIE-ს მეშვეობით – ზრდისა და თანამშრომლობის შესაძლებლობები | /ka/news/ | opinion/blog | yes | No matching migrated News slug exists; use the approved News index fallback. |
+| /publication-eaie/ | PUBLICATION EAIE | /ka/resources/publications/ | publication/newsletter | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /უმაღლესი-განათლების-მობი/ | უმაღლესი განათლების მობილობის პროგრამების მომავლის ფორმირება, Erasmus+ პროგრამის მეშვეობით | /ka/news/ | opinion/blog | yes | No matching migrated News slug exists; use the approved News index fallback. |
+| /erasmus-ის-ინკლუზიური-ხარვეზის/ | Erasmus+-ის ინკლუზიური ხარვეზის აღმოფხვრა – საერთაშორისო მობილურობაზე თანაბარი წვდომის ხელშეწყობა | /ka/news/ | opinion/blog | yes | No matching migrated News slug exists; use the approved News index fallback. |
+| /აკადემიისა-და-ინდუსტრიის/ | აკადემიისა და ინდუსტრიის დაკავშირება – შვედეთის მაგალითი | /ka/news/ | opinion/blog | yes | No matching migrated News slug exists; use the approved News index fallback. |
+| /უმაღლესი-განათლების-ბირთ/ | უმაღლესი განათლების ბირთვში ინტერნაციონალიზაციის ინტეგრირება და ალიანსების მეშვეობით საზოგადოებების ჩართვა​ | /ka/news/ | opinion/blog | yes | No matching migrated News slug exists; use the approved News index fallback. |
+| /ეროვნული-და-საერთაშორისო/ | ეროვნული და საერთაშორისო საგანმანათლებლო პოლიტიკის განვითარება ევროპის უმაღლესი განათლების სისტემაში​ | /ka/news/ | opinion/blog | yes | No matching migrated News slug exists; use the approved News index fallback. |
+| /პროფესიული-და-უმაღლესი-გ/ | პროფესიული და უმაღლესი განათლების და მათი დაინტერესებული მხარეების ინტეგრირება ინტერნაციონალიზაციაში | /ka/news/ | opinion/blog | yes | No matching migrated News slug exists; use the approved News index fallback. |
+| /ერთი-ინსტიტუციის-ფარგლებ/ | ერთი ინსტიტუციის ფარგლებში ინტეგრირებული ინტერნაციონალიზაცია | /ka/news/ | opinion/blog | yes | No matching migrated News slug exists; use the approved News index fallback. |
+| /publication_navigating-generative-ai-in-international-higher-education-opportunities-and-challenges/ |  | /ka/resources/publications/ | publication/newsletter | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /deadlines-2026/ |  | /ka/calls/ | calls/archive | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /publication-digital-transformation-ai-governance-and-the-future-of-higher-education-insights-from-the-bucharest-sphere-2025-symposium/ | ‎ | /ka/resources/publications/ | publication/newsletter | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /erasmus-mundus-joint-masters-mobility/ | Erasmus Mundus Joint Masters – Mobility | /ka/opportunities/erasmus-mundus/ | matching Action | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /capacity-building-in-the-field-of-higher-education/ | Capacity Building in the Field of Higher Education | /ka/opportunities/cbhe/ | matching Action | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /jean-monnet-actions/ | Jean Monnet Actions | /ka/opportunities/jean-monnet/ | matching Action | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /cooperation-partnership-in-higher-education/ | Cooperation Partnership in Higher Education | /ka/opportunities/ | unmatched programme/SEO | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /vocational-education-and-training/ | Vocational Education and training |  | unresolved | no | No approved rule establishes a destination; omitted without guessing. |
+| /cooperation-partnership-in-vocational-education-and-trainings/ | Cooperation Partnership in Vocational Education and Trainings | /ka/opportunities/ | unmatched programme/SEO | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /centres-of-vocational-excellence/ | Centres of Vocational Excellence | /ka/opportunities/ | unmatched programme/SEO | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /ersmus-mundus-joint-master-projects/ | Ersmus Mundus Joint Master – Projects | /ka/opportunities/erasmus-mundus/ | matching Action | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /erasmus-mundus-design-measures/ | Erasmus Mundus Design Measures | /ka/opportunities/erasmus-mundus/ | matching Action | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /capacity-building-in-the-field-of-youth/ | Capacity Building in the Field of Youth | /ka/opportunities/cb-youth/ | matching Action | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /erasmus-virtual-eschanges/ | Erasmus+ Virtual Eschanges | /ka/opportunities/virtual-exchanges/ | matching Action | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /cooperation-partnership-in-youth/ | Cooperation Partnership in Youth | /ka/opportunities/ | unmatched programme/SEO | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /capacity-building-in-the-field-of-sport/ | Capacity Building in the Field of Sport | /ka/opportunities/cb-sport/ | matching Action | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /cooperation-partnership-in-sport/ | Cooperation Partnership in Sport | /ka/opportunities/ | unmatched programme/SEO | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /innovative-didactical-approaches-in-engineering-education/ | Innovative Didactical Approaches in Engineering Education_Publication | /ka/resources/publications/ | publication/newsletter | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /cooperation-patnership-in-adult-education/ | Cooperation Patnership in Adult Education | /ka/opportunities/ | unmatched programme/SEO | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /publication_quality-assurance-and-recognition-of-distance-education-programs-delivered-by-either-fully-online-or-blended-learning-mode/ |  | /ka/resources/publications/ | publication/newsletter | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /coopertion-partnership-in-schools/ | Coopertion Partnership in Schools | /ka/opportunities/ | unmatched programme/SEO | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /irma-grdzelidze_advancing-higher-education-through-sustainability-publication/ | ‎ | /ka/resources/publications/ | publication/newsletter | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /tam-micro-credentials-and-industry-collaboration-ensuring-qualification-relevance-and-employment-opportunities_publication_buchashvili-zedginidze-zubrzycki/ | ‎ | /ka/resources/publications/ | publication/newsletter | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /innovative-didactical-approaches-in-engineering-education_tsotniashvili-lominadze-publication/ | ‎ | /ka/resources/publications/ | publication/newsletter | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /tamar-sanikidze-irma-grdzelidze_publication/ | ‎ | /ka/resources/publications/ | publication/newsletter | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /procedure-for-the-recognition-of-academic-credits-obtained-through-education-abroad/ |  |  | unresolved | no | No approved rule establishes a destination; omitted without guessing. |
+| /publication-tamar-lominadze-tam-2/ | ‎ | /ka/resources/publications/ | publication/newsletter | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /35915-2/ | ‎ |  | unresolved | no | No approved rule establishes a destination; omitted without guessing. |
+| /organisation-data-can-only-be-modified-if-the-user-is-authorised-as-an-account-administrator-self-registrant-or-legal-entity-appointed-representative-lear/ | ‎ | /ka/resources/ | resources/organisation guidance | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /publication_sanikidze-tevzadze/ | ‎ | /ka/resources/publications/ | publication/newsletter | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /publication-intersectoral-cluster-development-within-erasmus/ | ‎ | /ka/resources/publications/ | publication/newsletter | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /the-erasmus-2026-call-results-for-capacity-building-in-higher-education-cbhe/ | ‎ | /ka/opportunities/cbhe/ | matching Action | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /newsletter-publication-vol-6/ | ‎ | /ka/resources/publications/ | publication/newsletter | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /publication-tamar-sanikidze-irma-grdzelidze/ | ‎ | /ka/resources/publications/ | publication/newsletter | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |
+| /publication-values-in-higher-education-challenges-practices-and-perspectives/ | Publication: Values in Higher Education: Challenges, Practices and Perspectives | /ka/resources/publications/ | publication/newsletter | yes | Approved by Luka’s Session 24 mapping rules; no source content is republished. |

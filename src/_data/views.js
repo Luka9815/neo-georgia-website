@@ -38,7 +38,7 @@ export default function () {
     for (const year of [...new Set(loadProjectSnapshot().projects.map(project => project.year))].sort((a, b) => b - a)) {
       views.push({lang, kind: 'projectYear', year, titleKey: 'projectsIndex', path: `/${lang}/resources/projects/${year}/`, alternate: `/${other}/resources/projects/${year}/`});
     }
-    for (const [group, suffix, titleKey] of [['neo', 'about/team/', 'team'], ['here', 'here/', 'here']]) {
+    for (const [group, suffix, titleKey] of [['neo', 'about/team/', 'team'], ['here', 'about/here/', 'here']]) {
       views.push({lang, kind: 'people', group, titleKey, path: `/${lang}/${suffix}`, alternate: `/${other}/${suffix}`});
     }
     for (const [type, folder] of [

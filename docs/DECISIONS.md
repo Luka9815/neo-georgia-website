@@ -520,3 +520,10 @@ Keep siteLaunched=false and outside CMS. A reviewed true value removes the previ
 
 ## 2026-10-29: Session 24 item 3, staff collections and Settings group (Luka)
 Supersede the News/Events-only CMS scope with the seven staff collections and office form. Source-verified CMS file entries save one path, so use one Settings group containing settings.json and office.json file entries; Team/HERE are office sections, with merge preserving siteLaunched. The build enforces integer years and cross-field rules unavailable in widgets.
+
+
+## 2026-10-29: Session 24 item 4, approved WordPress page rules (Luka)
+Wire the unambiguous top-level page mappings approved in the brief to validated HTML redirect stubs. Record every included/omitted row in migration/review/REDIRECTS-PAGES.md; leave ambiguous titles and unsupported programmes without a matching approved rule omitted. Move HERE now so the approved redirect targets exist.
+
+## 2026-10-29: Session 24 item 5b, HERE under About (Luka)
+Supersede “Supporting templates follow the approved sitemap” (2026-10-26) for HERE placement: use /ka/about/here/ and /en/about/here/ alongside Team/Contact, retaining redirect stubs at both former /here/ URLs. Central views drive switching, search and sitemap.
