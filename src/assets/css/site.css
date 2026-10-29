@@ -319,3 +319,94 @@ dd { margin: 0 0 var(--space-2); }
 [data-participant-cities] tr:target { background: var(--accent-soft); outline: 2px solid var(--accent); }
 .map-source { font-size: .875rem; color: var(--muted); }
 @media (forced-colors: active) { .georgia-outline { fill: Canvas; stroke: CanvasText; } .map-bubble { fill: Highlight; stroke: Canvas; } .participant-map text { fill: CanvasText; stroke: Canvas; } .map-label-line { stroke: CanvasText; } .participant-map a:focus-visible .map-target { stroke: Highlight; } .participant-map a:focus-visible .map-bubble { fill: CanvasText; stroke: Canvas; } }
+
+/* Single-destination cards retain one native link and one keyboard stop. */
+.card-clickable { position: relative; }
+.card-primary::after { content: ''; position: absolute; inset: 0; border-radius: inherit; }
+.card :is(h2,h3,h4) a, .audience-tiles a,
+.section-heading > a, header a, .footer-grid nav a, .project-year-index a {
+ text-decoration: none;
+}
+.card :is(h2,h3,h4) a:is(:hover,:focus-visible),
+.card-clickable:is(:hover,:focus-within) .card-primary,
+.section-heading > a:is(:hover,:focus-visible),
+header a:is(:hover,:focus-visible), .footer-grid nav a:is(:hover,:focus-visible),
+.project-year-index a:is(:hover,:focus-visible) { text-decoration: underline; }
+.card-clickable:has(.card-primary:focus-visible) { outline: 3px solid var(--accent); outline-offset: 4px; }
+.card-clickable .card-primary:focus-visible { outline: none; }
+@media (forced-colors: active) {
+ .card-clickable:has(.card-primary:focus-visible) { outline-color: Highlight; }
+}
+
+/* Compact audience rows grow only when translated text needs it. */
+.audience-tiles { grid-template-columns: 1fr; gap: .5rem; }
+.audience-tiles .card { display: grid; grid-template-columns: 2.5rem minmax(0,1fr) 1.25rem; align-items: center; gap: .75rem; padding: .65rem 1rem; min-height: 68px; }
+.audience-tiles .icon-slot { width: 2.5rem; height: 2.5rem; margin: 0; }
+.audience-tiles :is(h2,h3) { font-size: 1rem; line-height: 1.4; margin: 0; }
+.audience-tiles .card > .icon:last-child { width: 1.25rem; height: 1.25rem; margin: 0; align-self: center; }
+@media (min-width: 64rem) {
+ .audience-tiles { grid-template-columns: repeat(5,minmax(0,1fr)); }
+ .audience-tiles .card { grid-template-columns: 1fr auto; align-content: start; padding: 1rem; }
+ .audience-tiles .icon-slot { grid-column: 1 / -1; }
+}
+
+.home-action-sector { margin-block: 1.25rem; }
+.home-action-sector > h3 { padding-bottom: .5rem; margin-bottom: .75rem; font-size: 1rem; }
+.home-action-sector .cards { grid-template-columns: repeat(auto-fit,minmax(min(100%,15rem),1fr)); gap: .75rem; }
+.cards-compact .card { display: grid; grid-template-columns: 2.5rem minmax(0,1fr); column-gap: .75rem; padding: 1rem; align-content: start; }
+.cards-compact .icon-slot { grid-row: 1 / 3; margin: 0; width: 2.5rem; height: 2.5rem; }
+.cards-compact h4 { font-size: 1rem; margin: 0 0 .5rem; }
+.cards-compact .action-key-label { grid-column: 2; font-size: .75rem; margin: 0; }
+
+/* The minimum 82% black overlay bounds contrast even over a white pixel. */
+.home-hero { position: relative; isolation: isolate; }
+.hero-grid { display: block; position: static; }
+.hero-main { position: relative; z-index: 2; padding-block: 2rem 6rem; max-width: 48rem; }
+.home-hero .photo-hero { position: absolute; inset: 0; margin: 0; padding: 0; z-index: 0; }
+.photo-hero picture { position: absolute; inset: 0; }
+.photo-hero picture::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg,rgb(0 0 0 / 90%),rgb(0 0 0 / 82%)); }
+.photo-hero .portal-image { width: 100%; height: 100%; object-fit: cover; object-position: 50% 45%; border-radius: 0; }
+.photo-hero figcaption { position: absolute; z-index: 3; bottom: 0; inset-inline: 0; padding: .5rem 1rem; background: #05264f; color: var(--paper); }
+.photo-hero figcaption a { color: var(--paper); }
+.home-hero .hero-intro { margin-bottom: 1.25rem; }
+@media (max-width: 47.99rem) {
+ .home-hero .entry { gap: .75rem; }
+ .home-hero .entry .button { width: 100%; }
+ .home-hero h1 { font-size: 1.8rem; margin-block: .75rem 1rem; }
+ .hero-main { padding-block: 1.5rem 8rem; }
+}
+@media (min-width: 64rem) { .hero-main { padding-block: 3rem 6rem; } }
+@media (forced-colors: active) {
+ .photo-hero picture { display: none; }
+ .home-hero, .photo-hero figcaption { background: Canvas; color: CanvasText; }
+ .home-hero :is(h1,p,a), .home-hero .button { color: CanvasText; }
+ .home-hero :focus-visible { outline-color: Highlight; }
+}
+
+.cards-news { grid-auto-rows: 1fr; }
+.cards-news .news-text-only { border-top: 4px solid var(--teal); }
+.cards-news .card-body { margin-top: auto; }
+.cards-news .news-text-only :is(h2,h3) { margin-top: .75rem; }
+
+:root { --radius: .875rem; }
+section { margin-block: 2rem; }
+.home-band { margin: 0; padding-block: 2rem; }
+.section-heading { align-items: baseline; gap: .5rem 1rem; margin-bottom: 1rem; }
+.section-heading > a { padding-block: 0; }
+.preview-bar { background: var(--accent-soft); color: var(--muted); font-size: .75rem; }
+.preview-bar p { padding-block: .4rem; margin-bottom: 0; }
+.page-main { padding-top: 1.5rem; }
+.page-home { padding-top: 0; }
+
+.preview-bar .notice { border: 0; background: transparent; margin: 0 auto; color: inherit; font-size: inherit; }
+
+.home-hero .photo-hero { z-index: auto; }
+@media (max-width: 47.99rem) {
+ .audience-tiles .card { gap: .5rem; padding: .5rem .75rem; }
+ .audience-tiles :is(h2,h3) { font-size: .875rem; line-height: 1.35; }
+}
+.home-hero .photo-hero { align-self: stretch; width: 100%; height: 100%; }
+.cards-news .card-body { margin-top: 0; }
+.compact-update a, .figures a, .calendar-month-links a { text-decoration: none; }
+.compact-update a:is(:hover,:focus-visible), .figures a:is(:hover,:focus-visible),
+.calendar-month-links a:is(:hover,:focus-visible) { text-decoration: underline; }

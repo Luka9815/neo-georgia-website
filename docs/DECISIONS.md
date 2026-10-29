@@ -453,3 +453,35 @@ Use the committed public-domain Natural Earth 1:50m whole Georgian polygon, incl
 
 ## 2026-10-29: Session 21, quality review and publication (Luka)
 Validate clean root/project-prefix builds, all existing and new tests, complete browser checks, before/after captures and local mobile Lighthouse. Preserve no-JavaScript, keyboard, forced-colour and reduced-motion checks; return only full axe violation details while running every rule. Disable the restored local Node compile cache for full tests after observing suppressed parameterised-case output. Keep explicit limits: one approved photo, 38 unresolved map locations, a packaged coordinate check rather than live geocoding, and no hosted/manual audit claims. Publish one commit per item plus design-system and quality/evidence commits on codex/session-21-redesign, open PR #21 against main, and do not merge or launch. All four Launch stages remain.
+
+
+## 2026-10-29: Session 22 item 1, card and navigation links (Luka)
+Use a single native stretched title link for single-destination Action, News and audience cards, with a whole-card keyboard focus ring. Titles and navigation links underline on hover/focus; running-text links retain underlines. Multi-destination Call and finder guidance panels retain their explicit Action and official-source links, because collapsing them would remove approved destinations. No nested links or scripted card activation.
+
+
+## 2026-10-29: Session 22 item 2, compact audiences (Luka)
+Use approximately 68px icon/title/arrow rows on mobile and five compact columns at desktop. Allow Georgian labels to wrap and grow rather than clip text; remove the arrow's automatic top gap.
+
+
+## 2026-10-29: Session 22 item 3, compact Home Actions (Luka)
+Home shows the nine existing Actions as compact icon/name/Key Action tiles in sector grids. Keep the unchanged descriptions on Opportunities and the full Action pages; no content records or routes change.
+
+
+## 2026-10-29: Session 22 item 4, full-width photographic hero (Luka)
+Supersede Session 21's no-CSS-cropping/no-overlay rule for the Home placement only. The existing approved photograph fills the hero using object-fit:cover and a 50%/45% focal point. A minimum 82% black overlay guarantees 4.5:1 for both text colours even over white image pixels; the caption has an opaque background. Keep the complete original, accurate event alternative and visible credit. Mobile buttons fill the width. No new photo is implied.
+
+
+## 2026-10-29: Session 22 item 5, text-only News cards (Luka)
+Remove the placeholder icon panel when News has no approved image. Use a teal top border and equal grid tracks alongside image cards; preserve titles, dates and summaries without clipping.
+
+
+## 2026-10-29: Session 22 item 6, shared spacing and preview bar (Luka)
+Use 32px section spacing, baseline-aligned section links, 14px card corners and the existing soft shadow. Move the exact unchanged preview sentence into a slim full-width bar above the sticky header. Keep siteLaunched=false, noindex and EU artwork/disclaimers unchanged.
+
+
+## 2026-10-29: Session 22 item 7, Commons blocker and credits (Luka)
+Stop new photography after the Commons API CONNECT request returns HTTP 403. Do not use another source or invent candidate filenames/licences. Record the one exact previously verified TSU file page for manual download; six to eight new photographs and their placements remain blocked. Add bilingual footer-linked credits for the approved existing image and preserve page captions. New Commons files require API licence/dimension verification and visual review before pipeline integration.
+
+
+## 2026-10-29: Session 22 quality and review (Luka)
+Keep 48 bilingual before/after 390/1280px captures and reproducible root/prefix evidence under review/session-22. Both layouts pass 171 tests and 109 browser pages with zero axe violations; retain all rules and fixture coverage. All eight mobile Lighthouse trials meet performance 90+ (98–100 measured) and accessibility 100. Measure complete Home transfer with every image loaded: 274,749 bytes ka and 233,455 bytes en. Hero contrast is bounded over a worst-case white photo pixel at 13.58:1/11.07:1. Local checks do not replace hosted/manual review. Keep the Commons photography block explicit, push the seven item commits plus quality evidence, open a PR against main and do not merge.

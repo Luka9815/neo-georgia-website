@@ -1,0 +1,16 @@
+---
+pagination:
+  data: pageTypes.credits
+  size: 1
+  alias: view
+permalink: "{{ view.path }}"
+eleventyExcludeFromCollections: true
+---
+{% extends 'page.njk' %}
+{% block pageContent %}
+{% for key,photo in portalPhotos %}
+<section><h2>{{ photo.credit[view.lang] }}</h2>
+<p><a href="{{ photo.source }}">{{ photo.credit[view.lang] }}</a> · {{ photo.change[view.lang] }}</p>
+</section>
+{% endfor %}
+{% endblock %}

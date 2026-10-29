@@ -1,0 +1,19 @@
+
+> check:a11y
+> node scripts/check-a11y.js
+
+axe: checked 20 pages
+axe: checked 40 pages
+axe: checked 60 pages
+axe: checked 80 pages
+axe: checked 100 pages
+Projects: bilingual no-JS totals, Action/year navigation and keyboard table scrolling passed.
+Search: keyboard submit, typed ordering, language isolation, no-JS links and search-only loading passed.
+Fixture calendar: non-empty bilingual keyboard navigation and per-Event downloads passed.
+Portal: 320px, no-JS finder, FAQ keyboard, chart scrolling and map links passed in normal/forced colours, both languages.
+axe: 109 pages passed with zero violations; 320px overflow, keyboard skip links, language switches and no-JS mobile/desktop menus passed.
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+npm notice To update run: npm install -g npm@12.2.1
+npm notice

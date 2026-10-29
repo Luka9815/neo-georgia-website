@@ -1,0 +1,863 @@
+{
+  "date": "2026-10-29",
+  "timezone": "Asia/Tbilisi",
+  "base": "e166d94",
+  "branch": "codex/session-22-polish",
+  "status": "polish-validated-photography-blocked",
+  "checks": {
+    "root": {
+      "cleanBuild": "passed",
+      "tests": 171,
+      "failures": 0,
+      "browserPages": 109,
+      "axeViolations": 0,
+      "portalKeyboardNoJsForcedColours": "passed"
+    },
+    "prefix": {
+      "cleanBuild": "passed",
+      "tests": 171,
+      "failures": 0,
+      "browserPages": 109,
+      "axeViolations": 0,
+      "portalKeyboardNoJsForcedColours": "passed"
+    }
+  },
+  "screenshots": {
+    "before": 24,
+    "after": 24,
+    "widths": [
+      390,
+      1280
+    ],
+    "languages": [
+      "ka",
+      "en"
+    ]
+  },
+  "lighthouse": {
+    "before": {
+      "date": "2026-10-29",
+      "method": "Lighthouse default simulated mobile throttling, cold navigation, one run per page; local uncompressed HTTP server",
+      "records": [
+        {
+          "page": "home",
+          "lang": "ka",
+          "url": "http://127.0.0.1:8141/ka/",
+          "version": "13.6.0",
+          "performance": 100,
+          "accessibility": 100,
+          "transferBytes": 190619,
+          "lcpMs": 946,
+          "cls": 0.0007660713735908436,
+          "failedAudits": [
+            {
+              "id": "max-potential-fid",
+              "score": 0.92,
+              "displayValue": "120 ms"
+            },
+            {
+              "id": "unminified-css",
+              "score": 0.5,
+              "displayValue": "Est savings of 3 KiB"
+            },
+            {
+              "id": "unused-css-rules",
+              "score": 0.5,
+              "displayValue": "Est savings of 13 KiB"
+            },
+            {
+              "id": "cache-insight",
+              "score": 0.5,
+              "displayValue": "Est savings of 148 KiB"
+            },
+            {
+              "id": "document-latency-insight",
+              "score": 0.5,
+              "displayValue": "Est savings of 25 KiB"
+            },
+            {
+              "id": "image-delivery-insight",
+              "score": 0.5,
+              "displayValue": "Est savings of 15 KiB"
+            },
+            {
+              "id": "network-dependency-tree-insight",
+              "score": 0
+            },
+            {
+              "id": "render-blocking-insight",
+              "score": 0.5
+            }
+          ]
+        },
+        {
+          "page": "action",
+          "lang": "ka",
+          "url": "http://127.0.0.1:8141/ka/opportunities/cbhe/",
+          "version": "13.6.0",
+          "performance": 99,
+          "accessibility": 100,
+          "transferBytes": 143871,
+          "lcpMs": 1953,
+          "cls": 0.0009078315517804823,
+          "failedAudits": [
+            {
+              "id": "largest-contentful-paint",
+              "score": 0.97,
+              "displayValue": "2.0 s"
+            },
+            {
+              "id": "interactive",
+              "score": 0.99,
+              "displayValue": "2.0 s"
+            },
+            {
+              "id": "unminified-css",
+              "score": 0.5,
+              "displayValue": "Est savings of 3 KiB"
+            },
+            {
+              "id": "unused-css-rules",
+              "score": 0,
+              "displayValue": "Est savings of 14 KiB"
+            },
+            {
+              "id": "cache-insight",
+              "score": 0,
+              "displayValue": "Est savings of 119 KiB"
+            },
+            {
+              "id": "document-latency-insight",
+              "score": 0.5,
+              "displayValue": "Est savings of 14 KiB"
+            },
+            {
+              "id": "network-dependency-tree-insight",
+              "score": 0
+            },
+            {
+              "id": "render-blocking-insight",
+              "score": 0.5
+            }
+          ]
+        },
+        {
+          "page": "statistics",
+          "lang": "ka",
+          "url": "http://127.0.0.1:8141/ka/resources/statistics/",
+          "version": "13.6.0",
+          "performance": 100,
+          "accessibility": 100,
+          "transferBytes": 190372,
+          "lcpMs": 1084,
+          "cls": 0.0008308625404926118,
+          "failedAudits": [
+            {
+              "id": "first-contentful-paint",
+              "score": 0.99,
+              "displayValue": "1.1 s"
+            },
+            {
+              "id": "unminified-css",
+              "score": 0.5,
+              "displayValue": "Est savings of 3 KiB"
+            },
+            {
+              "id": "unused-css-rules",
+              "score": 0.5,
+              "displayValue": "Est savings of 15 KiB"
+            },
+            {
+              "id": "cache-insight",
+              "score": 0.5,
+              "displayValue": "Est savings of 119 KiB"
+            },
+            {
+              "id": "document-latency-insight",
+              "score": 0.5,
+              "displayValue": "Est savings of 44 KiB"
+            },
+            {
+              "id": "network-dependency-tree-insight",
+              "score": 0
+            },
+            {
+              "id": "render-blocking-insight",
+              "score": 0.5
+            }
+          ]
+        },
+        {
+          "page": "find",
+          "lang": "ka",
+          "url": "http://127.0.0.1:8141/ka/find/student/",
+          "version": "13.6.0",
+          "performance": 100,
+          "accessibility": 100,
+          "transferBytes": 189745,
+          "lcpMs": 1881,
+          "cls": 0.0005857322878628041,
+          "failedAudits": [
+            {
+              "id": "largest-contentful-paint",
+              "score": 0.98,
+              "displayValue": "1.9 s"
+            },
+            {
+              "id": "unminified-css",
+              "score": 0.5,
+              "displayValue": "Est savings of 3 KiB"
+            },
+            {
+              "id": "unused-css-rules",
+              "score": 0,
+              "displayValue": "Est savings of 16 KiB"
+            },
+            {
+              "id": "cache-insight",
+              "score": 0,
+              "displayValue": "Est savings of 171 KiB"
+            },
+            {
+              "id": "document-latency-insight",
+              "score": 0.5,
+              "displayValue": "Est savings of 9 KiB"
+            },
+            {
+              "id": "image-delivery-insight",
+              "score": 0.5,
+              "displayValue": "Est savings of 39 KiB"
+            },
+            {
+              "id": "network-dependency-tree-insight",
+              "score": 0
+            },
+            {
+              "id": "render-blocking-insight",
+              "score": 0,
+              "displayValue": "Est savings of 160 ms"
+            }
+          ]
+        },
+        {
+          "page": "home",
+          "lang": "en",
+          "url": "http://127.0.0.1:8141/en/",
+          "version": "13.6.0",
+          "performance": 99,
+          "accessibility": 100,
+          "transferBytes": 163397,
+          "lcpMs": 1954,
+          "cls": 0.0005710441145701275,
+          "failedAudits": [
+            {
+              "id": "largest-contentful-paint",
+              "score": 0.97,
+              "displayValue": "2.0 s"
+            },
+            {
+              "id": "interactive",
+              "score": 0.99,
+              "displayValue": "2.0 s"
+            },
+            {
+              "id": "unminified-css",
+              "score": 0.5,
+              "displayValue": "Est savings of 3 KiB"
+            },
+            {
+              "id": "unused-css-rules",
+              "score": 0,
+              "displayValue": "Est savings of 13 KiB"
+            },
+            {
+              "id": "cache-insight",
+              "score": 0,
+              "displayValue": "Est savings of 132 KiB"
+            },
+            {
+              "id": "document-latency-insight",
+              "score": 0.5,
+              "displayValue": "Est savings of 18 KiB"
+            },
+            {
+              "id": "image-delivery-insight",
+              "score": 0.5,
+              "displayValue": "Est savings of 15 KiB"
+            },
+            {
+              "id": "network-dependency-tree-insight",
+              "score": 0
+            },
+            {
+              "id": "render-blocking-insight",
+              "score": 0.5,
+              "displayValue": "Est savings of 20 ms"
+            }
+          ]
+        },
+        {
+          "page": "action",
+          "lang": "en",
+          "url": "http://127.0.0.1:8141/en/opportunities/cbhe/",
+          "version": "13.6.0",
+          "performance": 100,
+          "accessibility": 100,
+          "transferBytes": 118768,
+          "lcpMs": 903,
+          "cls": 0.000710386014099041,
+          "failedAudits": [
+            {
+              "id": "unminified-css",
+              "score": 0.5,
+              "displayValue": "Est savings of 3 KiB"
+            },
+            {
+              "id": "unused-css-rules",
+              "score": 0,
+              "displayValue": "Est savings of 14 KiB"
+            },
+            {
+              "id": "cache-insight",
+              "score": 0,
+              "displayValue": "Est savings of 104 KiB"
+            },
+            {
+              "id": "document-latency-insight",
+              "score": 0.5,
+              "displayValue": "Est savings of 8 KiB"
+            },
+            {
+              "id": "network-dependency-tree-insight",
+              "score": 0
+            },
+            {
+              "id": "render-blocking-insight",
+              "score": 0,
+              "displayValue": "Est savings of 170 ms"
+            }
+          ]
+        },
+        {
+          "page": "statistics",
+          "lang": "en",
+          "url": "http://127.0.0.1:8141/en/resources/statistics/",
+          "version": "13.6.0",
+          "performance": 100,
+          "accessibility": 100,
+          "transferBytes": 156396,
+          "lcpMs": 1053,
+          "cls": 0.0007794292976494035,
+          "failedAudits": [
+            {
+              "id": "max-potential-fid",
+              "score": 0.94,
+              "displayValue": "110 ms"
+            },
+            {
+              "id": "unminified-css",
+              "score": 0.5,
+              "displayValue": "Est savings of 3 KiB"
+            },
+            {
+              "id": "unused-css-rules",
+              "score": 0.5,
+              "displayValue": "Est savings of 15 KiB"
+            },
+            {
+              "id": "cache-insight",
+              "score": 0.5,
+              "displayValue": "Est savings of 104 KiB"
+            },
+            {
+              "id": "document-latency-insight",
+              "score": 0.5,
+              "displayValue": "Est savings of 33 KiB"
+            },
+            {
+              "id": "network-dependency-tree-insight",
+              "score": 0
+            },
+            {
+              "id": "render-blocking-insight",
+              "score": 0.5,
+              "displayValue": "Est savings of 20 ms"
+            }
+          ]
+        },
+        {
+          "page": "find",
+          "lang": "en",
+          "url": "http://127.0.0.1:8141/en/find/student/",
+          "version": "13.6.0",
+          "performance": 100,
+          "accessibility": 100,
+          "transferBytes": 152068,
+          "lcpMs": 903,
+          "cls": 0.03858359291831147,
+          "failedAudits": [
+            {
+              "id": "unminified-css",
+              "score": 0.5,
+              "displayValue": "Est savings of 3 KiB"
+            },
+            {
+              "id": "unused-css-rules",
+              "score": 0,
+              "displayValue": "Est savings of 16 KiB"
+            },
+            {
+              "id": "cache-insight",
+              "score": 0,
+              "displayValue": "Est savings of 139 KiB"
+            },
+            {
+              "id": "document-latency-insight",
+              "score": 0.5,
+              "displayValue": "Est savings of 6 KiB"
+            },
+            {
+              "id": "image-delivery-insight",
+              "score": 0.5,
+              "displayValue": "Est savings of 22 KiB"
+            },
+            {
+              "id": "network-dependency-tree-insight",
+              "score": 0
+            },
+            {
+              "id": "render-blocking-insight",
+              "score": 0,
+              "displayValue": "Est savings of 190 ms"
+            }
+          ]
+        }
+      ]
+    },
+    "after": {
+      "date": "2026-10-29",
+      "method": "Lighthouse default simulated mobile throttling, cold navigation, one run per page; local uncompressed HTTP server",
+      "records": [
+        {
+          "page": "home",
+          "lang": "ka",
+          "url": "http://127.0.0.1:8141/ka/",
+          "version": "13.6.0",
+          "performance": 99,
+          "accessibility": 100,
+          "transferBytes": 192526,
+          "lcpMs": 2108,
+          "cls": 0.0009675722173283244,
+          "failedAudits": [
+            {
+              "id": "largest-contentful-paint",
+              "score": 0.96,
+              "displayValue": "2.1 s"
+            },
+            {
+              "id": "max-potential-fid",
+              "score": 0.89,
+              "displayValue": "130 ms"
+            },
+            {
+              "id": "interactive",
+              "score": 0.99,
+              "displayValue": "2.1 s"
+            },
+            {
+              "id": "unminified-css",
+              "score": 0.5,
+              "displayValue": "Est savings of 4 KiB"
+            },
+            {
+              "id": "unused-css-rules",
+              "score": 0,
+              "displayValue": "Est savings of 14 KiB"
+            },
+            {
+              "id": "cache-insight",
+              "score": 0,
+              "displayValue": "Est savings of 153 KiB"
+            },
+            {
+              "id": "document-latency-insight",
+              "score": 0.5,
+              "displayValue": "Est savings of 23 KiB"
+            },
+            {
+              "id": "network-dependency-tree-insight",
+              "score": 0
+            },
+            {
+              "id": "render-blocking-insight",
+              "score": 0.5
+            }
+          ]
+        },
+        {
+          "page": "action",
+          "lang": "ka",
+          "url": "http://127.0.0.1:8141/ka/opportunities/cbhe/",
+          "version": "13.6.0",
+          "performance": 100,
+          "accessibility": 100,
+          "transferBytes": 149650,
+          "lcpMs": 909,
+          "cls": 0.00108436309443173,
+          "failedAudits": [
+            {
+              "id": "unminified-css",
+              "score": 0.5,
+              "displayValue": "Est savings of 4 KiB"
+            },
+            {
+              "id": "unused-css-rules",
+              "score": 0.5,
+              "displayValue": "Est savings of 19 KiB"
+            },
+            {
+              "id": "cache-insight",
+              "score": 0.5,
+              "displayValue": "Est savings of 124 KiB"
+            },
+            {
+              "id": "document-latency-insight",
+              "score": 0.5,
+              "displayValue": "Est savings of 14 KiB"
+            },
+            {
+              "id": "network-dependency-tree-insight",
+              "score": 0
+            },
+            {
+              "id": "render-blocking-insight",
+              "score": 0.5
+            }
+          ]
+        },
+        {
+          "page": "statistics",
+          "lang": "ka",
+          "url": "http://127.0.0.1:8141/ka/resources/statistics/",
+          "version": "13.6.0",
+          "performance": 100,
+          "accessibility": 100,
+          "transferBytes": 196007,
+          "lcpMs": 1081,
+          "cls": 0.0008308625404926118,
+          "failedAudits": [
+            {
+              "id": "first-contentful-paint",
+              "score": 0.99,
+              "displayValue": "1.1 s"
+            },
+            {
+              "id": "unminified-css",
+              "score": 0.5,
+              "displayValue": "Est savings of 4 KiB"
+            },
+            {
+              "id": "unused-css-rules",
+              "score": 0.5,
+              "displayValue": "Est savings of 19 KiB"
+            },
+            {
+              "id": "cache-insight",
+              "score": 0.5,
+              "displayValue": "Est savings of 124 KiB"
+            },
+            {
+              "id": "document-latency-insight",
+              "score": 0.5,
+              "displayValue": "Est savings of 45 KiB"
+            },
+            {
+              "id": "network-dependency-tree-insight",
+              "score": 0
+            },
+            {
+              "id": "render-blocking-insight",
+              "score": 0.5
+            }
+          ]
+        },
+        {
+          "page": "find",
+          "lang": "ka",
+          "url": "http://127.0.0.1:8141/ka/find/student/",
+          "version": "13.6.0",
+          "performance": 100,
+          "accessibility": 100,
+          "transferBytes": 195380,
+          "lcpMs": 915,
+          "cls": 0.0005857322878628041,
+          "failedAudits": [
+            {
+              "id": "unminified-css",
+              "score": 0.5,
+              "displayValue": "Est savings of 4 KiB"
+            },
+            {
+              "id": "unused-css-rules",
+              "score": 0.5,
+              "displayValue": "Est savings of 21 KiB"
+            },
+            {
+              "id": "cache-insight",
+              "score": 0.5,
+              "displayValue": "Est savings of 176 KiB"
+            },
+            {
+              "id": "document-latency-insight",
+              "score": 0.5,
+              "displayValue": "Est savings of 10 KiB"
+            },
+            {
+              "id": "image-delivery-insight",
+              "score": 0.5,
+              "displayValue": "Est savings of 39 KiB"
+            },
+            {
+              "id": "network-dependency-tree-insight",
+              "score": 0
+            },
+            {
+              "id": "render-blocking-insight",
+              "score": 0.5
+            }
+          ]
+        },
+        {
+          "page": "home",
+          "lang": "en",
+          "url": "http://127.0.0.1:8141/en/",
+          "version": "13.6.0",
+          "performance": 98,
+          "accessibility": 100,
+          "transferBytes": 167393,
+          "lcpMs": 1953,
+          "cls": 0.06813481425387387,
+          "failedAudits": [
+            {
+              "id": "largest-contentful-paint",
+              "score": 0.97,
+              "displayValue": "2.0 s"
+            },
+            {
+              "id": "max-potential-fid",
+              "score": 0.97,
+              "displayValue": "90 ms"
+            },
+            {
+              "id": "cumulative-layout-shift",
+              "score": 0.96,
+              "displayValue": "0.068"
+            },
+            {
+              "id": "interactive",
+              "score": 0.99,
+              "displayValue": "2.0 s"
+            },
+            {
+              "id": "unminified-css",
+              "score": 0.5,
+              "displayValue": "Est savings of 4 KiB"
+            },
+            {
+              "id": "unused-css-rules",
+              "score": 0,
+              "displayValue": "Est savings of 14 KiB"
+            },
+            {
+              "id": "cache-insight",
+              "score": 0,
+              "displayValue": "Est savings of 137 KiB"
+            },
+            {
+              "id": "document-latency-insight",
+              "score": 0.5,
+              "displayValue": "Est savings of 17 KiB"
+            },
+            {
+              "id": "network-dependency-tree-insight",
+              "score": 0
+            },
+            {
+              "id": "render-blocking-insight",
+              "score": 0,
+              "displayValue": "Est savings of 40 ms"
+            }
+          ]
+        },
+        {
+          "page": "action",
+          "lang": "en",
+          "url": "http://127.0.0.1:8141/en/opportunities/cbhe/",
+          "version": "13.6.0",
+          "performance": 100,
+          "accessibility": 100,
+          "transferBytes": 124349,
+          "lcpMs": 905,
+          "cls": 0.000710386014099041,
+          "failedAudits": [
+            {
+              "id": "unminified-css",
+              "score": 0.5,
+              "displayValue": "Est savings of 4 KiB"
+            },
+            {
+              "id": "unused-css-rules",
+              "score": 0,
+              "displayValue": "Est savings of 19 KiB"
+            },
+            {
+              "id": "cache-insight",
+              "score": 0,
+              "displayValue": "Est savings of 109 KiB"
+            },
+            {
+              "id": "document-latency-insight",
+              "score": 0.5,
+              "displayValue": "Est savings of 8 KiB"
+            },
+            {
+              "id": "network-dependency-tree-insight",
+              "score": 0
+            },
+            {
+              "id": "render-blocking-insight",
+              "score": 0,
+              "displayValue": "Est savings of 110 ms"
+            }
+          ]
+        },
+        {
+          "page": "statistics",
+          "lang": "en",
+          "url": "http://127.0.0.1:8141/en/resources/statistics/",
+          "version": "13.6.0",
+          "performance": 100,
+          "accessibility": 100,
+          "transferBytes": 161833,
+          "lcpMs": 1053,
+          "cls": 0.0008123322212934996,
+          "failedAudits": [
+            {
+              "id": "unminified-css",
+              "score": 0.5,
+              "displayValue": "Est savings of 4 KiB"
+            },
+            {
+              "id": "unused-css-rules",
+              "score": 0.5,
+              "displayValue": "Est savings of 19 KiB"
+            },
+            {
+              "id": "cache-insight",
+              "score": 0.5,
+              "displayValue": "Est savings of 109 KiB"
+            },
+            {
+              "id": "document-latency-insight",
+              "score": 0.5,
+              "displayValue": "Est savings of 33 KiB"
+            },
+            {
+              "id": "network-dependency-tree-insight",
+              "score": 0
+            },
+            {
+              "id": "render-blocking-insight",
+              "score": 0.5,
+              "displayValue": "Est savings of 20 ms"
+            }
+          ]
+        },
+        {
+          "page": "find",
+          "lang": "en",
+          "url": "http://127.0.0.1:8141/en/find/student/",
+          "version": "13.6.0",
+          "performance": 100,
+          "accessibility": 100,
+          "transferBytes": 157505,
+          "lcpMs": 903,
+          "cls": 0.03919850826964,
+          "failedAudits": [
+            {
+              "id": "cumulative-layout-shift",
+              "score": 0.99,
+              "displayValue": "0.039"
+            },
+            {
+              "id": "unminified-css",
+              "score": 0.5,
+              "displayValue": "Est savings of 4 KiB"
+            },
+            {
+              "id": "unused-css-rules",
+              "score": 0,
+              "displayValue": "Est savings of 21 KiB"
+            },
+            {
+              "id": "cache-insight",
+              "score": 0,
+              "displayValue": "Est savings of 144 KiB"
+            },
+            {
+              "id": "document-latency-insight",
+              "score": 0.5,
+              "displayValue": "Est savings of 6 KiB"
+            },
+            {
+              "id": "image-delivery-insight",
+              "score": 0.5,
+              "displayValue": "Est savings of 22 KiB"
+            },
+            {
+              "id": "network-dependency-tree-insight",
+              "score": 0
+            },
+            {
+              "id": "render-blocking-insight",
+              "score": 0,
+              "displayValue": "Est savings of 210 ms"
+            }
+          ]
+        }
+      ],
+      "fullHomeTransfers": [
+        {
+          "lang": "ka",
+          "width": 390,
+          "dpr": 2,
+          "bytes": 274749,
+          "method": "Cold Chromium, JS disabled, all images forced eager including News and EU footer, CDP encodedDataLength"
+        },
+        {
+          "lang": "en",
+          "width": 390,
+          "dpr": 2,
+          "bytes": 233455,
+          "method": "Cold Chromium, JS disabled, all images forced eager including News and EU footer, CDP encodedDataLength"
+        }
+      ]
+    }
+  },
+  "photography": {
+    "newAcceptedPhotos": 0,
+    "blocker": "Commons API CONNECT HTTP 403, no metadata response",
+    "selectedFilePages": [
+      "https://commons.wikimedia.org/wiki/File:Tbilisi_State_University.jpg"
+    ],
+    "remaining": "6 to 8 verified open-licence photos and new About/Find/Opportunities/sector placements"
+  },
+  "heroWorstCaseContrast": {
+    "white": 13.58,
+    "inverseMuted": 11.07
+  },
+  "limits": [
+    "Local measurements, not a hosted performance guarantee or complete manual WCAG audit",
+    "Multi-destination Call/finder panels retain explicit Action and official-source links"
+  ]
+}
