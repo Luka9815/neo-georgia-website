@@ -10,6 +10,6 @@ eleventyExcludeFromCollections: true
 
 {% block pageContent %}
 <p>
-  <a href="{{ view.target }}">{{ t.returnHome }}</a>
+  <a href="{{ view.target }}">{% if view.path == '/' %}{{ t.returnHome }}{% else %}{{ t.continueToNewPage }}{% endif %}</a>
 </p>
 {% endblock %}

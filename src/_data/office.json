@@ -1,14 +1,14 @@
 {
   "contact": {
     "address": {
-      "ka": "[TBC]",
-      "en": "[TBC]"
+      "en": "47 Merab Kostava Street, Tbilisi, Georgia",
+      "ka": "მერაბ კოსტავას ქუჩა 47, თბილისი, საქართველო"
     },
     "phone": "[TBC]",
     "email": "[TBC]",
     "hours": {
-      "ka": "[TBC]",
-      "en": "[TBC]"
+      "en": "Monday to Friday, 10:00 to 18:00",
+      "ka": "ორშაბათიდან პარასკევის ჩათვლით, 10:00-დან 18:00-მდე"
     }
   },
   "legal": {

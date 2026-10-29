@@ -89,3 +89,19 @@ test('supporting content rejects missing translation, invalid references and uns
     assert.throws(() => validateSupporting(item, type, `src/content/${type}/${item.slug}.json`, actions), new RegExp(field === 'en' ? 'en.title' : field));
   }
 });
+
+test('Team uses explicit integer order, one role heading and labelled names',()=>{
+ for(const lang of ['ka','en']){
+  const $=load(read(`_site/${lang}/about/team/index.html`));
+  const people=[...data.person].sort((a,b)=>a.order-b.order);
+  assert.deepEqual($('.cards-person h2').map((_,el)=>$(el).text()).get(),people.map(p=>p[lang].title));
+  for(const [index,person] of people.entries()){
+   const card=$('.cards-person > li').eq(index);const role=office.team[person.officeKey];
+   assert.equal(card.find('p').first().text(),`${JSON.parse(read(`src/_data/${lang}.json`)).nameLabel}: ${role.name[lang]}`);
+   assert.equal(card.find('p').filter((_,el)=>$(el).text()===person[lang].role).length,0);
+   assert.equal(card.find('a[href^="mailto:"]').length,role.roleEmail==='[TBC]'?0:1);
+  }
+ }
+ const person=data.person[0];
+ for(const order of [undefined,'1',1.5,null])assert.throws(()=>validateSupporting({...person,order},'person',`src/content/person/${person.slug}.json`,new Set()),/order/);
+});

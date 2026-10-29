@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-30 (Codex, Session 25: review follow-ups and office facts)
+- Apply Luka’s 2026-10-29 confirmed bilingual office address and hours; retain the separate legal-address placeholder. Regenerate the inventory: exactly 16 remaining occurrences.
+- Order Team cards with validated Person integers, show each role once, keep names labelled and link only real role emails.
+- Use target-language redirect chrome and translated continuation links, preserving root behaviour, noindex, canonical and redirect validation. Add 15 approved WordPress page mappings with exact encoded source paths.
+- Store final licence/Guide URLs, record Luka’s supplied Claude external-link review and retain EPALE for a manual browser check. Make the optional checker incremental with all authored URLs, a configurable generated-project sample (default 200) and Erasmus+ host pacing.
+- Retain 48 bilingual 390/1280px before/after screenshots and raw evidence in review/session-25. Clean root/prefix builds, all 201 tests per layout and 109 browser pages per layout pass with zero axe violations. Keep siteLaunched=false, preview/noindex and all outstanding launch prerequisites. No merge or launch.
+
+
 Newest at the top. One entry per working session: date, who (agent or person), what changed.
 
 ## 2026-10-27 (Codex, session 17: Georgian emblem, identity and News archive)

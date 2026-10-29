@@ -12,5 +12,6 @@
     "role": "კომუნიკაციების ოფიცერი",
     "body": "Erasmus+-ის შესახებ ინფორმაციისა და კონსულტაციისთვის მიმართეთ ეროვნულ ოფისს."
   },
-  "officeKey": "communicationsOfficer"
+  "officeKey": "communicationsOfficer",
+  "order": 3
 }

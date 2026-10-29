@@ -543,3 +543,22 @@ Use LAUNCH.md as the ordered runbook for launch, later domain move and instituti
 
 ## 2026-10-29: Session 24 final schema parity and fixture evidence (Luka)
 Supersede the conditional English-alt rule in “Optional validated News images with responsive local output” (2026-10-27): all supplied images require ka/en alternatives. Require sourceChecked for Calls/FAQ/Resources/Publications and PDF-only local Publications, replacing historical text downloads with valid synthetic PDFs in isolated fixtures. Preserve News editorial regressions in isolated Session 24 snapshots so future staff records do not freeze archive counts.
+
+
+## 2026-10-30: Session 25 item 1, confirmed office address and hours (Luka)
+Luka confirmed on 2026-10-29: 47 Merab Kostava Street, Tbilisi, Georgia (მერაბ კოსტავას ქუჩა 47, თბილისი, საქართველო); Monday to Friday, 10:00 to 18:00 (ორშაბათიდან პარასკევის ჩათვლით, 10:00-დან 18:00-მდე). This supersedes the [TBC] status of contact.address and contact.hours in “Session 20, final contact layout and hidden social links” (2026-10-28). ERIDA’s registered address remains separately unconfirmed.
+
+
+## 2026-10-30: Session 25 item 2, ordered Team role cards (Luka)
+Supersede the role-card presentation in “Session 21 item 3, shared template restyling” (2026-10-29): show the role title once, labelled name, role email and body. Real role emails use mailto links; [TBC] stays plain text. Person records require integer order values; ascending order places Coordinator, Programme Officer, Communications Officer without relying on filenames.
+
+
+## 2026-10-30: Session 25 item 3, target-language redirect stubs (Luka)
+Supersede the Georgian-only chrome of “Session 24 item 4, approved WordPress page rules” (2026-10-29): every legacy stub, including former HERE routes, uses its target language and a translated “Continue to the new page” link. Root behaviour, noindex, canonical targets and all redirect validation remain unchanged.
+
+
+## 2026-10-30: Session 25 item 4, remaining approved WordPress pages (Luka)
+Supersede the omissions for the 15 paths listed in the Session 25 brief under “Session 24 item 4, approved WordPress page rules” (2026-10-29). Luka approved their Events, Opportunities, CB VET and Resources targets on 2026-10-29. Preserve exact encoded source paths and all decoded collision/target validation. Elementor drafts, placeholder-title page 34308 and blank /35915-2/ remain omitted; see migration/review/REDIRECTS-PAGES.md.
+
+## 2026-10-30: Session 25 item 5, external-link review and sampling (Luka)
+Supersede the exhaustive generated-link audit approach in “Session 24 item 6, honest quality evidence” (2026-10-29): check all hand-entered URLs and randomly sample generated project-result URLs, default 200, with incremental results and a polite Erasmus+ host delay. Record Luka’s supplied 2026-10-29 Claude review separately from local verification. Store final Guide/licence URLs in source; retain EPALE for a manual browser check. No network audit enters build, tests or CI.

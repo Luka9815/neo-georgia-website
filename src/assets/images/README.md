@@ -10,7 +10,7 @@ The large files in source/ are build inputs and are excluded from Eleventy passt
 
 - Title: Tbilisi, Georgia - Building of the Tbilisi State University - 2023.jpg
 - Author: Patrik Kunec
-- Licence: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+- Licence: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 - Source: https://commons.wikimedia.org/wiki/File:Tbilisi,_Georgia_-_Building_of_the_Tbilisi_State_University_-_2023.jpg
 - Commons original size: 4000 × 3000px. Local supplied size: 3840 × 2880px.
 - SHA-256: 308008b528c320b3ab4ac76c78289bc061299c4fb44d824854d9a5afc75b4bff
@@ -22,7 +22,7 @@ The large files in source/ are build inputs and are excluded from Eleventy passt
 
 - Title: Tbilisi State University 1.jpg
 - Author: Mr.Rosewater
-- Licence: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0)
+- Licence: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)
 - Source: https://commons.wikimedia.org/wiki/File:Tbilisi_State_University_1.jpg
 - Commons original size: 2592 × 1944px. Local supplied size: 2592 × 1944px.
 - SHA-256: 562a207d7f23bd9d08b7b66103e05840227061eaf03046dc081ea9c85917d8e3
@@ -46,7 +46,7 @@ The large files in source/ are build inputs and are excluded from Eleventy passt
 
 - Title: 20110421 Tbilisi Georgia Panoramic.jpg
 - Author: User:Ggia
-- Licence: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0)
+- Licence: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)
 - Source: https://commons.wikimedia.org/wiki/File:20110421_Tbilisi_Georgia_Panoramic.jpg
 - Commons original size: 4000 × 1889px. Local supplied size: 3840 × 1813px.
 - SHA-256: c973c55578b70295012f61bcf9036ce8b605f0e42c1676d4acf24e7eee581f1c
@@ -58,7 +58,7 @@ The large files in source/ are build inputs and are excluded from Eleventy passt
 
 - Title: Panorama of Tbilisi, Georgia.jpg
 - Author: GeoO
-- Licence: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+- Licence: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 - Source: https://commons.wikimedia.org/wiki/File:Panorama_of_Tbilisi,_Georgia.jpg
 - Commons original size: 4032 × 3024px. Local supplied size: 3840 × 2880px.
 - SHA-256: 6682d09750471ae8f6ef19612943df7287952b4b9297c9ceb46f37cf21920cba
@@ -70,7 +70,7 @@ The large files in source/ are build inputs and are excluded from Eleventy passt
 
 - Title: Batumi Skyline (31).jpg
 - Author: herr.eichhorn from Berlin, Germany
-- Licence: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0)
+- Licence: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)
 - Source: https://commons.wikimedia.org/wiki/File:Batumi_Skyline_(31).jpg
 - Commons original size: 3445 × 2070px. Local supplied size: 3445 × 2070px.
 - SHA-256: f91a524be3366e6ecb2255997e23c4f91c17901f8fdcbfe565b0d2f6c7aa0116
@@ -82,7 +82,7 @@ The large files in source/ are build inputs and are excluded from Eleventy passt
 
 - Title: Georgian Technical University, Building 0.jpg
 - Author: Gaga.vaa
-- Licence: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0)
+- Licence: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)
 - Source: https://commons.wikimedia.org/wiki/File:Georgian_Technical_University,_Building_0.jpg
 - Commons original size: 3290 × 2148px. Local supplied size: 3290 × 2148px.
 - SHA-256: 18d4471e71cd08d2911e124cf775622810c3c447f95e865e9d39e0fd7a5ccc31
@@ -94,7 +94,7 @@ The large files in source/ are build inputs and are excluded from Eleventy passt
 
 - Title: 2014 Tbilisi, Park Rike (02).jpg
 - Author: Marcin Konsek
-- Licence: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+- Licence: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 - Source: https://commons.wikimedia.org/wiki/File:2014_Tbilisi,_Park_Rike_(02).jpg
 - Commons original size: 4527 × 3018px. Local supplied size: 3840 × 2560px.
 - SHA-256: 41266d16221f7f824b705456e96f1bd05747869151712caaeef2066b3bceca61
