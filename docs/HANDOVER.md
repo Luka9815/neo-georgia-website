@@ -1,8 +1,15 @@
 # Handover
 
-Last updated: 2026-10-30 (Codex, Session 25 review follow-ups)
+Last updated: 2026-10-30 (Codex, Session 26 visual redesign)
 
 ## Current state
+
+Session 26 starts at origin/main 53ed2e7 (merged Session 25) on codex/session-26-design. Luka approved prototype 4979276 on 2026-10-30. The stylesheet is consolidated before redesign, with a separate baseline comparison. The new system uses an 82rem container, larger desktop scale, navy title/Action bands, a directional contrast-tested Home gradient, softer cards, sector rows, individual-route pills and navy figures. See DESIGN.md and the dated supersessions in DECISIONS.md. Mobile type exceptions preserve unbroken Georgian Home words at 320px and EU emblem prominence.
+
+All content, translation strings, routes, fonts, original palette tokens, EU files/disclaimers, seven destinations, siteLaunched=false and preview bar remain unchanged. No production dependency or layout JavaScript is added. Exactly 16 office placeholders remain, and all launch prerequisites below still apply. Session 26 validation passes clean root/prefix builds, all 205 tests per layout and 109 browser pages per layout with zero axe violations. All 24 final Lighthouse pairs meet baseline (performance 98 to 100, accessibility 100). There are 144 requested before/after screenshots plus 72 exact consolidation captures. Evidence and reproduction are in review/session-26/README.md.
+
+## Session 25 baseline
+
 
 Session 24 is merged as PR #24, 661def8, verified against GitHub main. Session 25 starts from that commit on codex/session-25-follow-ups. Confirmed office address and hours supplied by Luka on 2026-10-29 now live in office.json. Exactly 16 central placeholders remain. Team cards use validated integer order, single role headings, labelled names and real-address mailto links. Every redirect stub follows its target language, with an accurate continuation link. Fifteen further approved WordPress page mappings are included; the excluded drafts/blank pages remain omitted.
 
@@ -36,7 +43,7 @@ Final results: clean root and prefix builds pass, with 172 tests and 109 full br
 
 ## Next step
 
-Review the Session 25 PR and evidence. Then obtain Nino’s content sign-off and approved office facts; follow LAUNCH.md in order. Do not merge or launch automatically. Hosted Event/image round trips, signed-grant review, domain and institutional transfer remain outside this session.
+Review the Session 26 PR and evidence. Then obtain Nino’s content sign-off and approved office facts; follow LAUNCH.md in order. Do not merge or launch automatically. Hosted Event/image round trips, signed-grant review, domain and institutional transfer remain outside this session.
 
 ## Launch checklist
 

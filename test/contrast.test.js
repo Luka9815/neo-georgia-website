@@ -56,3 +56,19 @@ test('AA Home text over worst-case white photograph with the lighter overlay',()
  assert.match(css,/rgba\(0, 0, 0, 0\.58\)/);
  assert.match(css,/\.home-hero :is\(\.eyebrow,\s*\.hero-intro\) \{ color: var\(--paper\)/);
 });
+
+for(const width of [1024,1280,1440,1920])test(`desktop hero white-pixel contrast at text edge, ${width}px`,()=>{
+ const root=width>=1280?17:16;
+ const wrapper=Math.min(width,82*root);const padding=2*root;
+ const right=(width-wrapper)/2+padding+Math.min(46*root,(wrapper-2*padding)*.58);
+ const fraction=right/width;
+ const stops=[...[...css.matchAll(/rgb\(5 38 79 \/ ([\d.]+)%\) ([\d.]+)%/g)]].map(m=>({alpha:Number(m[1])/100,x:Number(m[2])/100}));
+ assert.equal(stops.length,4);
+ const upper=stops.findIndex(s=>s.x>=fraction);assert.ok(upper>0);
+ const a=stops[upper-1],b=stops[upper];const alpha=a.alpha+(b.alpha-a.alpha)*(fraction-a.x)/(b.x-a.x);
+ const rgb=[5,38,79].map(c=>Math.round(c*alpha+255*(1-alpha)));
+ const background='#'+rgb.map(c=>c.toString(16).padStart(2,'0')).join('');
+ const ratio=(luminance('#ffffff')+.05)/(luminance(background)+.05);
+ assert.ok(ratio>=4.5,`${fraction}: ${ratio}`);
+ assert.match(css,/width: min\(46rem,58%\)/);
+});

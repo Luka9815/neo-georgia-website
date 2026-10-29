@@ -586,3 +586,6 @@ Supersede the card styling in “Session 21, portal design system” (2026-10-29
 
 ## 2026-10-30: Session 26 item 6, Home rhythm and individual routes (Luka)
 Supersede spacing in “Session 22 item 6, shared spacing and preview bar” (2026-10-29), preserving the unchanged preview bar. Home bands use 4rem padding, larger headings and navy key figures with gold rules and a white chart. Individual routes become 48px pill links in a tinted panel; no translation or destination changes.
+
+## 2026-10-30: Session 26 item 7, responsive exceptions and quality evidence (Luka)
+Keep the larger wordmark on desktop and the prior compact mobile size so the EU emblem remains more prominent. Below 24rem only, reduce headline minimums to keep Georgian words unbroken at 320px; the long Privacy title has its own responsive scale, selected by a stable page-slug class. These are measured accessibility adjustments to the approved prototype scale; all content and translation strings remain unchanged. All axe rules/fixtures remain enabled; allow one worker for the complete queue after concurrent Chromium audits crashed. Forced colours replaces bands/gradients with system colours.

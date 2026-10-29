@@ -1,0 +1,6 @@
+import {chromium} from 'playwright';
+import {serveFixtureSite} from './fixture-site.js';
+import getViews from '../src/_data/views.js';
+import {writeFileSync} from 'node:fs';
+const server=await serveFixtureSite(process.cwd());const browser=await chromium.launch({executablePath:'/usr/bin/chromium',args:['--no-sandbox']});const failures=[];
+try{const p=await browser.newPage({viewport:{width:320,height:800}});for(const view of getViews().filter(v=>!v.target)){await p.goto(server.base+view.path);await p.evaluate(()=>document.fonts.ready);if(await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth)){const details=await p.evaluate(()=>[...document.querySelectorAll('h1,h2,h3,h4')].filter(e=>e.scrollWidth>e.clientWidth+1).map(e=>({tag:e.tagName,text:e.textContent,width:e.clientWidth,scrollWidth:e.scrollWidth})));failures.push({path:view.path,details});console.log(JSON.stringify(failures.at(-1)));}}writeFileSync('docs/review/session-26/all-route-overflow.json',JSON.stringify({width:320,routes:getViews().filter(v=>!v.target).length,failures},null,2)+'\n');}finally{await browser.close();await server.close();}if(failures.length)process.exitCode=1;else console.log("All 109 real routes pass 320px overflow checks.");

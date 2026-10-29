@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-30 (Codex, Session 26: visual redesign)
+- Consolidate site.css before redesign and compare all 72 bilingual 390/1280/1920px baseline captures within a declared pixel tolerance.
+- Integrate the approved prototype: wider desktop scale, contrast-bounded directional Home overlay, navy title and Action bands, softer cards, sector layouts, individual-route pills and navy figures.
+- Preserve source content, routes, translations, seven destinations, fonts, original colour tokens, EU visibility, preview and launch state. Add only navy alias/gold accent; no new production dependency or layout JavaScript.
+- Add computed and real-browser hero contrast checks, narrow-screen/scrollbar checks, forced colours and EU prominence checks. Clean builds and 205 tests pass per layout. Both complete accessibility sweeps pass 109 pages with zero axe violations. All 24 final Lighthouse pairs meet baseline, performance 98 to 100 and accessibility 100. Detailed final browser/Lighthouse results and captures are in review/session-26.
+
+
 ## 2026-10-30 (Codex, Session 25: review follow-ups and office facts)
 - Apply Luka’s 2026-10-29 confirmed bilingual office address and hours; retain the separate legal-address placeholder. Regenerate the inventory: exactly 16 remaining occurrences.
 - Order Team cards with validated Person integers, show each role once, keep names labelled and link only real role emails.
