@@ -578,3 +578,7 @@ Supersede the overlay in “Session 23 item 2, photo placements and lighter Home
 
 ## 2026-10-30: Session 26 item 4, full-bleed title and Action bands (Luka)
 Supersede the Action hero in “Session 21 item 2, Action hero and facts” (2026-10-29). Shared inner-page h1 and Action sections use navy bands with white headings, gold rules and inverse-muted summaries. Painted bleed uses a clipped shadow instead of viewport-width layout, avoiding scrollbar overflow. Facts stick below the desktop header with their own bounded scrolling area. Landscape/facade banners follow the band; keep Campus E’s full-frame exception.
+
+
+## 2026-10-30: Session 26 item 5, cards and sector grids (Luka)
+Supersede the card styling in “Session 21, portal design system” (2026-10-29): softer borders, two-layer shadows, fixed minimum auto-fill tracks, tinted icons and desktop sector labels beside the cards. Hover lift occurs only when reduced motion is not requested. Preserve native links and growing Georgian labels.
