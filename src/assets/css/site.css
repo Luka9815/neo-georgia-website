@@ -139,7 +139,7 @@ dd { margin: 0 0 var(--space-2); }
 .project-chart .chart-value { font-weight: 700; }
 .mini-chart rect { fill: var(--blue); }
 .mini-chart text { font-size: 12px; }
-.eyebrow { font-size: 0.875rem; }
+.eyebrow { font-size: 0.875rem; display: inline-block; font-weight: 700; border-bottom: 3px solid var(--gold); padding-bottom: .35rem; align-self: flex-start; }
 .band-soft { background: var(--surface); }
 .audience-tiles { grid-template-columns: 1fr; gap: 0.5rem; }
 .audience-tiles .card > .icon:last-child { width: 1.25rem; height: 1.25rem; margin: 0px; align-self: center; }
@@ -204,10 +204,10 @@ dd { margin: 0 0 var(--space-2); }
 .news-article .news-image { margin-bottom: 1.5rem; }
 .home-hero { margin: 0px; background: var(--blue-dark); color: var(--paper); position: relative; isolation: isolate; }
 .hero-grid { padding-block: 0px; display: block; position: static; }
-.hero-main { position: relative; z-index: 2; padding-block: 2rem 6rem; max-width: 48rem; }
-.home-hero h1 { color: var(--paper); max-width: 22ch; font-size: clamp(1.8rem, 3.5vw, 3.1rem); }
+.hero-main { position: relative; z-index: 2; padding-block: 2rem 6rem; min-height: 36rem; display: flex; flex-direction: column; justify-content: center; max-width: 46rem; }
+.home-hero h1 { color: var(--paper); font-size: clamp(2rem,3.4vw,3.3rem); line-height: 1.15; max-width: none; overflow-wrap: normal; word-break: normal; hyphens: none; }
 .eyebrow, .hero-intro { color: var(--inverse-muted); }
-.hero-intro { max-width: 48ch; margin-bottom: 2rem; }
+.hero-intro { max-width: 48ch; margin-bottom: 2rem; font-size: 1.15rem; }
 .home-hero .button { color: var(--blue-dark); background: var(--paper); border-color: var(--paper); }
 .home-hero .button-secondary { background: var(--blue-dark); color: var(--paper); }
 .home-hero :focus-visible { outline-color: var(--paper); }
@@ -343,4 +343,16 @@ dd { margin: 0 0 var(--space-2); }
 
 @media (min-width: 80rem) {
  html { font-size: 106.25%; }
+}
+
+@media (min-width: 64rem) {
+ .hero-main { width: min(46rem,58%); padding-block: 4rem 6rem; }
+}
+
+@media (min-width: 64rem) {
+ .photo-hero picture::after { background: linear-gradient(90deg, rgb(5 38 79 / 94%) 0%, rgb(5 38 79 / 92%) 46%, rgb(5 38 79 / 55%) 62%, rgb(5 38 79 / 0%) 82%); }
+}
+
+@media (min-width: 64rem) {
+ .photo-hero figcaption { inset-inline: auto 1rem; bottom: 1rem; max-width: 30rem; border-radius: .5rem; background: var(--navy); font-size: .7rem; }
 }

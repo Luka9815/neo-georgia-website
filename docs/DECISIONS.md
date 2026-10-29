@@ -570,3 +570,7 @@ Consolidate repeated Session 21 to 23 declarations into tokens, base, layout, he
 
 ## 2026-10-30: Session 26 item 2, scale and width (Luka)
 Supersede the 75rem width and compact branding/navigation scale in “Session 21, portal design system” (2026-10-29). Use 82rem, a 106.25% root at 80rem viewport width, larger navigation targets and a 1.05rem wordmark. Preserve EU emblem prominence at all six existing widths.
+
+
+## 2026-10-30: Session 26 item 3, directional Home overlay (Luka)
+Supersede the overlay in “Session 23 item 2, photo placements and lighter Home overlay” (2026-10-29), retaining all photo placements. Use the approved navy gradient on desktop and the full mobile overlay. Limit desktop text to the smaller of 46rem and 58% of the inner wrapper so its right edge remains within the contrast-safe gradient at 1024/1280/1440/1920px. White-pixel contrast must remain at least 4.5:1. Keep headings unbroken within Georgian words and a compact bottom-right credit.
