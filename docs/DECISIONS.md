@@ -485,3 +485,7 @@ Stop new photography after the Commons API CONNECT request returns HTTP 403. Do 
 
 ## 2026-10-29: Session 22 quality and review (Luka)
 Keep 48 bilingual before/after 390/1280px captures and reproducible root/prefix evidence under review/session-22. Both layouts pass 171 tests and 109 browser pages with zero axe violations; retain all rules and fixture coverage. All eight mobile Lighthouse trials meet performance 90+ (98–100 measured) and accessibility 100. Measure complete Home transfer with every image loaded: 274,749 bytes ka and 233,455 bytes en. Hero contrast is bounded over a worst-case white photo pixel at 13.58:1/11.07:1. Local checks do not replace hosted/manual review. Keep the Commons photography block explicit, push the seven item commits plus quality evidence, open a PR against main and do not merge.
+
+
+## 2026-10-29: Session 23 item 1, supplied Commons assets (Luka)
+Start from origin/main f4d07a1 and merge origin/assets/commons-photos c4886d6. Accept the eight supplied JPEGs after full decode, original/3840px dimension and visual-subject checks against Luka's Commons API metadata. Move COMMONS-SOURCES into assets/images/README.md, record hashes and actual dimensions, and exclude source/ from all deployed passthrough copies. Attribution verification comes from Luka's supplied records; do not claim a new live API check.

@@ -16,6 +16,215 @@
     "alt": {
       "ka": "საკონფერენციო დარბაზში მსმენელები უყურებენ მომხსენებელსა და ეკრანზე ნაჩვენებ სლაიდს.",
       "en": "An audience watches a speaker beside a projected slide in a conference room."
-    }
+    },
+    "id": "dissemination"
+  },
+  "tsuMain": {
+    "id": "tsuMain",
+    "src": "/assets/images/source/neo-tsu-main-building.jpg",
+    "title": "Tbilisi, Georgia - Building of the Tbilisi State University - 2023.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Tbilisi,_Georgia_-_Building_of_the_Tbilisi_State_University_-_2023.jpg",
+    "author": "Patrik Kunec",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "publicDomain": false,
+    "checked": "2026-10-29",
+    "verification": "Luka supplied Commons API attribution; local full decode, dimensions and visual subject check",
+    "width": 3840,
+    "height": 2880,
+    "commonsOriginalWidth": 4000,
+    "commonsOriginalHeight": 3000,
+    "sha256": "308008b528c320b3ab4ac76c78289bc061299c4fb44d824854d9a5afc75b4bff",
+    "focal": {
+      "desktop": "50% 50%",
+      "mobile": "56% 50%"
+    },
+    "alt": {
+      "en": "The main building of Tbilisi State University behind mature trees.",
+      "ka": "თბილისის სახელმწიფო უნივერსიტეტის მთავარი შენობა ხეებს შორის."
+    },
+    "overlay": false
+  },
+  "tsuEvening": {
+    "id": "tsuEvening",
+    "src": "/assets/images/source/neo-tsu-evening.jpg",
+    "title": "Tbilisi State University 1.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Tbilisi_State_University_1.jpg",
+    "author": "Mr.Rosewater",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "publicDomain": false,
+    "checked": "2026-10-29",
+    "verification": "Luka supplied Commons API attribution; local full decode, dimensions and visual subject check",
+    "width": 2592,
+    "height": 1944,
+    "commonsOriginalWidth": 2592,
+    "commonsOriginalHeight": 1944,
+    "sha256": "562a207d7f23bd9d08b7b66103e05840227061eaf03046dc081ea9c85917d8e3",
+    "focal": {
+      "desktop": "50% 50%",
+      "mobile": "52% 50%"
+    },
+    "alt": {
+      "en": "Tbilisi State University illuminated in the evening, behind roadside trees.",
+      "ka": "თბილისის სახელმწიფო უნივერსიტეტის განათებული შენობა საღამოს, ხეების მიღმა."
+    },
+    "overlay": false
+  },
+  "ilia": {
+    "id": "ilia",
+    "src": "/assets/images/source/neo-ilia-state-university.jpg",
+    "title": "ICSU Campus E.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:ICSU_Campus_E.jpg",
+    "author": "Flowerx at English Wikipedia",
+    "licence": "Public domain",
+    "licenceUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+    "publicDomain": true,
+    "checked": "2026-10-29",
+    "verification": "Luka supplied Commons API attribution; local full decode, dimensions and visual subject check",
+    "width": 2592,
+    "height": 1944,
+    "commonsOriginalWidth": 2592,
+    "commonsOriginalHeight": 1944,
+    "sha256": "8af7a35fe1679e245e3db26241949139c70ff2c1fda4be21b2d001712e2c8a80",
+    "focal": {
+      "desktop": "50% 48%",
+      "mobile": "50% 50%"
+    },
+    "alt": {
+      "en": "Ilia State University Campus E, with its forecourt and trees.",
+      "ka": "ილიას სახელმწიფო უნივერსიტეტის E კორპუსი, ეზო და ხეები."
+    },
+    "overlay": false
+  },
+  "sameba": {
+    "id": "sameba",
+    "src": "/assets/images/source/neo-tbilisi-panorama-sameba.jpg",
+    "title": "20110421 Tbilisi Georgia Panoramic.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:20110421_Tbilisi_Georgia_Panoramic.jpg",
+    "author": "User:Ggia",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "publicDomain": false,
+    "checked": "2026-10-29",
+    "verification": "Luka supplied Commons API attribution; local full decode, dimensions and visual subject check",
+    "width": 3840,
+    "height": 1813,
+    "commonsOriginalWidth": 4000,
+    "commonsOriginalHeight": 1889,
+    "sha256": "c973c55578b70295012f61bcf9036ce8b605f0e42c1676d4acf24e7eee581f1c",
+    "focal": {
+      "desktop": "63% 48%",
+      "mobile": "63% 48%"
+    },
+    "alt": {
+      "en": "Panorama of Tbilisi, with Sameba Cathedral above the city.",
+      "ka": "თბილისის პანორამა და ქალაქის თავზე აღმართული სამების საკათედრო ტაძარი."
+    },
+    "overlay": true
+  },
+  "river": {
+    "id": "river",
+    "src": "/assets/images/source/neo-tbilisi-panorama-river.jpg",
+    "title": "Panorama of Tbilisi, Georgia.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Panorama_of_Tbilisi,_Georgia.jpg",
+    "author": "GeoO",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "publicDomain": false,
+    "checked": "2026-10-29",
+    "verification": "Luka supplied Commons API attribution; local full decode, dimensions and visual subject check",
+    "width": 3840,
+    "height": 2880,
+    "commonsOriginalWidth": 4032,
+    "commonsOriginalHeight": 3024,
+    "sha256": "6682d09750471ae8f6ef19612943df7287952b4b9297c9ceb46f37cf21920cba",
+    "focal": {
+      "desktop": "46% 52%",
+      "mobile": "42% 52%"
+    },
+    "alt": {
+      "en": "Panorama of Tbilisi and the Mtkvari river with green riverbanks.",
+      "ka": "თბილისის პანორამა, მდინარე მტკვარი და გამწვანებული სანაპიროები."
+    },
+    "overlay": false
+  },
+  "batumi": {
+    "id": "batumi",
+    "src": "/assets/images/source/neo-batumi-skyline.jpg",
+    "title": "Batumi Skyline (31).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Batumi_Skyline_(31).jpg",
+    "author": "herr.eichhorn from Berlin, Germany",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "publicDomain": false,
+    "checked": "2026-10-29",
+    "verification": "Luka supplied Commons API attribution; local full decode, dimensions and visual subject check",
+    "width": 3445,
+    "height": 2070,
+    "commonsOriginalWidth": 3445,
+    "commonsOriginalHeight": 2070,
+    "sha256": "f91a524be3366e6ecb2255997e23c4f91c17901f8fdcbfe565b0d2f6c7aa0116",
+    "focal": {
+      "desktop": "50% 60%",
+      "mobile": "53% 60%"
+    },
+    "alt": {
+      "en": "The Batumi skyline seen across the water.",
+      "ka": "ბათუმის ხედი წყლის მეორე მხრიდან."
+    },
+    "overlay": false
+  },
+  "gtu": {
+    "id": "gtu",
+    "src": "/assets/images/source/neo-gtu-building.jpg",
+    "title": "Georgian Technical University, Building 0.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Georgian_Technical_University,_Building_0.jpg",
+    "author": "Gaga.vaa",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "publicDomain": false,
+    "checked": "2026-10-29",
+    "verification": "Luka supplied Commons API attribution; local full decode, dimensions and visual subject check",
+    "width": 3290,
+    "height": 2148,
+    "commonsOriginalWidth": 3290,
+    "commonsOriginalHeight": 2148,
+    "sha256": "18d4471e71cd08d2911e124cf775622810c3c447f95e865e9d39e0fd7a5ccc31",
+    "focal": {
+      "desktop": "50% 45%",
+      "mobile": "50% 45%"
+    },
+    "alt": {
+      "en": "Georgian Technical University Building 0, with columns and greenery.",
+      "ka": "საქართველოს ტექნიკური უნივერსიტეტის ნულოვანი კორპუსი სვეტებითა და გამწვანებით."
+    },
+    "overlay": false
+  },
+  "rike": {
+    "id": "rike",
+    "src": "/assets/images/source/neo-tbilisi-rike-park.jpg",
+    "title": "2014 Tbilisi, Park Rike (02).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:2014_Tbilisi,_Park_Rike_(02).jpg",
+    "author": "Marcin Konsek",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "publicDomain": false,
+    "checked": "2026-10-29",
+    "verification": "Luka supplied Commons API attribution; local full decode, dimensions and visual subject check",
+    "width": 3840,
+    "height": 2560,
+    "commonsOriginalWidth": 4527,
+    "commonsOriginalHeight": 3018,
+    "sha256": "41266d16221f7f824b705456e96f1bd05747869151712caaeef2066b3bceca61",
+    "focal": {
+      "desktop": "50% 55%",
+      "mobile": "50% 55%"
+    },
+    "alt": {
+      "en": "Landscaped paths and gardens in Rike Park, Tbilisi.",
+      "ka": "კეთილმოწყობილი ბილიკები და ბაღები თბილისის რიყის პარკში."
+    },
+    "overlay": false
   }
 }
