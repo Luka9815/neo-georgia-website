@@ -582,3 +582,7 @@ Supersede the Action hero in “Session 21 item 2, Action hero and facts” (202
 
 ## 2026-10-30: Session 26 item 5, cards and sector grids (Luka)
 Supersede the card styling in “Session 21, portal design system” (2026-10-29): softer borders, two-layer shadows, fixed minimum auto-fill tracks, tinted icons and desktop sector labels beside the cards. Hover lift occurs only when reduced motion is not requested. Preserve native links and growing Georgian labels.
+
+
+## 2026-10-30: Session 26 item 6, Home rhythm and individual routes (Luka)
+Supersede spacing in “Session 22 item 6, shared spacing and preview bar” (2026-10-29), preserving the unchanged preview bar. Home bands use 4rem padding, larger headings and navy key figures with gold rules and a white chart. Individual routes become 48px pill links in a tinted panel; no translation or destination changes.

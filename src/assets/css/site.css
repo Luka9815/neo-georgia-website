@@ -214,11 +214,11 @@ dd { margin: 0 0 var(--space-2); }
 .photo-hero { margin: 0px; align-self: center; padding-block: 0px 1.5rem; }
 .photo-hero figcaption, .photo-hero a { color: var(--inverse-muted); }
 .photo-hero .portal-image { width: 100%; height: 100%; object-fit: cover; border-radius: 0px; object-position: var(--photo-focal); }
-.home-band { margin: 0px; padding-block: 2rem; }
+.home-band { margin: 0px; padding-block: 4rem; }
 .home-action-sector { margin-block: 1.25rem; }
 .home-action-sector > h3 { border-bottom: 2px solid var(--teal); color: var(--teal); padding-bottom: 0.5rem; margin-bottom: 0.75rem; font-size: 1rem; }
 .home-action-sector .cards { gap: 0.75rem; grid-template-columns: repeat(auto-fill,minmax(min(100%,19rem),1fr)); }
-.home-figures { background: var(--teal-soft); }
+.home-figures {  background: var(--navy); color: var(--paper); }
 .home-figures .figures { margin-block: 2rem; }
 .home-figures h3 { margin-top: 2rem; }
 .action-hero { display: flex; align-items: flex-start; gap: 1.5rem;  margin-top: 0px;   border-bottom: 4px solid var(--teal); margin: 0 0 2.5rem; padding: 3.5rem 0 3rem; border: 0; border-radius: 0; color: var(--paper); background: var(--navy); box-shadow: 0 0 0 100vmax var(--navy); clip-path: inset(0 -100vmax); }
@@ -261,6 +261,17 @@ dd { margin: 0 0 var(--space-2); }
 .action-hero p { color: var(--inverse-muted); font-size: 1.1rem; max-width: 60ch; }
 .action-sector > h3, .home-action-sector > h3 { display: flex; align-items: flex-start; gap: .75rem; font-size: 1.15rem; color: var(--navy); border-bottom: 0; }
 .action-sector > h3::before, .home-action-sector > h3::before { content: ""; flex-shrink: 0; width: .5rem; height: 1.5rem; border-radius: 2px; background: var(--gold); }
+#individuals { padding: 2rem; border-radius: var(--radius); background: var(--surface); }
+#individuals ul { display: flex; flex-wrap: wrap; gap: .75rem; list-style: none; padding: 0; }
+#individuals li a { display: inline-flex; min-height: 48px; align-items: center; padding: .75rem 1.25rem; border-radius: 999px; background: var(--paper); border: 1px solid #d6dde8; font-weight: 700; text-decoration: none; }
+#individuals li a:is(:hover,:focus-visible) { text-decoration: underline; }
+.home-band h2, .section-heading h2 { font-size: clamp(1.6rem,2.8vw,2.4rem); }
+.home-figures :is(h2,h3,a,summary) { color: var(--paper); }
+.home-figures .figures dt, .home-figures .figures-note, .home-figures p { color: var(--inverse-muted); }
+.home-figures .figures dd { color: var(--paper); font-size: clamp(2.6rem,5vw,4rem); }
+.home-figures .figures > div { border-top: 3px solid var(--gold); padding-top: 1rem; }
+.home-figures :focus-visible { outline-color: var(--paper); }
+.home-figures .project-statistics { background: var(--paper); color: var(--ink); }
 /* Utilities */
 .skip { position: absolute; top: -10rem; left: 1rem; padding: 1rem; background: var(--paper); color: var(--blue); z-index: 20; }
 .skip:focus { top: 1rem; position: fixed; }
