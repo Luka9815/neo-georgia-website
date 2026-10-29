@@ -48,8 +48,25 @@ test('every Commons placement has local responsive variants and an accurate bili
     assert.ok(caption.text().includes(photo.author));assert.equal(caption.find(`a[href="${photo.source}"]`).length,1);
     assert.equal(caption.find(`a[rel=license][href="${photo.licenceUrl}"]`).length,1);
     assert.ok(caption.text().includes(photo.publicDomain?strings.publicDomain:photo.licence));
-    assert.ok(caption.text().includes(photo.overlay?strings.photoModifiedOverlay:strings.photoModified));
+    assert.ok(caption.text().includes(photo.crop===false?strings.photoResized:(photo.overlay?strings.photoModifiedOverlay:strings.photoModified)));
    }
   }
+ }
+});
+
+
+test('the approved NEO News photo keeps its original alternatives and visible credit without adding a second card link',()=>{
+ const photo=photos.dissemination;
+ for(const lang of ['ka','en']){
+  for(const route of ['','news/']){
+   const $=load(readFileSync(`_site/${lang}/${route}index.html`,'utf8'));
+   const card=$('[data-news-photo-credit]').closest('.card');assert.equal(card.length,1);
+   assert.equal(card.find('a').length,1);assert.ok(card.text().includes(photo.credit[lang]));
+   assert.equal(card.find('img').attr('alt'),photo.alt[lang]);
+  }
+  const $=load(readFileSync(`_site/${lang}/news/neo-dissemination-event-2025/index.html`,'utf8'));
+  assert.ok($('.news-photo figcaption').text().includes(photo.credit[lang]));
+  assert.equal($('.news-photo img').attr('alt'),photo.alt[lang]);
+  assert.equal($('.news-photo a').attr('href'),photo.source);
  }
 });

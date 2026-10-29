@@ -45,6 +45,6 @@ eleventyExcludeFromCollections: true
 {% if nextEvents.length %}
 <section class="home-band" aria-labelledby="events-title"><div class="wrapper"><div class="section-heading"><h2 id="events-title">{{ t.upcomingEvents }}</h2><a href="/{{ view.lang }}/events/">{{ t.allEvents }}</a></div>{{ cards(nextEvents,'event',t,view.lang,showSectionLabel=true) }}</div></section>
 {% else %}<div class="wrapper"><p class="compact-update"><a href="/{{ view.lang }}/events/">{{ t.eventsCompact }}</a></p></div>{% endif %}
-<section class="home-band band-soft" aria-labelledby="news-title"><div class="wrapper"><div class="section-heading"><h2 id="news-title">{{ t.latestNews }}</h2><a href="/{{ view.lang }}/news/">{{ t.allNews }}</a></div>{{ cards(news | take(3),'news',t,view.lang,showSectionLabel=true) }}</div></section>
+<section class="home-band band-soft" aria-labelledby="news-title"><div class="wrapper"><div class="section-heading"><h2 id="news-title">{{ t.latestNews }}</h2><a href="/{{ view.lang }}/news/">{{ t.allNews }}</a></div>{{ cards(news | take(3),'news',t,view.lang,showSectionLabel=true,photoCredits=portalPhotos) }}</div></section>
 {% if stories.length %}<section class="home-band home-story" aria-labelledby="story-title"><div class="wrapper"><div class="section-heading"><h2 id="story-title">{{ t.story }}</h2><a href="/{{ view.lang }}/stories/">{{ t.allStories }}</a></div>{{ cards(stories | take(1),'story',t,view.lang,showSectionLabel=true) }}</div></section>{% endif %}
 {% endblock %}

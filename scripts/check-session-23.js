@@ -33,7 +33,16 @@ try {
    assert.deepEqual(result.violations.map(v=>({id:v.id,nodes:v.nodes.map(n=>n.target)})),[],`${lang}/${path}, ${width}px`);
    }
   }
+  for(const lang of ['ka','en']) for(const path of ['news/','news/neo-dissemination-event-2025/']) {
+   await page.goto(`${base}${prefix}${lang}/${path}`);await page.evaluate(()=>document.fonts.ready);
+   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+   assert.ok(await page.locator('[data-news-photo-credit],[data-photo-credit="dissemination"]').isVisible());
+   if(javaScriptEnabled) {
+    const result=await new AxeBuilder({page}).options({resultTypes:['violations']}).analyze();
+    assert.deepEqual(result.violations,[],`${lang}/${path}, ${width}px`);
+   }
+  }
   assert.deepEqual(originalRequests,[]);await context.close();
  }
- console.log('Session 23: 64 bilingual 390/1280px photo checks (32 with axe, 32 without JavaScript) pass credit focus, decoded dimensions, no source requests, no overflow and Home contrast/credit layout checks.');
+ console.log('Session 23: 80 bilingual 390/1280px photo/News checks (40 with axe, 40 without JavaScript) pass credit focus, decoded dimensions, no source requests, no overflow and Home contrast/credit layout checks.');
 } finally {await browser.close();}

@@ -11,6 +11,6 @@ eleventyExcludeFromCollections: true
 {% block pageContent %}
 <section>
   <h2>{{ t.latestNews }}</h2>
-  {{ cards(news, 'news', t, view.lang) }}
+  {{ cards(news, 'news', t, view.lang,photoCredits=portalPhotos) }}
 </section>
 {% endblock %}

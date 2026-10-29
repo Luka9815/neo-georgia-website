@@ -43,7 +43,8 @@
       "en": "The main building of Tbilisi State University behind mature trees.",
       "ka": "თბილისის სახელმწიფო უნივერსიტეტის მთავარი შენობა ხეებს შორის."
     },
-    "overlay": false
+    "overlay": false,
+    "crop": true
   },
   "tsuEvening": {
     "id": "tsuEvening",
@@ -69,7 +70,8 @@
       "en": "Tbilisi State University illuminated in the evening, behind roadside trees.",
       "ka": "თბილისის სახელმწიფო უნივერსიტეტის განათებული შენობა საღამოს, ხეების მიღმა."
     },
-    "overlay": false
+    "overlay": false,
+    "crop": true
   },
   "ilia": {
     "id": "ilia",
@@ -95,7 +97,8 @@
       "en": "Ilia State University Campus E, with its forecourt and trees.",
       "ka": "ილიას სახელმწიფო უნივერსიტეტის E კორპუსი, ეზო და ხეები."
     },
-    "overlay": false
+    "overlay": false,
+    "crop": false
   },
   "sameba": {
     "id": "sameba",
@@ -121,7 +124,8 @@
       "en": "Panorama of Tbilisi, with Sameba Cathedral above the city.",
       "ka": "თბილისის პანორამა და ქალაქის თავზე აღმართული სამების საკათედრო ტაძარი."
     },
-    "overlay": true
+    "overlay": true,
+    "crop": true
   },
   "river": {
     "id": "river",
@@ -147,7 +151,8 @@
       "en": "Panorama of Tbilisi and the Mtkvari river with green riverbanks.",
       "ka": "თბილისის პანორამა, მდინარე მტკვარი და გამწვანებული სანაპიროები."
     },
-    "overlay": false
+    "overlay": false,
+    "crop": true
   },
   "batumi": {
     "id": "batumi",
@@ -173,7 +178,8 @@
       "en": "The Batumi skyline seen across the water.",
       "ka": "ბათუმის ხედი წყლის მეორე მხრიდან."
     },
-    "overlay": false
+    "overlay": false,
+    "crop": true
   },
   "gtu": {
     "id": "gtu",
@@ -199,7 +205,8 @@
       "en": "Georgian Technical University Building 0, with columns and greenery.",
       "ka": "საქართველოს ტექნიკური უნივერსიტეტის ნულოვანი კორპუსი სვეტებითა და გამწვანებით."
     },
-    "overlay": false
+    "overlay": false,
+    "crop": true
   },
   "rike": {
     "id": "rike",
@@ -225,6 +232,7 @@
       "en": "Landscaped paths and gardens in Rike Park, Tbilisi.",
       "ka": "კეთილმოწყობილი ბილიკები და ბაღები თბილისის რიყის პარკში."
     },
-    "overlay": false
+    "overlay": false,
+    "crop": true
   }
 }

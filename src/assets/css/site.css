@@ -429,3 +429,10 @@ section { margin-block: 2rem; }
 .photo-modified { display: block; }
 .portal-photo figcaption { line-height: 1.5; }
 .photo-hero figcaption { overflow-wrap: anywhere; }
+
+.news-photo { margin: 1.5rem 0; }
+.news-photo figcaption,.news-photo-credit { font-size: .75rem; line-height: 1.5; color: var(--muted); }
+.news-photo-credit { margin-block: .5rem; }
+
+/* Campus E is tightly framed in the supplied photo: preserve its full facade. */
+.photo-banner[data-photo-id="ilia"] picture { aspect-ratio: 4 / 3; }

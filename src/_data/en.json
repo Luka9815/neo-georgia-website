@@ -325,5 +325,7 @@
   "photoLabel": "Photo",
   "photoViaCommons": "via Wikimedia Commons",
   "photoModified": "modified: cropped, resized and reformatted",
-  "photoModifiedOverlay": "modified: cropped, resized, reformatted and overlaid"
+  "photoModifiedOverlay": "modified: cropped, resized, reformatted and overlaid",
+  "photoSitePermission": "Used with permission; no open licence asserted.",
+  "photoResized": "modified: resized and reformatted; full frame retained"
 }

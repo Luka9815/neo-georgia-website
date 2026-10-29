@@ -452,3 +452,8 @@ Validated clean root/project-prefix builds and 167 tests per layout. Complete br
 ## 2026-10-29: Session 22 design polish (Luka)
 
 Polish native card/navigation links and focus, compact audience rows and Home Action sector tiles, introduce a full-width contrasted Home photo hero, remove News placeholder icons, tighten spacing and move the exact preview notice above the header. Add bilingual footer-linked photo credits. Commons API access is blocked with HTTP 403; no new photographs or substitute sources are published. Record the exact previously verified TSU candidate for manual download. Preserve content, snapshot data, existing URLs, EU assets/disclaimers and siteLaunched=false. Review evidence and validation are in review/session-22; no merge or launch.
+
+
+## 2026-10-29: Session 23 Commons photograph placements (Luka)
+
+Integrate the eight supplied Commons photographs after full decode, dimension/hash and visual-subject checks. Move their provenance into assets/images/README.md, exclude source JPEGs from deployment, and generate responsive local AVIF/WebP/JPEG up to 2560px. Place the panoramas/campuses on Home, About, five Find audiences and Opportunities, with reviewed focal points and a lighter contrasted Home overlay. Preserve the full tightly framed Campus E photograph. Add bilingual author/licence/file-page/modification credits, all eight credits-page records and visible permission-based credits for the retained NEO News image. Preserve content, data, URLs, EU visibility and siteLaunched=false. Validation, screenshots and limits are in review/session-23. No merge or launch.

@@ -39,7 +39,7 @@ The large files in source/ are build inputs and are excluded from Eleventy passt
 - Commons original size: 2592 × 1944px. Local supplied size: 2592 × 1944px.
 - SHA-256: 8af7a35fe1679e245e3db26241949139c70ff2c1fda4be21b2d001712e2c8a80
 - Supplied Commons metadata check and local verification date: 2026-10-29.
-- Published changes: resized, reformatted and cropped. Image adaptations remain under Public domain.
+- Published changes: resized and reformatted; the full supplied frame is retained at both widths. Image adaptations remain under Public domain.
 - Focal points: desktop 50% 48%; mobile 50% 50%.
 
 ## neo-tbilisi-panorama-sameba.jpg
@@ -108,4 +108,4 @@ The large files in source/ are build inputs and are excluded from Eleventy passt
 
 ## Selection and verification limits
 
-Use the Sameba panorama on Home: its wider 2.12:1 composition accommodates the desktop text and mobile focal crop while keeping the skyline legible. Reserve the TSU main building for About so its architecture can be shown at a gentler aspect ratio. Other placements follow Luka’s Session 23 list exactly. These city/campus photographs illustrate locations, not an assertion that a pictured institution or person endorses the site. The historical Session 22 Commons access block is resolved by the supplied asset branch, not by an unrecorded alternate download.
+Use the Sameba panorama on Home: its wider 2.12:1 composition accommodates the desktop text and mobile focal crop while keeping the skyline legible. Reserve the TSU main building for About so its architecture can be shown at a gentler aspect ratio. Campus E is already tightly framed, so preserve its full 4:3 frame at both widths. Other placements follow Luka’s Session 23 list exactly. These city/campus photographs illustrate locations, not an assertion that a pictured institution or person endorses the site. The historical Session 22 Commons access block is resolved by the supplied asset branch, not by an unrecorded alternate download.
