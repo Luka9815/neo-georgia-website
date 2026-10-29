@@ -18,10 +18,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      PORTAL_IMAGE_CACHE_DIR: ${{ runner.temp }}/neo-portal-image-cache
       PATH_PREFIX: /${{ github.event.repository.name }}/
       SITE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
     steps:
+      - name: Set image cache directory
+        run: echo "PORTAL_IMAGE_CACHE_DIR=$RUNNER_TEMP/neo-portal-image-cache" >> "$GITHUB_ENV"
       - uses: actions/checkout@v7
       - uses: actions/setup-node@v7
         with:
