@@ -469,3 +469,7 @@ Home shows the nine existing Actions as compact icon/name/Key Action tiles in se
 
 ## 2026-10-29: Session 22 item 4, full-width photographic hero (Luka)
 Supersede Session 21's no-CSS-cropping/no-overlay rule for the Home placement only. The existing approved photograph fills the hero using object-fit:cover and a 50%/45% focal point. A minimum 82% black overlay guarantees 4.5:1 for both text colours even over white image pixels; the caption has an opaque background. Keep the complete original, accurate event alternative and visible credit. Mobile buttons fill the width. No new photo is implied.
+
+
+## 2026-10-29: Session 22 item 5, text-only News cards (Luka)
+Remove the placeholder icon panel when News has no approved image. Use a teal top border and equal grid tracks alongside image cards; preserve titles, dates and summaries without clipping.

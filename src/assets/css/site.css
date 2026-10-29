@@ -382,3 +382,8 @@ header a:is(:hover,:focus-visible), .footer-grid nav a:is(:hover,:focus-visible)
  .home-hero :is(h1,p,a), .home-hero .button { color: CanvasText; }
  .home-hero :focus-visible { outline-color: Highlight; }
 }
+
+.cards-news { grid-auto-rows: 1fr; }
+.cards-news .news-text-only { border-top: 4px solid var(--teal); }
+.cards-news .card-body { margin-top: auto; }
+.cards-news .news-text-only :is(h2,h3) { margin-top: .75rem; }

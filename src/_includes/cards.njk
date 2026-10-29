@@ -1,7 +1,7 @@
 {% macro cards(items, type, t, lang, heading='h3', showSectionLabel=false, emptyMessage='', compact=false) %}
 <ul class="cards cards-{{ type }}{% if compact %} cards-compact{% endif %}"{% if type == 'publication' %} data-publications{% endif %}>
   {% for item in items %}
-    <li class="card{% if type == 'action' or type == 'news' %} card-clickable{% endif %}"{% if type == 'publication' %} data-year="{{ item.year }}" data-type="{{ item.type }}"{% endif %}>
+    <li class="card{% if type == 'action' or type == 'news' %} card-clickable{% endif %}{% if type == 'news' and not item.image %} news-text-only{% endif %}"{% if type == 'publication' %} data-year="{{ item.year }}" data-type="{{ item.type }}"{% endif %}>
       {% if type == 'call' %}
         <div class="card-meta">{% if showSectionLabel %}<span class="card-section-label">{{ t.calls }}</span>{% endif %}<span class="status status-{{ item.status }}">{{ t[item.status] }}</span></div>
         <{{ heading }}><a href="/{{ lang }}/opportunities/{{ item.action }}/">{{ item.title }}</a></{{ heading }}>
@@ -29,7 +29,7 @@
         {% if item.sourceUrl %}<p class="source-label"><a href="{{ item.sourceUrl }}">{{ t.official }}</a></p>{% endif %}
         </div></details>
       {% else %}
-        {% if type == 'action' %}<span class="icon-slot">{{ item.slug | actionIcon | icon | safe }}</span>{% elif type == 'news' and not item.image %}<span class="icon-slot news-panel">{{ 'book-open' | icon | safe }}</span>{% endif %}
+        {% if type == 'action' %}<span class="icon-slot">{{ item.slug | actionIcon | icon | safe }}</span>{% endif %}
         {% if type == 'news' and item.image %}<img data-news-image data-image-layout="card" src="{{ item.image.src }}" alt="{{ item.image.alt[lang] }}">{% endif %}
         {% if type == 'event' %}
           <div class="card-meta">{% if showSectionLabel %}<span class="card-section-label">{{ t.events }}</span>{% endif %}<span class="status status-{{ item.status }}">{{ t[item.status] }}</span></div>
