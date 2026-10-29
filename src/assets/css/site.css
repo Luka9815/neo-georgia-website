@@ -1,5 +1,5 @@
 /* Tokens */
-:root { --blue: #003399; --blue-dark: #05264f; --teal: #006b70; --teal-soft: #e9f5f3; --success: #14532d; --accent: #854600; --accent-soft: #fff1d2; --ink: #172333; --muted: #4b5b70; --paper: #ffffff; --surface: #f2f5fa; --line: #a3afbf; --inverse-muted: #dfe8ff; --space-1: .5rem; --space-2: 1rem; --space-3: 1.5rem; --space-4: 2rem; --space-6: 3rem; --space-8: 4rem; --content-width: 75rem; --radius: .875rem; }
+:root { --blue: #003399; --blue-dark: #05264f; --teal: #006b70; --teal-soft: #e9f5f3; --success: #14532d; --accent: #854600; --accent-soft: #fff1d2; --ink: #172333; --muted: #4b5b70; --paper: #ffffff; --surface: #f2f5fa; --line: #a3afbf; --inverse-muted: #dfe8ff; --space-1: .5rem; --space-2: 1rem; --space-3: 1.5rem; --space-4: 2rem; --space-6: 3rem; --space-8: 4rem;  --radius: .875rem; --content-width: 82rem; --navy: var(--blue-dark); --gold: #ffcc00; }
 /* Base */
 @font-face { font-family: "NEO Noto Georgian"; src: url("../fonts/noto-georgian-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; unicode-range: U+10A0-10FF, U+1C90-1CBF, U+2D00-2D2F; }
 @font-face { font-family: "NEO Noto Georgian"; src: url("../fonts/noto-georgian-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; unicode-range: U+10A0-10FF, U+1C90-1CBF, U+2D00-2D2F; }
@@ -27,7 +27,7 @@ section { margin-block: 2rem; }
 .header-inner { padding-block: var(--space-2) 0; }
 .header-top { display: flex; align-items: center; justify-content: space-between; gap: var(--space-2); padding-bottom: var(--space-2); }
 .brand { display: grid; color: var(--blue-dark); max-width: 18rem; min-width: 0px; text-decoration: none; }
-.brand-name { font-size: 0.8125rem; font-weight: 700; line-height: 1.35; }
+.brand-name { font-weight: 700; line-height: 1.35; font-size: 1.05rem; }
 .brand-image { width: min(100%, 15rem); height: 5rem; object-fit: contain; object-position: left center; }
 .header-tools { flex-shrink: 0; display: flex; align-items: center; gap: var(--space-1); }
 .search-link { display: inline-flex; align-items: center; justify-content: center; gap: var(--space-1); min-width: 44px; min-height: 44px; }
@@ -270,8 +270,8 @@ dd { margin: 0 0 var(--space-2); }
   .mobile-menu { display: none; }
   .desktop-navigation { display: block; }
   .desktop-navigation ul { display: flex; flex-wrap: wrap; }
-  .desktop-navigation a { display: block; padding: 0.75rem 0.65rem; text-decoration: none; font-size: 0.875rem; }
-  .brand-name { font-size: 1rem; }
+  .desktop-navigation a { display: block; padding: 1rem .9rem; text-decoration: none; font-size: .95rem; }
+  .brand-name { font-size: 1.05rem; }
   .search-label { position: static; width: auto; height: auto; clip-path: none; }
 }
 @media (prefers-reduced-motion: no-preference) {
@@ -339,4 +339,8 @@ dd { margin: 0 0 var(--space-2); }
 @media (max-width: 47.99rem) {
   .photo-banner picture { aspect-ratio: 4 / 3 !important; }
   .photo-banner .portal-image, .photo-hero .portal-image { object-position: var(--photo-focal-mobile); }
+}
+
+@media (min-width: 80rem) {
+ html { font-size: 106.25%; }
 }

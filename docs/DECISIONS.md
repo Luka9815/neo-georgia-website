@@ -566,3 +566,7 @@ Supersede the exhaustive generated-link audit approach in “Session 24 item 6, 
 
 ## 2026-10-30: Session 26 item 1, consolidated stylesheet (Luka)
 Consolidate repeated Session 21 to 23 declarations into tokens, base, layout, header, components, page templates, utilities and responsive/system styles. Remove the obsolete in-main preview selector and overridden card underline declaration. Preserve rendering before redesign: 72 screenshots compared at 390/1280/1920px, tolerance one pixel in height and 0.5% changed pixels at pixelmatch threshold 0.1.
+
+
+## 2026-10-30: Session 26 item 2, scale and width (Luka)
+Supersede the 75rem width and compact branding/navigation scale in “Session 21, portal design system” (2026-10-29). Use 82rem, a 106.25% root at 80rem viewport width, larger navigation targets and a 1.05rem wordmark. Preserve EU emblem prominence at all six existing widths.
