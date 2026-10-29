@@ -53,6 +53,6 @@ test('AA open status: paper text on the prominent green surface', () => {
 test('AA Home text over worst-case white photograph with the lighter overlay',()=>{
  const background=luminance('#6b6b6b');
  assert.ok((luminance(tokens.paper)+.05)/(background+.05)>=4.5);
- assert.match(css,/rgb\(0 0 0 \/ 58%\)/);
- assert.match(css,/\.home-hero :is\(\.eyebrow,\.hero-intro\) \{ color: var\(--paper\)/);
+ assert.match(css,/rgba\(0, 0, 0, 0\.58\)/);
+ assert.match(css,/\.home-hero :is\(\.eyebrow,\s*\.hero-intro\) \{ color: var\(--paper\)/);
 });

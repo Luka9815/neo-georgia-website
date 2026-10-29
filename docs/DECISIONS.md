@@ -562,3 +562,7 @@ Supersede the omissions for the 15 paths listed in the Session 25 brief under �
 
 ## 2026-10-30: Session 25 item 5, external-link review and sampling (Luka)
 Supersede the exhaustive generated-link audit approach in “Session 24 item 6, honest quality evidence” (2026-10-29): check all hand-entered URLs and randomly sample generated project-result URLs, default 200, with incremental results and a polite Erasmus+ host delay. Record Luka’s supplied 2026-10-29 Claude review separately from local verification. Store final Guide/licence URLs in source; retain EPALE for a manual browser check. No network audit enters build, tests or CI.
+
+
+## 2026-10-30: Session 26 item 1, consolidated stylesheet (Luka)
+Consolidate repeated Session 21 to 23 declarations into tokens, base, layout, header, components, page templates, utilities and responsive/system styles. Remove the obsolete in-main preview selector and overridden card underline declaration. Preserve rendering before redesign: 72 screenshots compared at 390/1280/1920px, tolerance one pixel in height and 0.5% changed pixels at pixelmatch threshold 0.1.
