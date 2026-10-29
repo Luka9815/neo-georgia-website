@@ -465,3 +465,7 @@ Use approximately 68px icon/title/arrow rows on mobile and five compact columns 
 
 ## 2026-10-29: Session 22 item 3, compact Home Actions (Luka)
 Home shows the nine existing Actions as compact icon/name/Key Action tiles in sector grids. Keep the unchanged descriptions on Opportunities and the full Action pages; no content records or routes change.
+
+
+## 2026-10-29: Session 22 item 4, full-width photographic hero (Luka)
+Supersede Session 21's no-CSS-cropping/no-overlay rule for the Home placement only. The existing approved photograph fills the hero using object-fit:cover and a 50%/45% focal point. A minimum 82% black overlay guarantees 4.5:1 for both text colours even over white image pixels; the caption has an opaque background. Keep the complete original, accurate event alternative and visible credit. Mobile buttons fill the width. No new photo is implied.

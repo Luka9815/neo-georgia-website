@@ -357,3 +357,28 @@ header a:is(:hover,:focus-visible), .footer-grid nav a:is(:hover,:focus-visible)
 .cards-compact .icon-slot { grid-row: 1 / 3; margin: 0; width: 2.5rem; height: 2.5rem; }
 .cards-compact h4 { font-size: 1rem; margin: 0 0 .5rem; }
 .cards-compact .action-key-label { grid-column: 2; font-size: .75rem; margin: 0; }
+
+/* The minimum 82% black overlay bounds contrast even over a white pixel. */
+.home-hero { position: relative; isolation: isolate; }
+.hero-grid { display: block; position: static; }
+.hero-main { position: relative; z-index: 2; padding-block: 2rem 6rem; max-width: 48rem; }
+.home-hero .photo-hero { position: absolute; inset: 0; margin: 0; padding: 0; z-index: 0; }
+.photo-hero picture { position: absolute; inset: 0; }
+.photo-hero picture::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg,rgb(0 0 0 / 90%),rgb(0 0 0 / 82%)); }
+.photo-hero .portal-image { width: 100%; height: 100%; object-fit: cover; object-position: 50% 45%; border-radius: 0; }
+.photo-hero figcaption { position: absolute; z-index: 3; bottom: 0; inset-inline: 0; padding: .5rem 1rem; background: #05264f; color: var(--paper); }
+.photo-hero figcaption a { color: var(--paper); }
+.home-hero .hero-intro { margin-bottom: 1.25rem; }
+@media (max-width: 47.99rem) {
+ .home-hero .entry { gap: .75rem; }
+ .home-hero .entry .button { width: 100%; }
+ .home-hero h1 { font-size: 1.8rem; margin-block: .75rem 1rem; }
+ .hero-main { padding-block: 1.5rem 8rem; }
+}
+@media (min-width: 64rem) { .hero-main { padding-block: 3rem 6rem; } }
+@media (forced-colors: active) {
+ .photo-hero picture { display: none; }
+ .home-hero, .photo-hero figcaption { background: Canvas; color: CanvasText; }
+ .home-hero :is(h1,p,a), .home-hero .button { color: CanvasText; }
+ .home-hero :focus-visible { outline-color: Highlight; }
+}

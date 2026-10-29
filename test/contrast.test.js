@@ -47,3 +47,11 @@ test('AA open status: paper text on the prominent green surface', () => {
   const ratio = (Math.max(a, b) + 0.05) / (Math.min(a, b) + 0.05);
   assert.ok(ratio >= 4.5, `open status contrast ${ratio.toFixed(2)} < 4.5`);
 });
+
+// A white image pixel under the least opaque (82% black) gradient is #2e2e2e.
+for (const foreground of ['paper','inverse-muted']) {
+ test(`AA hero overlay worst-case white photograph: ${foreground}`,()=>{
+  const background = luminance('#2e2e2e');
+  assert.ok((luminance(tokens[foreground])+.05)/(background+.05)>=4.5);
+ });
+}
