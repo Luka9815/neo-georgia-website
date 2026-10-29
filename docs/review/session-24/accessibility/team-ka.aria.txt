@@ -1,0 +1,94 @@
+- link "შინაარსზე გადასვლა":
+  - /url: "#main"
+- complementary "წინასწარი ვერსია. Erasmus+-ის საქართველოს ეროვნული ოფისის ვებსაიტი 2027 წლის იანვარში გაიხსნება.":
+  - paragraph: წინასწარი ვერსია. Erasmus+-ის საქართველოს ეროვნული ოფისის ვებსაიტი 2027 წლის იანვარში გაიხსნება.
+- banner:
+  - link "ერაზმუს+ საქართველოს ეროვნული ოფისი":
+    - /url: /ka/
+  - link "ძიება":
+    - /url: /ka/search/
+  - text: ქა
+  - 'link "EN: English"':
+    - /url: /en/about/team/
+    - text: EN
+  - navigation "მთავარი ნავიგაცია":
+    - list:
+      - listitem:
+        - link "მთავარი":
+          - /url: /ka/
+      - listitem:
+        - link "შესაძლებლობები":
+          - /url: /ka/opportunities/
+      - listitem:
+        - link "კონკურსები და ვადები":
+          - /url: /ka/calls/
+      - listitem:
+        - link "ღონისძიებები":
+          - /url: /ka/events/
+      - listitem:
+        - link "სიახლეები":
+          - /url: /ka/news/
+      - listitem:
+        - link "რესურსები":
+          - /url: /ka/resources/
+      - listitem:
+        - link "ოფისის შესახებ":
+          - /url: /ka/about/
+- main:
+  - heading "ეროვნული ოფისის გუნდი" [level=1]
+  - paragraph: "ეროვნული ოფისის საკონტაქტო ინფორმაცია: [TBC]."
+  - list:
+    - listitem:
+      - heading "კომუნიკაციების ოფიცერი [TBC]" [level=2]
+      - paragraph: კომუნიკაციების ოფიცერი
+      - paragraph: "სახელი და გვარი: [TBC]"
+      - paragraph: "სამსახურებრივი ელფოსტა: [TBC]"
+      - paragraph: Erasmus+-ის შესახებ ინფორმაციისა და კონსულტაციისთვის მიმართეთ ეროვნულ ოფისს.
+    - listitem:
+      - heading "კოორდინატორი [TBC]" [level=2]
+      - paragraph: კოორდინატორი
+      - paragraph: "სახელი და გვარი: [TBC]"
+      - paragraph: "სამსახურებრივი ელფოსტა: [TBC]"
+      - paragraph: Erasmus+-ის შესახებ ინფორმაციისა და კონსულტაციისთვის მიმართეთ ეროვნულ ოფისს.
+    - listitem:
+      - heading "პროგრამის ოფიცერი [TBC]" [level=2]
+      - paragraph: პროგრამის ოფიცერი
+      - paragraph: "სახელი და გვარი: [TBC]"
+      - paragraph: "სამსახურებრივი ელფოსტა: [TBC]"
+      - paragraph: Erasmus+-ის შესახებ ინფორმაციისა და კონსულტაციისთვის მიმართეთ ეროვნულ ოფისს.
+- contentinfo:
+  - heading "კონტაქტი" [level=2]
+  - paragraph: "ელფოსტა: [TBC]"
+  - paragraph:
+    - link "კონტაქტი":
+      - /url: /ka/about/contact/
+  - navigation "სწრაფი ბმულები":
+    - heading "სწრაფი ბმულები" [level=2]
+    - list:
+      - listitem:
+        - link "შესაძლებლობები":
+          - /url: /ka/opportunities/
+      - listitem:
+        - link "კონკურსები და ვადები":
+          - /url: /ka/calls/
+      - listitem:
+        - link "რესურსები":
+          - /url: /ka/resources/
+  - navigation "ოფისის შესახებ":
+    - heading "სამართლებრივი ინფორმაცია" [level=2]
+    - list:
+      - listitem:
+        - link "კონფიდენციალურობა და ფაილები":
+          - /url: /ka/privacy/
+      - listitem:
+        - link "ხელმისაწვდომობა":
+          - /url: /ka/accessibility/
+      - listitem:
+        - link "უპირატესი ენა":
+          - /url: /ka/language/
+      - listitem:
+        - link "ფოტოების წყაროები":
+          - /url: /ka/about/credits/
+  - paragraph: ქართულ და ინგლისურ ვერსიებს შორის შეუსაბამობის შემთხვევაში უპირატესობა ენიჭება ინგლისურ ვერსიას.
+  - img "ევროკავშირი საქართველოსთვის"
+  - paragraph: დაფინანსებულია ევროკავშირის მიერ. გამოთქმული შეხედულებები და მოსაზრებები მხოლოდ ავტორ(ებ)ს ეკუთვნის და შესაძლოა არ ასახავდეს ევროკავშირის ან განათლებისა და კულტურის ევროპული აღმასრულებელი სააგენტოს (EACEA) შეხედულებებს. მათზე პასუხისმგებლობა არ ეკისრება არც ევროკავშირს და არც EACEA-ს.

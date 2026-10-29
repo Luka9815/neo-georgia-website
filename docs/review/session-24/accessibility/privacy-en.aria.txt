@@ -1,0 +1,94 @@
+- link "Skip to content":
+  - /url: "#main"
+- complementary "Preview. The National Erasmus+ Office Georgia website opens in January 2027.":
+  - paragraph: Preview. The National Erasmus+ Office Georgia website opens in January 2027.
+- banner:
+  - link "National Erasmus+ Office Georgia":
+    - /url: /en/
+  - link "Search":
+    - /url: /en/search/
+  - text: EN
+  - 'link "ქა: ქართული"':
+    - /url: /ka/privacy/
+    - text: ქა
+  - navigation "Main navigation":
+    - list:
+      - listitem:
+        - link "Home":
+          - /url: /en/
+      - listitem:
+        - link "Opportunities":
+          - /url: /en/opportunities/
+      - listitem:
+        - link "Calls and deadlines":
+          - /url: /en/calls/
+      - listitem:
+        - link "Events":
+          - /url: /en/events/
+      - listitem:
+        - link "News":
+          - /url: /en/news/
+      - listitem:
+        - link "Resources":
+          - /url: /en/resources/
+      - listitem:
+        - link "About":
+          - /url: /en/about/
+- main:
+  - heading "Privacy and cookies" [level=1]
+  - paragraph: "Updated: 28 October 2026."
+  - heading "Who is responsible" [level=2]
+  - paragraph: "The data controller is ERIDA (Education, Research and International Development Association). Identification code: [TBC]. Registered address: [TBC]. Contact for privacy and rights requests: [TBC]."
+  - heading "Visiting this website" [level=2]
+  - paragraph: This is a static website. We set no cookies and use no analytics, advertising or tracking tools. There are no contact, registration or submission forms. Search runs in your browser; search queries are not submitted to the NEO. Fonts and site assets are hosted with the website.
+  - paragraph:
+    - text: GitHub Pages hosts the site. GitHub processes technical server logs and logs visitors’ IP addresses for security purposes. Its processing is described in the
+    - link "GitHub Privacy Statement":
+      - /url: https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement
+    - text: and
+    - link "GitHub Pages data collection information":
+      - /url: https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection
+    - text: .
+  - heading "External links and calendar downloads" [level=2]
+  - paragraph: Links to official sources and other external websites take you to services with their own privacy policies. They do not load embedded content here. Calendar (.ics) files are static downloads. The website does not receive access to your calendar or calendar account when you download a file.
+  - heading "Contacting us by email" [level=2]
+  - paragraph: If you email the office, we use your email address and message to handle your enquiry and reply. Share only the personal information needed for your request. Authorised staff handle correspondence and retain it only as needed for the enquiry and applicable record-keeping obligations.
+  - heading "Published content and your rights" [level=2]
+  - paragraph: The site publishes office news and factual project metadata with source attribution. Contact us if personal information in published content is inaccurate or raises a concern. You may request access, correction or deletion, or raise another applicable data-protection request, using the privacy contact above. We will consider the request under the applicable law.
+  - paragraph: This notice will be updated if the website’s functions or processing change.
+- contentinfo:
+  - heading "Contact" [level=2]
+  - paragraph: "Email: [TBC]"
+  - paragraph:
+    - link "Contact":
+      - /url: /en/about/contact/
+  - navigation "Quick links":
+    - heading "Quick links" [level=2]
+    - list:
+      - listitem:
+        - link "Opportunities":
+          - /url: /en/opportunities/
+      - listitem:
+        - link "Calls and deadlines":
+          - /url: /en/calls/
+      - listitem:
+        - link "Resources":
+          - /url: /en/resources/
+  - navigation "About":
+    - heading "Legal information" [level=2]
+    - list:
+      - listitem:
+        - link "Privacy and cookies":
+          - /url: /en/privacy/
+      - listitem:
+        - link "Accessibility":
+          - /url: /en/accessibility/
+      - listitem:
+        - link "Prevailing language":
+          - /url: /en/language/
+      - listitem:
+        - link "Photo credits":
+          - /url: /en/about/credits/
+  - paragraph: In the event of any discrepancy between the Georgian and English versions, the English version prevails.
+  - img "Funded by the European Union"
+  - paragraph: Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them.

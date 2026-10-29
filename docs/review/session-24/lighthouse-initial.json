@@ -1,0 +1,2628 @@
+[
+  {
+    "page": "home",
+    "lang": "ka",
+    "url": "http://127.0.0.1:8142/ka/",
+    "version": "13.6.0",
+    "scores": {
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 69
+    },
+    "failedAudits": [
+      {
+        "id": "first-contentful-paint",
+        "score": 0.99,
+        "displayValue": "1.1 s",
+        "title": "First Contentful Paint"
+      },
+      {
+        "id": "largest-contentful-paint",
+        "score": 0.96,
+        "displayValue": "2.1 s",
+        "title": "Largest Contentful Paint"
+      },
+      {
+        "id": "speed-index",
+        "score": 0.99,
+        "displayValue": "2.2 s",
+        "title": "Speed Index"
+      },
+      {
+        "id": "interactive",
+        "score": 0.99,
+        "displayValue": "2.1 s",
+        "title": "Time to Interactive"
+      },
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB",
+        "title": "Minify CSS"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0,
+        "displayValue": "Est savings of 15 KiB",
+        "title": "Reduce unused CSS"
+      },
+      {
+        "id": "is-crawlable",
+        "score": 0,
+        "title": "Page is blocked from indexing"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0,
+        "displayValue": "Est savings of 165 KiB",
+        "title": "Use efficient cache lifetimes"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 24 KiB",
+        "title": "Document request latency"
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 14 KiB",
+        "title": "Improve image delivery"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree"
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0.5,
+        "title": "Render-blocking requests"
+      }
+    ]
+  },
+  {
+    "page": "opportunities",
+    "lang": "ka",
+    "url": "http://127.0.0.1:8142/ka/opportunities/",
+    "version": "13.6.0",
+    "scores": {
+      "performance": 98,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 69
+    },
+    "failedAudits": [
+      {
+        "id": "first-contentful-paint",
+        "score": 0.98,
+        "displayValue": "1.3 s",
+        "title": "First Contentful Paint"
+      },
+      {
+        "id": "largest-contentful-paint",
+        "score": 0.96,
+        "displayValue": "2.1 s",
+        "title": "Largest Contentful Paint"
+      },
+      {
+        "id": "speed-index",
+        "score": 0.98,
+        "displayValue": "2.4 s",
+        "title": "Speed Index"
+      },
+      {
+        "id": "total-blocking-time",
+        "score": 0.98,
+        "displayValue": "100 ms",
+        "title": "Total Blocking Time"
+      },
+      {
+        "id": "max-potential-fid",
+        "score": 0.09,
+        "displayValue": "480 ms",
+        "title": "Max Potential First Input Delay"
+      },
+      {
+        "id": "interactive",
+        "score": 0.99,
+        "displayValue": "2.1 s",
+        "title": "Time to Interactive"
+      },
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB",
+        "title": "Minify CSS"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0.5,
+        "displayValue": "Est savings of 21 KiB",
+        "title": "Reduce unused CSS"
+      },
+      {
+        "id": "is-crawlable",
+        "score": 0,
+        "title": "Page is blocked from indexing"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0,
+        "displayValue": "Est savings of 179 KiB",
+        "title": "Use efficient cache lifetimes"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 16 KiB",
+        "title": "Document request latency"
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 28 KiB",
+        "title": "Improve image delivery"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree"
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0.5,
+        "title": "Render-blocking requests"
+      }
+    ]
+  },
+  {
+    "page": "action",
+    "lang": "ka",
+    "url": "http://127.0.0.1:8142/ka/opportunities/cbhe/",
+    "version": "13.6.0",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 69
+    },
+    "failedAudits": [
+      {
+        "id": "first-contentful-paint",
+        "score": 0.99,
+        "displayValue": "1.2 s",
+        "title": "First Contentful Paint"
+      },
+      {
+        "id": "max-potential-fid",
+        "score": 0.98,
+        "displayValue": "80 ms",
+        "title": "Max Potential First Input Delay"
+      },
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB",
+        "title": "Minify CSS"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0.5,
+        "displayValue": "Est savings of 20 KiB",
+        "title": "Reduce unused CSS"
+      },
+      {
+        "id": "is-crawlable",
+        "score": 0,
+        "title": "Page is blocked from indexing"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 126 KiB",
+        "title": "Use efficient cache lifetimes"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 14 KiB",
+        "title": "Document request latency"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree"
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0.5,
+        "title": "Render-blocking requests"
+      }
+    ]
+  },
+  {
+    "page": "calls",
+    "lang": "ka",
+    "url": "http://127.0.0.1:8142/ka/calls/",
+    "version": "13.6.0",
+    "scores": {
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 69
+    },
+    "failedAudits": [
+      {
+        "id": "first-contentful-paint",
+        "score": 0.99,
+        "displayValue": "1.2 s",
+        "title": "First Contentful Paint"
+      },
+      {
+        "id": "speed-index",
+        "score": 0.98,
+        "displayValue": "2.4 s",
+        "title": "Speed Index"
+      },
+      {
+        "id": "total-blocking-time",
+        "score": 0.99,
+        "displayValue": "70 ms",
+        "title": "Total Blocking Time"
+      },
+      {
+        "id": "max-potential-fid",
+        "score": 0.15,
+        "displayValue": "420 ms",
+        "title": "Max Potential First Input Delay"
+      },
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB",
+        "title": "Minify CSS"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0.5,
+        "displayValue": "Est savings of 22 KiB",
+        "title": "Reduce unused CSS"
+      },
+      {
+        "id": "is-crawlable",
+        "score": 0,
+        "title": "Page is blocked from indexing"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 126 KiB",
+        "title": "Use efficient cache lifetimes"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 16 KiB",
+        "title": "Document request latency"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree"
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0.5,
+        "title": "Render-blocking requests"
+      }
+    ]
+  },
+  {
+    "page": "events",
+    "lang": "ka",
+    "url": "http://127.0.0.1:8142/ka/events/",
+    "version": "13.6.0",
+    "scores": {
+      "performance": 95,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 69
+    },
+    "failedAudits": [
+      {
+        "id": "speed-index",
+        "score": 0.87,
+        "displayValue": "3.6 s",
+        "title": "Speed Index"
+      },
+      {
+        "id": "total-blocking-time",
+        "score": 0.87,
+        "displayValue": "230 ms",
+        "title": "Total Blocking Time"
+      },
+      {
+        "id": "max-potential-fid",
+        "score": 0.6,
+        "displayValue": "220 ms",
+        "title": "Max Potential First Input Delay"
+      },
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB",
+        "title": "Minify CSS"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0,
+        "displayValue": "Est savings of 23 KiB",
+        "title": "Reduce unused CSS"
+      },
+      {
+        "id": "is-crawlable",
+        "score": 0,
+        "title": "Page is blocked from indexing"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0,
+        "displayValue": "Est savings of 177 KiB",
+        "title": "Use efficient cache lifetimes"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 6 KiB",
+        "title": "Document request latency"
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 39 KiB",
+        "title": "Improve image delivery"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree"
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "displayValue": "Est savings of 50 ms",
+        "title": "Render-blocking requests"
+      }
+    ]
+  },
+  {
+    "page": "news",
+    "lang": "ka",
+    "url": "http://127.0.0.1:8142/ka/news/",
+    "version": "13.6.0",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 69
+    },
+    "failedAudits": [
+      {
+        "id": "max-potential-fid",
+        "score": 0.85,
+        "displayValue": "150 ms",
+        "title": "Max Potential First Input Delay"
+      },
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB",
+        "title": "Minify CSS"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0.5,
+        "displayValue": "Est savings of 22 KiB",
+        "title": "Reduce unused CSS"
+      },
+      {
+        "id": "is-crawlable",
+        "score": 0,
+        "title": "Page is blocked from indexing"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 154 KiB",
+        "title": "Use efficient cache lifetimes"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 10 KiB",
+        "title": "Document request latency"
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 18 KiB",
+        "title": "Improve image delivery"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree"
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0.5,
+        "title": "Render-blocking requests"
+      }
+    ]
+  },
+  {
+    "page": "article",
+    "lang": "ka",
+    "url": "http://127.0.0.1:8142/ka/news/neo-dissemination-event-2025/",
+    "version": "13.6.0",
+    "scores": {
+      "performance": 94,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 69
+    },
+    "failedAudits": [
+      {
+        "id": "first-contentful-paint",
+        "score": 0.99,
+        "displayValue": "1.1 s",
+        "title": "First Contentful Paint"
+      },
+      {
+        "id": "largest-contentful-paint",
+        "score": 0.96,
+        "displayValue": "2.1 s",
+        "title": "Largest Contentful Paint"
+      },
+      {
+        "id": "speed-index",
+        "score": 0.98,
+        "displayValue": "2.4 s",
+        "title": "Speed Index"
+      },
+      {
+        "id": "total-blocking-time",
+        "score": 0.85,
+        "displayValue": "240 ms",
+        "title": "Total Blocking Time"
+      },
+      {
+        "id": "max-potential-fid",
+        "score": 0.21,
+        "displayValue": "380 ms",
+        "title": "Max Potential First Input Delay"
+      },
+      {
+        "id": "interactive",
+        "score": 0.99,
+        "displayValue": "2.1 s",
+        "title": "Time to Interactive"
+      },
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB",
+        "title": "Minify CSS"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0,
+        "displayValue": "Est savings of 23 KiB",
+        "title": "Reduce unused CSS"
+      },
+      {
+        "id": "is-crawlable",
+        "score": 0,
+        "title": "Page is blocked from indexing"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0,
+        "displayValue": "Est savings of 154 KiB",
+        "title": "Use efficient cache lifetimes"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 18 KiB",
+        "title": "Document request latency"
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 15 KiB",
+        "title": "Improve image delivery"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree"
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0.5,
+        "title": "Render-blocking requests"
+      }
+    ]
+  },
+  {
+    "page": "resources",
+    "lang": "ka",
+    "url": "http://127.0.0.1:8142/ka/resources/",
+    "version": "13.6.0",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 69
+    },
+    "failedAudits": [
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB",
+        "title": "Minify CSS"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0,
+        "displayValue": "Est savings of 22 KiB",
+        "title": "Reduce unused CSS"
+      },
+      {
+        "id": "is-crawlable",
+        "score": 0,
+        "title": "Page is blocked from indexing"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0,
+        "displayValue": "Est savings of 177 KiB",
+        "title": "Use efficient cache lifetimes"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 8 KiB",
+        "title": "Document request latency"
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 39 KiB",
+        "title": "Improve image delivery"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree"
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "displayValue": "Est savings of 130 ms",
+        "title": "Render-blocking requests"
+      }
+    ]
+  },
+  {
+    "page": "publications",
+    "lang": "ka",
+    "url": "http://127.0.0.1:8142/ka/resources/publications/",
+    "version": "13.6.0",
+    "scores": {
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 69
+    },
+    "failedAudits": [
+      {
+        "id": "first-contentful-paint",
+        "score": 0.99,
+        "displayValue": "1.1 s",
+        "title": "First Contentful Paint"
+      },
+      {
+        "id": "largest-contentful-paint",
+        "score": 0.98,
+        "displayValue": "1.9 s",
+        "title": "Largest Contentful Paint"
+      },
+      {
+        "id": "max-potential-fid",
+        "score": 0.95,
+        "displayValue": "110 ms",
+        "title": "Max Potential First Input Delay"
+      },
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB",
+        "title": "Minify CSS"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0,
+        "displayValue": "Est savings of 22 KiB",
+        "title": "Reduce unused CSS"
+      },
+      {
+        "id": "is-crawlable",
+        "score": 0,
+        "title": "Page is blocked from indexing"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0,
+        "displayValue": "Est savings of 178 KiB",
+        "title": "Use efficient cache lifetimes"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 8 KiB",
+        "title": "Document request latency"
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 39 KiB",
+        "title": "Improve image delivery"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree"
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "displayValue": "Est savings of 50 ms",
+        "title": "Render-blocking requests"
+      }
+    ]
+  },
+  {
+    "page": "faq",
+    "lang": "ka",
+    "url": "http://127.0.0.1:8142/ka/resources/faq/",
+    "version": "13.6.0",
+    "scores": {
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 69
+    },
+    "failedAudits": [
+      {
+        "id": "largest-contentful-paint",
+        "score": 0.96,
+        "displayValue": "2.0 s",
+        "title": "Largest Contentful Paint"
+      },
+      {
+        "id": "interactive",
+        "score": 0.99,
+        "displayValue": "2.1 s",
+        "title": "Time to Interactive"
+      },
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB",
+        "title": "Minify CSS"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0,
+        "displayValue": "Est savings of 22 KiB",
+        "title": "Reduce unused CSS"
+      },
+      {
+        "id": "is-crawlable",
+        "score": 0,
+        "title": "Page is blocked from indexing"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0,
+        "displayValue": "Est savings of 177 KiB",
+        "title": "Use efficient cache lifetimes"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 17 KiB",
+        "title": "Document request latency"
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 39 KiB",
+        "title": "Improve image delivery"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree"
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0.5,
+        "title": "Render-blocking requests"
+      }
+    ]
+  },
+  {
+    "page": "statistics",
+    "lang": "ka",
+    "url": "http://127.0.0.1:8142/ka/resources/statistics/",
+    "version": "13.6.0",
+    "scores": {
+      "performance": 97,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 69
+    },
+    "failedAudits": [
+      {
+        "id": "first-contentful-paint",
+        "score": 0.98,
+        "displayValue": "1.3 s",
+        "title": "First Contentful Paint"
+      },
+      {
+        "id": "speed-index",
+        "score": 0.98,
+        "displayValue": "2.5 s",
+        "title": "Speed Index"
+      },
+      {
+        "id": "total-blocking-time",
+        "score": 0.92,
+        "displayValue": "170 ms",
+        "title": "Total Blocking Time"
+      },
+      {
+        "id": "max-potential-fid",
+        "score": 0.2,
+        "displayValue": "380 ms",
+        "title": "Max Potential First Input Delay"
+      },
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB",
+        "title": "Minify CSS"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0.5,
+        "displayValue": "Est savings of 21 KiB",
+        "title": "Reduce unused CSS"
+      },
+      {
+        "id": "is-crawlable",
+        "score": 0,
+        "title": "Page is blocked from indexing"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 126 KiB",
+        "title": "Use efficient cache lifetimes"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 45 KiB",
+        "title": "Document request latency"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree"
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0.5,
+        "title": "Render-blocking requests"
+      }
+    ]
+  },
+  {
+    "page": "about",
+    "lang": "ka",
+    "url": "http://127.0.0.1:8142/ka/about/",
+    "version": "13.6.0",
+    "scores": {
+      "performance": 93,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 69
+    },
+    "failedAudits": [
+      {
+        "id": "largest-contentful-paint",
+        "score": 0.91,
+        "displayValue": "2.4 s",
+        "title": "Largest Contentful Paint"
+      },
+      {
+        "id": "total-blocking-time",
+        "score": 0.85,
+        "displayValue": "250 ms",
+        "title": "Total Blocking Time"
+      },
+      {
+        "id": "max-potential-fid",
+        "score": 0.6,
+        "displayValue": "220 ms",
+        "title": "Max Potential First Input Delay"
+      },
+      {
+        "id": "interactive",
+        "score": 0.98,
+        "displayValue": "2.4 s",
+        "title": "Time to Interactive"
+      },
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB",
+        "title": "Minify CSS"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0,
+        "displayValue": "Est savings of 22 KiB",
+        "title": "Reduce unused CSS"
+      },
+      {
+        "id": "is-crawlable",
+        "score": 0,
+        "title": "Page is blocked from indexing"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0,
+        "displayValue": "Est savings of 244 KiB",
+        "title": "Use efficient cache lifetimes"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 10 KiB",
+        "title": "Document request latency"
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0,
+        "displayValue": "Est savings of 73 KiB",
+        "title": "Improve image delivery"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree"
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0.5,
+        "title": "Render-blocking requests"
+      }
+    ]
+  },
+  {
+    "page": "team",
+    "lang": "ka",
+    "url": "http://127.0.0.1:8142/ka/about/team/",
+    "version": "13.6.0",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 69
+    },
+    "failedAudits": [
+      {
+        "id": "first-contentful-paint",
+        "score": 0.99,
+        "displayValue": "1.2 s",
+        "title": "First Contentful Paint"
+      },
+      {
+        "id": "speed-index",
+        "score": 0.99,
+        "displayValue": "2.3 s",
+        "title": "Speed Index"
+      },
+      {
+        "id": "total-blocking-time",
+        "score": 0.99,
+        "displayValue": "70 ms",
+        "title": "Total Blocking Time"
+      },
+      {
+        "id": "max-potential-fid",
+        "score": 0.71,
+        "displayValue": "190 ms",
+        "title": "Max Potential First Input Delay"
+      },
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB",
+        "title": "Minify CSS"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0.5,
+        "displayValue": "Est savings of 23 KiB",
+        "title": "Reduce unused CSS"
+      },
+      {
+        "id": "is-crawlable",
+        "score": 0,
+        "title": "Page is blocked from indexing"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 177 KiB",
+        "title": "Use efficient cache lifetimes"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 7 KiB",
+        "title": "Document request latency"
+      },
+      {
+        "id": "forced-reflow-insight",
+        "score": 0,
+        "title": "Forced reflow"
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 39 KiB",
+        "title": "Improve image delivery"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree"
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0.5,
+        "title": "Render-blocking requests"
+      }
+    ]
+  },
+  {
+    "page": "here",
+    "lang": "ka",
+    "url": "http://127.0.0.1:8142/ka/about/here/",
+    "version": "13.6.0",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 69
+    },
+    "failedAudits": [
+      {
+        "id": "first-contentful-paint",
+        "score": 0.97,
+        "displayValue": "1.4 s",
+        "title": "First Contentful Paint"
+      },
+      {
+        "id": "speed-index",
+        "score": 0.98,
+        "displayValue": "2.4 s",
+        "title": "Speed Index"
+      },
+      {
+        "id": "max-potential-fid",
+        "score": 0.05,
+        "displayValue": "570 ms",
+        "title": "Max Potential First Input Delay"
+      },
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB",
+        "title": "Minify CSS"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0.5,
+        "displayValue": "Est savings of 23 KiB",
+        "title": "Reduce unused CSS"
+      },
+      {
+        "id": "is-crawlable",
+        "score": 0,
+        "title": "Page is blocked from indexing"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 177 KiB",
+        "title": "Use efficient cache lifetimes"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 7 KiB",
+        "title": "Document request latency"
+      },
+      {
+        "id": "forced-reflow-insight",
+        "score": 0,
+        "title": "Forced reflow"
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 39 KiB",
+        "title": "Improve image delivery"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree"
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0.5,
+        "title": "Render-blocking requests"
+      }
+    ]
+  },
+  {
+    "page": "contact",
+    "lang": "ka",
+    "url": "http://127.0.0.1:8142/ka/about/contact/",
+    "version": "13.6.0",
+    "scores": {
+      "performance": 96,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 69
+    },
+    "failedAudits": [
+      {
+        "id": "largest-contentful-paint",
+        "score": 0.97,
+        "displayValue": "2.0 s",
+        "title": "Largest Contentful Paint"
+      },
+      {
+        "id": "speed-index",
+        "score": 0.99,
+        "displayValue": "2.2 s",
+        "title": "Speed Index"
+      },
+      {
+        "id": "total-blocking-time",
+        "score": 0.91,
+        "displayValue": "180 ms",
+        "title": "Total Blocking Time"
+      },
+      {
+        "id": "max-potential-fid",
+        "score": 0.34,
+        "displayValue": "310 ms",
+        "title": "Max Potential First Input Delay"
+      },
+      {
+        "id": "interactive",
+        "score": 0.99,
+        "displayValue": "2.0 s",
+        "title": "Time to Interactive"
+      },
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB",
+        "title": "Minify CSS"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0,
+        "displayValue": "Est savings of 23 KiB",
+        "title": "Reduce unused CSS"
+      },
+      {
+        "id": "is-crawlable",
+        "score": 0,
+        "title": "Page is blocked from indexing"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0,
+        "displayValue": "Est savings of 177 KiB",
+        "title": "Use efficient cache lifetimes"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 6 KiB",
+        "title": "Document request latency"
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 39 KiB",
+        "title": "Improve image delivery"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree"
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0.5,
+        "title": "Render-blocking requests"
+      }
+    ]
+  },
+  {
+    "page": "search",
+    "lang": "ka",
+    "url": "http://127.0.0.1:8142/ka/search/",
+    "version": "13.6.0",
+    "scores": {
+      "performance": 93,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 69
+    },
+    "failedAudits": [
+      {
+        "id": "largest-contentful-paint",
+        "score": 0.96,
+        "displayValue": "2.0 s",
+        "title": "Largest Contentful Paint"
+      },
+      {
+        "id": "speed-index",
+        "score": 0.84,
+        "displayValue": "3.8 s",
+        "title": "Speed Index"
+      },
+      {
+        "id": "total-blocking-time",
+        "score": 0.92,
+        "displayValue": "180 ms",
+        "title": "Total Blocking Time"
+      },
+      {
+        "id": "max-potential-fid",
+        "score": 0.21,
+        "displayValue": "380 ms",
+        "title": "Max Potential First Input Delay"
+      },
+      {
+        "id": "cumulative-layout-shift",
+        "score": 0.9,
+        "displayValue": "0.099",
+        "title": "Cumulative Layout Shift"
+      },
+      {
+        "id": "interactive",
+        "score": 0.99,
+        "displayValue": "2.0 s",
+        "title": "Time to Interactive"
+      },
+      {
+        "id": "unminified-css",
+        "score": 0,
+        "displayValue": "Est savings of 4 KiB",
+        "title": "Minify CSS"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0,
+        "displayValue": "Est savings of 23 KiB",
+        "title": "Reduce unused CSS"
+      },
+      {
+        "id": "is-crawlable",
+        "score": 0,
+        "title": "Page is blocked from indexing"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0,
+        "displayValue": "Est savings of 181 KiB",
+        "title": "Use efficient cache lifetimes"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 7 KiB",
+        "title": "Document request latency"
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 39 KiB",
+        "title": "Improve image delivery"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree"
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0.5,
+        "title": "Render-blocking requests"
+      }
+    ]
+  },
+  {
+    "page": "notFound",
+    "lang": "ka",
+    "url": "http://127.0.0.1:8142/404.html",
+    "version": "13.6.0",
+    "scores": {
+      "performance": 92,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 69
+    },
+    "failedAudits": [
+      {
+        "id": "first-contentful-paint",
+        "score": 0.98,
+        "displayValue": "1.3 s",
+        "title": "First Contentful Paint"
+      },
+      {
+        "id": "total-blocking-time",
+        "score": 0.75,
+        "displayValue": "340 ms",
+        "title": "Total Blocking Time"
+      },
+      {
+        "id": "max-potential-fid",
+        "score": 0.04,
+        "displayValue": "590 ms",
+        "title": "Max Potential First Input Delay"
+      },
+      {
+        "id": "mainthread-work-breakdown",
+        "score": 0,
+        "displayValue": "2.3 s",
+        "title": "Minimize main-thread work"
+      },
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB",
+        "title": "Minify CSS"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0.5,
+        "displayValue": "Est savings of 23 KiB",
+        "title": "Reduce unused CSS"
+      },
+      {
+        "id": "is-crawlable",
+        "score": 0,
+        "title": "Page is blocked from indexing"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 177 KiB",
+        "title": "Use efficient cache lifetimes"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 6 KiB",
+        "title": "Document request latency"
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 39 KiB",
+        "title": "Improve image delivery"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree"
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0.5,
+        "title": "Render-blocking requests"
+      }
+    ]
+  },
+  {
+    "page": "home",
+    "lang": "en",
+    "url": "http://127.0.0.1:8142/en/",
+    "version": "13.6.0",
+    "scores": {
+      "performance": 94,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 69
+    },
+    "failedAudits": [
+      {
+        "id": "first-contentful-paint",
+        "score": 0.99,
+        "displayValue": "1.2 s",
+        "title": "First Contentful Paint"
+      },
+      {
+        "id": "largest-contentful-paint",
+        "score": 0.97,
+        "displayValue": "2.0 s",
+        "title": "Largest Contentful Paint"
+      },
+      {
+        "id": "speed-index",
+        "score": 0.98,
+        "displayValue": "2.4 s",
+        "title": "Speed Index"
+      },
+      {
+        "id": "total-blocking-time",
+        "score": 0.83,
+        "displayValue": "260 ms",
+        "title": "Total Blocking Time"
+      },
+      {
+        "id": "max-potential-fid",
+        "score": 0.12,
+        "displayValue": "450 ms",
+        "title": "Max Potential First Input Delay"
+      },
+      {
+        "id": "interactive",
+        "score": 0.99,
+        "displayValue": "2.0 s",
+        "title": "Time to Interactive"
+      },
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB",
+        "title": "Minify CSS"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0.5,
+        "displayValue": "Est savings of 15 KiB",
+        "title": "Reduce unused CSS"
+      },
+      {
+        "id": "is-crawlable",
+        "score": 0,
+        "title": "Page is blocked from indexing"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0,
+        "displayValue": "Est savings of 150 KiB",
+        "title": "Use efficient cache lifetimes"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 18 KiB",
+        "title": "Document request latency"
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 12 KiB",
+        "title": "Improve image delivery"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree"
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0.5,
+        "title": "Render-blocking requests"
+      }
+    ]
+  },
+  {
+    "page": "opportunities",
+    "lang": "en",
+    "url": "http://127.0.0.1:8142/en/opportunities/",
+    "version": "13.6.0",
+    "scores": {
+      "performance": 94,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 69
+    },
+    "failedAudits": [
+      {
+        "id": "first-contentful-paint",
+        "score": 0.98,
+        "displayValue": "1.3 s",
+        "title": "First Contentful Paint"
+      },
+      {
+        "id": "largest-contentful-paint",
+        "score": 0.96,
+        "displayValue": "2.1 s",
+        "title": "Largest Contentful Paint"
+      },
+      {
+        "id": "speed-index",
+        "score": 0.81,
+        "displayValue": "4.0 s",
+        "title": "Speed Index"
+      },
+      {
+        "id": "total-blocking-time",
+        "score": 0.9,
+        "displayValue": "200 ms",
+        "title": "Total Blocking Time"
+      },
+      {
+        "id": "max-potential-fid",
+        "score": 0.13,
+        "displayValue": "440 ms",
+        "title": "Max Potential First Input Delay"
+      },
+      {
+        "id": "interactive",
+        "score": 0.99,
+        "displayValue": "2.1 s",
+        "title": "Time to Interactive"
+      },
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB",
+        "title": "Minify CSS"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0,
+        "displayValue": "Est savings of 21 KiB",
+        "title": "Reduce unused CSS"
+      },
+      {
+        "id": "is-crawlable",
+        "score": 0,
+        "title": "Page is blocked from indexing"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0,
+        "displayValue": "Est savings of 164 KiB",
+        "title": "Use efficient cache lifetimes"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 11 KiB",
+        "title": "Document request latency"
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0,
+        "displayValue": "Est savings of 28 KiB",
+        "title": "Improve image delivery"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree"
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0.5,
+        "title": "Render-blocking requests"
+      }
+    ]
+  },
+  {
+    "page": "action",
+    "lang": "en",
+    "url": "http://127.0.0.1:8142/en/opportunities/cbhe/",
+    "version": "13.6.0",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 69
+    },
+    "failedAudits": [
+      {
+        "id": "first-contentful-paint",
+        "score": 0.99,
+        "displayValue": "1.1 s",
+        "title": "First Contentful Paint"
+      },
+      {
+        "id": "max-potential-fid",
+        "score": 0.53,
+        "displayValue": "240 ms",
+        "title": "Max Potential First Input Delay"
+      },
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB",
+        "title": "Minify CSS"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0.5,
+        "displayValue": "Est savings of 20 KiB",
+        "title": "Reduce unused CSS"
+      },
+      {
+        "id": "is-crawlable",
+        "score": 0,
+        "title": "Page is blocked from indexing"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 110 KiB",
+        "title": "Use efficient cache lifetimes"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 8 KiB",
+        "title": "Document request latency"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree"
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0.5,
+        "title": "Render-blocking requests"
+      }
+    ]
+  },
+  {
+    "page": "calls",
+    "lang": "en",
+    "url": "http://127.0.0.1:8142/en/calls/",
+    "version": "13.6.0",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 69
+    },
+    "failedAudits": [
+      {
+        "id": "max-potential-fid",
+        "score": 0.8,
+        "displayValue": "160 ms",
+        "title": "Max Potential First Input Delay"
+      },
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB",
+        "title": "Minify CSS"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0.5,
+        "displayValue": "Est savings of 22 KiB",
+        "title": "Reduce unused CSS"
+      },
+      {
+        "id": "is-crawlable",
+        "score": 0,
+        "title": "Page is blocked from indexing"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 110 KiB",
+        "title": "Use efficient cache lifetimes"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 10 KiB",
+        "title": "Document request latency"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree"
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0.5,
+        "title": "Render-blocking requests"
+      }
+    ]
+  },
+  {
+    "page": "events",
+    "lang": "en",
+    "url": "http://127.0.0.1:8142/en/events/",
+    "version": "13.6.0",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 69
+    },
+    "failedAudits": [
+      {
+        "id": "max-potential-fid",
+        "score": 0.81,
+        "displayValue": "160 ms",
+        "title": "Max Potential First Input Delay"
+      },
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB",
+        "title": "Minify CSS"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0,
+        "displayValue": "Est savings of 23 KiB",
+        "title": "Reduce unused CSS"
+      },
+      {
+        "id": "is-crawlable",
+        "score": 0,
+        "title": "Page is blocked from indexing"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0,
+        "displayValue": "Est savings of 146 KiB",
+        "title": "Use efficient cache lifetimes"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB",
+        "title": "Document request latency"
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 22 KiB",
+        "title": "Improve image delivery"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree"
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "displayValue": "Est savings of 130 ms",
+        "title": "Render-blocking requests"
+      }
+    ]
+  },
+  {
+    "page": "news",
+    "lang": "en",
+    "url": "http://127.0.0.1:8142/en/news/",
+    "version": "13.6.0",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 69
+    },
+    "failedAudits": [
+      {
+        "id": "max-potential-fid",
+        "score": 0.86,
+        "displayValue": "140 ms",
+        "title": "Max Potential First Input Delay"
+      },
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB",
+        "title": "Minify CSS"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0,
+        "displayValue": "Est savings of 22 KiB",
+        "title": "Reduce unused CSS"
+      },
+      {
+        "id": "is-crawlable",
+        "score": 0,
+        "title": "Page is blocked from indexing"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0,
+        "displayValue": "Est savings of 139 KiB",
+        "title": "Use efficient cache lifetimes"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 6 KiB",
+        "title": "Document request latency"
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 18 KiB",
+        "title": "Improve image delivery"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree"
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "displayValue": "Est savings of 160 ms",
+        "title": "Render-blocking requests"
+      }
+    ]
+  },
+  {
+    "page": "article",
+    "lang": "en",
+    "url": "http://127.0.0.1:8142/en/news/neo-dissemination-event-2025/",
+    "version": "13.6.0",
+    "scores": {
+      "performance": 94,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 69
+    },
+    "failedAudits": [
+      {
+        "id": "largest-contentful-paint",
+        "score": 0.98,
+        "displayValue": "1.8 s",
+        "title": "Largest Contentful Paint"
+      },
+      {
+        "id": "speed-index",
+        "score": 0.98,
+        "displayValue": "2.4 s",
+        "title": "Speed Index"
+      },
+      {
+        "id": "total-blocking-time",
+        "score": 0.94,
+        "displayValue": "160 ms",
+        "title": "Total Blocking Time"
+      },
+      {
+        "id": "max-potential-fid",
+        "score": 0.56,
+        "displayValue": "230 ms",
+        "title": "Max Potential First Input Delay"
+      },
+      {
+        "id": "cumulative-layout-shift",
+        "score": 0.84,
+        "displayValue": "0.12",
+        "title": "Cumulative Layout Shift"
+      },
+      {
+        "id": "layout-shifts",
+        "score": 0,
+        "displayValue": "1 layout shift found",
+        "title": "Avoid large layout shifts"
+      },
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB",
+        "title": "Minify CSS"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0,
+        "displayValue": "Est savings of 23 KiB",
+        "title": "Reduce unused CSS"
+      },
+      {
+        "id": "is-crawlable",
+        "score": 0,
+        "title": "Page is blocked from indexing"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0,
+        "displayValue": "Est savings of 139 KiB",
+        "title": "Use efficient cache lifetimes"
+      },
+      {
+        "id": "cls-culprits-insight",
+        "score": 0,
+        "title": "Layout shift culprits"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 9 KiB",
+        "title": "Document request latency"
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 15 KiB",
+        "title": "Improve image delivery"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree"
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0.5,
+        "title": "Render-blocking requests"
+      }
+    ]
+  },
+  {
+    "page": "resources",
+    "lang": "en",
+    "url": "http://127.0.0.1:8142/en/resources/",
+    "version": "13.6.0",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 69
+    },
+    "failedAudits": [
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB",
+        "title": "Minify CSS"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0,
+        "displayValue": "Est savings of 22 KiB",
+        "title": "Reduce unused CSS"
+      },
+      {
+        "id": "is-crawlable",
+        "score": 0,
+        "title": "Page is blocked from indexing"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0,
+        "displayValue": "Est savings of 146 KiB",
+        "title": "Use efficient cache lifetimes"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 5 KiB",
+        "title": "Document request latency"
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 22 KiB",
+        "title": "Improve image delivery"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree"
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "displayValue": "Est savings of 130 ms",
+        "title": "Render-blocking requests"
+      }
+    ]
+  },
+  {
+    "page": "publications",
+    "lang": "en",
+    "url": "http://127.0.0.1:8142/en/resources/publications/",
+    "version": "13.6.0",
+    "scores": {
+      "performance": 97,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 69
+    },
+    "failedAudits": [
+      {
+        "id": "first-contentful-paint",
+        "score": 0.99,
+        "displayValue": "1.2 s",
+        "title": "First Contentful Paint"
+      },
+      {
+        "id": "largest-contentful-paint",
+        "score": 0.97,
+        "displayValue": "1.9 s",
+        "title": "Largest Contentful Paint"
+      },
+      {
+        "id": "speed-index",
+        "score": 0.98,
+        "displayValue": "2.4 s",
+        "title": "Speed Index"
+      },
+      {
+        "id": "total-blocking-time",
+        "score": 0.95,
+        "displayValue": "140 ms",
+        "title": "Total Blocking Time"
+      },
+      {
+        "id": "max-potential-fid",
+        "score": 0.88,
+        "displayValue": "140 ms",
+        "title": "Max Potential First Input Delay"
+      },
+      {
+        "id": "interactive",
+        "score": 0.99,
+        "displayValue": "1.9 s",
+        "title": "Time to Interactive"
+      },
+      {
+        "id": "unminified-css",
+        "score": 0,
+        "displayValue": "Est savings of 4 KiB",
+        "title": "Minify CSS"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0,
+        "displayValue": "Est savings of 22 KiB",
+        "title": "Reduce unused CSS"
+      },
+      {
+        "id": "is-crawlable",
+        "score": 0,
+        "title": "Page is blocked from indexing"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0,
+        "displayValue": "Est savings of 147 KiB",
+        "title": "Use efficient cache lifetimes"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 5 KiB",
+        "title": "Document request latency"
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 22 KiB",
+        "title": "Improve image delivery"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree"
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0.5,
+        "title": "Render-blocking requests"
+      }
+    ]
+  },
+  {
+    "page": "faq",
+    "lang": "en",
+    "url": "http://127.0.0.1:8142/en/resources/faq/",
+    "version": "13.6.0",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 69
+    },
+    "failedAudits": [
+      {
+        "id": "first-contentful-paint",
+        "score": 0.99,
+        "displayValue": "1.2 s",
+        "title": "First Contentful Paint"
+      },
+      {
+        "id": "speed-index",
+        "score": 0.98,
+        "displayValue": "2.3 s",
+        "title": "Speed Index"
+      },
+      {
+        "id": "max-potential-fid",
+        "score": 0.7,
+        "displayValue": "190 ms",
+        "title": "Max Potential First Input Delay"
+      },
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB",
+        "title": "Minify CSS"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0.5,
+        "displayValue": "Est savings of 22 KiB",
+        "title": "Reduce unused CSS"
+      },
+      {
+        "id": "is-crawlable",
+        "score": 0,
+        "title": "Page is blocked from indexing"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 146 KiB",
+        "title": "Use efficient cache lifetimes"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 9 KiB",
+        "title": "Document request latency"
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 22 KiB",
+        "title": "Improve image delivery"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree"
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0.5,
+        "title": "Render-blocking requests"
+      }
+    ]
+  },
+  {
+    "page": "statistics",
+    "lang": "en",
+    "url": "http://127.0.0.1:8142/en/resources/statistics/",
+    "version": "13.6.0",
+    "scores": {
+      "performance": 86,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 69
+    },
+    "failedAudits": [
+      {
+        "id": "first-contentful-paint",
+        "score": 0.99,
+        "displayValue": "1.2 s",
+        "title": "First Contentful Paint"
+      },
+      {
+        "id": "speed-index",
+        "score": 0.96,
+        "displayValue": "2.7 s",
+        "title": "Speed Index"
+      },
+      {
+        "id": "total-blocking-time",
+        "score": 0.56,
+        "displayValue": "520 ms",
+        "title": "Total Blocking Time"
+      },
+      {
+        "id": "max-potential-fid",
+        "score": 0.2,
+        "displayValue": "380 ms",
+        "title": "Max Potential First Input Delay"
+      },
+      {
+        "id": "interactive",
+        "score": 0.99,
+        "displayValue": "2.0 s",
+        "title": "Time to Interactive"
+      },
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB",
+        "title": "Minify CSS"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0.5,
+        "displayValue": "Est savings of 21 KiB",
+        "title": "Reduce unused CSS"
+      },
+      {
+        "id": "is-crawlable",
+        "score": 0,
+        "title": "Page is blocked from indexing"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 110 KiB",
+        "title": "Use efficient cache lifetimes"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 33 KiB",
+        "title": "Document request latency"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree"
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0.5,
+        "title": "Render-blocking requests"
+      }
+    ]
+  },
+  {
+    "page": "about",
+    "lang": "en",
+    "url": "http://127.0.0.1:8142/en/about/",
+    "version": "13.6.0",
+    "scores": {
+      "performance": 95,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 69
+    },
+    "failedAudits": [
+      {
+        "id": "largest-contentful-paint",
+        "score": 0.97,
+        "displayValue": "2.0 s",
+        "title": "Largest Contentful Paint"
+      },
+      {
+        "id": "speed-index",
+        "score": 0.98,
+        "displayValue": "2.3 s",
+        "title": "Speed Index"
+      },
+      {
+        "id": "total-blocking-time",
+        "score": 0.87,
+        "displayValue": "230 ms",
+        "title": "Total Blocking Time"
+      },
+      {
+        "id": "max-potential-fid",
+        "score": 0.61,
+        "displayValue": "210 ms",
+        "title": "Max Potential First Input Delay"
+      },
+      {
+        "id": "interactive",
+        "score": 0.99,
+        "displayValue": "2.0 s",
+        "title": "Time to Interactive"
+      },
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB",
+        "title": "Minify CSS"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0.5,
+        "displayValue": "Est savings of 22 KiB",
+        "title": "Reduce unused CSS"
+      },
+      {
+        "id": "is-crawlable",
+        "score": 0,
+        "title": "Page is blocked from indexing"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0,
+        "displayValue": "Est savings of 213 KiB",
+        "title": "Use efficient cache lifetimes"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 6 KiB",
+        "title": "Document request latency"
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0,
+        "displayValue": "Est savings of 57 KiB",
+        "title": "Improve image delivery"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree"
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0.5,
+        "title": "Render-blocking requests"
+      }
+    ]
+  },
+  {
+    "page": "team",
+    "lang": "en",
+    "url": "http://127.0.0.1:8142/en/about/team/",
+    "version": "13.6.0",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 69
+    },
+    "failedAudits": [
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB",
+        "title": "Minify CSS"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0,
+        "displayValue": "Est savings of 23 KiB",
+        "title": "Reduce unused CSS"
+      },
+      {
+        "id": "is-crawlable",
+        "score": 0,
+        "title": "Page is blocked from indexing"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0,
+        "displayValue": "Est savings of 146 KiB",
+        "title": "Use efficient cache lifetimes"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB",
+        "title": "Document request latency"
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 22 KiB",
+        "title": "Improve image delivery"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree"
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "displayValue": "Est savings of 140 ms",
+        "title": "Render-blocking requests"
+      }
+    ]
+  },
+  {
+    "page": "here",
+    "lang": "en",
+    "url": "http://127.0.0.1:8142/en/about/here/",
+    "version": "13.6.0",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 69
+    },
+    "failedAudits": [
+      {
+        "id": "max-potential-fid",
+        "score": 0.96,
+        "displayValue": "100 ms",
+        "title": "Max Potential First Input Delay"
+      },
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB",
+        "title": "Minify CSS"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0,
+        "displayValue": "Est savings of 23 KiB",
+        "title": "Reduce unused CSS"
+      },
+      {
+        "id": "is-crawlable",
+        "score": 0,
+        "title": "Page is blocked from indexing"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0,
+        "displayValue": "Est savings of 146 KiB",
+        "title": "Use efficient cache lifetimes"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB",
+        "title": "Document request latency"
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 22 KiB",
+        "title": "Improve image delivery"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree"
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "displayValue": "Est savings of 190 ms",
+        "title": "Render-blocking requests"
+      }
+    ]
+  },
+  {
+    "page": "contact",
+    "lang": "en",
+    "url": "http://127.0.0.1:8142/en/about/contact/",
+    "version": "13.6.0",
+    "scores": {
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 69
+    },
+    "failedAudits": [
+      {
+        "id": "total-blocking-time",
+        "score": 0.95,
+        "displayValue": "140 ms",
+        "title": "Total Blocking Time"
+      },
+      {
+        "id": "max-potential-fid",
+        "score": 0.49,
+        "displayValue": "250 ms",
+        "title": "Max Potential First Input Delay"
+      },
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB",
+        "title": "Minify CSS"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0,
+        "displayValue": "Est savings of 23 KiB",
+        "title": "Reduce unused CSS"
+      },
+      {
+        "id": "is-crawlable",
+        "score": 0,
+        "title": "Page is blocked from indexing"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0,
+        "displayValue": "Est savings of 146 KiB",
+        "title": "Use efficient cache lifetimes"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB",
+        "title": "Document request latency"
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 22 KiB",
+        "title": "Improve image delivery"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree"
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "displayValue": "Est savings of 40 ms",
+        "title": "Render-blocking requests"
+      }
+    ]
+  },
+  {
+    "page": "search",
+    "lang": "en",
+    "url": "http://127.0.0.1:8142/en/search/",
+    "version": "13.6.0",
+    "scores": {
+      "performance": 100,
+      "accessibility": 96,
+      "best-practices": 96,
+      "seo": 69
+    },
+    "failedAudits": [
+      {
+        "id": "total-blocking-time",
+        "score": 0.99,
+        "displayValue": "70 ms",
+        "title": "Total Blocking Time"
+      },
+      {
+        "id": "max-potential-fid",
+        "score": 0.44,
+        "displayValue": "270 ms",
+        "title": "Max Potential First Input Delay"
+      },
+      {
+        "id": "errors-in-console",
+        "score": 0,
+        "title": "Browser errors were logged to the console"
+      },
+      {
+        "id": "target-size",
+        "score": 0,
+        "title": "Touch targets do not have sufficient size or spacing."
+      },
+      {
+        "id": "is-crawlable",
+        "score": 0,
+        "title": "Page is blocked from indexing"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 5 KiB",
+        "title": "Document request latency"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree"
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "displayValue": "Est savings of 90 ms",
+        "title": "Render-blocking requests"
+      }
+    ]
+  },
+  {
+    "page": "notFound",
+    "lang": "en",
+    "url": "http://127.0.0.1:8142/404.html#not-found-en",
+    "version": "13.6.0",
+    "scores": {
+      "performance": 100,
+      "accessibility": 96,
+      "best-practices": 96,
+      "seo": 69
+    },
+    "failedAudits": [
+      {
+        "id": "max-potential-fid",
+        "score": 0.75,
+        "displayValue": "180 ms",
+        "title": "Max Potential First Input Delay"
+      },
+      {
+        "id": "errors-in-console",
+        "score": 0,
+        "title": "Browser errors were logged to the console"
+      },
+      {
+        "id": "target-size",
+        "score": 0,
+        "title": "Touch targets do not have sufficient size or spacing."
+      },
+      {
+        "id": "is-crawlable",
+        "score": 0,
+        "title": "Page is blocked from indexing"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 6 KiB",
+        "title": "Document request latency"
+      },
+      {
+        "id": "forced-reflow-insight",
+        "score": 0,
+        "title": "Forced reflow"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree"
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0.5,
+        "title": "Render-blocking requests"
+      }
+    ]
+  }
+]

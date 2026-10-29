@@ -1,0 +1,210 @@
+- link "შინაარსზე გადასვლა":
+  - /url: "#main"
+- complementary "წინასწარი ვერსია. Erasmus+-ის საქართველოს ეროვნული ოფისის ვებსაიტი 2027 წლის იანვარში გაიხსნება.":
+  - paragraph: წინასწარი ვერსია. Erasmus+-ის საქართველოს ეროვნული ოფისის ვებსაიტი 2027 წლის იანვარში გაიხსნება.
+- banner:
+  - link "ერაზმუს+ საქართველოს ეროვნული ოფისი":
+    - /url: /ka/
+  - link "ძიება":
+    - /url: /ka/search/
+  - text: ქა
+  - 'link "EN: English"':
+    - /url: /en/calls/
+    - text: EN
+  - navigation "მთავარი ნავიგაცია":
+    - list:
+      - listitem:
+        - link "მთავარი":
+          - /url: /ka/
+      - listitem:
+        - link "შესაძლებლობები":
+          - /url: /ka/opportunities/
+      - listitem:
+        - link "კონკურსები და ვადები":
+          - /url: /ka/calls/
+      - listitem:
+        - link "ღონისძიებები":
+          - /url: /ka/events/
+      - listitem:
+        - link "სიახლეები":
+          - /url: /ka/news/
+      - listitem:
+        - link "რესურსები":
+          - /url: /ka/resources/
+      - listitem:
+        - link "ოფისის შესახებ":
+          - /url: /ka/about/
+- main:
+  - heading "კონკურსები და ვადები" [level=1]
+  - paragraph: ბრიუსელის დრო (Europe/Brussels)
+  - paragraph: ევროკომისია 2027 წლის კონკურსებს, სავარაუდოდ, 2026 წლის ბოლოს გამოაქვეყნებს. გვერდი განახლდება მათი გამოქვეყნების შემდეგ.
+  - paragraph:
+    - link "ერაზმუს+ პროგრამის გზამკვლევი":
+      - /url: https://erasmus-plus.ec.europa.eu/programme-guide/erasmusplus-programme-guide
+  - 'heading "კონკურსის წელი: 2026" [level=2]'
+  - 'heading "ძირითადი მიმართულება: KA1" [level=3]'
+  - list:
+    - listitem:
+      - text: დახურული
+      - 'heading "ახალგაზრდული გაცვლები და ახალგაზრდულ მუშაკთა მობილობა: თებერვლის რაუნდი 2026" [level=4]':
+        - 'link "ახალგაზრდული გაცვლები და ახალგაზრდულ მუშაკთა მობილობა: თებერვლის რაუნდი 2026"':
+          - /url: /ka/opportunities/youth-mobility/
+      - paragraph:
+        - time: 12 თებერვალი 2026, 12:00
+        - text: ბრიუსელის დრო (Europe/Brussels)
+      - paragraph: ევროკავშირის ან პროგრამასთან ასოცირებული ქვეყნის განმცხადებელი განაცხადს წარადგენს თავის ეროვნულ სააგენტოში. ქართული ორგანიზაციები მონაწილეობენ უფლებამოსილ პარტნიორებად, თითოეული ქმედების პირობების შესაბამისად.
+      - link "ოფიციალური ბმულები":
+        - /url: https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/youth-exchanges
+    - listitem:
+      - text: დახურული
+      - heading "საერთაშორისო კრედიტმობილობა (KA171) 2026" [level=4]:
+        - link "საერთაშორისო კრედიტმობილობა (KA171) 2026":
+          - /url: /ka/opportunities/icm/
+      - paragraph:
+        - time: 19 თებერვალი 2026, 12:00
+        - text: ბრიუსელის დრო (Europe/Brussels)
+      - paragraph: ინსტიტუციური განაცხადის ვადა. ევროკავშირის ან პროგრამასთან ასოცირებული ქვეყნის დაწესებულებას განაცხადი შეაქვს თავის ეროვნულ სააგენტოში. სტუდენტები და პერსონალი მიმართავენ საკუთარ უნივერსიტეტს.
+      - link "ოფიციალური ბმულები":
+        - /url: https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/higher-education-mobility-projects
+    - listitem:
+      - text: დახურული
+      - 'heading "ვირტუალური გაცვლები: აღმოსავლეთ სამეზობლო 2026" [level=4]':
+        - 'link "ვირტუალური გაცვლები: აღმოსავლეთ სამეზობლო 2026"':
+          - /url: /ka/opportunities/virtual-exchanges/
+      - paragraph:
+        - time: 26 მარტი 2026, 17:00
+        - text: ბრიუსელის დრო (Europe/Brussels)
+      - paragraph: აღმოსავლეთ სამეზობლოს ინსტიტუციური განაცხადის ვადა. ქართულ ორგანიზაციებს შეუძლიათ ჩაერთონ უფლებამოსილ პარტნიორობებში, რომლებსაც ევროკავშირის ან ასოცირებული ქვეყნის ორგანიზაცია კოორდინირებს.
+      - link "ოფიციალური ბმულები":
+        - /url: https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/virtual-exchanges
+    - listitem:
+      - text: დახურული
+      - 'heading "ახალგაზრდული გაცვლები და ახალგაზრდულ მუშაკთა მობილობა: ოქტომბრის რაუნდი 2026" [level=4]':
+        - 'link "ახალგაზრდული გაცვლები და ახალგაზრდულ მუშაკთა მობილობა: ოქტომბრის რაუნდი 2026"':
+          - /url: /ka/opportunities/youth-mobility/
+      - paragraph:
+        - time: 1 ოქტომბერი 2026, 12:00
+        - text: ბრიუსელის დრო (Europe/Brussels)
+      - paragraph: ახალგაზრდული გაცვლებისა და ახალგაზრდულ მუშაკთა მობილობის 2026 წლის მეორე რაუნდი. ქართული ორგანიზაციები ერთვებიან უფლებამოსილ პარტნიორებად; განაცხადი შეაქვს ევროკავშირის ან ასოცირებული ქვეყნის ორგანიზაციას.
+      - link "ოფიციალური ბმულები":
+        - /url: https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/youth-exchanges
+  - 'heading "ძირითადი მიმართულება: KA2" [level=3]'
+  - list:
+    - listitem:
+      - text: დახურული
+      - heading "უმაღლესი განათლების შესაძლებლობების განვითარება 2026" [level=4]:
+        - link "უმაღლესი განათლების შესაძლებლობების განვითარება 2026":
+          - /url: /ka/opportunities/cbhe/
+      - paragraph:
+        - time: 10 თებერვალი 2026, 17:00
+        - text: ბრიუსელის დრო (Europe/Brussels)
+      - paragraph: 2026 წლის CBHE კონკურსის ვადა, აღმოსავლეთ სამეზობლოს ჩათვლით. გადაამოწმეთ მიმართულების, კონსორციუმისა და საქართველოს უფლებამოსილების პირობები ქმედების გვერდზე და გზამკვლევში.
+      - link "ოფიციალური ბმულები":
+        - /url: https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-higher-education
+    - listitem:
+      - text: დახურული
+      - heading "ერაზმუს მუნდუსის პროგრამის შემუშავების ღონისძიებები 2026" [level=4]:
+        - link "ერაზმუს მუნდუსის პროგრამის შემუშავების ღონისძიებები 2026":
+          - /url: /ka/opportunities/erasmus-mundus/
+      - paragraph:
+        - time: 12 თებერვალი 2026, 17:00
+        - text: ბრიუსელის დრო (Europe/Brussels)
+      - paragraph: განმცხადებელი უნდა იყოს ევროკავშირის ან პროგრამასთან ასოცირებული ქვეყნის უფლებამოსილი უმაღლესი სასწავლებელი. ქართულ დაწესებულებებს შეუძლიათ მონაწილეობა პროგრამის შემუშავებაში; ეს არ ნიშნავს თანაბენეფიციარის სტატუსს.
+      - link "ოფიციალური ბმულები":
+        - /url: https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/erasmus-mundus
+    - listitem:
+      - text: დახურული
+      - heading "ერაზმუს მუნდუსის ერთობლივი სამაგისტრო პროგრამები 2026" [level=4]:
+        - link "ერაზმუს მუნდუსის ერთობლივი სამაგისტრო პროგრამები 2026":
+          - /url: /ka/opportunities/erasmus-mundus/
+      - paragraph:
+        - time: 12 თებერვალი 2026, 17:00
+        - text: ბრიუსელის დრო (Europe/Brussels)
+      - paragraph: კონსორციუმის საპროექტო განაცხადის ვადა, არა სტუდენტური სტიპენდიის ვადა. სტუდენტები მიმართავენ არჩეული სამაგისტრო პროგრამის კონსორციუმს მის მიერ დადგენილ ვადებში.
+      - link "ოფიციალური ბმულები":
+        - /url: https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/erasmus-mundus
+    - listitem:
+      - text: დახურული
+      - heading "ახალგაზრდობის სფეროს შესაძლებლობების განვითარება 2026" [level=4]:
+        - link "ახალგაზრდობის სფეროს შესაძლებლობების განვითარება 2026":
+          - /url: /ka/opportunities/cb-youth/
+      - paragraph:
+        - time: 26 თებერვალი 2026, 17:00
+        - text: ბრიუსელის დრო (Europe/Brussels)
+      - paragraph: 2026 წლის კონკურსის ინსტიტუციური განაცხადის ვადა. უფლებამოსილი ორგანიზაციები და რეგიონული კონსორციუმის მოთხოვნები გადაამოწმეთ ოფიციალურ გზამკვლევში.
+      - link "ოფიციალური ბმულები":
+        - /url: https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-youth
+    - listitem:
+      - text: დახურული
+      - heading "სპორტის სფეროს შესაძლებლობების განვითარება 2026" [level=4]:
+        - link "სპორტის სფეროს შესაძლებლობების განვითარება 2026":
+          - /url: /ka/opportunities/cb-sport/
+      - paragraph:
+        - time: 5 მარტი 2026, 17:00
+        - text: ბრიუსელის დრო (Europe/Brussels)
+      - paragraph: 2026 წლის კონკურსის ინსტიტუციური განაცხადის ვადა. განაცხადის მომზადებამდე გადაამოწმეთ კონსორციუმის, ორგანიზაციისა და ქვეყნის უფლებამოსილების ოფიციალური მოთხოვნები.
+      - link "ოფიციალური ბმულები":
+        - /url: https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-sport
+    - listitem:
+      - text: დახურული
+      - 'heading "პროფესიული განათლების შესაძლებლობების განვითარება: აღმოსავლეთ სამეზობლო 2026" [level=4]':
+        - 'link "პროფესიული განათლების შესაძლებლობების განვითარება: აღმოსავლეთ სამეზობლო 2026"':
+          - /url: /ka/opportunities/cb-vet/
+      - paragraph:
+        - time: 26 მარტი 2026, 17:00
+        - text: ბრიუსელის დრო (Europe/Brussels)
+      - paragraph: საქართველოს პროფესიული განათლებისა და შრომის ბაზრის ორგანიზაციებს შეუძლიათ მონაწილეობა უფლებამოსილ პარტნიორებად. კოორდინატორი უნდა იყოს ევროკავშირში ან პროგრამასთან ასოცირებულ ქვეყანაში.
+      - link "ოფიციალური ბმულები":
+        - /url: https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-vet
+  - 'heading "ძირითადი მიმართულება: KA3" [level=3]'
+  - list:
+    - listitem: ამჟამად ჩანაწერები არ არის.
+  - 'heading "ძირითადი მიმართულება: ჟან მონე" [level=3]'
+  - list:
+    - listitem:
+      - text: დახურული
+      - 'heading "ჟან მონე: მოდულები, კათედრები და საუკეთესო გამოცდილების ცენტრები 2026" [level=4]':
+        - 'link "ჟან მონე: მოდულები, კათედრები და საუკეთესო გამოცდილების ცენტრები 2026"':
+          - /url: /ka/opportunities/jean-monnet/
+      - paragraph:
+        - time: 3 თებერვალი 2026, 17:00
+        - text: ბრიუსელის დრო (Europe/Brussels)
+      - paragraph: უმაღლესი განათლების სწავლებისა და კვლევის განაცხადები წარედგინება EACEA-ს. უფლებამოსილი დაწესებულება განაცხადს წარადგენს ერთპიროვნულად; ჟან მონეს სხვა მიმართულებებს ცალკე პირობები აქვს.
+      - link "ოფიციალური ბმულები":
+        - /url: https://erasmus-plus.ec.europa.eu/programme-guide/part-b/jean-monnet-actions/higher-education-projects
+- contentinfo:
+  - heading "კონტაქტი" [level=2]
+  - paragraph: "ელფოსტა: [TBC]"
+  - paragraph:
+    - link "კონტაქტი":
+      - /url: /ka/about/contact/
+  - navigation "სწრაფი ბმულები":
+    - heading "სწრაფი ბმულები" [level=2]
+    - list:
+      - listitem:
+        - link "შესაძლებლობები":
+          - /url: /ka/opportunities/
+      - listitem:
+        - link "კონკურსები და ვადები":
+          - /url: /ka/calls/
+      - listitem:
+        - link "რესურსები":
+          - /url: /ka/resources/
+  - navigation "ოფისის შესახებ":
+    - heading "სამართლებრივი ინფორმაცია" [level=2]
+    - list:
+      - listitem:
+        - link "კონფიდენციალურობა და ფაილები":
+          - /url: /ka/privacy/
+      - listitem:
+        - link "ხელმისაწვდომობა":
+          - /url: /ka/accessibility/
+      - listitem:
+        - link "უპირატესი ენა":
+          - /url: /ka/language/
+      - listitem:
+        - link "ფოტოების წყაროები":
+          - /url: /ka/about/credits/
+  - paragraph: ქართულ და ინგლისურ ვერსიებს შორის შეუსაბამობის შემთხვევაში უპირატესობა ენიჭება ინგლისურ ვერსიას.
+  - img "ევროკავშირი საქართველოსთვის"
+  - paragraph: დაფინანსებულია ევროკავშირის მიერ. გამოთქმული შეხედულებები და მოსაზრებები მხოლოდ ავტორ(ებ)ს ეკუთვნის და შესაძლოა არ ასახავდეს ევროკავშირის ან განათლებისა და კულტურის ევროპული აღმასრულებელი სააგენტოს (EACEA) შეხედულებებს. მათზე პასუხისმგებლობა არ ეკისრება არც ევროკავშირს და არც EACEA-ს.

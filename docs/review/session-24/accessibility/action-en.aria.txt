@@ -1,0 +1,160 @@
+- link "Skip to content":
+  - /url: "#main"
+- complementary "Preview. The National Erasmus+ Office Georgia website opens in January 2027.":
+  - paragraph: Preview. The National Erasmus+ Office Georgia website opens in January 2027.
+- banner:
+  - link "National Erasmus+ Office Georgia":
+    - /url: /en/
+  - link "Search":
+    - /url: /en/search/
+  - text: EN
+  - 'link "ქა: ქართული"':
+    - /url: /ka/opportunities/cbhe/
+    - text: ქა
+  - navigation "Main navigation":
+    - list:
+      - listitem:
+        - link "Home":
+          - /url: /en/
+      - listitem:
+        - link "Opportunities":
+          - /url: /en/opportunities/
+      - listitem:
+        - link "Calls and deadlines":
+          - /url: /en/calls/
+      - listitem:
+        - link "Events":
+          - /url: /en/events/
+      - listitem:
+        - link "News":
+          - /url: /en/news/
+      - listitem:
+        - link "Resources":
+          - /url: /en/resources/
+      - listitem:
+        - link "About":
+          - /url: /en/about/
+- main:
+  - region "Capacity Building in Higher Education":
+    - paragraph: "Key Action: KA2"
+    - heading "Capacity Building in Higher Education" [level=1]
+    - paragraph: International partnerships to improve higher education quality, institutional capacity and responsiveness in eligible non-associated countries.
+  - complementary "At a glance":
+    - heading "At a glance" [level=2]
+    - term: Who can apply from Georgia
+    - definition:
+      - paragraph: For Strands 1 and 2, eligible Georgian HEIs and organisations of HEIs can apply directly as consortium coordinator or participate as partners. Other eligible education, training, youth or labour-market bodies can join as partners, not coordinators. Strand 3 has additional national-authority requirements; compatibility with the Georgia authority exclusion must be confirmed before preparing that strand.
+    - term: Georgia’s role
+    - definition: Eligible Georgian HEIs may coordinate Strands 1 and 2 or partner. Strand 3 requires EACEA clarification.
+    - term: "Calls and deadlines: 2026"
+    - definition:
+      - list:
+        - listitem:
+          - time: 10 February 2026, 17:00
+          - text: (Brussels time (Europe/Brussels)), Closed
+    - heading "Official links" [level=3]
+    - list:
+      - listitem:
+        - link "Programme Guide 2026 (PDF)":
+          - /url: https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/programme-guide-2026_en.pdf
+      - listitem:
+        - link "Official action page":
+          - /url: https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-higher-education
+  - paragraph: The 2026 Guide excludes Georgian authorities (central government, local authorities, agencies and state-owned enterprises) from all actions under this Guide. The organisation roles below apply only to entities that are not covered by that exclusion and that meet the action-specific conditions. Check the entity’s legal status before relying on these roles.
+  - paragraph:
+    - link "Find partners":
+      - /url: /en/opportunities/find-partners/
+  - paragraph:
+    - link "70 Projects with Georgian participation":
+      - /url: /en/resources/projects/#action-cbhe
+      - strong: "70"
+      - text: Projects with Georgian participation
+  - paragraph: Project counts use the 28 October 2026 snapshot. Read the coverage limits on the project and statistics pages.
+  - heading "How to apply" [level=2]
+  - paragraph: Check the strand, consortium composition and regional criteria, then prepare the application for EACEA through the official call. Obtain clarification from EACEA for Strand 3 rather than assuming an authority can participate.
+  - heading "Calls and deadlines" [level=2]
+  - list:
+    - listitem:
+      - text: Closed
+      - heading "Capacity Building in Higher Education 2026" [level=3]:
+        - link "Capacity Building in Higher Education 2026":
+          - /url: /en/opportunities/cbhe/
+      - paragraph:
+        - time: 10 February 2026, 17:00
+        - text: Brussels time (Europe/Brussels)
+      - paragraph: Deadline for the 2026 CBHE call, including Neighbourhood East. Check the strand, consortium and Georgia eligibility conditions on the Action page and in the Guide.
+      - link "Official links":
+        - /url: https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-higher-education
+  - heading "Upcoming events" [level=2]
+  - list:
+    - listitem: No items are available.
+  - heading "Past events" [level=2]
+  - list:
+    - listitem: No items are available.
+  - heading "Resources" [level=2]
+  - list:
+    - listitem:
+      - paragraph: "Source: Official EU source"
+      - 'heading "EACEA: how to get a grant" [level=3]':
+        - 'link "EACEA: how to get a grant"':
+          - /url: https://www.eacea.ec.europa.eu/grants/how-get-grant_en
+      - paragraph: Official guidance on finding and applying for EACEA funding opportunities.
+    - listitem:
+      - paragraph: "Source: Official EU source"
+      - heading "EU Funding & Tenders Portal" [level=3]:
+        - link "EU Funding & Tenders Portal":
+          - /url: https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/home
+      - paragraph: Find centrally managed calls and their application documents on the Commission’s portal.
+    - listitem:
+      - paragraph: "Source: Official EU source"
+      - heading "Programme Guide 2026" [level=3]:
+        - link "Programme Guide 2026":
+          - /url: https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/programme-guide-2026_en.pdf
+      - paragraph: The official rules and eligibility criteria for the 2026 call. English only.
+    - listitem:
+      - paragraph: "Source: Official EU source"
+      - heading "Erasmus+ Project Results Platform" [level=3]:
+        - link "Erasmus+ Project Results Platform":
+          - /url: https://erasmus-plus.ec.europa.eu/projects
+      - paragraph: Browse funded projects, their participating organisations and published results on the official platform.
+  - heading "Frequently asked questions" [level=2]
+  - list:
+    - listitem:
+      - group:
+        - heading "Can a Georgian university lead a project?" [level=3]
+- contentinfo:
+  - heading "Contact" [level=2]
+  - paragraph: "Email: [TBC]"
+  - paragraph:
+    - link "Contact":
+      - /url: /en/about/contact/
+  - navigation "Quick links":
+    - heading "Quick links" [level=2]
+    - list:
+      - listitem:
+        - link "Opportunities":
+          - /url: /en/opportunities/
+      - listitem:
+        - link "Calls and deadlines":
+          - /url: /en/calls/
+      - listitem:
+        - link "Resources":
+          - /url: /en/resources/
+  - navigation "About":
+    - heading "Legal information" [level=2]
+    - list:
+      - listitem:
+        - link "Privacy and cookies":
+          - /url: /en/privacy/
+      - listitem:
+        - link "Accessibility":
+          - /url: /en/accessibility/
+      - listitem:
+        - link "Prevailing language":
+          - /url: /en/language/
+      - listitem:
+        - link "Photo credits":
+          - /url: /en/about/credits/
+  - paragraph: In the event of any discrepancy between the Georgian and English versions, the English version prevails.
+  - img "Funded by the European Union"
+  - paragraph: Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them.

@@ -1,0 +1,108 @@
+- link "შინაარსზე გადასვლა":
+  - /url: "#main"
+- complementary "წინასწარი ვერსია. Erasmus+-ის საქართველოს ეროვნული ოფისის ვებსაიტი 2027 წლის იანვარში გაიხსნება.":
+  - paragraph: წინასწარი ვერსია. Erasmus+-ის საქართველოს ეროვნული ოფისის ვებსაიტი 2027 წლის იანვარში გაიხსნება.
+- banner:
+  - link "ერაზმუს+ საქართველოს ეროვნული ოფისი":
+    - /url: /ka/
+  - link "ძიება":
+    - /url: /ka/search/
+  - text: ქა
+  - 'link "EN: English"':
+    - /url: /en/about/
+    - text: EN
+  - navigation "მთავარი ნავიგაცია":
+    - list:
+      - listitem:
+        - link "მთავარი":
+          - /url: /ka/
+      - listitem:
+        - link "შესაძლებლობები":
+          - /url: /ka/opportunities/
+      - listitem:
+        - link "კონკურსები და ვადები":
+          - /url: /ka/calls/
+      - listitem:
+        - link "ღონისძიებები":
+          - /url: /ka/events/
+      - listitem:
+        - link "სიახლეები":
+          - /url: /ka/news/
+      - listitem:
+        - link "რესურსები":
+          - /url: /ka/resources/
+      - listitem:
+        - link "ოფისის შესახებ":
+          - /url: /ka/about/
+- main:
+  - heading "ეროვნული ოფისის შესახებ" [level=1]
+  - 'figure "ფოტო: Patrik Kunec, CC BY-SA 4.0, წყარო: Wikimedia Commons (Tbilisi, Georgia - Building of the Tbilisi State University - 2023.jpg). შეცვლილია: მოჭრილია, შეცვლილია ზომა და ფორმატი."':
+    - img "თბილისის სახელმწიფო უნივერსიტეტის მთავარი შენობა ხეებს შორის."
+    - text: "ფოტო: Patrik Kunec,"
+    - link "CC BY-SA 4.0":
+      - /url: https://creativecommons.org/licenses/by-sa/4.0
+    - text: ", წყარო: Wikimedia Commons ("
+    - link "Tbilisi, Georgia - Building of the Tbilisi State University - 2023.jpg":
+      - /url: https://commons.wikimedia.org/wiki/File:Tbilisi,_Georgia_-_Building_of_the_Tbilisi_State_University_-_2023.jpg
+    - text: "). შეცვლილია: მოჭრილია, შეცვლილია ზომა და ფორმატი."
+  - paragraph: Erasmus+-ის საქართველოს ეროვნული ოფისი (NEO) საქართველოში პროგრამის საინფორმაციო და მხარდამჭერი ოფისია. საქართველო პროგრამასთან არაასოცირებული მესამე ქვეყანაა. ოფისი ხელს უწყობს ევროკომისიისა და განათლებისა და კულტურის ევროპული აღმასრულებელი სააგენტოს (EACEA) საქმიანობას პროგრამის საერთაშორისო მიმართულებით.
+  - heading "რას ვაკეთებთ" [level=2]
+  - paragraph: ვავრცელებთ ინფორმაციას საქართველოსთვის ხელმისაწვდომ შესაძლებლობებზე, კონსულტაციას ვუწევთ განმცხადებლებსა და ბენეფიციარებს, კოორდინაციას ვუწევთ უმაღლესი განათლების რეფორმის ექსპერტების (HERE) მხარდაჭერას, ვმონაწილეობთ პროექტების მონიტორინგსა და შედეგების გავრცელებაში. ასევე ხელს ვუწყობთ განათლებისა და თანამშრომლობის შესახებ დიალოგსა და ღონისძიებებს.
+  - heading "მასპინძელი ორგანიზაცია" [level=2]
+  - paragraph: 2027 წლის იანვრიდან ოფისის მასპინძელი ორგანიზაციაა ERIDA (განათლების, კვლევისა და საერთაშორისო განვითარების ასოციაცია).
+  - heading "რას არ ვაკეთებთ" [level=2]
+  - paragraph: ეროვნული ოფისი არ აფასებს და არ არჩევს პროექტებს, არ გასცემს გრანტებს და არ არჩევს სტიპენდიის მიმღებებს. განაცხადებისა და დაფინანსების გადაწყვეტილებები ექვემდებარება პასუხისმგებელი ეროვნული სააგენტოს, EACEA-ს, უნივერსიტეტის ან პროგრამის კონსორციუმის პროცედურებს.
+  - heading "ოფიციალური წყაროები" [level=2]
+  - list:
+    - listitem:
+      - 'link "პროგრამის გზამკვლევი 2026: პროგრამის განხორციელება"':
+        - /url: https://erasmus-plus.ec.europa.eu/programme-guide/part-a/implementation
+    - listitem:
+      - 'link "ევროკომისია: როგორ იმართება Erasmus+"':
+        - /url: https://erasmus-plus.ec.europa.eu/about-erasmus/how-erasmus-is-managed
+  - list:
+    - listitem:
+      - link "ეროვნული ოფისის გუნდი":
+        - /url: /ka/about/team/
+    - listitem:
+      - link "უმაღლესი განათლების რეფორმის ექსპერტები":
+        - /url: /ka/about/here/
+    - listitem:
+      - link "კონტაქტი":
+        - /url: /ka/about/contact/
+- contentinfo:
+  - heading "კონტაქტი" [level=2]
+  - paragraph: "ელფოსტა: [TBC]"
+  - paragraph:
+    - link "კონტაქტი":
+      - /url: /ka/about/contact/
+  - navigation "სწრაფი ბმულები":
+    - heading "სწრაფი ბმულები" [level=2]
+    - list:
+      - listitem:
+        - link "შესაძლებლობები":
+          - /url: /ka/opportunities/
+      - listitem:
+        - link "კონკურსები და ვადები":
+          - /url: /ka/calls/
+      - listitem:
+        - link "რესურსები":
+          - /url: /ka/resources/
+  - navigation "ოფისის შესახებ":
+    - heading "სამართლებრივი ინფორმაცია" [level=2]
+    - list:
+      - listitem:
+        - link "კონფიდენციალურობა და ფაილები":
+          - /url: /ka/privacy/
+      - listitem:
+        - link "ხელმისაწვდომობა":
+          - /url: /ka/accessibility/
+      - listitem:
+        - link "უპირატესი ენა":
+          - /url: /ka/language/
+      - listitem:
+        - link "ფოტოების წყაროები":
+          - /url: /ka/about/credits/
+  - paragraph: ქართულ და ინგლისურ ვერსიებს შორის შეუსაბამობის შემთხვევაში უპირატესობა ენიჭება ინგლისურ ვერსიას.
+  - img "ევროკავშირი საქართველოსთვის"
+  - paragraph: დაფინანსებულია ევროკავშირის მიერ. გამოთქმული შეხედულებები და მოსაზრებები მხოლოდ ავტორ(ებ)ს ეკუთვნის და შესაძლოა არ ასახავდეს ევროკავშირის ან განათლებისა და კულტურის ევროპული აღმასრულებელი სააგენტოს (EACEA) შეხედულებებს. მათზე პასუხისმგებლობა არ ეკისრება არც ევროკავშირს და არც EACEA-ს.

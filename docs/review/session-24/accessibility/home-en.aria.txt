@@ -1,0 +1,239 @@
+- link "Skip to content":
+  - /url: "#main"
+- complementary "Preview. The National Erasmus+ Office Georgia website opens in January 2027.":
+  - paragraph: Preview. The National Erasmus+ Office Georgia website opens in January 2027.
+- banner:
+  - link "National Erasmus+ Office Georgia":
+    - /url: /en/
+  - link "Search":
+    - /url: /en/search/
+  - text: EN
+  - 'link "ქა: ქართული"':
+    - /url: /ka/
+    - text: ქა
+  - navigation "Main navigation":
+    - list:
+      - listitem:
+        - link "Home":
+          - /url: /en/
+      - listitem:
+        - link "Opportunities":
+          - /url: /en/opportunities/
+      - listitem:
+        - link "Calls and deadlines":
+          - /url: /en/calls/
+      - listitem:
+        - link "Events":
+          - /url: /en/events/
+      - listitem:
+        - link "News":
+          - /url: /en/news/
+      - listitem:
+        - link "Resources":
+          - /url: /en/resources/
+      - listitem:
+        - link "About":
+          - /url: /en/about/
+- main:
+  - region "Erasmus+ opportunities for Georgia":
+    - paragraph: National Erasmus+ Office Georgia
+    - heading "Erasmus+ opportunities for Georgia" [level=1]
+    - paragraph: Find Erasmus+ opportunities, understand the participation rules and get guidance for your next step.
+    - link "I am a student or staff member":
+      - /url: /en/find/student/
+    - link "I represent an institution":
+      - /url: /en/find/university/
+    - 'figure "Photo: User:Ggia, CC BY-SA 3.0, via Wikimedia Commons (20110421 Tbilisi Georgia Panoramic.jpg). Modified: cropped, resized, reformatted and overlaid."':
+      - img "Panorama of Tbilisi, with Sameba Cathedral above the city."
+      - text: "Photo: User:Ggia,"
+      - link "CC BY-SA 3.0":
+        - /url: https://creativecommons.org/licenses/by-sa/3.0
+      - text: ", via Wikimedia Commons ("
+      - link "20110421 Tbilisi Georgia Panoramic.jpg":
+        - /url: https://commons.wikimedia.org/wiki/File:20110421_Tbilisi_Georgia_Panoramic.jpg
+      - text: "). Modified: cropped, resized, reformatted and overlaid."
+  - region "Find your opportunity":
+    - heading "Find your opportunity" [level=2]
+    - link "Explore opportunities":
+      - /url: /en/find/
+    - list:
+      - listitem:
+        - heading "Student or graduate" [level=3]:
+          - link "Student or graduate":
+            - /url: /en/find/student/
+      - listitem:
+        - heading "University staff or institution" [level=3]:
+          - link "University staff or institution":
+            - /url: /en/find/university/
+      - listitem:
+        - heading "Youth organisation or young person" [level=3]:
+          - link "Youth organisation or young person":
+            - /url: /en/find/youth/
+      - listitem:
+        - heading "VET organisation" [level=3]:
+          - link "VET organisation":
+            - /url: /en/find/vet/
+      - listitem:
+        - heading "Sport organisation" [level=3]:
+          - link "Sport organisation":
+            - /url: /en/find/sport/
+  - region "Opportunities":
+    - heading "Opportunities" [level=2]
+    - link "Explore all Actions":
+      - /url: /en/opportunities/
+    - region "Higher education":
+      - heading "Higher education" [level=3]
+      - list:
+        - listitem:
+          - heading "Capacity Building in Higher Education" [level=4]:
+            - link "Capacity Building in Higher Education":
+              - /url: /en/opportunities/cbhe/
+          - paragraph: "Key Action: KA2"
+        - listitem:
+          - 'heading "Erasmus Mundus: Joint Masters and Design Measures" [level=4]':
+            - 'link "Erasmus Mundus: Joint Masters and Design Measures"':
+              - /url: /en/opportunities/erasmus-mundus/
+          - paragraph: "Key Action: KA2"
+        - listitem:
+          - heading "International Credit Mobility" [level=4]:
+            - link "International Credit Mobility":
+              - /url: /en/opportunities/icm/
+          - paragraph: "Key Action: KA1"
+        - listitem:
+          - heading "Jean Monnet Actions" [level=4]:
+            - link "Jean Monnet Actions":
+              - /url: /en/opportunities/jean-monnet/
+          - paragraph: "Key Action: Jean Monnet"
+        - listitem:
+          - heading "Virtual Exchanges" [level=4]:
+            - link "Virtual Exchanges":
+              - /url: /en/opportunities/virtual-exchanges/
+          - paragraph: "Key Action: KA1"
+    - region "Vocational education and training":
+      - heading "Vocational education and training" [level=3]
+      - list:
+        - listitem:
+          - heading "Capacity Building in VET" [level=4]:
+            - link "Capacity Building in VET":
+              - /url: /en/opportunities/cb-vet/
+          - paragraph: "Key Action: KA2"
+    - region "Youth":
+      - heading "Youth" [level=3]
+      - list:
+        - listitem:
+          - heading "Capacity Building in Youth" [level=4]:
+            - link "Capacity Building in Youth":
+              - /url: /en/opportunities/cb-youth/
+          - paragraph: "Key Action: KA2"
+        - listitem:
+          - heading "Youth mobility" [level=4]:
+            - link "Youth mobility":
+              - /url: /en/opportunities/youth-mobility/
+          - paragraph: "Key Action: KA1"
+    - region "Sport":
+      - heading "Sport" [level=3]
+      - list:
+        - listitem:
+          - heading "Capacity Building in Sport" [level=4]:
+            - link "Capacity Building in Sport":
+              - /url: /en/opportunities/cb-sport/
+          - paragraph: "Key Action: KA2"
+  - region "Key figures":
+    - heading "Key figures" [level=2]
+    - term: Projects
+    - definition:
+      - link "6764":
+        - /url: /en/resources/statistics/
+    - term: Named Georgian organisations
+    - definition:
+      - link "605":
+        - /url: /en/resources/statistics/
+    - term: Georgian-coordinated projects
+    - definition:
+      - link "106":
+        - /url: /en/resources/statistics/
+    - paragraph:
+      - text: "Data snapshot:"
+      - time: 28 October 2026
+      - text: .
+    - heading "Projects by call year" [level=3]
+    - group "Projects by call year":
+      - img "Projects by call year Projects by call year, with values printed above the bars. Expand the following table for the same data.": 463 2014 435 2015 429 2016 460 2017 476 2018 417 2019 454 2020 294 2021 769 2022 731 2023 660 2024 741 2025 435 2026
+    - paragraph: "International credit mobility with Georgia under the 2014–2020 programme (KA107) is not identifiable in the source and is not counted: Georgian partner institutions are not listed for KA107. The snapshot contains no 2014–2020 KA1 higher education mobility projects; 2021–2027 KA171 projects appear through the “Mobilities - Georgia” country entry. Year-on-year comparisons of higher education mobility across 2020/2021 are therefore not meaningful."
+    - group: View the chart data table
+    - paragraph:
+      - link "Erasmus+ statistics for Georgia":
+        - /url: /en/resources/statistics/
+  - paragraph:
+    - link "2027 calls expected late 2026":
+      - /url: /en/calls/
+  - paragraph:
+    - link "No events scheduled":
+      - /url: /en/events/
+  - region "Latest news":
+    - heading "Latest news" [level=2]
+    - link "All news":
+      - /url: /en/news/
+    - list:
+      - listitem:
+        - text: News
+        - heading "Information about Capacity Building Project Proposals!" [level=3]:
+          - link "Information about Capacity Building Project Proposals!":
+            - /url: /en/news/information-about-capacity-building-project-proposals/
+        - paragraph:
+          - time: 9 February 2026
+        - paragraph: Please treat the information provided in the Programme Guide with utmost attention.
+      - listitem:
+        - text: News
+        - heading "Erasmus+ Virtual Exchanges (EVE) Results of the 2025 Call for Proposals" [level=3]:
+          - link "Erasmus+ Virtual Exchanges (EVE) Results of the 2025 Call for Proposals":
+            - /url: /en/news/eve-statistics/
+        - paragraph:
+          - time: 26 December 2025
+        - paragraph: Erasmus+ Virtual Exchanges support online, people-to-people educational activities that foster intercultural dialogue, mutual understanding, and the development of soft and digital skills among young people and students. While virtual exchanges…
+      - listitem:
+        - img "An audience watches a speaker beside a projected slide in a conference room."
+        - paragraph: "Photo: National Erasmus+ Office Georgia, dissemination event 2025"
+        - text: News
+        - heading "Erasmus+ in Georgia – Achievements, Impact and Partnerships Highlighted at the 2025 Dissemination Event" [level=3]:
+          - link "Erasmus+ in Georgia – Achievements, Impact and Partnerships Highlighted at the 2025 Dissemination Event":
+            - /url: /en/news/neo-dissemination-event-2025/
+        - paragraph:
+          - time: 24 December 2025
+        - paragraph: On 19 December 2025, the National Erasmus+ Office in Georgia organised its Annual Dissemination Event in Tbilisi, bringing together representatives of formal and informal education institutions, business and industry, international…
+- contentinfo:
+  - heading "Contact" [level=2]
+  - paragraph: "Email: [TBC]"
+  - paragraph:
+    - link "Contact":
+      - /url: /en/about/contact/
+  - navigation "Quick links":
+    - heading "Quick links" [level=2]
+    - list:
+      - listitem:
+        - link "Opportunities":
+          - /url: /en/opportunities/
+      - listitem:
+        - link "Calls and deadlines":
+          - /url: /en/calls/
+      - listitem:
+        - link "Resources":
+          - /url: /en/resources/
+  - navigation "About":
+    - heading "Legal information" [level=2]
+    - list:
+      - listitem:
+        - link "Privacy and cookies":
+          - /url: /en/privacy/
+      - listitem:
+        - link "Accessibility":
+          - /url: /en/accessibility/
+      - listitem:
+        - link "Prevailing language":
+          - /url: /en/language/
+      - listitem:
+        - link "Photo credits":
+          - /url: /en/about/credits/
+  - paragraph: In the event of any discrepancy between the Georgian and English versions, the English version prevails.
+  - img "Funded by the European Union"
+  - paragraph: Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them.

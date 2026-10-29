@@ -50,3 +50,5 @@ Keep siteLaunched=false and the preview/noindex state until these four stages ar
 ## After launch
 
 Additional staff access/training follows only when the team changes. Newsletter remains deferred until ERIDA has an institutional email and a free service account registered to it; later review terms/privacy before adding a sign-up link. No newsletter, analytics or wider content promotion is authorised by this release-candidate brief.
+
+Session 24 final mobile Lighthouse: 34 serial template/language runs score performance 96–100, accessibility 100 and best practices 100. SEO remains 69 under the required preview/noindex state. All launch prerequisites remain in LAUNCH.md.

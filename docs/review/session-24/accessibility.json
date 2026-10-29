@@ -1,0 +1,7155 @@
+[
+  {
+    "lang": "ka",
+    "name": "home",
+    "order": [
+      {
+        "tag": "A",
+        "label": "შინაარსზე გადასვლა",
+        "href": "#main",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ერაზმუს+ საქართველოს ეროვნული ოფისი",
+        "href": "/ka/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ძიება",
+        "href": "/ka/search/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "EN: English",
+        "href": "/en/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "მთავარი",
+        "href": "/ka/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "შესაძლებლობები",
+        "href": "/ka/opportunities/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "კონკურსები და ვადები",
+        "href": "/ka/calls/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ღონისძიებები",
+        "href": "/ka/events/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "სიახლეები",
+        "href": "/ka/news/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "რესურსები",
+        "href": "/ka/resources/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ოფისის შესახებ",
+        "href": "/ka/about/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "მე ვარ სტუდენტი ან თანამშრომელი",
+        "href": "/ka/find/student/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "მე წარმოვადგენ დაწესებულებას",
+        "href": "/ka/find/university/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "CC BY-SA 3.0",
+        "href": "https://creativecommons.org/licenses/by-sa/3.0",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "20110421 Tbilisi Georgia Panoramic.jpg",
+        "href": "https://commons.wikimedia.org/wiki/File:20110421_Tbilisi_Georgia_Panoramic.jpg",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "გაეცანით შესაძლებლობებს",
+        "href": "/ka/find/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "სტუდენტი ან კურსდამთავრებული",
+        "href": "/ka/find/student/",
+        "id": "",
+        "outline": "none",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card card-clickable",
+            "outline": "solid",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.047) 0px 4.69203px 17.3841px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "უნივერსიტეტის თანამშრომელი ან დაწესებულება",
+        "href": "/ka/find/university/",
+        "id": "",
+        "outline": "none",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card card-clickable",
+            "outline": "solid",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.03) 0px 4px 16px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "ახალგაზრდული ორგანიზაცია ან ახალგაზრდა",
+        "href": "/ka/find/youth/",
+        "id": "",
+        "outline": "none",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card card-clickable",
+            "outline": "solid",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.03) 0px 4px 16px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "პროფესიული განათლების ორგანიზაცია",
+        "href": "/ka/find/vet/",
+        "id": "",
+        "outline": "none",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card card-clickable",
+            "outline": "solid",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.035) 0px 4.22378px 16.4476px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "სპორტული ორგანიზაცია",
+        "href": "/ka/find/sport/",
+        "id": "",
+        "outline": "none",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card card-clickable",
+            "outline": "solid",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.035) 0px 4.22378px 16.4476px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "ყველა პროგრამა",
+        "href": "/ka/opportunities/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "უმაღლესი განათლების შესაძლებლობების განვითარება",
+        "href": "/ka/opportunities/cbhe/",
+        "id": "",
+        "outline": "none",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card card-clickable",
+            "outline": "solid",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.03) 0px 4px 16px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "ერაზმუს მუნდუსი: ერთობლივი სამაგისტრო პროგრამები და პროგრამების შემუშავება",
+        "href": "/ka/opportunities/erasmus-mundus/",
+        "id": "",
+        "outline": "none",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card card-clickable",
+            "outline": "solid",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.03) 0px 4px 16px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "საერთაშორისო კრედიტმობილობა",
+        "href": "/ka/opportunities/icm/",
+        "id": "",
+        "outline": "none",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card card-clickable",
+            "outline": "solid",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.047) 0px 4.69203px 17.3841px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "ჟან მონეს ქმედებები",
+        "href": "/ka/opportunities/jean-monnet/",
+        "id": "",
+        "outline": "none",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card card-clickable",
+            "outline": "solid",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.03) 0px 4px 16px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "ვირტუალური გაცვლები",
+        "href": "/ka/opportunities/virtual-exchanges/",
+        "id": "",
+        "outline": "none",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card card-clickable",
+            "outline": "solid",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.03) 0px 4px 16px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "პროფესიული განათლების შესაძლებლობების განვითარება",
+        "href": "/ka/opportunities/cb-vet/",
+        "id": "",
+        "outline": "none",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card card-clickable",
+            "outline": "solid",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.03) 0px 4px 16px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "ახალგაზრდობის სფეროს შესაძლებლობების განვითარება",
+        "href": "/ka/opportunities/cb-youth/",
+        "id": "",
+        "outline": "none",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card card-clickable",
+            "outline": "solid",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.047) 0px 4.69203px 17.3841px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "ახალგაზრდული მობილობა",
+        "href": "/ka/opportunities/youth-mobility/",
+        "id": "",
+        "outline": "none",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card card-clickable",
+            "outline": "solid",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.047) 0px 4.69002px 17.38px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "სპორტის სფეროს შესაძლებლობების განვითარება",
+        "href": "/ka/opportunities/cb-sport/",
+        "id": "",
+        "outline": "none",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card card-clickable",
+            "outline": "solid",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.03) 0px 4px 16px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "6764",
+        "href": "/ka/resources/statistics/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "605",
+        "href": "/ka/resources/statistics/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "106",
+        "href": "/ka/resources/statistics/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "DIV",
+        "label": "პროექტები კონკურსის წლების მიხედვით",
+        "href": null,
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "SUMMARY",
+        "label": "ნახეთ დიაგრამის მონაცემთა ცხრილი",
+        "href": null,
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Erasmus+-ის სტატისტიკა საქართველოსთვის",
+        "href": "/ka/resources/statistics/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "2027 წლის კონკურსები მოსალოდნელია 2026 წლის ბოლოს",
+        "href": "/ka/calls/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ღონისძიებები ჯერ არ არის დაგეგმილი",
+        "href": "/ka/events/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ყველა სიახლე",
+        "href": "/ka/news/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ინფორმაცია შესაძლებლობების გაძლიერების საპროექტო წინადადებებთან დაკავშირებით!",
+        "href": "/ka/news/information-about-capacity-building-project-proposals/",
+        "id": "",
+        "outline": "none",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card card-clickable news-text-only",
+            "outline": "solid",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.03) 0px 4px 16px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "Erasmus+ ვირტუალური გაცვლების (EVE) 2025 წლის საპროექტო წინადადებების კონკურსის შედეგები",
+        "href": "/ka/news/eve-statistics/",
+        "id": "",
+        "outline": "none",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card card-clickable news-text-only",
+            "outline": "solid",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.035) 0px 4.22524px 16.4505px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "Erasmus+-ის ეროვნული ოფისის დისემინაციის ღონისძიება 2025",
+        "href": "/ka/news/neo-dissemination-event-2025/",
+        "id": "",
+        "outline": "none",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card card-clickable",
+            "outline": "solid",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.06) 0px 5.15015px 18.3003px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "კონტაქტი",
+        "href": "/ka/about/contact/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      }
+    ],
+    "repeat": true,
+    "semantic": {
+      "lang": "ka",
+      "landmarks": [
+        {
+          "tag": "ASIDE",
+          "label": "წინასწარი ვერსია. Erasmus+-ის საქართველოს ეროვნული ოფისის ვებსაიტი 2027 წლის იანვარში გაიხსნება."
+        },
+        {
+          "tag": "HEADER",
+          "label": null
+        },
+        {
+          "tag": "NAV",
+          "label": "მთავარი ნავიგაცია"
+        },
+        {
+          "tag": "NAV",
+          "label": "მთავარი ნავიგაცია"
+        },
+        {
+          "tag": "MAIN",
+          "label": null
+        },
+        {
+          "tag": "FOOTER",
+          "label": null
+        },
+        {
+          "tag": "NAV",
+          "label": "სწრაფი ბმულები"
+        },
+        {
+          "tag": "NAV",
+          "label": "ოფისის შესახებ"
+        }
+      ],
+      "headings": [
+        {
+          "level": "H1",
+          "text": "Erasmus+-ის შესაძლებლობები საქართველოსთვის"
+        },
+        {
+          "level": "H2",
+          "text": "იპოვეთ თქვენი შესაძლებლობა"
+        },
+        {
+          "level": "H3",
+          "text": "სტუდენტი ან კურსდამთავრებული"
+        },
+        {
+          "level": "H3",
+          "text": "უნივერსიტეტის თანამშრომელი ან დაწესებულება"
+        },
+        {
+          "level": "H3",
+          "text": "ახალგაზრდული ორგანიზაცია ან ახალგაზრდა"
+        },
+        {
+          "level": "H3",
+          "text": "პროფესიული განათლების ორგანიზაცია"
+        },
+        {
+          "level": "H3",
+          "text": "სპორტული ორგანიზაცია"
+        },
+        {
+          "level": "H2",
+          "text": "შესაძლებლობები"
+        },
+        {
+          "level": "H3",
+          "text": "უმაღლესი განათლება"
+        },
+        {
+          "level": "H4",
+          "text": "უმაღლესი განათლების შესაძლებლობების განვითარება"
+        },
+        {
+          "level": "H4",
+          "text": "ერაზმუს მუნდუსი: ერთობლივი სამაგისტრო პროგრამები და პროგრამების შემუშავება"
+        },
+        {
+          "level": "H4",
+          "text": "საერთაშორისო კრედიტმობილობა"
+        },
+        {
+          "level": "H4",
+          "text": "ჟან მონეს ქმედებები"
+        },
+        {
+          "level": "H4",
+          "text": "ვირტუალური გაცვლები"
+        },
+        {
+          "level": "H3",
+          "text": "პროფესიული განათლება და სწავლება"
+        },
+        {
+          "level": "H4",
+          "text": "პროფესიული განათლების შესაძლებლობების განვითარება"
+        },
+        {
+          "level": "H3",
+          "text": "ახალგაზრდობა"
+        },
+        {
+          "level": "H4",
+          "text": "ახალგაზრდობის სფეროს შესაძლებლობების განვითარება"
+        },
+        {
+          "level": "H4",
+          "text": "ახალგაზრდული მობილობა"
+        },
+        {
+          "level": "H3",
+          "text": "სპორტი"
+        },
+        {
+          "level": "H4",
+          "text": "სპორტის სფეროს შესაძლებლობების განვითარება"
+        },
+        {
+          "level": "H2",
+          "text": "ძირითადი მაჩვენებლები"
+        },
+        {
+          "level": "H3",
+          "text": "პროექტები კონკურსის წლების მიხედვით"
+        },
+        {
+          "level": "H2",
+          "text": "ბოლო სიახლეები"
+        },
+        {
+          "level": "H3",
+          "text": "ინფორმაცია შესაძლებლობების გაძლიერების საპროექტო წინადადებებთან დაკავშირებით!"
+        },
+        {
+          "level": "H3",
+          "text": "Erasmus+ ვირტუალური გაცვლების (EVE) 2025 წლის საპროექტო წინადადებების კონკურსის შედეგები"
+        },
+        {
+          "level": "H3",
+          "text": "Erasmus+-ის ეროვნული ოფისის დისემინაციის ღონისძიება 2025"
+        },
+        {
+          "level": "H2",
+          "text": "კონტაქტი"
+        },
+        {
+          "level": "H2",
+          "text": "სწრაფი ბმულები"
+        },
+        {
+          "level": "H2",
+          "text": "სამართლებრივი ინფორმაცია"
+        }
+      ]
+    },
+    "textResize": {
+      "scrollWidth": 1280,
+      "viewport": 1280
+    },
+    "reflow": {
+      "scrollWidth": 320,
+      "viewport": 320
+    },
+    "forced": {
+      "active": true,
+      "text": "rgb(0, 0, 0)",
+      "background": "rgb(255, 255, 255)"
+    },
+    "reduced": {
+      "active": true,
+      "scrollBehavior": "auto"
+    }
+  },
+  {
+    "lang": "ka",
+    "name": "action",
+    "order": [
+      {
+        "tag": "A",
+        "label": "შინაარსზე გადასვლა",
+        "href": "#main",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ერაზმუს+ საქართველოს ეროვნული ოფისი",
+        "href": "/ka/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ძიება",
+        "href": "/ka/search/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "EN: English",
+        "href": "/en/opportunities/cbhe/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "მთავარი",
+        "href": "/ka/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "შესაძლებლობები",
+        "href": "/ka/opportunities/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "კონკურსები და ვადები",
+        "href": "/ka/calls/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ღონისძიებები",
+        "href": "/ka/events/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "სიახლეები",
+        "href": "/ka/news/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "რესურსები",
+        "href": "/ka/resources/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ოფისის შესახებ",
+        "href": "/ka/about/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "პროგრამის გზამკვლევი 2026 (PDF)",
+        "href": "https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/programme-guide-2026_en.pdf",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ქმედების ოფიციალური გვერდი",
+        "href": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-higher-education",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "პარტნიორების ძიება",
+        "href": "/ka/opportunities/find-partners/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "70 პროექტები საქართველოს მონაწილეობით",
+        "href": "/ka/resources/projects/#action-cbhe",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "უმაღლესი განათლების შესაძლებლობების განვითარება 2026",
+        "href": "/ka/opportunities/cbhe/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card",
+            "outline": "none",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.047) 0px 4.69106px 17.3821px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "ოფიციალური ბმულები",
+        "href": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-higher-education",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card",
+            "outline": "none",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.082) 0px 5.9858px 19.9716px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "EACEA: როგორ მივიღოთ გრანტი",
+        "href": "https://www.eacea.ec.europa.eu/grants/how-get-grant_en",
+        "id": "",
+        "outline": "none",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card card-clickable",
+            "outline": "solid",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.05) 0px 4.69306px 17.3861px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "ევროკავშირის დაფინანსებისა და ტენდერების პორტალი",
+        "href": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/home",
+        "id": "",
+        "outline": "none",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card card-clickable",
+            "outline": "solid",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.082) 0px 5.93882px 19.8776px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "პროგრამის გზამკვლევი 2026",
+        "href": "https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/programme-guide-2026_en.pdf",
+        "id": "",
+        "outline": "none",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card card-clickable",
+            "outline": "solid",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.035) 0px 4.22524px 16.4505px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "Erasmus+ პროექტების შედეგების პლატფორმა",
+        "href": "https://erasmus-plus.ec.europa.eu/projects",
+        "id": "",
+        "outline": "none",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card card-clickable",
+            "outline": "solid",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.07) 0px 5.48234px 18.9647px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "SUMMARY",
+        "label": "შეუძლია ქართულ უნივერსიტეტს პროექტის კოორდინირება?",
+        "href": null,
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card",
+            "outline": "none",
+            "outlineWidth": "3px",
+            "shadow": "none"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "კონტაქტი",
+        "href": "/ka/about/contact/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      }
+    ],
+    "repeat": true,
+    "semantic": {
+      "lang": "ka",
+      "landmarks": [
+        {
+          "tag": "ASIDE",
+          "label": "წინასწარი ვერსია. Erasmus+-ის საქართველოს ეროვნული ოფისის ვებსაიტი 2027 წლის იანვარში გაიხსნება."
+        },
+        {
+          "tag": "HEADER",
+          "label": null
+        },
+        {
+          "tag": "NAV",
+          "label": "მთავარი ნავიგაცია"
+        },
+        {
+          "tag": "NAV",
+          "label": "მთავარი ნავიგაცია"
+        },
+        {
+          "tag": "MAIN",
+          "label": null
+        },
+        {
+          "tag": "ASIDE",
+          "label": null
+        },
+        {
+          "tag": "FOOTER",
+          "label": null
+        },
+        {
+          "tag": "NAV",
+          "label": "სწრაფი ბმულები"
+        },
+        {
+          "tag": "NAV",
+          "label": "ოფისის შესახებ"
+        }
+      ],
+      "headings": [
+        {
+          "level": "H1",
+          "text": "უმაღლესი განათლების შესაძლებლობების განვითარება"
+        },
+        {
+          "level": "H2",
+          "text": "მთავარი ინფორმაცია"
+        },
+        {
+          "level": "H3",
+          "text": "ოფიციალური ბმულები"
+        },
+        {
+          "level": "H2",
+          "text": "როგორ მივიღოთ მონაწილეობა"
+        },
+        {
+          "level": "H2",
+          "text": "კონკურსები და ვადები"
+        },
+        {
+          "level": "H3",
+          "text": "უმაღლესი განათლების შესაძლებლობების განვითარება 2026"
+        },
+        {
+          "level": "H2",
+          "text": "მომავალი ღონისძიებები"
+        },
+        {
+          "level": "H2",
+          "text": "წარსული ღონისძიებები"
+        },
+        {
+          "level": "H2",
+          "text": "რესურსები"
+        },
+        {
+          "level": "H3",
+          "text": "EACEA: როგორ მივიღოთ გრანტი"
+        },
+        {
+          "level": "H3",
+          "text": "ევროკავშირის დაფინანსებისა და ტენდერების პორტალი"
+        },
+        {
+          "level": "H3",
+          "text": "პროგრამის გზამკვლევი 2026"
+        },
+        {
+          "level": "H3",
+          "text": "Erasmus+ პროექტების შედეგების პლატფორმა"
+        },
+        {
+          "level": "H2",
+          "text": "ხშირად დასმული შეკითხვები"
+        },
+        {
+          "level": "H3",
+          "text": "შეუძლია ქართულ უნივერსიტეტს პროექტის კოორდინირება?"
+        },
+        {
+          "level": "H2",
+          "text": "კონტაქტი"
+        },
+        {
+          "level": "H2",
+          "text": "სწრაფი ბმულები"
+        },
+        {
+          "level": "H2",
+          "text": "სამართლებრივი ინფორმაცია"
+        }
+      ]
+    },
+    "textResize": {
+      "scrollWidth": 1280,
+      "viewport": 1280
+    },
+    "reflow": {
+      "scrollWidth": 320,
+      "viewport": 320
+    },
+    "forced": {
+      "active": true,
+      "text": "rgb(0, 0, 0)",
+      "background": "rgb(255, 255, 255)"
+    },
+    "reduced": {
+      "active": true,
+      "scrollBehavior": "auto"
+    }
+  },
+  {
+    "lang": "ka",
+    "name": "calls",
+    "order": [
+      {
+        "tag": "A",
+        "label": "შინაარსზე გადასვლა",
+        "href": "#main",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ერაზმუს+ საქართველოს ეროვნული ოფისი",
+        "href": "/ka/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ძიება",
+        "href": "/ka/search/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "EN: English",
+        "href": "/en/calls/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "მთავარი",
+        "href": "/ka/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "შესაძლებლობები",
+        "href": "/ka/opportunities/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "კონკურსები და ვადები",
+        "href": "/ka/calls/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ღონისძიებები",
+        "href": "/ka/events/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "სიახლეები",
+        "href": "/ka/news/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "რესურსები",
+        "href": "/ka/resources/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ოფისის შესახებ",
+        "href": "/ka/about/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ერაზმუს+ პროგრამის გზამკვლევი",
+        "href": "https://erasmus-plus.ec.europa.eu/programme-guide/erasmusplus-programme-guide",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ახალგაზრდული გაცვლები და ახალგაზრდულ მუშაკთა მობილობა: თებერვლის რაუნდი 2026",
+        "href": "/ka/opportunities/youth-mobility/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card",
+            "outline": "none",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.03) 0px 4px 16px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "ოფიციალური ბმულები",
+        "href": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/youth-exchanges",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card",
+            "outline": "none",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.075) 0px 5.70453px 19.4091px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "საერთაშორისო კრედიტმობილობა (KA171) 2026",
+        "href": "/ka/opportunities/icm/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card",
+            "outline": "none",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.03) 0px 4px 16px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "ოფიციალური ბმულები",
+        "href": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/higher-education-mobility-projects",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card",
+            "outline": "none",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.08) 0px 5.84962px 19.6992px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "ვირტუალური გაცვლები: აღმოსავლეთ სამეზობლო 2026",
+        "href": "/ka/opportunities/virtual-exchanges/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card",
+            "outline": "none",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.035) 0px 4.226px 16.452px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "ოფიციალური ბმულები",
+        "href": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/virtual-exchanges",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card",
+            "outline": "none",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.082) 0px 5.93882px 19.8776px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "ახალგაზრდული გაცვლები და ახალგაზრდულ მუშაკთა მობილობა: ოქტომბრის რაუნდი 2026",
+        "href": "/ka/opportunities/youth-mobility/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card",
+            "outline": "none",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.06) 0px 5.15168px 18.3034px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "ოფიციალური ბმულები",
+        "href": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/youth-exchanges",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card",
+            "outline": "none",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.082) 0px 6px 20px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "უმაღლესი განათლების შესაძლებლობების განვითარება 2026",
+        "href": "/ka/opportunities/cbhe/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card",
+            "outline": "none",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.07) 0px 5.48286px 18.9657px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "ოფიციალური ბმულები",
+        "href": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-higher-education",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card",
+            "outline": "none",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.075) 0px 5.70421px 19.4084px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "ერაზმუს მუნდუსის პროგრამის შემუშავების ღონისძიებები 2026",
+        "href": "/ka/opportunities/erasmus-mundus/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card",
+            "outline": "none",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.06) 0px 5.15168px 18.3034px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "ოფიციალური ბმულები",
+        "href": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/erasmus-mundus",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card",
+            "outline": "none",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.075) 0px 5.70453px 19.4091px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "ერაზმუს მუნდუსის ერთობლივი სამაგისტრო პროგრამები 2026",
+        "href": "/ka/opportunities/erasmus-mundus/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card",
+            "outline": "none",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.03) 0px 4px 16px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "ოფიციალური ბმულები",
+        "href": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/erasmus-mundus",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card",
+            "outline": "none",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.035) 0px 4.22524px 16.4505px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "ახალგაზრდობის სფეროს შესაძლებლობების განვითარება 2026",
+        "href": "/ka/opportunities/cb-youth/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card",
+            "outline": "none",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.075) 0px 5.7049px 19.4098px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "ოფიციალური ბმულები",
+        "href": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-youth",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card",
+            "outline": "none",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.082) 0px 5.93894px 19.8779px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "სპორტის სფეროს შესაძლებლობების განვითარება 2026",
+        "href": "/ka/opportunities/cb-sport/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card",
+            "outline": "none",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.035) 0px 4.22524px 16.4505px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "ოფიციალური ბმულები",
+        "href": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-sport",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card",
+            "outline": "none",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.08) 0px 5.8492px 19.6984px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "პროფესიული განათლების შესაძლებლობების განვითარება: აღმოსავლეთ სამეზობლო 2026",
+        "href": "/ka/opportunities/cb-vet/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card",
+            "outline": "none",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.03) 0px 4px 16px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "ოფიციალური ბმულები",
+        "href": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-vet",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card",
+            "outline": "none",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.075) 0px 5.70563px 19.4113px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "ჟან მონე: მოდულები, კათედრები და საუკეთესო გამოცდილების ცენტრები 2026",
+        "href": "/ka/opportunities/jean-monnet/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card",
+            "outline": "none",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.07) 0px 5.48283px 18.9657px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "ოფიციალური ბმულები",
+        "href": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/jean-monnet-actions/higher-education-projects",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card",
+            "outline": "none",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.08) 0px 5.8501px 19.7002px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "კონტაქტი",
+        "href": "/ka/about/contact/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      }
+    ],
+    "repeat": true,
+    "semantic": {
+      "lang": "ka",
+      "landmarks": [
+        {
+          "tag": "ASIDE",
+          "label": "წინასწარი ვერსია. Erasmus+-ის საქართველოს ეროვნული ოფისის ვებსაიტი 2027 წლის იანვარში გაიხსნება."
+        },
+        {
+          "tag": "HEADER",
+          "label": null
+        },
+        {
+          "tag": "NAV",
+          "label": "მთავარი ნავიგაცია"
+        },
+        {
+          "tag": "NAV",
+          "label": "მთავარი ნავიგაცია"
+        },
+        {
+          "tag": "MAIN",
+          "label": null
+        },
+        {
+          "tag": "FOOTER",
+          "label": null
+        },
+        {
+          "tag": "NAV",
+          "label": "სწრაფი ბმულები"
+        },
+        {
+          "tag": "NAV",
+          "label": "ოფისის შესახებ"
+        }
+      ],
+      "headings": [
+        {
+          "level": "H1",
+          "text": "კონკურსები და ვადები"
+        },
+        {
+          "level": "H2",
+          "text": "კონკურსის წელი: 2026"
+        },
+        {
+          "level": "H3",
+          "text": "ძირითადი მიმართულება: KA1"
+        },
+        {
+          "level": "H4",
+          "text": "ახალგაზრდული გაცვლები და ახალგაზრდულ მუშაკთა მობილობა: თებერვლის რაუნდი 2026"
+        },
+        {
+          "level": "H4",
+          "text": "საერთაშორისო კრედიტმობილობა (KA171) 2026"
+        },
+        {
+          "level": "H4",
+          "text": "ვირტუალური გაცვლები: აღმოსავლეთ სამეზობლო 2026"
+        },
+        {
+          "level": "H4",
+          "text": "ახალგაზრდული გაცვლები და ახალგაზრდულ მუშაკთა მობილობა: ოქტომბრის რაუნდი 2026"
+        },
+        {
+          "level": "H3",
+          "text": "ძირითადი მიმართულება: KA2"
+        },
+        {
+          "level": "H4",
+          "text": "უმაღლესი განათლების შესაძლებლობების განვითარება 2026"
+        },
+        {
+          "level": "H4",
+          "text": "ერაზმუს მუნდუსის პროგრამის შემუშავების ღონისძიებები 2026"
+        },
+        {
+          "level": "H4",
+          "text": "ერაზმუს მუნდუსის ერთობლივი სამაგისტრო პროგრამები 2026"
+        },
+        {
+          "level": "H4",
+          "text": "ახალგაზრდობის სფეროს შესაძლებლობების განვითარება 2026"
+        },
+        {
+          "level": "H4",
+          "text": "სპორტის სფეროს შესაძლებლობების განვითარება 2026"
+        },
+        {
+          "level": "H4",
+          "text": "პროფესიული განათლების შესაძლებლობების განვითარება: აღმოსავლეთ სამეზობლო 2026"
+        },
+        {
+          "level": "H3",
+          "text": "ძირითადი მიმართულება: KA3"
+        },
+        {
+          "level": "H3",
+          "text": "ძირითადი მიმართულება: ჟან მონე"
+        },
+        {
+          "level": "H4",
+          "text": "ჟან მონე: მოდულები, კათედრები და საუკეთესო გამოცდილების ცენტრები 2026"
+        },
+        {
+          "level": "H2",
+          "text": "კონტაქტი"
+        },
+        {
+          "level": "H2",
+          "text": "სწრაფი ბმულები"
+        },
+        {
+          "level": "H2",
+          "text": "სამართლებრივი ინფორმაცია"
+        }
+      ]
+    },
+    "textResize": {
+      "scrollWidth": 1280,
+      "viewport": 1280
+    },
+    "reflow": {
+      "scrollWidth": 320,
+      "viewport": 320
+    },
+    "forced": {
+      "active": true,
+      "text": "rgb(0, 0, 0)",
+      "background": "rgb(255, 255, 255)"
+    },
+    "reduced": {
+      "active": true,
+      "scrollBehavior": "auto"
+    }
+  },
+  {
+    "lang": "ka",
+    "name": "events",
+    "order": [
+      {
+        "tag": "A",
+        "label": "შინაარსზე გადასვლა",
+        "href": "#main",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ერაზმუს+ საქართველოს ეროვნული ოფისი",
+        "href": "/ka/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ძიება",
+        "href": "/ka/search/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "EN: English",
+        "href": "/en/events/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "მთავარი",
+        "href": "/ka/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "შესაძლებლობები",
+        "href": "/ka/opportunities/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "კონკურსები და ვადები",
+        "href": "/ka/calls/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ღონისძიებები",
+        "href": "/ka/events/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "სიახლეები",
+        "href": "/ka/news/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "რესურსები",
+        "href": "/ka/resources/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ოფისის შესახებ",
+        "href": "/ka/about/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ღონისძიებების კალენდარი",
+        "href": "/ka/events/calendar/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "მომავალი ღონისძიებების ჩამოტვირთვა (.ics)",
+        "href": "/ka/events/upcoming.ics",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "კონტაქტი",
+        "href": "/ka/about/contact/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      }
+    ],
+    "repeat": true,
+    "semantic": {
+      "lang": "ka",
+      "landmarks": [
+        {
+          "tag": "ASIDE",
+          "label": "წინასწარი ვერსია. Erasmus+-ის საქართველოს ეროვნული ოფისის ვებსაიტი 2027 წლის იანვარში გაიხსნება."
+        },
+        {
+          "tag": "HEADER",
+          "label": null
+        },
+        {
+          "tag": "NAV",
+          "label": "მთავარი ნავიგაცია"
+        },
+        {
+          "tag": "NAV",
+          "label": "მთავარი ნავიგაცია"
+        },
+        {
+          "tag": "MAIN",
+          "label": null
+        },
+        {
+          "tag": "FOOTER",
+          "label": null
+        },
+        {
+          "tag": "NAV",
+          "label": "სწრაფი ბმულები"
+        },
+        {
+          "tag": "NAV",
+          "label": "ოფისის შესახებ"
+        }
+      ],
+      "headings": [
+        {
+          "level": "H1",
+          "text": "ღონისძიებები"
+        },
+        {
+          "level": "H2",
+          "text": "კონტაქტი"
+        },
+        {
+          "level": "H2",
+          "text": "სწრაფი ბმულები"
+        },
+        {
+          "level": "H2",
+          "text": "სამართლებრივი ინფორმაცია"
+        }
+      ]
+    },
+    "textResize": {
+      "scrollWidth": 1280,
+      "viewport": 1280
+    },
+    "reflow": {
+      "scrollWidth": 320,
+      "viewport": 320
+    },
+    "forced": {
+      "active": true,
+      "text": "rgb(0, 0, 0)",
+      "background": "rgb(255, 255, 255)"
+    },
+    "reduced": {
+      "active": true,
+      "scrollBehavior": "auto"
+    }
+  },
+  {
+    "lang": "ka",
+    "name": "news",
+    "order": [
+      {
+        "tag": "A",
+        "label": "შინაარსზე გადასვლა",
+        "href": "#main",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ერაზმუს+ საქართველოს ეროვნული ოფისი",
+        "href": "/ka/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ძიება",
+        "href": "/ka/search/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "EN: English",
+        "href": "/en/news/neo-dissemination-event-2025/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "მთავარი",
+        "href": "/ka/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "შესაძლებლობები",
+        "href": "/ka/opportunities/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "კონკურსები და ვადები",
+        "href": "/ka/calls/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ღონისძიებები",
+        "href": "/ka/events/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "სიახლეები",
+        "href": "/ka/news/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "რესურსები",
+        "href": "/ka/resources/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ოფისის შესახებ",
+        "href": "/ka/about/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ფოტო: Erasmus+-ის ეროვნული ოფისი საქართველოში, 2025 წლის დისემინაციის ღონისძიება",
+        "href": "https://erasmus.org.ge/neo-dissemination-event-2025/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "კონტაქტი",
+        "href": "/ka/about/contact/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      }
+    ],
+    "repeat": true,
+    "semantic": {
+      "lang": "ka",
+      "landmarks": [
+        {
+          "tag": "ASIDE",
+          "label": "წინასწარი ვერსია. Erasmus+-ის საქართველოს ეროვნული ოფისის ვებსაიტი 2027 წლის იანვარში გაიხსნება."
+        },
+        {
+          "tag": "HEADER",
+          "label": null
+        },
+        {
+          "tag": "NAV",
+          "label": "მთავარი ნავიგაცია"
+        },
+        {
+          "tag": "NAV",
+          "label": "მთავარი ნავიგაცია"
+        },
+        {
+          "tag": "MAIN",
+          "label": null
+        },
+        {
+          "tag": "FOOTER",
+          "label": null
+        },
+        {
+          "tag": "NAV",
+          "label": "სწრაფი ბმულები"
+        },
+        {
+          "tag": "NAV",
+          "label": "ოფისის შესახებ"
+        }
+      ],
+      "headings": [
+        {
+          "level": "H1",
+          "text": "Erasmus+-ის ეროვნული ოფისის დისემინაციის ღონისძიება 2025"
+        },
+        {
+          "level": "H2",
+          "text": "Erasmus+ საქართველოში – 2025 წლის დისემინაციის შედეგები – მიღწევები, ზეგავლენა და თანამშრომლობა"
+        },
+        {
+          "level": "H2",
+          "text": "კონტაქტი"
+        },
+        {
+          "level": "H2",
+          "text": "სწრაფი ბმულები"
+        },
+        {
+          "level": "H2",
+          "text": "სამართლებრივი ინფორმაცია"
+        }
+      ]
+    },
+    "textResize": {
+      "scrollWidth": 1280,
+      "viewport": 1280
+    },
+    "reflow": {
+      "scrollWidth": 320,
+      "viewport": 320
+    },
+    "forced": {
+      "active": true,
+      "text": "rgb(0, 0, 0)",
+      "background": "rgb(255, 255, 255)"
+    },
+    "reduced": {
+      "active": true,
+      "scrollBehavior": "auto"
+    }
+  },
+  {
+    "lang": "ka",
+    "name": "about",
+    "order": [
+      {
+        "tag": "A",
+        "label": "შინაარსზე გადასვლა",
+        "href": "#main",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ერაზმუს+ საქართველოს ეროვნული ოფისი",
+        "href": "/ka/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ძიება",
+        "href": "/ka/search/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "EN: English",
+        "href": "/en/about/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "მთავარი",
+        "href": "/ka/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "შესაძლებლობები",
+        "href": "/ka/opportunities/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "კონკურსები და ვადები",
+        "href": "/ka/calls/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ღონისძიებები",
+        "href": "/ka/events/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "სიახლეები",
+        "href": "/ka/news/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "რესურსები",
+        "href": "/ka/resources/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ოფისის შესახებ",
+        "href": "/ka/about/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "CC BY-SA 4.0",
+        "href": "https://creativecommons.org/licenses/by-sa/4.0",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Tbilisi, Georgia - Building of the Tbilisi State University - 2023.jpg",
+        "href": "https://commons.wikimedia.org/wiki/File:Tbilisi,_Georgia_-_Building_of_the_Tbilisi_State_University_-_2023.jpg",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "პროგრამის გზამკვლევი 2026: პროგრამის განხორციელება",
+        "href": "https://erasmus-plus.ec.europa.eu/programme-guide/part-a/implementation",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ევროკომისია: როგორ იმართება Erasmus+",
+        "href": "https://erasmus-plus.ec.europa.eu/about-erasmus/how-erasmus-is-managed",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ეროვნული ოფისის გუნდი",
+        "href": "/ka/about/team/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "უმაღლესი განათლების რეფორმის ექსპერტები",
+        "href": "/ka/about/here/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "კონტაქტი",
+        "href": "/ka/about/contact/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      }
+    ],
+    "repeat": true,
+    "semantic": {
+      "lang": "ka",
+      "landmarks": [
+        {
+          "tag": "ASIDE",
+          "label": "წინასწარი ვერსია. Erasmus+-ის საქართველოს ეროვნული ოფისის ვებსაიტი 2027 წლის იანვარში გაიხსნება."
+        },
+        {
+          "tag": "HEADER",
+          "label": null
+        },
+        {
+          "tag": "NAV",
+          "label": "მთავარი ნავიგაცია"
+        },
+        {
+          "tag": "NAV",
+          "label": "მთავარი ნავიგაცია"
+        },
+        {
+          "tag": "MAIN",
+          "label": null
+        },
+        {
+          "tag": "FOOTER",
+          "label": null
+        },
+        {
+          "tag": "NAV",
+          "label": "სწრაფი ბმულები"
+        },
+        {
+          "tag": "NAV",
+          "label": "ოფისის შესახებ"
+        }
+      ],
+      "headings": [
+        {
+          "level": "H1",
+          "text": "ეროვნული ოფისის შესახებ"
+        },
+        {
+          "level": "H2",
+          "text": "რას ვაკეთებთ"
+        },
+        {
+          "level": "H2",
+          "text": "მასპინძელი ორგანიზაცია"
+        },
+        {
+          "level": "H2",
+          "text": "რას არ ვაკეთებთ"
+        },
+        {
+          "level": "H2",
+          "text": "ოფიციალური წყაროები"
+        },
+        {
+          "level": "H2",
+          "text": "კონტაქტი"
+        },
+        {
+          "level": "H2",
+          "text": "სწრაფი ბმულები"
+        },
+        {
+          "level": "H2",
+          "text": "სამართლებრივი ინფორმაცია"
+        }
+      ]
+    },
+    "textResize": {
+      "scrollWidth": 1280,
+      "viewport": 1280
+    },
+    "reflow": {
+      "scrollWidth": 320,
+      "viewport": 320
+    },
+    "forced": {
+      "active": true,
+      "text": "rgb(0, 0, 0)",
+      "background": "rgb(255, 255, 255)"
+    },
+    "reduced": {
+      "active": true,
+      "scrollBehavior": "auto"
+    }
+  },
+  {
+    "lang": "ka",
+    "name": "team",
+    "order": [
+      {
+        "tag": "A",
+        "label": "შინაარსზე გადასვლა",
+        "href": "#main",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ერაზმუს+ საქართველოს ეროვნული ოფისი",
+        "href": "/ka/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ძიება",
+        "href": "/ka/search/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "EN: English",
+        "href": "/en/about/team/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "მთავარი",
+        "href": "/ka/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "შესაძლებლობები",
+        "href": "/ka/opportunities/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "კონკურსები და ვადები",
+        "href": "/ka/calls/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ღონისძიებები",
+        "href": "/ka/events/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "სიახლეები",
+        "href": "/ka/news/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "რესურსები",
+        "href": "/ka/resources/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ოფისის შესახებ",
+        "href": "/ka/about/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "კონტაქტი",
+        "href": "/ka/about/contact/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      }
+    ],
+    "repeat": true,
+    "semantic": {
+      "lang": "ka",
+      "landmarks": [
+        {
+          "tag": "ASIDE",
+          "label": "წინასწარი ვერსია. Erasmus+-ის საქართველოს ეროვნული ოფისის ვებსაიტი 2027 წლის იანვარში გაიხსნება."
+        },
+        {
+          "tag": "HEADER",
+          "label": null
+        },
+        {
+          "tag": "NAV",
+          "label": "მთავარი ნავიგაცია"
+        },
+        {
+          "tag": "NAV",
+          "label": "მთავარი ნავიგაცია"
+        },
+        {
+          "tag": "MAIN",
+          "label": null
+        },
+        {
+          "tag": "FOOTER",
+          "label": null
+        },
+        {
+          "tag": "NAV",
+          "label": "სწრაფი ბმულები"
+        },
+        {
+          "tag": "NAV",
+          "label": "ოფისის შესახებ"
+        }
+      ],
+      "headings": [
+        {
+          "level": "H1",
+          "text": "ეროვნული ოფისის გუნდი"
+        },
+        {
+          "level": "H2",
+          "text": "კომუნიკაციების ოფიცერი [TBC]"
+        },
+        {
+          "level": "H2",
+          "text": "კოორდინატორი [TBC]"
+        },
+        {
+          "level": "H2",
+          "text": "პროგრამის ოფიცერი [TBC]"
+        },
+        {
+          "level": "H2",
+          "text": "კონტაქტი"
+        },
+        {
+          "level": "H2",
+          "text": "სწრაფი ბმულები"
+        },
+        {
+          "level": "H2",
+          "text": "სამართლებრივი ინფორმაცია"
+        }
+      ]
+    },
+    "textResize": {
+      "scrollWidth": 1280,
+      "viewport": 1280
+    },
+    "reflow": {
+      "scrollWidth": 320,
+      "viewport": 320
+    },
+    "forced": {
+      "active": true,
+      "text": "rgb(0, 0, 0)",
+      "background": "rgb(255, 255, 255)"
+    },
+    "reduced": {
+      "active": true,
+      "scrollBehavior": "auto"
+    }
+  },
+  {
+    "lang": "ka",
+    "name": "here",
+    "order": [
+      {
+        "tag": "A",
+        "label": "შინაარსზე გადასვლა",
+        "href": "#main",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ერაზმუს+ საქართველოს ეროვნული ოფისი",
+        "href": "/ka/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ძიება",
+        "href": "/ka/search/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "EN: English",
+        "href": "/en/about/here/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "მთავარი",
+        "href": "/ka/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "შესაძლებლობები",
+        "href": "/ka/opportunities/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "კონკურსები და ვადები",
+        "href": "/ka/calls/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ღონისძიებები",
+        "href": "/ka/events/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "სიახლეები",
+        "href": "/ka/news/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "რესურსები",
+        "href": "/ka/resources/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ოფისის შესახებ",
+        "href": "/ka/about/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "HERE ქსელის ოფიციალური ინფორმაცია: SPHERE",
+        "href": "https://erasmus-networks.ec.europa.eu/aboutsphere",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ერაზმუს+ პროგრამის გზამკვლევი",
+        "href": "https://erasmus-plus.ec.europa.eu/programme-guide/part-a/implementation",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "კონტაქტი",
+        "href": "/ka/about/contact/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      }
+    ],
+    "repeat": true,
+    "semantic": {
+      "lang": "ka",
+      "landmarks": [
+        {
+          "tag": "ASIDE",
+          "label": "წინასწარი ვერსია. Erasmus+-ის საქართველოს ეროვნული ოფისის ვებსაიტი 2027 წლის იანვარში გაიხსნება."
+        },
+        {
+          "tag": "HEADER",
+          "label": null
+        },
+        {
+          "tag": "NAV",
+          "label": "მთავარი ნავიგაცია"
+        },
+        {
+          "tag": "NAV",
+          "label": "მთავარი ნავიგაცია"
+        },
+        {
+          "tag": "MAIN",
+          "label": null
+        },
+        {
+          "tag": "FOOTER",
+          "label": null
+        },
+        {
+          "tag": "NAV",
+          "label": "სწრაფი ბმულები"
+        },
+        {
+          "tag": "NAV",
+          "label": "ოფისის შესახებ"
+        }
+      ],
+      "headings": [
+        {
+          "level": "H1",
+          "text": "უმაღლესი განათლების რეფორმის ექსპერტები"
+        },
+        {
+          "level": "H2",
+          "text": "კონტაქტი"
+        },
+        {
+          "level": "H2",
+          "text": "სწრაფი ბმულები"
+        },
+        {
+          "level": "H2",
+          "text": "სამართლებრივი ინფორმაცია"
+        }
+      ]
+    },
+    "textResize": {
+      "scrollWidth": 1280,
+      "viewport": 1280
+    },
+    "reflow": {
+      "scrollWidth": 320,
+      "viewport": 320
+    },
+    "forced": {
+      "active": true,
+      "text": "rgb(0, 0, 0)",
+      "background": "rgb(255, 255, 255)"
+    },
+    "reduced": {
+      "active": true,
+      "scrollBehavior": "auto"
+    }
+  },
+  {
+    "lang": "ka",
+    "name": "contact",
+    "order": [
+      {
+        "tag": "A",
+        "label": "შინაარსზე გადასვლა",
+        "href": "#main",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ერაზმუს+ საქართველოს ეროვნული ოფისი",
+        "href": "/ka/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ძიება",
+        "href": "/ka/search/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "EN: English",
+        "href": "/en/about/contact/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "მთავარი",
+        "href": "/ka/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "შესაძლებლობები",
+        "href": "/ka/opportunities/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "კონკურსები და ვადები",
+        "href": "/ka/calls/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ღონისძიებები",
+        "href": "/ka/events/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "სიახლეები",
+        "href": "/ka/news/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "რესურსები",
+        "href": "/ka/resources/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ოფისის შესახებ",
+        "href": "/ka/about/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "კონტაქტი",
+        "href": "/ka/about/contact/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      }
+    ],
+    "repeat": true,
+    "semantic": {
+      "lang": "ka",
+      "landmarks": [
+        {
+          "tag": "ASIDE",
+          "label": "წინასწარი ვერსია. Erasmus+-ის საქართველოს ეროვნული ოფისის ვებსაიტი 2027 წლის იანვარში გაიხსნება."
+        },
+        {
+          "tag": "HEADER",
+          "label": null
+        },
+        {
+          "tag": "NAV",
+          "label": "მთავარი ნავიგაცია"
+        },
+        {
+          "tag": "NAV",
+          "label": "მთავარი ნავიგაცია"
+        },
+        {
+          "tag": "MAIN",
+          "label": null
+        },
+        {
+          "tag": "FOOTER",
+          "label": null
+        },
+        {
+          "tag": "NAV",
+          "label": "სწრაფი ბმულები"
+        },
+        {
+          "tag": "NAV",
+          "label": "ოფისის შესახებ"
+        }
+      ],
+      "headings": [
+        {
+          "level": "H1",
+          "text": "კონტაქტი"
+        },
+        {
+          "level": "H2",
+          "text": "კონტაქტი"
+        },
+        {
+          "level": "H2",
+          "text": "სწრაფი ბმულები"
+        },
+        {
+          "level": "H2",
+          "text": "სამართლებრივი ინფორმაცია"
+        }
+      ]
+    },
+    "textResize": {
+      "scrollWidth": 1280,
+      "viewport": 1280
+    },
+    "reflow": {
+      "scrollWidth": 320,
+      "viewport": 320
+    },
+    "forced": {
+      "active": true,
+      "text": "rgb(0, 0, 0)",
+      "background": "rgb(255, 255, 255)"
+    },
+    "reduced": {
+      "active": true,
+      "scrollBehavior": "auto"
+    }
+  },
+  {
+    "lang": "ka",
+    "name": "privacy",
+    "order": [
+      {
+        "tag": "A",
+        "label": "შინაარსზე გადასვლა",
+        "href": "#main",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ერაზმუს+ საქართველოს ეროვნული ოფისი",
+        "href": "/ka/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ძიება",
+        "href": "/ka/search/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "EN: English",
+        "href": "/en/privacy/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "მთავარი",
+        "href": "/ka/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "შესაძლებლობები",
+        "href": "/ka/opportunities/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "კონკურსები და ვადები",
+        "href": "/ka/calls/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ღონისძიებები",
+        "href": "/ka/events/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "სიახლეები",
+        "href": "/ka/news/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "რესურსები",
+        "href": "/ka/resources/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ოფისის შესახებ",
+        "href": "/ka/about/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "GitHub-ის კონფიდენციალურობის განცხადებაში",
+        "href": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "GitHub Pages-ის მონაცემთა შეგროვების აღწერაში",
+        "href": "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "კონტაქტი",
+        "href": "/ka/about/contact/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      }
+    ],
+    "repeat": true,
+    "semantic": {
+      "lang": "ka",
+      "landmarks": [
+        {
+          "tag": "ASIDE",
+          "label": "წინასწარი ვერსია. Erasmus+-ის საქართველოს ეროვნული ოფისის ვებსაიტი 2027 წლის იანვარში გაიხსნება."
+        },
+        {
+          "tag": "HEADER",
+          "label": null
+        },
+        {
+          "tag": "NAV",
+          "label": "მთავარი ნავიგაცია"
+        },
+        {
+          "tag": "NAV",
+          "label": "მთავარი ნავიგაცია"
+        },
+        {
+          "tag": "MAIN",
+          "label": null
+        },
+        {
+          "tag": "FOOTER",
+          "label": null
+        },
+        {
+          "tag": "NAV",
+          "label": "სწრაფი ბმულები"
+        },
+        {
+          "tag": "NAV",
+          "label": "ოფისის შესახებ"
+        }
+      ],
+      "headings": [
+        {
+          "level": "H1",
+          "text": "კონფიდენციალურობა და ქუქი-ფაილები"
+        },
+        {
+          "level": "H2",
+          "text": "ვინ არის პასუხისმგებელი"
+        },
+        {
+          "level": "H2",
+          "text": "საიტის გამოყენება"
+        },
+        {
+          "level": "H2",
+          "text": "გარე ბმულები და კალენდრის ჩამოტვირთვა"
+        },
+        {
+          "level": "H2",
+          "text": "ელფოსტით დაკავშირება"
+        },
+        {
+          "level": "H2",
+          "text": "გამოქვეყნებული მასალა და თქვენი უფლებები"
+        },
+        {
+          "level": "H2",
+          "text": "კონტაქტი"
+        },
+        {
+          "level": "H2",
+          "text": "სწრაფი ბმულები"
+        },
+        {
+          "level": "H2",
+          "text": "სამართლებრივი ინფორმაცია"
+        }
+      ]
+    },
+    "textResize": {
+      "scrollWidth": 1280,
+      "viewport": 1280
+    },
+    "reflow": {
+      "scrollWidth": 320,
+      "viewport": 320
+    },
+    "forced": {
+      "active": true,
+      "text": "rgb(0, 0, 0)",
+      "background": "rgb(255, 255, 255)"
+    },
+    "reduced": {
+      "active": true,
+      "scrollBehavior": "auto"
+    }
+  },
+  {
+    "lang": "ka",
+    "name": "search",
+    "order": [
+      {
+        "tag": "A",
+        "label": "შინაარსზე გადასვლა",
+        "href": "#main",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ერაზმუს+ საქართველოს ეროვნული ოფისი",
+        "href": "/ka/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ძიება",
+        "href": "/ka/search/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "EN: English",
+        "href": "/en/search/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "მთავარი",
+        "href": "/ka/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "შესაძლებლობები",
+        "href": "/ka/opportunities/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "კონკურსები და ვადები",
+        "href": "/ka/calls/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ღონისძიებები",
+        "href": "/ka/events/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "სიახლეები",
+        "href": "/ka/news/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "რესურსები",
+        "href": "/ka/resources/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ოფისის შესახებ",
+        "href": "/ka/about/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "INPUT",
+        "label": "",
+        "href": null,
+        "id": "search-query",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "BUTTON",
+        "label": "ძიება",
+        "href": null,
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "კონტაქტი",
+        "href": "/ka/about/contact/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      }
+    ],
+    "repeat": true,
+    "semantic": {
+      "lang": "ka",
+      "landmarks": [
+        {
+          "tag": "ASIDE",
+          "label": "წინასწარი ვერსია. Erasmus+-ის საქართველოს ეროვნული ოფისის ვებსაიტი 2027 წლის იანვარში გაიხსნება."
+        },
+        {
+          "tag": "HEADER",
+          "label": null
+        },
+        {
+          "tag": "NAV",
+          "label": "მთავარი ნავიგაცია"
+        },
+        {
+          "tag": "NAV",
+          "label": "მთავარი ნავიგაცია"
+        },
+        {
+          "tag": "MAIN",
+          "label": null
+        },
+        {
+          "tag": "FOOTER",
+          "label": null
+        },
+        {
+          "tag": "NAV",
+          "label": "სწრაფი ბმულები"
+        },
+        {
+          "tag": "NAV",
+          "label": "ოფისის შესახებ"
+        }
+      ],
+      "headings": [
+        {
+          "level": "H1",
+          "text": "ძიება"
+        },
+        {
+          "level": "H2",
+          "text": "ძიების შედეგები"
+        },
+        {
+          "level": "H2",
+          "text": "კონტაქტი"
+        },
+        {
+          "level": "H2",
+          "text": "სწრაფი ბმულები"
+        },
+        {
+          "level": "H2",
+          "text": "სამართლებრივი ინფორმაცია"
+        }
+      ]
+    },
+    "textResize": {
+      "scrollWidth": 1280,
+      "viewport": 1280
+    },
+    "reflow": {
+      "scrollWidth": 320,
+      "viewport": 320
+    },
+    "forced": {
+      "active": true,
+      "text": "rgb(0, 0, 0)",
+      "background": "rgb(255, 255, 255)"
+    },
+    "reduced": {
+      "active": true,
+      "scrollBehavior": "auto"
+    }
+  },
+  {
+    "lang": "ka",
+    "name": "notFound",
+    "order": [
+      {
+        "tag": "A",
+        "label": "შინაარსზე გადასვლა",
+        "href": "#main",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ერაზმუს+ საქართველოს ეროვნული ოფისი",
+        "href": "/ka/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ძიება",
+        "href": "/ka/search/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "EN: English",
+        "href": "/404.html#not-found-en",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "მთავარი",
+        "href": "/ka/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "შესაძლებლობები",
+        "href": "/ka/opportunities/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "კონკურსები და ვადები",
+        "href": "/ka/calls/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ღონისძიებები",
+        "href": "/ka/events/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "სიახლეები",
+        "href": "/ka/news/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "რესურსები",
+        "href": "/ka/resources/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ოფისის შესახებ",
+        "href": "/ka/about/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "მთავარ გვერდზე დაბრუნება",
+        "href": "/ka/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Return to the home page",
+        "href": "/en/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "კონტაქტი",
+        "href": "/ka/about/contact/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      }
+    ],
+    "repeat": true,
+    "semantic": {
+      "lang": "ka",
+      "landmarks": [
+        {
+          "tag": "ASIDE",
+          "label": "წინასწარი ვერსია. Erasmus+-ის საქართველოს ეროვნული ოფისის ვებსაიტი 2027 წლის იანვარში გაიხსნება."
+        },
+        {
+          "tag": "HEADER",
+          "label": null
+        },
+        {
+          "tag": "NAV",
+          "label": "მთავარი ნავიგაცია"
+        },
+        {
+          "tag": "NAV",
+          "label": "მთავარი ნავიგაცია"
+        },
+        {
+          "tag": "MAIN",
+          "label": null
+        },
+        {
+          "tag": "FOOTER",
+          "label": null
+        },
+        {
+          "tag": "NAV",
+          "label": "სწრაფი ბმულები"
+        },
+        {
+          "tag": "NAV",
+          "label": "ოფისის შესახებ"
+        }
+      ],
+      "headings": [
+        {
+          "level": "H1",
+          "text": "გვერდი ვერ მოიძებნა"
+        },
+        {
+          "level": "H2",
+          "text": "Page not found"
+        },
+        {
+          "level": "H2",
+          "text": "კონტაქტი"
+        },
+        {
+          "level": "H2",
+          "text": "სწრაფი ბმულები"
+        },
+        {
+          "level": "H2",
+          "text": "სამართლებრივი ინფორმაცია"
+        }
+      ]
+    },
+    "textResize": {
+      "scrollWidth": 1280,
+      "viewport": 1280
+    },
+    "reflow": {
+      "scrollWidth": 320,
+      "viewport": 320
+    },
+    "forced": {
+      "active": true,
+      "text": "rgb(0, 0, 0)",
+      "background": "rgb(255, 255, 255)"
+    },
+    "reduced": {
+      "active": true,
+      "scrollBehavior": "auto"
+    }
+  },
+  {
+    "lang": "en",
+    "name": "home",
+    "order": [
+      {
+        "tag": "A",
+        "label": "Skip to content",
+        "href": "#main",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "National Erasmus+ Office Georgia",
+        "href": "/en/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Search",
+        "href": "/en/search/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ქა: ქართული",
+        "href": "/ka/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Home",
+        "href": "/en/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Opportunities",
+        "href": "/en/opportunities/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Calls and deadlines",
+        "href": "/en/calls/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Events",
+        "href": "/en/events/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "News",
+        "href": "/en/news/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Resources",
+        "href": "/en/resources/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "About",
+        "href": "/en/about/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "I am a student or staff member",
+        "href": "/en/find/student/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "I represent an institution",
+        "href": "/en/find/university/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "CC BY-SA 3.0",
+        "href": "https://creativecommons.org/licenses/by-sa/3.0",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "20110421 Tbilisi Georgia Panoramic.jpg",
+        "href": "https://commons.wikimedia.org/wiki/File:20110421_Tbilisi_Georgia_Panoramic.jpg",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Explore opportunities",
+        "href": "/en/find/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Student or graduate",
+        "href": "/en/find/student/",
+        "id": "",
+        "outline": "none",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card card-clickable",
+            "outline": "solid",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.035) 0px 4.22533px 16.4507px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "University staff or institution",
+        "href": "/en/find/university/",
+        "id": "",
+        "outline": "none",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card card-clickable",
+            "outline": "solid",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.06) 0px 5.15015px 18.3003px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "Youth organisation or young person",
+        "href": "/en/find/youth/",
+        "id": "",
+        "outline": "none",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card card-clickable",
+            "outline": "solid",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.035) 0px 4.22378px 16.4476px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "VET organisation",
+        "href": "/en/find/vet/",
+        "id": "",
+        "outline": "none",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card card-clickable",
+            "outline": "solid",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.047) 0px 4.69203px 17.3841px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "Sport organisation",
+        "href": "/en/find/sport/",
+        "id": "",
+        "outline": "none",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card card-clickable",
+            "outline": "solid",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.035) 0px 4.22378px 16.4476px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "Explore all Actions",
+        "href": "/en/opportunities/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Capacity Building in Higher Education",
+        "href": "/en/opportunities/cbhe/",
+        "id": "",
+        "outline": "none",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card card-clickable",
+            "outline": "solid",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.07) 0px 5.48227px 18.9645px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "Erasmus Mundus: Joint Masters and Design Measures",
+        "href": "/en/opportunities/erasmus-mundus/",
+        "id": "",
+        "outline": "none",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card card-clickable",
+            "outline": "solid",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.03) 0px 4px 16px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "International Credit Mobility",
+        "href": "/en/opportunities/icm/",
+        "id": "",
+        "outline": "none",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card card-clickable",
+            "outline": "solid",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.03) 0px 4px 16px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "Jean Monnet Actions",
+        "href": "/en/opportunities/jean-monnet/",
+        "id": "",
+        "outline": "none",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card card-clickable",
+            "outline": "solid",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.035) 0px 4.22524px 16.4505px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "Virtual Exchanges",
+        "href": "/en/opportunities/virtual-exchanges/",
+        "id": "",
+        "outline": "none",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card card-clickable",
+            "outline": "solid",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.035) 0px 4.226px 16.452px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "Capacity Building in VET",
+        "href": "/en/opportunities/cb-vet/",
+        "id": "",
+        "outline": "none",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card card-clickable",
+            "outline": "solid",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.06) 0px 5.14935px 18.2987px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "Capacity Building in Youth",
+        "href": "/en/opportunities/cb-youth/",
+        "id": "",
+        "outline": "none",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card card-clickable",
+            "outline": "solid",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.035) 0px 4.22453px 16.4491px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "Youth mobility",
+        "href": "/en/opportunities/youth-mobility/",
+        "id": "",
+        "outline": "none",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card card-clickable",
+            "outline": "solid",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.035) 0px 4.22524px 16.4505px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "Capacity Building in Sport",
+        "href": "/en/opportunities/cb-sport/",
+        "id": "",
+        "outline": "none",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card card-clickable",
+            "outline": "solid",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.03) 0px 4px 16px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "6764",
+        "href": "/en/resources/statistics/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "605",
+        "href": "/en/resources/statistics/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "106",
+        "href": "/en/resources/statistics/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "DIV",
+        "label": "Projects by call year",
+        "href": null,
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "SUMMARY",
+        "label": "View the chart data table",
+        "href": null,
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Erasmus+ statistics for Georgia",
+        "href": "/en/resources/statistics/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "2027 calls expected late 2026",
+        "href": "/en/calls/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "No events scheduled",
+        "href": "/en/events/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "All news",
+        "href": "/en/news/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Information about Capacity Building Project Proposals!",
+        "href": "/en/news/information-about-capacity-building-project-proposals/",
+        "id": "",
+        "outline": "none",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card card-clickable news-text-only",
+            "outline": "solid",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.063) 0px 5.1541px 18.3082px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "Erasmus+ Virtual Exchanges (EVE) Results of the 2025 Call for Proposals",
+        "href": "/en/news/eve-statistics/",
+        "id": "",
+        "outline": "none",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card card-clickable news-text-only",
+            "outline": "solid",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.03) 0px 4px 16px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "Erasmus+ in Georgia – Achievements, Impact and Partnerships Highlighted at the 2025 Dissem",
+        "href": "/en/news/neo-dissemination-event-2025/",
+        "id": "",
+        "outline": "none",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card card-clickable",
+            "outline": "solid",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.07) 0px 5.48227px 18.9645px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "Contact",
+        "href": "/en/about/contact/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      }
+    ],
+    "repeat": true,
+    "semantic": {
+      "lang": "en",
+      "landmarks": [
+        {
+          "tag": "ASIDE",
+          "label": "Preview. The National Erasmus+ Office Georgia website opens in January 2027."
+        },
+        {
+          "tag": "HEADER",
+          "label": null
+        },
+        {
+          "tag": "NAV",
+          "label": "Main navigation"
+        },
+        {
+          "tag": "NAV",
+          "label": "Main navigation"
+        },
+        {
+          "tag": "MAIN",
+          "label": null
+        },
+        {
+          "tag": "FOOTER",
+          "label": null
+        },
+        {
+          "tag": "NAV",
+          "label": "Quick links"
+        },
+        {
+          "tag": "NAV",
+          "label": "About"
+        }
+      ],
+      "headings": [
+        {
+          "level": "H1",
+          "text": "Erasmus+ opportunities for Georgia"
+        },
+        {
+          "level": "H2",
+          "text": "Find your opportunity"
+        },
+        {
+          "level": "H3",
+          "text": "Student or graduate"
+        },
+        {
+          "level": "H3",
+          "text": "University staff or institution"
+        },
+        {
+          "level": "H3",
+          "text": "Youth organisation or young person"
+        },
+        {
+          "level": "H3",
+          "text": "VET organisation"
+        },
+        {
+          "level": "H3",
+          "text": "Sport organisation"
+        },
+        {
+          "level": "H2",
+          "text": "Opportunities"
+        },
+        {
+          "level": "H3",
+          "text": "Higher education"
+        },
+        {
+          "level": "H4",
+          "text": "Capacity Building in Higher Education"
+        },
+        {
+          "level": "H4",
+          "text": "Erasmus Mundus: Joint Masters and Design Measures"
+        },
+        {
+          "level": "H4",
+          "text": "International Credit Mobility"
+        },
+        {
+          "level": "H4",
+          "text": "Jean Monnet Actions"
+        },
+        {
+          "level": "H4",
+          "text": "Virtual Exchanges"
+        },
+        {
+          "level": "H3",
+          "text": "Vocational education and training"
+        },
+        {
+          "level": "H4",
+          "text": "Capacity Building in VET"
+        },
+        {
+          "level": "H3",
+          "text": "Youth"
+        },
+        {
+          "level": "H4",
+          "text": "Capacity Building in Youth"
+        },
+        {
+          "level": "H4",
+          "text": "Youth mobility"
+        },
+        {
+          "level": "H3",
+          "text": "Sport"
+        },
+        {
+          "level": "H4",
+          "text": "Capacity Building in Sport"
+        },
+        {
+          "level": "H2",
+          "text": "Key figures"
+        },
+        {
+          "level": "H3",
+          "text": "Projects by call year"
+        },
+        {
+          "level": "H2",
+          "text": "Latest news"
+        },
+        {
+          "level": "H3",
+          "text": "Information about Capacity Building Project Proposals!"
+        },
+        {
+          "level": "H3",
+          "text": "Erasmus+ Virtual Exchanges (EVE) Results of the 2025 Call for Proposals"
+        },
+        {
+          "level": "H3",
+          "text": "Erasmus+ in Georgia – Achievements, Impact and Partnerships Highlighted at the 2025 Dissemination Event"
+        },
+        {
+          "level": "H2",
+          "text": "Contact"
+        },
+        {
+          "level": "H2",
+          "text": "Quick links"
+        },
+        {
+          "level": "H2",
+          "text": "Legal information"
+        }
+      ]
+    },
+    "textResize": {
+      "scrollWidth": 1280,
+      "viewport": 1280
+    },
+    "reflow": {
+      "scrollWidth": 320,
+      "viewport": 320
+    },
+    "forced": {
+      "active": true,
+      "text": "rgb(0, 0, 0)",
+      "background": "rgb(255, 255, 255)"
+    },
+    "reduced": {
+      "active": true,
+      "scrollBehavior": "auto"
+    }
+  },
+  {
+    "lang": "en",
+    "name": "action",
+    "order": [
+      {
+        "tag": "A",
+        "label": "Skip to content",
+        "href": "#main",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "National Erasmus+ Office Georgia",
+        "href": "/en/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Search",
+        "href": "/en/search/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ქა: ქართული",
+        "href": "/ka/opportunities/cbhe/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Home",
+        "href": "/en/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Opportunities",
+        "href": "/en/opportunities/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Calls and deadlines",
+        "href": "/en/calls/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Events",
+        "href": "/en/events/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "News",
+        "href": "/en/news/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Resources",
+        "href": "/en/resources/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "About",
+        "href": "/en/about/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Programme Guide 2026 (PDF)",
+        "href": "https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/programme-guide-2026_en.pdf",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Official action page",
+        "href": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-higher-education",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Find partners",
+        "href": "/en/opportunities/find-partners/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "70 Projects with Georgian participation",
+        "href": "/en/resources/projects/#action-cbhe",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Capacity Building in Higher Education 2026",
+        "href": "/en/opportunities/cbhe/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card",
+            "outline": "none",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.03) 0px 4px 16px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "Official links",
+        "href": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-higher-education",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card",
+            "outline": "none",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.075) 0px 5.70528px 19.4106px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "EACEA: how to get a grant",
+        "href": "https://www.eacea.ec.europa.eu/grants/how-get-grant_en",
+        "id": "",
+        "outline": "none",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card card-clickable",
+            "outline": "solid",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.075) 0px 5.70453px 19.4091px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "EU Funding & Tenders Portal",
+        "href": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/home",
+        "id": "",
+        "outline": "none",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card card-clickable",
+            "outline": "solid",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.03) 0px 4px 16px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "Programme Guide 2026",
+        "href": "https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/programme-guide-2026_en.pdf",
+        "id": "",
+        "outline": "none",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card card-clickable",
+            "outline": "solid",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.03) 0px 4px 16px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "Erasmus+ Project Results Platform",
+        "href": "https://erasmus-plus.ec.europa.eu/projects",
+        "id": "",
+        "outline": "none",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card card-clickable",
+            "outline": "solid",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.035) 0px 4.22524px 16.4505px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "SUMMARY",
+        "label": "Can a Georgian university lead a project?",
+        "href": null,
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card",
+            "outline": "none",
+            "outlineWidth": "3px",
+            "shadow": "none"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "Contact",
+        "href": "/en/about/contact/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      }
+    ],
+    "repeat": true,
+    "semantic": {
+      "lang": "en",
+      "landmarks": [
+        {
+          "tag": "ASIDE",
+          "label": "Preview. The National Erasmus+ Office Georgia website opens in January 2027."
+        },
+        {
+          "tag": "HEADER",
+          "label": null
+        },
+        {
+          "tag": "NAV",
+          "label": "Main navigation"
+        },
+        {
+          "tag": "NAV",
+          "label": "Main navigation"
+        },
+        {
+          "tag": "MAIN",
+          "label": null
+        },
+        {
+          "tag": "ASIDE",
+          "label": null
+        },
+        {
+          "tag": "FOOTER",
+          "label": null
+        },
+        {
+          "tag": "NAV",
+          "label": "Quick links"
+        },
+        {
+          "tag": "NAV",
+          "label": "About"
+        }
+      ],
+      "headings": [
+        {
+          "level": "H1",
+          "text": "Capacity Building in Higher Education"
+        },
+        {
+          "level": "H2",
+          "text": "At a glance"
+        },
+        {
+          "level": "H3",
+          "text": "Official links"
+        },
+        {
+          "level": "H2",
+          "text": "How to apply"
+        },
+        {
+          "level": "H2",
+          "text": "Calls and deadlines"
+        },
+        {
+          "level": "H3",
+          "text": "Capacity Building in Higher Education 2026"
+        },
+        {
+          "level": "H2",
+          "text": "Upcoming events"
+        },
+        {
+          "level": "H2",
+          "text": "Past events"
+        },
+        {
+          "level": "H2",
+          "text": "Resources"
+        },
+        {
+          "level": "H3",
+          "text": "EACEA: how to get a grant"
+        },
+        {
+          "level": "H3",
+          "text": "EU Funding & Tenders Portal"
+        },
+        {
+          "level": "H3",
+          "text": "Programme Guide 2026"
+        },
+        {
+          "level": "H3",
+          "text": "Erasmus+ Project Results Platform"
+        },
+        {
+          "level": "H2",
+          "text": "Frequently asked questions"
+        },
+        {
+          "level": "H3",
+          "text": "Can a Georgian university lead a project?"
+        },
+        {
+          "level": "H2",
+          "text": "Contact"
+        },
+        {
+          "level": "H2",
+          "text": "Quick links"
+        },
+        {
+          "level": "H2",
+          "text": "Legal information"
+        }
+      ]
+    },
+    "textResize": {
+      "scrollWidth": 1280,
+      "viewport": 1280
+    },
+    "reflow": {
+      "scrollWidth": 320,
+      "viewport": 320
+    },
+    "forced": {
+      "active": true,
+      "text": "rgb(0, 0, 0)",
+      "background": "rgb(255, 255, 255)"
+    },
+    "reduced": {
+      "active": true,
+      "scrollBehavior": "auto"
+    }
+  },
+  {
+    "lang": "en",
+    "name": "calls",
+    "order": [
+      {
+        "tag": "A",
+        "label": "Skip to content",
+        "href": "#main",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "National Erasmus+ Office Georgia",
+        "href": "/en/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Search",
+        "href": "/en/search/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ქა: ქართული",
+        "href": "/ka/calls/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Home",
+        "href": "/en/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Opportunities",
+        "href": "/en/opportunities/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Calls and deadlines",
+        "href": "/en/calls/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Events",
+        "href": "/en/events/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "News",
+        "href": "/en/news/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Resources",
+        "href": "/en/resources/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "About",
+        "href": "/en/about/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Erasmus+ Programme Guide",
+        "href": "https://erasmus-plus.ec.europa.eu/programme-guide/erasmusplus-programme-guide",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Youth Exchanges and youth-worker mobility: February round 2026",
+        "href": "/en/opportunities/youth-mobility/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card",
+            "outline": "none",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.03) 0px 4px 16px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "Official links",
+        "href": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/youth-exchanges",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card",
+            "outline": "none",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.035) 0px 4.22681px 16.4536px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "International Credit Mobility (KA171) 2026",
+        "href": "/en/opportunities/icm/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card",
+            "outline": "none",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.03) 0px 4px 16px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "Official links",
+        "href": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/higher-education-mobility-projects",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card",
+            "outline": "none",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.075) 0px 5.70455px 19.4091px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "Virtual Exchanges: Neighbourhood East 2026",
+        "href": "/en/opportunities/virtual-exchanges/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card",
+            "outline": "none",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.075) 0px 5.70384px 19.4077px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "Official links",
+        "href": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/virtual-exchanges",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card",
+            "outline": "none",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.082) 0px 6px 20px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "Youth Exchanges and youth-worker mobility: October round 2026",
+        "href": "/en/opportunities/youth-mobility/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card",
+            "outline": "none",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.03) 0px 4px 16px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "Official links",
+        "href": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/youth-exchanges",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card",
+            "outline": "none",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.035) 0px 4.226px 16.452px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "Capacity Building in Higher Education 2026",
+        "href": "/en/opportunities/cbhe/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card",
+            "outline": "none",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.06) 0px 5.15168px 18.3034px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "Official links",
+        "href": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-higher-education",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card",
+            "outline": "none",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.075) 0px 5.70492px 19.4098px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "Erasmus Mundus Design Measures 2026",
+        "href": "/en/opportunities/erasmus-mundus/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card",
+            "outline": "none",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.047) 0px 4.69203px 17.3841px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "Official links",
+        "href": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/erasmus-mundus",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card",
+            "outline": "none",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.08) 0px 5.84962px 19.6992px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "Erasmus Mundus Joint Masters 2026",
+        "href": "/en/opportunities/erasmus-mundus/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card",
+            "outline": "none",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.03) 0px 4px 16px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "Official links",
+        "href": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/erasmus-mundus",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card",
+            "outline": "none",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.047) 0px 4.69027px 17.3805px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "Capacity Building in Youth 2026",
+        "href": "/en/opportunities/cb-youth/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card",
+            "outline": "none",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.03) 0px 4.00019px 16.0004px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "Official links",
+        "href": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-youth",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card",
+            "outline": "none",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.05) 0px 4.69519px 17.3904px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "Capacity Building in Sport 2026",
+        "href": "/en/opportunities/cb-sport/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card",
+            "outline": "none",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.07) 0px 5.48227px 18.9645px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "Official links",
+        "href": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-sport",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card",
+            "outline": "none",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.082) 0px 6px 20px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "Capacity Building in VET: Neighbourhood East 2026",
+        "href": "/en/opportunities/cb-vet/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card",
+            "outline": "none",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.047) 0px 4.69209px 17.3842px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "Official links",
+        "href": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-building-vet",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card",
+            "outline": "none",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.082) 0px 5.93882px 19.8776px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "Jean Monnet: Modules, Chairs and Centres of Excellence 2026",
+        "href": "/en/opportunities/jean-monnet/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card",
+            "outline": "none",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.06) 0px 5.15168px 18.3034px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "Official links",
+        "href": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/jean-monnet-actions/higher-education-projects",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": [
+          {
+            "className": "card",
+            "outline": "none",
+            "outlineWidth": "3px",
+            "shadow": "rgba(5, 38, 79, 0.08) 0px 5.84918px 19.6984px 0px"
+          }
+        ]
+      },
+      {
+        "tag": "A",
+        "label": "Contact",
+        "href": "/en/about/contact/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      }
+    ],
+    "repeat": true,
+    "semantic": {
+      "lang": "en",
+      "landmarks": [
+        {
+          "tag": "ASIDE",
+          "label": "Preview. The National Erasmus+ Office Georgia website opens in January 2027."
+        },
+        {
+          "tag": "HEADER",
+          "label": null
+        },
+        {
+          "tag": "NAV",
+          "label": "Main navigation"
+        },
+        {
+          "tag": "NAV",
+          "label": "Main navigation"
+        },
+        {
+          "tag": "MAIN",
+          "label": null
+        },
+        {
+          "tag": "FOOTER",
+          "label": null
+        },
+        {
+          "tag": "NAV",
+          "label": "Quick links"
+        },
+        {
+          "tag": "NAV",
+          "label": "About"
+        }
+      ],
+      "headings": [
+        {
+          "level": "H1",
+          "text": "Calls and deadlines"
+        },
+        {
+          "level": "H2",
+          "text": "Call year: 2026"
+        },
+        {
+          "level": "H3",
+          "text": "Key Action: KA1"
+        },
+        {
+          "level": "H4",
+          "text": "Youth Exchanges and youth-worker mobility: February round 2026"
+        },
+        {
+          "level": "H4",
+          "text": "International Credit Mobility (KA171) 2026"
+        },
+        {
+          "level": "H4",
+          "text": "Virtual Exchanges: Neighbourhood East 2026"
+        },
+        {
+          "level": "H4",
+          "text": "Youth Exchanges and youth-worker mobility: October round 2026"
+        },
+        {
+          "level": "H3",
+          "text": "Key Action: KA2"
+        },
+        {
+          "level": "H4",
+          "text": "Capacity Building in Higher Education 2026"
+        },
+        {
+          "level": "H4",
+          "text": "Erasmus Mundus Design Measures 2026"
+        },
+        {
+          "level": "H4",
+          "text": "Erasmus Mundus Joint Masters 2026"
+        },
+        {
+          "level": "H4",
+          "text": "Capacity Building in Youth 2026"
+        },
+        {
+          "level": "H4",
+          "text": "Capacity Building in Sport 2026"
+        },
+        {
+          "level": "H4",
+          "text": "Capacity Building in VET: Neighbourhood East 2026"
+        },
+        {
+          "level": "H3",
+          "text": "Key Action: KA3"
+        },
+        {
+          "level": "H3",
+          "text": "Key Action: Jean Monnet"
+        },
+        {
+          "level": "H4",
+          "text": "Jean Monnet: Modules, Chairs and Centres of Excellence 2026"
+        },
+        {
+          "level": "H2",
+          "text": "Contact"
+        },
+        {
+          "level": "H2",
+          "text": "Quick links"
+        },
+        {
+          "level": "H2",
+          "text": "Legal information"
+        }
+      ]
+    },
+    "textResize": {
+      "scrollWidth": 1280,
+      "viewport": 1280
+    },
+    "reflow": {
+      "scrollWidth": 320,
+      "viewport": 320
+    },
+    "forced": {
+      "active": true,
+      "text": "rgb(0, 0, 0)",
+      "background": "rgb(255, 255, 255)"
+    },
+    "reduced": {
+      "active": true,
+      "scrollBehavior": "auto"
+    }
+  },
+  {
+    "lang": "en",
+    "name": "events",
+    "order": [
+      {
+        "tag": "A",
+        "label": "Skip to content",
+        "href": "#main",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "National Erasmus+ Office Georgia",
+        "href": "/en/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Search",
+        "href": "/en/search/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ქა: ქართული",
+        "href": "/ka/events/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Home",
+        "href": "/en/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Opportunities",
+        "href": "/en/opportunities/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Calls and deadlines",
+        "href": "/en/calls/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Events",
+        "href": "/en/events/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "News",
+        "href": "/en/news/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Resources",
+        "href": "/en/resources/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "About",
+        "href": "/en/about/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Events calendar",
+        "href": "/en/events/calendar/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Download upcoming events (.ics)",
+        "href": "/en/events/upcoming.ics",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Contact",
+        "href": "/en/about/contact/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      }
+    ],
+    "repeat": true,
+    "semantic": {
+      "lang": "en",
+      "landmarks": [
+        {
+          "tag": "ASIDE",
+          "label": "Preview. The National Erasmus+ Office Georgia website opens in January 2027."
+        },
+        {
+          "tag": "HEADER",
+          "label": null
+        },
+        {
+          "tag": "NAV",
+          "label": "Main navigation"
+        },
+        {
+          "tag": "NAV",
+          "label": "Main navigation"
+        },
+        {
+          "tag": "MAIN",
+          "label": null
+        },
+        {
+          "tag": "FOOTER",
+          "label": null
+        },
+        {
+          "tag": "NAV",
+          "label": "Quick links"
+        },
+        {
+          "tag": "NAV",
+          "label": "About"
+        }
+      ],
+      "headings": [
+        {
+          "level": "H1",
+          "text": "Events"
+        },
+        {
+          "level": "H2",
+          "text": "Contact"
+        },
+        {
+          "level": "H2",
+          "text": "Quick links"
+        },
+        {
+          "level": "H2",
+          "text": "Legal information"
+        }
+      ]
+    },
+    "textResize": {
+      "scrollWidth": 1280,
+      "viewport": 1280
+    },
+    "reflow": {
+      "scrollWidth": 320,
+      "viewport": 320
+    },
+    "forced": {
+      "active": true,
+      "text": "rgb(0, 0, 0)",
+      "background": "rgb(255, 255, 255)"
+    },
+    "reduced": {
+      "active": true,
+      "scrollBehavior": "auto"
+    }
+  },
+  {
+    "lang": "en",
+    "name": "news",
+    "order": [
+      {
+        "tag": "A",
+        "label": "Skip to content",
+        "href": "#main",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "National Erasmus+ Office Georgia",
+        "href": "/en/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Search",
+        "href": "/en/search/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ქა: ქართული",
+        "href": "/ka/news/neo-dissemination-event-2025/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Home",
+        "href": "/en/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Opportunities",
+        "href": "/en/opportunities/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Calls and deadlines",
+        "href": "/en/calls/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Events",
+        "href": "/en/events/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "News",
+        "href": "/en/news/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Resources",
+        "href": "/en/resources/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "About",
+        "href": "/en/about/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Photo: National Erasmus+ Office Georgia, dissemination event 2025",
+        "href": "https://erasmus.org.ge/neo-dissemination-event-2025/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Contact",
+        "href": "/en/about/contact/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      }
+    ],
+    "repeat": true,
+    "semantic": {
+      "lang": "en",
+      "landmarks": [
+        {
+          "tag": "ASIDE",
+          "label": "Preview. The National Erasmus+ Office Georgia website opens in January 2027."
+        },
+        {
+          "tag": "HEADER",
+          "label": null
+        },
+        {
+          "tag": "NAV",
+          "label": "Main navigation"
+        },
+        {
+          "tag": "NAV",
+          "label": "Main navigation"
+        },
+        {
+          "tag": "MAIN",
+          "label": null
+        },
+        {
+          "tag": "FOOTER",
+          "label": null
+        },
+        {
+          "tag": "NAV",
+          "label": "Quick links"
+        },
+        {
+          "tag": "NAV",
+          "label": "About"
+        }
+      ],
+      "headings": [
+        {
+          "level": "H1",
+          "text": "Erasmus+ in Georgia – Achievements, Impact and Partnerships Highlighted at the 2025 Dissemination Event"
+        },
+        {
+          "level": "H2",
+          "text": "Contact"
+        },
+        {
+          "level": "H2",
+          "text": "Quick links"
+        },
+        {
+          "level": "H2",
+          "text": "Legal information"
+        }
+      ]
+    },
+    "textResize": {
+      "scrollWidth": 1280,
+      "viewport": 1280
+    },
+    "reflow": {
+      "scrollWidth": 320,
+      "viewport": 320
+    },
+    "forced": {
+      "active": true,
+      "text": "rgb(0, 0, 0)",
+      "background": "rgb(255, 255, 255)"
+    },
+    "reduced": {
+      "active": true,
+      "scrollBehavior": "auto"
+    }
+  },
+  {
+    "lang": "en",
+    "name": "about",
+    "order": [
+      {
+        "tag": "A",
+        "label": "Skip to content",
+        "href": "#main",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "National Erasmus+ Office Georgia",
+        "href": "/en/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Search",
+        "href": "/en/search/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ქა: ქართული",
+        "href": "/ka/about/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Home",
+        "href": "/en/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Opportunities",
+        "href": "/en/opportunities/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Calls and deadlines",
+        "href": "/en/calls/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Events",
+        "href": "/en/events/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "News",
+        "href": "/en/news/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Resources",
+        "href": "/en/resources/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "About",
+        "href": "/en/about/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "CC BY-SA 4.0",
+        "href": "https://creativecommons.org/licenses/by-sa/4.0",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Tbilisi, Georgia - Building of the Tbilisi State University - 2023.jpg",
+        "href": "https://commons.wikimedia.org/wiki/File:Tbilisi,_Georgia_-_Building_of_the_Tbilisi_State_University_-_2023.jpg",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Programme Guide 2026: programme implementation",
+        "href": "https://erasmus-plus.ec.europa.eu/programme-guide/part-a/implementation",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "European Commission: how Erasmus+ is managed",
+        "href": "https://erasmus-plus.ec.europa.eu/about-erasmus/how-erasmus-is-managed",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "NEO team",
+        "href": "/en/about/team/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Higher Education Reform Experts",
+        "href": "/en/about/here/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Contact",
+        "href": "/en/about/contact/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      }
+    ],
+    "repeat": true,
+    "semantic": {
+      "lang": "en",
+      "landmarks": [
+        {
+          "tag": "ASIDE",
+          "label": "Preview. The National Erasmus+ Office Georgia website opens in January 2027."
+        },
+        {
+          "tag": "HEADER",
+          "label": null
+        },
+        {
+          "tag": "NAV",
+          "label": "Main navigation"
+        },
+        {
+          "tag": "NAV",
+          "label": "Main navigation"
+        },
+        {
+          "tag": "MAIN",
+          "label": null
+        },
+        {
+          "tag": "FOOTER",
+          "label": null
+        },
+        {
+          "tag": "NAV",
+          "label": "Quick links"
+        },
+        {
+          "tag": "NAV",
+          "label": "About"
+        }
+      ],
+      "headings": [
+        {
+          "level": "H1",
+          "text": "About NEO Georgia"
+        },
+        {
+          "level": "H2",
+          "text": "What we do"
+        },
+        {
+          "level": "H2",
+          "text": "Host organisation"
+        },
+        {
+          "level": "H2",
+          "text": "What we do not do"
+        },
+        {
+          "level": "H2",
+          "text": "Official sources"
+        },
+        {
+          "level": "H2",
+          "text": "Contact"
+        },
+        {
+          "level": "H2",
+          "text": "Quick links"
+        },
+        {
+          "level": "H2",
+          "text": "Legal information"
+        }
+      ]
+    },
+    "textResize": {
+      "scrollWidth": 1280,
+      "viewport": 1280
+    },
+    "reflow": {
+      "scrollWidth": 320,
+      "viewport": 320
+    },
+    "forced": {
+      "active": true,
+      "text": "rgb(0, 0, 0)",
+      "background": "rgb(255, 255, 255)"
+    },
+    "reduced": {
+      "active": true,
+      "scrollBehavior": "auto"
+    }
+  },
+  {
+    "lang": "en",
+    "name": "team",
+    "order": [
+      {
+        "tag": "A",
+        "label": "Skip to content",
+        "href": "#main",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "National Erasmus+ Office Georgia",
+        "href": "/en/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Search",
+        "href": "/en/search/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ქა: ქართული",
+        "href": "/ka/about/team/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Home",
+        "href": "/en/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Opportunities",
+        "href": "/en/opportunities/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Calls and deadlines",
+        "href": "/en/calls/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Events",
+        "href": "/en/events/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "News",
+        "href": "/en/news/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Resources",
+        "href": "/en/resources/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "About",
+        "href": "/en/about/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Contact",
+        "href": "/en/about/contact/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      }
+    ],
+    "repeat": true,
+    "semantic": {
+      "lang": "en",
+      "landmarks": [
+        {
+          "tag": "ASIDE",
+          "label": "Preview. The National Erasmus+ Office Georgia website opens in January 2027."
+        },
+        {
+          "tag": "HEADER",
+          "label": null
+        },
+        {
+          "tag": "NAV",
+          "label": "Main navigation"
+        },
+        {
+          "tag": "NAV",
+          "label": "Main navigation"
+        },
+        {
+          "tag": "MAIN",
+          "label": null
+        },
+        {
+          "tag": "FOOTER",
+          "label": null
+        },
+        {
+          "tag": "NAV",
+          "label": "Quick links"
+        },
+        {
+          "tag": "NAV",
+          "label": "About"
+        }
+      ],
+      "headings": [
+        {
+          "level": "H1",
+          "text": "NEO team"
+        },
+        {
+          "level": "H2",
+          "text": "Communications Officer [TBC]"
+        },
+        {
+          "level": "H2",
+          "text": "Coordinator [TBC]"
+        },
+        {
+          "level": "H2",
+          "text": "Programme Officer [TBC]"
+        },
+        {
+          "level": "H2",
+          "text": "Contact"
+        },
+        {
+          "level": "H2",
+          "text": "Quick links"
+        },
+        {
+          "level": "H2",
+          "text": "Legal information"
+        }
+      ]
+    },
+    "textResize": {
+      "scrollWidth": 1280,
+      "viewport": 1280
+    },
+    "reflow": {
+      "scrollWidth": 320,
+      "viewport": 320
+    },
+    "forced": {
+      "active": true,
+      "text": "rgb(0, 0, 0)",
+      "background": "rgb(255, 255, 255)"
+    },
+    "reduced": {
+      "active": true,
+      "scrollBehavior": "auto"
+    }
+  },
+  {
+    "lang": "en",
+    "name": "here",
+    "order": [
+      {
+        "tag": "A",
+        "label": "Skip to content",
+        "href": "#main",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "National Erasmus+ Office Georgia",
+        "href": "/en/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Search",
+        "href": "/en/search/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ქა: ქართული",
+        "href": "/ka/about/here/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Home",
+        "href": "/en/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Opportunities",
+        "href": "/en/opportunities/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Calls and deadlines",
+        "href": "/en/calls/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Events",
+        "href": "/en/events/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "News",
+        "href": "/en/news/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Resources",
+        "href": "/en/resources/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "About",
+        "href": "/en/about/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Official HERE network information: SPHERE",
+        "href": "https://erasmus-networks.ec.europa.eu/aboutsphere",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Erasmus+ Programme Guide",
+        "href": "https://erasmus-plus.ec.europa.eu/programme-guide/part-a/implementation",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Contact",
+        "href": "/en/about/contact/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      }
+    ],
+    "repeat": true,
+    "semantic": {
+      "lang": "en",
+      "landmarks": [
+        {
+          "tag": "ASIDE",
+          "label": "Preview. The National Erasmus+ Office Georgia website opens in January 2027."
+        },
+        {
+          "tag": "HEADER",
+          "label": null
+        },
+        {
+          "tag": "NAV",
+          "label": "Main navigation"
+        },
+        {
+          "tag": "NAV",
+          "label": "Main navigation"
+        },
+        {
+          "tag": "MAIN",
+          "label": null
+        },
+        {
+          "tag": "FOOTER",
+          "label": null
+        },
+        {
+          "tag": "NAV",
+          "label": "Quick links"
+        },
+        {
+          "tag": "NAV",
+          "label": "About"
+        }
+      ],
+      "headings": [
+        {
+          "level": "H1",
+          "text": "Higher Education Reform Experts"
+        },
+        {
+          "level": "H2",
+          "text": "Contact"
+        },
+        {
+          "level": "H2",
+          "text": "Quick links"
+        },
+        {
+          "level": "H2",
+          "text": "Legal information"
+        }
+      ]
+    },
+    "textResize": {
+      "scrollWidth": 1280,
+      "viewport": 1280
+    },
+    "reflow": {
+      "scrollWidth": 320,
+      "viewport": 320
+    },
+    "forced": {
+      "active": true,
+      "text": "rgb(0, 0, 0)",
+      "background": "rgb(255, 255, 255)"
+    },
+    "reduced": {
+      "active": true,
+      "scrollBehavior": "auto"
+    }
+  },
+  {
+    "lang": "en",
+    "name": "contact",
+    "order": [
+      {
+        "tag": "A",
+        "label": "Skip to content",
+        "href": "#main",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "National Erasmus+ Office Georgia",
+        "href": "/en/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Search",
+        "href": "/en/search/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ქა: ქართული",
+        "href": "/ka/about/contact/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Home",
+        "href": "/en/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Opportunities",
+        "href": "/en/opportunities/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Calls and deadlines",
+        "href": "/en/calls/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Events",
+        "href": "/en/events/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "News",
+        "href": "/en/news/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Resources",
+        "href": "/en/resources/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "About",
+        "href": "/en/about/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Contact",
+        "href": "/en/about/contact/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      }
+    ],
+    "repeat": true,
+    "semantic": {
+      "lang": "en",
+      "landmarks": [
+        {
+          "tag": "ASIDE",
+          "label": "Preview. The National Erasmus+ Office Georgia website opens in January 2027."
+        },
+        {
+          "tag": "HEADER",
+          "label": null
+        },
+        {
+          "tag": "NAV",
+          "label": "Main navigation"
+        },
+        {
+          "tag": "NAV",
+          "label": "Main navigation"
+        },
+        {
+          "tag": "MAIN",
+          "label": null
+        },
+        {
+          "tag": "FOOTER",
+          "label": null
+        },
+        {
+          "tag": "NAV",
+          "label": "Quick links"
+        },
+        {
+          "tag": "NAV",
+          "label": "About"
+        }
+      ],
+      "headings": [
+        {
+          "level": "H1",
+          "text": "Contact"
+        },
+        {
+          "level": "H2",
+          "text": "Contact"
+        },
+        {
+          "level": "H2",
+          "text": "Quick links"
+        },
+        {
+          "level": "H2",
+          "text": "Legal information"
+        }
+      ]
+    },
+    "textResize": {
+      "scrollWidth": 1280,
+      "viewport": 1280
+    },
+    "reflow": {
+      "scrollWidth": 320,
+      "viewport": 320
+    },
+    "forced": {
+      "active": true,
+      "text": "rgb(0, 0, 0)",
+      "background": "rgb(255, 255, 255)"
+    },
+    "reduced": {
+      "active": true,
+      "scrollBehavior": "auto"
+    }
+  },
+  {
+    "lang": "en",
+    "name": "privacy",
+    "order": [
+      {
+        "tag": "A",
+        "label": "Skip to content",
+        "href": "#main",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "National Erasmus+ Office Georgia",
+        "href": "/en/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Search",
+        "href": "/en/search/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ქა: ქართული",
+        "href": "/ka/privacy/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Home",
+        "href": "/en/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Opportunities",
+        "href": "/en/opportunities/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Calls and deadlines",
+        "href": "/en/calls/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Events",
+        "href": "/en/events/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "News",
+        "href": "/en/news/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Resources",
+        "href": "/en/resources/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "About",
+        "href": "/en/about/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "GitHub Privacy Statement",
+        "href": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "GitHub Pages data collection information",
+        "href": "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Contact",
+        "href": "/en/about/contact/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      }
+    ],
+    "repeat": true,
+    "semantic": {
+      "lang": "en",
+      "landmarks": [
+        {
+          "tag": "ASIDE",
+          "label": "Preview. The National Erasmus+ Office Georgia website opens in January 2027."
+        },
+        {
+          "tag": "HEADER",
+          "label": null
+        },
+        {
+          "tag": "NAV",
+          "label": "Main navigation"
+        },
+        {
+          "tag": "NAV",
+          "label": "Main navigation"
+        },
+        {
+          "tag": "MAIN",
+          "label": null
+        },
+        {
+          "tag": "FOOTER",
+          "label": null
+        },
+        {
+          "tag": "NAV",
+          "label": "Quick links"
+        },
+        {
+          "tag": "NAV",
+          "label": "About"
+        }
+      ],
+      "headings": [
+        {
+          "level": "H1",
+          "text": "Privacy and cookies"
+        },
+        {
+          "level": "H2",
+          "text": "Who is responsible"
+        },
+        {
+          "level": "H2",
+          "text": "Visiting this website"
+        },
+        {
+          "level": "H2",
+          "text": "External links and calendar downloads"
+        },
+        {
+          "level": "H2",
+          "text": "Contacting us by email"
+        },
+        {
+          "level": "H2",
+          "text": "Published content and your rights"
+        },
+        {
+          "level": "H2",
+          "text": "Contact"
+        },
+        {
+          "level": "H2",
+          "text": "Quick links"
+        },
+        {
+          "level": "H2",
+          "text": "Legal information"
+        }
+      ]
+    },
+    "textResize": {
+      "scrollWidth": 1280,
+      "viewport": 1280
+    },
+    "reflow": {
+      "scrollWidth": 320,
+      "viewport": 320
+    },
+    "forced": {
+      "active": true,
+      "text": "rgb(0, 0, 0)",
+      "background": "rgb(255, 255, 255)"
+    },
+    "reduced": {
+      "active": true,
+      "scrollBehavior": "auto"
+    }
+  },
+  {
+    "lang": "en",
+    "name": "search",
+    "order": [
+      {
+        "tag": "A",
+        "label": "Skip to content",
+        "href": "#main",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "National Erasmus+ Office Georgia",
+        "href": "/en/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Search",
+        "href": "/en/search/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ქა: ქართული",
+        "href": "/ka/search/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Home",
+        "href": "/en/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Opportunities",
+        "href": "/en/opportunities/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Calls and deadlines",
+        "href": "/en/calls/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Events",
+        "href": "/en/events/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "News",
+        "href": "/en/news/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Resources",
+        "href": "/en/resources/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "About",
+        "href": "/en/about/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "INPUT",
+        "label": "",
+        "href": null,
+        "id": "search-query",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "BUTTON",
+        "label": "Search",
+        "href": null,
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "Contact",
+        "href": "/en/about/contact/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      }
+    ],
+    "repeat": true,
+    "semantic": {
+      "lang": "en",
+      "landmarks": [
+        {
+          "tag": "ASIDE",
+          "label": "Preview. The National Erasmus+ Office Georgia website opens in January 2027."
+        },
+        {
+          "tag": "HEADER",
+          "label": null
+        },
+        {
+          "tag": "NAV",
+          "label": "Main navigation"
+        },
+        {
+          "tag": "NAV",
+          "label": "Main navigation"
+        },
+        {
+          "tag": "MAIN",
+          "label": null
+        },
+        {
+          "tag": "FOOTER",
+          "label": null
+        },
+        {
+          "tag": "NAV",
+          "label": "Quick links"
+        },
+        {
+          "tag": "NAV",
+          "label": "About"
+        }
+      ],
+      "headings": [
+        {
+          "level": "H1",
+          "text": "Search"
+        },
+        {
+          "level": "H2",
+          "text": "Search results"
+        },
+        {
+          "level": "H2",
+          "text": "Contact"
+        },
+        {
+          "level": "H2",
+          "text": "Quick links"
+        },
+        {
+          "level": "H2",
+          "text": "Legal information"
+        }
+      ]
+    },
+    "textResize": {
+      "scrollWidth": 1280,
+      "viewport": 1280
+    },
+    "reflow": {
+      "scrollWidth": 320,
+      "viewport": 320
+    },
+    "forced": {
+      "active": true,
+      "text": "rgb(0, 0, 0)",
+      "background": "rgb(255, 255, 255)"
+    },
+    "reduced": {
+      "active": true,
+      "scrollBehavior": "auto"
+    }
+  },
+  {
+    "lang": "en",
+    "name": "notFound",
+    "order": [
+      {
+        "tag": "A",
+        "label": "Return to the home page",
+        "href": "/en/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "კონტაქტი",
+        "href": "/ka/about/contact/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "შესაძლებლობები",
+        "href": "/ka/opportunities/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "კონკურსები და ვადები",
+        "href": "/ka/calls/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "რესურსები",
+        "href": "/ka/resources/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "კონფიდენციალურობა და ფაილები",
+        "href": "/ka/privacy/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ხელმისაწვდომობა",
+        "href": "/ka/accessibility/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "უპირატესი ენა",
+        "href": "/ka/language/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      },
+      {
+        "tag": "A",
+        "label": "ფოტოების წყაროები",
+        "href": "/ka/about/credits/",
+        "id": "",
+        "outline": "solid",
+        "outlineWidth": "3px",
+        "ancestorFocus": []
+      }
+    ],
+    "repeat": false,
+    "semantic": {
+      "lang": "ka",
+      "landmarks": [
+        {
+          "tag": "ASIDE",
+          "label": "წინასწარი ვერსია. Erasmus+-ის საქართველოს ეროვნული ოფისის ვებსაიტი 2027 წლის იანვარში გაიხსნება."
+        },
+        {
+          "tag": "HEADER",
+          "label": null
+        },
+        {
+          "tag": "NAV",
+          "label": "მთავარი ნავიგაცია"
+        },
+        {
+          "tag": "NAV",
+          "label": "მთავარი ნავიგაცია"
+        },
+        {
+          "tag": "MAIN",
+          "label": null
+        },
+        {
+          "tag": "FOOTER",
+          "label": null
+        },
+        {
+          "tag": "NAV",
+          "label": "სწრაფი ბმულები"
+        },
+        {
+          "tag": "NAV",
+          "label": "ოფისის შესახებ"
+        }
+      ],
+      "headings": [
+        {
+          "level": "H1",
+          "text": "გვერდი ვერ მოიძებნა"
+        },
+        {
+          "level": "H2",
+          "text": "Page not found"
+        },
+        {
+          "level": "H2",
+          "text": "კონტაქტი"
+        },
+        {
+          "level": "H2",
+          "text": "სწრაფი ბმულები"
+        },
+        {
+          "level": "H2",
+          "text": "სამართლებრივი ინფორმაცია"
+        }
+      ]
+    },
+    "textResize": {
+      "scrollWidth": 1280,
+      "viewport": 1280
+    },
+    "reflow": {
+      "scrollWidth": 320,
+      "viewport": 320
+    },
+    "forced": {
+      "active": true,
+      "text": "rgb(0, 0, 0)",
+      "background": "rgb(255, 255, 255)"
+    },
+    "reduced": {
+      "active": true,
+      "scrollBehavior": "auto"
+    }
+  }
+]
