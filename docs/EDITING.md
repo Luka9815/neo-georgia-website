@@ -1,108 +1,87 @@
-# სიახლეებისა და ღონისძიებების დამატება
+# რედაქტორის გზამკვლევი
 
-ეს სახელმძღვანელო განკუთვნილია NEO-ს თანამშრომლებისთვის. კოდის ცოდნა საჭირო არ არის. გამოიყენეთ მხოლოდ დამტკიცებული მასალა. საჯარო მასალაში არ გამოიყენოთ `[SAMPLE]` ან `[DRAFT]`. მხოლოდ ეროვნული ოფისისგან დასადასტურებელი ფაქტი მონიშნეთ `[TBC]` ნიშნით დასრულებულ წინადადებაში. სატესტო ჩანაწერები შეამოწმეთ ცალკე სატესტო განშტოებაზე და არ გამოაქვეყნოთ მთავარ საიტზე.
+## შესვლა და შენახვა
 
-## შესვლა
+1. გახსენით https://app.pagescms.org და შედით GitHub-ით. აირჩიეთ Luka9815/neo-georgia-website და main.
+2. აირჩიეთ საჭირო კოლექცია, გახსენით ჩანაწერი ან დაამატეთ ახალი. გამოიყენეთ მხოლოდ ნამდვილი, დამტკიცებული ინფორმაცია.
+3. slug ჩაწერეთ პატარა ლათინური ასოებით, ციფრებითა და ერთმაგი დეფისით. გამოქვეყნების შემდეგ აღარ შეცვალოთ.
+4. შეავსეთ ქართული და ინგლისური ტექსტი. სიახლესა და ისტორიას შეიძლება მხოლოდ ქართული ვერსია ჰქონდეს; ინგლისური ნაწილი ან სრულად შეავსეთ, ან ცარიელი დატოვეთ.
+5. შეინახეთ, დაელოდეთ წარმატებულ Deploy GitHub Pages პროცესს GitHub-ის Actions განყოფილებაში და გადაამოწმეთ ორივე ენა. ყოველდღიური განახლება იწყება 08:15-ზე თბილისის დროით; ხელით გაშვება შესაძლებელია Actions-ში Run workflow ღილაკით.
 
-1. გახსენით https://app.pagescms.org.
-2. შედით თქვენი GitHub ანგარიშით. თუ სისტემა წვდომის დადასტურებას გთხოვთ, შეამოწმეთ, რომ მუშაობთ სწორ რეპოზიტორიასთან.
-3. აირჩიეთ `Luka9815/neo-georgia-website` და `main` განშტოება.
-4. მენიუში გამოჩნდება „სიახლეები (News)“, „ღონისძიებები (Events)“ და „პარამეტრები (Settings)“.
+## კოლექციები
 
-რეპოზიტორიაზე წვდომა წინასწარ უნდა გქონდეთ. თუ ის სიაში არ ჩანს, ან შენახვა არ შეგიძლიათ, მიმართეთ ტექნიკურ პასუხისმგებელს, ლუკას. არ გაუზიაროთ პაროლი ან წვდომის გასაღები სხვას.
+| კოლექცია | შესავსები ველები |
+| --- | --- |
+| სიახლეები (News) | გამოქვეყნების თარიღი YYYY-MM-DD, სათაური, ტექსტი, საჭიროებისამებრ მიმართულებები და სურათი |
+| ღონისძიებები (Events) | დაწყება/დასრულება YYYY-MM-DDTHH:mm, Asia/Tbilisi ან Europe/Brussels, ტიპი, ფორმატი, ორგანიზატორი, მიმართულებები, ორივე ენის სათაური/ტექსტი/ადგილი; რეგისტრაცია და დღის წესრიგი სურვილისამებრ |
+| კონკურსები (Calls) | მიმართულება, მთელი წელი, ბრიუსელის ადგილობრივი ვადა YYYY-MM-DDTHH:mm, ოფიციალური HTTPS ბმული, sourceChecked თარიღი, ორივე ენის სათაური/ტექსტი; გახსნის დრო მხოლოდ გადამოწმების შემდეგ |
+| ხშირი კითხვები (FAQ) | თემა applications ან mobility, მიმართულებები, პასუხი ორივე ენაზე, წყაროს HTTPS ბმული და შემოწმების თარიღი |
+| რესურსები (Resources) | წყარო official/neo/partner, ტიპი, ენა, წელი, მიმართულებები, სურვილისამებრ ღონისძიების slug, HTTPS ბმული, sourceChecked და ტექსტი ორივე ენაზე |
+| პუბლიკაციები (Publications) | წელი, ტიპი, ენა, სათაური/ტექსტი ორივე ენაზე, sourceChecked; PDF ფაილი ან გარე HTTPS ბმული და გამომცემელი, ორივე ერთად არა |
+| ისტორიები (Stories) | მიმართულება, წელი, სათაური და ტექსტი; ინგლისური სურვილისამებრ |
 
-## ახალი სიახლე
+დროს არ დაუმატოთ Z ან UTC წანაცვლება. სისტემა დასახელებული დროის სარტყლით ითვლის ზაფხულის დროს. არარსებული ან ორჯერ განმეორებული ადგილობრივი დროის შემთხვევაში გადაამოწმეთ ორგანიზატორთან. ტექსტი ინახება Markdown-ად; HTML და ჩაშენებული სურათები არ გამოიყენოთ.
 
-1. გახსენით „სიახლეები (News)“ და აირჩიეთ ახალი ჩანაწერის დამატება.
-2. შეავსეთ ველები ქვემოთ მოცემული განმარტებით.
-3. გადაამოწმეთ ქართული ტექსტი. ინგლისური თარგმანი სურვილისამებრ დაამატეთ.
-4. დააჭირეთ შენახვას (Save).
+## პარამეტრები, გუნდი და HERE
 
-ველების მნიშვნელობა:
+1. პარამეტრები (Settings) ჯგუფში კონკურსის წელი ინახება Settings ფაილში, ოფისის ინფორმაცია კი Office details ფაილში. ეს ორი ფაილია, რადგან CMS-ის ერთი file ფორმა მხოლოდ ერთ გზას ინახავს.
+2. Office details-ში შეავსეთ მისამართი და საათები ორივე ენაზე, საერთო ტელეფონი/ელფოსტა, ERIDA-ს კოდი და მისამართი, კონფიდენციალურობისა და ხელმისაწვდომობის კონტაქტები.
+3. გუნდი (Team) ამავე ფორმის სექციაა: სამი როლის სახელი ორივე ენაზე და სამსახურებრივი ელფოსტა. ინგლისური სახელი უნდა ემთხვეოდეს ქართულ ეროვნულ ტრანსლიტერაციას.
+4. HERE სექციაში მიუთითეთ პერიოდი და მხოლოდ დადასტურებული წევრები: სახელი და დაწესებულება ორივე ენაზე; ელფოსტა სურვილისამებრ. ცარიელი სია აჩვენებს ნეიტრალურ შეტყობინებას.
+5. სოციალური ბმულები დაამატეთ მხოლოდ ნამდვილი HTTPS მისამართებითა და ორივე ენის წარწერით, ან დატოვეთ ცარიელი.
+6. ტექნიკურმა პასუხისმგებელმა გაუშვას npm run report:tbc, სანამ docs/review/TBC.md-ში დარჩენილი მნიშვნელობების რაოდენობა ნულამდე შემცირდება. ფაქტები არ გამოიცნოთ.
 
-- **ბმულის სახელი (Slug):** მოკლე, უნიკალური სახელი პატარა ლათინური ასოებით, ციფრებით და დეფისით. მაგალითად: `sample-news`. ჰარები არ გამოიყენოთ. ფაილის სახელი ამ ველიდან იქმნება. გამოქვეყნების შემდეგ ეს ველი აღარ შეცვალოთ, რადგან ბმული შეიცვლება. საჭიროებისას მიმართეთ ტექნიკურ კონტაქტს.
-- **გამოქვეყნების თარიღი (Publication date):** აირჩიეთ სიახლის თარიღი. დროის მითითება არ არის საჭირო.
-- **დაკავშირებული მიმართულებები (Actions):** აირჩიეთ ერთი ან რამდენიმე მიმართულება, თუ სიახლე კონკრეტულ მიმართულებას ეხება. ზოგადი სიახლისთვის (მაგალითად, ევროპის დღე) ველი შეიძლება ცარიელი დატოვოთ. CBHE არის უმაღლესი განათლების შესაძლებლობების განვითარება, ICM არის საერთაშორისო კრედიტმობილობა, Jean Monnet არის ჟან მონე. თუ საჭირო მიმართულება არ ჩანს, მიმართეთ ტექნიკურ კონტაქტს.
-- **ქართული (Georgian):** სათაური და ტექსტი სავალდებულოა.
-- **ინგლისური (English):** სურვილისამებრ შეავსეთ ორივე ველი, სათაური და ტექსტი. თუ თარგმანი არ გაქვთ, მთელი ინგლისური ნაწილი ცარიელი დატოვეთ. მხოლოდ ქართული სიახლე ინგლისურ სიაში არ გამოჩნდება.
+siteLaunched არ შეცვალოთ. ის CMS-ში დამალული ტექნიკური გაშვების პარამეტრია. logoPath ცარიელი დატოვეთ, სანამ დამტკიცებული ლოგო არ იქნება. EU ემბლემა და განცხადებები არ შეცვალოთ.
 
-## ტექსტის ფორმატირება
+## სურათები და შემოწმება
 
-ტექსტის ველში შეგიძლიათ გამოიყენოთ რედაქტორის ღილაკები: გამუქება, სია და ბმული. ტექსტი ინახება Markdown ფორმატში. Source რეჟიმში, მაგალითად, `**მნიშვნელოვანი ტექსტი**` გამუქებულად გამოჩნდება.
+გამოიყენეთ მხოლოდ დამტკიცებული JPG, PNG, WebP ან AVIF. სურათს სჭირდება ქართული და ინგლისური მოკლე აღწერა, მაშინაც, როცა სიახლე მხოლოდ ქართულადაა. არ დატოვოთ [ALT NEEDED]. პუბლიკაციის ადგილობრივი ფაილი უნდა იყოს PDF /assets/publications საქაღალდეში. ფაილის სახელი იყოს მოკლე და ლათინური.
 
-HTML კოდი ან სურათი ტექსტის ველში არ ჩასვათ. სიახლის სურათისთვის გამოიყენეთ ცალკე „სურათი (Image)“ ველი, ქვემოთ მოცემული წესით. გამოაქვეყნეთ მხოლოდ დამტკიცებული ფაილი და ალტერნატიული ტექსტი.
+გამოქვეყნების შემდეგ შეამოწმეთ ჩანაწერი, სია, ბმულები, ენის გადართვა, სურათი და ალტერნატიული ტექსტი. შეცდომისას Actions-ის შეტყობინებაში ნახეთ ფაილი და ველი, გაასწორეთ და შეინახეთ ხელახლა. საჭიროებისას ლუკას გაუგზავნეთ შეცდომის ტექსტი და ჩანაწერის ბმული. პაროლი ან გასაღები არ გააგზავნოთ. წინა წარმატებული ვერსია ჩვეულებრივ რჩება ხელმისაწვდომი.
 
-## სიახლის სურათი (სურვილისამებრ)
+## 2027 წლის კონკურსების დამატება
 
-1. სურათის დამატება აუცილებელი არ არის. თუ დამტკიცებული ფაილი არ გაქვთ, „სურათი (Image)“ ცარიელი დატოვეთ.
-2. „სურათის ფაილი (Image file)“ ველში აირჩიეთ ან ატვირთეთ JPG, PNG, WebP ან AVIF ფაილი. გამოიყენეთ მოკლე ლათინური სახელი ჰარების გარეშე. გარე ბმული არ ჩასვათ.
-3. „ქართული აღწერა (Georgian alt text)“ ველში მოკლედ აღწერეთ, რას აჩვენებს სურათი. თუ სიახლეს ინგლისური ვერსიაც აქვს, შეავსეთ „ინგლისური აღწერა (English alt text)“.
-4. `[ALT NEEDED]` არ დატოვოთ. ფაილის სახელი ალტერნატიულ ტექსტს არ ცვლის. ტექსტის ველში სურათი არ ჩასვათ.
-5. შეინახეთ და გამოქვეყნების შემდეგ შეამოწმეთ სიახლის გვერდი და ბარათი ორივე ენაზე. ზომებსა და ფორმატებს საიტი ავტომატურად ამზადებს.
+1. თითოეული მიმართულებისთვის შექმენით ერთი Call, year=2027, უნიკალური slug-ით.
+2. მიუთითეთ გადამოწმებული ბრიუსელის ვადა, ოფიციალური HTTPS ბმული და sourceChecked თარიღი. ვადები არ გამოიცნოთ.
+3. შეავსეთ ორივე ენა და შეინახეთ ყველა ჩანაწერი. 2026 წლის კონკურსები დატოვეთ არქივში.
+4. მხოლოდ ყველა 2027 ჩანაწერის შენახვის შემდეგ Settings-ში შეცვალეთ currentCallYear 2027-ზე.
+5. წარმატებული გამოქვეყნების შემდეგ გადაამოწმეთ /ka/calls/ და /en/calls/, მიმდინარე წელი და არქივი.
 
-ხუთი გადმოტანილი სიახლის სურათები ჯერ არ დაამატოთ. ლუკამ ჯერ უნდა შეარჩიოს ფაილები და მოგვაწოდოს ალტერნატიული ტექსტი ორივე ენაზე.
+# English staff guide
 
-## ახალი ღონისძიება
+## Sign in, edit and verify
 
-1. გახსენით „ღონისძიებები (Events)“ და აირჩიეთ ახალი ჩანაწერი.
-2. შეავსეთ საერთო ინფორმაცია ერთხელ.
-3. შეავსეთ ქართული და ინგლისური ნაწილები. ღონისძიებისთვის ორივე ენა სავალდებულოა.
-4. გადაამოწმეთ დრო და ბმული, შემდეგ შეინახეთ.
+1. Sign in with GitHub at https://app.pagescms.org. Select Luka9815/neo-georgia-website and main.
+2. Choose a collection, open an entry or add one. Use approved real information. Keep published slugs unchanged; use lowercase ASCII letters, digits and single hyphens.
+3. Fill both languages. News and Stories may be Georgian only; supply complete English or omit it.
+4. Save and wait for a successful Deploy GitHub Pages run in GitHub Actions. The daily rebuild starts at 08:15 Tbilisi time; Luka can also use Run workflow manually. Check the page and listing in both languages after deployment.
 
-საერთო ველები:
+| Collection | What to enter |
+| --- | --- |
+| News | Publication date YYYY-MM-DD, title/body, optional Actions/image |
+| Events | Start/end YYYY-MM-DDTHH:mm, named zone Asia/Tbilisi or Europe/Brussels, type, format, organiser, Actions, bilingual title/body/venue; optional registration/agenda |
+| Calls | Action, integer year, Brussels deadline, official HTTPS URL, sourceChecked date and bilingual title/body; opening time only if verified |
+| FAQ | Topic applications/mobility, Actions, bilingual question/answer, HTTPS source and sourceChecked |
+| Resources | Source official/neo/partner, type, language, year, Actions, optional Event slug, HTTPS URL, sourceChecked and bilingual text |
+| Publications | Year, type, language, sourceChecked, bilingual text; either a PDF in /assets/publications or an external HTTPS URL with publisher |
+| Stories | Action, year, title/body; English optional |
 
-- **ბმულის სახელი (Slug):** გამოიყენეთ იგივე წესები, რაც სიახლისთვის. მაგალითად: `sample-webinar`.
-- **დაწყების თარიღი და დრო (Start):** ჩაწერეთ ადგილობრივი თარიღი და დრო ზუსტად ასე: `2026-12-15T17:00`. `T` არის ასო თარიღსა და დროს შორის. საათი მიუთითეთ 24-საათიან ფორმატში.
-- **დასრულების თარიღი და დრო (End):** იგივე ფორმატი გამოიყენეთ. დასრულება არ უნდა იყოს დაწყებამდე.
-- **დროის სარტყელი (Time zone):** ჩვეულებრივ აირჩიეთ თბილისი (`Asia/Tbilisi`). თუ დრო ბრიუსელის მიხედვით არის გამოცხადებული, აირჩიეთ ბრიუსელი (`Europe/Brussels`) და ჩაწერეთ ბრიუსელის ადგილობრივი დრო. სისტემა თავად გაითვალისწინებს ზაფხულისა და ზამთრის დროს. დროს არ მიაწეროთ `+04:00`, `+01:00`, `Z` ან სხვა წანაცვლება.
-- **ღონისძიების ტიპი (Type):** საინფორმაციო დღე, ვებინარი, ტრენინგი, კონფერენცია ან ერაზმუსის დღეები.
-- **ფორმატი (Format):** ონლაინ, ადგილზე ან შერეული.
-- **ორგანიზატორი (Organiser):** ეროვნული ოფისი, EACEA ან პარტნიორი.
-- **რეგისტრაციის ბმული (Registration URL), არასავალდებულო:** სრული, შემოწმებული ბმული, რომელიც იწყება `https://`-ით.
-- **დაკავშირებული მიმართულებები (Actions):** აირჩიეთ ერთი ან რამდენიმე მიმართულება.
+Never append Z or an offset to wall-clock times. The build resolves the named time zone and rejects ambiguous/nonexistent times. Ask the organiser rather than guessing. Text is Markdown; do not insert HTML or inline images.
 
-ქართული და ინგლისური ნაწილების ველები:
+## Settings, Team and HERE
 
-- **სათაური (Title):** ღონისძიების მოკლე სახელი.
-- **ტექსტი (Body):** აღწერა, ვისთვის ტარდება და რას მოიცავს.
-- **ჩატარების ადგილი (Venue):** მისამართი ან ონლაინ ჩატარების ინფორმაცია.
-- **დღის წესრიგი (Agenda), არასავალდებულო:** შეხვედრის ძირითადი საკითხები და განრიგი.
+Open the Settings group. Its Settings file contains currentCallYear; Office details contains contact/legal facts, rights contacts, Team, HERE and social links. One CMS file form saves one path, so these remain two files within one group. Team means the section inside Office details, not a separate collection. Fill bilingual names with Georgian national transliteration and role emails. HERE members need bilingual name/institution, optional email and a period label; leave the list empty until confirmed. Social links need real HTTPS URLs and bilingual labels, or remain empty. Luka runs npm run report:tbc until the generated report reaches zero. Do not guess facts, change siteLaunched, alter EU artwork/disclaimers or add an unapproved logo.
 
-დროის ცვლილების დღეს ზოგი ადგილობრივი საათი არ არსებობს ან ორჯერ მეორდება. ასეთ შემთხვევაში გამოქვეყნების შემოწმება შეცდომას აჩვენებს. ნუ გამოიცნობთ სწორ დროს; გადაამოწმეთ ორგანიზატორთან და მიმართეთ ტექნიკურ პასუხისმგებელს, ლუკას.
+## Images and deployment failures
 
-## არსებული ჩანაწერის შეცვლა ან წაშლა
+Use approved JPG/PNG/WebP/AVIF files and meaningful Georgian and English alt text, including for Georgian-only News. Never leave [ALT NEEDED]. Publication uploads accept PDF only. After deployment check the page, listing, links, image, language switch and alt text. On failure, read the file/field in Actions, correct and save again. Send Luka the error and entry link if needed, never passwords or keys. The previous successful deployment normally remains available.
 
-გახსენით შესაბამისი სია და ჩანაწერი, შეცვალეთ საჭირო ველები და შეინახეთ. ბმულის სახელი უცვლელი დატოვეთ. წაშლის ფუნქცია გამოიყენეთ მხოლოდ მაშინ, როცა დარწმუნებული ხართ, რომ ჩანაწერი აღარ უნდა იყოს საიტზე. სატესტო ჩანაწერი შემოწმების დასრულების შემდეგ წაშალეთ.
+## Adding the 2027 calls
 
-## კონკურსის წლის შეცვლა
+1. Add one Call per Action with year 2027 and a unique stable slug.
+2. Enter the verified Brussels deadline, official HTTPS link and sourceChecked calendar date.
+3. Fill both languages and save every record. Keep 2026 records as the archive.
+4. Change currentCallYear to 2027 only after all 2027 records have been saved.
+5. After successful deployment check /ka/calls/ and /en/calls/, including the archive.
 
-„პარამეტრები (Settings)“ შეიცავს მიმდინარე კონკურსის წელს და ლოგოს ფაილის მისამართს. ლოგოს ველი ცარიელი დატოვეთ, სანამ პროექტისთვის დამტკიცებულ ფაილს ტექნიკური კონტაქტი არ მოგაწვდით. ცარიელი ველი ტექსტურ ლოგოს ტოვებს. ძველი საიტის ლოგო არ გამოიყენოთ. შეცვალეთ იგი მხოლოდ NEO-სთან შეთანხმებით და მიუთითეთ მთელი წელი, მაგალითად `2027`. ეს ცვლის კონკურსების მთავარ სიას; სხვა წლები არქივში რჩება. საიტის საძიებო სისტემებისთვის გახსნის პარამეტრი აქ არ ჩანს და ტექნიკური გუნდის პასუხისმგებლობაა.
-
-## როდის გამოჩნდება ცვლილება
-
-`main` განშტოებაზე შენახვა ახალ გამოქვეყნებას იწყებს. ცვლილება საიტზე გამოჩნდება შემდეგი წარმატებული გამოქვეყნების დასრულებისას, რამდენიმე წუთს შეიძლება დასჭირდეს. დაელოდეთ პროცესის წარმატებით დასრულებას. განაახლეთ გვერდი და შეამოწმეთ ტექსტი, ბმულები და ენები. სხვა განშტოებაზე შენახული ცვლილება ჯერ მთავარ საიტზე არ გამოჩნდება.
-
-## თუ გამოქვეყნება ვერ დასრულდა
-
-შენახვა და საიტზე გამოქვეყნება ორი სხვადასხვა ნაბიჯია. თუ ცვლილება არ ჩანს, GitHub-ის Actions განყოფილებაში შეამოწმეთ „Deploy GitHub Pages“. წითელი ნიშანი მიუთითებს შეცდომაზე. წინა წარმატებით გამოქვეყნებული ვერსია ჩვეულებრივ ხელმისაწვდომი რჩება.
-
-შეცდომაში შეიძლება ეწეროს ფაილის სახელი და ველი, მაგალითად `ka.title` (ქართული სათაური), `actions` (მიმართულებები), `date` (დაწყება ან გამოქვეყნების თარიღი) ან `end` (დასრულება). გადაამოწმეთ ეს ველი და შეინახეთ ხელახლა. თუ მიზეზი გაუგებარია, მიმართეთ ტექნიკურ პასუხისმგებელს, ლუკას, და გაუგზავნეთ შეცდომის ტექსტი და ჩანაწერის ბმული. პაროლი ან წვდომის გასაღები არ გაგზავნოთ. პრობლემის მოსაგვარებლად რამდენიმე ახალი ასლი არ შექმნათ.
-
-## English summary
-
-Sign in at app.pagescms.org with GitHub, select Luka9815/neo-georgia-website and main. News needs Georgian title/body, a publication date, a stable ASCII slug and optional related actions (Events need at least one); English is optional but must be complete if supplied. Events require both languages, local start/end values in YYYY-MM-DDTHH:mm, a named time zone, the classification fields and venue. Registration and agenda are optional. Never type UTC offsets. Bodies stay Markdown; do not add HTML or inline images. An optional News image uses the separate Image field and approved alt text. Settings exposes the call year and optional approved logo path; keep the logo path empty for the text wordmark. Save starts a deployment on main; wait for a successful deployment before checking. For failures contact Luka, the technical lead with the error and entry link. Remove test entries after checking them.
-
-
-## გამოშვებისთვის მომზადებული ვერსია, 2026 წლის 28 ოქტომბერი
-
-ლუკა ამჟამად ერთადერთი რედაქტორია. 2026 წლის კონკურსები გადამოწმებულია და დახურულია; currentCallYear რჩება 2026. 2027 წლის ვადები არ გამოიცნოთ. ახალი გამოცემა შეცვალეთ მხოლოდ ოფიციალური კონკურსის შემოწმების შემდეგ.
-
-საჯარო ღონისძიებები ჯერ არ არის. ახალი ღონისძიება დაამატეთ მხოლოდ ნამდვილი თარიღებით, დასახელებული დროის სარტყლითა და ორივე ენით. კალენდარი და .ics ფაილები ავტომატურად შეიქმნება. გამოქვეყნებული ღონისძიების slug არ შეცვალოთ. ისტორიების განყოფილება ცარიელ მდგომარეობაში დამალულია და პირველი ისტორიის დამატების შემდეგ შესაბამის ენაზე ავტომატურად გამოჩნდება.
-
-გუნდის წევრთა სახელები, სამსახურებრივი ელფოსტა, ოფისისა და იურიდიული მონაცემები დასადასტურებელია. სრული სიაა review/session-20/TBC.md. პუბლიკაციები ბმულით იხსნება ოფიციალურ წყაროზე; საიტზე ასლები არ იტვირთება. ამ დამხმარე ჩანაწერების ცვლილებისთვის მიმართეთ ტექნიკურ პასუხისმგებელს.
-
-არ ჩართოთ საიტის ინდექსაცია და არ მოხსნათ წინასწარი ვერსიის შეტყობინება. გაშვება ცალკე ცვლილებაა ნინოს საბოლოო განხილვის, დასადასტურებელი ფაქტებისა და ხელმოწერილი საგრანტო შეთანხმების შემოწმების შემდეგ.
-
-### Release-candidate editing summary
-
-Use genuine source-checked records only. The eleven 2026 institutional calls are closed; keep currentCallYear=2026 until the official next call is checked. No production Event or Story samples remain. Adding a genuine Event regenerates calendar/ICS output; adding the first Story restores its language’s section automatically. Preserve published slugs. Missing NEO facts are listed in review/session-20/TBC.md; update that inventory through npm test after approved corrections. Do not insert public sample/draft markers, enable indexing or treat the source-based Action copy as Nino’s approval. Hosted Event and image round trips still need manual confirmation; local tests do not prove hosted CMS behaviour.
+Source check: 2026-10-29, [Pages CMS source 6f4e860](https://github.com/pagescms/pagescms/tree/6f4e860a35d934406580287e7042e5e111e207a1). Inspected lib/config-schema.ts (groups, single-file paths, readonly, hidden, lists, patterns, media), fields/core/number, file and rich-text, plus serialization and merge handling. Number widgets support bounds but do not enforce integer values; the build enforces integers. No hosted Event/image round trip or deployed-app revision is claimed.

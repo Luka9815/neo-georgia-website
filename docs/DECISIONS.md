@@ -517,3 +517,6 @@ Supersede Session 20 scattered Person/contact/policy facts with src/_data/office
 
 ## 2026-10-29: Session 24 item 2, reviewed one-switch launch (Luka)
 Keep siteLaunched=false and outside CMS. A reviewed true value removes the preview and enables indexing/robots/hreflang sitemap, with authored and rendered marker checks that fail the build; github.io emits a warning only. No environment launch override exists.
+
+## 2026-10-29: Session 24 item 3, staff collections and Settings group (Luka)
+Supersede the News/Events-only CMS scope with the seven staff collections and office form. Source-verified CMS file entries save one path, so use one Settings group containing settings.json and office.json file entries; Team/HERE are office sections, with merge preserving siteLaunched. The build enforces integer years and cross-field rules unavailable in widgets.
