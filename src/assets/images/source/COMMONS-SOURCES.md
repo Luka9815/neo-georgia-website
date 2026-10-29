@@ -1,6 +1,6 @@
 # Wikimedia Commons photographs (selected 2026-10-29)
 
-Downloaded by Luka on 29 October 2026 from Wikimedia Commons, at the original size or the 2560 px Commons rendition for larger originals (resized by Wikimedia, otherwise unmodified). Each must be credited as shown wherever it is used, with a link to the licence. CC BY-SA images: any adapted version (crops, overlays) must keep the same licence for that image and say it was modified.
+Downloaded by Luka on 29 October 2026 from Wikimedia Commons, at the original size or a Commons-rendered 3840 px version for larger originals (resized by Wikimedia, otherwise unmodified; visually checked against each file page). Each must be credited as shown wherever it is used, with a link to the licence. CC BY-SA images: any adapted version (crops, overlays) must keep the same licence for that image and say it was modified.
 
 | File in repo | Commons file page | Author (as listed on Commons) | Licence | Original size |
 | --- | --- | --- | --- | --- |
