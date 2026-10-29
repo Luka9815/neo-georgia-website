@@ -9,6 +9,7 @@ eleventyExcludeFromCollections: true
 {% extends 'page.njk' %}
 
 {% block pageContent %}
+{% from 'photo-credit.njk' import photoCredit %}
 {% set item = news | findSlug(view.slug) %}
 <article class="news-article" aria-labelledby="page-title">
 {% if item.historicalNote %}
@@ -18,7 +19,10 @@ eleventyExcludeFromCollections: true
 </aside>
 {% endif %}
 <p class="card-date"><time datetime="{{ item.date }}">{{ item.date | dateLabel(t, 'UTC', false) }}</time></p>
-{% if item.image %}<img data-news-image data-image-layout="article" src="{{ item.image.src }}" alt="{{ item.image.alt[view.lang] }}">{% endif %}
+{% if item.image %}{% if item.image.src == portalPhotos.dissemination.src %}<figure class="news-photo">
+<img data-news-image data-image-layout="article" src="{{ item.image.src }}" alt="{{ item.image.alt[view.lang] }}">
+<figcaption>{{ photoCredit(portalPhotos.dissemination,view.lang,t) }}</figcaption></figure>
+{% else %}<img data-news-image data-image-layout="article" src="{{ item.image.src }}" alt="{{ item.image.alt[view.lang] }}">{% endif %}{% endif %}
 {{ item.body | newsMarkdown(item.title) | safe }}
 </article>
 {% endblock %}

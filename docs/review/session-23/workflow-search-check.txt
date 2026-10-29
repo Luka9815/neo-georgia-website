@@ -1,0 +1,12 @@
+✔ production Pagefind indexes have only their own language and exclude utility pages (2772.682237ms)
+✔ Georgian fallback removes at most one longest ending and keeps four letters (0.837495ms)
+✔ fallback preserves typed ranking, de-duplicates pages and leaves English unchanged (7.194598ms)
+✔ search markup loads only on search pages, has active index and no-JS section links (5095.971785ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 9392.160771

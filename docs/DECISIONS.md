@@ -485,3 +485,27 @@ Stop new photography after the Commons API CONNECT request returns HTTP 403. Do 
 
 ## 2026-10-29: Session 22 quality and review (Luka)
 Keep 48 bilingual before/after 390/1280px captures and reproducible root/prefix evidence under review/session-22. Both layouts pass 171 tests and 109 browser pages with zero axe violations; retain all rules and fixture coverage. All eight mobile Lighthouse trials meet performance 90+ (98–100 measured) and accessibility 100. Measure complete Home transfer with every image loaded: 274,749 bytes ka and 233,455 bytes en. Hero contrast is bounded over a worst-case white photo pixel at 13.58:1/11.07:1. Local checks do not replace hosted/manual review. Keep the Commons photography block explicit, push the seven item commits plus quality evidence, open a PR against main and do not merge.
+
+
+## 2026-10-29: Session 23 item 1, supplied Commons assets (Luka)
+Start from origin/main f4d07a1 and merge origin/assets/commons-photos c4886d6. Accept the eight supplied JPEGs after full decode, original/3840px dimension and visual-subject checks against Luka's Commons API metadata. Move COMMONS-SOURCES into assets/images/README.md, record hashes and actual dimensions, and exclude source/ from all deployed passthrough copies. Attribution verification comes from Luka's supplied records; do not claim a new live API check.
+
+
+## 2026-10-29: Session 23 item 2, photo placements and lighter Home overlay (Luka)
+Use the Sameba panorama on Home because its wide composition survives desktop text and mobile focal crops; reserve the TSU main building for About. Place Ilia, TSU evening, Rike Park, GTU and Batumi on the five requested Find audiences, and the river panorama on Opportunities. Keep the NEO image on its News post/cards. Store placements and focal points centrally. Secondary building headers use gentler desktop/mobile ratios to preserve facades. Lighten Home to 72%–58% black and make all overlaid text white; the worst-case white image pixel is #6b6b6b, to be checked at 4.5:1 minimum. Other header text stays outside photographs.
+
+
+## 2026-10-29: Session 23 item 3, Commons attribution (Luka)
+Use one bilingual credit macro on every placement and the footer-linked credits page. Preserve each Commons author name exactly, including the public-domain author, and link the supplied licence and exact file page. Label cropped/reformatted CC BY-SA adaptations as modified and retain the same image licence version; the Home credit additionally names the overlay. List all eight Commons records plus the existing permission-based NEO News image, without inventing an open licence for NEO.
+
+
+## 2026-10-29: Session 23 item 4, responsive variants and local cache (Luka)
+Generate local AVIF/WebP/JPEG at 320/640/960/1280/1920/2560px without enlargement. Only page hero/header images are eager/high-priority; News cards remain lazy. Keep originals out of output. Use Eleventy Image's source/encoder-content hashes with a local generated cache in .cache/portal-images, then copy only variants into the selected output root. PORTAL_IMAGE_CACHE_DIR may share that cache across isolated quality builds; no network fetch or skipped encoding is involved. Limit the Image queue to two sources to bound memory. Explicit encoder quality keeps the full mobile Home transfer under the existing 500,000-byte target; final measurements and worst-case contrast must pass before publication.
+
+
+## 2026-10-29: Session 23 item 5, photograph regression checks (Luka)
+Check all eight source hashes/dimensions and per-image README records, the exact placement map, every bilingual author/licence/file-page/modification credit, all six responsive widths in each format and prefix-safe generated paths. Assert source/ is absent from output. Add 390/1280px browser checks for decoded headers, credit focus, no source requests, no overflow and Home text/credit separation. Run axe with JavaScript enabled and native functionality checks with JavaScript disabled; retain the complete existing site/fixture sweeps and forced-colour checks. Record final results in the Session 23 review evidence.
+
+
+## 2026-10-29: Session 23 item 6, final crop review and publication (Luka)
+Keep Campus E's full source frame after review found that a desktop crop cut into its facade; describe that modification accurately. Add visible permission-based NEO News credits while retaining one link per card. Update the existing pointer check for both Commons credit links. Both clean layouts pass 172 tests, 109 full browser pages with zero axe violations, and 80 focused photo/News checks each. Eight cold mobile Lighthouse runs score performance 98–99 and accessibility 100; complete Home transfer is 288,384 bytes ka and 247,069 bytes en. Worst-case hero contrast is 5.33:1. Keep 80 before/after captures, provenance and raw results under review/session-23, and use a job-local generated-image cache in the Pages workflow. Push the six item commits and supplied asset history, open a PR against main and do not merge or launch. Hosted/manual review and the four launch stages remain.

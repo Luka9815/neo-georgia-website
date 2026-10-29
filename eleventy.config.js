@@ -41,7 +41,9 @@ export default function (config) {
   config.addFilter('absoluteUrl', absoluteUrl);
   config.ignores.add('src/assets/**/*.md');
   config.setNunjucksEnvironmentOptions({ autoescape: true });
-  config.addPassthroughCopy('src/assets');
+  // Commons source JPEGs are build inputs, never deployed assets.
+  config.ignores.add('src/assets/images/source/**');
+  config.addPassthroughCopy('src/assets', {filter: ['**', '!images/source', '!images/source/**']});
   config.addPassthroughCopy({ 'src/nojekyll': '.nojekyll' });
   config.addWatchTarget('src/content');
   config.addFilter('localise', localise);

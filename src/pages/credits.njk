@@ -8,9 +8,10 @@ eleventyExcludeFromCollections: true
 ---
 {% extends 'page.njk' %}
 {% block pageContent %}
+{% from 'photo-credit.njk' import photoCredit %}
 {% for key,photo in portalPhotos %}
-<section><h2>{{ photo.credit[view.lang] }}</h2>
-<p><a href="{{ photo.source }}">{{ photo.credit[view.lang] }}</a> · {{ photo.change[view.lang] }}</p>
+<section data-photo-source="{{ photo.id }}"><h2>{{ photo.alt[view.lang] if photo.author else photo.credit[view.lang] }}</h2>
+<p>{{ photoCredit(photo,view.lang,t) }}</p>
 </section>
 {% endfor %}
 {% endblock %}

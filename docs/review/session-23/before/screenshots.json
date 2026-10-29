@@ -1,0 +1,322 @@
+[
+  {
+    "name": "home",
+    "lang": "ka",
+    "width": 390,
+    "file": "home-ka-390.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "about",
+    "lang": "ka",
+    "width": 390,
+    "file": "about-ka-390.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "student",
+    "lang": "ka",
+    "width": 390,
+    "file": "student-ka-390.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "university",
+    "lang": "ka",
+    "width": 390,
+    "file": "university-ka-390.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "youth",
+    "lang": "ka",
+    "width": 390,
+    "file": "youth-ka-390.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "vet",
+    "lang": "ka",
+    "width": 390,
+    "file": "vet-ka-390.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "sport",
+    "lang": "ka",
+    "width": 390,
+    "file": "sport-ka-390.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "opportunities",
+    "lang": "ka",
+    "width": 390,
+    "file": "opportunities-ka-390.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "credits",
+    "lang": "ka",
+    "width": 390,
+    "file": "credits-ka-390.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "news",
+    "lang": "ka",
+    "width": 390,
+    "file": "news-ka-390.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "home",
+    "lang": "ka",
+    "width": 1280,
+    "file": "home-ka-1280.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "about",
+    "lang": "ka",
+    "width": 1280,
+    "file": "about-ka-1280.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "student",
+    "lang": "ka",
+    "width": 1280,
+    "file": "student-ka-1280.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "university",
+    "lang": "ka",
+    "width": 1280,
+    "file": "university-ka-1280.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "youth",
+    "lang": "ka",
+    "width": 1280,
+    "file": "youth-ka-1280.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "vet",
+    "lang": "ka",
+    "width": 1280,
+    "file": "vet-ka-1280.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "sport",
+    "lang": "ka",
+    "width": 1280,
+    "file": "sport-ka-1280.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "opportunities",
+    "lang": "ka",
+    "width": 1280,
+    "file": "opportunities-ka-1280.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "credits",
+    "lang": "ka",
+    "width": 1280,
+    "file": "credits-ka-1280.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "news",
+    "lang": "ka",
+    "width": 1280,
+    "file": "news-ka-1280.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "home",
+    "lang": "en",
+    "width": 390,
+    "file": "home-en-390.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "about",
+    "lang": "en",
+    "width": 390,
+    "file": "about-en-390.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "student",
+    "lang": "en",
+    "width": 390,
+    "file": "student-en-390.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "university",
+    "lang": "en",
+    "width": 390,
+    "file": "university-en-390.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "youth",
+    "lang": "en",
+    "width": 390,
+    "file": "youth-en-390.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "vet",
+    "lang": "en",
+    "width": 390,
+    "file": "vet-en-390.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "sport",
+    "lang": "en",
+    "width": 390,
+    "file": "sport-en-390.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "opportunities",
+    "lang": "en",
+    "width": 390,
+    "file": "opportunities-en-390.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "credits",
+    "lang": "en",
+    "width": 390,
+    "file": "credits-en-390.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "news",
+    "lang": "en",
+    "width": 390,
+    "file": "news-en-390.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "home",
+    "lang": "en",
+    "width": 1280,
+    "file": "home-en-1280.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "about",
+    "lang": "en",
+    "width": 1280,
+    "file": "about-en-1280.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "student",
+    "lang": "en",
+    "width": 1280,
+    "file": "student-en-1280.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "university",
+    "lang": "en",
+    "width": 1280,
+    "file": "university-en-1280.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "youth",
+    "lang": "en",
+    "width": 1280,
+    "file": "youth-en-1280.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "vet",
+    "lang": "en",
+    "width": 1280,
+    "file": "vet-en-1280.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "sport",
+    "lang": "en",
+    "width": 1280,
+    "file": "sport-en-1280.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "opportunities",
+    "lang": "en",
+    "width": 1280,
+    "file": "opportunities-en-1280.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "credits",
+    "lang": "en",
+    "width": 1280,
+    "file": "credits-en-1280.png",
+    "absent": false,
+    "status": 200
+  },
+  {
+    "name": "news",
+    "lang": "en",
+    "width": 1280,
+    "file": "news-en-1280.png",
+    "absent": false,
+    "status": 200
+  }
+]

@@ -16,12 +16,13 @@ export async function checkPortal(browser,base,prefix) {
       const photo=page.locator('.photo-hero .portal-image');
       await photo.evaluate(el=>el.decode());
       assert.ok(await photo.evaluate(el=>el.naturalWidth>=320 && el.getBoundingClientRect().height>200));
-      const credit=page.locator('.photo-hero figcaption a');
+      for(const credit of await page.locator('.photo-hero figcaption a').all()) {
       await credit.scrollIntoViewIfNeeded();
       assert.ok(await credit.evaluate(el=>{
        const r=el.getClientRects()[0];
        return document.elementFromPoint(r.x+4,r.y+r.height/2)?.closest('a')===el;
       }),'Hero credit must receive pointer input above the image/text layers');
+      }
      }
      if(route==='' || route==='find/') {
       const tiles=page.locator('.audience-tiles .card');

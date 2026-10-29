@@ -410,3 +410,29 @@ section { margin-block: 2rem; }
 .compact-update a, .figures a, .calendar-month-links a { text-decoration: none; }
 .compact-update a:is(:hover,:focus-visible), .figures a:is(:hover,:focus-visible),
 .calendar-month-links a:is(:hover,:focus-visible) { text-decoration: underline; }
+
+/* Commons headers keep building facades intact at both reviewed widths. */
+.photo-banner { margin: 0 0 1.5rem; }
+.photo-banner picture { aspect-ratio: 2.4; overflow: hidden; border-radius: var(--radius); }
+.photo-banner .portal-image { width: 100%; height: 100%; object-fit: cover; object-position: var(--photo-focal); }
+.photo-banner:is([data-photo-id="tsuMain"],[data-photo-id="tsuEvening"],[data-photo-id="ilia"],[data-photo-id="gtu"]) picture { aspect-ratio: 1.6; }
+.photo-banner figcaption { overflow-wrap: anywhere; }
+.photo-hero .portal-image { object-position: var(--photo-focal); }
+@media (max-width: 47.99rem) {
+ .photo-banner picture { aspect-ratio: 4 / 3 !important; }
+ .photo-banner .portal-image,.photo-hero .portal-image { object-position: var(--photo-focal-mobile); }
+}
+/* At least 58% black keeps white text above 4.5:1 even over a white pixel. */
+.photo-hero picture::after { background: linear-gradient(90deg,rgb(0 0 0 / 72%),rgb(0 0 0 / 58%)); }
+.home-hero :is(.eyebrow,.hero-intro) { color: var(--paper); }
+
+.photo-modified { display: block; }
+.portal-photo figcaption { line-height: 1.5; }
+.photo-hero figcaption { overflow-wrap: anywhere; }
+
+.news-photo { margin: 1.5rem 0; }
+.news-photo figcaption,.news-photo-credit { font-size: .75rem; line-height: 1.5; color: var(--muted); }
+.news-photo-credit { margin-block: .5rem; }
+
+/* Campus E is tightly framed in the supplied photo: preserve its full facade. */
+.photo-banner[data-photo-id="ilia"] picture { aspect-ratio: 4 / 3; }

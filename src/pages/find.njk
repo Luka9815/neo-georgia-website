@@ -8,6 +8,10 @@ eleventyExcludeFromCollections: true
 ---
 {% extends 'page.njk' %}
 {% block pageContent %}
+{% if view.audience %}
+{% from 'portal-photo.njk' import portalPhoto %}
+{{ portalPhoto(portalPhotos[photoPlacements.find[view.audience]],view.lang,'banner',t) }}
+{% endif %}
 <p class="lead">{{ t.findIntro }}</p>
 {% if not view.audience %}
 {% include 'audience-tiles.njk' %}

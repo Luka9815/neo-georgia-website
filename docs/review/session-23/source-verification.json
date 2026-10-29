@@ -1,0 +1,62 @@
+{
+  "checked": "2026-10-29",
+  "method": "Complete JPEG decode, expected original/3840px dimensions and visual subject comparison against Luka supplied source records; not a fresh live API check",
+  "files": [
+    {
+      "file": "neo-batumi-skyline.jpg",
+      "width": 3445,
+      "height": 2070,
+      "format": "jpeg",
+      "sha256": "f91a524be3366e6ecb2255997e23c4f91c17901f8fdcbfe565b0d2f6c7aa0116"
+    },
+    {
+      "file": "neo-gtu-building.jpg",
+      "width": 3290,
+      "height": 2148,
+      "format": "jpeg",
+      "sha256": "18d4471e71cd08d2911e124cf775622810c3c447f95e865e9d39e0fd7a5ccc31"
+    },
+    {
+      "file": "neo-ilia-state-university.jpg",
+      "width": 2592,
+      "height": 1944,
+      "format": "jpeg",
+      "sha256": "8af7a35fe1679e245e3db26241949139c70ff2c1fda4be21b2d001712e2c8a80"
+    },
+    {
+      "file": "neo-tbilisi-panorama-river.jpg",
+      "width": 3840,
+      "height": 2880,
+      "format": "jpeg",
+      "sha256": "6682d09750471ae8f6ef19612943df7287952b4b9297c9ceb46f37cf21920cba"
+    },
+    {
+      "file": "neo-tbilisi-panorama-sameba.jpg",
+      "width": 3840,
+      "height": 1813,
+      "format": "jpeg",
+      "sha256": "c973c55578b70295012f61bcf9036ce8b605f0e42c1676d4acf24e7eee581f1c"
+    },
+    {
+      "file": "neo-tbilisi-rike-park.jpg",
+      "width": 3840,
+      "height": 2560,
+      "format": "jpeg",
+      "sha256": "41266d16221f7f824b705456e96f1bd05747869151712caaeef2066b3bceca61"
+    },
+    {
+      "file": "neo-tsu-evening.jpg",
+      "width": 2592,
+      "height": 1944,
+      "format": "jpeg",
+      "sha256": "562a207d7f23bd9d08b7b66103e05840227061eaf03046dc081ea9c85917d8e3"
+    },
+    {
+      "file": "neo-tsu-main-building.jpg",
+      "width": 3840,
+      "height": 2880,
+      "format": "jpeg",
+      "sha256": "308008b528c320b3ab4ac76c78289bc061299c4fb44d824854d9a5afc75b4bff"
+    }
+  ]
+}

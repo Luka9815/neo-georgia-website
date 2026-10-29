@@ -1,4 +1,4 @@
-{% macro cards(items, type, t, lang, heading='h3', showSectionLabel=false, emptyMessage='', compact=false) %}
+{% macro cards(items, type, t, lang, heading='h3', showSectionLabel=false, emptyMessage='', compact=false, photoCredits={}) %}
 <ul class="cards cards-{{ type }}{% if compact %} cards-compact{% endif %}"{% if type == 'publication' %} data-publications{% endif %}>
   {% for item in items %}
     <li class="card{% if type == 'action' or type == 'news' or type == 'resource' or type == 'publication' %} card-clickable{% endif %}{% if type == 'news' and not item.image %} news-text-only{% endif %}"{% if type == 'publication' %} data-year="{{ item.year }}" data-type="{{ item.type }}"{% endif %}>
@@ -30,7 +30,8 @@
         </div></details>
       {% else %}
         {% if type == 'action' %}<span class="icon-slot">{{ item.slug | actionIcon | icon | safe }}</span>{% endif %}
-        {% if type == 'news' and item.image %}<img data-news-image data-image-layout="card" src="{{ item.image.src }}" alt="{{ item.image.alt[lang] }}">{% endif %}
+        {% if type == 'news' and item.image %}<img data-news-image data-image-layout="card" src="{{ item.image.src }}" alt="{{ item.image.alt[lang] }}">
+        {% if photoCredits.dissemination and item.image.src == photoCredits.dissemination.src %}<p class="news-photo-credit" data-news-photo-credit>{{ photoCredits.dissemination.credit[lang] }}</p>{% endif %}{% endif %}
         {% if type == 'event' %}
           <div class="card-meta">{% if showSectionLabel %}<span class="card-section-label">{{ t.events }}</span>{% endif %}<span class="status status-{{ item.status }}">{{ t[item.status] }}</span></div>
         {% elif type == 'news' and showSectionLabel %}
