@@ -532,3 +532,6 @@ Supersede “Supporting templates follow the approved sitemap” (2026-10-26) fo
 Capitalise all three English modification sentences after the licence/source punctuation. Preserve historical source/deadline checks in isolated fixtures while rendering checks derive counts and contact facts from current content; staff additions and filled office facts must not freeze production counts.
 
 Translation maintenance retains dynamic dictionary/state choices and checks identical bilingual key sets. Remove only keys without template, route, data or script references; preserve historical evidence and scripts referenced by documentation.
+
+## 2026-10-29: Session 24 item 6, honest quality evidence (Luka)
+Keep Action wording and EU text unchanged. Record wording changes and the bilingual glossary, enforce no U+2014, and run a manual external-link audit outside CI. Browser accessibility/resize/media evidence and serial mobile Lighthouse are local checks; state network limits and do not imply a real screen-reader or hosted review.
