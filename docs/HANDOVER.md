@@ -1,12 +1,14 @@
 # Handover
 
-Last updated: 2026-10-29 (Codex, Session 24 launch readiness)
+Last updated: 2026-10-30 (Codex, Session 25 review follow-ups)
 
 ## Current state
 
-Session 23 is merged as PR #23, 58af202. Session 24 starts at that current origin/main on codex/session-24-launch-ready. Office facts are centralised in office.json, launch is controlled by one reviewed settings switch with marker guards, staff collections and bilingual guidance are expanded, and reviewed legacy page redirects include the HERE move. siteLaunched remains false. See LAUNCH.md for the ordered operator checklist and review/session-24 for evidence and explicit limits.
+Session 24 is merged as PR #24, 661def8, verified against GitHub main. Session 25 starts from that commit on codex/session-25-follow-ups. Confirmed office address and hours supplied by Luka on 2026-10-29 now live in office.json. Exactly 16 central placeholders remain. Team cards use validated integer order, single role headings, labelled names and real-address mailto links. Every redirect stub follows its target language, with an accurate continuation link. Fifteen further approved WordPress page mappings are included; the excluded drafts/blank pages remain omitted.
 
-Session 24 checks: clean root and independent project-prefix builds, 197 tests per layout and 109 browser pages per layout with zero axe violations, retaining all existing fixture/rule sweeps. Review/session-24 records 192 bilingual before/after/launched captures, source/configuration checks, browser resize/focus/media evidence and serial mobile Lighthouse. All 7,112 external URL checks remain unverified because outbound requests fail; no real screen reader or hosted CMS result is claimed.
+Licence URLs store their trailing slash and the Programme Guide uses its final URL. See review/session-25/LINKS.md for Luka’s supplied Claude external review results and the manual checker’s incremental output, complete authored-link coverage, configurable project sample (default 200) and polite Erasmus+ host delay. EPALE stays unchanged, with a manual browser check assigned to Luka in LAUNCH.md. No fresh external network audit is claimed.
+
+Session 25 validation: clean root and prefix builds, 201 tests per layout and 109 browser pages per layout with zero axe violations, retaining all existing fixture/rule checks. There are 48 bilingual before/after 390/1280px captures. Evidence, raw logs and reproduction are in review/session-25/README.md. siteLaunched remains false; preview/noindex and EU artwork/disclaimers remain. No launch, merge or hosted CMS operation is authorised.
 
 ## Session 23 baseline
 
@@ -20,11 +22,11 @@ Source JPEGs are build inputs only: source/ is excluded from passthrough and _si
 
 ## Content and operations preserved
 
-Keep siteLaunched=false, preview/noindex, existing routes, seven destinations, EU original artwork/whole-image derivatives and exact disclaimers unchanged. Nine Actions, eleven 2026 Calls, twelve FAQs, five bilingual News posts and all policy/role/contact content remain. The original 26 authored TBC occurrences map to 20 central office placeholders; npm run report:tbc generates review/TBC.md. Production Events/Stories remain empty with fixture coverage; future genuine records restore them automatically. The 28 October project snapshot and all counts/mapping/coverage warnings are unchanged. No live project, map or photo fetch is added to builds/tests/CI.
+Keep siteLaunched=false, preview/noindex, existing routes, seven destinations, EU original artwork/whole-image derivatives and exact disclaimers unchanged. Nine Actions, eleven 2026 Calls, twelve FAQs, five bilingual News posts and all policy/role/contact content remain. The original 26 authored TBC occurrences originally mapped to 20 central office placeholders, now 16 after the confirmed address/hours; npm run report:tbc generates review/TBC.md. Production Events/Stories remain empty with fixture coverage; future genuine records restore them automatically. The 28 October project snapshot and all counts/mapping/coverage warnings are unchanged. No live project, map or photo fetch is added to builds/tests/CI.
 
 Luka remains the sole Pages CMS editor. Hosted News create/build/check/delete is confirmed; hosted Event/image round trips remain unconfirmed. Daily Pages deploy remains 04:15 UTC (08:15 Tbilisi). Institutional ownership/transfer, final NEO facts, signed-grant review and hosted/manual checks remain as below. Newsletter/analytics remain deferred. No launch or merge is authorised by this session.
 
-## Validation and reproduction
+## Session 23 validation baseline
 
 See review/session-23/README.md, report.json and raw logs for final results, before/after mobile measurements and 80 screenshot captures (all eight placements, credits and News, both languages at 390/1280px). Use Node 24 and npm ci. Clean _site before final builds. For full tests use NODE_DISABLE_COMPILE_CACHE=1 npm test -- --test-concurrency=1. Set PORTAL_IMAGE_CACHE_DIR to a shared temporary directory when testing isolated source copies to reuse content-hashed encodings; keep docs/review/session-20/SOURCES.json in those copies. Root/project-prefix builds still copy actual variants and run every existing test.
 
@@ -34,7 +36,7 @@ Final results: clean root and prefix builds pass, with 172 tests and 109 full br
 
 ## Next step
 
-Review the Session 24 PR and evidence. Then obtain Nino’s content sign-off and approved office facts; follow LAUNCH.md in order. Do not merge or launch automatically. Hosted Event/image round trips, signed-grant review, domain and institutional transfer remain outside this session.
+Review the Session 25 PR and evidence. Then obtain Nino’s content sign-off and approved office facts; follow LAUNCH.md in order. Do not merge or launch automatically. Hosted Event/image round trips, signed-grant review, domain and institutional transfer remain outside this session.
 
 ## Launch checklist
 
@@ -43,7 +45,7 @@ The ordered, checkable runbook is [LAUNCH.md](LAUNCH.md), with owners, verificat
 Keep siteLaunched=false and the preview/noindex state until these four stages are complete.
 
 1. **(a) Nino’s final review of the whole site:** review Georgian/English content, all nine source-checked Actions and their authority/applicant/partner qualifications, the official deadlines/resources/publications, ERIDA/NEO roles, policies, navigation and mobile views. Include the new design, finder roles/contacts, chart interpretation, city aliases/unresolved counts and Commons photo placements. Use ACTION-REVIEW.md and the Session 20 content plus Session 21–23 design/photo review evidence. Include all Commons placements, source records, licences and adaptations. Final manual keyboard, screen-reader/language announcements, 200% text resize, 400% zoom/reflow, forced colours, reduced motion and Georgian readability review remain unconfirmed; automated axe does not replace them.
-2. **(b) NEO facts from review/TBC.md:** supply the three team names/role emails, shared NEO contact, address, phone, email, hours confirmation, HERE membership and ERIDA legal code/address/rights contact. Apply approved values in both languages, regenerate TBC.md and verify no missing fact remains. Supply real social URLs or leave the block hidden.
+2. **(b) NEO facts from review/TBC.md:** supply phone and shared NEO email, ERIDA legal code and registered address, privacy and accessibility contacts, three team names and role emails, HERE members and social links. The office address and hours are confirmed separately and must not be reused as ERIDA’s registered address. Apply approved values in both languages, regenerate TBC.md and verify no missing fact remains. Supply real social URLs or leave the block hidden.
 3. **(c) Signed grant agreement check:** expected at the end of November 2026 (Nino via Luka). Confirm funding wording, visibility and website obligations against the signed agreement. Until then retain the current EACEA model Article 17 wording, approved artwork and unchanged supplied Georgian disclaimer.
 4. **(d) Separate launch change:** after approval, prepare siteLaunched=true and removal of the preview notice as a reviewed change. Before launch, complete the outstanding hosted Event/image round trips, encoded legacy emoji redirect and daily-rebuild confirmation; verify hosted metadata, sitemap, bilingual 404, language switches, redirects, calendar/ICS, indexing, accessibility and performance. Run clean root/project builds, full tests and browser checks after final content edits. Do not claim these hosted results from local tests or merge automatically.
 

@@ -1,0 +1,194 @@
+[
+  {
+    "lang": "ka",
+    "width": 390,
+    "path": "/ka/about/contact/",
+    "status": 200,
+    "htmlLang": "ka",
+    "file": "contact-ka-390.png"
+  },
+  {
+    "lang": "ka",
+    "width": 390,
+    "path": "/ka/about/team/",
+    "status": 200,
+    "htmlLang": "ka",
+    "file": "team-ka-390.png"
+  },
+  {
+    "lang": "ka",
+    "width": 390,
+    "path": "/ka/here/",
+    "status": 200,
+    "htmlLang": "ka",
+    "file": "hereStub-ka-390.png"
+  },
+  {
+    "lang": "ka",
+    "width": 390,
+    "path": "/contact/",
+    "status": 200,
+    "htmlLang": "ka",
+    "file": "legacyStub-ka-390.png"
+  },
+  {
+    "lang": "ka",
+    "width": 390,
+    "path": "/ka/about/credits/",
+    "status": 200,
+    "htmlLang": "ka",
+    "file": "credits-ka-390.png"
+  },
+  {
+    "lang": "ka",
+    "width": 390,
+    "path": "/ka/about/contact/",
+    "status": 200,
+    "htmlLang": "ka",
+    "file": "footer-ka-390.png"
+  },
+  {
+    "lang": "ka",
+    "width": 1280,
+    "path": "/ka/about/contact/",
+    "status": 200,
+    "htmlLang": "ka",
+    "file": "contact-ka-1280.png"
+  },
+  {
+    "lang": "ka",
+    "width": 1280,
+    "path": "/ka/about/team/",
+    "status": 200,
+    "htmlLang": "ka",
+    "file": "team-ka-1280.png"
+  },
+  {
+    "lang": "ka",
+    "width": 1280,
+    "path": "/ka/here/",
+    "status": 200,
+    "htmlLang": "ka",
+    "file": "hereStub-ka-1280.png"
+  },
+  {
+    "lang": "ka",
+    "width": 1280,
+    "path": "/contact/",
+    "status": 200,
+    "htmlLang": "ka",
+    "file": "legacyStub-ka-1280.png"
+  },
+  {
+    "lang": "ka",
+    "width": 1280,
+    "path": "/ka/about/credits/",
+    "status": 200,
+    "htmlLang": "ka",
+    "file": "credits-ka-1280.png"
+  },
+  {
+    "lang": "ka",
+    "width": 1280,
+    "path": "/ka/about/contact/",
+    "status": 200,
+    "htmlLang": "ka",
+    "file": "footer-ka-1280.png"
+  },
+  {
+    "lang": "en",
+    "width": 390,
+    "path": "/en/about/contact/",
+    "status": 200,
+    "htmlLang": "en",
+    "file": "contact-en-390.png"
+  },
+  {
+    "lang": "en",
+    "width": 390,
+    "path": "/en/about/team/",
+    "status": 200,
+    "htmlLang": "en",
+    "file": "team-en-390.png"
+  },
+  {
+    "lang": "en",
+    "width": 390,
+    "path": "/en/here/",
+    "status": 200,
+    "htmlLang": "en",
+    "file": "hereStub-en-390.png"
+  },
+  {
+    "lang": "en",
+    "width": 390,
+    "path": "/contact/",
+    "status": 200,
+    "htmlLang": "ka",
+    "file": "legacyStub-en-390.png"
+  },
+  {
+    "lang": "en",
+    "width": 390,
+    "path": "/en/about/credits/",
+    "status": 200,
+    "htmlLang": "en",
+    "file": "credits-en-390.png"
+  },
+  {
+    "lang": "en",
+    "width": 390,
+    "path": "/en/about/contact/",
+    "status": 200,
+    "htmlLang": "en",
+    "file": "footer-en-390.png"
+  },
+  {
+    "lang": "en",
+    "width": 1280,
+    "path": "/en/about/contact/",
+    "status": 200,
+    "htmlLang": "en",
+    "file": "contact-en-1280.png"
+  },
+  {
+    "lang": "en",
+    "width": 1280,
+    "path": "/en/about/team/",
+    "status": 200,
+    "htmlLang": "en",
+    "file": "team-en-1280.png"
+  },
+  {
+    "lang": "en",
+    "width": 1280,
+    "path": "/en/here/",
+    "status": 200,
+    "htmlLang": "en",
+    "file": "hereStub-en-1280.png"
+  },
+  {
+    "lang": "en",
+    "width": 1280,
+    "path": "/contact/",
+    "status": 200,
+    "htmlLang": "ka",
+    "file": "legacyStub-en-1280.png"
+  },
+  {
+    "lang": "en",
+    "width": 1280,
+    "path": "/en/about/credits/",
+    "status": 200,
+    "htmlLang": "en",
+    "file": "credits-en-1280.png"
+  },
+  {
+    "lang": "en",
+    "width": 1280,
+    "path": "/en/about/contact/",
+    "status": 200,
+    "htmlLang": "en",
+    "file": "footer-en-1280.png"
+  }
+]

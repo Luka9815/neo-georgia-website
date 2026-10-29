@@ -1,0 +1,10 @@
+{
+  "root": {
+    "htmlFiles": 309,
+    "cleanBuildMatchesTestedHtmlExceptBuildTimestamp": true
+  },
+  "prefix": {
+    "htmlFiles": 309,
+    "cleanBuildMatchesTestedHtmlExceptBuildTimestamp": true
+  }
+}

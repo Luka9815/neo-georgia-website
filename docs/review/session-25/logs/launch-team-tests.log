@@ -1,0 +1,19 @@
+✔ reviewed launch switch controls all indexable output at / (9185.230855ms)
+✔ reviewed launch switch controls all indexable output at /neo-georgia-website/ (11803.037892ms)
+✔ launched build names the unresolved source file, JSON path and language (1704.3525ms)
+✔ role cards link real addresses and keep placeholders as plain text (82.988352ms)
+✔ new sitemap pages render both languages, exact switches and EU footer (256.83676ms)
+✔ Publications are complete without JavaScript and filter metadata matches records (10.365681ms)
+✔ FAQ groups and related Action pages use the same records (1892.60396ms)
+✔ people have national transliteration, separate groups and no contact details or images (31.569875ms)
+✔ Contact uses final labelled fields with no form, map or third-party asset (61.537341ms)
+✔ supporting content rejects missing translation, invalid references and unsafe files (17.470384ms)
+✔ Team uses explicit integer order, one role heading and labelled names (19.763639ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 27978.810497

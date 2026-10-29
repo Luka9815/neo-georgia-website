@@ -1,0 +1,15 @@
+{
+  "baseline": "661def8818aeadf77ffeaf8716e5ef75f4a9fefa",
+  "officeChangedFields": [
+    "contact.address.en",
+    "contact.address.ka",
+    "contact.hours.en",
+    "contact.hours.ka"
+  ],
+  "registeredAddressUnchanged": true,
+  "remainingPlaceholders": 16,
+  "handEnteredUrls": 54,
+  "generatedProjectUrls": 6764,
+  "defaultSampleSize": 200,
+  "liveNetworkAudit": false
+}
