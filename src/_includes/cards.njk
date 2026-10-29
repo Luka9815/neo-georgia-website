@@ -1,5 +1,5 @@
-{% macro cards(items, type, t, lang, heading='h3', showSectionLabel=false, emptyMessage='') %}
-<ul class="cards cards-{{ type }}"{% if type == 'publication' %} data-publications{% endif %}>
+{% macro cards(items, type, t, lang, heading='h3', showSectionLabel=false, emptyMessage='', compact=false) %}
+<ul class="cards cards-{{ type }}{% if compact %} cards-compact{% endif %}"{% if type == 'publication' %} data-publications{% endif %}>
   {% for item in items %}
     <li class="card{% if type == 'action' or type == 'news' %} card-clickable{% endif %}"{% if type == 'publication' %} data-year="{{ item.year }}" data-type="{{ item.type }}"{% endif %}>
       {% if type == 'call' %}
@@ -41,7 +41,7 @@
         {% if item.date %}
           <p class="card-date"><time datetime="{{ item.date }}">{% if type == 'news' %}{{ item.date | dateLabel(t, 'UTC', false) }}{% else %}{{ item.date | dateLabel(t, item.timeZone) }}{% endif %}</time></p>
         {% endif %}
-        <div class="card-body">{% if type == 'action' %}{{ item.summary | markdown | safe }}{% elif type == 'news' %}{{ item.body | newsSummary | safe }}{% else %}{{ item.body | markdown | safe }}{% endif %}</div>
+        {% if not compact %}<div class="card-body">{% if type == 'action' %}{{ item.summary | markdown | safe }}{% elif type == 'news' %}{{ item.body | newsSummary | safe }}{% else %}{{ item.body | markdown | safe }}{% endif %}</div>{% endif %}
       {% endif %}
     </li>
   {% else %}

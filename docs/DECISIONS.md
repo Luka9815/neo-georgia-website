@@ -461,3 +461,7 @@ Use a single native stretched title link for single-destination Action, News and
 
 ## 2026-10-29: Session 22 item 2, compact audiences (Luka)
 Use approximately 68px icon/title/arrow rows on mobile and five compact columns at desktop. Allow Georgian labels to wrap and grow rather than clip text; remove the arrow's automatic top gap.
+
+
+## 2026-10-29: Session 22 item 3, compact Home Actions (Luka)
+Home shows the nine existing Actions as compact icon/name/Key Action tiles in sector grids. Keep the unchanged descriptions on Opportunities and the full Action pages; no content records or routes change.

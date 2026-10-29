@@ -349,3 +349,11 @@ header a:is(:hover,:focus-visible), .footer-grid nav a:is(:hover,:focus-visible)
  .audience-tiles .card { grid-template-columns: 1fr auto; align-content: start; padding: 1rem; }
  .audience-tiles .icon-slot { grid-column: 1 / -1; }
 }
+
+.home-action-sector { margin-block: 1.25rem; }
+.home-action-sector > h3 { padding-bottom: .5rem; margin-bottom: .75rem; font-size: 1rem; }
+.home-action-sector .cards { grid-template-columns: repeat(auto-fit,minmax(min(100%,15rem),1fr)); gap: .75rem; }
+.cards-compact .card { display: grid; grid-template-columns: 2.5rem minmax(0,1fr); column-gap: .75rem; padding: 1rem; align-content: start; }
+.cards-compact .icon-slot { grid-row: 1 / 3; margin: 0; width: 2.5rem; height: 2.5rem; }
+.cards-compact h4 { font-size: 1rem; margin: 0 0 .5rem; }
+.cards-compact .action-key-label { grid-column: 2; font-size: .75rem; margin: 0; }

@@ -24,7 +24,7 @@ eleventyExcludeFromCollections: true
 <section class="home-band" aria-labelledby="actions-title"><div class="wrapper">
  <div class="section-heading"><h2 id="actions-title">{{ t.opportunities }}</h2><a href="/{{ view.lang }}/opportunities/">{{ t.allOpportunities }}</a></div>
  {% for sector in ['higher-education','vet','youth','sport'] %}
- <section class="home-action-sector" aria-labelledby="home-{{ sector }}"><h3 id="home-{{ sector }}">{{ t.sectorLabels[sector] }}</h3>{{ cards(actions | primarySector(sector),'action',t,view.lang,'h4') }}</section>
+ <section class="home-action-sector" aria-labelledby="home-{{ sector }}"><h3 id="home-{{ sector }}">{{ t.sectorLabels[sector] }}</h3>{{ cards(actions | primarySector(sector),'action',t,view.lang,'h4',compact=true) }}</section>
  {% endfor %}
 </div></section>
 <section class="home-band home-figures" aria-labelledby="figures-title"><div class="wrapper">
