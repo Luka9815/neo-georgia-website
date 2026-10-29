@@ -5,15 +5,15 @@
   {% if view.target %}<meta http-equiv="refresh" content="0;url={{ view.target }}">{% endif %}
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ title }} | {{ t.site }}</title>
-  <meta name="description" content="{{ title }}. {{ t.previewNotice }}">
-  {% if not site.siteLaunched or view.kind == '404' or view.target %}
+  <meta name="description" content="{{ title }}.{% if not site.siteLaunched %} {{ t.previewNotice }}{% endif %}">
+  {% if not site.siteLaunched or view.kind == '404' or view.target or view.noindex %}
   <meta name="robots" content="noindex, nofollow">
-  {% endif %}
+  {% else %}<meta name="robots" content="index, follow">{% endif %}
   <link rel="canonical" href="{{ (view.target or view.path) | absoluteUrl(site.url) }}">
   <link rel="alternate" hreflang="{{ view.lang }}" href="{{ view.path | absoluteUrl(site.url) }}">
   {% if view.translated != false %}<link rel="alternate" hreflang="{{ other }}" href="{{ view.alternate | absoluteUrl(site.url) }}">{% endif %}
   <meta property="og:title" content="{{ title }} | {{ t.site }}">
-  <meta property="og:description" content="{{ t.previewNotice }}">
+  <meta property="og:description" content="{{ title }}{% if not site.siteLaunched %}. {{ t.previewNotice }}{% endif %}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ view.path | absoluteUrl(site.url) }}">
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
@@ -22,7 +22,7 @@
 <body>
 <a class="skip" href="#main">{{ t.skip }}</a>
 {% from 'navigation.njk' import navigationMenu %}
-<aside class="preview-bar" aria-label="{{ t.previewNotice }}"><p class="wrapper notice">{{ t.previewNotice }}</p></aside>
+{% if not site.siteLaunched %}<aside class="preview-bar" aria-label="{{ t.previewNotice }}"><p class="wrapper notice">{{ t.previewNotice }}</p></aside>{% endif %}
 <header class="site-header">
   <div class="wrapper header-inner">
     <div class="header-top">

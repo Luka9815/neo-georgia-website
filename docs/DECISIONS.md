@@ -513,3 +513,7 @@ Keep Campus E's full source frame after review found that a desktop crop cut int
 
 ## 2026-10-29: Session 24 item 1, central office facts (Luka)
 Supersede Session 20 scattered Person/contact/policy facts with src/_data/office.json and generated review/TBC.md. Store shared facts once, bilingual names explicitly, and show “The list of experts will be published once membership is confirmed.” / “ექსპერტების სია გამოქვეყნდება წევრობის დადასტურების შემდეგ.” for empty HERE membership.
+
+
+## 2026-10-29: Session 24 item 2, reviewed one-switch launch (Luka)
+Keep siteLaunched=false and outside CMS. A reviewed true value removes the preview and enables indexing/robots/hreflang sitemap, with authored and rendered marker checks that fail the build; github.io emits a warning only. No environment launch override exists.
