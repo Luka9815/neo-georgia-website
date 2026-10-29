@@ -1,0 +1,487 @@
+[
+  {
+    "width": 320,
+    "lang": "ka",
+    "brand": {
+      "width": 160.34375,
+      "height": 52.640625
+    },
+    "emblem": {
+      "width": 256,
+      "height": 53.59375
+    },
+    "edge": 0.95,
+    "overflow": false,
+    "offenders": [
+      "svg.[object SVGAnimatedString]",
+      "g.[object SVGAnimatedString]",
+      "rect.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "g.[object SVGAnimatedString]",
+      "rect.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "g.[object SVGAnimatedString]",
+      "rect.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "g.[object SVGAnimatedString]",
+      "rect.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "g.[object SVGAnimatedString]",
+      "rect.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "g.[object SVGAnimatedString]",
+      "rect.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "g.[object SVGAnimatedString]",
+      "rect.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]"
+    ],
+    "gradient": "linear-gradient(90deg, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.58))"
+  },
+  {
+    "width": 320,
+    "lang": "en",
+    "brand": {
+      "width": 160.34375,
+      "height": 35.09375
+    },
+    "emblem": {
+      "width": 256,
+      "height": 56.796875
+    },
+    "edge": 0.95,
+    "overflow": false,
+    "offenders": [
+      "svg.[object SVGAnimatedString]",
+      "g.[object SVGAnimatedString]",
+      "rect.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "g.[object SVGAnimatedString]",
+      "rect.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "g.[object SVGAnimatedString]",
+      "rect.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "g.[object SVGAnimatedString]",
+      "rect.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "g.[object SVGAnimatedString]",
+      "rect.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "g.[object SVGAnimatedString]",
+      "rect.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "g.[object SVGAnimatedString]",
+      "rect.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]"
+    ],
+    "gradient": "linear-gradient(90deg, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.58))"
+  },
+  {
+    "width": 360,
+    "lang": "ka",
+    "brand": {
+      "width": 200.34375,
+      "height": 35.09375
+    },
+    "emblem": {
+      "width": 296,
+      "height": 61.96875
+    },
+    "edge": 0.9555555555555556,
+    "overflow": false,
+    "offenders": [
+      "svg.[object SVGAnimatedString]",
+      "g.[object SVGAnimatedString]",
+      "rect.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "g.[object SVGAnimatedString]",
+      "rect.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "g.[object SVGAnimatedString]",
+      "rect.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "g.[object SVGAnimatedString]",
+      "rect.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "g.[object SVGAnimatedString]",
+      "rect.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "g.[object SVGAnimatedString]",
+      "rect.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]"
+    ],
+    "gradient": "linear-gradient(90deg, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.58))"
+  },
+  {
+    "width": 360,
+    "lang": "en",
+    "brand": {
+      "width": 200.34375,
+      "height": 35.09375
+    },
+    "emblem": {
+      "width": 296,
+      "height": 65.671875
+    },
+    "edge": 0.9555555555555556,
+    "overflow": false,
+    "offenders": [
+      "svg.[object SVGAnimatedString]",
+      "g.[object SVGAnimatedString]",
+      "rect.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "g.[object SVGAnimatedString]",
+      "rect.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "g.[object SVGAnimatedString]",
+      "rect.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "g.[object SVGAnimatedString]",
+      "rect.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "g.[object SVGAnimatedString]",
+      "rect.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "g.[object SVGAnimatedString]",
+      "rect.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]"
+    ],
+    "gradient": "linear-gradient(90deg, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.58))"
+  },
+  {
+    "width": 390,
+    "lang": "ka",
+    "brand": {
+      "width": 230.34375,
+      "height": 35.09375
+    },
+    "emblem": {
+      "width": 326,
+      "height": 68.25
+    },
+    "edge": 0.958974358974359,
+    "overflow": false,
+    "offenders": [
+      "svg.[object SVGAnimatedString]",
+      "g.[object SVGAnimatedString]",
+      "rect.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "g.[object SVGAnimatedString]",
+      "rect.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "g.[object SVGAnimatedString]",
+      "rect.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "g.[object SVGAnimatedString]",
+      "rect.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "g.[object SVGAnimatedString]",
+      "rect.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "g.[object SVGAnimatedString]",
+      "rect.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]"
+    ],
+    "gradient": "linear-gradient(90deg, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.58))"
+  },
+  {
+    "width": 390,
+    "lang": "en",
+    "brand": {
+      "width": 218.046875,
+      "height": 17.546875
+    },
+    "emblem": {
+      "width": 326,
+      "height": 72.328125
+    },
+    "edge": 0.958974358974359,
+    "overflow": false,
+    "offenders": [
+      "svg.[object SVGAnimatedString]",
+      "g.[object SVGAnimatedString]",
+      "rect.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "g.[object SVGAnimatedString]",
+      "rect.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "g.[object SVGAnimatedString]",
+      "rect.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "g.[object SVGAnimatedString]",
+      "rect.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "g.[object SVGAnimatedString]",
+      "rect.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "g.[object SVGAnimatedString]",
+      "rect.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]"
+    ],
+    "gradient": "linear-gradient(90deg, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.58))"
+  },
+  {
+    "width": 600,
+    "lang": "ka",
+    "brand": {
+      "width": 288,
+      "height": 35.09375
+    },
+    "emblem": {
+      "width": 480,
+      "height": 100.5
+    },
+    "edge": 0.9733333333333334,
+    "overflow": false,
+    "offenders": [
+      "svg.[object SVGAnimatedString]",
+      "g.[object SVGAnimatedString]",
+      "rect.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]"
+    ],
+    "gradient": "linear-gradient(90deg, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.58))"
+  },
+  {
+    "width": 600,
+    "lang": "en",
+    "brand": {
+      "width": 218.046875,
+      "height": 17.546875
+    },
+    "emblem": {
+      "width": 480,
+      "height": 106.5
+    },
+    "edge": 0.9733333333333334,
+    "overflow": false,
+    "offenders": [
+      "svg.[object SVGAnimatedString]",
+      "g.[object SVGAnimatedString]",
+      "rect.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]",
+      "text.[object SVGAnimatedString]"
+    ],
+    "gradient": "linear-gradient(90deg, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.58))"
+  },
+  {
+    "width": 768,
+    "lang": "ka",
+    "brand": {
+      "width": 288,
+      "height": 35.09375
+    },
+    "emblem": {
+      "width": 308,
+      "height": 64.484375
+    },
+    "edge": 0.9583333333333334,
+    "overflow": false,
+    "offenders": [],
+    "gradient": "linear-gradient(90deg, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.58))"
+  },
+  {
+    "width": 768,
+    "lang": "en",
+    "brand": {
+      "width": 218.046875,
+      "height": 17.546875
+    },
+    "emblem": {
+      "width": 308,
+      "height": 68.328125
+    },
+    "edge": 0.9583333333333334,
+    "overflow": false,
+    "offenders": [],
+    "gradient": "linear-gradient(90deg, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.58))"
+  },
+  {
+    "width": 1024,
+    "lang": "ka",
+    "brand": {
+      "width": 288,
+      "height": 45.34375
+    },
+    "emblem": {
+      "width": 436,
+      "height": 91.28125
+    },
+    "edge": 0.5749969482421875,
+    "overflow": false,
+    "offenders": [
+      "LI.card card-clickable",
+      "LI.card card-clickable"
+    ],
+    "gradient": "linear-gradient(90deg, rgba(5, 38, 79, 0.94) 0%, rgba(5, 38, 79, 0.92) 46%, rgba(5, 38, 79, 0.55) 62%, rgba(5, 38, 79, 0) 82%)",
+    "contrast": 5.017237615788089
+  },
+  {
+    "width": 1024,
+    "lang": "en",
+    "brand": {
+      "width": 281.46875,
+      "height": 22.671875
+    },
+    "emblem": {
+      "width": 436,
+      "height": 96.734375
+    },
+    "edge": 0.5749969482421875,
+    "overflow": false,
+    "offenders": [],
+    "gradient": "linear-gradient(90deg, rgba(5, 38, 79, 0.94) 0%, rgba(5, 38, 79, 0.92) 46%, rgba(5, 38, 79, 0.55) 62%, rgba(5, 38, 79, 0) 82%)",
+    "contrast": 5.017237615788089
+  },
+  {
+    "width": 1280,
+    "lang": "ka",
+    "brand": {
+      "width": 306,
+      "height": 48.15625
+    },
+    "emblem": {
+      "width": 510,
+      "height": 106.78125
+    },
+    "edge": 0.57574462890625,
+    "overflow": false,
+    "offenders": [
+      "LI.card card-clickable"
+    ],
+    "gradient": "linear-gradient(90deg, rgba(5, 38, 79, 0.94) 0%, rgba(5, 38, 79, 0.92) 46%, rgba(5, 38, 79, 0.55) 62%, rgba(5, 38, 79, 0) 82%)",
+    "contrast": 5.005001314907014
+  },
+  {
+    "width": 1280,
+    "lang": "en",
+    "brand": {
+      "width": 299.28125,
+      "height": 24.078125
+    },
+    "emblem": {
+      "width": 510,
+      "height": 113.15625
+    },
+    "edge": 0.57574462890625,
+    "overflow": false,
+    "offenders": [],
+    "gradient": "linear-gradient(90deg, rgba(5, 38, 79, 0.94) 0%, rgba(5, 38, 79, 0.92) 46%, rgba(5, 38, 79, 0.55) 62%, rgba(5, 38, 79, 0) 82%)",
+    "contrast": 5.005001314907014
+  },
+  {
+    "width": 1440,
+    "lang": "ka",
+    "brand": {
+      "width": 306,
+      "height": 48.15625
+    },
+    "emblem": {
+      "width": 510,
+      "height": 106.78125
+    },
+    "edge": 0.5736653645833333,
+    "overflow": false,
+    "offenders": [
+      "text.[object SVGAnimatedString]"
+    ],
+    "gradient": "linear-gradient(90deg, rgba(5, 38, 79, 0.94) 0%, rgba(5, 38, 79, 0.92) 46%, rgba(5, 38, 79, 0.55) 62%, rgba(5, 38, 79, 0) 82%)",
+    "contrast": 5.0782123055301325
+  },
+  {
+    "width": 1440,
+    "lang": "en",
+    "brand": {
+      "width": 299.28125,
+      "height": 24.078125
+    },
+    "emblem": {
+      "width": 510,
+      "height": 113.15625
+    },
+    "edge": 0.5736653645833333,
+    "overflow": false,
+    "offenders": [
+      "text.[object SVGAnimatedString]"
+    ],
+    "gradient": "linear-gradient(90deg, rgba(5, 38, 79, 0.94) 0%, rgba(5, 38, 79, 0.92) 46%, rgba(5, 38, 79, 0.55) 62%, rgba(5, 38, 79, 0) 82%)",
+    "contrast": 5.0782123055301325
+  },
+  {
+    "width": 1920,
+    "lang": "ka",
+    "brand": {
+      "width": 306,
+      "height": 48.15625
+    },
+    "emblem": {
+      "width": 510,
+      "height": 106.78125
+    },
+    "edge": 0.5552490234375,
+    "overflow": false,
+    "offenders": [
+      "text.[object SVGAnimatedString]"
+    ],
+    "gradient": "linear-gradient(90deg, rgba(5, 38, 79, 0.94) 0%, rgba(5, 38, 79, 0.92) 46%, rgba(5, 38, 79, 0.55) 62%, rgba(5, 38, 79, 0) 82%)",
+    "contrast": 5.810121167461418
+  },
+  {
+    "width": 1920,
+    "lang": "en",
+    "brand": {
+      "width": 299.28125,
+      "height": 24.078125
+    },
+    "emblem": {
+      "width": 510,
+      "height": 113.15625
+    },
+    "edge": 0.5552490234375,
+    "overflow": false,
+    "offenders": [
+      "text.[object SVGAnimatedString]"
+    ],
+    "gradient": "linear-gradient(90deg, rgba(5, 38, 79, 0.94) 0%, rgba(5, 38, 79, 0.92) 46%, rgba(5, 38, 79, 0.55) 62%, rgba(5, 38, 79, 0) 82%)",
+    "contrast": 5.810121167461418
+  }
+]

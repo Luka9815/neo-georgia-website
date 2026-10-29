@@ -1,0 +1,20 @@
+
+> check:a11y
+> node scripts/check-a11y.js
+
+axe: checked 20 pages
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+frame.evaluate: Target crashed
+    at AxeBuilder.runPartialRecursive (/workspace/neo-georgia-website/node_modules/@axe-core/playwright/dist/index.mjs:285:34)
+    at async AxeBuilder.analyze (/workspace/neo-georgia-website/node_modules/@axe-core/playwright/dist/index.mjs:211:28)
+    at async checkView (/workspace/neo-georgia-website/scripts/check-a11y.js:36:21)
+    at async file:///workspace/neo-georgia-website/scripts/check-a11y.js:69:56
+    at async file:///workspace/neo-georgia-website/scripts/check-a11y.js:67:3 {
+  log: [],
+  name: 'Error'
+}
+
+Node.js v24.19.0

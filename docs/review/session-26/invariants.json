@@ -1,0 +1,10 @@
+{
+  "baseline": "53ed2e73de0ff560e3367a8815aa2ff650b42844",
+  "contentDataRoutesFontsEuUnchanged": true,
+  "dependenciesUnchanged": true,
+  "officePlaceholders": 16,
+  "productionFilesChanged": [
+    "src/_includes/base.njk",
+    "src/assets/css/site.css"
+  ]
+}

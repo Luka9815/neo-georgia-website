@@ -1,0 +1,26 @@
+{
+  "root": {
+    "cleanBuild": true,
+    "tests": 205,
+    "failedTests": 0,
+    "axePages": 109,
+    "axeViolations": 0
+  },
+  "prefix": {
+    "cleanBuild": true,
+    "tests": 205,
+    "failedTests": 0,
+    "axePages": 109,
+    "axeViolations": 0
+  },
+  "lighthousePairs": 24,
+  "performanceRange": [
+    98,
+    100
+  ],
+  "accessibility": 100,
+  "belowBaselinePairs": 0,
+  "requestedScreenshots": 144,
+  "exactConsolidationComparisons": 72,
+  "officePlaceholders": 16
+}

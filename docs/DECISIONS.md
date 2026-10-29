@@ -562,3 +562,30 @@ Supersede the omissions for the 15 paths listed in the Session 25 brief under �
 
 ## 2026-10-30: Session 25 item 5, external-link review and sampling (Luka)
 Supersede the exhaustive generated-link audit approach in “Session 24 item 6, honest quality evidence” (2026-10-29): check all hand-entered URLs and randomly sample generated project-result URLs, default 200, with incremental results and a polite Erasmus+ host delay. Record Luka’s supplied 2026-10-29 Claude review separately from local verification. Store final Guide/licence URLs in source; retain EPALE for a manual browser check. No network audit enters build, tests or CI.
+
+
+## 2026-10-30: Session 26 item 1, consolidated stylesheet (Luka)
+Consolidate repeated Session 21 to 23 declarations into tokens, base, layout, header, components, page templates, utilities and responsive/system styles. Remove the obsolete in-main preview selector and overridden card underline declaration. Preserve rendering before redesign: 72 screenshots compared at 390/1280/1920px, tolerance one pixel in height and 0.5% changed pixels at pixelmatch threshold 0.1.
+
+
+## 2026-10-30: Session 26 item 2, scale and width (Luka)
+Supersede the 75rem width and compact branding/navigation scale in “Session 21, portal design system” (2026-10-29). Use 82rem, a 106.25% root at 80rem viewport width, larger navigation targets and a 1.05rem wordmark. Preserve EU emblem prominence at all six existing widths.
+
+
+## 2026-10-30: Session 26 item 3, directional Home overlay (Luka)
+Supersede the overlay in “Session 23 item 2, photo placements and lighter Home overlay” (2026-10-29), retaining all photo placements. Use the approved navy gradient on desktop and the full mobile overlay. Limit desktop text to the smaller of 46rem and 58% of the inner wrapper so its right edge remains within the contrast-safe gradient at 1024/1280/1440/1920px. White-pixel contrast must remain at least 4.5:1. Keep headings unbroken within Georgian words and a compact bottom-right credit.
+
+
+## 2026-10-30: Session 26 item 4, full-bleed title and Action bands (Luka)
+Supersede the Action hero in “Session 21 item 2, Action hero and facts” (2026-10-29). Shared inner-page h1 and Action sections use navy bands with white headings, gold rules and inverse-muted summaries. Painted bleed uses a clipped shadow instead of viewport-width layout, avoiding scrollbar overflow. Facts stick below the desktop header with their own bounded scrolling area. Landscape/facade banners follow the band; keep Campus E’s full-frame exception.
+
+
+## 2026-10-30: Session 26 item 5, cards and sector grids (Luka)
+Supersede the card styling in “Session 21, portal design system” (2026-10-29): softer borders, two-layer shadows, fixed minimum auto-fill tracks, tinted icons and desktop sector labels beside the cards. Hover lift occurs only when reduced motion is not requested. Preserve native links and growing Georgian labels.
+
+
+## 2026-10-30: Session 26 item 6, Home rhythm and individual routes (Luka)
+Supersede spacing in “Session 22 item 6, shared spacing and preview bar” (2026-10-29), preserving the unchanged preview bar. Home bands use 4rem padding, larger headings and navy key figures with gold rules and a white chart. Individual routes become 48px pill links in a tinted panel; no translation or destination changes.
+
+## 2026-10-30: Session 26 item 7, responsive exceptions and quality evidence (Luka)
+Keep the larger wordmark on desktop and the prior compact mobile size so the EU emblem remains more prominent. Below 24rem only, reduce headline minimums to keep Georgian words unbroken at 320px; the long Privacy title has its own responsive scale, selected by a stable page-slug class. These are measured accessibility adjustments to the approved prototype scale; all content and translation strings remain unchanged. All axe rules/fixtures remain enabled; allow one worker for the complete queue after concurrent Chromium audits crashed. Forced colours replaces bands/gradients with system colours.

@@ -1,0 +1,12 @@
+import {readFileSync,writeFileSync} from 'node:fs';
+import assert from 'node:assert/strict';
+const dir='docs/review/session-26';
+const before=JSON.parse(readFileSync(`${dir}/before/lighthouse.json`));
+const after=JSON.parse(readFileSync(`${dir}/after/lighthouse.json`));
+assert.equal(before.length,24);assert.equal(after.length,24);
+const key=r=>`${r.formFactor}/${r.lang}/${r.route}`;const baseline=new Map(before.map(r=>[key(r),r]));
+const rows=after.map(r=>{const b=baseline.get(key(r));assert.ok(b,key(r));return {formFactor:r.formFactor,lang:r.lang,route:r.route,beforePerformance:b.performance,afterPerformance:r.performance,beforeAccessibility:b.accessibility,afterAccessibility:r.accessibility};});
+writeFileSync(`${dir}/lighthouse-comparison.json`,JSON.stringify(rows,null,2)+'\n');
+writeFileSync(`${dir}/LIGHTHOUSE.md`,'# Local Lighthouse comparison\n\n24 cold serial runs per phase, six routes in each language, mobile and desktop. Lighthouse 13.6.0; settings and limits are in README.md. All after scores meet or exceed the corresponding baseline. Initial and final matrices are retained.\n\n| Device | Language | Route | Performance before | After | Accessibility before | After |\n| --- | --- | --- | ---: | ---: | ---: | ---: |\n'+rows.map(r=>'| '+[r.formFactor,r.lang,r.route||'/',r.beforePerformance,r.afterPerformance,r.beforeAccessibility,r.afterAccessibility].join(' | ')+' |').join('\n')+'\n');
+for(const row of rows)assert.ok(row.afterPerformance>=row.beforePerformance&&row.afterAccessibility>=row.beforeAccessibility,JSON.stringify(row));
+console.log('All 24 final Lighthouse pairs meet or exceed baseline.');

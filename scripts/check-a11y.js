@@ -10,6 +10,8 @@ import assert from 'node:assert/strict';
 import getViews from '../src/_data/views.js';
 import { getPathPrefix } from '../lib/urls.js';
 const prefix = getPathPrefix();
+const workers = Number(process.env.A11Y_WORKERS || 2);
+assert.ok(Number.isInteger(workers) && workers >= 1 && workers <= 2, 'A11Y_WORKERS must be 1 or 2');
 const browser = await chromium.launch({
   executablePath: process.env.CHROMIUM_PATH || '/usr/bin/chromium',
   args: ['--no-sandbox'],
@@ -64,7 +66,7 @@ try {
   }
   // Independent complete-page scans use two workers; coverage is unchanged.
   const queue=getViews().filter(v=>!['redirect','legacyRedirect'].includes(v.kind));
-  await Promise.all(Array.from({length:2},async()=>{
+  await Promise.all(Array.from({length:workers},async()=>{
     const worker=await context.newPage();
     try { while(queue.length){const view=queue.shift();await checkView(view,worker);} }
     finally {await worker.close();}

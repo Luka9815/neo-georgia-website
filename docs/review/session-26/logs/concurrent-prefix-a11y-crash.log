@@ -1,0 +1,29 @@
+
+> check:a11y
+> node scripts/check-a11y.js
+
+axe: checked 20 pages
+file:///workspace/neo-georgia-website/node_modules/@axe-core/playwright/dist/index.mjs:219
+      throw new Error(
+            ^
+
+Error: page.evaluate: Target crashed
+ Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md
+    at AxeBuilder.analyze (file:///workspace/neo-georgia-website/node_modules/@axe-core/playwright/dist/index.mjs:219:13)
+    at async checkView (file:///tmp/neo26-prefix/scripts/check-a11y.js:36:21)
+    at async file:///tmp/neo26-prefix/scripts/check-a11y.js:69:56
+    at async Promise.all (index 1)
+    at async file:///tmp/neo26-prefix/scripts/check-a11y.js:67:3 {
+  [cause]: page.evaluate: Target crashed
+      at AxeBuilder.axeConfigure (/workspace/neo-georgia-website/node_modules/@axe-core/playwright/dist/index.mjs:340:43)
+      at AxeBuilder.finishRun (/workspace/neo-georgia-website/node_modules/@axe-core/playwright/dist/index.mjs:321:41)
+      at async AxeBuilder.analyze (/workspace/neo-georgia-website/node_modules/@axe-core/playwright/dist/index.mjs:217:14)
+      at async checkView (/tmp/neo26-prefix/scripts/check-a11y.js:36:21)
+      at async file:///tmp/neo26-prefix/scripts/check-a11y.js:69:56
+      at async file:///tmp/neo26-prefix/scripts/check-a11y.js:67:3 {
+    log: [],
+    name: 'Error'
+  }
+}
+
+Node.js v24.19.0
