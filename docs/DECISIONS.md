@@ -453,3 +453,7 @@ Use the committed public-domain Natural Earth 1:50m whole Georgian polygon, incl
 
 ## 2026-10-29: Session 21, quality review and publication (Luka)
 Validate clean root/project-prefix builds, all existing and new tests, complete browser checks, before/after captures and local mobile Lighthouse. Preserve no-JavaScript, keyboard, forced-colour and reduced-motion checks; return only full axe violation details while running every rule. Disable the restored local Node compile cache for full tests after observing suppressed parameterised-case output. Keep explicit limits: one approved photo, 38 unresolved map locations, a packaged coordinate check rather than live geocoding, and no hosted/manual audit claims. Publish one commit per item plus design-system and quality/evidence commits on codex/session-21-redesign, open PR #21 against main, and do not merge or launch. All four Launch stages remain.
+
+
+## 2026-10-29: Session 22 item 1, card and navigation links (Luka)
+Use a single native stretched title link for single-destination Action, News and audience cards, with a whole-card keyboard focus ring. Titles and navigation links underline on hover/focus; running-text links retain underlines. Multi-destination Call and finder guidance panels retain their explicit Action and official-source links, because collapsing them would remove approved destinations. No nested links or scripted card activation.

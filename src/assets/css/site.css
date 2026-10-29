@@ -319,3 +319,21 @@ dd { margin: 0 0 var(--space-2); }
 [data-participant-cities] tr:target { background: var(--accent-soft); outline: 2px solid var(--accent); }
 .map-source { font-size: .875rem; color: var(--muted); }
 @media (forced-colors: active) { .georgia-outline { fill: Canvas; stroke: CanvasText; } .map-bubble { fill: Highlight; stroke: Canvas; } .participant-map text { fill: CanvasText; stroke: Canvas; } .map-label-line { stroke: CanvasText; } .participant-map a:focus-visible .map-target { stroke: Highlight; } .participant-map a:focus-visible .map-bubble { fill: CanvasText; stroke: Canvas; } }
+
+/* Single-destination cards retain one native link and one keyboard stop. */
+.card-clickable { position: relative; }
+.card-primary::after { content: ''; position: absolute; inset: 0; border-radius: inherit; }
+.card :is(h2,h3,h4) a, .audience-tiles a,
+.section-heading > a, header a, .footer-grid nav a, .project-year-index a {
+ text-decoration: none;
+}
+.card :is(h2,h3,h4) a:is(:hover,:focus-visible),
+.card-clickable:is(:hover,:focus-within) .card-primary,
+.section-heading > a:is(:hover,:focus-visible),
+header a:is(:hover,:focus-visible), .footer-grid nav a:is(:hover,:focus-visible),
+.project-year-index a:is(:hover,:focus-visible) { text-decoration: underline; }
+.card-clickable:has(.card-primary:focus-visible) { outline: 3px solid var(--accent); outline-offset: 4px; }
+.card-clickable .card-primary:focus-visible { outline: none; }
+@media (forced-colors: active) {
+ .card-clickable:has(.card-primary:focus-visible) { outline-color: Highlight; }
+}
