@@ -51,11 +51,11 @@
     <div class="footer-grid">
       <section>
         <h2>{{ t.contact }}</h2>
-        <p>{{ t.email }}: {{ t.contactEmail }}</p>
+        <p>{{ t.email }}: {{ office.contact.email }}</p>
         <p><a href="/{{ view.lang }}/about/contact/">{{ t.contact }}</a></p>
-        {% if socialLinks.length %}
+        {% if office.socialLinks.length %}
         <h3>{{ t.social }}</h3>
-        <ul>{% for link in socialLinks %}<li><a href="{{ link.url }}">{{ link[view.lang] }}</a></li>{% endfor %}</ul>
+        <ul>{% for link in office.socialLinks %}<li><a href="{{ link.url }}">{{ link[view.lang] }}</a></li>{% endfor %}</ul>
         {% endif %}
       </section>
       <nav aria-label="{{ t.quickLinks }}">

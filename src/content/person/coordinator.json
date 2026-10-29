@@ -2,8 +2,6 @@
   "slug": "coordinator",
   "group": "neo",
   "roleBased": true,
-  "name": "[TBC]",
-  "roleEmail": "[TBC]",
   "en": {
     "title": "Coordinator",
     "role": "Coordinator",
@@ -13,5 +11,6 @@
     "title": "კოორდინატორი",
     "role": "კოორდინატორი",
     "body": "Erasmus+-ის შესახებ ინფორმაციისა და კონსულტაციისთვის მიმართეთ ეროვნულ ოფისს."
-  }
+  },
+  "officeKey": "coordinator"
 }

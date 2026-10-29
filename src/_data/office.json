@@ -1,0 +1,54 @@
+{
+  "contact": {
+    "address": {
+      "ka": "[TBC]",
+      "en": "[TBC]"
+    },
+    "phone": "[TBC]",
+    "email": "[TBC]",
+    "hours": {
+      "ka": "[TBC]",
+      "en": "[TBC]"
+    }
+  },
+  "legal": {
+    "eridaIdentificationCode": "[TBC]",
+    "registeredAddress": {
+      "ka": "[TBC]",
+      "en": "[TBC]"
+    }
+  },
+  "privacyContact": "[TBC]",
+  "accessibilityContact": "[TBC]",
+  "team": {
+    "coordinator": {
+      "name": {
+        "ka": "[TBC]",
+        "en": "[TBC]"
+      },
+      "roleEmail": "[TBC]"
+    },
+    "programmeOfficer": {
+      "name": {
+        "ka": "[TBC]",
+        "en": "[TBC]"
+      },
+      "roleEmail": "[TBC]"
+    },
+    "communicationsOfficer": {
+      "name": {
+        "ka": "[TBC]",
+        "en": "[TBC]"
+      },
+      "roleEmail": "[TBC]"
+    }
+  },
+  "here": {
+    "members": [],
+    "period": {
+      "ka": "2026–2027",
+      "en": "2026 to 2027"
+    }
+  },
+  "socialLinks": []
+}

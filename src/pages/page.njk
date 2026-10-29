@@ -14,7 +14,9 @@ eleventyExcludeFromCollections: true
 {% from 'portal-photo.njk' import portalPhoto %}
 {{ portalPhoto(portalPhotos[photoPlacements.about],view.lang,'banner',t) }}
 {% endif %}
+{% if view.slug == 'privacy' %}{{ item.intro | markdown | safe }}{% include 'office-policy.njk' %}{% endif %}
 {{ item.body | markdown | safe }}
+{% if view.slug == 'accessibility' %}{% include 'office-policy.njk' %}{{ item.afterContact | markdown | safe }}{% endif %}
 {% if view.slug == 'about' %}
 <ul>
   <li><a href="/{{ view.lang }}/about/team/">{{ t.team }}</a></li>

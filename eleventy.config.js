@@ -1,3 +1,4 @@
+import {loadOffice} from './lib/office.js';
 import { load } from 'cheerio';
 import { loadProjectSnapshot } from './lib/projects.js';
 import { renderEuImages } from './lib/eu-images.js';
@@ -22,6 +23,7 @@ export default function (config) {
   config.addPlugin(EleventyHtmlBasePlugin);
   let outputRoot = '_site';
   config.on('eleventy.before', ({ directories }) => {
+    loadOffice();
     loadProjectSnapshot();
     outputRoot = directories.output;
   });
@@ -108,6 +110,7 @@ export default function (config) {
     }
     return markdown.renderer.render(tokens, markdown.options, {});
   });
+  config.addFilter('officePeople', (items, office, lang) => items.map(item => item.officeKey ? {...item, name: office.team[item.officeKey].name[lang], roleEmail: office.team[item.officeKey].roleEmail} : item));
   config.addFilter('personGroup', (items, group) => items.filter(item => item.group === group));
   config.addFilter('topic', (items, topic) => items.filter(item => item.topic === topic));
   config.addFilter('publicationYears', items => [...new Set(items.map(item => item.year))].sort((a, b) => b - a));

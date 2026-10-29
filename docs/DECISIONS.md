@@ -509,3 +509,7 @@ Check all eight source hashes/dimensions and per-image README records, the exact
 
 ## 2026-10-29: Session 23 item 6, final crop review and publication (Luka)
 Keep Campus E's full source frame after review found that a desktop crop cut into its facade; describe that modification accurately. Add visible permission-based NEO News credits while retaining one link per card. Update the existing pointer check for both Commons credit links. Both clean layouts pass 172 tests, 109 full browser pages with zero axe violations, and 80 focused photo/News checks each. Eight cold mobile Lighthouse runs score performance 98–99 and accessibility 100; complete Home transfer is 288,384 bytes ka and 247,069 bytes en. Worst-case hero contrast is 5.33:1. Keep 80 before/after captures, provenance and raw results under review/session-23, and use a job-local generated-image cache in the Pages workflow. Push the six item commits and supplied asset history, open a PR against main and do not merge or launch. Hosted/manual review and the four launch stages remain.
+
+
+## 2026-10-29: Session 24 item 1, central office facts (Luka)
+Supersede Session 20 scattered Person/contact/policy facts with src/_data/office.json and generated review/TBC.md. Store shared facts once, bilingual names explicitly, and show “The list of experts will be published once membership is confirmed.” / “ექსპერტების სია გამოქვეყნდება წევრობის დადასტურების შემდეგ.” for empty HERE membership.

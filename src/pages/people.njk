@@ -12,9 +12,12 @@ eleventyExcludeFromCollections: true
 <p>{{ t.hereIntro }}</p>
 <p><a href="{{ here.sourceUrl }}">{{ t.hereOfficial }}</a></p>
 <p><a href="{{ here.guideUrl }}">{{ t.programmeGuide }}</a></p>
-<p>{{ t.hereList }}</p>
+{% if office.here.members.length %}
+<p>{{ office.here.period[view.lang] }}</p>
+<ul class="cards cards-person">{% for member in office.here.members %}<li class="card"><h2>{{ member.name[view.lang] }}</h2><p>{{ member.institution[view.lang] }}</p>{% if member.email %}<p>{{ member.email }}</p>{% endif %}</li>{% endfor %}</ul>
+{% else %}<p>{{ t.herePending }}</p>{% endif %}
 {% else %}
-<p>{{ t.neoContactLine }}</p>
-{{ cards(catalog.person | localise(view.lang) | personGroup(view.group), 'person', t, view.lang, 'h2') }}
+<p>{{ t.neoContactLine }} {{ office.contact.email }}.</p>
+{{ cards(catalog.person | localise(view.lang) | personGroup(view.group) | officePeople(office, view.lang), 'person', t, view.lang, 'h2') }}
 {% endif %}
 {% endblock %}
