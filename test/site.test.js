@@ -63,6 +63,13 @@ test('all rendered pages have language, metadata, seven menu links, one h1 and E
     assert.ok(existsSync(`_site${strings.emblemPath}`));
     assert.equal($('.emblem-placeholder').length, 0);
     assert.equal($('header a[hreflang]').attr('href'), publicPath(view.alternate));
+    const switcher = $('header a[hreflang]');
+    assert.equal(switcher.length, 1);
+    assert.equal(switcher.text().trim(), view.lang === 'ka' ? 'English' : 'ქართული');
+    assert.equal(switcher.attr('aria-label'), view.lang === 'ka' ? 'English: switch language' : 'ქართული: ენის შეცვლა');
+    assert.equal(switcher.attr('lang'), view.lang === 'ka' ? 'en' : 'ka');
+    assert.equal(switcher.find('svg[aria-hidden=true]').length, 1);
+    assert.equal($('script[defer][src="' + publicPath('/assets/js/header.js') + '"]').length, 1);
     if (view.translated === false) assert.equal($('link[rel=alternate]').length, 1);
     else assert.equal($('link[rel=alternate]').length, 2);
   }
@@ -310,12 +317,13 @@ test('home renders upcoming/open deadlines instead of rejecting every status', (
   }
 });
 
-test('English-prevails policy is identical in each footer and its language page', () => {
+test('existing prevailing-language page keeps its statement and footer link without repeating it in the footer', () => {
   for (const lang of ['ka', 'en']) {
     const strings = JSON.parse(read(`src/_data/${lang}.json`));
     const page = load(read(`_site/${lang}/language/index.html`));
     assert.ok(page('main').text().includes(strings.prevailingStatement));
-    assert.equal(page('footer .language-policy').text(), strings.prevailingStatement);
+    assert.equal(page('footer .language-policy').length,0);
+    assert.equal(page(`footer a[href="${publicPath(`/${lang}/language/`)}"]`).length,1);
     assert.equal(page('h1').text(), strings.language);
   }
 });

@@ -1,0 +1,49 @@
+{
+  "baseline": "6f331a8973d460e5c19e0a422957e69748391b38",
+  "layouts": [
+    {
+      "layout": "root",
+      "htmlFiles": 309,
+      "portalVariants": 126,
+      "sourceDirectoryPublished": false,
+      "indexedKa": 40,
+      "indexedEn": 40
+    },
+    {
+      "layout": "prefix",
+      "htmlFiles": 309,
+      "portalVariants": 126,
+      "sourceDirectoryPublished": false,
+      "indexedKa": 40,
+      "indexedEn": 40
+    }
+  ],
+  "headerScriptLines": 23,
+  "unchangedSourcePaths": [
+    "src/content",
+    "src/assets/eu",
+    "src/assets/fonts",
+    "src/_data/settings.json",
+    "src/_data/office.json",
+    "migration/source"
+  ],
+  "allExistingTranslationValuesUnchanged": true,
+  "newUiKeys": [
+    "switchLanguage",
+    "photoCreditLabel"
+  ],
+  "finalRootOutputFileCount": 598,
+  "rootFreshBuildComparison": {
+    "changedHtmlFilesWithBuildTimestamp": 30,
+    "changedSearchArtifacts": 18,
+    "allOtherPagesAndAssetsByteIdentical": true,
+    "note": "Project attribution prints buildTime; rebuilding updates its datetime/text and derived Pagefind indexes."
+  },
+  "finalPrefixOutputFileCount": 598,
+  "prefixFreshBuildComparison": {
+    "changedHtmlFilesWithBuildTimestamp": 30,
+    "changedSearchArtifacts": 18,
+    "allOtherPagesAndAssetsByteIdentical": true,
+    "note": "Project attribution prints buildTime; rebuilding updates its datetime/text and derived Pagefind indexes."
+  }
+}

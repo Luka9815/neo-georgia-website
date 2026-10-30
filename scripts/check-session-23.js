@@ -4,7 +4,7 @@ import AxeBuilder from '@axe-core/playwright';
 import assert from 'node:assert/strict';
 import {getPathPrefix} from '../lib/urls.js';
 const prefix=getPathPrefix();const base=process.env.TEST_URL || 'http://127.0.0.1:8141';
-const paths=['','about/','find/student/','find/university/','find/youth/','find/vet/','find/sport/','opportunities/'];
+const paths=['','about/','find/student/','find/youth/','find/vet/','find/sport/','opportunities/'];
 const browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH || '/usr/bin/chromium',args:['--no-sandbox']});
 try {
  for(const javaScriptEnabled of [false,true]) for(const width of [390,1280]) {
@@ -18,15 +18,15 @@ try {
    const figure=page.locator('figure.portal-photo');assert.equal(await figure.count(),1);
    const image=figure.locator('img');await image.evaluate(el=>el.decode());
    assert.ok(await image.evaluate(el=>el.naturalWidth>=320 && el.getBoundingClientRect().height>180));
-   const credit=figure.locator('[data-photo-credit]');assert.equal(await credit.count(),1);
+   const credit=figure.locator('.photo-credit-control');assert.equal(await credit.count(),1);
+   await credit.locator('summary').focus();await page.keyboard.press('Enter');
    const licence=credit.locator('a[rel=license]');await licence.scrollIntoViewIfNeeded();await licence.focus();
    assert.equal(await licence.evaluate(el=>el===document.activeElement),true);
    assert.notEqual(await licence.evaluate(el=>getComputedStyle(el).outlineStyle),'none');
    assert.equal(await credit.locator('a[href^="https://commons.wikimedia.org/wiki/File:"]').count(),1);
    if(path===''){
     assert.ok(await page.locator('.home-hero :is(h1,.eyebrow,.hero-intro)').evaluateAll(els=>els.every(el=>getComputedStyle(el).color==='rgb(255, 255, 255)')));
-    const entryBottom=await page.locator('.hero-main .entry').evaluate(el=>el.getBoundingClientRect().bottom);
-    assert.ok(await credit.evaluate((el,bottom)=>el.getBoundingClientRect().top>=bottom+8,entryBottom),'Hero credit must not cover the buttons');
+    assert.equal(await credit.locator('.photo-credit-panel').evaluate(el=>{const a=el.getBoundingClientRect();return [...document.querySelectorAll('.hero-main h1,.hero-main .entry')].some(e=>{const b=e.getBoundingClientRect();return a.left<b.right&&a.right>b.left&&a.top<b.bottom&&a.bottom>b.top;});}),false,'Hero credit must not cover the heading or buttons');
    }
    if(javaScriptEnabled) {
    const result=await new AxeBuilder({page}).options({resultTypes:['violations']}).analyze();
@@ -44,5 +44,5 @@ try {
   }
   assert.deepEqual(originalRequests,[]);await context.close();
  }
- console.log('Session 23: 80 bilingual 390/1280px photo/News checks (40 with axe, 40 without JavaScript) pass credit focus, decoded dimensions, no source requests, no overflow and Home contrast/credit layout checks.');
+ console.log('Session 23: 72 bilingual 390/1280px photo/News checks (36 with axe, 36 without JavaScript) pass credit focus, decoded dimensions, no source requests, no overflow and Home contrast/credit layout checks.');
 } finally {await browser.close();}

@@ -1,0 +1,254 @@
+[
+  {
+    "name": "home-top",
+    "lang": "ka",
+    "width": 390,
+    "file": "home-top-ka-390.png",
+    "scrollY": 0,
+    "compact": false,
+    "creditControl": 0
+  },
+  {
+    "name": "home-scrolled",
+    "lang": "ka",
+    "width": 390,
+    "file": "home-scrolled-ka-390.png",
+    "scrollY": 380,
+    "compact": false,
+    "creditControl": 0
+  },
+  {
+    "name": "hover",
+    "lang": "ka",
+    "width": 390,
+    "file": "hover-ka-390.png",
+    "scrollY": 0,
+    "compact": false,
+    "creditControl": 0
+  },
+  {
+    "name": "action",
+    "lang": "ka",
+    "width": 390,
+    "file": "action-ka-390.png",
+    "scrollY": 0,
+    "compact": false,
+    "creditControl": 0
+  },
+  {
+    "name": "university",
+    "lang": "ka",
+    "width": 390,
+    "file": "university-ka-390.png",
+    "scrollY": 0,
+    "compact": false,
+    "creditControl": 0
+  },
+  {
+    "name": "credit-open",
+    "lang": "ka",
+    "width": 390,
+    "file": "credit-open-ka-390.png",
+    "scrollY": 0,
+    "compact": false,
+    "creditControl": 0
+  },
+  {
+    "name": "footer",
+    "lang": "ka",
+    "width": 390,
+    "file": "footer-ka-390.png",
+    "scrollY": 7271,
+    "compact": false,
+    "creditControl": 0
+  },
+  {
+    "name": "home-top",
+    "lang": "ka",
+    "width": 1280,
+    "file": "home-top-ka-1280.png",
+    "scrollY": 0,
+    "compact": false,
+    "creditControl": 0
+  },
+  {
+    "name": "home-scrolled",
+    "lang": "ka",
+    "width": 1280,
+    "file": "home-scrolled-ka-1280.png",
+    "scrollY": 380,
+    "compact": false,
+    "creditControl": 0
+  },
+  {
+    "name": "hover",
+    "lang": "ka",
+    "width": 1280,
+    "file": "hover-ka-1280.png",
+    "scrollY": 0,
+    "compact": false,
+    "creditControl": 0
+  },
+  {
+    "name": "action",
+    "lang": "ka",
+    "width": 1280,
+    "file": "action-ka-1280.png",
+    "scrollY": 0,
+    "compact": false,
+    "creditControl": 0
+  },
+  {
+    "name": "university",
+    "lang": "ka",
+    "width": 1280,
+    "file": "university-ka-1280.png",
+    "scrollY": 0,
+    "compact": false,
+    "creditControl": 0
+  },
+  {
+    "name": "credit-open",
+    "lang": "ka",
+    "width": 1280,
+    "file": "credit-open-ka-1280.png",
+    "scrollY": 649,
+    "compact": false,
+    "creditControl": 0
+  },
+  {
+    "name": "footer",
+    "lang": "ka",
+    "width": 1280,
+    "file": "footer-ka-1280.png",
+    "scrollY": 4170,
+    "compact": false,
+    "creditControl": 0
+  },
+  {
+    "name": "home-top",
+    "lang": "en",
+    "width": 390,
+    "file": "home-top-en-390.png",
+    "scrollY": 0,
+    "compact": false,
+    "creditControl": 0
+  },
+  {
+    "name": "home-scrolled",
+    "lang": "en",
+    "width": 390,
+    "file": "home-scrolled-en-390.png",
+    "scrollY": 380,
+    "compact": false,
+    "creditControl": 0
+  },
+  {
+    "name": "hover",
+    "lang": "en",
+    "width": 390,
+    "file": "hover-en-390.png",
+    "scrollY": 0,
+    "compact": false,
+    "creditControl": 0
+  },
+  {
+    "name": "action",
+    "lang": "en",
+    "width": 390,
+    "file": "action-en-390.png",
+    "scrollY": 0,
+    "compact": false,
+    "creditControl": 0
+  },
+  {
+    "name": "university",
+    "lang": "en",
+    "width": 390,
+    "file": "university-en-390.png",
+    "scrollY": 0,
+    "compact": false,
+    "creditControl": 0
+  },
+  {
+    "name": "credit-open",
+    "lang": "en",
+    "width": 390,
+    "file": "credit-open-en-390.png",
+    "scrollY": 0,
+    "compact": false,
+    "creditControl": 0
+  },
+  {
+    "name": "footer",
+    "lang": "en",
+    "width": 390,
+    "file": "footer-en-390.png",
+    "scrollY": 6314,
+    "compact": false,
+    "creditControl": 0
+  },
+  {
+    "name": "home-top",
+    "lang": "en",
+    "width": 1280,
+    "file": "home-top-en-1280.png",
+    "scrollY": 0,
+    "compact": false,
+    "creditControl": 0
+  },
+  {
+    "name": "home-scrolled",
+    "lang": "en",
+    "width": 1280,
+    "file": "home-scrolled-en-1280.png",
+    "scrollY": 380,
+    "compact": false,
+    "creditControl": 0
+  },
+  {
+    "name": "hover",
+    "lang": "en",
+    "width": 1280,
+    "file": "hover-en-1280.png",
+    "scrollY": 0,
+    "compact": false,
+    "creditControl": 0
+  },
+  {
+    "name": "action",
+    "lang": "en",
+    "width": 1280,
+    "file": "action-en-1280.png",
+    "scrollY": 0,
+    "compact": false,
+    "creditControl": 0
+  },
+  {
+    "name": "university",
+    "lang": "en",
+    "width": 1280,
+    "file": "university-en-1280.png",
+    "scrollY": 0,
+    "compact": false,
+    "creditControl": 0
+  },
+  {
+    "name": "credit-open",
+    "lang": "en",
+    "width": 1280,
+    "file": "credit-open-en-1280.png",
+    "scrollY": 645,
+    "compact": false,
+    "creditControl": 0
+  },
+  {
+    "name": "footer",
+    "lang": "en",
+    "width": 1280,
+    "file": "footer-en-1280.png",
+    "scrollY": 3848,
+    "compact": false,
+    "creditControl": 0
+  }
+]

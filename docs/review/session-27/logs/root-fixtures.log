@@ -1,0 +1,6 @@
+Editable surfaces: current Publication counts/filters/no-JS, every News image decode, and Action sector labels passed in both languages.
+Projects: bilingual no-JS totals, Action/year navigation and keyboard table scrolling passed.
+Search: keyboard submit, typed ordering, language isolation, no-JS links and search-only loading passed.
+Fixture calendar: non-empty bilingual keyboard navigation and per-Event downloads passed.
+Portal: 320px, no-JS finder, FAQ keyboard, chart scrolling and map links passed in normal/forced colours, both languages.
+All existing fixture checks passed separately; no assertion or timeout changed.

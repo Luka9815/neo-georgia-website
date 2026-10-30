@@ -311,5 +311,7 @@
   "photoSitePermission": "Used with permission; no open licence asserted.",
   "photoResized": "Modified: resized and reformatted; full frame retained",
   "herePending": "The list of experts will be published once membership is confirmed.",
-  "continueToNewPage": "Continue to the new page"
+  "continueToNewPage": "Continue to the new page",
+  "switchLanguage": "switch language",
+  "photoCreditLabel": "Photo credit and licence"
 }

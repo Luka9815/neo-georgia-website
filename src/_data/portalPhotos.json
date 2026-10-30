@@ -46,33 +46,6 @@
     "overlay": false,
     "crop": true
   },
-  "tsuEvening": {
-    "id": "tsuEvening",
-    "src": "/assets/images/source/neo-tsu-evening.jpg",
-    "title": "Tbilisi State University 1.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Tbilisi_State_University_1.jpg",
-    "author": "Mr.Rosewater",
-    "licence": "CC BY-SA 3.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-    "publicDomain": false,
-    "checked": "2026-10-29",
-    "verification": "Luka supplied Commons API attribution; local full decode, dimensions and visual subject check",
-    "width": 2592,
-    "height": 1944,
-    "commonsOriginalWidth": 2592,
-    "commonsOriginalHeight": 1944,
-    "sha256": "562a207d7f23bd9d08b7b66103e05840227061eaf03046dc081ea9c85917d8e3",
-    "focal": {
-      "desktop": "50% 50%",
-      "mobile": "52% 50%"
-    },
-    "alt": {
-      "en": "Tbilisi State University illuminated in the evening, behind roadside trees.",
-      "ka": "თბილისის სახელმწიფო უნივერსიტეტის განათებული შენობა საღამოს, ხეების მიღმა."
-    },
-    "overlay": false,
-    "crop": true
-  },
   "ilia": {
     "id": "ilia",
     "src": "/assets/images/source/neo-ilia-state-university.jpg",

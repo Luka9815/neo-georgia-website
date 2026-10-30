@@ -589,3 +589,38 @@ Supersede spacing in “Session 22 item 6, shared spacing and preview bar” (20
 
 ## 2026-10-30: Session 26 item 7, responsive exceptions and quality evidence (Luka)
 Keep the larger wordmark on desktop and the prior compact mobile size so the EU emblem remains more prominent. Below 24rem only, reduce headline minimums to keep Georgian words unbroken at 320px; the long Privacy title has its own responsive scale, selected by a stable page-slug class. These are measured accessibility adjustments to the approved prototype scale; all content and translation strings remain unchanged. All axe rules/fixtures remain enabled; allow one worker for the complete queue after concurrent Chromium audits crashed. Forced colours replaces bands/gradients with system colours.
+
+
+## 2026-10-30: Session 27 item 0, deployment completion (Luka)
+Supersede local-only session completion after a merge: confirm the Deploy GitHub Pages run is green and the live site shows the change, or explicitly hand that verification to Luka. The PR #23 to #27 failure was job-level runner.temp context, fixed in PR #25 (6f331a8), first good deploy 2026-10-30 11:32 UTC. Session 27 does not merge; its eventual post-merge check is handed to Luka.
+
+
+## 2026-10-30: Session 27 item 1, compact header enhancement (Luka)
+Supersede the no-layout-JavaScript part of the Session 26 design decisions only for a tiny deferred header script: a passive scroll listener queues requestAnimationFrame and uses >96/<24 hysteresis, with an initial state update. Without JavaScript the full header/navigation remain complete. Use measured responsive header variables for anchors/facts, transform-only brand scaling, native menu animation, clear current/hover/focus indicators and reduced-motion/forced-colour/print fallbacks. Compact desktop links keep 44px targets and use 1.3 line-height to approach the 100px height target without changing font size or weight.
+
+
+## 2026-10-30: Session 27 item 2, target-language text switch (Luka)
+Supersede the compact ქა | EN control from Session 21. Luka chooses language names, not country flags: use one globe-decorated English link on Georgian pages and ქართული on English pages, with target-language accessible names and 44px targets. Keep the existing alternate URLs, lang/hreflang and redirect/404 behaviour; no current-language label or flag emoji.
+
+
+## 2026-10-30: Session 27 item 3, compact native photo attribution (Luka)
+Supersede the visible placement-caption treatment in Session 23 item 3 and Session 26’s Home credit box. Use a 32px native © details/summary control at each photo’s bottom right, with the same author/licence/file-page/modification credit in a small navy scrollable panel. Keep the full credits page and NEO News text credits. Bound panel height to the smallest 320px image frame and reserve mobile Home space while open so heading/buttons are not covered. No attribution is removed and no JavaScript is needed.
+
+
+## 2026-10-30: Session 27 item 4, university photo withdrawal (Luka)
+Supersede only the university Find placement in Session 23 item 2. Remove tsuEvening from photoPlacements, portalPhotos and generated credits; until Luka supplies a verified replacement JPEG and metadata, both languages use the existing non-photo header. Do not substitute the About TSU image. Preserve the excluded original and historical provenance. Replacement criteria: sharp daytime landscape, Georgian university/students, at least 2560px wide, supplied Commons file/author/licence, preferring CC0/public domain.
+
+
+## 2026-10-30: Session 27 item 5, footer language policy (Luka)
+Supersede only the footer repetition in “2026-10-26: English prevails between language versions”. Remove .language-policy from both footers while preserving the existing /language/ statement and its footer link. Luka’s review of Moldova/Armenia motivates the presentation change. Whether English or Georgian prevails remains an open question for Nino; this does not approve a new prevailing language.
+
+
+## 2026-10-30: Session 27 item 6, compact EU footer (Luka)
+Supersede the 30rem emblem/large padding in the Session 21 footer styling. Use complete white-box artwork at 15rem mobile and 17.5rem from 48rem, with a centred auto/1fr desktop grid, 1.5rem padding and .7rem/1.45 disclaimer at 62ch. Preserve exact wording and original bytes. Measure the flag inside each artwork, not just image height, against 38px at 320/390/1280/1920. Cap the header wordmark at 17rem to preserve its subordinate size beside the smaller emblem.
+
+
+## 2026-10-30: Session 27 measured header/footer refinements (Luka brief)
+The item 1 exception includes a header-only ResizeObserver in the same script, still under 30 lines: update full/compact height variables for actual Georgian/English wrapping and menu size, without feeding them back into header sizing. This prevents stale anchor/facts offsets, especially the Georgian two-row navigation at 1024px. Preserve CSS fallbacks without JavaScript. Use a definite 17.5rem desktop emblem width plus max-width:100% to avoid the percentage/auto-grid sizing cycle; match the responsive image sizes attribute. A 15rem wordmark cap below 48rem fixes the measured 600px Georgian prominence regression; retain the 17rem cap above 48rem. A smaller narrow-screen brand line-height preserves emblem prominence, and desktop compact line-height brings the total near 100px. No wording, artwork bytes, dependency or launch-state change.
+
+
+Session 27 measurements: at 1280/1920px both headers shrink from 149.42px to 105.75px; at 390px, 130px to 120px. At 1024px retain Georgian's two navigation rows (199.53px to 149px), with actual height variables avoiding stale facts offsets. Selected PNG bitmap measurements put the flags at 44.5/45.5px on mobile and 55.16/56.40px on wide desktop, exceeding 38px. Disclaimer contrast is 6.93:1. Keep the solid-background supports fallback after desktop compact rules, so the cascade cannot override it. Final evidence is in review/session-27.

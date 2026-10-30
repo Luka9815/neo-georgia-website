@@ -1,0 +1,345 @@
+{
+  "rows": [
+    {
+      "javaScriptEnabled": false,
+      "width": 320,
+      "lang": "ka",
+      "fullHeight": 134.75,
+      "compactHeight": 134.75,
+      "flagHeight": 44.5407442298634,
+      "brand": {
+        "width": 127.71875,
+        "height": 48.75
+      },
+      "emblem": {
+        "width": 240,
+        "height": 50.5
+      },
+      "overflow": false
+    },
+    {
+      "javaScriptEnabled": false,
+      "width": 320,
+      "lang": "en",
+      "fullHeight": 134.75,
+      "compactHeight": 134.75,
+      "flagHeight": 45.847272727272724,
+      "brand": {
+        "width": 103.15625,
+        "height": 48.75
+      },
+      "emblem": {
+        "width": 240,
+        "height": 53.5
+      },
+      "overflow": false
+    },
+    {
+      "javaScriptEnabled": false,
+      "width": 390,
+      "lang": "ka",
+      "fullHeight": 130,
+      "compactHeight": 130,
+      "flagHeight": 44.5407442298634,
+      "brand": {
+        "width": 197.71875,
+        "height": 35.09375
+      },
+      "emblem": {
+        "width": 240,
+        "height": 50.5
+      },
+      "overflow": false
+    },
+    {
+      "javaScriptEnabled": false,
+      "width": 390,
+      "lang": "en",
+      "fullHeight": 130,
+      "compactHeight": 130,
+      "flagHeight": 45.847272727272724,
+      "brand": {
+        "width": 173.15625,
+        "height": 35.09375
+      },
+      "emblem": {
+        "width": 240,
+        "height": 53.5
+      },
+      "overflow": false
+    },
+    {
+      "javaScriptEnabled": false,
+      "width": 1024,
+      "lang": "ka",
+      "fullHeight": 199.53125,
+      "compactHeight": 199.53125,
+      "flagHeight": 51.9642016015073,
+      "brand": {
+        "width": 272,
+        "height": 45.34375
+      },
+      "emblem": {
+        "width": 280,
+        "height": 58.90625
+      },
+      "overflow": false
+    },
+    {
+      "javaScriptEnabled": false,
+      "width": 1024,
+      "lang": "en",
+      "fullHeight": 140.9375,
+      "compactHeight": 140.9375,
+      "flagHeight": 53.48848484848485,
+      "brand": {
+        "width": 272,
+        "height": 45.34375
+      },
+      "emblem": {
+        "width": 280,
+        "height": 62.40625
+      },
+      "overflow": false
+    },
+    {
+      "javaScriptEnabled": false,
+      "width": 1280,
+      "lang": "ka",
+      "fullHeight": 149.421875,
+      "compactHeight": 149.421875,
+      "flagHeight": 55.21196420160151,
+      "brand": {
+        "width": 289,
+        "height": 48.15625
+      },
+      "emblem": {
+        "width": 297.5,
+        "height": 62.59375
+      },
+      "overflow": false
+    },
+    {
+      "javaScriptEnabled": false,
+      "width": 1280,
+      "lang": "en",
+      "fullHeight": 149.421875,
+      "compactHeight": 149.421875,
+      "flagHeight": 56.83151515151515,
+      "brand": {
+        "width": 289,
+        "height": 48.15625
+      },
+      "emblem": {
+        "width": 297.5,
+        "height": 66.3125
+      },
+      "overflow": false
+    },
+    {
+      "javaScriptEnabled": false,
+      "width": 1920,
+      "lang": "ka",
+      "fullHeight": 149.421875,
+      "compactHeight": 149.421875,
+      "flagHeight": 55.21196420160151,
+      "brand": {
+        "width": 289,
+        "height": 48.15625
+      },
+      "emblem": {
+        "width": 297.5,
+        "height": 62.59375
+      },
+      "overflow": false
+    },
+    {
+      "javaScriptEnabled": false,
+      "width": 1920,
+      "lang": "en",
+      "fullHeight": 149.421875,
+      "compactHeight": 149.421875,
+      "flagHeight": 56.83151515151515,
+      "brand": {
+        "width": 289,
+        "height": 48.15625
+      },
+      "emblem": {
+        "width": 297.5,
+        "height": 66.3125
+      },
+      "overflow": false
+    },
+    {
+      "javaScriptEnabled": true,
+      "width": 320,
+      "lang": "ka",
+      "fullHeight": 134.75,
+      "compactHeight": 124.75,
+      "flagHeight": 44.5407442298634,
+      "brand": {
+        "width": 127.71875,
+        "height": 48.75
+      },
+      "emblem": {
+        "width": 240,
+        "height": 50.5
+      },
+      "overflow": false
+    },
+    {
+      "javaScriptEnabled": true,
+      "width": 320,
+      "lang": "en",
+      "fullHeight": 134.75,
+      "compactHeight": 124.75,
+      "flagHeight": 45.847272727272724,
+      "brand": {
+        "width": 103.15625,
+        "height": 48.75
+      },
+      "emblem": {
+        "width": 240,
+        "height": 53.5
+      },
+      "overflow": false
+    },
+    {
+      "javaScriptEnabled": true,
+      "width": 390,
+      "lang": "ka",
+      "fullHeight": 130,
+      "compactHeight": 120,
+      "flagHeight": 44.5407442298634,
+      "brand": {
+        "width": 197.71875,
+        "height": 35.09375
+      },
+      "emblem": {
+        "width": 240,
+        "height": 50.5
+      },
+      "overflow": false
+    },
+    {
+      "javaScriptEnabled": true,
+      "width": 390,
+      "lang": "en",
+      "fullHeight": 130,
+      "compactHeight": 120,
+      "flagHeight": 45.847272727272724,
+      "brand": {
+        "width": 173.15625,
+        "height": 35.09375
+      },
+      "emblem": {
+        "width": 240,
+        "height": 53.5
+      },
+      "overflow": false
+    },
+    {
+      "javaScriptEnabled": true,
+      "width": 1024,
+      "lang": "ka",
+      "fullHeight": 199.53125,
+      "compactHeight": 149,
+      "flagHeight": 51.9642016015073,
+      "brand": {
+        "width": 272,
+        "height": 45.34375
+      },
+      "emblem": {
+        "width": 280,
+        "height": 58.90625
+      },
+      "overflow": false
+    },
+    {
+      "javaScriptEnabled": true,
+      "width": 1024,
+      "lang": "en",
+      "fullHeight": 140.9375,
+      "compactHeight": 105,
+      "flagHeight": 53.48848484848485,
+      "brand": {
+        "width": 272,
+        "height": 45.34375
+      },
+      "emblem": {
+        "width": 280,
+        "height": 62.40625
+      },
+      "overflow": false
+    },
+    {
+      "javaScriptEnabled": true,
+      "width": 1280,
+      "lang": "ka",
+      "fullHeight": 149.421875,
+      "compactHeight": 105.75,
+      "flagHeight": 55.21196420160151,
+      "brand": {
+        "width": 289,
+        "height": 48.15625
+      },
+      "emblem": {
+        "width": 297.5,
+        "height": 62.59375
+      },
+      "overflow": false
+    },
+    {
+      "javaScriptEnabled": true,
+      "width": 1280,
+      "lang": "en",
+      "fullHeight": 149.421875,
+      "compactHeight": 105.75,
+      "flagHeight": 56.83151515151515,
+      "brand": {
+        "width": 289,
+        "height": 48.15625
+      },
+      "emblem": {
+        "width": 297.5,
+        "height": 66.3125
+      },
+      "overflow": false
+    },
+    {
+      "javaScriptEnabled": true,
+      "width": 1920,
+      "lang": "ka",
+      "fullHeight": 149.421875,
+      "compactHeight": 105.75,
+      "flagHeight": 55.21196420160151,
+      "brand": {
+        "width": 289,
+        "height": 48.15625
+      },
+      "emblem": {
+        "width": 297.5,
+        "height": 62.59375
+      },
+      "overflow": false
+    },
+    {
+      "javaScriptEnabled": true,
+      "width": 1920,
+      "lang": "en",
+      "fullHeight": 149.421875,
+      "compactHeight": 105.75,
+      "flagHeight": 56.83151515151515,
+      "brand": {
+        "width": 289,
+        "height": 48.15625
+      },
+      "emblem": {
+        "width": 297.5,
+        "height": 66.3125
+      },
+      "overflow": false
+    }
+  ],
+  "axePages": 42
+}

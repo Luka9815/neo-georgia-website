@@ -1,0 +1,8 @@
+{
+  "method": "Latest chronological sample per target, not the maximum. All original reports retained.",
+  "reports": [
+    "docs/review/session-27/after/lighthouse-repeat.json",
+    "docs/review/session-27/recheck-01/lighthouse.json",
+    "docs/review/session-27/recheck-02/lighthouse.json"
+  ]
+}

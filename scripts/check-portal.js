@@ -16,6 +16,7 @@ export async function checkPortal(browser,base,prefix) {
       const photo=page.locator('.photo-hero .portal-image');
       await photo.evaluate(el=>el.decode());
       assert.ok(await photo.evaluate(el=>el.naturalWidth>=320 && el.getBoundingClientRect().height>200));
+      const summary=page.locator('.photo-hero .photo-credit-control summary');await summary.focus();await page.keyboard.press('Enter');
       for(const credit of await page.locator('.photo-hero figcaption a').all()) {
       await credit.scrollIntoViewIfNeeded();
       assert.ok(await credit.evaluate(el=>{

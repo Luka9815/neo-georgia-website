@@ -1,8 +1,18 @@
 # Handover
 
-Last updated: 2026-10-30 (Codex, Session 26 visual redesign)
+Last updated: 2026-10-30 (Codex, Session 27 header polish)
 
-## Current state
+## Session 27 current state
+
+Started from origin/main 6f331a8 on codex/session-27-header. Session 26 is merged and deployed. Session 27 implements items 0 to 6: progressive compact header, target-language link, native photo-credit disclosures, university Find fallback, language-policy placement and smaller EU footer. Keep siteLaunched=false, preview/noindex, routes, content, EU artwork and exact disclaimers. No replacement university JPEG has been supplied; both university Find pages use the non-photo header until Luka supplies a reviewed sharp daytime landscape, at least 2560px wide, with Commons file URL, author and verified licence. Do not substitute the About image.
+
+Pages deploys failed from PR #23 to PR #27 because `${{ runner.temp }}` was used in job-level env. PR #25 (6f331a8) fixed this by setting the cache path in a step. First good deploy: 2026-10-30 11:32 UTC (15:32 Tbilisi). The API confirms success for [run 41048276503](https://github.com/Luka9815/neo-georgia-website/actions/runs/41048276503), completed 11:32:40 UTC. No workflow change is needed here.
+
+Session 27 validation is complete: clean root/prefix builds, 205 tests per layout, all 109 real-page axe scans per layout with zero violations, and complete fixture reruns. Root's fixture navigation timeout and the prefix's obsolete whole-link line-count assertion are recorded with their successful reruns. Each layout also passes 42 open-credit axe scenarios and 72 photo/News cases (36 with axe). All 56 requested captures are in review/session-27. Header heights are 149.42px to 105.75px on wide desktop and 130px to 120px at 390px; every measured flag exceeds 38px and disclaimer contrast is 6.93:1.
+
+All 24 final Lighthouse pairs meet Session 26's final baseline (performance 98 to 100, accessibility 100). Two full matrices plus three isolated repeats are retained, including large intermittent mobile timing outliers; the final comparison uses the latest chronological sample per target. No site change was made between audits. Review the variation and limits in review/session-27/README.md rather than treating local scores as a hosted guarantee. The PR is for review only. Post-merge Pages success and live verification are explicitly handed to Luka; no merge, launch or deployment is performed here.
+
+## Session 26 merged baseline
 
 Session 26 starts at origin/main 53ed2e7 (merged Session 25) on codex/session-26-design. Luka approved prototype 4979276 on 2026-10-30. The stylesheet is consolidated before redesign, with a separate baseline comparison. The new system uses an 82rem container, larger desktop scale, navy title/Action bands, a directional contrast-tested Home gradient, softer cards, sector rows, individual-route pills and navy figures. See DESIGN.md and the dated supersessions in DECISIONS.md. Mobile type exceptions preserve unbroken Georgian Home words at 320px and EU emblem prominence.
 
@@ -41,9 +51,13 @@ Run npm run check:a11y against the root server and against a prefix server with 
 
 Final results: clean root and prefix builds pass, with 172 tests and 109 full browser pages per layout, zero axe violations. Each layout also passes 80 focused 390/1280px photo/News checks (40 axe, 40 without JavaScript). All eight mobile Lighthouse trials score performance 98–99 and accessibility 100. Complete Home transfer is 288,384 bytes (ka) and 247,069 bytes (en), below 500,000. Worst-case hero contrast is 5.33:1. Review/session-23 contains all 80 before/after captures, raw logs, source verification and before/after metrics. Both clean outputs exclude source originals.
 
+## Open decision for Nino
+
+Confirm whether English or Georgian prevails when versions differ. Session 27 removes only the repeated footer statement; the existing /language/ wording and its footer link remain pending her decision. No new language-precedence approval is inferred.
+
 ## Next step
 
-Review the Session 26 PR and evidence. Then obtain Nino’s content sign-off and approved office facts; follow LAUNCH.md in order. Do not merge or launch automatically. Hosted Event/image round trips, signed-grant review, domain and institutional transfer remain outside this session.
+Review the Session 27 PR on codex/session-27-header and evidence in review/session-27/README.md. After Luka merges it, confirm the Deploy GitHub Pages run succeeds and the live site shows the changes; this post-merge verification is explicitly handed to Luka because this session does not merge. Then obtain Nino’s content sign-off and approved office facts; follow LAUNCH.md in order. Do not merge or launch automatically. Hosted Event/image round trips, signed-grant review, domain and institutional transfer remain outside this session.
 
 ## Launch checklist
 

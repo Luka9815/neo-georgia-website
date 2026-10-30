@@ -1,0 +1,63 @@
+Editable surfaces: current Publication counts/filters/no-JS, every News image decode, and Action sector labels passed in both languages.
+Projects: bilingual no-JS totals, Action/year navigation and keyboard table scrolling passed.
+Search: keyboard submit, typed ordering, language isolation, no-JS links and search-only loading passed.
+Fixture calendar: non-empty bilingual keyboard navigation and per-Event downloads passed.
+Portal: 320px, no-JS finder, FAQ keyboard, chart scrolling and map links passed in normal/forced colours, both languages.
+All existing fixture checks passed separately; complete coverage and default timeouts retained.
+Photo check: ka/, 390px, JS false
+Photo check: ka/about/, 390px, JS false
+Photo check: ka/find/student/, 390px, JS false
+Photo check: ka/find/youth/, 390px, JS false
+Photo check: ka/find/vet/, 390px, JS false
+Photo check: ka/find/sport/, 390px, JS false
+Photo check: ka/opportunities/, 390px, JS false
+Photo check: en/, 390px, JS false
+Photo check: en/about/, 390px, JS false
+Photo check: en/find/student/, 390px, JS false
+Photo check: en/find/youth/, 390px, JS false
+Photo check: en/find/vet/, 390px, JS false
+Photo check: en/find/sport/, 390px, JS false
+Photo check: en/opportunities/, 390px, JS false
+Photo check: ka/, 1280px, JS false
+Photo check: ka/about/, 1280px, JS false
+Photo check: ka/find/student/, 1280px, JS false
+Photo check: ka/find/youth/, 1280px, JS false
+Photo check: ka/find/vet/, 1280px, JS false
+Photo check: ka/find/sport/, 1280px, JS false
+Photo check: ka/opportunities/, 1280px, JS false
+Photo check: en/, 1280px, JS false
+Photo check: en/about/, 1280px, JS false
+Photo check: en/find/student/, 1280px, JS false
+Photo check: en/find/youth/, 1280px, JS false
+Photo check: en/find/vet/, 1280px, JS false
+Photo check: en/find/sport/, 1280px, JS false
+Photo check: en/opportunities/, 1280px, JS false
+Photo check: ka/, 390px, JS true
+Photo check: ka/about/, 390px, JS true
+Photo check: ka/find/student/, 390px, JS true
+Photo check: ka/find/youth/, 390px, JS true
+Photo check: ka/find/vet/, 390px, JS true
+Photo check: ka/find/sport/, 390px, JS true
+Photo check: ka/opportunities/, 390px, JS true
+Photo check: en/, 390px, JS true
+Photo check: en/about/, 390px, JS true
+Photo check: en/find/student/, 390px, JS true
+Photo check: en/find/youth/, 390px, JS true
+Photo check: en/find/vet/, 390px, JS true
+Photo check: en/find/sport/, 390px, JS true
+Photo check: en/opportunities/, 390px, JS true
+Photo check: ka/, 1280px, JS true
+Photo check: ka/about/, 1280px, JS true
+Photo check: ka/find/student/, 1280px, JS true
+Photo check: ka/find/youth/, 1280px, JS true
+Photo check: ka/find/vet/, 1280px, JS true
+Photo check: ka/find/sport/, 1280px, JS true
+Photo check: ka/opportunities/, 1280px, JS true
+Photo check: en/, 1280px, JS true
+Photo check: en/about/, 1280px, JS true
+Photo check: en/find/student/, 1280px, JS true
+Photo check: en/find/youth/, 1280px, JS true
+Photo check: en/find/vet/, 1280px, JS true
+Photo check: en/find/sport/, 1280px, JS true
+Photo check: en/opportunities/, 1280px, JS true
+Session 23: 72 bilingual 390/1280px photo/News checks (36 with axe, 36 without JavaScript) pass credit focus, decoded dimensions, no source requests, no overflow and Home contrast/credit layout checks.

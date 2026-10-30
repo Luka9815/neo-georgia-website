@@ -1,0 +1,41 @@
+[
+  {
+    "formFactor": "mobile",
+    "lang": "en",
+    "route": "calls/",
+    "version": "13.6.0",
+    "performance": 100,
+    "accessibility": 100,
+    "audits": [
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0,
+        "displayValue": "Est savings of 28 KiB"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0,
+        "displayValue": "Est savings of 118 KiB"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 10 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "displayValue": "Est savings of 200 ms"
+      }
+    ]
+  }
+]

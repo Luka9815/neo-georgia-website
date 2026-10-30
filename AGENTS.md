@@ -23,6 +23,7 @@ Read before working: `docs/HANDOVER.md` (current state and next task), `docs/DEC
 6. Do not add paid services, paid plugins, trackers, or dependencies that need an account, unless a DECISIONS entry allows it.
 7. Never commit secrets, tokens or personal email addresses. The repository is public.
 8. Before finishing, run `npm run build` and fix all errors. Run the checks in section 9.
+9. After every merge to main, confirm the "Deploy GitHub Pages" run succeeded and the live site shows the change. Local tests do not prove deployment. A session is not complete until this is checked or explicitly handed to Luka.
 
 ## 3. Stack
 
@@ -57,7 +58,7 @@ Commands (Node 24 LTS, pinned in `.nvmrc`; run from the repository root):
 - Dates are written out in the page language (Georgian month names on `/ka/`).
 - Georgian typography: never apply `text-transform: uppercase` or `capitalize` to Georgian text (browsers render it as Mtavruli). Design menus and buttons around the longer Georgian labels first.
 - Person names follow the Georgian national transliteration system, applied the same way everywhere.
-- Prevailing language in case of discrepancy: English. The footer and /language/ page use the same statement from each language translation file (see DECISIONS).
+- Keep the existing prevailing-language statement on /language/ and its footer link. Do not repeat the statement in the footer. Whether English or Georgian prevails remains an open decision for Nino (Session 27, see DECISIONS).
 
 ## 5. Content model
 
@@ -108,7 +109,7 @@ Source: EACEA visual identity 2021-2027, "European flag emblem and multilingual 
   "Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them."
 - Georgian disclaimer: use the project translation supplied by Luka, proofread by Luka, recorded in the language data file. It is not an official EACEA Georgian translation. Do not replace the supplied wording with an automatic translation.
 - The emblem must be at least as prominent as other logos shown with it, and must not be linked to imply EU endorsement of third-party content.
-- Footer also contains: contact details, social links, privacy and cookie notice, accessibility statement, prevailing-language statement.
+- Footer also contains: contact details, social links, privacy and cookie notice, accessibility statement and the link to the prevailing-language page.
 
 ## 8. Quality bar
 

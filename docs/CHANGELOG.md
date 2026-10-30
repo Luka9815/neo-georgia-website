@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-10-30 (Codex, Session 27: header, language, credits and footer)
+- Correct the stale Session 26 handover. Pages deploys failed from PR #23 to PR #27 because runner.temp was used in job-level env; PR #25 (6f331a8) fixed it, first good deploy 2026-10-30 11:32 UTC (15:32 Tbilisi), run 41048276503. Require a green Pages run plus a live check after every merge, or explicit handoff to Luka.
+- Add the 23-line deferred progressive compact header with passive scroll/RAF, >96/<24 hysteresis, initial state and observed height variables for anchors/sticky facts. Keep full navigation without JavaScript, 44px controls, native menu animation, current/hover underlines and reduced-motion/forced-colour/print fallbacks. Measured wide desktop height: 149.42px to 105.75px; 390px mobile: 130px to 120px.
+- Replace ქა | EN with one globe-decorated English/ქართული target-language link and exact accessible names, preserving all alternates, redirect stubs and 404 behaviour.
+- Replace placement credit strips with native 32px © disclosures. Preserve author/licence/file/modification text, public-domain labelling, the full credits page and NEO News text credits. Bound panels and reserve mobile Home space so controls never cover the heading or buttons.
+- Withdraw tsuEvening from runtime placements and public credits. Both university Find pages use the non-photo header pending Luka's verified replacement, retaining the excluded original and historical provenance.
+- Remove only the repeated footer language statement; retain the exact /language/ text and footer link. Nino's English/Georgian decision remains open, reflected in AGENTS and HANDOVER.
+- Reduce the complete white-box EU artwork to 15rem/17.5rem, centre the desktop grid, and use the requested .7rem/1.45 disclaimer without changing wording or artwork. Actual flags measure 44.5/45.5px mobile and 55.16/56.40px wide desktop; disclaimer contrast is 6.93:1. Bound the wordmark at intermediate widths to preserve EU prominence.
+- Record clean root/prefix builds, all 205 tests per layout, both 109-page axe queues and successful complete fixture reruns, 42 open-credit axe cases per layout, and 56 requested captures. All 24 final Lighthouse pairs meet Session 26 (98 to 100 performance, 100 accessibility), using latest chronological samples with both full matrices, isolated repeats and timing outliers retained in review/session-27. Keep siteLaunched=false, preview/noindex, authored content, data, fonts, routes, exact disclaimers and all 16 office placeholders. No merge or launch; post-merge Pages/live verification is explicitly handed to Luka.
+
 ## 2026-10-30 (Codex, Session 26: visual redesign)
 - Consolidate site.css before redesign and compare all 72 bilingual 390/1280/1920px baseline captures within a declared pixel tolerance.
 - Integrate the approved prototype: wider desktop scale, contrast-bounded directional Home overlay, navy title and Action bands, softer cards, sector layouts, individual-route pills and navy figures.

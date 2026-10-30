@@ -1,0 +1,36 @@
+0 {
+  header: 199.53125,
+  headerBottom: 199.53125,
+  factsTop: 215.53125,
+  top: '215.531px',
+  compact: '',
+  full: '199.53125px',
+  scrollY: 800
+}
+250 {
+  header: 184.5,
+  headerBottom: 184.5,
+  factsTop: 200.5,
+  top: '200.5px',
+  compact: '184.5px',
+  full: '199.53125px',
+  scrollY: 785
+}
+500 {
+  header: 149,
+  headerBottom: 149,
+  factsTop: 165,
+  top: '165px',
+  compact: '149px',
+  full: '199.53125px',
+  scrollY: 749
+}
+1000 {
+  header: 149,
+  headerBottom: 149,
+  factsTop: 165,
+  top: '165px',
+  compact: '149px',
+  full: '199.53125px',
+  scrollY: 749
+}
