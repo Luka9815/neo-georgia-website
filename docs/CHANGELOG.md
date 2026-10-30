@@ -488,3 +488,7 @@ Final serial mobile Lighthouse: 34 runs, performance 96–100, accessibility/bes
 
 ## 2026-10-30: Session 27 item 0, deployment housekeeping
 Corrected the stale Session 26 next step and recorded the Pages incident: deploys failed from PR #23 to PR #27 because `${{ runner.temp }}` was used in job-level env. PR #25 (6f331a8) fixed it; the first good deploy was 2026-10-30 11:32 UTC (15:32 Tbilisi), confirmed by run 41048276503. AGENTS now requires a successful Pages run plus live verification after every merge, or explicit handoff to Luka.
+
+
+## 2026-10-30: Session 27 item 1, progressive compact header
+Added the dependency-free deferred scroll enhancement with hysteresis, compact/full styling, animated navigation indicators and hover pills. Header variables clear anchors and sticky Action facts; no-JavaScript, reduced-motion, forced-colour and print states remain usable.

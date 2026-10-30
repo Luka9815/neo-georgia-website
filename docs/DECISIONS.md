@@ -593,3 +593,7 @@ Keep the larger wordmark on desktop and the prior compact mobile size so the EU 
 
 ## 2026-10-30: Session 27 item 0, deployment completion (Luka)
 Supersede local-only session completion after a merge: confirm the Deploy GitHub Pages run is green and the live site shows the change, or explicitly hand that verification to Luka. The PR #23 to #27 failure was job-level runner.temp context, fixed in PR #25 (6f331a8), first good deploy 2026-10-30 11:32 UTC. Session 27 does not merge; its eventual post-merge check is handed to Luka.
+
+
+## 2026-10-30: Session 27 item 1, compact header enhancement (Luka)
+Supersede the no-layout-JavaScript part of the Session 26 design decisions only for a tiny deferred header script: a passive scroll listener queues requestAnimationFrame and uses >96/<24 hysteresis, with an initial state update. Without JavaScript the full header/navigation remain complete. Use measured responsive header variables for anchors/facts, transform-only brand scaling, native menu animation, clear current/hover/focus indicators and reduced-motion/forced-colour/print fallbacks. Compact desktop links keep 44px targets and use 1.3 line-height to approach the 100px height target without changing font size or weight.
