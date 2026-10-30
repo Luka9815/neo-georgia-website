@@ -496,3 +496,7 @@ Added the dependency-free deferred scroll enhancement with hysteresis, compact/f
 
 ## 2026-10-30: Session 27 item 2, language names
 Replaced ქა | EN with a single English/ქართული target-language link and decorative globe. Preserved alternates and native mobile navigation, with translated accessible names and hover/focus pills.
+
+
+## 2026-10-30: Session 27 item 3, compact photo credits
+Replaced placement credit strips with native © disclosures, preserving every existing credit link and modification note. Kept full-page credits and News permission text; added bounded panels, keyboard focus and forced-colour treatment.

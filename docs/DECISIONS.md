@@ -601,3 +601,7 @@ Supersede the no-layout-JavaScript part of the Session 26 design decisions only 
 
 ## 2026-10-30: Session 27 item 2, target-language text switch (Luka)
 Supersede the compact ქა | EN control from Session 21. Luka chooses language names, not country flags: use one globe-decorated English link on Georgian pages and ქართული on English pages, with target-language accessible names and 44px targets. Keep the existing alternate URLs, lang/hreflang and redirect/404 behaviour; no current-language label or flag emoji.
+
+
+## 2026-10-30: Session 27 item 3, compact native photo attribution (Luka)
+Supersede the visible placement-caption treatment in Session 23 item 3 and Session 26’s Home credit box. Use a 32px native © details/summary control at each photo’s bottom right, with the same author/licence/file-page/modification credit in a small navy scrollable panel. Keep the full credits page and NEO News text credits. Bound panel height to the smallest 320px image frame and reserve mobile Home space while open so heading/buttons are not covered. No attribution is removed and no JavaScript is needed.
