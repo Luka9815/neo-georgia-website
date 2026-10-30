@@ -1,0 +1,23 @@
+axe: checked 20 pages
+axe: checked 40 pages
+axe: checked 60 pages
+axe: checked 80 pages
+axe: checked 100 pages
+Editable surfaces: current Publication counts/filters/no-JS, every News image decode, and Action sector labels passed in both languages.
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+page.goto: Timeout 30000ms exceeded.
+Call log:
+[2m  - navigating to "http://127.0.0.1:33033/ka/resources/statistics/", waiting until "load"[22m
+
+    at checkProjects (/workspace/neo-georgia-website/scripts/check-projects.js:8:18)
+    at async file:///workspace/neo-georgia-website/scripts/check-a11y.js:121:3 {
+  log: [
+    '  - navigating to "http://127.0.0.1:33033/ka/resources/statistics/", waiting until "load"'
+  ],
+  name: 'TimeoutError'
+}
+
+Node.js v24.19.0

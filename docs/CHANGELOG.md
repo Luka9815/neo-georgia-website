@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-10-30 (Codex, Session 27: header, language, credits and footer)
+- Correct the stale Session 26 handover. Pages deploys failed from PR #23 to PR #27 because runner.temp was used in job-level env; PR #25 (6f331a8) fixed it, first good deploy 2026-10-30 11:32 UTC (15:32 Tbilisi), run 41048276503. Require a green Pages run plus a live check after every merge, or explicit handoff to Luka.
+- Add the 23-line deferred progressive compact header with passive scroll/RAF, >96/<24 hysteresis, initial state and observed height variables for anchors/sticky facts. Keep full navigation without JavaScript, 44px controls, native menu animation, current/hover underlines and reduced-motion/forced-colour/print fallbacks. Measured wide desktop height: 149.42px to 105.75px; 390px mobile: 130px to 120px.
+- Replace ქა | EN with one globe-decorated English/ქართული target-language link and exact accessible names, preserving all alternates, redirect stubs and 404 behaviour.
+- Replace placement credit strips with native 32px © disclosures. Preserve author/licence/file/modification text, public-domain labelling, the full credits page and NEO News text credits. Bound panels and reserve mobile Home space so controls never cover the heading or buttons.
+- Withdraw tsuEvening from runtime placements and public credits. Both university Find pages use the non-photo header pending Luka's verified replacement, retaining the excluded original and historical provenance.
+- Remove only the repeated footer language statement; retain the exact /language/ text and footer link. Nino's English/Georgian decision remains open, reflected in AGENTS and HANDOVER.
+- Reduce the complete white-box EU artwork to 15rem/17.5rem, centre the desktop grid, and use the requested .7rem/1.45 disclaimer without changing wording or artwork. Actual flags measure 44.5/45.5px mobile and 55.16/56.40px wide desktop; disclaimer contrast is 6.93:1. Bound the wordmark at intermediate widths to preserve EU prominence.
+- Record clean root/prefix builds, all 205 tests per layout, both 109-page axe queues and successful complete fixture reruns, 42 open-credit axe cases per layout, and 56 requested captures. All 24 final Lighthouse pairs meet Session 26 (98 to 100 performance, 100 accessibility), using latest chronological samples with both full matrices, isolated repeats and timing outliers retained in review/session-27. Keep siteLaunched=false, preview/noindex, authored content, data, fonts, routes, exact disclaimers and all 16 office placeholders. No merge or launch; post-merge Pages/live verification is explicitly handed to Luka.
+
 ## 2026-10-30 (Codex, Session 26: visual redesign)
 - Consolidate site.css before redesign and compare all 72 bilingual 390/1280/1920px baseline captures within a declared pixel tolerance.
 - Integrate the approved prototype: wider desktop scale, contrast-bounded directional Home overlay, navy title and Action bands, softer cards, sector layouts, individual-route pills and navy figures.
@@ -484,31 +494,3 @@ Final serial mobile Lighthouse: 34 runs, performance 96–100, accessibility/bes
 
 ## 2026-10-30: Deploy workflow fix (Claude Code, for Luka)
 - Move PORTAL_IMAGE_CACHE_DIR from job-level env (the runner context is not allowed there, so GitHub rejected the workflow and no deploy job ran after the Session 23 merge) to a first step writing $RUNNER_TEMP to GITHUB_ENV. No site code or content changed. Sessions 23 to 26 deploy once this is merged.
-
-
-## 2026-10-30: Session 27 item 0, deployment housekeeping
-Corrected the stale Session 26 next step and recorded the Pages incident: deploys failed from PR #23 to PR #27 because `${{ runner.temp }}` was used in job-level env. PR #25 (6f331a8) fixed it; the first good deploy was 2026-10-30 11:32 UTC (15:32 Tbilisi), confirmed by run 41048276503. AGENTS now requires a successful Pages run plus live verification after every merge, or explicit handoff to Luka.
-
-
-## 2026-10-30: Session 27 item 1, progressive compact header
-Added the dependency-free deferred scroll enhancement with hysteresis, compact/full styling, animated navigation indicators and hover pills. Header variables clear anchors and sticky Action facts; no-JavaScript, reduced-motion, forced-colour and print states remain usable.
-
-
-## 2026-10-30: Session 27 item 2, language names
-Replaced ქა | EN with a single English/ქართული target-language link and decorative globe. Preserved alternates and native mobile navigation, with translated accessible names and hover/focus pills.
-
-
-## 2026-10-30: Session 27 item 3, compact photo credits
-Replaced placement credit strips with native © disclosures, preserving every existing credit link and modification note. Kept full-page credits and News permission text; added bounded panels, keyboard focus and forced-colour treatment.
-
-
-## 2026-10-30: Session 27 item 4, university Find fallback
-Withdrew tsuEvening from runtime placements and public credits. Both university Find pages retain their title and guidance without a photograph while a supplied verified replacement is pending. Preserved historical provenance and all other photo records.
-
-
-## 2026-10-30: Session 27 item 5, language-policy placement
-Removed the repeated footer statement while retaining the unchanged language page and footer link. HANDOVER flags language precedence as an open decision for Nino, and AGENTS reflects this presentation supersession.
-
-
-## 2026-10-30: Session 27 item 6, smaller EU block
-Reduced the whole-image funding emblem and desktop footer padding, centred the grid and tightened disclaimer type without changing its text or artwork. Retained the white box/aspect ratio and the existing high-contrast muted colour; flag-size and prominence measurements follow in the review evidence.

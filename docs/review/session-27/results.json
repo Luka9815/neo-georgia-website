@@ -1,0 +1,36 @@
+{
+  "baseline": "6f331a8973d460e5c19e0a422957e69748391b38",
+  "branch": "codex/session-27-header",
+  "items": "0 through 6 complete",
+  "layouts": [
+    "/",
+    "/neo-georgia-website/"
+  ],
+  "testsPerLayout": 205,
+  "testsFailed": 0,
+  "nonRedirectBrowserPagesPerLayout": 109,
+  "axeViolations": 0,
+  "completeFixtureRerunsPerLayout": true,
+  "openCreditAxeViewsPerLayout": 42,
+  "photoNewsCasesPerLayout": 72,
+  "photoNewsAxeViewsPerLayout": 36,
+  "screenshotsBefore": 28,
+  "screenshotsAfter": 28,
+  "headerScriptLines": 23,
+  "disclaimerContrast": 6.931663653745181,
+  "lighthouse": {
+    "auditCount": 51,
+    "finalTargets": 24,
+    "performanceMinimum": 98,
+    "performanceMaximum": 100,
+    "accessibility": 100,
+    "comparison": "All final latest chronological samples meet or exceed Session 26 final baseline; all attempts and timing outliers retained."
+  },
+  "siteLaunched": false,
+  "postMergeDeploymentAndLiveVerification": "Handed to Luka; no merge or deploy performed",
+  "open": [
+    "Nino language-precedence decision",
+    "Verified replacement university photograph",
+    "Existing LAUNCH.md prerequisites"
+  ]
+}

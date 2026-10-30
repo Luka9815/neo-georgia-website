@@ -37,11 +37,14 @@ test('every Commons placement has local responsive variants and an accurate bili
   const university=load(readFileSync(`_site/${lang}/find/university/index.html`,'utf8'));
   assert.equal(university('.portal-photo').length,0);
   assert.equal(university('h1').length,1);
-  assert.equal(university('[data-find-action]').length,placements.find.university?0:5);
+  assert.equal(university('[data-find-action]').length,JSON.parse(readFileSync('src/_data/findAudiences.json')).find(item=>item.slug==='university').actions.length);
   for(const [id,route] of Object.entries(routes)){
    const photo=photos[id];const $=load(readFileSync(`_site/${lang}/${route}index.html`,'utf8'));
    const figure=$(`figure[data-photo-id="${id}"]`);assert.equal(figure.length,1,`${lang}/${route}`);
    assert.equal($('figure.portal-photo').length,1);
+   const control=figure.find('details.photo-credit-control');assert.equal(control.length,1);assert.equal(control.attr('open'),undefined);
+   assert.equal(control.find('summary').text().trim(),'©');assert.equal(control.find('summary').attr('aria-label'),strings.photoCreditLabel);
+   assert.equal(control.find('.photo-credit-panel a[rel=license]').length,1);
    const picture=figure.find('picture');assert.equal(picture.length,1);assert.equal(picture.find('source').length,2);
    const image=picture.find('img');assert.equal(image.attr('alt'),photo.alt[lang]);
    assert.equal(image.attr('loading'),'eager');assert.equal(image.attr('fetchpriority'),'high');assert.equal(image.attr('width'),'2560');

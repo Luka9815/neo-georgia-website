@@ -1,0 +1,51 @@
+[
+  {
+    "formFactor": "mobile",
+    "lang": "ka",
+    "route": "opportunities/cbhe/",
+    "version": "13.6.0",
+    "performance": 100,
+    "accessibility": 100,
+    "audits": [
+      {
+        "id": "speed-index",
+        "score": 0.99,
+        "displayValue": "2.2 s"
+      },
+      {
+        "id": "max-potential-fid",
+        "score": 0.58,
+        "displayValue": "220 ms"
+      },
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0,
+        "displayValue": "Est savings of 26 KiB"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0,
+        "displayValue": "Est savings of 134 KiB"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 14 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "displayValue": "Est savings of 70 ms"
+      }
+    ]
+  }
+]

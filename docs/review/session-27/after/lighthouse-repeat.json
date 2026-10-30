@@ -1,0 +1,1254 @@
+[
+  {
+    "formFactor": "mobile",
+    "lang": "ka",
+    "route": "",
+    "version": "13.6.0",
+    "performance": 99,
+    "accessibility": 100,
+    "audits": [
+      {
+        "id": "largest-contentful-paint",
+        "score": 0.96,
+        "displayValue": "2.1 s"
+      },
+      {
+        "id": "max-potential-fid",
+        "score": 0.44,
+        "displayValue": "270 ms"
+      },
+      {
+        "id": "interactive",
+        "score": 0.99,
+        "displayValue": "2.1 s"
+      },
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0,
+        "displayValue": "Est savings of 22 KiB"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0,
+        "displayValue": "Est savings of 173 KiB"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 24 KiB"
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 17 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 0 ms"
+      }
+    ]
+  },
+  {
+    "formFactor": "mobile",
+    "lang": "ka",
+    "route": "opportunities/",
+    "version": "13.6.0",
+    "performance": 99,
+    "accessibility": 100,
+    "audits": [
+      {
+        "id": "largest-contentful-paint",
+        "score": 0.94,
+        "displayValue": "2.3 s"
+      },
+      {
+        "id": "interactive",
+        "score": 0.99,
+        "displayValue": "2.3 s"
+      },
+      {
+        "id": "unminified-css",
+        "score": 0,
+        "displayValue": "Est savings of 4 KiB"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0,
+        "displayValue": "Est savings of 26 KiB"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0,
+        "displayValue": "Est savings of 188 KiB"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 16 KiB"
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 28 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "displayValue": "Est savings of 100 ms"
+      }
+    ]
+  },
+  {
+    "formFactor": "mobile",
+    "lang": "ka",
+    "route": "opportunities/cbhe/",
+    "version": "13.6.0",
+    "performance": 100,
+    "accessibility": 100,
+    "audits": [
+      {
+        "id": "first-contentful-paint",
+        "score": 0.98,
+        "displayValue": "1.3 s"
+      },
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0.5,
+        "displayValue": "Est savings of 26 KiB"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 134 KiB"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 14 KiB"
+      },
+      {
+        "id": "forced-reflow-insight",
+        "score": 0
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "displayValue": "Est savings of 150 ms"
+      }
+    ]
+  },
+  {
+    "formFactor": "mobile",
+    "lang": "ka",
+    "route": "calls/",
+    "version": "13.6.0",
+    "performance": 100,
+    "accessibility": 100,
+    "audits": [
+      {
+        "id": "first-contentful-paint",
+        "score": 0.99,
+        "displayValue": "1.2 s"
+      },
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0.5,
+        "displayValue": "Est savings of 28 KiB"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 134 KiB"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 16 KiB"
+      },
+      {
+        "id": "forced-reflow-insight",
+        "score": 0
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "displayValue": "Est savings of 150 ms"
+      }
+    ]
+  },
+  {
+    "formFactor": "mobile",
+    "lang": "ka",
+    "route": "news/neo-dissemination-event-2025/",
+    "version": "13.6.0",
+    "performance": 99,
+    "accessibility": 100,
+    "audits": [
+      {
+        "id": "largest-contentful-paint",
+        "score": 0.94,
+        "displayValue": "2.3 s"
+      },
+      {
+        "id": "interactive",
+        "score": 0.99,
+        "displayValue": "2.3 s"
+      },
+      {
+        "id": "unminified-css",
+        "score": 0,
+        "displayValue": "Est savings of 4 KiB"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0,
+        "displayValue": "Est savings of 29 KiB"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0,
+        "displayValue": "Est savings of 163 KiB"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 18 KiB"
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0,
+        "displayValue": "Est savings of 15 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "displayValue": "Est savings of 110 ms"
+      }
+    ]
+  },
+  {
+    "formFactor": "mobile",
+    "lang": "ka",
+    "route": "about/",
+    "version": "13.6.0",
+    "performance": 69,
+    "accessibility": 100,
+    "audits": [
+      {
+        "id": "first-contentful-paint",
+        "score": 0.96,
+        "displayValue": "1.5 s"
+      },
+      {
+        "id": "largest-contentful-paint",
+        "score": 0.78,
+        "displayValue": "3.0 s"
+      },
+      {
+        "id": "speed-index",
+        "score": 0.98,
+        "displayValue": "2.5 s"
+      },
+      {
+        "id": "total-blocking-time",
+        "score": 0.17,
+        "displayValue": "1,340 ms"
+      },
+      {
+        "id": "max-potential-fid",
+        "score": 0.01,
+        "displayValue": "810 ms"
+      },
+      {
+        "id": "interactive",
+        "score": 0.96,
+        "displayValue": "3.0 s"
+      },
+      {
+        "id": "mainthread-work-breakdown",
+        "score": 0,
+        "displayValue": "2.5 s"
+      },
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0,
+        "displayValue": "Est savings of 28 KiB"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0,
+        "displayValue": "Est savings of 223 KiB"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 10 KiB"
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0,
+        "displayValue": "Est savings of 49 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "displayValue": "Est savings of 280 ms"
+      }
+    ]
+  },
+  {
+    "formFactor": "mobile",
+    "lang": "en",
+    "route": "",
+    "version": "13.6.0",
+    "performance": 99,
+    "accessibility": 100,
+    "audits": [
+      {
+        "id": "first-contentful-paint",
+        "score": 0.99,
+        "displayValue": "1.1 s"
+      },
+      {
+        "id": "largest-contentful-paint",
+        "score": 0.96,
+        "displayValue": "2.1 s"
+      },
+      {
+        "id": "speed-index",
+        "score": 0.99,
+        "displayValue": "2.3 s"
+      },
+      {
+        "id": "total-blocking-time",
+        "score": 0.99,
+        "displayValue": "80 ms"
+      },
+      {
+        "id": "max-potential-fid",
+        "score": 0.31,
+        "displayValue": "320 ms"
+      },
+      {
+        "id": "interactive",
+        "score": 0.99,
+        "displayValue": "2.1 s"
+      },
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0,
+        "displayValue": "Est savings of 22 KiB"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0,
+        "displayValue": "Est savings of 158 KiB"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 18 KiB"
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0,
+        "displayValue": "Est savings of 15 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0.5
+      }
+    ]
+  },
+  {
+    "formFactor": "mobile",
+    "lang": "en",
+    "route": "opportunities/",
+    "version": "13.6.0",
+    "performance": 99,
+    "accessibility": 100,
+    "audits": [
+      {
+        "id": "largest-contentful-paint",
+        "score": 0.96,
+        "displayValue": "2.1 s"
+      },
+      {
+        "id": "interactive",
+        "score": 0.99,
+        "displayValue": "2.1 s"
+      },
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0,
+        "displayValue": "Est savings of 26 KiB"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0,
+        "displayValue": "Est savings of 172 KiB"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 11 KiB"
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0,
+        "displayValue": "Est savings of 28 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "displayValue": "Est savings of 120 ms"
+      }
+    ]
+  },
+  {
+    "formFactor": "mobile",
+    "lang": "en",
+    "route": "opportunities/cbhe/",
+    "version": "13.6.0",
+    "performance": 100,
+    "accessibility": 100,
+    "audits": [
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0,
+        "displayValue": "Est savings of 26 KiB"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0,
+        "displayValue": "Est savings of 118 KiB"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 8 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "displayValue": "Est savings of 150 ms"
+      }
+    ]
+  },
+  {
+    "formFactor": "mobile",
+    "lang": "en",
+    "route": "calls/",
+    "version": "13.6.0",
+    "performance": 99,
+    "accessibility": 100,
+    "audits": [
+      {
+        "id": "first-contentful-paint",
+        "score": 0.92,
+        "displayValue": "1.7 s"
+      },
+      {
+        "id": "largest-contentful-paint",
+        "score": 0.99,
+        "displayValue": "1.7 s"
+      },
+      {
+        "id": "total-blocking-time",
+        "score": 0.99,
+        "displayValue": "60 ms"
+      },
+      {
+        "id": "max-potential-fid",
+        "score": 0.7,
+        "displayValue": "190 ms"
+      },
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0.5,
+        "displayValue": "Est savings of 28 KiB"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 118 KiB"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 10 KiB"
+      },
+      {
+        "id": "forced-reflow-insight",
+        "score": 0
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0.5
+      }
+    ]
+  },
+  {
+    "formFactor": "mobile",
+    "lang": "en",
+    "route": "news/neo-dissemination-event-2025/",
+    "version": "13.6.0",
+    "performance": 100,
+    "accessibility": 100,
+    "audits": [
+      {
+        "id": "largest-contentful-paint",
+        "score": 0.98,
+        "displayValue": "1.8 s"
+      },
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0,
+        "displayValue": "Est savings of 29 KiB"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0,
+        "displayValue": "Est savings of 147 KiB"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 9 KiB"
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 15 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "displayValue": "Est savings of 170 ms"
+      }
+    ]
+  },
+  {
+    "formFactor": "mobile",
+    "lang": "en",
+    "route": "about/",
+    "version": "13.6.0",
+    "performance": 99,
+    "accessibility": 100,
+    "audits": [
+      {
+        "id": "first-contentful-paint",
+        "score": 0.99,
+        "displayValue": "1.2 s"
+      },
+      {
+        "id": "largest-contentful-paint",
+        "score": 0.96,
+        "displayValue": "2.1 s"
+      },
+      {
+        "id": "speed-index",
+        "score": 0.97,
+        "displayValue": "2.6 s"
+      },
+      {
+        "id": "max-potential-fid",
+        "score": 0.99,
+        "displayValue": "80 ms"
+      },
+      {
+        "id": "interactive",
+        "score": 0.99,
+        "displayValue": "2.1 s"
+      },
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0,
+        "displayValue": "Est savings of 28 KiB"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0,
+        "displayValue": "Est savings of 202 KiB"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 6 KiB"
+      },
+      {
+        "id": "forced-reflow-insight",
+        "score": 0
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0,
+        "displayValue": "Est savings of 43 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "displayValue": "Est savings of 150 ms"
+      }
+    ]
+  },
+  {
+    "formFactor": "desktop",
+    "lang": "ka",
+    "route": "",
+    "version": "13.6.0",
+    "performance": 100,
+    "accessibility": 100,
+    "audits": [
+      {
+        "id": "largest-contentful-paint",
+        "score": 0.99,
+        "displayValue": "0.6 s"
+      },
+      {
+        "id": "max-potential-fid",
+        "score": 0.95,
+        "displayValue": "110 ms"
+      },
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0,
+        "displayValue": "Est savings of 20 KiB"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0,
+        "displayValue": "Est savings of 286 KiB"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 24 KiB"
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0,
+        "displayValue": "Est savings of 48 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0.5
+      }
+    ]
+  },
+  {
+    "formFactor": "desktop",
+    "lang": "ka",
+    "route": "opportunities/",
+    "version": "13.6.0",
+    "performance": 100,
+    "accessibility": 100,
+    "audits": [
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0,
+        "displayValue": "Est savings of 25 KiB"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0,
+        "displayValue": "Est savings of 222 KiB"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 16 KiB"
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 5 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "displayValue": "Est savings of 30 ms"
+      }
+    ]
+  },
+  {
+    "formFactor": "desktop",
+    "lang": "ka",
+    "route": "opportunities/cbhe/",
+    "version": "13.6.0",
+    "performance": 100,
+    "accessibility": 100,
+    "audits": [
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0.5,
+        "displayValue": "Est savings of 25 KiB"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 157 KiB"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 14 KiB"
+      },
+      {
+        "id": "forced-reflow-insight",
+        "score": 0
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 20 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "displayValue": "Est savings of 40 ms"
+      }
+    ]
+  },
+  {
+    "formFactor": "desktop",
+    "lang": "ka",
+    "route": "calls/",
+    "version": "13.6.0",
+    "performance": 100,
+    "accessibility": 100,
+    "audits": [
+      {
+        "id": "max-potential-fid",
+        "score": 0.99,
+        "displayValue": "70 ms"
+      },
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0.5,
+        "displayValue": "Est savings of 27 KiB"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 134 KiB"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 16 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0.5
+      }
+    ]
+  },
+  {
+    "formFactor": "desktop",
+    "lang": "ka",
+    "route": "news/neo-dissemination-event-2025/",
+    "version": "13.6.0",
+    "performance": 100,
+    "accessibility": 100,
+    "audits": [
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0,
+        "displayValue": "Est savings of 28 KiB"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0,
+        "displayValue": "Est savings of 163 KiB"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 18 KiB"
+      },
+      {
+        "id": "forced-reflow-insight",
+        "score": 0
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 16 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "displayValue": "Est savings of 40 ms"
+      }
+    ]
+  },
+  {
+    "formFactor": "desktop",
+    "lang": "ka",
+    "route": "about/",
+    "version": "13.6.0",
+    "performance": 100,
+    "accessibility": 100,
+    "audits": [
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0,
+        "displayValue": "Est savings of 28 KiB"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0,
+        "displayValue": "Est savings of 274 KiB"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 10 KiB"
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 20 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "displayValue": "Est savings of 30 ms"
+      }
+    ]
+  },
+  {
+    "formFactor": "desktop",
+    "lang": "en",
+    "route": "",
+    "version": "13.6.0",
+    "performance": 100,
+    "accessibility": 100,
+    "audits": [
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0.5,
+        "displayValue": "Est savings of 20 KiB"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0,
+        "displayValue": "Est savings of 270 KiB"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 18 KiB"
+      },
+      {
+        "id": "forced-reflow-insight",
+        "score": 0
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0,
+        "displayValue": "Est savings of 68 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "displayValue": "Est savings of 40 ms"
+      }
+    ]
+  },
+  {
+    "formFactor": "desktop",
+    "lang": "en",
+    "route": "opportunities/",
+    "version": "13.6.0",
+    "performance": 100,
+    "accessibility": 100,
+    "audits": [
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0.5,
+        "displayValue": "Est savings of 25 KiB"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0,
+        "displayValue": "Est savings of 206 KiB"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 11 KiB"
+      },
+      {
+        "id": "forced-reflow-insight",
+        "score": 0
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 5 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "displayValue": "Est savings of 40 ms"
+      }
+    ]
+  },
+  {
+    "formFactor": "desktop",
+    "lang": "en",
+    "route": "opportunities/cbhe/",
+    "version": "13.6.0",
+    "performance": 100,
+    "accessibility": 100,
+    "audits": [
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0.5,
+        "displayValue": "Est savings of 25 KiB"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 135 KiB"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 8 KiB"
+      },
+      {
+        "id": "forced-reflow-insight",
+        "score": 0
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 8 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "displayValue": "Est savings of 40 ms"
+      }
+    ]
+  },
+  {
+    "formFactor": "desktop",
+    "lang": "en",
+    "route": "calls/",
+    "version": "13.6.0",
+    "performance": 100,
+    "accessibility": 100,
+    "audits": [
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0,
+        "displayValue": "Est savings of 27 KiB"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0,
+        "displayValue": "Est savings of 135 KiB"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 10 KiB"
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 8 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "displayValue": "Est savings of 40 ms"
+      }
+    ]
+  },
+  {
+    "formFactor": "desktop",
+    "lang": "en",
+    "route": "news/neo-dissemination-event-2025/",
+    "version": "13.6.0",
+    "performance": 100,
+    "accessibility": 100,
+    "audits": [
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0,
+        "displayValue": "Est savings of 28 KiB"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0,
+        "displayValue": "Est savings of 147 KiB"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 9 KiB"
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 16 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "displayValue": "Est savings of 40 ms"
+      }
+    ]
+  },
+  {
+    "formFactor": "desktop",
+    "lang": "en",
+    "route": "about/",
+    "version": "13.6.0",
+    "performance": 100,
+    "accessibility": 100,
+    "audits": [
+      {
+        "id": "unminified-css",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0,
+        "displayValue": "Est savings of 28 KiB"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0,
+        "displayValue": "Est savings of 253 KiB"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 6 KiB"
+      },
+      {
+        "id": "forced-reflow-insight",
+        "score": 0
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0.5,
+        "displayValue": "Est savings of 8 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "displayValue": "Est savings of 40 ms"
+      }
+    ]
+  }
+]

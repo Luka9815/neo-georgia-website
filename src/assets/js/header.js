@@ -13,4 +13,11 @@ if (header) {
     }
   }, { passive: true });
   update();
+  if ('ResizeObserver' in window) {
+    new ResizeObserver(([entry]) => {
+      const key = header.hasAttribute('data-compact') ? '--header-h-compact' : '--header-h';
+      const height = entry.borderBoxSize?.[0]?.blockSize ?? header.getBoundingClientRect().height;
+      document.documentElement.style.setProperty(key, `${height}px`);
+    }).observe(header);
+  }
 }

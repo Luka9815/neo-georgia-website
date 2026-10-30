@@ -1,6 +1,6 @@
 # Interface design
 
-Current system: see the Session 26 approved prototype section below. Earlier dated session sections record historical choices and are superseded where named in DECISIONS.md.
+Current system: the Session 26 approved prototype plus Session 27 header and footer polish below. Earlier dated session sections record historical choices and are superseded where named in DECISIONS.md.
 
 
 ## Historical font comparison, 26 October 2026
@@ -108,3 +108,18 @@ Every inner page, including articles, 404 and redirect stubs, has a navy title b
 Cards use #d6dde8 borders, two-layer shadows and 1.15rem titles. Auto-fill grids retain spare tracks with 21rem minimums, 19rem for compact Home Actions. At 64rem sector labels sit beside the grid with a sticky gold marker and light divider. Icon surfaces blend light blue to teal. Hover lift occurs only under prefers-reduced-motion: no-preference. Individual routes use native pill links at least 48px tall in a tinted panel. Home sections use 4rem padding, larger headings and navy figures with white values, gold rules and a white chart card. All links in the figures band remain white with visible focus.
 
 Forced colours replaces new bands and icon gradients with Canvas/CanvasText, removes the photographic overlay and uses Highlight focus. Existing no-JavaScript, keyboard, search, calendar, project, populated-fixture and EU checks remain. A11Y_WORKERS=1 runs the same complete queue serially on memory-limited environments; the default remains two workers. Lighthouse uses an external installation, with no new repository dependency. Review/session-26 records local baseline/after scores and explicit audit limits.
+
+
+## Session 27 header and footer polish, 30 October 2026
+
+Session 27 supersedes the header/current-navigation treatment, dual language labels, visible placement credit strips and large footer emblem described above. The dated decisions identify each supersession. All authored content, routes, EU originals and exact disclaimer wording remain; the university Find photo is withdrawn pending a supplied and verified replacement, with its historical provenance retained.
+
+A deferred dependency-free header script of fewer than 30 lines is the narrow layout-JavaScript exception approved by Luka. Passive scroll plus requestAnimationFrame applies >96/<24 hysteresis and sets the initial state on reload. A header-only ResizeObserver updates the full/compact height custom properties as text wraps or the native menu changes size. These properties affect anchor clearance and sticky facts, never the header's own size. CSS-only responsive heights remain the no-JavaScript fallback. Full navigation and content work without scripting. Desktop brand scale is .86, mobile .9; no font-size animation. Reduced motion applies compact spacing instantly without transforms. Forced colours removes backdrop effects and preserves current indicators; print uses a non-sticky full header.
+
+Navigation uses a three-pixel blue underline for current, hover and focus states, stable font weight, and visible two-pixel focus outlines. Search and the single target-language link share pill hover surfaces and 44px targets. English on Georgian pages and ქართული on English pages use decorative inline globes and target-language accessible names. Native mobile navigation fades/slides only when reduced motion is not requested.
+
+Each active Commons placement has a native 32px © disclosure at bottom right. Its bounded navy panel retains author, exact licence version, file link and modification note. Public-domain Campus E retains its author and public-domain label. Mobile Home reserves space while its panel is open; the desktop panel sits beside the text column. NEO News text credits stay intact. The full credits page omits only the withdrawn tsuEvening record.
+
+The complete white-box EU artwork is 15rem on mobile and 17.5rem from 48rem. A definite desktop width avoids the intrinsic percentage/auto-grid sizing cycle, with max-width:100% for available space. Responsive image sizes matches these widths. The subordinate wordmark is capped at 15rem below 48rem and 17rem above, with a 1.25 line-height below 24rem to fit three Georgian lines beneath the smaller emblem's height. Desktop compact branding uses 1.2 line-height to approach the requested total header height. The disclaimer remains the exact supplied text, .7rem/1.45 at 62ch in the existing muted colour. The language-precedence statement remains on its page and linked from the footer, pending Nino's decision.
+
+Measured geometry, colour contrast, all 56 captures, full test/browser results and the Session 26 Lighthouse comparison are recorded in review/session-27/README.md.

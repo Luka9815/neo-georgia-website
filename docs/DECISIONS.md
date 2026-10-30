@@ -617,3 +617,10 @@ Supersede only the footer repetition in “2026-10-26: English prevails between 
 
 ## 2026-10-30: Session 27 item 6, compact EU footer (Luka)
 Supersede the 30rem emblem/large padding in the Session 21 footer styling. Use complete white-box artwork at 15rem mobile and 17.5rem from 48rem, with a centred auto/1fr desktop grid, 1.5rem padding and .7rem/1.45 disclaimer at 62ch. Preserve exact wording and original bytes. Measure the flag inside each artwork, not just image height, against 38px at 320/390/1280/1920. Cap the header wordmark at 17rem to preserve its subordinate size beside the smaller emblem.
+
+
+## 2026-10-30: Session 27 measured header/footer refinements (Luka brief)
+The item 1 exception includes a header-only ResizeObserver in the same script, still under 30 lines: update full/compact height variables for actual Georgian/English wrapping and menu size, without feeding them back into header sizing. This prevents stale anchor/facts offsets, especially the Georgian two-row navigation at 1024px. Preserve CSS fallbacks without JavaScript. Use a definite 17.5rem desktop emblem width plus max-width:100% to avoid the percentage/auto-grid sizing cycle; match the responsive image sizes attribute. A 15rem wordmark cap below 48rem fixes the measured 600px Georgian prominence regression; retain the 17rem cap above 48rem. A smaller narrow-screen brand line-height preserves emblem prominence, and desktop compact line-height brings the total near 100px. No wording, artwork bytes, dependency or launch-state change.
+
+
+Session 27 measurements: at 1280/1920px both headers shrink from 149.42px to 105.75px; at 390px, 130px to 120px. At 1024px retain Georgian's two navigation rows (199.53px to 149px), with actual height variables avoiding stale facts offsets. Selected PNG bitmap measurements put the flags at 44.5/45.5px on mobile and 55.16/56.40px on wide desktop, exceeding 38px. Disclaimer contrast is 6.93:1. Keep the solid-background supports fallback after desktop compact rules, so the cascade cannot override it. Final evidence is in review/session-27.

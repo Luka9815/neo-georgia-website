@@ -63,6 +63,13 @@ test('all rendered pages have language, metadata, seven menu links, one h1 and E
     assert.ok(existsSync(`_site${strings.emblemPath}`));
     assert.equal($('.emblem-placeholder').length, 0);
     assert.equal($('header a[hreflang]').attr('href'), publicPath(view.alternate));
+    const switcher = $('header a[hreflang]');
+    assert.equal(switcher.length, 1);
+    assert.equal(switcher.text().trim(), view.lang === 'ka' ? 'English' : 'ქართული');
+    assert.equal(switcher.attr('aria-label'), view.lang === 'ka' ? 'English: switch language' : 'ქართული: ენის შეცვლა');
+    assert.equal(switcher.attr('lang'), view.lang === 'ka' ? 'en' : 'ka');
+    assert.equal(switcher.find('svg[aria-hidden=true]').length, 1);
+    assert.equal($('script[defer][src="' + publicPath('/assets/js/header.js') + '"]').length, 1);
     if (view.translated === false) assert.equal($('link[rel=alternate]').length, 1);
     else assert.equal($('link[rel=alternate]').length, 2);
   }

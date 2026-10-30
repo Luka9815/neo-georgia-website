@@ -1,0 +1,218 @@
+[
+  {
+    "formFactor": "mobile",
+    "lang": "ka",
+    "route": "",
+    "beforePerformance": 99,
+    "afterPerformance": 99,
+    "beforeAccessibility": 100,
+    "afterAccessibility": 100
+  },
+  {
+    "formFactor": "mobile",
+    "lang": "ka",
+    "route": "opportunities/",
+    "beforePerformance": 99,
+    "afterPerformance": 99,
+    "beforeAccessibility": 100,
+    "afterAccessibility": 100
+  },
+  {
+    "formFactor": "mobile",
+    "lang": "ka",
+    "route": "opportunities/cbhe/",
+    "beforePerformance": 100,
+    "afterPerformance": 100,
+    "beforeAccessibility": 100,
+    "afterAccessibility": 100
+  },
+  {
+    "formFactor": "mobile",
+    "lang": "ka",
+    "route": "calls/",
+    "beforePerformance": 100,
+    "afterPerformance": 100,
+    "beforeAccessibility": 100,
+    "afterAccessibility": 100
+  },
+  {
+    "formFactor": "mobile",
+    "lang": "ka",
+    "route": "news/neo-dissemination-event-2025/",
+    "beforePerformance": 99,
+    "afterPerformance": 99,
+    "beforeAccessibility": 100,
+    "afterAccessibility": 100
+  },
+  {
+    "formFactor": "mobile",
+    "lang": "ka",
+    "route": "about/",
+    "beforePerformance": 98,
+    "afterPerformance": 98,
+    "beforeAccessibility": 100,
+    "afterAccessibility": 100
+  },
+  {
+    "formFactor": "mobile",
+    "lang": "en",
+    "route": "",
+    "beforePerformance": 99,
+    "afterPerformance": 99,
+    "beforeAccessibility": 100,
+    "afterAccessibility": 100
+  },
+  {
+    "formFactor": "mobile",
+    "lang": "en",
+    "route": "opportunities/",
+    "beforePerformance": 99,
+    "afterPerformance": 99,
+    "beforeAccessibility": 100,
+    "afterAccessibility": 100
+  },
+  {
+    "formFactor": "mobile",
+    "lang": "en",
+    "route": "opportunities/cbhe/",
+    "beforePerformance": 100,
+    "afterPerformance": 100,
+    "beforeAccessibility": 100,
+    "afterAccessibility": 100
+  },
+  {
+    "formFactor": "mobile",
+    "lang": "en",
+    "route": "calls/",
+    "beforePerformance": 100,
+    "afterPerformance": 100,
+    "beforeAccessibility": 100,
+    "afterAccessibility": 100
+  },
+  {
+    "formFactor": "mobile",
+    "lang": "en",
+    "route": "news/neo-dissemination-event-2025/",
+    "beforePerformance": 100,
+    "afterPerformance": 100,
+    "beforeAccessibility": 100,
+    "afterAccessibility": 100
+  },
+  {
+    "formFactor": "mobile",
+    "lang": "en",
+    "route": "about/",
+    "beforePerformance": 99,
+    "afterPerformance": 99,
+    "beforeAccessibility": 100,
+    "afterAccessibility": 100
+  },
+  {
+    "formFactor": "desktop",
+    "lang": "ka",
+    "route": "",
+    "beforePerformance": 100,
+    "afterPerformance": 100,
+    "beforeAccessibility": 100,
+    "afterAccessibility": 100
+  },
+  {
+    "formFactor": "desktop",
+    "lang": "ka",
+    "route": "opportunities/",
+    "beforePerformance": 100,
+    "afterPerformance": 100,
+    "beforeAccessibility": 100,
+    "afterAccessibility": 100
+  },
+  {
+    "formFactor": "desktop",
+    "lang": "ka",
+    "route": "opportunities/cbhe/",
+    "beforePerformance": 100,
+    "afterPerformance": 100,
+    "beforeAccessibility": 100,
+    "afterAccessibility": 100
+  },
+  {
+    "formFactor": "desktop",
+    "lang": "ka",
+    "route": "calls/",
+    "beforePerformance": 100,
+    "afterPerformance": 100,
+    "beforeAccessibility": 100,
+    "afterAccessibility": 100
+  },
+  {
+    "formFactor": "desktop",
+    "lang": "ka",
+    "route": "news/neo-dissemination-event-2025/",
+    "beforePerformance": 100,
+    "afterPerformance": 100,
+    "beforeAccessibility": 100,
+    "afterAccessibility": 100
+  },
+  {
+    "formFactor": "desktop",
+    "lang": "ka",
+    "route": "about/",
+    "beforePerformance": 100,
+    "afterPerformance": 100,
+    "beforeAccessibility": 100,
+    "afterAccessibility": 100
+  },
+  {
+    "formFactor": "desktop",
+    "lang": "en",
+    "route": "",
+    "beforePerformance": 100,
+    "afterPerformance": 100,
+    "beforeAccessibility": 100,
+    "afterAccessibility": 100
+  },
+  {
+    "formFactor": "desktop",
+    "lang": "en",
+    "route": "opportunities/",
+    "beforePerformance": 100,
+    "afterPerformance": 100,
+    "beforeAccessibility": 100,
+    "afterAccessibility": 100
+  },
+  {
+    "formFactor": "desktop",
+    "lang": "en",
+    "route": "opportunities/cbhe/",
+    "beforePerformance": 100,
+    "afterPerformance": 100,
+    "beforeAccessibility": 100,
+    "afterAccessibility": 100
+  },
+  {
+    "formFactor": "desktop",
+    "lang": "en",
+    "route": "calls/",
+    "beforePerformance": 100,
+    "afterPerformance": 100,
+    "beforeAccessibility": 100,
+    "afterAccessibility": 100
+  },
+  {
+    "formFactor": "desktop",
+    "lang": "en",
+    "route": "news/neo-dissemination-event-2025/",
+    "beforePerformance": 100,
+    "afterPerformance": 100,
+    "beforeAccessibility": 100,
+    "afterAccessibility": 100
+  },
+  {
+    "formFactor": "desktop",
+    "lang": "en",
+    "route": "about/",
+    "beforePerformance": 100,
+    "afterPerformance": 100,
+    "beforeAccessibility": 100,
+    "afterAccessibility": 100
+  }
+]
