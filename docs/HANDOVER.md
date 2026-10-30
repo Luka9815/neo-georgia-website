@@ -51,9 +51,9 @@ Run npm run check:a11y against the root server and against a prefix server with 
 
 Final results: clean root and prefix builds pass, with 172 tests and 109 full browser pages per layout, zero axe violations. Each layout also passes 80 focused 390/1280px photo/News checks (40 axe, 40 without JavaScript). All eight mobile Lighthouse trials score performance 98–99 and accessibility 100. Complete Home transfer is 288,384 bytes (ka) and 247,069 bytes (en), below 500,000. Worst-case hero contrast is 5.33:1. Review/session-23 contains all 80 before/after captures, raw logs, source verification and before/after metrics. Both clean outputs exclude source originals.
 
-## Open decision for Nino
+## Prevailing language (closed 2026-10-30)
 
-Confirm whether English or Georgian prevails when versions differ. Session 27 removes only the repeated footer statement; the existing /language/ wording and its footer link remain pending her decision. No new language-precedence approval is inferred.
+Luka decided to remove the prevailing-language statement entirely: the /language/ page, its footer link and the translation strings are gone. NEO Ukraine, Moldova and Armenia publish no such statement. The real page count is now 107 per layout (was 109). Nino may still raise it in her review; reintroducing it needs a new DECISIONS entry.
 
 ## Next step
 

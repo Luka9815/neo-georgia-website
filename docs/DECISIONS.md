@@ -624,3 +624,7 @@ The item 1 exception includes a header-only ResizeObserver in the same script, s
 
 
 Session 27 measurements: at 1280/1920px both headers shrink from 149.42px to 105.75px; at 390px, 130px to 120px. At 1024px retain Georgian's two navigation rows (199.53px to 149px), with actual height variables avoiding stale facts offsets. Selected PNG bitmap measurements put the flags at 44.5/45.5px on mobile and 55.16/56.40px on wide desktop, exceeding 38px. Disclaimer contrast is 6.93:1. Keep the solid-background supports fallback after desktop compact rules, so the cascade cannot override it. Final evidence is in review/session-27.
+
+
+## 2026-10-30: Remove the prevailing-language statement entirely (Luka)
+Supersedes "2026-10-26: English prevails between language versions" and the Session 27 placement entry that kept /language/. Checked NEO Ukraine, Moldova and Armenia: none publishes a statement on which language version prevails. Remove /ka/language/ and /en/language/, the footer link and the language/prevailingStatement strings. The old WordPress site carried such a statement; it is not migrated. No redirect is added because the site has not launched. Reintroducing a statement needs a new decision.

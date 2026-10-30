@@ -40,7 +40,7 @@ Seven top-level menu items replace the current twelve. URLs use English slugs in
 | რესურსები            | Resources           | /resources/     | Publications from 2014, information day materials, statistics, FAQ, education system in Georgia, horizontal priorities, useful links |
 | ოფისის შესახებ       | About               | /about/         | NEO Georgia, team, Higher Education Reform Experts (/here/), services (VAT exemption, support letters), contact                      |
 
-Footer on every page: contact details, social links, privacy and cookie notice, accessibility statement, language-prevails statement, EU emblem with funding statement and EACEA disclaimer.
+Footer on every page: contact details, social links, privacy and cookie notice, accessibility statement, EU emblem with funding statement and EACEA disclaimer.
 
 **Where current content goes**
 

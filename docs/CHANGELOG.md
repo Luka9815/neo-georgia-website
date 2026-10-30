@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-10-30 (Claude, prevailing-language removal)
+- Remove the /language/ page in both languages, its footer link and the language/prevailingStatement strings, following Luka's decision (other NEO sites carry no such statement). Replace the Session 27 test with one asserting no page, link or statement is published. Real routes drop from 109 to 107 per layout.
+
 ## 2026-10-30 (Codex, Session 27: header, language, credits and footer)
 - Correct the stale Session 26 handover. Pages deploys failed from PR #23 to PR #27 because runner.temp was used in job-level env; PR #25 (6f331a8) fixed it, first good deploy 2026-10-30 11:32 UTC (15:32 Tbilisi), run 41048276503. Require a green Pages run plus a live check after every merge, or explicit handoff to Luka.
 - Add the 23-line deferred progressive compact header with passive scroll/RAF, >96/<24 hysteresis, initial state and observed height variables for anchors/sticky facts. Keep full navigation without JavaScript, 44px controls, native menu animation, current/hover underlines and reduced-motion/forced-colour/print fallbacks. Measured wide desktop height: 149.42px to 105.75px; 390px mobile: 130px to 120px.

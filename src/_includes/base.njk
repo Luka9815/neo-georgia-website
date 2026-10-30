@@ -67,7 +67,7 @@
       <nav aria-label="{{ t.about }}">
         <h2>{{ t.legal }}</h2>
         <ul>
-          {% for key in ['privacy','accessibility','language'] %}
+          {% for key in ['privacy','accessibility'] %}
             <li><a href="/{{ view.lang }}/{{ key }}/">{{ t[key] }}</a></li>
           {% endfor %}
           <li><a href="/{{ view.lang }}/about/credits/">{{ t.credits }}</a></li>
