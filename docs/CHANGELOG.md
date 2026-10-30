@@ -481,3 +481,6 @@ Centralise bilingual office/legal/Team/HERE facts and generate review/TBC.md; en
 Validation: clean root/prefix builds, 197 tests and 109 browser pages with zero axe violations per layout; 192 bilingual before/after/launched fixture captures. External link checks remain unverified under the environment’s outbound restrictions. See review/session-24 for serial mobile Lighthouse, raw evidence and manual/hosted limits.
 
 Final serial mobile Lighthouse: 34 runs, performance 96–100, accessibility/best practices 100; preview/noindex limits SEO to 69.
+
+## 2026-10-30: Deploy workflow fix (Claude Code, for Luka)
+- Move PORTAL_IMAGE_CACHE_DIR from job-level env (the runner context is not allowed there, so GitHub rejected the workflow and no deploy job ran after the Session 23 merge) to a first step writing $RUNNER_TEMP to GITHUB_ENV. No site code or content changed. Sessions 23 to 26 deploy once this is merged.
