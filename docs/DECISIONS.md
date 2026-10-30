@@ -589,3 +589,7 @@ Supersede spacing in “Session 22 item 6, shared spacing and preview bar” (20
 
 ## 2026-10-30: Session 26 item 7, responsive exceptions and quality evidence (Luka)
 Keep the larger wordmark on desktop and the prior compact mobile size so the EU emblem remains more prominent. Below 24rem only, reduce headline minimums to keep Georgian words unbroken at 320px; the long Privacy title has its own responsive scale, selected by a stable page-slug class. These are measured accessibility adjustments to the approved prototype scale; all content and translation strings remain unchanged. All axe rules/fixtures remain enabled; allow one worker for the complete queue after concurrent Chromium audits crashed. Forced colours replaces bands/gradients with system colours.
+
+
+## 2026-10-30: Session 27 item 0, deployment completion (Luka)
+Supersede local-only session completion after a merge: confirm the Deploy GitHub Pages run is green and the live site shows the change, or explicitly hand that verification to Luka. The PR #23 to #27 failure was job-level runner.temp context, fixed in PR #25 (6f331a8), first good deploy 2026-10-30 11:32 UTC. Session 27 does not merge; its eventual post-merge check is handed to Luka.

@@ -23,6 +23,7 @@ Read before working: `docs/HANDOVER.md` (current state and next task), `docs/DEC
 6. Do not add paid services, paid plugins, trackers, or dependencies that need an account, unless a DECISIONS entry allows it.
 7. Never commit secrets, tokens or personal email addresses. The repository is public.
 8. Before finishing, run `npm run build` and fix all errors. Run the checks in section 9.
+9. After every merge to main, confirm the "Deploy GitHub Pages" run succeeded and the live site shows the change. Local tests do not prove deployment. A session is not complete until this is checked or explicitly handed to Luka.
 
 ## 3. Stack
 

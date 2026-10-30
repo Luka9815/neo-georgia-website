@@ -1,8 +1,14 @@
 # Handover
 
-Last updated: 2026-10-30 (Codex, Session 26 visual redesign)
+Last updated: 2026-10-30 (Codex, Session 27 header polish)
 
-## Current state
+## Session 27 current state
+
+Started from origin/main 6f331a8 on codex/session-27-header. Session 26 is merged and deployed. Header/language/credit/footer work is in progress under Luka’s Session 27 brief; keep siteLaunched=false, preview/noindex, routes, content, EU artwork and exact disclaimers. No replacement university JPEG has been supplied, so use the non-photo university Find header until a reviewed replacement arrives.
+
+Pages deploys failed from PR #23 to PR #27 because `${{ runner.temp }}` was used in job-level env. PR #25 (6f331a8) fixed this by setting the cache path in a step. First good deploy: 2026-10-30 11:32 UTC (15:32 Tbilisi). The API confirms success for [run 41048276503](https://github.com/Luka9815/neo-georgia-website/actions/runs/41048276503), completed 11:32:40 UTC. No workflow change is needed here.
+
+## Session 26 merged baseline
 
 Session 26 starts at origin/main 53ed2e7 (merged Session 25) on codex/session-26-design. Luka approved prototype 4979276 on 2026-10-30. The stylesheet is consolidated before redesign, with a separate baseline comparison. The new system uses an 82rem container, larger desktop scale, navy title/Action bands, a directional contrast-tested Home gradient, softer cards, sector rows, individual-route pills and navy figures. See DESIGN.md and the dated supersessions in DECISIONS.md. Mobile type exceptions preserve unbroken Georgian Home words at 320px and EU emblem prominence.
 
@@ -43,7 +49,7 @@ Final results: clean root and prefix builds pass, with 172 tests and 109 full br
 
 ## Next step
 
-Review the Session 26 PR and evidence. Then obtain Nino’s content sign-off and approved office facts; follow LAUNCH.md in order. Do not merge or launch automatically. Hosted Event/image round trips, signed-grant review, domain and institutional transfer remain outside this session.
+Review the Session 27 PR and evidence when available. After Luka merges it, confirm the Deploy GitHub Pages run succeeds and the live site shows the changes; this post-merge verification is explicitly handed to Luka because this session does not merge. Then obtain Nino’s content sign-off and approved office facts; follow LAUNCH.md in order. Do not merge or launch automatically. Hosted Event/image round trips, signed-grant review, domain and institutional transfer remain outside this session.
 
 ## Launch checklist
 
