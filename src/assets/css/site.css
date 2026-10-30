@@ -98,7 +98,7 @@ dd { margin: 0 0 var(--space-2); }
 .footer-grid { display: grid; gap: var(--space-4); padding-block: 0 var(--space-4); }
 .footer-grid section { margin: 0px; }
 .footer-grid h2 { font-size: 1.125rem; }
-.footer-grid p, .language-policy { color: var(--inverse-muted); }
+.footer-grid p { color: var(--inverse-muted); }
 .footer-grid nav a { display: inline-block; padding-block: 0.5rem; }
 .eu-footer { display: grid; gap: var(--space-3); padding: var(--space-2); background: var(--paper); color: var(--ink); border-radius: 0.25rem; }
 .eu-emblem { display: block; width: min(100%, 30rem); height: auto; align-self: start; background: var(--paper); }

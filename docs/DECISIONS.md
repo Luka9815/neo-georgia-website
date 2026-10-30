@@ -609,3 +609,7 @@ Supersede the visible placement-caption treatment in Session 23 item 3 and Sessi
 
 ## 2026-10-30: Session 27 item 4, university photo withdrawal (Luka)
 Supersede only the university Find placement in Session 23 item 2. Remove tsuEvening from photoPlacements, portalPhotos and generated credits; until Luka supplies a verified replacement JPEG and metadata, both languages use the existing non-photo header. Do not substitute the About TSU image. Preserve the excluded original and historical provenance. Replacement criteria: sharp daytime landscape, Georgian university/students, at least 2560px wide, supplied Commons file/author/licence, preferring CC0/public domain.
+
+
+## 2026-10-30: Session 27 item 5, footer language policy (Luka)
+Supersede only the footer repetition in “2026-10-26: English prevails between language versions”. Remove .language-policy from both footers while preserving the existing /language/ statement and its footer link. Luka’s review of Moldova/Armenia motivates the presentation change. Whether English or Georgian prevails remains an open question for Nino; this does not approve a new prevailing language.

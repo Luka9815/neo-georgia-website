@@ -47,6 +47,10 @@ Run npm run check:a11y against the root server and against a prefix server with 
 
 Final results: clean root and prefix builds pass, with 172 tests and 109 full browser pages per layout, zero axe violations. Each layout also passes 80 focused 390/1280px photo/News checks (40 axe, 40 without JavaScript). All eight mobile Lighthouse trials score performance 98–99 and accessibility 100. Complete Home transfer is 288,384 bytes (ka) and 247,069 bytes (en), below 500,000. Worst-case hero contrast is 5.33:1. Review/session-23 contains all 80 before/after captures, raw logs, source verification and before/after metrics. Both clean outputs exclude source originals.
 
+## Open decision for Nino
+
+Confirm whether English or Georgian prevails when versions differ. Session 27 removes only the repeated footer statement; the existing /language/ wording and its footer link remain pending her decision. No new language-precedence approval is inferred.
+
 ## Next step
 
 Review the Session 27 PR and evidence when available. After Luka merges it, confirm the Deploy GitHub Pages run succeeds and the live site shows the changes; this post-merge verification is explicitly handed to Luka because this session does not merge. Then obtain Nino’s content sign-off and approved office facts; follow LAUNCH.md in order. Do not merge or launch automatically. Hosted Event/image round trips, signed-grant review, domain and institutional transfer remain outside this session.

@@ -310,12 +310,13 @@ test('home renders upcoming/open deadlines instead of rejecting every status', (
   }
 });
 
-test('English-prevails policy is identical in each footer and its language page', () => {
+test('existing prevailing-language page keeps its statement and footer link without repeating it in the footer', () => {
   for (const lang of ['ka', 'en']) {
     const strings = JSON.parse(read(`src/_data/${lang}.json`));
     const page = load(read(`_site/${lang}/language/index.html`));
     assert.ok(page('main').text().includes(strings.prevailingStatement));
-    assert.equal(page('footer .language-policy').text(), strings.prevailingStatement);
+    assert.equal(page('footer .language-policy').length,0);
+    assert.equal(page(`footer a[href="${publicPath(`/${lang}/language/`)}"]`).length,1);
     assert.equal(page('h1').text(), strings.language);
   }
 });

@@ -504,3 +504,7 @@ Replaced placement credit strips with native © disclosures, preserving every ex
 
 ## 2026-10-30: Session 27 item 4, university Find fallback
 Withdrew tsuEvening from runtime placements and public credits. Both university Find pages retain their title and guidance without a photograph while a supplied verified replacement is pending. Preserved historical provenance and all other photo records.
+
+
+## 2026-10-30: Session 27 item 5, language-policy placement
+Removed the repeated footer statement while retaining the unchanged language page and footer link. HANDOVER flags language precedence as an open decision for Nino, and AGENTS reflects this presentation supersession.
