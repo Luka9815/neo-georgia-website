@@ -7,15 +7,15 @@ import {load} from 'cheerio';
 import photos from '../src/_data/portalPhotos.json' with {type:'json'};
 import placements from '../src/_data/photoPlacements.json' with {type:'json'};
 import {getPathPrefix} from '../lib/urls.js';
-const routes={sameba:'',tsuMain:'about/',ilia:'find/student/',tsuEvening:'find/university/',rike:'find/youth/',gtu:'find/vet/',batumi:'find/sport/',river:'opportunities/'};
+const routes={sameba:'',tsuMain:'about/',ilia:'find/student/',rike:'find/youth/',gtu:'find/vet/',batumi:'find/sport/',river:'opportunities/'};
 const commons=Object.values(photos).filter(p=>p.author);
 const prefix=getPathPrefix();
 const readme=readFileSync('src/assets/images/README.md','utf8');
 
-test('all eight Commons sources retain their reviewed hashes, dimensions and per-image README provenance outside output',()=>{
- assert.equal(commons.length,8);
+test('all active Commons sources retain their reviewed hashes, dimensions and per-image README provenance outside output',()=>{
+ assert.equal(commons.length,7);
  assert.equal(placements.home,'sameba');assert.equal(placements.about,'tsuMain');assert.equal(placements.opportunities,'river');
- assert.deepEqual(placements.find,{student:'ilia',university:'tsuEvening',youth:'rike',vet:'gtu',sport:'batumi'});
+ assert.deepEqual(placements.find,{student:'ilia',youth:'rike',vet:'gtu',sport:'batumi'});
  assert.ok(!existsSync('_site/assets/images/source'));
  for(const photo of commons){
   const name=photo.src.split('/').at(-1);
@@ -32,7 +32,12 @@ test('every Commons placement has local responsive variants and an accurate bili
  for(const lang of ['ka','en']){
   const strings=JSON.parse(readFileSync(`src/_data/${lang}.json`));
   const credits=load(readFileSync(`_site/${lang}/about/credits/index.html`,'utf8'));
-  assert.equal(credits('[data-photo-source]').length,9);
+  assert.equal(credits('[data-photo-source]').length,8);
+  assert.equal(credits('[data-photo-source=tsuEvening]').length,0);
+  const university=load(readFileSync(`_site/${lang}/find/university/index.html`,'utf8'));
+  assert.equal(university('.portal-photo').length,0);
+  assert.equal(university('h1').length,1);
+  assert.equal(university('[data-find-action]').length,placements.find.university?0:5);
   for(const [id,route] of Object.entries(routes)){
    const photo=photos[id];const $=load(readFileSync(`_site/${lang}/${route}index.html`,'utf8'));
    const figure=$(`figure[data-photo-id="${id}"]`);assert.equal(figure.length,1,`${lang}/${route}`);

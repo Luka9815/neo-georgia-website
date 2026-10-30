@@ -20,6 +20,8 @@ The large files in source/ are build inputs and are excluded from Eleventy passt
 
 ## neo-tsu-evening.jpg
 
+Withdrawn from public use on 2026-10-30 (Session 27, Luka): no replacement file has been supplied. The university Find page uses its non-photo header. Runtime metadata, placement and public credit entry are removed; the excluded original and this historical provenance are retained. Do not reuse the About photograph as a substitute. A new supplied image needs its Commons file page, author/licence, full decode and dimension checks (daytime, sharp, landscape, at least 2560px wide).
+
 - Title: Tbilisi State University 1.jpg
 - Author: Mr.Rosewater
 - Licence: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)

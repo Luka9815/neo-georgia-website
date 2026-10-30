@@ -500,3 +500,7 @@ Replaced ქა | EN with a single English/ქართული target-language
 
 ## 2026-10-30: Session 27 item 3, compact photo credits
 Replaced placement credit strips with native © disclosures, preserving every existing credit link and modification note. Kept full-page credits and News permission text; added bounded panels, keyboard focus and forced-colour treatment.
+
+
+## 2026-10-30: Session 27 item 4, university Find fallback
+Withdrew tsuEvening from runtime placements and public credits. Both university Find pages retain their title and guidance without a photograph while a supplied verified replacement is pending. Preserved historical provenance and all other photo records.

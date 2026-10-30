@@ -605,3 +605,7 @@ Supersede the compact ქა | EN control from Session 21. Luka chooses language
 
 ## 2026-10-30: Session 27 item 3, compact native photo attribution (Luka)
 Supersede the visible placement-caption treatment in Session 23 item 3 and Session 26’s Home credit box. Use a 32px native © details/summary control at each photo’s bottom right, with the same author/licence/file-page/modification credit in a small navy scrollable panel. Keep the full credits page and NEO News text credits. Bound panel height to the smallest 320px image frame and reserve mobile Home space while open so heading/buttons are not covered. No attribution is removed and no JavaScript is needed.
+
+
+## 2026-10-30: Session 27 item 4, university photo withdrawal (Luka)
+Supersede only the university Find placement in Session 23 item 2. Remove tsuEvening from photoPlacements, portalPhotos and generated credits; until Luka supplies a verified replacement JPEG and metadata, both languages use the existing non-photo header. Do not substitute the About TSU image. Preserve the excluded original and historical provenance. Replacement criteria: sharp daytime landscape, Georgian university/students, at least 2560px wide, supplied Commons file/author/licence, preferring CC0/public domain.

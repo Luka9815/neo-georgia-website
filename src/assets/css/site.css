@@ -266,7 +266,7 @@ dd { margin: 0 0 var(--space-2); }
 .photo-banner { margin: 0px 0px 1.5rem; }
 .photo-banner picture { overflow: hidden; border-radius: var(--radius); aspect-ratio: 3.2; box-shadow: 0 1px 2px #05264f14, 0 10px 28px #05264f12; }
 .photo-banner .portal-image { width: 100%; height: 100%; object-fit: cover; object-position: var(--photo-focal); }
-.photo-banner:is([data-photo-id="tsuMain"], [data-photo-id="tsuEvening"], [data-photo-id="ilia"], [data-photo-id="gtu"]) picture { aspect-ratio: 1.6 / 1; }
+.photo-banner:is([data-photo-id="tsuMain"], [data-photo-id="ilia"], [data-photo-id="gtu"]) picture { aspect-ratio: 1.6 / 1; }
 .home-hero :is(.eyebrow, .hero-intro) { color: var(--paper); }
 .photo-modified { display: block; }
 .photo-banner[data-photo-id="ilia"] picture { aspect-ratio: 4 / 3; }
