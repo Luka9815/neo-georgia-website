@@ -27,7 +27,7 @@ section { margin-block: 2rem; }
 .site-header { position: sticky; top: 0px; z-index: 10; background: var(--paper); border-top: 4px solid var(--blue); border-bottom: 1px solid var(--line); box-shadow: rgba(5, 38, 79, 0.04) 0px 2px 12px; }
 .header-inner { padding-block: var(--space-2) 0; }
 .header-top { display: flex; align-items: center; justify-content: space-between; gap: var(--space-2); padding-bottom: var(--space-2); }
-.brand { transform-origin: left center; display: grid; color: var(--blue-dark); max-width: 18rem; min-width: 0px; text-decoration: none; }
+.brand { transform-origin: left center; display: grid; color: var(--blue-dark); max-width: 17rem; min-width: 0px; text-decoration: none; }
 .brand-name { font-weight: 700; line-height: 1.35; font-size: 1.05rem; }
 .brand-image { width: min(100%, 15rem); height: 5rem; object-fit: contain; object-position: left center; }
 .header-tools { flex-shrink: 0; display: flex; align-items: center; gap: var(--space-1); }
@@ -101,9 +101,9 @@ dd { margin: 0 0 var(--space-2); }
 .footer-grid p { color: var(--inverse-muted); }
 .footer-grid nav a { display: inline-block; padding-block: 0.5rem; }
 .eu-footer { display: grid; gap: var(--space-3); padding: var(--space-2); background: var(--paper); color: var(--ink); border-radius: 0.25rem; }
-.eu-emblem { display: block; width: min(100%, 30rem); height: auto; align-self: start; background: var(--paper); }
+.eu-emblem { display: block; width: min(100%, 15rem); height: auto; align-self: start; background: var(--paper); }
 .eu-funding p:last-child { margin-bottom: 0px; }
-.funding-disclaimer, .eu-funding p[lang="en"] { font-size: 0.75rem; line-height: 1.5; color: var(--muted); }
+.funding-disclaimer, .eu-funding p[lang="en"] { font-size: .7rem; max-width: 62ch; line-height: 1.45; color: var(--muted); }
 .publication-filters { display: flex; flex-wrap: wrap; gap: 1rem; align-items: end; margin-block: 1.5rem; }
 .publication-filters label { display: grid; gap: 0.5rem; }
 .publication-filters select, .publication-filters button { font: inherit; padding: 0.6rem; max-width: 100%; min-height: 48px; }
@@ -296,7 +296,8 @@ dd { margin: 0 0 var(--space-2); }
 @media (min-width: 48rem) {
   .wrapper:not(.page-home) { padding-inline: var(--space-4); }
   .footer-grid { grid-template-columns: 1.3fr 1fr 1fr; }
-  .eu-footer { grid-template-columns: minmax(18rem, 1fr) minmax(0px, 1fr); padding: var(--space-4); }
+  .eu-footer { grid-template-columns: auto 1fr; align-items: center; padding: var(--space-3); }
+  .eu-emblem { width: min(100%,17.5rem); align-self: center; }
   .figures { grid-template-columns: repeat(3, 1fr); }
 }
 @media (min-width: 64rem) {

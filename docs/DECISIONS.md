@@ -613,3 +613,7 @@ Supersede only the university Find placement in Session 23 item 2. Remove tsuEve
 
 ## 2026-10-30: Session 27 item 5, footer language policy (Luka)
 Supersede only the footer repetition in “2026-10-26: English prevails between language versions”. Remove .language-policy from both footers while preserving the existing /language/ statement and its footer link. Luka’s review of Moldova/Armenia motivates the presentation change. Whether English or Georgian prevails remains an open question for Nino; this does not approve a new prevailing language.
+
+
+## 2026-10-30: Session 27 item 6, compact EU footer (Luka)
+Supersede the 30rem emblem/large padding in the Session 21 footer styling. Use complete white-box artwork at 15rem mobile and 17.5rem from 48rem, with a centred auto/1fr desktop grid, 1.5rem padding and .7rem/1.45 disclaimer at 62ch. Preserve exact wording and original bytes. Measure the flag inside each artwork, not just image height, against 38px at 320/390/1280/1920. Cap the header wordmark at 17rem to preserve its subordinate size beside the smaller emblem.

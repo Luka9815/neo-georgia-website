@@ -508,3 +508,7 @@ Withdrew tsuEvening from runtime placements and public credits. Both university 
 
 ## 2026-10-30: Session 27 item 5, language-policy placement
 Removed the repeated footer statement while retaining the unchanged language page and footer link. HANDOVER flags language precedence as an open decision for Nino, and AGENTS reflects this presentation supersession.
+
+
+## 2026-10-30: Session 27 item 6, smaller EU block
+Reduced the whole-image funding emblem and desktop footer padding, centred the grid and tightened disclaimer type without changing its text or artwork. Retained the white box/aspect ratio and the existing high-contrast muted colour; flag-size and prominence measurements follow in the review evidence.
