@@ -33,7 +33,8 @@
       </a>
       <div class="header-tools">
       <a class="search-link" href="/{{ view.lang }}/search/" aria-label="{{ t.search }}">{{ 'search' | icon | safe }}<span class="search-label">{{ t.search }}</span></a>
-      <div class="language-control"><span class="language-current" lang="{{ view.lang }}">{{ 'ქა' if view.lang == 'ka' else 'EN' }}</span><span aria-hidden="true">|</span><a class="language-switch" href="{{ view.alternate }}" lang="{{ other }}" hreflang="{{ other }}" aria-label="{{ 'EN' if other == 'en' else 'ქა' }}: {{ t.switch }}">{{ 'EN' if other == 'en' else 'ქა' }}</a></div>
+      {% set targetStrings = en if other == 'en' else ka %}
+      <a class="language-switch" href="{{ view.alternate }}" lang="{{ other }}" hreflang="{{ other }}" aria-label="{{ t.switch }}: {{ targetStrings.switchLanguage }}">{{ 'globe' | icon | safe }}<span>{{ t.switch }}</span></a>
       </div>
     </div>
     {{ navigationMenu(navigation, t, view, 'desktop-navigation') }}

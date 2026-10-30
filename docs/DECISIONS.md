@@ -597,3 +597,7 @@ Supersede local-only session completion after a merge: confirm the Deploy GitHub
 
 ## 2026-10-30: Session 27 item 1, compact header enhancement (Luka)
 Supersede the no-layout-JavaScript part of the Session 26 design decisions only for a tiny deferred header script: a passive scroll listener queues requestAnimationFrame and uses >96/<24 hysteresis, with an initial state update. Without JavaScript the full header/navigation remain complete. Use measured responsive header variables for anchors/facts, transform-only brand scaling, native menu animation, clear current/hover/focus indicators and reduced-motion/forced-colour/print fallbacks. Compact desktop links keep 44px targets and use 1.3 line-height to approach the 100px height target without changing font size or weight.
+
+
+## 2026-10-30: Session 27 item 2, target-language text switch (Luka)
+Supersede the compact ქა | EN control from Session 21. Luka chooses language names, not country flags: use one globe-decorated English link on Georgian pages and ქართული on English pages, with target-language accessible names and 44px targets. Keep the existing alternate URLs, lang/hreflang and redirect/404 behaviour; no current-language label or flag emoji.

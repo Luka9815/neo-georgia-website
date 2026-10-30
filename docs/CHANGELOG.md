@@ -492,3 +492,7 @@ Corrected the stale Session 26 next step and recorded the Pages incident: deploy
 
 ## 2026-10-30: Session 27 item 1, progressive compact header
 Added the dependency-free deferred scroll enhancement with hysteresis, compact/full styling, animated navigation indicators and hover pills. Header variables clear anchors and sticky Action facts; no-JavaScript, reduced-motion, forced-colour and print states remain usable.
+
+
+## 2026-10-30: Session 27 item 2, language names
+Replaced ქა | EN with a single English/ქართული target-language link and decorative globe. Preserved alternates and native mobile navigation, with translated accessible names and hover/focus pills.
