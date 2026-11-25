@@ -1,6 +1,11 @@
-{% macro photoCredit(photo,lang,t) %}
+{% macro photoCredit(photo,lang,t,overlay=false) %}
 <span data-photo-credit="{{ photo.id }}">{% if photo.author %}
 {{ t.photoLabel }}: {{ photo.author }}, <a href="{{ photo.licenceUrl }}" rel="license">{{ t.publicDomain if photo.publicDomain else photo.licence }}</a>, {{ t.photoViaCommons }} (<a href="{{ photo.source }}">{{ photo.title }}</a>).
-<span class="photo-modified">{% if photo.crop == false %}{{ t.photoResized }}{% else %}{{ t.photoModifiedOverlay if photo.overlay else t.photoModified }}{% endif %}.</span>
+<span class="photo-modified">{% if photo.crop == false %}{{ t.photoResized }}{% else %}{{ t.photoModifiedOverlay if (overlay or photo.overlay) else t.photoModified }}{% endif %}.</span>
 {% else %}<a href="{{ photo.source }}">{{ photo.credit[lang] }}</a> · {{ photo.change[lang] }} {{ t.photoSitePermission }}{% endif %}</span>
+{% endmacro %}
+
+
+{% macro photoCreditControl(photo, lang, t, overlay=false) %}
+<details class="photo-credit-control"><summary aria-label="{{ t.photoCreditLabel }}"><span aria-hidden="true">©</span></summary><div class="photo-credit-panel" tabindex="0" role="group" aria-label="{{ t.photoCreditLabel }}">{{ photoCredit(photo,lang,t,overlay) }}</div></details>
 {% endmacro %}

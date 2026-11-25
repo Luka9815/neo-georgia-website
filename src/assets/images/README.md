@@ -67,6 +67,7 @@ Withdrawn from public use on 2026-10-30 (Session 27, Luka): no replacement file 
 - Supplied Commons metadata check and local verification date: 2026-10-29.
 - Published changes: resized, reformatted and cropped. Image adaptations remain under CC BY-SA 4.0.
 - Focal points: desktop 46% 52%; mobile 42% 52%.
+- Session 28 uses the same source behind Home Figures, with a navy overlay and a native author, licence and file-page disclosure. The Opportunities banner retains its existing crop and credit.
 
 ## neo-batumi-skyline.jpg
 

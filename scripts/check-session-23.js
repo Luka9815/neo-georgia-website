@@ -15,7 +15,7 @@ try {
    console.log(`Photo check: ${lang}/${path}, ${width}px, JS ${javaScriptEnabled}`);
    await page.goto(`${base}${prefix}${lang}/${path}`);await page.evaluate(()=>document.fonts.ready);
    assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
-   const figure=page.locator('figure.portal-photo');assert.equal(await figure.count(),1);
+   const figure=page.locator('figure.portal-photo:not(.photo-figures)');assert.equal(await figure.count(),1);
    const image=figure.locator('img');await image.evaluate(el=>el.decode());
    assert.ok(await image.evaluate(el=>el.naturalWidth>=320 && el.getBoundingClientRect().height>180));
    const credit=figure.locator('.photo-credit-control');assert.equal(await credit.count(),1);
@@ -36,7 +36,9 @@ try {
   for(const lang of ['ka','en']) for(const path of ['news/','news/neo-dissemination-event-2025/']) {
    await page.goto(`${base}${prefix}${lang}/${path}`);await page.evaluate(()=>document.fonts.ready);
    assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
-   assert.ok(await page.locator('[data-news-photo-credit],[data-photo-credit="dissemination"]').isVisible());
+   const credit=page.locator('[data-photo-credit="dissemination"]');
+   if (path==='news/') await page.locator('.news-credit summary').click();
+   assert.ok(await credit.isVisible());
    if(javaScriptEnabled) {
     const result=await new AxeBuilder({page}).options({resultTypes:['violations']}).analyze();
     assert.deepEqual(result.violations,[],`${lang}/${path}, ${width}px`);

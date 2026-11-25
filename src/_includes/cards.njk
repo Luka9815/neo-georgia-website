@@ -1,48 +1,78 @@
-{% macro cards(items, type, t, lang, heading='h3', showSectionLabel=false, emptyMessage='', compact=false, photoCredits={}) %}
+{% from 'photo-credit.njk' import photoCreditControl %}
+{% from 'sector.njk' import keyActionChip %}
+
+{% macro cardArrow() %}
+<span class="card-arrow" aria-hidden="true">{{ 'arrow-up-right' | icon | safe }}</span>
+{% endmacro %}
+
+{% macro emptyState(iconName, href, label) %}
+<div class="list-empty">
+  <span class="icon-slot" aria-hidden="true">{{ iconName | icon | safe }}</span>
+  <div>{{ caller() }}<a href="{{ href }}">{{ label }}</a></div>
+</div>
+{% endmacro %}
+
+{% macro cards(items, type, t, lang, heading='h3', showSectionLabel=false, emptyMessage='', compact=false, photoCredits={}, sector='') %}
 <ul class="cards cards-{{ type }}{% if compact %} cards-compact{% endif %}"{% if type == 'publication' %} data-publications{% endif %}>
   {% for item in items %}
-    <li class="card{% if type == 'action' or type == 'news' or type == 'resource' or type == 'publication' %} card-clickable{% endif %}{% if type == 'news' and not item.image %} news-text-only{% endif %}"{% if type == 'publication' %} data-year="{{ item.year }}" data-type="{{ item.type }}"{% endif %}>
+    {% set body = (item.summary if type == 'action' else item.body) | markdown %}
+    {% set clickable = type == 'news' or ((type in ['action','resource','publication','event','story']) and (compact or '<a ' not in body)) %}
+    <li class="card{% if clickable %} card-clickable{% endif %}"{% if type == 'publication' %} data-year="{{ item.year }}" data-type="{{ item.type }}"{% elif type == 'action' %} data-sector="{{ sector or item.sectors[0] }}"{% endif %}>
       {% if type == 'call' %}
-        <div class="card-meta">{% if showSectionLabel %}<span class="card-section-label">{{ t.calls }}</span>{% endif %}<span class="status status-{{ item.status }}">{{ t[item.status] }}</span></div>
+        <div class="card-meta">{% if showSectionLabel %}<span class="chip card-section-label">{{ t.calls }}</span>{% endif %}<span class="status status-{{ item.status }}">{{ t[item.status] }}</span></div>
         <{{ heading }}><a href="/{{ lang }}/opportunities/{{ item.action }}/">{{ item.title }}</a></{{ heading }}>
         <p class="card-date"><time datetime="{{ item.deadline }}">{{ item.deadline | dateLabel(t) }}</time><br><span class="card-timezone">{{ t.brussels }}</span></p>
-        {{ item.body | markdown | safe }}
+        {{ body | safe }}
         <a class="card-link" href="{{ item.url }}">{{ t.officialLinks }}</a>
       {% elif type == 'resource' %}
         <p class="source-label source-{{ item.source }}">{{ t.source }}: {{ t[item.source] }}</p>
-        <{{ heading }}><a class="card-primary" href="{{ item.url }}">{{ item.title }}</a></{{ heading }}>
-        {{ item.body | markdown | safe }}
+        <{{ heading }}><a{% if clickable %} class="card-primary"{% endif %} href="{{ item.url }}">{{ item.title }}</a></{{ heading }}>
+        {{ body | safe }}
       {% elif type == 'publication' %}
-        <{{ heading }}><a class="card-primary" href="{{ item.url or item.file }}">{{ item.title }}</a></{{ heading }}>
+        <{{ heading }}><a{% if clickable %} class="card-primary"{% endif %} href="{{ item.url or item.file }}">{{ item.title }}</a></{{ heading }}>
         <p>{{ t.year }}: {{ item.year }} · {{ t.type }}: {{ t.publicationTypes[item.type] }}</p>
         <p>{{ t.publicationLanguage }}: {{ item.language }}</p>
         {% if item.publisher %}<p>{{ t.publisher }}: {{ item.publisher }}</p>{% endif %}
-        {{ item.body | markdown | safe }}
+        {{ body | safe }}
       {% elif type == 'person' %}
         <{{ heading }}>{{ item.title }}</{{ heading }}>
         {% if item.roleBased %}<p>{{ t.nameLabel }}: {{ item.name }}</p><p>{{ t.roleEmail }}: {% if '@' in item.roleEmail %}<a href="mailto:{{ item.roleEmail }}">{{ item.roleEmail }}</a>{% else %}{{ item.roleEmail }}{% endif %}</p>{% endif %}
-        {{ item.body | markdown | safe }}
+        {{ body | safe }}
       {% elif type == 'faq' %}
         <details class="faq-item"><summary><{{ heading }}>{{ item.title }}</{{ heading }}></summary><div class="faq-answer">
-        {{ item.body | markdown | safe }}
+        {{ body | safe }}
         {% if item.sourceUrl %}<p class="source-label"><a href="{{ item.sourceUrl }}">{{ t.official }}</a></p>{% endif %}
         </div></details>
+      {% elif type == 'news' %}
+        <div class="news-media">
+          {% if item.image %}
+          <img data-news-image data-image-layout="card" src="{{ item.image.src }}" alt="{{ item.image.alt[lang] }}">
+          {% if photoCredits.dissemination and item.image.src == photoCredits.dissemination.src %}
+          <div class="news-credit">{{ photoCreditControl(photoCredits.dissemination, lang, t) }}</div>
+          {% endif %}
+          {% else %}
+          <div class="news-placeholder" aria-hidden="true">{{ 'book-open' | icon | safe }}</div>
+          {% endif %}
+        </div>
+        <div class="card-meta"><span class="chip card-section-label">{{ t.news }}</span><time datetime="{{ item.date }}">{{ item.date | dateLabel(t, 'UTC', false) }}</time></div>
+        <{{ heading }}><a class="card-primary" href="/{{ lang }}/news/{{ item.slug }}/">{{ item.title }}</a></{{ heading }}>
+        <div class="card-body">{{ item.body | newsSummary | safe }}</div>
+      {% elif type == 'action' %}
+        <span class="icon-slot">{{ item.slug | actionIcon | icon | safe }}</span>
+        <{{ heading }}><a{% if clickable %} class="card-primary"{% endif %} href="/{{ lang }}/opportunities/{{ item.slug }}/">{{ item.title }}</a></{{ heading }}>
+        {{ keyActionChip(item.keyAction, t) }}
+        {% if not compact %}<div class="card-body">{{ body | safe }}</div>{% endif %}
       {% else %}
-        {% if type == 'action' %}<span class="icon-slot">{{ item.slug | actionIcon | icon | safe }}</span>{% endif %}
-        {% if type == 'news' and item.image %}<img data-news-image data-image-layout="card" src="{{ item.image.src }}" alt="{{ item.image.alt[lang] }}">
-        {% if photoCredits.dissemination and item.image.src == photoCredits.dissemination.src %}<p class="news-photo-credit" data-news-photo-credit>{{ photoCredits.dissemination.credit[lang] }}</p>{% endif %}{% endif %}
         {% if type == 'event' %}
-          <div class="card-meta">{% if showSectionLabel %}<span class="card-section-label">{{ t.events }}</span>{% endif %}<span class="status status-{{ item.status }}">{{ t[item.status] }}</span></div>
-        {% elif type == 'news' and showSectionLabel %}
-          <div class="card-meta"><span class="card-section-label">{{ t.news }}</span></div>
+          <div class="card-meta">{% if showSectionLabel %}<span class="chip card-section-label">{{ t.events }}</span>{% endif %}<span class="status status-{{ item.status }}">{{ t[item.status] }}</span></div>
         {% endif %}
-        <{{ heading }}><a{% if type == 'action' or type == 'news' %} class="card-primary"{% endif %} href="/{{ lang }}/{% if type == 'action' %}opportunities{% elif type == 'story' %}stories{% else %}{{ type }}{% if type == 'event' %}s{% endif %}{% endif %}/{{ item.slug }}/">{{ item.title }}</a></{{ heading }}>
-        {% if type == 'action' %}<p class="action-key-label">{{ t.keyAction }}: {{ t.keyActions[item.keyAction] }}</p>{% endif %}
+        <{{ heading }}><a{% if clickable %} class="card-primary"{% endif %} href="/{{ lang }}/{{ 'stories' if type == 'story' else 'events' }}/{{ item.slug }}/">{{ item.title }}</a></{{ heading }}>
         {% if item.date %}
-          <p class="card-date"><time datetime="{{ item.date }}">{% if type == 'news' %}{{ item.date | dateLabel(t, 'UTC', false) }}{% else %}{{ item.date | dateLabel(t, item.timeZone) }}{% endif %}</time></p>
+          <p class="card-date"><time datetime="{{ item.date }}">{{ item.date | dateLabel(t, item.timeZone) }}</time></p>
         {% endif %}
-        {% if not compact %}<div class="card-body">{% if type == 'action' %}{{ item.summary | markdown | safe }}{% elif type == 'news' %}{{ item.body | newsSummary | safe }}{% else %}{{ item.body | markdown | safe }}{% endif %}</div>{% endif %}
+        <div class="card-body">{{ body | safe }}</div>
       {% endif %}
+      {% if clickable %}{{ cardArrow() }}{% endif %}
     </li>
   {% else %}
     <li class="card empty-state">{{ emptyMessage or t.empty }}</li>

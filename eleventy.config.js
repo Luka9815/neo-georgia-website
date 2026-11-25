@@ -17,6 +17,7 @@ const markdown = new MarkdownIt({ html: false });
 export default function (config) {
   config.addFilter('icon', icon);
   config.addFilter('actionIcon', slug => actionIcons[slug]);
+  config.addFilter('sectorIcon', sector => ({'higher-education': 'graduation-cap', vet: 'wrench', youth: 'users', sport: 'trophy'})[sector]);
   config.addFilter('projectActionCount',(data,slug)=>(data.actionYears[slug]||[]).reduce((sum,row)=>sum+row.count,0));
   config.addFilter('chartRows',chartRows);
   config.addFilter('projectChart',projectChart);

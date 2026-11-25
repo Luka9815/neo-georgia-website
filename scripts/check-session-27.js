@@ -48,7 +48,7 @@ export async function checkSession27(browser,base,prefix='/',credits=true) {
    if(credits)for(const width of [320,390,1280])for(const lang of ['ka','en'])for(const path of ['', 'about/','find/student/','find/university/','find/youth/','find/vet/','find/sport/','opportunities/']) {
     console.log(`Credit ${javaScriptEnabled}/${width}/${lang}/${path}`);await page.setViewportSize({width,height:900});await visit(lang,path);
     if(path==='find/university/'){assert.equal(await page.locator('.portal-photo').count(),0);continue;}
-    const details=page.locator('.photo-credit-control');assert.equal(await details.count(),1);
+    const details=page.locator('.portal-photo:not(.photo-figures) .photo-credit-control');assert.equal(await details.count(),1);
     const summary=details.locator('summary');await summary.scrollIntoViewIfNeeded();await pause(page);await summary.focus();await page.keyboard.press('Enter');
     assert.equal(await details.getAttribute('open'),'');const panel=details.locator('.photo-credit-panel');await panel.scrollIntoViewIfNeeded();
     assert.ok(await panel.isVisible());const box=await panel.boundingBox();assert.ok(box.x>=0&&box.x+box.width<=width);
@@ -64,7 +64,7 @@ export async function checkSession27(browser,base,prefix='/',credits=true) {
    await page.emulateMedia({reducedMotion:'reduce',forcedColors:'active'});await visit('ka');await page.evaluate(()=>scrollTo(0,400));await pause(page);
    assert.equal(await page.locator('.brand').evaluate(e=>getComputedStyle(e).transform),'none');
    assert.equal(await page.locator('.site-header').evaluate(e=>getComputedStyle(e).backdropFilter),'none');
-   const summary=page.locator('.photo-credit-control summary');await summary.focus();await page.keyboard.press('Enter');assert.ok(await page.locator('.photo-credit-panel').isVisible());
+   const summary=page.locator('.photo-hero .photo-credit-control summary');await summary.focus();await page.keyboard.press('Enter');assert.ok(await page.locator('.photo-hero .photo-credit-panel').isVisible());
    await page.emulateMedia({media:'print',forcedColors:'none'});
    assert.equal(await page.locator('.site-header').evaluate(e=>getComputedStyle(e).position),'static');
    assert.equal(await page.locator('.brand').evaluate(e=>getComputedStyle(e).transform),'none');

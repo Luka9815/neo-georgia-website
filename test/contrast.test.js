@@ -72,3 +72,17 @@ for(const width of [1024,1280,1440,1920])test(`desktop hero white-pixel contrast
  assert.ok(ratio>=4.5,`${fraction}: ${ratio}`);
  assert.match(css,/width: min\(46rem,58%\)/);
 });
+
+const sectors = ['higher-education', 'vet', 'school', 'adult', 'youth', 'sport', 'other'];
+for (const sector of sectors) {
+  test(`sector colour meets text and graphic contrast for ${sector}`, () => {
+    const selector = `[data-sector="${sector}"]`;
+    const rule = css.slice(css.indexOf(selector)).split('}')[0];
+    const ink = rule.match(/--sector-ink: (#[0-9a-f]{6});/)[1];
+    const tint = rule.match(/--sector-tint: (#[0-9a-f]{6});/)[1];
+    const ratio = (foreground, background) => (luminance(background) + .05) / (luminance(foreground) + .05);
+    assert.ok(ratio(ink, tint) >= 4.5);
+    assert.ok(ratio(ink, tokens.paper) >= 3);
+    assert.ok(ratio(ink, tokens.surface) >= 3);
+  });
+}

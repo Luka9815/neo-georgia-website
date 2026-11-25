@@ -9,11 +9,15 @@ eleventyExcludeFromCollections: true
 {% extends 'page.njk' %}
 
 {% block pageContent %}
-<p><a href="/{{ view.lang }}/events/calendar/">{{ t.eventCalendar }}</a></p>
-<p><a href="/{{ view.lang }}/events/upcoming.ics" download>{{ t.downloadUpcoming }}</a></p>
+{% from 'cards.njk' import emptyState %}
+{% set calendarUrl = '/' ~ view.lang ~ '/events/calendar/' %}
 {% if not events.length %}
-<p data-events-empty>{{ t.eventsEmpty }}</p>
+{% call emptyState('calendar', calendarUrl, t.eventCalendar) %}<p data-events-empty>{{ t.eventsEmpty }}</p>{% endcall %}
 {% else %}
+<p><a href="{{ calendarUrl }}">{{ t.eventCalendar }}</a></p>
+{% endif %}
+<p><a href="/{{ view.lang }}/events/upcoming.ics" download>{{ t.downloadUpcoming }}</a></p>
+{% if events.length %}
 <section>
   <h2>{{ t.upcomingEvents }}</h2>
   {{ cards(events | status('upcoming'), 'event', t, view.lang) }}

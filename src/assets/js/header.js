@@ -1,9 +1,11 @@
 const header = document.querySelector('.site-header');
 if (header) {
+  const backToTop = header.querySelector('.back-to-top');
   let queued = false;
   const update = () => {
     if (window.scrollY > 96) header.setAttribute('data-compact', '');
     else if (window.scrollY < 24) header.removeAttribute('data-compact');
+    if (backToTop) backToTop.hidden = window.scrollY < 2 * window.innerHeight;
     queued = false;
   };
   window.addEventListener('scroll', () => {
@@ -12,6 +14,7 @@ if (header) {
       requestAnimationFrame(update);
     }
   }, { passive: true });
+  window.addEventListener('resize', update);
   update();
   if ('ResizeObserver' in window) {
     new ResizeObserver(([entry]) => {

@@ -1,7 +1,7 @@
-{% from 'photo-credit.njk' import photoCredit %}
+{% from 'photo-credit.njk' import photoCreditControl %}
 {% macro portalPhoto(photo, lang, layout='banner', t={}) %}
 <figure class="portal-photo photo-{{ layout }}" data-photo-id="{{ photo.id }}" style="--photo-focal: {{ photo.focal.desktop }}; --photo-focal-mobile: {{ photo.focal.mobile }}">
-<img data-portal-image="{{ photo.id }}" data-image-layout="{{ layout }}" src="{{ photo.src }}" alt="{{ photo.alt[lang] }}">
-<figcaption><details class="photo-credit-control"><summary aria-label="{{ t.photoCreditLabel }}"><span aria-hidden="true">©</span></summary><div class="photo-credit-panel" tabindex="0" role="group" aria-label="{{ t.photoCreditLabel }}">{{ photoCredit(photo,lang,t) }}</div></details></figcaption>
+<img{% if layout == 'figures' %} data-decorative-image{% endif %} data-portal-image="{{ photo.id }}" data-image-layout="{{ layout }}" src="{{ photo.src }}" alt="{{ photo.alt[lang] if layout != 'figures' else '' }}">
+<figcaption>{{ photoCreditControl(photo,lang,t,layout == 'figures') }}</figcaption>
 </figure>
 {% endmacro %}

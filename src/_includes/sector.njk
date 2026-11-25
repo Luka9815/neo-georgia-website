@@ -1,0 +1,11 @@
+{% macro keyActionChip(key, t, showLabel=false) %}
+<span class="chip action-key-label"><span{% if not showLabel %} class="visually-hidden"{% endif %}>{{ t.keyAction }}: </span>{{ t.keyActions[key] }}</span>
+{% endmacro %}
+
+{% macro sectorHeading(sector, t, id) %}
+<h3 class="sector-heading"{% if id %} id="{{ id }}"{% endif %}><span class="sector-marker" aria-hidden="true"></span><span class="icon-slot" aria-hidden="true">{{ sector | sectorIcon | icon | safe }}</span>{{ t.sectorLabels[sector] }}</h3>
+{% endmacro %}
+
+{% macro sectorChip(sector, t) %}
+<span class="chip sector-chip" data-sector="{{ sector }}">{{ t.projectSectorLabels[sector] }}</span>
+{% endmacro %}

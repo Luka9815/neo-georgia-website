@@ -9,6 +9,7 @@ eleventyExcludeFromCollections: true
 {% extends 'page.njk' %}
 
 {% block pageContent %}
+{% from 'sector.njk' import keyActionChip %}
 <p>{{ t.brussels }}</p>
 <p>{{ t.callsNextYear }}</p>
 <p>
@@ -20,7 +21,7 @@ eleventyExcludeFromCollections: true
     <h2>{{ yearLabel }}: {{ year }}</h2>
     {% for group in ['KA1','KA2','KA3','Jean Monnet'] %}
       <section>
-        <h3>{{ t.keyAction }}: {{ t.keyActions[group] }}</h3>
+        <h3>{{ keyActionChip(group, t, true) }}</h3>
         {{ cards(calls | callYear(year) | actionGroup(actions, group), 'call', t, view.lang, 'h4') }}
       </section>
     {% endfor %}

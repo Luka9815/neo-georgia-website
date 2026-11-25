@@ -351,7 +351,7 @@ test('empty logoPath preserves the text wordmark and bilingual logo alternatives
   }
 });
 
-test('card section labels appear on the mixed home, not individual section lists', () => {
+test('cards show section chips in mixed Home lists and every News card', () => {
   for (const lang of ['ka', 'en']) {
     const home = load(read(`_site/${lang}/index.html`));
     for (const type of ['call', 'event', 'news']) {
@@ -360,7 +360,8 @@ test('card section labels appear on the mixed home, not individual section lists
     }
     for (const section of ['calls', 'events', 'news']) {
       const page = load(read(`_site/${lang}/${section}/index.html`));
-      assert.equal(page('main .card-section-label').length, 0);
+      const expected = section === 'news' ? page('.cards-news .card:not(.empty-state)').length : 0;
+      assert.equal(page('main .card-section-label.chip').length, expected);
     }
   }
 });
