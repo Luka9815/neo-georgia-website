@@ -1,0 +1,36 @@
+{
+  "sources": [
+    {
+      "build": "baseline",
+      "htmlRoutes": 307,
+      "searchPagesByLanguage": {
+        "ka": 39,
+        "en": 39
+      }
+    },
+    {
+      "build": "root",
+      "htmlRoutes": 307,
+      "searchPagesByLanguage": {
+        "ka": 39,
+        "en": 39
+      }
+    },
+    {
+      "build": "prefix",
+      "htmlRoutes": 307,
+      "searchPagesByLanguage": {
+        "ka": 39,
+        "en": 39
+      }
+    }
+  ],
+  "identical": [
+    "route paths",
+    "H1 text",
+    "preview notices",
+    "robots metadata",
+    "EU emblem alt text",
+    "funding and disclaimer text"
+  ]
+}

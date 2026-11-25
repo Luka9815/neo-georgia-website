@@ -76,6 +76,16 @@
   "menuToggle": "Menu",
   "homeHeadline": "Erasmus+ opportunities for Georgia",
   "homeEyebrow": "National Erasmus+ Office Georgia",
+  "homeSectionEyebrows": {
+    "audiences": "Erasmus+ in Georgia",
+    "actions": "By sector",
+    "figures": "Project snapshot",
+    "calls": "Funding opportunities",
+    "events": "Event calendar",
+    "news": "From the office",
+    "stories": "Project experiences"
+  },
+  "backToTop": "Back to top",
   "homeGuideLink": "Explore opportunities",
   "allCalls": "All calls and deadlines",
   "allEvents": "All events",

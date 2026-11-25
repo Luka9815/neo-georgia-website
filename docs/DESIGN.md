@@ -123,3 +123,31 @@ Each active Commons placement has a native 32px © disclosure at bottom right. I
 The complete white-box EU artwork is 15rem on mobile and 17.5rem from 48rem. A definite desktop width avoids the intrinsic percentage/auto-grid sizing cycle, with max-width:100% for available space. Responsive image sizes matches these widths. The subordinate wordmark is capped at 15rem below 48rem and 17rem above, with a 1.25 line-height below 24rem to fit three Georgian lines beneath the smaller emblem's height. Desktop compact branding uses 1.2 line-height to approach the requested total header height. The disclaimer remains the exact supplied text, .7rem/1.45 at 62ch in the existing muted colour. The language-precedence statement remains on its page and linked from the footer, pending Nino's decision.
 
 Measured geometry, colour contrast, all 56 captures, full test/browser results and the Session 26 Lighthouse comparison are recorded in review/session-27/README.md.
+
+## Session 28 visual polish, 25 November 2026
+
+### Controls and cards
+
+One `.button` component supplies primary, secondary outline, on-dark primary and on-dark secondary variants. Their custom properties set the text, fill and border colours and let shared hover and focus rules apply to both Home hero buttons. Primary buttons shift to a lighter blue or light blue tint. The light outline button takes a blue tint and the on-dark outline fills white with navy text. Hover lifts 1px and adds the shared raised shadow. Active removes lift and shadow, with a separate pressed fill. Native disabled buttons use muted ink on the soft surface and remove the lift and shadow. Keyboard focus uses the shared 3px outline with a 3px offset, blue on light surfaces and white on dark surfaces. Forced colours use system colours and reduced motion removes lift. The optional 175ms transitions affect colour, shadow and transform. Cards, controls, chips and pills use the same .5rem radius.
+
+Card titles are navy at weight 700. Interaction turns title links blue and underlines them. Stretched native primary links give single-destination cards one primary tab stop, plus a whole-card focus ring and a decorative CSS arrow. The photo-credit disclosure has its own native controls above the stretched News link. Cards with authored secondary destinations retain separate links. Icon tiles deepen their tint on hover or focus within the card.
+
+News cards align to the start of each row and take their own content height. Responsive images and CSS placeholders share a 16:9 slot. The visible section chip and date sit on one line, followed by a three-line title and excerpt. The link retains the complete title and opens the complete article. The permission-based NEO attribution uses the shared © disclosure on the card. The article retains its full credit.
+
+### Sectors and Home
+
+Sector ink colours serve the heading marker, card's 4px top edge, icon and named sector chips. The soft tint fills icon tiles and Key Action chips. Statistics uses the same ink for the grouped chart bars. The Opportunity cards keep their existing summaries and show a horizontal icon, title and compact chip. The Home version omits the summaries as before. These grids use one column on mobile and two from 768px, retaining a two-line desktop title budget for Georgian. Sector names stay visible as headings, chips or chart labels. Jean Monnet retains its higher education grouping. The neutral Other treatment represents the existing statistics fallback.
+
+| Sector | Ink | Tint | Ink on tint | Ink on white |
+| --- | --- | --- | ---: | ---: |
+| Higher education | #294c93 | #e8efff | 7.15:1 | 8.24:1 |
+| VET | #006653 | #e2f4ee | 6.08:1 | 6.94:1 |
+| School | #804c15 | #fbefdf | 6.25:1 | 7.09:1 |
+| Adult | #6f437f | #f4eaf7 | 6.45:1 | 7.54:1 |
+| Youth | #8d365b | #fbeaf1 | 6.45:1 | 7.47:1 |
+| Sport | #466421 | #eef4e1 | 6.01:1 | 6.76:1 |
+| Other | #4b5b70 | #edf0f4 | 6.06:1 | 6.93:1 |
+
+Home proceeds through a white Find band, a blue-grey Opportunities band, navy Figures, white Calls and Events, a soft blue-to-teal News gradient and white Stories when published. Short section eyebrows and rules mark the existing headings. Find and News use low-contrast decorative shapes behind their content. Figures uses the approved river image in the existing responsive pipeline, with a 94% to 97% navy overlay, visible credit disclosure, figure icons and soft rules. The image loads lazily and has empty alternative text because it decorates the statistics. Calls and Events without current records use the existing links in tinted strips.
+
+Long pages expose a native `#top` link beside the sticky navigation at two viewport heights. The enhanced link starts hidden to prevent a layout shift before the header script runs. A plain fallback link is available at any scroll position without JavaScript. The visible link occupies header space on mobile. The native jump is immediate in both motion settings.

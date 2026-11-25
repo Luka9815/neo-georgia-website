@@ -70,7 +70,7 @@ test('sector groups and every Action page show source-checked eligibility and of
       ['higher-education', 'vet', 'youth', 'sport']
     );
     for (const [sector, label] of Object.entries(strings.sectorLabels)) {
-      assert.equal(listing(`#${sector} h3`).text(), label);
+      assert.equal(listing(`#${sector} h3`).text().trim(), label);
       const links = listing(`#${sector} h4 a`)
         .map((_, el) => listing(el).attr('href'))
         .get();

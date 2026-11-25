@@ -21,7 +21,7 @@ eleventyExcludeFromCollections: true
       {% for key, label in t.publicationTypes %}<option value="{{ key }}">{{ label }}</option>{% endfor %}
     </select>
   </label>
-  <button type="reset">{{ t.resetFilters }}</button>
+  <button class="button" type="reset">{{ t.resetFilters }}</button>
   <p role="status" data-publication-count data-label="{{ t.publicationResults }}">{{ t.publicationResults }}: {{ publications.length }}</p>
 </form>
 <script src="/assets/js/publications.js"></script>

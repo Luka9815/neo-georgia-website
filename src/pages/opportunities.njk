@@ -9,6 +9,7 @@ eleventyExcludeFromCollections: true
 {% extends 'page.njk' %}
 
 {% block pageContent %}
+{% from 'sector.njk' import sectorHeading %}
 {% from 'portal-photo.njk' import portalPhoto %}
 {{ portalPhoto(portalPhotos[photoPlacements.opportunities],view.lang,'banner',t) }}
 <p><a class="button" href="/{{ view.lang }}/find/">{{ t.find }}</a></p>
@@ -23,9 +24,9 @@ eleventyExcludeFromCollections: true
 <section id="organisations">
   <h2>{{ t.organisations }}</h2>
   {% for sector in ['higher-education', 'vet', 'youth', 'sport'] %}
-    <section id="{{ sector }}" class="action-sector">
-      <h3>{{ t.sectorLabels[sector] }}</h3>
-      {{ cards(actions | sector(sector), 'action', t, view.lang, 'h4') }}
+    <section id="{{ sector }}" class="action-sector" data-sector="{{ sector }}">
+      {{ sectorHeading(sector, t) }}
+      {{ cards(actions | sector(sector), 'action', t, view.lang, 'h4', sector=sector) }}
     </section>
   {% endfor %}
 </section>

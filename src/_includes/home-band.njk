@@ -1,0 +1,10 @@
+{% macro homeHeading(id, title, eyebrow, href, link) %}
+<div class="section-heading">
+  <div><p class="section-eyebrow">{{ eyebrow }}</p><h2 id="{{ id }}">{{ title }}</h2><span class="section-rule" aria-hidden="true"></span></div>
+  {% if href %}<a href="{{ href }}">{{ link }}</a>{% endif %}
+</div>
+{% endmacro %}
+
+{% macro compactUpdate(href, label, iconName) %}
+<p class="compact-update"><a href="{{ href }}"><span class="icon-slot" aria-hidden="true">{{ iconName | icon | safe }}</span><span>{{ label }}</span><span class="card-arrow" aria-hidden="true"></span></a></p>
+{% endmacro %}

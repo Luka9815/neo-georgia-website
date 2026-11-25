@@ -14,7 +14,7 @@ const readme=readFileSync('src/assets/images/README.md','utf8');
 
 test('all active Commons sources retain their reviewed hashes, dimensions and per-image README provenance outside output',()=>{
  assert.equal(commons.length,7);
- assert.equal(placements.home,'sameba');assert.equal(placements.about,'tsuMain');assert.equal(placements.opportunities,'river');
+ assert.equal(placements.home,'sameba');assert.equal(placements.figures,'river');assert.equal(placements.about,'tsuMain');assert.equal(placements.opportunities,'river');
  assert.deepEqual(placements.find,{student:'ilia',youth:'rike',vet:'gtu',sport:'batumi'});
  assert.ok(!existsSync('_site/assets/images/source'));
  for(const photo of commons){
@@ -41,7 +41,7 @@ test('every Commons placement has local responsive variants and an accurate bili
   for(const [id,route] of Object.entries(routes)){
    const photo=photos[id];const $=load(readFileSync(`_site/${lang}/${route}index.html`,'utf8'));
    const figure=$(`figure[data-photo-id="${id}"]`);assert.equal(figure.length,1,`${lang}/${route}`);
-   assert.equal($('figure.portal-photo').length,1);
+   assert.equal($('figure.portal-photo').length,route?1:2);
    const control=figure.find('details.photo-credit-control');assert.equal(control.length,1);assert.equal(control.attr('open'),undefined);
    assert.equal(control.find('summary').text().trim(),'©');assert.equal(control.find('summary').attr('aria-label'),strings.photoCreditLabel);
    assert.equal(control.find('.photo-credit-panel a[rel=license]').length,1);
@@ -70,12 +70,37 @@ test('approved NEO News photo credits follow the actual article and Home/archive
   const local=news.filter(item=>item[lang]);
   for(const route of ['','news/']){
    const selection=route?local:local.slice(0,3);const expected=selection.filter(item=>item.image?.src===photo.src);
-   const $=load(readFileSync(`_site/${lang}/${route}index.html`,'utf8'));const cards=$('[data-news-photo-credit]').closest('.card');assert.equal(cards.length,expected.length);
-   for(const card of cards){assert.equal($(card).find('a').length,1);assert.ok($(card).text().includes(photo.credit[lang]));}
+   const $=load(readFileSync(`_site/${lang}/${route}index.html`,'utf8'));const cards=$('.news-credit [data-photo-credit="dissemination"]').closest('.card');assert.equal(cards.length,expected.length);
+   for(const card of cards){
+    const credit=$(card).find('.photo-credit-control');
+    assert.equal(credit.attr('open'),undefined);
+    assert.ok(credit.text().includes(photo.credit[lang]));
+    assert.ok(credit.text().includes(photo.change[lang]));
+    assert.equal(credit.find('a').attr('href'),photo.source);
+    assert.ok(credit.text().includes(JSON.parse(readFileSync(`src/_data/${lang}.json`)).photoSitePermission));
+   }
   }
   for(const item of local.filter(item=>item.image?.src===photo.src)){
    const $=load(readFileSync(`_site/${lang}/news/${item.slug}/index.html`,'utf8'));
    assert.ok($('.news-photo figcaption').text().includes(photo.credit[lang]));assert.equal($('.news-photo img').attr('alt'),item.image.alt[lang]);assert.equal($('.news-photo a').attr('href'),photo.source);
   }
+ }
+});
+
+test('Home figures uses the approved river photograph as a lazy decorative image with complete attribution', () => {
+ for (const lang of ['ka','en']) {
+  const $=load(readFileSync(`_site/${lang}/index.html`, 'utf8'));
+  const strings=JSON.parse(readFileSync(`src/_data/${lang}.json`));
+  const band=$('.home-figures');
+  const image=band.find('picture img');
+  assert.equal(image.length,1);
+  assert.equal(image.attr('alt'),'');
+  assert.equal(image.attr('aria-hidden'),'true');
+  assert.equal(image.attr('loading'),'lazy');
+  assert.equal(image.attr('fetchpriority'),undefined);
+  assert.equal(image.attr('sizes'),'100vw');
+  assert.equal(band.find('a[rel=license]').attr('href'),photos.river.licenceUrl);
+  assert.equal(band.find('.photo-credit-panel a').last().attr('href'),photos.river.source);
+  assert.ok(band.find('figcaption').text().includes(strings.photoModifiedOverlay));
  }
 });

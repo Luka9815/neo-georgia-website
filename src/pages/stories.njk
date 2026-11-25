@@ -9,8 +9,13 @@ eleventyExcludeFromCollections: true
 {% extends 'page.njk' %}
 
 {% block pageContent %}
+{% from 'cards.njk' import emptyState %}
 <section>
   <h2>{{ t.story }}</h2>
+  {% if stories.length %}
   {{ cards(stories, 'story', t, view.lang) }}
+  {% else %}
+  {% call emptyState('book-open', '/' ~ view.lang ~ '/resources/', t.resources) %}<p>{{ t.empty }}</p>{% endcall %}
+  {% endif %}
 </section>
 {% endblock %}

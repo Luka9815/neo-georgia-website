@@ -1,0 +1,255 @@
+{
+  "responsive": [
+    {
+      "lang": "ka",
+      "width": 320,
+      "heroContrast": 5.49,
+      "figuresContrast": 10.37,
+      "templates": 16
+    },
+    {
+      "lang": "ka",
+      "width": 390,
+      "heroContrast": 5.57,
+      "figuresContrast": 10.37,
+      "templates": 16
+    },
+    {
+      "lang": "ka",
+      "width": 768,
+      "heroContrast": 5.49,
+      "figuresContrast": 10.37,
+      "templates": 16
+    },
+    {
+      "lang": "ka",
+      "width": 1280,
+      "heroContrast": 5.15,
+      "figuresContrast": 10.37,
+      "templates": 16
+    },
+    {
+      "lang": "ka",
+      "width": 1920,
+      "heroContrast": 5.71,
+      "figuresContrast": 10.37,
+      "templates": 16
+    },
+    {
+      "lang": "en",
+      "width": 320,
+      "heroContrast": 5.57,
+      "figuresContrast": 10.37,
+      "templates": 16
+    },
+    {
+      "lang": "en",
+      "width": 390,
+      "heroContrast": 5.66,
+      "figuresContrast": 10.37,
+      "templates": 16
+    },
+    {
+      "lang": "en",
+      "width": 768,
+      "heroContrast": 6.01,
+      "figuresContrast": 10.37,
+      "templates": 16
+    },
+    {
+      "lang": "en",
+      "width": 1280,
+      "heroContrast": 7.1,
+      "figuresContrast": 10.37,
+      "templates": 16
+    },
+    {
+      "lang": "en",
+      "width": 1920,
+      "heroContrast": 5.64,
+      "figuresContrast": 10.37,
+      "templates": 16
+    }
+  ],
+  "news": [
+    {
+      "lang": "ka",
+      "width": 1280,
+      "path": "Home",
+      "unequal": true,
+      "heights": [
+        477.53,
+        477.55,
+        451.16
+      ]
+    },
+    {
+      "lang": "ka",
+      "width": 1280,
+      "path": "news/",
+      "unequal": true,
+      "heights": [
+        477.53,
+        477.55,
+        451.16,
+        477.53,
+        451.17
+      ]
+    },
+    {
+      "lang": "ka",
+      "width": 1920,
+      "path": "Home",
+      "unequal": true,
+      "heights": [
+        498.91,
+        498.92,
+        472.53
+      ]
+    },
+    {
+      "lang": "ka",
+      "width": 1920,
+      "path": "news/",
+      "unequal": true,
+      "heights": [
+        498.91,
+        498.92,
+        472.53,
+        498.91,
+        472.55
+      ]
+    },
+    {
+      "lang": "en",
+      "width": 1280,
+      "path": "Home",
+      "unequal": true,
+      "heights": [
+        424.39,
+        451.17,
+        477.53
+      ]
+    },
+    {
+      "lang": "en",
+      "width": 1280,
+      "path": "news/",
+      "unequal": true,
+      "heights": [
+        424.39,
+        451.17,
+        477.53,
+        477.53,
+        424.8
+      ]
+    },
+    {
+      "lang": "en",
+      "width": 1920,
+      "path": "Home",
+      "unequal": true,
+      "heights": [
+        445.77,
+        472.55,
+        498.91
+      ]
+    },
+    {
+      "lang": "en",
+      "width": 1920,
+      "path": "news/",
+      "unequal": true,
+      "heights": [
+        445.77,
+        472.55,
+        498.91,
+        472.53,
+        446.17
+      ]
+    }
+  ],
+  "buttonContrasts": [
+    {
+      "label": "button rest",
+      "ratio": 10.86
+    },
+    {
+      "label": "button hover",
+      "ratio": 9.01
+    },
+    {
+      "label": "button active",
+      "ratio": 15.04
+    },
+    {
+      "label": "button focus",
+      "ratio": 9.01
+    },
+    {
+      "label": "button disabled",
+      "ratio": 6.34
+    },
+    {
+      "label": "button button-secondary rest",
+      "ratio": 10.86
+    },
+    {
+      "label": "button button-secondary hover",
+      "ratio": 13.05
+    },
+    {
+      "label": "button button-secondary active",
+      "ratio": 12.19
+    },
+    {
+      "label": "button button-secondary focus",
+      "ratio": 13.05
+    },
+    {
+      "label": "button button-secondary disabled",
+      "ratio": 6.34
+    },
+    {
+      "label": "button button-on-dark rest",
+      "ratio": 15.04
+    },
+    {
+      "label": "button button-on-dark hover",
+      "ratio": 13.08
+    },
+    {
+      "label": "button button-on-dark active",
+      "ratio": 12.33
+    },
+    {
+      "label": "button button-on-dark focus",
+      "ratio": 13.08
+    },
+    {
+      "label": "button button-on-dark disabled",
+      "ratio": 6.34
+    },
+    {
+      "label": "button button-on-dark button-secondary rest",
+      "ratio": 15.04
+    },
+    {
+      "label": "button button-on-dark button-secondary hover",
+      "ratio": 15.04
+    },
+    {
+      "label": "button button-on-dark button-secondary active",
+      "ratio": 12.33
+    },
+    {
+      "label": "button button-on-dark button-secondary focus",
+      "ratio": 15.04
+    },
+    {
+      "label": "button button-on-dark button-secondary disabled",
+      "ratio": 6.34
+    }
+  ],
+  "openCreditAxe": 8
+}

@@ -79,7 +79,7 @@ test('bilingual coverage notes sit beside year and Action comparisons and explai
         assert.match($(note).text(), /2020\/2021/);
       }
       if (path === 'statistics') {
-        for (const kind of ['years', 'groups']) assert.equal($(`[data-project-statistics="${kind}"]`).prev('[data-project-mobility-coverage]').length, 1);
+        for (const kind of ['years', 'groups']) assert.equal($(`[data-project-statistics="${kind}"]`).parent('.project-statistics-scroll').prev('[data-project-mobility-coverage]').length, 1);
       } else {
         assert.equal($('#projects-all [data-project-mobility-coverage]').length, 1);
         assert.equal($('[data-project-action-index] > [data-project-mobility-coverage]').length, 1);
