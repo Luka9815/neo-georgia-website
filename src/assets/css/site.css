@@ -349,6 +349,7 @@ dd { margin: 0 0 var(--space-2); }
 .home-figures .photo-figures figcaption { pointer-events: auto; }
 .home-figures .section-rule { background: var(--gold); }
 .home-figures > .wrapper :last-child { margin-bottom: 0; }
+.home-figures > .wrapper > p:last-child > a { display: inline-flex; align-items: center; min-height: 44px; }
 .home-figures .figures { margin-block: 2rem; }
 .home-figures h3 { margin-top: 2rem; }
 .action-hero { display: flex; align-items: flex-start; gap: 1.5rem;  margin-top: 0px;   border-bottom: 4px solid var(--teal); margin: 0 0 2.5rem; padding: 3.5rem 0 3rem; border: 0; border-radius: 0; color: var(--paper); background: var(--navy); box-shadow: 0 0 0 100vmax var(--navy); clip-path: inset(0 -100vmax); }

@@ -17,11 +17,10 @@ const browser = await chromium.launch({
   args: ['--no-sandbox'],
 });
 try {
-  const context = await browser.newContext({ viewport: { width: 320, height: 800 } });
-  const page = await context.newPage();
   const base = process.env.TEST_URL || 'http://127.0.0.1:8080';
   let count = 0;
   async function checkView(view,page) {
+    if (process.env.A11Y_TRACE) console.log(`axe: scanning ${view.path}`);
     const response = await page.goto(`${base}${prefix}${view.path.slice(1)}`);
     assert.equal(response.status(), 200, view.path);
     await page.evaluate(() => document.fonts.ready);
@@ -35,7 +34,11 @@ try {
     );
     // Run every rule, returning full details only for violations. Thousands of
     // successful table-cell results need not cross the browser/Node boundary.
-    const results = await new AxeBuilder({ page }).options({resultTypes:['violations']}).analyze();
+    const scan = new AxeBuilder({ page }).options({resultTypes:['violations']});
+    // Run frame-free documents directly so large project tables stay in the browser
+    // throughout the scan. Preserve multi-frame collection if a frame is ever added.
+    if (page.frames().length === 1) scan.setLegacyMode();
+    const results = await scan.analyze();
     assert.deepEqual(
       results.violations.map((v) => ({
         id: v.id,
@@ -67,9 +70,12 @@ try {
   // Independent complete-page scans use two workers; coverage is unchanged.
   const queue=getViews().filter(v=>!['redirect','legacyRedirect'].includes(v.kind));
   await Promise.all(Array.from({length:workers},async()=>{
-    const worker=await context.newPage();
-    try { while(queue.length){const view=queue.shift();await checkView(view,worker);} }
-    finally {await worker.close();}
+    while(queue.length) {
+      const view = queue.shift();
+      const context = await browser.newContext({ viewport: { width: 320, height: 800 } });
+      try { await checkView(view, await context.newPage()); }
+      finally { await context.close(); }
+    }
   }));
   // Native disclosure navigation must remain usable with page JavaScript disabled.
   for (const width of [320, 360, 600, 768, 1024, 1280]) {
