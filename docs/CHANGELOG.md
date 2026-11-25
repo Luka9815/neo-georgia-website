@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-25 (Codex, Session 28 visual polish)
+
+- Unify interactive button states, focus and corner radii. Add sector colours, horizontal Action cards, and compact Key Action chips across listings, Action pages, the Find guide and statistics.
+- Give News cards content-sized rows, consistent media, three-line titles and excerpts, and native credit disclosures. Keep the permission-based photo attribution on articles.
+- Restyle the existing Home bands and add the approved, lazy river view behind the figures. Add designed empty states, scrollable statistics tables, a native return link and shared template refinements.
+- Keep the preview and launch configuration, routes, content model and official EU artwork and disclaimer text. Record screenshots, strings and checks in review/session-28.
+
 ## 2026-10-30 (Claude, prevailing-language removal)
 - Remove the /language/ page in both languages, its footer link and the language/prevailingStatement strings, following Luka's decision (other NEO sites carry no such statement). Replace the Session 27 test with one asserting no page, link or statement is published. Real routes drop from 109 to 107 per layout.
 

@@ -1,8 +1,14 @@
 # Handover
 
-Last updated: 2026-10-30 (Codex, Session 27 header polish)
+Last updated: 2026-11-25 (Codex, Session 28 visual polish)
 
-## Session 27 current state
+## Session 28 current state
+
+Branch `codex/session-28-polish` starts from current main `61fb55d`. It updates the shared UI, Home, Opportunities and News card presentation, reuses the approved river photo with its attribution in Home Figures and adds a native return link. The launch flag remains false and the preview/noindex, existing routes, official artwork and exact disclaimers are retained. See DESIGN.md, the dated decisions and review/session-28 for reproduction, captures, bilingual strings and measured results.
+
+Stories remains unpublished while the production collection is empty. Preview populated Stories and Event detail with the isolated review fixtures. The university Find photo remains pending Luka's verified replacement. Post-merge Pages and live verification are handed to Luka. This session opens the PR for review.
+
+## Session 27 baseline
 
 Started from origin/main 6f331a8 on codex/session-27-header. Session 26 is merged and deployed. Session 27 implements items 0 to 6: progressive compact header, target-language link, native photo-credit disclosures, university Find fallback, language-policy placement and smaller EU footer. Keep siteLaunched=false, preview/noindex, routes, content, EU artwork and exact disclaimers. No replacement university JPEG has been supplied; both university Find pages use the non-photo header until Luka supplies a reviewed sharp daytime landscape, at least 2560px wide, with Commons file URL, author and verified licence. Do not substitute the About image.
 
@@ -57,7 +63,7 @@ Luka decided to remove the prevailing-language statement entirely: the /language
 
 ## Next step
 
-Review the Session 27 PR on codex/session-27-header and evidence in review/session-27/README.md. After Luka merges it, confirm the Deploy GitHub Pages run succeeds and the live site shows the changes; this post-merge verification is explicitly handed to Luka because this session does not merge. Then obtain Nino’s content sign-off and approved office facts; follow LAUNCH.md in order. Do not merge or launch automatically. Hosted Event/image round trips, signed-grant review, domain and institutional transfer remain outside this session.
+Review the Session 28 PR on `codex/session-28-polish` and evidence in review/session-28/README.md. After merging the PR, Luka confirms the Deploy GitHub Pages run succeeds and the live site shows the changes. Then obtain Nino’s content sign-off and approved office facts; follow LAUNCH.md in order. Do not merge or launch automatically. Hosted Event/image round trips, signed-grant review, domain and institutional transfer remain outside this session.
 
 ## Launch checklist
 

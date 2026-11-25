@@ -628,3 +628,19 @@ Session 27 measurements: at 1280/1920px both headers shrink from 149.42px to 105
 
 ## 2026-10-30: Remove the prevailing-language statement entirely (Luka)
 Supersedes "2026-10-26: English prevails between language versions" and the Session 27 placement entry that kept /language/. Checked NEO Ukraine, Moldova and Armenia: none publishes a statement on which language version prevails. Remove /ka/language/ and /en/language/, the footer link and the language/prevailingStatement strings. The old WordPress site carried such a statement; it is not migrated. No redirect is added because the site has not launched. Reintroducing a statement needs a new decision.
+
+## 2026-11-25 Session 28 shared controls and card interaction
+
+Use four CSS button variants and shared interaction rules so both Home hero buttons respond to hover, active and focus. One radius and focus treatment carries across reusable controls. Preserve native primary links and add visible card focus, arrow and icon tints. This supersedes the earlier radius and hero button treatment in Sessions 22 and 26.
+
+## 2026-11-25 Session 28 News cards and attribution
+
+Replace equal News tracks and the text-only top edge from Session 22 with content-sized cards, 16:9 media, CSS placeholders, a section/date row and three-line clamps. Keep article text and author information complete. The native card credit control replaces the visible News card credit line from Session 23. News article attribution keeps its existing placement.
+
+## 2026-11-25 Session 28 sector colours and Opportunity layout
+
+Replace Session 26's sticky sector columns with inline icon headings and horizontal Action cards. Use a shared ink and tint for each visible sector across listings, Action pages, Find and statistics. The governing sector of a repeated Action card is its displayed group. Keep Jean Monnet under higher education and preserve the existing project data groups.
+
+## 2026-11-25 Session 28 Home bands and return link
+
+Use the existing Home sections and fallback links in alternating surfaces. Add muted decoration, bilingual eyebrows, a credited lazy river photo under the figures and compact fallback link strips. Extend the existing header script to reveal the native return link after roughly two viewports. Give mobile navigation room for the link in its own header grid cell.
