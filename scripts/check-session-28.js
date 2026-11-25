@@ -310,7 +310,7 @@ try {
   for (const lang of ['ka','en']) {
     await visit(native, lang);
     await native.evaluate(() => scrollTo(0, innerHeight * 2.1));
-    const top = native.locator('.back-to-top');
+    const top = native.locator('.back-to-top:visible');
     assert.equal(await top.getAttribute('href'), '#top');
     assert.ok(await top.isVisible());
     await top.focus();

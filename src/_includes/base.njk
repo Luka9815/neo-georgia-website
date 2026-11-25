@@ -23,6 +23,9 @@
 <body id="top">
 <a class="skip" href="#main">{{ t.skip }}</a>
 {% from 'navigation.njk' import navigationMenu %}
+{% macro backToTop(label, hidden=false) %}
+<a class="back-to-top" href="#top"{% if hidden %} hidden{% endif %}>{{ 'arrow-up' | icon | safe }}{{ label }}</a>
+{% endmacro %}
 {% if not site.siteLaunched %}<aside class="preview-bar" aria-label="{{ t.previewNotice }}"><p class="wrapper notice">{{ t.previewNotice }}</p></aside>{% endif %}
 <header class="site-header">
   <div class="wrapper header-inner">
@@ -43,7 +46,8 @@
         <summary>{{ t.menuToggle }}<span class="menu-chevron" aria-hidden="true"></span></summary>
         {{ navigationMenu(navigation, t, view, 'mobile-navigation') }}
       </details>
-      <a class="back-to-top" href="#top">{{ 'arrow-up' | icon | safe }}{{ t.backToTop }}</a>
+      {{ backToTop(t.backToTop, true) }}
+      <noscript>{{ backToTop(t.backToTop) }}</noscript>
     </div>
   </div>
 </header>
