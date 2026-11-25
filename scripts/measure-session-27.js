@@ -9,7 +9,7 @@ const {launch}=await import(pathToFileURL(`${root}/chrome-launcher/dist/index.js
 const server=await serveFixtureSite(process.env.REVIEW_ROOT||process.cwd());
 const out=process.env.REVIEW_OUTPUT || `docs/review/session-27/${phase}`;await mkdir(out,{recursive:true});const rows=[];
 try{for(const formFactor of ['mobile','desktop'])for(const lang of ['ka','en'])for(const route of ['', 'opportunities/','opportunities/cbhe/','calls/','news/neo-dissemination-event-2025/','about/']){
- if((process.env.LIGHTHOUSE_ROUTE&&process.env.LIGHTHOUSE_ROUTE!==route)||(process.env.LIGHTHOUSE_LANG&&process.env.LIGHTHOUSE_LANG!==lang)||(process.env.LIGHTHOUSE_DEVICE&&process.env.LIGHTHOUSE_DEVICE!==formFactor))continue;
+ if((process.env.LIGHTHOUSE_ROUTE!==undefined&&process.env.LIGHTHOUSE_ROUTE!==route)||(process.env.LIGHTHOUSE_LANG&&process.env.LIGHTHOUSE_LANG!==lang)||(process.env.LIGHTHOUSE_DEVICE&&process.env.LIGHTHOUSE_DEVICE!==formFactor))continue;
  const chrome=await launch({chromePath:'/usr/bin/chromium',chromeFlags:['--headless','--no-sandbox','--disable-dev-shm-usage']});
  try{
  const {lhr}=await lighthouse(`${server.base}/${lang}/${route}`,{port:chrome.port,onlyCategories:['performance','accessibility'],logLevel:'error'},formFactor==='desktop'?{extends:'lighthouse:default',settings:{formFactor:'desktop',screenEmulation:{mobile:false,width:1350,height:940,deviceScaleFactor:1,disabled:false},throttling:{rttMs:40,throughputKbps:10240,cpuSlowdownMultiplier:1,requestLatencyMs:0,downloadThroughputKbps:0,uploadThroughputKbps:0}}}:undefined);

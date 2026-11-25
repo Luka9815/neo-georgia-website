@@ -149,6 +149,7 @@ try {
   for (const lang of ['ka','en']) for (const width of [320,390,768,1280,1920]) {
     await page.setViewportSize({ width, height: 900 });
     await visit(page, lang);
+    assert.equal(await page.locator('.header-navigation noscript').evaluate(el => el.getBoundingClientRect().height), 0);
     assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), `${lang}/ @ ${width}`);
     const palette = await page.locator('.home-band').evaluateAll(bands => bands.map(band => {
       const style = getComputedStyle(band);
@@ -310,7 +311,7 @@ try {
   for (const lang of ['ka','en']) {
     await visit(native, lang);
     await native.evaluate(() => scrollTo(0, innerHeight * 2.1));
-    const top = native.locator('.back-to-top:visible');
+    const top = native.locator('noscript .back-to-top');
     assert.equal(await top.getAttribute('href'), '#top');
     assert.ok(await top.isVisible());
     await top.focus();

@@ -313,9 +313,9 @@
 [11ty] Writing ./_site/en/news/neo-dissemination-event-2025/index.html from ./src/pages/news-article.njk
 [11ty] Writing ./_site/ka/index.html from ./src/pages/home.njk
 [11ty] Writing ./_site/en/index.html from ./src/pages/home.njk
-[11ty] Benchmark   2765ms  14%   311× (Configuration) "@11ty/eleventy/html-transformer" Transform
-[11ty] Benchmark   5798ms  29% 27214× (Configuration) "dateLabel" Nunjucks Filter
-[11ty] Copied 39 Wrote 311 files in 19.90 seconds (64.0ms each, v3.1.7)
+[11ty] Benchmark   1084ms  13%   311× (Configuration) "@11ty/eleventy/html-transformer" Transform
+[11ty] Benchmark   2669ms  32% 27214× (Configuration) "dateLabel" Nunjucks Filter
+[11ty] Copied 39 Wrote 311 files in 8.31 seconds (26.7ms each, v3.1.7)
 Pagefind ka: 39 pages
 Pagefind en: 39 pages
 npm notice

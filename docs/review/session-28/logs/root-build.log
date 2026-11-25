@@ -26,15 +26,18 @@
 [11ty] Writing ./_site/ka/resources/index.html from ./src/pages/resources.njk
 [11ty] Writing ./_site/ka/search/index.html from ./src/pages/search.njk
 [11ty] Writing ./_site/ka/opportunities/index.html from ./src/pages/opportunities.njk
+[11ty] Writing ./_site/ka/about/index.html from ./src/pages/page.njk
 [11ty] Writing ./_site/ka/opportunities/cb-vet/index.html from ./src/pages/action.njk
 [11ty] Writing ./_site/ka/news/europe-day-in-kutaisi/index.html from ./src/pages/news-article.njk
 [11ty] Writing ./_site/ka/about/here/index.html from ./src/pages/people.njk
 [11ty] Writing ./_site/ka/resources/projects/2025/index.html from ./src/pages/project-year.njk
 [11ty] Writing ./_site/europe-day-in-kutaisi/index.html from ./src/pages/redirect.njk
+[11ty] Writing ./_site/ka/accessibility/index.html from ./src/pages/page.njk
 [11ty] Writing ./_site/ka/opportunities/cb-youth/index.html from ./src/pages/action.njk
 [11ty] Writing ./_site/ka/news/eve-statistics/index.html from ./src/pages/news-article.njk
 [11ty] Writing ./_site/ka/resources/projects/2024/index.html from ./src/pages/project-year.njk
 [11ty] Writing ./_site/announcement_clarification-on-erasmus-opportunities-for-education-institutions-in-georgia/index.html from ./src/pages/redirect.njk
+[11ty] Writing ./_site/ka/privacy/index.html from ./src/pages/page.njk
 [11ty] Writing ./_site/ka/opportunities/cbhe/index.html from ./src/pages/action.njk
 [11ty] Writing ./_site/ka/news/information-about-capacity-building-project-proposals/index.html from ./src/pages/news-article.njk
 [11ty] Writing ./_site/ka/resources/projects/2023/index.html from ./src/pages/project-year.njk
@@ -233,9 +236,6 @@
 [11ty] Writing ./_site/publication-tamar-sanikidze-irma-grdzelidze/index.html from ./src/pages/redirect.njk
 [11ty] Writing ./_site/publication-values-in-higher-education-challenges-practices-and-perspectives/index.html from ./src/pages/redirect.njk
 [11ty] Writing ./_site/ka/here/index.html from ./src/pages/redirect.njk
-[11ty] Writing ./_site/ka/about/index.html from ./src/pages/page.njk
-[11ty] Writing ./_site/ka/accessibility/index.html from ./src/pages/page.njk
-[11ty] Writing ./_site/ka/privacy/index.html from ./src/pages/page.njk
 [11ty] Writing ./_site/ka/find/student/index.html from ./src/pages/find.njk
 [11ty] Writing ./_site/ka/find/university/index.html from ./src/pages/find.njk
 [11ty] Writing ./_site/en/calls/index.html from ./src/pages/calls.njk
@@ -313,8 +313,8 @@
 [11ty] Writing ./_site/en/news/neo-dissemination-event-2025/index.html from ./src/pages/news-article.njk
 [11ty] Writing ./_site/ka/index.html from ./src/pages/home.njk
 [11ty] Writing ./_site/en/index.html from ./src/pages/home.njk
-[11ty] Benchmark   7066ms  37% 27214× (Configuration) "dateLabel" Nunjucks Filter
-[11ty] Copied 39 Wrote 311 files in 19.27 seconds (62.0ms each, v3.1.7)
+[11ty] Benchmark   2772ms  27% 27214× (Configuration) "dateLabel" Nunjucks Filter
+[11ty] Copied 39 Wrote 311 files in 10.37 seconds (33.3ms each, v3.1.7)
 Pagefind ka: 39 pages
 Pagefind en: 39 pages
 npm notice

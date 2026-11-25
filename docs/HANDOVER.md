@@ -6,7 +6,7 @@ Last updated: 2026-11-25 (Codex, Session 28 visual polish)
 
 Branch `codex/session-28-polish` starts from current main `61fb55d`. It updates the shared UI, Home, Opportunities and News card presentation, reuses the approved river photo with its attribution in Home Figures and adds a native return link. The launch flag remains false and the preview/noindex, existing routes, official artwork and exact disclaimers are retained. See DESIGN.md, the dated decisions and review/session-28 for reproduction, captures, bilingual strings and measured results.
 
-Stories remains unpublished while the production collection is empty. Preview populated Stories and Event detail with the isolated review fixtures. The university Find photo remains pending Luka's verified replacement. Post-merge Pages and live verification are handed to Luka. This session opens the PR for review.
+Stories remains unpublished while the production collection is empty. Preview populated Stories and Event detail with the isolated review fixtures. The university Find photo remains pending Luka's verified replacement. Post-merge Pages and live verification are handed to Luka. PR #30 contains the implementation and review evidence. Both clean layouts pass 213 tests and the 107-page axe queue with zero violations. Lighthouse accessibility is 100 on all 24 targets. Four mobile performance samples and Georgian desktop Home score below Session 27, with final performance scores of 95 to 100. The PR stays in draft for review of the performance results. [PR #30](https://github.com/Luka9815/neo-georgia-website/pull/30)
 
 ## Session 27 baseline
 

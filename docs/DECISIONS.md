@@ -643,4 +643,4 @@ Replace Session 26's sticky sector columns with inline icon headings and horizon
 
 ## 2026-11-25 Session 28 Home bands and return link
 
-Use the existing Home sections and fallback links in alternating surfaces. Add muted decoration, bilingual eyebrows, a credited lazy river photo under the figures and compact fallback link strips. Extend the existing header script to reveal the native return link after roughly two viewports. Give mobile navigation room for the link in its own header grid cell.
+Use the existing Home sections and fallback links in alternating surfaces. Add muted decoration, bilingual eyebrows, a credited lazy river photo under the figures and compact fallback link strips. Extend the existing header script to reveal the native return link after roughly two viewports. Give mobile navigation room for the link in its own header grid cell. Start the enhanced link hidden and provide a native fallback so deferred initialisation does not move the controls at first paint.

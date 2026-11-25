@@ -74,6 +74,18 @@ try {
     await locator.screenshot({ path: `${output}/${file}`, type: 'jpeg', quality: 83, ...options });
     screenshots.push(file);
   }
+  async function hover(locator) {
+    await locator.evaluate(element => element.scrollIntoView({ block: 'center' }));
+    const target = await locator.elementHandle();
+    await page.waitForFunction(element => {
+      const { x, y, width, height } = element.getBoundingClientRect();
+      return element.contains(document.elementFromPoint(x + width / 2, y + height / 2));
+    }, target);
+    const bounds = await locator.boundingBox();
+    assert.ok(bounds);
+    await page.mouse.move(bounds.x + bounds.width / 2, bounds.y + bounds.height / 2);
+    assert.ok(await locator.evaluate(element => element.matches(':hover')));
+  }
   for (const lang of ['ka', 'en']) {
     for (const width of [390, 1280]) {
       await page.setViewportSize({ width, height: 900 });
@@ -94,15 +106,16 @@ try {
       for (const state of ['hover', 'focus']) {
         await page.goto(`${site.base}/${lang}/`);
         await page.evaluate(() => document.fonts.ready);
+        await page.evaluate(() => scrollTo(0, 0));
         for (const [name, button] of [['primary', hero.locator('.button').first()], ['secondary', hero.locator('.button').last()]]) {
-          if (state === 'hover') await button.hover();
+          if (state === 'hover') await hover(button);
           else {
             await page.keyboard.press('Tab');
             await button.focus();
           }
           await screenshot(`hero-${name}-${state}`, lang, {}, hero);
         }
-        if (state === 'hover') await card.hover();
+        if (state === 'hover') await hover(card);
         else await card.locator('.card-primary').focus();
         await screenshot(`card-${state}`, lang, {}, page.locator('.audience-tiles'));
       }
