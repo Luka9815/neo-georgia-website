@@ -6,13 +6,15 @@ Last updated: 2026-11-26 (Codex, Session 29 header search)
 
 Start from main `9904076` on `codex/session-29-search`. Session 28 merged as PR #30 and its Deploy GitHub Pages workflow succeeded. Session 29 adds bilingual header search with lazy Pagefind loading, display metadata and full-page query links. Home has evergreen Calls copy, a closed About this data disclosure and matched update strip heights. See SEARCH.md, DESIGN.md and review/session-29. [Session 28 Pages run](https://github.com/Luka9815/neo-georgia-website/actions/runs/45654039904)
 
-The launch flag is false. Preserve preview/noindex, authored content, routes, EU artwork and exact disclaimers. Luka owns the Session 29 post-merge Pages and live-site verification.
+The launch flag is false. Preserve preview/noindex, authored content, routes, EU artwork and exact disclaimers. Clean root and prefix builds pass 214 tests each. The 107-page axe sweeps and separate fixture runs pass in both layouts with zero violations. Luka owns the Session 29 post-merge Pages and live-site verification. [Session 29 PR](https://github.com/Luka9815/neo-georgia-website/pull/31)
+
+Lighthouse accessibility is 100 across all 24 targets. Twenty-three meet or exceed the saved Session 28 scores. English mobile Home scored 98 against the saved 99. A fresh run of each version scored 98. [Review evidence](review/session-29/README.md)
 
 ## Session 28 baseline
 
 Branch `codex/session-28-polish` starts from current main `61fb55d`. It updates the shared UI, Home, Opportunities and News card presentation, reuses the approved river photo with its attribution in Home Figures and adds a native return link. The launch flag remains false and the preview/noindex, existing routes, official artwork and exact disclaimers are retained. See DESIGN.md, the dated decisions and review/session-28 for reproduction, captures, bilingual strings and measured results.
 
-Stories remains unpublished while the production collection is empty. Preview populated Stories and Event detail with the isolated review fixtures. The university Find photo remains pending Luka's verified replacement. Post-merge Pages and live verification are handed to Luka. PR #30 contains the implementation and review evidence. Both clean layouts pass 213 tests and the 107-page axe queue with zero violations. Lighthouse accessibility is 100 on all 24 targets. Four mobile performance samples and Georgian desktop Home score below Session 27, with final performance scores of 95 to 100. The PR stays in draft for review of the performance results. [PR #30](https://github.com/Luka9815/neo-georgia-website/pull/30)
+Stories remains unpublished while the production collection is empty. Preview populated Stories and Event detail with the isolated review fixtures. The university Find photo remains pending Luka's verified replacement. Post-merge Pages and live verification are handed to Luka. PR #30 contains the implementation and review evidence. Both clean layouts pass 213 tests and the 107-page axe queue with zero violations. Lighthouse accessibility is 100 on all 24 targets. Four mobile performance samples and Georgian desktop Home score below Session 27, with final performance scores of 95 to 100. The PR merged at `9904076`. [PR #30](https://github.com/Luka9815/neo-georgia-website/pull/30)
 
 ## Session 27 baseline
 
