@@ -592,6 +592,7 @@ dd { margin: 0 0 var(--space-2); }
   :root:lang(en) { --header-h: 9rem; --header-h-compact: 6.5rem; }
 }
 @media (forced-colors: active) {
+  :root { --inverse-muted: CanvasText; }
   :root, .home-hero, .home-figures, .site-footer, .photo-credit-panel { --focus-color: Highlight; }
   .band-decoration, .section-rule, .sector-marker, .card-arrow, .news-media .news-placeholder, .home-figures .photo-figures picture, .home-figures .figures .icon { display: none; }
   .news-media:has(.news-placeholder),

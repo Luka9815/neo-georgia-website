@@ -161,7 +161,7 @@ export async function checkHeaderSearch(browser, base, prefix) {
           assert.equal(await page.locator(panel).evaluate(el => getComputedStyle(el).animationName), 'none');
           assert.equal(await page.locator(option).first().evaluate(el => getComputedStyle(el).outlineStyle), 'solid');
           const forced = await new AxeBuilder({ page }).options({ resultTypes: ['violations'] }).analyze();
-          assert.deepEqual(forced.violations, []);
+          assert.deepEqual(forced.violations.map(issue => [issue.id, issue.nodes.map(node => node.target)]), []);
           await page.emulateMedia({ forcedColors: null, reducedMotion: null });
           const types = await checkMetadata(page, lang, prefix);
           assert.equal(Object.keys(types).length, 8);
