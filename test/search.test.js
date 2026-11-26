@@ -48,10 +48,16 @@ test('search markup loads only on search pages, has active index and no-JS secti
   for (const view of getViews()) {
     const $ = load(readFileSync(`_site${view.path}${view.path.endsWith('/') ? 'index.html' : ''}`, 'utf8'));
     assert.equal($('script[src$="/search.js"]').length, view.kind === 'search' ? 1 : 0);
+    assert.equal($('script[src$="/header-search.js"][defer]').length, 1);
+    assert.equal($('a.search-link').attr('href'), `${prefix}${view.lang}/search/`);
+    assert.equal($('#header-search[hidden]').attr('action'), `${prefix}${view.lang}/search/`);
+    assert.equal($('#header-search').attr('data-index'), `${prefix}pagefind/${view.lang}/pagefind.js`);
+    assert.equal($('#header-search-query').attr('role'), 'combobox');
+    assert.equal($('#header-search-query').attr('aria-controls'), 'header-search-list');
     if (view.kind !== 'search') continue;
     assert.equal($('[data-search]').attr('data-index'), `${prefix}pagefind/${view.lang}/pagefind.js`);
     assert.equal($('label[for=search-query]').length, 1);
-    assert.equal($('[aria-live=polite]').length, 1);
+    assert.equal($('main [aria-live=polite]').length, 1);
     assert.equal($('[data-search-form][hidden]').length, 1);
     assert.equal($('[data-search-fallback] a').length, 7);
     assert.equal($('header nav').first().find('li').length, 7);

@@ -12,7 +12,7 @@ eleventyExcludeFromCollections: true
 {% set item = actions | findSlug(view.slug) %}
 {% set actionCalls = calls | related(item.slug) | callYear(site.currentCallYear) %}
 {% set count = projectData | projectActionCount(item.slug) %}
-<section class="action-hero" data-sector="{{ item.sectors[0] }}" aria-labelledby="action-title"><span class="icon-slot">{{ item.slug | actionIcon | icon | safe }}</span><div><div class="action-labels">{{ keyActionChip(item.keyAction, t) }}{% for sector in item.sectors %}{{ sectorChip(sector, t) }}{% endfor %}</div><h1 id="action-title">{{ item.title }}</h1>{{ item.summary | markdown | safe }}</div></section>
+<section class="action-hero" data-pagefind-meta="sector[data-sector]" data-sector="{{ item.sectors[0] }}" aria-labelledby="action-title"><span class="icon-slot">{{ item.slug | actionIcon | icon | safe }}</span><div><div class="action-labels">{{ keyActionChip(item.keyAction, t) }}{% for sector in item.sectors %}{{ sectorChip(sector, t) }}{% endfor %}</div><h1 id="action-title">{{ item.title }}</h1>{{ item.summary | markdown | safe }}</div></section>
 <div class="action-layout">
 <aside class="action-facts" aria-labelledby="facts-title"><h2 id="facts-title">{{ t.actionFacts }}</h2>
 <dl><dt>{{ t.who }}</dt><dd>{{ item.who | markdown | safe }}</dd><dt>{{ t.georgiaRole }}</dt><dd>{{ actionGuidance[item.slug][view.lang] }}</dd>
