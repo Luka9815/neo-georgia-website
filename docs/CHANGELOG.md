@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-26 (Codex, Session 29 header search)
+
+- Add a bilingual inline header combobox with lazy Pagefind loading and keyboard navigation. Add Pagefind page-type and Action-sector metadata and let the full search page run a query supplied by its URL.
+- Use year-independent Calls copy, a closed Figures methodology disclosure, and equal-height desktop Calls and Events strips.
+- Record the header search and Home review evidence under review/session-29.
+
 ## 2026-11-25 (Codex, Session 28 visual polish)
 
 - Unify interactive button states, focus and corner radii. Add sector colours, horizontal Action cards, and compact Key Action chips across listings, Action pages, the Find guide and statistics.

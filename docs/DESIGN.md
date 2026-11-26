@@ -151,3 +151,11 @@ Sector ink colours serve the heading marker, card's 4px top edge, icon and named
 Home proceeds through a white Find band, a blue-grey Opportunities band, navy Figures, white Calls and Events, a soft blue-to-teal News gradient and white Stories when published. Short section eyebrows and rules mark the existing headings. Find and News use low-contrast decorative shapes behind their content. Figures uses the approved river image in the existing responsive pipeline, with a 94% to 97% navy overlay, visible credit disclosure, figure icons and soft rules. The image loads lazily and has empty alternative text because it decorates the statistics. Calls and Events without current records use the existing links in tinted strips.
 
 Long pages expose a native `#top` link beside the sticky navigation at two viewport heights. The enhanced link starts hidden to prevent a layout shift before the header script runs. A plain fallback link is available at any scroll position without JavaScript. The visible link occupies header space on mobile. The native jump is immediate in both motion settings.
+
+## Session 29 header search, 26 November 2026
+
+The search button takes the existing link's place when JavaScript is available. The panel occupies the navigation row on desktop and sits directly below the header controls on mobile. Opening it closes the mobile menu and keeps the wordmark and language switch visible. The header animation uses the existing 180ms reveal and the shared easing. Reduced motion uses the static layout.
+
+The results panel opens below the field on paper with the shared radius and a soft shadow. It scrolls within the viewport and each option is at least 44px tall. A selected row uses the soft surface, a three-pixel leading bar and the shared focus ring. Forced colours use system text and focus colours. Short labels can sit beside their titles. Long Georgian titles can use the full row, and excerpts truncate to one line.
+
+The Home Figures methodology is in a navy-band disclosure below the chart. Its focus ring inherits the band's colours. The existing date and statistics link stay visible. The two side-by-side update strips stretch to the same height and centre their labels, with the single-column mobile layout retained.

@@ -1,8 +1,14 @@
 # Handover
 
-Last updated: 2026-11-25 (Codex, Session 28 visual polish)
+Last updated: 2026-11-26 (Codex, Session 29 header search)
 
-## Session 28 current state
+## Session 29 current state
+
+Start from main `9904076` on `codex/session-29-search`. Session 28 merged as PR #30 and its Deploy GitHub Pages workflow succeeded. Session 29 adds bilingual header search with lazy Pagefind loading, display metadata and full-page query links. Home has evergreen Calls copy, a closed About this data disclosure and matched update strip heights. See SEARCH.md, DESIGN.md and review/session-29. [Session 28 Pages run](https://github.com/Luka9815/neo-georgia-website/actions/runs/45654039904)
+
+The launch flag is false. Preserve preview/noindex, authored content, routes, EU artwork and exact disclaimers. Luka owns the Session 29 post-merge Pages and live-site verification.
+
+## Session 28 baseline
 
 Branch `codex/session-28-polish` starts from current main `61fb55d`. It updates the shared UI, Home, Opportunities and News card presentation, reuses the approved river photo with its attribution in Home Figures and adds a native return link. The launch flag remains false and the preview/noindex, existing routes, official artwork and exact disclaimers are retained. See DESIGN.md, the dated decisions and review/session-28 for reproduction, captures, bilingual strings and measured results.
 
@@ -63,7 +69,7 @@ Luka decided to remove the prevailing-language statement entirely: the /language
 
 ## Next step
 
-Review the Session 28 PR on `codex/session-28-polish` and evidence in review/session-28/README.md. After merging the PR, Luka confirms the Deploy GitHub Pages run succeeds and the live site shows the changes. Then obtain Nino’s content sign-off and approved office facts; follow LAUNCH.md in order. Do not merge or launch automatically. Hosted Event/image round trips, signed-grant review, domain and institutional transfer remain outside this session.
+Review the Session 29 search and Home updates and the evidence in review/session-29/README.md. After merge, Luka confirms the Deploy GitHub Pages run succeeds and verifies the live changes. Then obtain Nino’s content sign-off and approved office facts; follow LAUNCH.md in order. Do not merge or launch automatically. Hosted Event/image round trips, signed-grant review, domain and institutional transfer remain outside this session.
 
 ## Launch checklist
 
