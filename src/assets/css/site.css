@@ -237,8 +237,8 @@ dd { margin: 0 0 var(--space-2); }
 .eyebrow { font-size: 0.875rem; display: inline-block; font-weight: 700; border-bottom: 3px solid var(--gold); padding-bottom: .35rem; align-self: flex-start; }
 .band-soft { background: var(--surface); }
 .audience-tiles { grid-template-columns: 1fr; gap: 0.5rem; }
-.compact-update { margin: 0; font-weight: 700; }
-.compact-update a { display: grid; grid-template-columns: auto minmax(0,1fr) auto; align-items: center; gap: .75rem; padding: .7rem .85rem; border: 1px solid var(--card-line); border-radius: var(--radius); background: var(--surface); color: var(--navy); }
+.compact-update { display: flex; margin: 0; font-weight: 700; }
+.compact-update a { display: grid; flex: 1; grid-template-columns: auto minmax(0,1fr) auto; align-items: center; gap: .75rem; padding: .7rem .85rem; border: 1px solid var(--card-line); border-radius: var(--radius); background: var(--surface); color: var(--navy); }
 .compact-update a:is(:hover,:focus-visible) { background: var(--teal-soft); color: var(--blue); }
 .compact-update .icon-slot, .list-empty .icon-slot { margin: 0; width: 2.5rem; height: 2.5rem; }
 .list-empty { display: flex; align-items: start; gap: 1rem; padding: var(--space-3); background: var(--surface); border: 1px solid var(--card-line); border-radius: var(--radius); margin-block: 1rem; }
@@ -353,6 +353,8 @@ dd { margin: 0 0 var(--space-2); }
 .home-figures > .wrapper :last-child { margin-bottom: 0; }
 .home-figures > .wrapper > p:last-child > a { display: inline-flex; align-items: center; min-height: 44px; }
 .home-figures .figures { margin-block: 2rem; }
+.figures-data { border-block: 1px solid #dfe8ff80; }
+.figures-data p { padding-bottom: .75rem; }
 .home-figures h3 { margin-top: 2rem; }
 .action-hero { display: flex; align-items: flex-start; gap: 1.5rem;  margin-top: 0px;   border-bottom: 4px solid var(--teal); margin: 0 0 2.5rem; padding: 3.5rem 0 3rem; border: 0; border-radius: 0; color: var(--paper); background: var(--navy); box-shadow: 0 0 0 100vmax var(--navy); clip-path: inset(0 -100vmax); }
 .action-hero h1 { margin-block: 0.5rem 1.5rem; color: var(--paper); font-size: clamp(2rem,3.75vw,3.15rem); max-width: none;  hyphens: none; overflow-wrap: normal; }
