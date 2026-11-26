@@ -19,6 +19,7 @@
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
   <link rel="stylesheet" href="/assets/css/site.css">
   <script src="/assets/js/header.js" defer></script>
+  <script src="/assets/js/header-search.js" defer></script>
 </head>
 <body id="top">
 <a class="skip" href="#main">{{ t.skip }}</a>
@@ -48,10 +49,12 @@
       </details>
       {{ backToTop(t.backToTop, true) }}
       <noscript>{{ backToTop(t.backToTop) }}</noscript>
+      {% include "header-search.njk" %}
     </div>
   </div>
 </header>
-<main id="main" class="wrapper page-main page-{{ view.kind }}{% if view.slug %} page-{{ view.slug }}{% endif %}" tabindex="-1">
+{% set searchTypes = {action: 'action', calls: 'call', event: 'event', events: 'event', eventCalendar: 'event', news: 'news', faq: 'faq', resources: 'resource', publications: 'publication'} %}
+<main id="main" data-pagefind-meta="type:{{ searchTypes[view.kind] or 'page' }}" class="wrapper page-main page-{{ view.kind }}{% if view.slug %} page-{{ view.slug }}{% endif %}" tabindex="-1">
   {% if view.kind != 'home' and view.kind != 'action' %}<h1 id="page-title"{% if view.kind == 'news' and view.slug %} class="news-title"{% endif %}>{{ title }}</h1>{% endif %}
   {{ body | safe }}
 </main>

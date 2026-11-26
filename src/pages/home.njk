@@ -37,7 +37,9 @@ eleventyExcludeFromCollections: true
  <p class="figures-note">{{ t.projectSnapshot }}: <time datetime="{{ projectData.snapshotDate }}">{{ projectData.snapshotDate | dateLabel(t,'UTC',false) }}</time>.</p>
  <h3>{{ t.projectYears }}</h3>
  <div class="chart-scroll" tabindex="0" role="group" aria-label="{{ t.projectYears }}">{{ projectData.stats.years | miniChart(t.projectYears,t.homeChartDescription,view.lang ~ '-home-years') | safe }}</div>
- {% include 'project-mobility-coverage.njk' %}
+ <details class="chart-table figures-data"><summary>{{ t.figuresDataAbout }}</summary>
+  {% include 'project-mobility-coverage.njk' %}
+ </details>
  <details class="chart-table"><summary>{{ t.chartTable }}</summary><div class="project-statistics-scroll" tabindex="0" role="group" aria-label="{{ t.projectYears }}"><table class="project-statistics"><caption>{{ t.projectYears }}</caption><thead><tr><th scope="col">{{ t.projectCallYear }}</th><th scope="col">{{ t.projectCount }}</th></tr></thead><tbody>{% for row in projectData.stats.years %}<tr><th scope="row">{{ row.key }}</th><td>{{ row.count }}</td></tr>{% endfor %}</tbody></table></div></details>
  <p><a href="/{{ view.lang }}/resources/statistics/">{{ t.projectStatistics }}</a></p>
 </div></section>

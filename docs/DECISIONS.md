@@ -644,3 +644,15 @@ Replace Session 26's sticky sector columns with inline icon headings and horizon
 ## 2026-11-25 Session 28 Home bands and return link
 
 Use the existing Home sections and fallback links in alternating surfaces. Add muted decoration, bilingual eyebrows, a credited lazy river photo under the figures and compact fallback link strips. Extend the existing header script to reveal the native return link after roughly two viewports. Give mobile navigation room for the link in its own header grid cell. Start the enhanced link hidden and provide a native fallback so deferred initialisation does not move the controls at first paint.
+
+## 2026-11-26 Session 29 header search
+
+Use a native search link without JavaScript and a deferred button enhancement with an inline combobox. Load the results controller and Pagefind only when search opens. Use the existing query-only Georgian fallback and active-language index. Treat Enter with no selected suggestion as a GET submission to the bilingual search page. The search page reads `q` and runs the same search on load.
+
+## 2026-11-26 Session 29 result metadata
+
+Add stable Pagefind `type` metadata to the existing indexed pages and primary `sector` to Action pages. The Calls, Events, News, FAQ, Resources and Publications results use the matching type when their destination is the relevant listing or detail page. Generic destinations use Page. This keeps the catalogue, routes and indexed text scope intact. Translate labels in the dictionaries and use the existing Action sector palette.
+
+## 2026-11-26 Session 29 Home follow-ups
+
+Keep Calls fallback copy independent of the calendar year. The Action fallback describes that Action's listing, and the Calls page points readers to the annual Guide. Move the Home chart methodology into a native closed disclosure with the snapshot date and statistics link outside it. Stretch the Calls and Events strips across the shared grid row.

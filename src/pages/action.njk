@@ -12,11 +12,11 @@ eleventyExcludeFromCollections: true
 {% set item = actions | findSlug(view.slug) %}
 {% set actionCalls = calls | related(item.slug) | callYear(site.currentCallYear) %}
 {% set count = projectData | projectActionCount(item.slug) %}
-<section class="action-hero" data-sector="{{ item.sectors[0] }}" aria-labelledby="action-title"><span class="icon-slot">{{ item.slug | actionIcon | icon | safe }}</span><div><div class="action-labels">{{ keyActionChip(item.keyAction, t) }}{% for sector in item.sectors %}{{ sectorChip(sector, t) }}{% endfor %}</div><h1 id="action-title">{{ item.title }}</h1>{{ item.summary | markdown | safe }}</div></section>
+<section class="action-hero" data-pagefind-meta="sector[data-sector]" data-sector="{{ item.sectors[0] }}" aria-labelledby="action-title"><span class="icon-slot">{{ item.slug | actionIcon | icon | safe }}</span><div><div class="action-labels">{{ keyActionChip(item.keyAction, t) }}{% for sector in item.sectors %}{{ sectorChip(sector, t) }}{% endfor %}</div><h1 id="action-title">{{ item.title }}</h1>{{ item.summary | markdown | safe }}</div></section>
 <div class="action-layout">
 <aside class="action-facts" aria-labelledby="facts-title"><h2 id="facts-title">{{ t.actionFacts }}</h2>
 <dl><dt>{{ t.who }}</dt><dd>{{ item.who | markdown | safe }}</dd><dt>{{ t.georgiaRole }}</dt><dd>{{ actionGuidance[item.slug][view.lang] }}</dd>
-<dt>{{ t.calls }}: {{ site.currentCallYear }}</dt><dd>{% if actionCalls.length %}<ul>{% for call in actionCalls %}<li><time datetime="{{ call.deadline }}">{{ call.deadline | dateLabel(t) }}</time> ({{ t.brussels }}), {{ t[call.status] }}</li>{% endfor %}</ul>{% else %}{{ t.callsCompact }}{% endif %}</dd></dl>
+<dt>{{ t.calls }}: {{ site.currentCallYear }}</dt><dd>{% if actionCalls.length %}<ul>{% for call in actionCalls %}<li><time datetime="{{ call.deadline }}">{{ call.deadline | dateLabel(t) }}</time> ({{ t.brussels }}), {{ t[call.status] }}</li>{% endfor %}</ul>{% else %}{{ t.actionCallsEmpty }}{% endif %}</dd></dl>
 <h3>{{ t.officialLinks }}</h3><ul data-action-official-links>{% for link in item.officialLinks %}<li><a href="{{ link.url }}">{{ t[link.labelKey] }}</a></li>{% endfor %}</ul>
 </aside>
 <div class="action-main">

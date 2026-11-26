@@ -1,0 +1,254 @@
+[
+  {
+    "phase": "after",
+    "name": "header-closed",
+    "lang": "ka",
+    "width": 390,
+    "file": "after/header-closed-ka-390.jpg"
+  },
+  {
+    "phase": "after",
+    "name": "header-empty",
+    "lang": "ka",
+    "width": 390,
+    "file": "after/header-empty-ka-390.jpg"
+  },
+  {
+    "phase": "after",
+    "name": "header-results",
+    "lang": "ka",
+    "width": 390,
+    "file": "after/header-results-ka-390.jpg"
+  },
+  {
+    "phase": "after",
+    "name": "header-no-results",
+    "lang": "ka",
+    "width": 390,
+    "file": "after/header-no-results-ka-390.jpg"
+  },
+  {
+    "phase": "after",
+    "name": "search-prefill",
+    "lang": "ka",
+    "width": 390,
+    "file": "after/search-prefill-ka-390.jpg"
+  },
+  {
+    "phase": "before",
+    "name": "figures",
+    "lang": "ka",
+    "width": 390,
+    "file": "before/figures-ka-390.jpg"
+  },
+  {
+    "phase": "before",
+    "name": "updates",
+    "lang": "ka",
+    "width": 390,
+    "file": "before/updates-ka-390.jpg"
+  },
+  {
+    "phase": "after",
+    "name": "figures",
+    "lang": "ka",
+    "width": 390,
+    "file": "after/figures-ka-390.jpg"
+  },
+  {
+    "phase": "after",
+    "name": "updates",
+    "lang": "ka",
+    "width": 390,
+    "file": "after/updates-ka-390.jpg"
+  },
+  {
+    "phase": "after",
+    "name": "header-closed",
+    "lang": "ka",
+    "width": 1280,
+    "file": "after/header-closed-ka-1280.jpg"
+  },
+  {
+    "phase": "after",
+    "name": "header-empty",
+    "lang": "ka",
+    "width": 1280,
+    "file": "after/header-empty-ka-1280.jpg"
+  },
+  {
+    "phase": "after",
+    "name": "header-results",
+    "lang": "ka",
+    "width": 1280,
+    "file": "after/header-results-ka-1280.jpg"
+  },
+  {
+    "phase": "after",
+    "name": "header-no-results",
+    "lang": "ka",
+    "width": 1280,
+    "file": "after/header-no-results-ka-1280.jpg"
+  },
+  {
+    "phase": "after",
+    "name": "search-prefill",
+    "lang": "ka",
+    "width": 1280,
+    "file": "after/search-prefill-ka-1280.jpg"
+  },
+  {
+    "phase": "before",
+    "name": "figures",
+    "lang": "ka",
+    "width": 1280,
+    "file": "before/figures-ka-1280.jpg"
+  },
+  {
+    "phase": "before",
+    "name": "updates",
+    "lang": "ka",
+    "width": 1280,
+    "file": "before/updates-ka-1280.jpg"
+  },
+  {
+    "phase": "after",
+    "name": "figures",
+    "lang": "ka",
+    "width": 1280,
+    "file": "after/figures-ka-1280.jpg"
+  },
+  {
+    "phase": "after",
+    "name": "updates",
+    "lang": "ka",
+    "width": 1280,
+    "file": "after/updates-ka-1280.jpg"
+  },
+  {
+    "phase": "after",
+    "name": "header-closed",
+    "lang": "en",
+    "width": 390,
+    "file": "after/header-closed-en-390.jpg"
+  },
+  {
+    "phase": "after",
+    "name": "header-empty",
+    "lang": "en",
+    "width": 390,
+    "file": "after/header-empty-en-390.jpg"
+  },
+  {
+    "phase": "after",
+    "name": "header-results",
+    "lang": "en",
+    "width": 390,
+    "file": "after/header-results-en-390.jpg"
+  },
+  {
+    "phase": "after",
+    "name": "header-no-results",
+    "lang": "en",
+    "width": 390,
+    "file": "after/header-no-results-en-390.jpg"
+  },
+  {
+    "phase": "after",
+    "name": "search-prefill",
+    "lang": "en",
+    "width": 390,
+    "file": "after/search-prefill-en-390.jpg"
+  },
+  {
+    "phase": "before",
+    "name": "figures",
+    "lang": "en",
+    "width": 390,
+    "file": "before/figures-en-390.jpg"
+  },
+  {
+    "phase": "before",
+    "name": "updates",
+    "lang": "en",
+    "width": 390,
+    "file": "before/updates-en-390.jpg"
+  },
+  {
+    "phase": "after",
+    "name": "figures",
+    "lang": "en",
+    "width": 390,
+    "file": "after/figures-en-390.jpg"
+  },
+  {
+    "phase": "after",
+    "name": "updates",
+    "lang": "en",
+    "width": 390,
+    "file": "after/updates-en-390.jpg"
+  },
+  {
+    "phase": "after",
+    "name": "header-closed",
+    "lang": "en",
+    "width": 1280,
+    "file": "after/header-closed-en-1280.jpg"
+  },
+  {
+    "phase": "after",
+    "name": "header-empty",
+    "lang": "en",
+    "width": 1280,
+    "file": "after/header-empty-en-1280.jpg"
+  },
+  {
+    "phase": "after",
+    "name": "header-results",
+    "lang": "en",
+    "width": 1280,
+    "file": "after/header-results-en-1280.jpg"
+  },
+  {
+    "phase": "after",
+    "name": "header-no-results",
+    "lang": "en",
+    "width": 1280,
+    "file": "after/header-no-results-en-1280.jpg"
+  },
+  {
+    "phase": "after",
+    "name": "search-prefill",
+    "lang": "en",
+    "width": 1280,
+    "file": "after/search-prefill-en-1280.jpg"
+  },
+  {
+    "phase": "before",
+    "name": "figures",
+    "lang": "en",
+    "width": 1280,
+    "file": "before/figures-en-1280.jpg"
+  },
+  {
+    "phase": "before",
+    "name": "updates",
+    "lang": "en",
+    "width": 1280,
+    "file": "before/updates-en-1280.jpg"
+  },
+  {
+    "phase": "after",
+    "name": "figures",
+    "lang": "en",
+    "width": 1280,
+    "file": "after/figures-en-1280.jpg"
+  },
+  {
+    "phase": "after",
+    "name": "updates",
+    "lang": "en",
+    "width": 1280,
+    "file": "after/updates-en-1280.jpg"
+  }
+]

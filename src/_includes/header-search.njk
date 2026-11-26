@@ -1,0 +1,19 @@
+<form id="header-search" class="header-search" role="search" action="/{{ view.lang }}/search/" hidden
+      data-index="{{ ('/pagefind/' ~ view.lang ~ '/pagefind.js') | url }}"
+      data-types="{{ t.searchTypes | dump }}" data-all="{{ t.headerSearchAll }}" data-none="{{ t.headerSearchNone }}"
+      data-loading="{{ t.headerSearchLoading }}" data-error="{{ t.headerSearchError }}" data-full="{{ t.searchResults }}"
+      data-count="{{ t.searchCount }}">
+  <label class="visually-hidden" for="header-search-query">{{ t.searchLabel }}</label>
+  <input id="header-search-query" name="q" type="search" role="combobox" aria-expanded="false"
+         aria-controls="header-search-list" aria-autocomplete="list" autocomplete="off" maxlength="200"
+         placeholder="{{ t.headerSearchPlaceholder }}">
+  <button class="header-search-close" type="button" aria-label="{{ t.headerSearchClose }}"><span aria-hidden="true">×</span></button>
+  <p class="visually-hidden" data-search-announcement role="status" aria-live="polite" aria-atomic="true"></p>
+  <div class="header-search-popup" hidden>
+    <p class="header-search-message" aria-hidden="true" hidden></p>
+    <div id="header-search-list" class="header-search-list" role="listbox" aria-label="{{ t.searchResults }}"></div>
+  </div>
+  <div class="header-search-popup" data-search-unavailable hidden>
+    <p class="header-search-message" role="status">{{ t.headerSearchError }} <a href="/{{ view.lang }}/search/">{{ t.searchResults }}</a></p>
+  </div>
+</form>

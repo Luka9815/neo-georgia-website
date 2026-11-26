@@ -1,0 +1,107 @@
+{
+  "prefix": "/",
+  "cases": [
+    {
+      "lang": "ka",
+      "width": 320,
+      "rows": 6,
+      "axe": 0
+    },
+    {
+      "lang": "ka",
+      "width": 390,
+      "rows": 6,
+      "axe": 0
+    },
+    {
+      "lang": "ka",
+      "width": 1024,
+      "rows": 6,
+      "axe": 0
+    },
+    {
+      "lang": "ka",
+      "width": 1280,
+      "rows": 6,
+      "axe": 0
+    },
+    {
+      "lang": "en",
+      "width": 320,
+      "rows": 6,
+      "axe": 0
+    },
+    {
+      "lang": "en",
+      "width": 390,
+      "rows": 6,
+      "axe": 0
+    },
+    {
+      "lang": "en",
+      "width": 1024,
+      "rows": 6,
+      "axe": 0
+    },
+    {
+      "lang": "en",
+      "width": 1280,
+      "rows": 6,
+      "axe": 0
+    }
+  ],
+  "georgian": [
+    {
+      "query": "მობილობა",
+      "urls": [
+        "/ka/opportunities/youth-mobility/",
+        "/ka/resources/faq/",
+        "/ka/find/youth/",
+        "/ka/find/student/",
+        "/ka/opportunities/",
+        "/ka/opportunities/icm/"
+      ]
+    },
+    {
+      "query": "მობილობის",
+      "urls": [
+        "/ka/resources/projects/",
+        "/ka/news/neo-dissemination-event-2025/",
+        "/ka/resources/statistics/",
+        "/ka/opportunities/find-partners/",
+        "/ka/opportunities/youth-mobility/",
+        "/ka/"
+      ]
+    },
+    {
+      "query": "მობილობ",
+      "urls": [
+        "/ka/opportunities/youth-mobility/",
+        "/ka/resources/faq/",
+        "/ka/resources/projects/",
+        "/ka/opportunities/icm/",
+        "/ka/calls/",
+        "/ka/"
+      ]
+    },
+    {
+      "query": "KA171",
+      "urls": [
+        "/ka/opportunities/icm/",
+        "/ka/calls/",
+        "/ka/resources/projects/",
+        "/ka/resources/statistics/",
+        "/ka/"
+      ]
+    },
+    {
+      "query": "ერაზმუს KA171",
+      "urls": [
+        "/ka/calls/",
+        "/ka/resources/projects/",
+        "/ka/",
+        "/ka/resources/statistics/"
+      ]
+    }
+  ]
+}

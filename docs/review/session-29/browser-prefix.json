@@ -1,0 +1,107 @@
+{
+  "prefix": "/neo-georgia-website/",
+  "cases": [
+    {
+      "lang": "ka",
+      "width": 320,
+      "rows": 6,
+      "axe": 0
+    },
+    {
+      "lang": "ka",
+      "width": 390,
+      "rows": 6,
+      "axe": 0
+    },
+    {
+      "lang": "ka",
+      "width": 1024,
+      "rows": 6,
+      "axe": 0
+    },
+    {
+      "lang": "ka",
+      "width": 1280,
+      "rows": 6,
+      "axe": 0
+    },
+    {
+      "lang": "en",
+      "width": 320,
+      "rows": 6,
+      "axe": 0
+    },
+    {
+      "lang": "en",
+      "width": 390,
+      "rows": 6,
+      "axe": 0
+    },
+    {
+      "lang": "en",
+      "width": 1024,
+      "rows": 6,
+      "axe": 0
+    },
+    {
+      "lang": "en",
+      "width": 1280,
+      "rows": 6,
+      "axe": 0
+    }
+  ],
+  "georgian": [
+    {
+      "query": "მობილობა",
+      "urls": [
+        "/neo-georgia-website/ka/opportunities/youth-mobility/",
+        "/neo-georgia-website/ka/resources/faq/",
+        "/neo-georgia-website/ka/find/youth/",
+        "/neo-georgia-website/ka/find/student/",
+        "/neo-georgia-website/ka/opportunities/",
+        "/neo-georgia-website/ka/opportunities/icm/"
+      ]
+    },
+    {
+      "query": "მობილობის",
+      "urls": [
+        "/neo-georgia-website/ka/resources/projects/",
+        "/neo-georgia-website/ka/news/neo-dissemination-event-2025/",
+        "/neo-georgia-website/ka/resources/statistics/",
+        "/neo-georgia-website/ka/opportunities/find-partners/",
+        "/neo-georgia-website/ka/opportunities/youth-mobility/",
+        "/neo-georgia-website/ka/"
+      ]
+    },
+    {
+      "query": "მობილობ",
+      "urls": [
+        "/neo-georgia-website/ka/opportunities/youth-mobility/",
+        "/neo-georgia-website/ka/resources/faq/",
+        "/neo-georgia-website/ka/resources/projects/",
+        "/neo-georgia-website/ka/opportunities/icm/",
+        "/neo-georgia-website/ka/calls/",
+        "/neo-georgia-website/ka/"
+      ]
+    },
+    {
+      "query": "KA171",
+      "urls": [
+        "/neo-georgia-website/ka/opportunities/icm/",
+        "/neo-georgia-website/ka/calls/",
+        "/neo-georgia-website/ka/resources/projects/",
+        "/neo-georgia-website/ka/resources/statistics/",
+        "/neo-georgia-website/ka/"
+      ]
+    },
+    {
+      "query": "ერაზმუს KA171",
+      "urls": [
+        "/neo-georgia-website/ka/calls/",
+        "/neo-georgia-website/ka/resources/projects/",
+        "/neo-georgia-website/ka/",
+        "/neo-georgia-website/ka/resources/statistics/"
+      ]
+    }
+  ]
+}

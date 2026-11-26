@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-26 (Codex, Session 29 header search)
+
+- Add a bilingual inline header combobox with lazy Pagefind loading and keyboard navigation. Add Pagefind page-type and Action-sector metadata and let the full search page run a query supplied by its URL.
+- Use year-independent Calls copy, a closed Figures methodology disclosure, and equal-height desktop Calls and Events strips.
+- Record 36 bilingual captures, clean root and prefix test runs, and the Lighthouse comparison under review/session-29. Lighthouse accessibility scores 100 on all 24 targets. English mobile Home scores 98 against the saved 99 and ties the fresh Session 28 rerun.
+
 ## 2026-11-25 (Codex, Session 28 visual polish)
 
 - Unify interactive button states, focus and corner radii. Add sector colours, horizontal Action cards, and compact Key Action chips across listings, Action pages, the Find guide and statistics.

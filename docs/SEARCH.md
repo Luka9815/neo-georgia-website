@@ -1,5 +1,17 @@
 # Georgian static search
 
+## Session 29 header search, 2026-11-26
+
+A native link still reaches the bilingual search page without JavaScript. The deferred `header-search.js` upgrades the link to a button. The results controller, active Pagefind module and index load only on first open. The language switch and wordmark are visible with the panel open, and opening it closes the mobile menu.
+
+Press `/` outside editable fields to open search. Arrow keys move through the options while focus stays in the combobox. Home and End move the text caret. Enter follows the selected option or submits to the search page with `q`. Escape, Close and an outside click return focus to the trigger. On the full search page the trigger focuses the page field.
+
+Queries start at two characters after 200ms. Editing or closing invalidates any pending response. Up to six Pagefind matches appear before the See all link. The live region announces loading, displayed results, empty results and errors. Both interfaces consume Pagefind's plain excerpt, and title emphasis in the dropdown is created with text nodes and strong elements. The full search page pre-fills `q` and immediately runs the same query logic.
+
+The existing `main` scope and build rules supply the same destination set. Literal `type` and primary Action `sector` metadata are read by Pagefind from the page templates. Calls, Events, News, FAQ, Resources and Publications listing destinations carry those types. Action and available Event details carry their own type. Other destinations use Page. Type names are localised in the shared dictionaries. The Georgian ending list, four-letter minimum, single suffix removal, typed priority and de-duplication stay as documented below.
+
+See [Session 29 review](review/session-29/README.md) for browser logs, screenshots and query examples.
+
 ## Session 14: nominative fallback, 2026-10-27
 
 Luka authorised appending ა and ი to the end of the common ending list in src/assets/js/georgian-search.js. The same four-letter minimum, longest-ending priority, one removal per word, typed-query ranking and de-duplication apply. No index terms or page text change. This extends the session 12 rule, rather than introducing a linguistic stemmer.

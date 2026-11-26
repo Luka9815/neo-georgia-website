@@ -1,0 +1,23 @@
+{
+  "baseline": "9904076",
+  "sameHtmlPaths": 307,
+  "identical": [
+    "preview notices",
+    "robots metadata",
+    "EU disclaimer text"
+  ],
+  "pagefind": {
+    "baseline": {
+      "ka": 39,
+      "en": 39
+    },
+    "root": {
+      "ka": 39,
+      "en": 39
+    },
+    "prefix": {
+      "ka": 39,
+      "en": 39
+    }
+  }
+}

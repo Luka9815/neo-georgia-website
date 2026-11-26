@@ -1,0 +1,139 @@
+
+> check:a11y
+> node scripts/check-a11y.js
+
+axe: scanning /404.html
+axe: scanning /ka/
+axe: scanning /ka/opportunities/
+axe: scanning /ka/calls/
+axe: scanning /ka/events/
+axe: scanning /ka/news/
+axe: scanning /ka/resources/
+axe: scanning /ka/resources/statistics/
+axe: scanning /ka/resources/projects/
+axe: scanning /ka/events/calendar/
+axe: scanning /ka/opportunities/find-partners/
+axe: scanning /ka/resources/publications/
+axe: scanning /ka/resources/faq/
+axe: scanning /ka/about/contact/
+axe: scanning /ka/search/
+axe: scanning /ka/about/credits/
+axe: scanning /ka/find/
+axe: scanning /ka/find/student/
+axe: scanning /ka/find/university/
+axe: scanning /ka/find/youth/
+axe: checked 20 pages
+axe: scanning /ka/find/vet/
+axe: scanning /ka/find/sport/
+axe: scanning /ka/resources/projects/2026/
+axe: scanning /ka/resources/projects/2025/
+axe: scanning /ka/resources/projects/2024/
+axe: scanning /ka/resources/projects/2023/
+axe: scanning /ka/resources/projects/2022/
+axe: scanning /ka/resources/projects/2021/
+axe: scanning /ka/resources/projects/2020/
+axe: scanning /ka/resources/projects/2019/
+axe: scanning /ka/resources/projects/2018/
+axe: scanning /ka/resources/projects/2017/
+axe: scanning /ka/resources/projects/2016/
+axe: scanning /ka/resources/projects/2015/
+axe: scanning /ka/resources/projects/2014/
+axe: scanning /ka/about/team/
+axe: scanning /ka/about/here/
+axe: scanning /ka/opportunities/cb-sport/
+axe: scanning /ka/opportunities/cb-vet/
+axe: scanning /ka/opportunities/cb-youth/
+axe: checked 40 pages
+axe: scanning /ka/opportunities/cbhe/
+axe: scanning /ka/opportunities/erasmus-mundus/
+axe: scanning /ka/opportunities/icm/
+axe: scanning /ka/opportunities/jean-monnet/
+axe: scanning /ka/opportunities/virtual-exchanges/
+axe: scanning /ka/opportunities/youth-mobility/
+axe: scanning /ka/news/announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia/
+axe: scanning /ka/news/europe-day-in-kutaisi/
+axe: scanning /ka/news/eve-statistics/
+axe: scanning /ka/news/information-about-capacity-building-project-proposals/
+axe: scanning /ka/news/neo-dissemination-event-2025/
+axe: scanning /ka/about/
+axe: scanning /ka/accessibility/
+axe: scanning /ka/privacy/
+axe: scanning /en/
+axe: scanning /en/opportunities/
+axe: scanning /en/calls/
+axe: scanning /en/events/
+axe: scanning /en/news/
+axe: scanning /en/resources/
+axe: checked 60 pages
+axe: scanning /en/resources/statistics/
+axe: scanning /en/resources/projects/
+axe: scanning /en/events/calendar/
+axe: scanning /en/opportunities/find-partners/
+axe: scanning /en/resources/publications/
+axe: scanning /en/resources/faq/
+axe: scanning /en/about/contact/
+axe: scanning /en/search/
+axe: scanning /en/about/credits/
+axe: scanning /en/find/
+axe: scanning /en/find/student/
+axe: scanning /en/find/university/
+axe: scanning /en/find/youth/
+axe: scanning /en/find/vet/
+axe: scanning /en/find/sport/
+axe: scanning /en/resources/projects/2026/
+axe: scanning /en/resources/projects/2025/
+axe: scanning /en/resources/projects/2024/
+axe: scanning /en/resources/projects/2023/
+axe: scanning /en/resources/projects/2022/
+axe: checked 80 pages
+axe: scanning /en/resources/projects/2021/
+axe: scanning /en/resources/projects/2020/
+axe: scanning /en/resources/projects/2019/
+axe: scanning /en/resources/projects/2018/
+axe: scanning /en/resources/projects/2017/
+axe: scanning /en/resources/projects/2016/
+axe: scanning /en/resources/projects/2015/
+axe: scanning /en/resources/projects/2014/
+axe: scanning /en/about/team/
+axe: scanning /en/about/here/
+axe: scanning /en/opportunities/cb-sport/
+axe: scanning /en/opportunities/cb-vet/
+axe: scanning /en/opportunities/cb-youth/
+axe: scanning /en/opportunities/cbhe/
+axe: scanning /en/opportunities/erasmus-mundus/
+axe: scanning /en/opportunities/icm/
+axe: scanning /en/opportunities/jean-monnet/
+axe: scanning /en/opportunities/virtual-exchanges/
+axe: scanning /en/opportunities/youth-mobility/
+axe: scanning /en/news/announcement-clarification-on-erasmus-opportunities-for-education-institutions-in-georgia/
+axe: checked 100 pages
+axe: scanning /en/news/europe-day-in-kutaisi/
+axe: scanning /en/news/eve-statistics/
+axe: scanning /en/news/information-about-capacity-building-project-proposals/
+axe: scanning /en/news/neo-dissemination-event-2025/
+axe: scanning /en/about/
+axe: scanning /en/accessibility/
+axe: scanning /en/privacy/
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+locator.textContent: Error: strict mode violation: locator('[role=status]') resolved to 3 elements:
+    1) <p role="status" aria-live="polite" aria-atomic="true" class="visually-hidden" data-search-announcement=""></p> aka locator('p').nth(1)
+    2) <p role="status" class="header-search-message">…</p> aka getByText('ძიება ვერ ჩაიტვირთა. გახსენით ძიების გვერდი. ძიების შედეგები')
+    3) <p role="status" data-publication-count="" data-label="ნაპოვნი პუბლიკაციები">ნაპოვნი პუბლიკაციები: 0</p> aka getByText('ნაპოვნი პუბლიკაციები:')
+
+Call log:
+[2m  - waiting for locator('[role=status]')[22m
+
+    at checkEditableSurfaces (/tmp/neo29-prefix/scripts/check-editable-surfaces.js:12:281)
+    at async file:///tmp/neo29-prefix/scripts/check-a11y.js:126:3 {
+  log: [ "  - waiting for locator('[role=status]')" ]
+}
+
+Node.js v24.19.0
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.3
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.3
+npm notice To update run: npm install -g npm@12.2.3
+npm notice
