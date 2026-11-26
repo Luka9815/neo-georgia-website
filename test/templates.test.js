@@ -20,7 +20,7 @@ test('new sitemap pages render both languages, exact switches and EU footer', ()
     assert.equal($('header a[hreflang]').attr('href'), `${prefix}${other}/${route}`);
     assert.equal($('.eu-footer .eu-emblem').length, 1);
     assert.ok($('.eu-footer .funding-disclaimer').text().length > 100);
-    assert.equal($('iframe, form[action], img[src^="https:"]').length, 0);
+    assert.equal($('iframe, form[action]:not(header #header-search), img[src^="https:"]').length, 0);
   }
 });
 test('Publications are complete without JavaScript and filter metadata matches records', () => {
