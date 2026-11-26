@@ -6,7 +6,7 @@ Last updated: 2026-11-26 (Codex, Session 29 header search)
 
 Start from main `9904076` on `codex/session-29-search`. Session 28 merged as PR #30 and its Deploy GitHub Pages workflow succeeded. Session 29 adds bilingual header search with lazy Pagefind loading, display metadata and full-page query links. Home has evergreen Calls copy, a closed About this data disclosure and matched update strip heights. See SEARCH.md, DESIGN.md and review/session-29. [Session 28 Pages run](https://github.com/Luka9815/neo-georgia-website/actions/runs/45654039904)
 
-The launch flag is false. Preserve preview/noindex, authored content, routes, EU artwork and exact disclaimers. Clean root and prefix builds pass 214 tests each. The 107-page axe sweeps and separate fixture runs pass in both layouts with zero violations. Luka owns the Session 29 post-merge Pages and live-site verification. [Session 29 PR](https://github.com/Luka9815/neo-georgia-website/pull/31)
+The launch flag is false. Preserve preview/noindex, authored content, routes, EU artwork and exact disclaimers. Clean root and prefix builds pass 214 tests each. Both complete browser queues pass, including 107 pages per layout with zero axe violations. Luka owns the Session 29 post-merge Pages and live-site verification. [Session 29 PR](https://github.com/Luka9815/neo-georgia-website/pull/31)
 
 Lighthouse accessibility is 100 across all 24 targets. Twenty-three meet or exceed the saved Session 28 scores. English mobile Home scored 98 against the saved 99. A fresh run of each version scored 98. [Review evidence](review/session-29/README.md)
 

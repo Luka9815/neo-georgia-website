@@ -12,11 +12,11 @@ The [screenshot manifest](screenshots.json) lists 36 captures across Georgian an
 | --- | --- | --- |
 | Clean build | [Passed](logs/root-build.log) | [Passed](logs/prefix-build.log) |
 | Full tests | [214 passed](logs/root-tests.log) | [214 passed](logs/prefix-tests.log) |
-| Full axe page sweep | [107 pages, zero violations](logs/root-axe-pages.log) | [107 pages, zero violations](logs/prefix-axe-pages.log) |
+| Full browser queue | [Passed, 107 pages with zero axe violations](logs/root-browser-queue.log) | [Passed, 107 pages with zero axe violations](logs/prefix-browser-queue.log) |
 | Existing browser fixtures | [Passed](logs/root-fixtures.log) | [Passed](logs/prefix-fixtures.log) |
 | Header search | [Passed](browser-root.json) | [Passed](browser-prefix.json) |
 
-The full page sweeps completed before the Publications fixture stopped at its page-wide status selector. The fixture now targets its own counter. The full existing fixture set and the focused header search check passed separately in both layouts. The static template test also permits precisely the new local header form while continuing to reject other submission forms, remote images and frames on the supporting pages.
+The first runs completed the page sweeps before the Publications fixture stopped at its page-wide status selector. The fixture now targets its own counter. Both complete browser queues passed after that fix, including all existing fixtures and the new search checks. The static template test permits the new local header form and still rejects other submission forms, remote images and frames on the supporting pages. [Initial root run](logs/root-axe-pages.log) · [Initial prefix run](logs/prefix-axe-pages.log)
 
 ## Browser coverage
 
